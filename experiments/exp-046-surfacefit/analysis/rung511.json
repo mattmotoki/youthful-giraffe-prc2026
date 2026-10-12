@@ -1,0 +1,1250 @@
+{
+  "additivity": {
+    "difference_s": 0.10376178019322424,
+    "pre_registered_band_s": 0.02,
+    "sum_of_the_parts_s": -0.10564631352400511,
+    "the_parts_interact": true,
+    "the_whole_s": -0.0018845333307808687
+  },
+  "class_change": {
+    "december": 23,
+    "january": -4,
+    "july_loo": 0
+  },
+  "cross_fit": {
+    "the_rung_on_the_corrected_class": {
+      "cross_fitted": {
+        "all_row_ci95": [
+          0.0,
+          0.0
+        ],
+        "all_row_gain_s": 0.0,
+        "by_fold": {
+          "december": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 165677,
+            "rows_moved": 0
+          },
+          "january": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 153706,
+            "rows_moved": 0
+          },
+          "july_loo": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 190713,
+            "rows_moved": 0
+          }
+        },
+        "clean_gain_s": 0.0,
+        "every_fold_interval_clear": false
+      },
+      "in_fold": {
+        "all_row_ci95": [
+          -0.017837620064725,
+          0.10389094871367988
+        ],
+        "all_row_gain_s": 0.04095289263449331,
+        "clean_gain_s": 0.049998659143767554,
+        "every_fold_interval_clear": false
+      },
+      "label": "C over B: 511 vs 255, corrected class",
+      "out_of_fold_selection": {
+        "december": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "january": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": 34.362307518499975,
+              "tail_passes": true
+            },
+            "july_loo": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": 16.66971376377178,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "july_loo",
+            "january"
+          ]
+        },
+        "january": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "december": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -73.63194204543974,
+              "tail_passes": true
+            },
+            "july_loo": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": 16.66971376377178,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "july_loo",
+            "december"
+          ]
+        },
+        "july_loo": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "december": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -73.63194204543974,
+              "tail_passes": true
+            },
+            "january": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": 34.362307518499975,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "december",
+            "january"
+          ]
+        }
+      },
+      "rule": "crossfit.py: the rung is taken on a fold only if, on both other folds, its increment interval is clear of zero and its registered whole-update tail clause passes",
+      "selection_premium_s": 0.04095289263449331
+    },
+    "the_rung_on_the_shipped_class": {
+      "cross_fitted": {
+        "all_row_ci95": [
+          0.0,
+          0.0
+        ],
+        "all_row_gain_s": 0.0,
+        "by_fold": {
+          "december": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 165677,
+            "rows_moved": 0
+          },
+          "january": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 153706,
+            "rows_moved": 0
+          },
+          "july_loo": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 190713,
+            "rows_moved": 0
+          }
+        },
+        "clean_gain_s": 0.0,
+        "every_fold_interval_clear": false
+      },
+      "in_fold": {
+        "all_row_ci95": [
+          -0.12236193337120653,
+          -0.009157522978529228
+        ],
+        "all_row_gain_s": -0.06280888755873093,
+        "clean_gain_s": -0.07668283771275242,
+        "every_fold_interval_clear": false
+      },
+      "label": "A over H: 511 vs 255, shipped class",
+      "out_of_fold_selection": {
+        "december": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "january": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -6.131496564616136,
+              "tail_passes": true
+            },
+            "july_loo": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -62.58247668757761,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "july_loo",
+            "january"
+          ]
+        },
+        "january": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "december": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": 12.535784682979417,
+              "tail_passes": true
+            },
+            "july_loo": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -62.58247668757761,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "july_loo",
+            "december"
+          ]
+        },
+        "july_loo": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "december": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": 12.535784682979417,
+              "tail_passes": true
+            },
+            "january": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -6.131496564616136,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "december",
+            "january"
+          ]
+        }
+      },
+      "rule": "crossfit.py: the rung is taken on a fold only if, on both other folds, its increment interval is clear of zero and its registered whole-update tail clause passes",
+      "selection_premium_s": -0.06280888755873093
+    }
+  },
+  "head": {
+    "file": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+    "is": "v18's bytes on the fold side: 255 leaves, guard995, floor, LFPG held, ungated class at 1299 s",
+    "sha256": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684"
+  },
+  "hold": [
+    "LFPG"
+  ],
+  "level_s": 246.3605,
+  "mode3_asserted": {
+    "2025-01": 731,
+    "2025-07": 1170,
+    "2025-12": 861
+  },
+  "mode3_reference": {
+    "2025-01": 731,
+    "2025-07": 1170,
+    "2025-12": 861
+  },
+  "pre_registered_in": "RESULTS.md section 33 (commit a68e5e3)",
+  "prices": {
+    "A": {
+      "board_all_row": {
+        "arm": 299.2100134284702,
+        "base": 299.14720454091145,
+        "gain_s": -0.06280888755873093,
+        "interval": {
+          "ci95": [
+            -0.12236193337120653,
+            -0.009157522978529228
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.06357292739521156,
+          "share_of_draws_positive": 0.0145
+        }
+      },
+      "board_clean": {
+        "arm": 245.0878706079901,
+        "base": 245.01118777027736,
+        "gain_s": -0.07668283771275242,
+        "interval": {
+          "ci95": [
+            -0.1419362296594656,
+            -0.010393182226423778
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.07663663738390074,
+          "share_of_draws_positive": 0.0115
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 283.4972799829862,
+          "B_mean_dd": 554.4587752829931,
+          "ci95": [
+            -39.50512840209521,
+            61.60784573829176
+          ],
+          "mse_gain_s2": 12.535784682979417,
+          "rows": 165677,
+          "rows_moved": 100939
+        },
+        "january": {
+          "A_mean_rd": 231.19297824319753,
+          "B_mean_dd": 468.51745305101133,
+          "ci95": [
+            -42.881654371288555,
+            29.644729748172285
+          ],
+          "mse_gain_s2": -6.131496564616136,
+          "rows": 153706,
+          "rows_moved": 69840
+        },
+        "july_loo": {
+          "A_mean_rd": 144.0921700649155,
+          "B_mean_dd": 350.7668168174086,
+          "ci95": [
+            -114.77284802804924,
+            -13.81354074637806
+          ],
+          "mse_gain_s2": -62.58247668757761,
+          "rows": 190713,
+          "rows_moved": 87868
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 283.4972799829862,
+          "B_mean_dd": 554.4587752829931,
+          "ci95": [
+            -44.64993479010743,
+            62.15083365045525
+          ],
+          "mse_gain_s2": 12.535784682979417,
+          "rows": 165677,
+          "rows_moved": 100939
+        },
+        "january": {
+          "A_mean_rd": 231.19598653157317,
+          "B_mean_dd": 468.52354941093756,
+          "ci95": [
+            -46.769461370991884,
+            30.152667912323512
+          ],
+          "mse_gain_s2": -6.131576347791131,
+          "rows": 153704,
+          "rows_moved": 69840
+        },
+        "july_loo": {
+          "A_mean_rd": 144.0921700649155,
+          "B_mean_dd": 350.7668168174086,
+          "ci95": [
+            -112.81106829715483,
+            -12.137152115249732
+          ],
+          "mse_gain_s2": -62.58247668757761,
+          "rows": 190713,
+          "rows_moved": 87868
+        }
+      },
+      "class": "shipped",
+      "every_fold_interval_clear": false,
+      "every_moving_fold_interval_clear": false,
+      "folds_with_no_moved_row": [],
+      "label": "the rung alone: 511 leaves on the SHIPPED class",
+      "leaves": 511,
+      "refitted_this_run": false,
+      "rows_moved": {
+        "december": 100939,
+        "january": 69840,
+        "july_loo": 87868
+      },
+      "seconds": 0.2,
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 13559.900494126126,
+          "passes_the_clause": true,
+          "rmse_arm": 1750.171761027002,
+          "rmse_base": 1754.0413602850087,
+          "rmse_gain_s": 3.8695992580067013,
+          "rows": 261,
+          "rows_moved": 37,
+          "share_of_the_gain": 1.7040536503808776
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 601.9620271812712,
+          "passes_the_clause": true,
+          "rmse_arm": 5981.20638787305,
+          "rmse_base": 5981.256708782908,
+          "rmse_gain_s": 0.050320909858783125,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": -0.20758460740064497
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 1548.4141359785333,
+          "passes_the_clause": true,
+          "rmse_arm": 2386.4069545074094,
+          "rmse_base": 2386.731356197699,
+          "rmse_gain_s": 0.3244016902895055,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": -0.08510555784566672
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 83668.558620244,
+          "passes_the_clause": true,
+          "rmse_arm": 1750.171761027002,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 23.74192112233004,
+          "rows": 261,
+          "rows_moved": 37,
+          "share_of_the_gain": 0.0191176469292008
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 35139.87693657632,
+          "passes_the_clause": true,
+          "rmse_arm": 5981.20638787305,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 2.936803200334907,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.013452603049034338
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 44803.74289902122,
+          "passes_the_clause": true,
+          "rmse_arm": 2386.4069545074094,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 9.368889644198589,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.026338880331619713
+        }
+      },
+      "vector": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-511-guard995.npz"
+    },
+    "B": {
+      "board_all_row": {
+        "arm": 299.20807396974493,
+        "base": 299.14720454091145,
+        "gain_s": -0.06086942883348456,
+        "interval": {
+          "ci95": [
+            -0.12410788988163617,
+            -0.006179385383040945
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.06173673153397482,
+          "share_of_draws_positive": 0.011
+        }
+      },
+      "board_clean": {
+        "arm": 245.085502490973,
+        "base": 245.01118777027736,
+        "gain_s": -0.07431472069563938,
+        "interval": {
+          "ci95": [
+            -0.145065742873615,
+            -0.009935946454567177
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.0760203001929213,
+          "share_of_draws_positive": 0.015
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 267.01489424755823,
+          "B_mean_dd": 510.815954308346,
+          "ci95": [
+            -44.55027145188372,
+            113.3603996659467
+          ],
+          "mse_gain_s2": 23.213834186770452,
+          "rows": 165677,
+          "rows_moved": 100965
+        },
+        "january": {
+          "A_mean_rd": 231.12395717846752,
+          "B_mean_dd": 437.0177055861216,
+          "ci95": [
+            -19.127350417402635,
+            73.36825182963517
+          ],
+          "mse_gain_s2": 25.230208770813373,
+          "rows": 153706,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 116.64862869826194,
+          "B_mean_dd": 318.7261719528698,
+          "ci95": [
+            -133.90566048904188,
+            -41.18579029526056
+          ],
+          "mse_gain_s2": -85.42891455634592,
+          "rows": 190713,
+          "rows_moved": 87875
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 267.01489424755823,
+          "B_mean_dd": 510.815954308346,
+          "ci95": [
+            -50.60544382984605,
+            112.8893961622434
+          ],
+          "mse_gain_s2": 23.213834186770452,
+          "rows": 165677,
+          "rows_moved": 100965
+        },
+        "january": {
+          "A_mean_rd": 231.12696456873945,
+          "B_mean_dd": 437.0233920706059,
+          "ci95": [
+            -21.58078268729643,
+            72.25782642383757
+          ],
+          "mse_gain_s2": 25.230537066872955,
+          "rows": 153704,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 116.64862869826194,
+          "B_mean_dd": 318.7261719528698,
+          "ci95": [
+            -132.87816449426495,
+            -43.55868596648387
+          ],
+          "mse_gain_s2": -85.42891455634592,
+          "rows": 190713,
+          "rows_moved": 87875
+        }
+      },
+      "class": "corrected",
+      "every_fold_interval_clear": false,
+      "every_moving_fold_interval_clear": false,
+      "folds_with_no_moved_row": [],
+      "label": "the correction alone: 255 leaves on the CORRECTED class",
+      "leaves": 255,
+      "refitted_this_run": false,
+      "rows_moved": {
+        "december": 100965,
+        "january": 69839,
+        "july_loo": 87875
+      },
+      "seconds": 0.2,
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 3675.0387693440675,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.9934554416168,
+          "rmse_base": 1754.0413602850087,
+          "rmse_gain_s": 1.0479048433919615,
+          "rows": 261,
+          "rows_moved": 37,
+          "share_of_the_gain": 0.24939821014027422
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 2879.019597593996,
+          "passes_the_clause": true,
+          "rmse_arm": 5981.016033815907,
+          "rmse_base": 5981.256708782908,
+          "rmse_gain_s": 0.24067496700172342,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.241277218296751
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -1108.4462044259208,
+          "passes_the_clause": true,
+          "rmse_arm": 2386.9635549923532,
+          "rmse_base": 2386.731356197699,
+          "rmse_gain_s": -0.23219879465432314,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.044630656356053074
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 73783.69689546194,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.9934554416168,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 20.9202267077153,
+          "rows": 261,
+          "rows_moved": 37,
+          "share_of_the_gain": 0.01683295880849754
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 37416.934506989055,
+          "passes_the_clause": true,
+          "rmse_arm": 5981.016033815907,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.1271572574778475,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.014243451616230585
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 42146.882558616766,
+          "passes_the_clause": true,
+          "rmse_arm": 2386.9635549923532,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 8.81228915925476,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.02487410944118181
+        }
+      },
+      "vector": "experiments/exp-046-surfacefit/work/d-bundle-km1299-255-guard995.npz"
+    },
+    "C": {
+      "board_all_row": {
+        "arm": 299.16712107711044,
+        "base": 299.14720454091145,
+        "gain_s": -0.019916536198991253,
+        "interval": {
+          "ci95": [
+            -0.08724888176356771,
+            0.036775840934198785
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.021085618826633522,
+          "share_of_draws_positive": 0.255
+        }
+      },
+      "board_clean": {
+        "arm": 245.03550383182923,
+        "base": 245.01118777027736,
+        "gain_s": -0.024316061551871826,
+        "interval": {
+          "ci95": [
+            -0.09691157860716756,
+            0.046041013587731786
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.025685919592767007,
+          "share_of_draws_positive": 0.2425
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 278.9521229115192,
+          "B_mean_dd": 608.3223536817077,
+          "ci95": [
+            -101.9737939103205,
+            -5.201662594744682
+          ],
+          "mse_gain_s2": -50.4181078586693,
+          "rows": 165677,
+          "rows_moved": 100966
+        },
+        "january": {
+          "A_mean_rd": 282.2068806490871,
+          "B_mean_dd": 504.82124500886084,
+          "ci95": [
+            15.951021557455363,
+            112.81487047965209
+          ],
+          "mse_gain_s2": 59.59251628931336,
+          "rows": 153706,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 155.57687643069926,
+          "B_mean_dd": 379.91295365397275,
+          "ci95": [
+            -119.62712719503183,
+            -19.334178786092334
+          ],
+          "mse_gain_s2": -68.75920079257413,
+          "rows": 190713,
+          "rows_moved": 87876
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 278.9521229115192,
+          "B_mean_dd": 608.3223536817077,
+          "ci95": [
+            -100.14384324263074,
+            -3.661977711995908
+          ],
+          "mse_gain_s2": -50.4181078586693,
+          "rows": 165677,
+          "rows_moved": 100966
+        },
+        "january": {
+          "A_mean_rd": 282.21055273153974,
+          "B_mean_dd": 504.827813754567,
+          "ci95": [
+            11.370070444205233,
+            111.22633205084979
+          ],
+          "mse_gain_s2": 59.59329170851246,
+          "rows": 153704,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 155.57687643069926,
+          "B_mean_dd": 379.91295365397275,
+          "ci95": [
+            -122.94773335578682,
+            -19.754242014391103
+          ],
+          "mse_gain_s2": -68.75920079257413,
+          "rows": 190713,
+          "rows_moved": 87876
+        }
+      },
+      "class": "corrected",
+      "every_fold_interval_clear": false,
+      "every_moving_fold_interval_clear": false,
+      "folds_with_no_moved_row": [],
+      "label": "rung + correction: 511 leaves on the CORRECTED class",
+      "leaves": 511,
+      "refitted_this_run": true,
+      "rows_moved": {
+        "december": 100966,
+        "january": 69839,
+        "july_loo": 87876
+      },
+      "seconds": 313.0,
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6028.440445530704,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.3220746041386,
+          "rmse_base": 1754.0413602850087,
+          "rmse_gain_s": 1.7192856808701436,
+          "rows": 261,
+          "rows_moved": 37,
+          "share_of_the_gain": -0.18836348515294135
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 3230.059227232958,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.986687590378,
+          "rmse_base": 5981.256708782908,
+          "rmse_gain_s": 0.2700211925302938,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.11460704161423647
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6443.649111756984,
+          "passes_the_clause": true,
+          "rmse_arm": 2385.3810843438728,
+          "rmse_base": 2386.731356197699,
+          "rmse_gain_s": 1.3502718538261433,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": -0.32234772118215776
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 76137.09857164857,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.3220746041386,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 21.591607545193483,
+          "rows": 261,
+          "rows_moved": 37,
+          "share_of_the_gain": 0.017557076974053225
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 37767.97413662801,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.986687590378,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.156503483006418,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.014288686088101786
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 49698.97787479967,
+          "passes_the_clause": true,
+          "rmse_arm": 2385.3810843438728,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 10.394759807735227,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.02924752847062153
+        }
+      },
+      "vector": "experiments/exp-046-surfacefit/work/d-bundle-km1299-511-guard995.npz"
+    },
+    "D": {
+      "board_all_row": {
+        "arm": 299.1490890742422,
+        "base": 299.14720454091145,
+        "gain_s": -0.0018845333307808687,
+        "interval": {
+          "ci95": [
+            -0.06611041667766741,
+            0.057244425285996665
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.002578331946353714,
+          "share_of_draws_positive": 0.4785
+        }
+      },
+      "board_clean": {
+        "arm": 245.01348799301002,
+        "base": 245.01118777027736,
+        "gain_s": -0.0023002227326571756,
+        "interval": {
+          "ci95": [
+            -0.07403769259088407,
+            0.06588879010656395
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.003406504552966453,
+          "share_of_draws_positive": 0.4535
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 324.38483603748324,
+          "B_mean_dd": 658.6688313599637,
+          "ci95": [
+            -67.77318793221852,
+            46.83097269382283
+          ],
+          "mse_gain_s2": -9.8991592849972,
+          "rows": 165677,
+          "rows_moved": 102212
+        },
+        "january": {
+          "A_mean_rd": 282.2068806490871,
+          "B_mean_dd": 504.82124500886084,
+          "ci95": [
+            15.951021557455363,
+            112.81487047965209
+          ],
+          "mse_gain_s2": 59.59251628931336,
+          "rows": 153706,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 173.09154781546178,
+          "B_mean_dd": 395.5773395598671,
+          "ci95": [
+            -97.77243278736081,
+            -0.3429391202465661
+          ],
+          "mse_gain_s2": -49.39424392894348,
+          "rows": 190713,
+          "rows_moved": 88428
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 324.38483603748324,
+          "B_mean_dd": 658.6688313599637,
+          "ci95": [
+            -68.85380179254244,
+            44.62872934631348
+          ],
+          "mse_gain_s2": -9.8991592849972,
+          "rows": 165677,
+          "rows_moved": 102212
+        },
+        "january": {
+          "A_mean_rd": 282.21055273153974,
+          "B_mean_dd": 504.827813754567,
+          "ci95": [
+            11.370070444205233,
+            111.22633205084979
+          ],
+          "mse_gain_s2": 59.59329170851246,
+          "rows": 153704,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 173.09154781546178,
+          "B_mean_dd": 395.5773395598671,
+          "ci95": [
+            -101.9582752758226,
+            1.5254360719213318
+          ],
+          "mse_gain_s2": -49.39424392894348,
+          "rows": 190713,
+          "rows_moved": 88428
+        }
+      },
+      "class": "corrected",
+      "every_fold_interval_clear": false,
+      "every_moving_fold_interval_clear": false,
+      "folds_with_no_moved_row": [],
+      "label": "THE WHOLE: 511 leaves, corrected class, LFPG released",
+      "leaves": 511,
+      "rows_moved": {
+        "december": 102212,
+        "january": 69839,
+        "july_loo": 88428
+      },
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6783.512868864445,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.106612258974,
+          "rmse_base": 1754.0413602850087,
+          "rmse_gain_s": 1.9347480260346401,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": -1.0795297771429195
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 3230.059227232958,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.986687590378,
+          "rmse_base": 5981.256708782908,
+          "rmse_gain_s": 0.2700211925302938,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.11460704161423647
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6443.649111756984,
+          "passes_the_clause": true,
+          "rmse_arm": 2385.3810843438728,
+          "rmse_base": 2386.731356197699,
+          "rmse_gain_s": 1.3502718538261433,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": -0.4487237767557985
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 76892.17099498231,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.106612258974,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 21.80706989035798,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.017626649757725637
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 37767.97413662801,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.986687590378,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.156503483006418,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.014288686088101786
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 49698.97787479967,
+          "passes_the_clause": true,
+          "rmse_arm": 2385.3810843438728,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 10.394759807735227,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.0291509484270679
+        }
+      },
+      "vector": "experiments/exp-046-surfacefit/work/d-bundle-km1299-511-free.npz"
+    },
+    "rider": {
+      "board_all_row": {
+        "arm": 299.1490890742422,
+        "base": 299.16712107711044,
+        "gain_s": 0.018032002868210384,
+        "interval": {
+          "ci95": [
+            0.0069662694642218526,
+            0.032297179037897195
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.018507286880279993,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_clean": {
+        "arm": 245.01348799301002,
+        "base": 245.03550383182923,
+        "gain_s": 0.02201583881921465,
+        "interval": {
+          "ci95": [
+            0.008181677201697823,
+            0.038247984490711665
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.022279415039800524,
+          "share_of_draws_positive": 0.9995
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 45.432713125964106,
+          "B_mean_dd": 50.346477678256115,
+          "ci95": [
+            20.458768731675903,
+            65.5898144576714
+          ],
+          "mse_gain_s2": 40.518948573672105,
+          "rows": 165677,
+          "rows_moved": 1246
+        },
+        "january": {
+          "A_mean_rd": 0.0,
+          "B_mean_dd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mse_gain_s2": 0.0,
+          "rows": 153706,
+          "rows_moved": 0
+        },
+        "july_loo": {
+          "A_mean_rd": 17.514671384762508,
+          "B_mean_dd": 15.66438590589436,
+          "ci95": [
+            7.174066302713284,
+            33.226536366839156
+          ],
+          "mse_gain_s2": 19.364956863630667,
+          "rows": 190713,
+          "rows_moved": 552
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 45.432713125964106,
+          "B_mean_dd": 50.346477678256115,
+          "ci95": [
+            19.770076191468,
+            63.59165086038496
+          ],
+          "mse_gain_s2": 40.518948573672105,
+          "rows": 165677,
+          "rows_moved": 1246
+        },
+        "january": {
+          "A_mean_rd": 0.0,
+          "B_mean_dd": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mse_gain_s2": 0.0,
+          "rows": 153704,
+          "rows_moved": 0
+        },
+        "july_loo": {
+          "A_mean_rd": 17.514671384762508,
+          "B_mean_dd": 15.66438590589436,
+          "ci95": [
+            7.2326100755422305,
+            32.882235756602135
+          ],
+          "mse_gain_s2": 19.364956863630667,
+          "rows": 190713,
+          "rows_moved": 552
+        }
+      },
+      "every_fold_interval_clear": false,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [
+        "january"
+      ],
+      "label": "the LFPG rider alone, on top of C",
+      "lit_rule": {
+        "dark_folds": [
+          "january"
+        ],
+        "every_moving_fold_interval_clear": true,
+        "lit_folds": [
+          "july_loo",
+          "december"
+        ]
+      },
+      "rows_moved": {
+        "december": 1246,
+        "january": 0,
+        "july_loo": 552
+      },
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 755.0724233337414,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.106612258974,
+          "rmse_base": 1752.3220746041386,
+          "rmse_gain_s": 0.21546234516449658,
+          "rows": 261,
+          "rows_moved": 1,
+          "share_of_the_gain": 0.02935680089518269
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 0.0,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.986687590378,
+          "rmse_base": 5980.986687590378,
+          "rmse_gain_s": 0.0,
+          "rows": 325,
+          "rows_moved": 0,
+          "share_of_the_gain": 0.0
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 0.0,
+          "passes_the_clause": true,
+          "rmse_arm": 2385.3810843438728,
+          "rmse_base": 2385.3810843438728,
+          "rmse_gain_s": 0.0,
+          "rows": 656,
+          "rows_moved": 0,
+          "share_of_the_gain": 0.0
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 76892.17099498231,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.106612258974,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 21.80706989035798,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.017626649757725637
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 37767.97413662801,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.986687590378,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.156503483006418,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.014288686088101786
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 49698.97787479967,
+          "passes_the_clause": true,
+          "rmse_arm": 2385.3810843438728,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 10.394759807735227,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.0291509484270679
+        }
+      }
+    }
+  },
+  "rows_added_to_the_class": {
+    "corrected": {
+      "december": 881,
+      "january": 738,
+      "july_loo": 897
+    },
+    "shipped": {
+      "december": 858,
+      "january": 742,
+      "july_loo": 897
+    }
+  },
+  "seconds": 319.8,
+  "stop_rule": {
+    "board_share_folds": [
+      "july_loo",
+      "january"
+    ],
+    "rule": "desk, 2026-09-09: if the rung fails the registered whole-update tail clause on a board-share fold (july_loo or january; december carries no board share), the table says so and the work stops",
+    "the_rung_A": {
+      "december": {
+        "passes": true,
+        "rmse_gain_s": 23.74192112233004
+      },
+      "january": {
+        "passes": true,
+        "rmse_gain_s": 2.936803200334907
+      },
+      "july_loo": {
+        "passes": true,
+        "rmse_gain_s": 9.368889644198589
+      }
+    },
+    "triggered": false
+  },
+  "threshold_s": 1299.0,
+  "what": "The next candidate priced APART and then whole: the 511 rung, the plane-metric class,"
+}

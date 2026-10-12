@@ -1,0 +1,126 @@
+{
+ "what": "candidate v6 = v18's bytes + the LFPG rider alone (read E, NO refit). Claims from exp-046 analysis/rider-read.json::price_over_v18_bytes and the desk's serve message.",
+ "sources": {
+  "increment": "experiments/exp-046-surfacefit/analysis/rider-read.json::price_over_v18_bytes",
+  "lit_rule": "experiments/exp-046-surfacefit/analysis/rider-read.json::lit_rule (\u00a726.5: an EMPTY lit fold is not a crossing)",
+  "pins": "experiments/exp-046-surfacefit/analysis/fold-population.json",
+  "bytes": "the desk's serve message, 2026-09-09: sha 54dec3df\u2026, class vector v20, 2,250 changed vs v18"
+ },
+ "how_to_run": "OMP_NUM_THREADS=2 ../../.venv/bin/python work/audit.py --head-npz ../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz --arm-npz ../exp-046-surfacefit/work/d-rider-lfpg-on-v19.npz --pins ../exp-046-surfacefit/analysis/fold-population.json --class-vector ../../artifacts/exp-046/class/{month}-v20.parquet --previous-class-vector ../../artifacts/exp-046/class/{month}-v19.parquet --candidate ../../submissions/candidates/exp-046-surface-v6.parquet --previous ../../submissions/uploaded/youthful-giraffe_v18.parquet --baseline ../../submissions/uploaded/youthful-giraffe_v17.parquet --hold '' --changed-expected-at LFPG --expect analysis/audit-expect-v6-rider.json --out analysis/audit-v6-rider.json",
+ "expect": {
+  "increment.per_fold.july_loo.mse_gain_s2": {
+   "value": 20.83201689349612,
+   "tol": 1e-09
+  },
+  "increment.per_fold.december.mse_gain_s2": {
+   "value": 51.90698721822349,
+   "tol": 1e-09
+  },
+  "increment.per_fold.january.mse_gain_s2": {
+   "value": 0.0,
+   "tol": 1e-12
+  },
+  "increment.per_fold.july_loo.A_mean_rd": {
+   "value": 19.06642683442683,
+   "tol": 1e-09
+  },
+  "increment.per_fold.july_loo.B_mean_dd": {
+   "value": 17.300836775357546,
+   "tol": 1e-09
+  },
+  "increment.per_fold.december.A_mean_rd": {
+   "value": 46.821377403257635,
+   "tol": 1e-09
+  },
+  "increment.per_fold.december.B_mean_dd": {
+   "value": 41.73576758829177,
+   "tol": 1e-09
+  },
+  "increment.per_fold.july_loo.ci95_envelope_over_the_seeds": {
+   "inside": [
+    7.660351455031558,
+    35.1660073756438
+   ],
+   "tol": 0.0
+  },
+  "increment.per_fold.december.ci95_envelope_over_the_seeds": {
+   "inside": [
+    28.92832233242996,
+    79.16031341056394
+   ],
+   "tol": 0.0
+  },
+  "increment.per_fold.july_loo.lit": true,
+  "increment.per_fold.december.lit": true,
+  "increment.per_fold.january.lit": false,
+  "increment.per_fold.january.dark_by_instrument": true,
+  "increment.per_fold.july_loo.clears_zero_on_every_seed": true,
+  "increment.per_fold.december.clears_zero_on_every_seed": true,
+  "increment.lit_rule.lit_folds": [
+   "july_loo",
+   "december"
+  ],
+  "increment.lit_rule.dark_folds": [
+   "january"
+  ],
+  "increment.lit_rule.every_lit_fold_clears_on_every_seed": true,
+  "increment.board.all_row_gain_s": {
+   "value": 0.01939941616433316,
+   "tol": 1e-09
+  },
+  "increment.board.clean_gain_s": {
+   "value": 0.02368615701368526,
+   "tol": 1e-09
+  },
+  "increment.board.all_row_ci95_envelope_over_the_seeds": {
+   "inside": [
+    0.007836841393230997,
+    0.033825724064269
+   ],
+   "tol": 0.0
+  },
+  "increment.population.july_loo.rows_moved": 552,
+  "increment.population.december.rows_moved": 1246,
+  "increment.population.january.rows_moved": 0,
+  "increment.population.july_loo.rows": 190713,
+  "increment.population.december.rows": 165677,
+  "increment.population.january.rows": 153706,
+  "pins.by_fold.july_loo.their_airport_days": 296,
+  "pins.by_fold.december.their_airport_days": 297,
+  "pins.by_fold.january.their_airport_days": 218,
+  "pins.by_fold.july_loo.days_agree": true,
+  "pins.by_fold.december.days_agree": true,
+  "pins.by_fold.january.days_agree": true,
+  "bytes.template.row_order_is_the_template_order": true,
+  "bytes.template.previous_row_order_is_the_template_order": true,
+  "bytes.template.all_finite": true,
+  "bytes.template.rows": 344841,
+  "bytes.template.duplicate_keys": 0,
+  "bytes.moved.changed_rows_outside_the_expected_airports": 0,
+  "bytes.class.changed_is_a_subset_of_occupied": true,
+  "bytes.class.written_and_not_occupied": 0,
+  "bytes.class.rows_missing_for_a_template_key": 0,
+  "bytes.class.noac_rows_changed": 0,
+  "bytes.candidate_sha256": "54dec3df14a9aaea6938b05c0b8e4280a958bce32f734b293ecb2deb32eb41fc",
+  "bytes.moved.rows_changed": 2250,
+  "bytes.template.min": {
+   "value": 60.0,
+   "tol": 0.5
+  },
+  "bytes.class.occupied": 196256,
+  "bytes.class.changed_rows_outside_occupied": 0,
+  "bytes.class_vs_previous.newly_occupied": 2346,
+  "bytes.class_vs_previous.newly_occupied_that_changed": 2250,
+  "bytes.class_vs_previous.newly_occupied_that_did_not_change": 96,
+  "bytes.class_vs_previous.changed_rows_inside_the_previously_occupied_class": 0,
+  "bytes.class_vs_previous.changed_is_disjoint_from_the_previously_occupied_class": true,
+  "bytes.moved.rows_reverted_to_the_baseline": 0,
+  "bytes.class.occupied_unwritten_rows_that_changed": 0,
+  "bytes.class.occupied_and_not_written": 0,
+  "bytes.class.guard_held": 1573
+ },
+ "notes_on_the_expectation": {
+  "occupied_and_not_written": "RE-RUN 2026-09-09 on the re-emitted v20 (desk commit adf5d60, class shas 4dc51b4b / ccf37a67: occupied_by_exp_046 identical row for row, guard_held_by_exp_046 0 -> 1,573, written_by_exp_046 == occupied == 196,256, chain_mode_4_written 2,451 -> 2,456).  On the re-emitted vector this claim is 0 again and guard_held carries the 1,573.  The first vector's reading is kept as the record of the defect this lane found before the desk's notice: 1,573 = 1,477 v19 guard-held + 96 newly occupied and unchanged, none of which changed value, so no byte was ever at risk.  The invariant that protects the bytes either way is occupied_unwritten_rows_that_changed == 0.",
+  "handshake": "the standing rule still reads occupied_by_exp_046 and NOT written_by_exp_046: under v20's convention 1,573 occupied rows carry surfacefit's value while written=False, so a serve that complemented `written` would overwrite them."
+ }
+}

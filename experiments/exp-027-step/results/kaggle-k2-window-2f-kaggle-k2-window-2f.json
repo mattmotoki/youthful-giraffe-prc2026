@@ -1,0 +1,33 @@
+{
+ "tag": "kaggle-k2-window-2f",
+ "mechanism": "",
+ "rounds": 1200,
+ "clip_z": 6000.0,
+ "params": {
+  "num_threads": 4
+ },
+ "seeds": 1,
+ "ghost_mode": "mixbase",
+ "main_model": "both",
+ "exact_rounds": 300,
+ "folds": {
+  "december": {
+   "rmse": 206.36161175660953,
+   "rmse_lo": 193.3511357549485,
+   "rmse_hi": 1827.160838487556,
+   "n": 165677,
+   "n_hi": 261,
+   "secs": 2439.5,
+   "n_train": 1829235
+  },
+  "january": {
+   "rmse": 342.0832401822485,
+   "rmse_lo": 198.13053403480137,
+   "rmse_hi": 6067.75621171309,
+   "n": 153706,
+   "n_hi": 325,
+   "secs": 1548.6,
+   "n_train": 1840608
+  }
+ }
+}

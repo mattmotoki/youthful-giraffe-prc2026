@@ -1,0 +1,122 @@
+{
+  "version": "5, final entry upload 73",
+  "solution_words": {
+    "prose_without_alt_text": 1905,
+    "alt_text": 216,
+    "wc_w": 2140
+  },
+  "figures": {
+    "01-progress.png": {
+      "size": [
+        1600,
+        1056
+      ],
+      "sha256": "7cf9fb8498ef60c55dcf1630095d45b64d419eefd3ef28cbd3d39da99573f8ad",
+      "five_seconds": "Our best public score fell from 265.8 to 223.3 s over 75 uploads; the off-block time seen in ADS-B ground tracks gave the largest step (−14.3 s), and each step of 2.5 s or more has a label that says what we did.",
+      "does_it": "yes: four labels of the form gain then what we did, each with a leader to the dot where its step ends; no step after upload 52 reaches 2.5 s, so the steps of uploads 64 to 73 have no label; first and best scores as plain text by their dots; no phase bands, dates or upload numbers in the labels; no line crosses a label",
+      "opened_at_800px": true
+    },
+    "02-clock.png": {
+      "size": [
+        1600,
+        1184
+      ],
+      "sha256": "cdf053551059cab3c2feffa2d4fc8251b8455641b04026170153668257315c67",
+      "five_seconds": "Timing the first ADS-B point back to the stand puts the off-block clock 3 to 7 minutes earlier at the median, at every airport.",
+      "does_it": "yes: the sketch shows old and new clock; the dots read 2.8 to 7.1 min",
+      "opened_at_800px": true
+    },
+    "03-coverage.png": {
+      "size": [
+        1600,
+        1008
+      ],
+      "sha256": "b45e26387c4b7f0211fb14e0e7c61e30e497a75f8cafb598b010f009e9781bd5",
+      "five_seconds": "The share of departures with an ADS-B clock moved sharply between 2025 and 2026: Rome July lost it, Heathrow July and Madrid January gained it.",
+      "does_it": "yes: arrows mark the large moves; two colours with a key; small values sit below their dots",
+      "opened_at_800px": true
+    },
+    "04-join-window.png": {
+      "size": [
+        1600,
+        896
+      ],
+      "sha256": "6e595fe66fccb580d1be26c658cade2110a9a33cf7e84f4c0930f193007bdb42",
+      "five_seconds": "Every joined 2025 departure has its block time within ±3,606 s of the plan; outside the window, no plan joins.",
+      "does_it": "yes: the histogram ends inside the red lines; the shaded sides say what a missing plan means",
+      "opened_at_800px": true
+    },
+    "05-placeholders.png": {
+      "size": [
+        1600,
+        944
+      ],
+      "sha256": "0b4511e50928da9bdbf5b7c49bcad55332b609da52fda26799ac88b0700a5de6",
+      "five_seconds": "At Rome, 8.4 % of delayed or early departures keep the scheduled time as block time; no other airport exceeds 1.5 %.",
+      "does_it": "yes: one red bar against grey bars, with the count",
+      "opened_at_800px": true
+    },
+    "06-stand-bound.png": {
+      "size": [
+        1600,
+        896
+      ],
+      "sha256": "a92540a4a671e7c6fb028a6bbdeb9e555faa18a92ae7cb494f9cb0018ad47eda",
+      "five_seconds": "When another aircraft parks at the stand after 18 min, a taxi of 121.1 min has a floor of 103.1 min, far above the earlier model's 52.3 min.",
+      "does_it": "yes: three bars on one time axis with the stand event marked",
+      "opened_at_800px": true
+    },
+    "07-runway-sequence.png": {
+      "size": [
+        1600,
+        1504
+      ],
+      "sha256": "25020787b0068fe7bdaaeddeec82f97c819d06b246863fb338baa1fd33e42f1c",
+      "five_seconds": "The sequence network sees twelve departures of one runway in take-off order; its twin without neighbours enters the stack with a negative weight.",
+      "does_it": "yes: the bars show 4 before, 4 core, 4 after; the flow shows data, model, combination and output shapes with +0.48 and −0.21",
+      "opened_at_800px": true
+    },
+    "08-early-stopping.png": {
+      "size": [
+        1600,
+        784
+      ],
+      "sha256": "3438972c5148f333eb178e4dcc29808cac8be4183f322dd7416fa2824104de76",
+      "five_seconds": "Scoring the early stop only on served rows let the stacker train 4.4 and 7.2 times longer.",
+      "does_it": "yes: two arrows from amber to teal dots with the round counts and the result line",
+      "opened_at_800px": true
+    },
+    "09-alignment.png": {
+      "size": [
+        1600,
+        896
+      ],
+      "sha256": "7d97d476522cb27331743c32063f84e60f2210d56d27712c4d0bd11b2d3aa822",
+      "five_seconds": "Added up, the board kept about 0.8 of the local gain; single steps scatter on both sides of the 0.83 line.",
+      "does_it": "yes: two panels with one-to-one and 0.83 lines; every point labelled with its upload",
+      "opened_at_800px": true
+    },
+    "10-pipeline.png": {
+      "size": [
+        1568,
+        3338
+      ],
+      "sha256": "3d77bc5bcdaf048304a180e0eedbff73a286c20e87305b561c7ad17f1e914d15",
+      "five_seconds": "Upload 73 runs top to bottom: five inputs, two feature steps, tree models with the September entry, a clock head and four other views (the GRU box with its dark-day twin), three combinations, four recording rules, the quarter step of upload 64, then one group with the three later steps (five steps outside the linear stack, half of a second-level LightGBM correction, a per-airport step toward the airport-traffic transformer), one output; the key gives each shape and colour its role.",
+      "does_it": "yes: Mermaid diagram, taller, arrows with room, key in two rows, text readable at 800 px wide; one arrow per feature box into the tree-model group keeps crossings few; the later steps sit in one labelled group, and the five-step box has hand line breaks",
+      "opened_at_800px": true,
+      "source": "src/10-pipeline.mmd, rendered on the Mac with @mermaid-js/mermaid-cli 12.0.0 and local Chrome (-s 2 -b white)"
+    }
+  },
+  "links_exist": true,
+  "bad_links": [],
+  "privacy_text_check": true,
+  "privacy_hits": [],
+  "deterministic_rebuild": "full run of build_figures.py after the v73 changes left figures 02-09 byte-identical; figure 10 is no longer drawn by the script",
+  "visual_inspection": {
+    "all_10_opened_at_800px_width": true,
+    "repairs": "Pass 2: figure 1 labels moved until no leader crossed its own text; figure 10 font set to Arial, key in two rows and the four other views in a 2x2 block so the text reads at 800 px. Pass 3 (v73): figure 1 axis to 77 with a tick at 75; figure 10 five-step box with hand line breaks so no word breaks inside 'linear stack'; figures 1 and 10 opened at 800 px."
+  },
+  "examples": "No flight identifiers, call signs, registrations or exact flight dates in Figures 6 and 7 or in their statistics.",
+  "fact_check": "Fresh-context review of SOLUTION.md against CLAIMS-SOLUTION.md and the sources on 2026-10-05: 11 findings (rounding 0.79 to 0.78, review and forecast scope, clock onset wording, failure-table scope, the whole-chain sentence, alt text 'shaded', intro source, sign convention, the upload 48 double read, the public extract rows); all fixed in text or noted in CLAIMS. Pass 2 fresh-context review on 2026-10-05: 7 findings (figure 1 clock-head and stack labels, phase 1 name, figure 10 clock and OPDI arrows and ERA5 input, dark-day twin not in upload 59, weather paragraph, 0.83 line and the positive local read of upload 60); all fixed. v73 update (2026-10-08): no fresh-context review in this pass; the writer checked each new number against the sources in CLAIMS-SOLUTION.md and recomputed every board ΔMSE from the scores."
+}

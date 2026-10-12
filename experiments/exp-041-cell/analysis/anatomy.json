@@ -1,0 +1,5896 @@
+{
+  "screen": "anatomy",
+  "predeclared": {
+    "bin_s": 600,
+    "size_cuts": [
+      2,
+      4,
+      6,
+      10
+    ],
+    "lags": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "blocks": 5,
+    "seed": 41,
+    "trees": 300,
+    "depth": 3,
+    "lr": 0.05,
+    "pairs_per_relation": 200,
+    "dates_per_relation": 20,
+    "eligible_regime": "nm_bulk",
+    "hold_airports": [
+      "EHAM",
+      "EDDF"
+    ]
+  },
+  "folds": {
+    "july_loo": {
+      "fold": "july_loo",
+      "month": "2025-07",
+      "n_rows": 190713,
+      "n_eligible": 131956,
+      "n_cells": 28431,
+      "median_cell_size": 6.0,
+      "cell_size_p90": 9.0,
+      "headline": {
+        "cell_ge_2": {
+          "pairs": 325404,
+          "value": 7020.2,
+          "ci": [
+            6140.6,
+            8114.4
+          ],
+          "rows": 129144,
+          "dates": 31
+        },
+        "cell_ge_4": {
+          "pairs": 310284,
+          "value": 6912.6,
+          "ci": [
+            5988.6,
+            7995.3
+          ],
+          "rows": 110691,
+          "dates": 31
+        },
+        "cell_ge_6": {
+          "pairs": 241926,
+          "value": 6811.0,
+          "ci": [
+            5768.5,
+            8115.2
+          ],
+          "rows": 72204,
+          "dates": 31
+        },
+        "cell_ge_10": {
+          "pairs": 52827,
+          "value": 7209.1,
+          "ci": [
+            5414.1,
+            9395.1
+          ],
+          "rows": 10483,
+          "dates": 31
+        },
+        "q04_support_dep6_arr6": {
+          "pairs": 111206,
+          "value": 5747.3,
+          "ci": [
+            5178.6,
+            6335.1
+          ],
+          "rows": 34011,
+          "dates": 31
+        },
+        "q04_support_note": "exp-039 analysis/q04.json cross_product_r_rbar_self_excluded on the same support; assignments/cell.md quotes a different triple (see RESULTS 1)"
+      },
+      "plugin_cell_mean": {
+        "cell_ge_2": {
+          "rows": 129144,
+          "plugin_var_s2": 15778.0,
+          "ci": [
+            14535.5,
+            17019.4
+          ],
+          "noise_term_s2": 8424.5,
+          "debiased_s2": 7353.5,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "cell_ge_4": {
+          "rows": 110691,
+          "plugin_var_s2": 13842.1,
+          "ci": [
+            12888.0,
+            14876.0
+          ],
+          "noise_term_s2": 6882.5,
+          "debiased_s2": 6959.6,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "cell_ge_6": {
+          "rows": 72204,
+          "plugin_var_s2": 11972.8,
+          "ci": [
+            10898.4,
+            13174.7
+          ],
+          "noise_term_s2": 5186.9,
+          "debiased_s2": 6785.8,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "cell_ge_10": {
+          "rows": 10483,
+          "plugin_var_s2": 10356.4,
+          "ci": [
+            8449.1,
+            12599.3
+          ],
+          "noise_term_s2": 3392.6,
+          "debiased_s2": 6963.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "by_airport": {
+        "EDDM": {
+          "pairs": 34430,
+          "value": 3139.6,
+          "ci": [
+            2333.8,
+            4117.1
+          ],
+          "rows": 14239,
+          "dates": 31
+        },
+        "EGLL": {
+          "pairs": 50460,
+          "value": 3908.3,
+          "ci": [
+            3308.4,
+            4526.2
+          ],
+          "rows": 18515,
+          "dates": 31
+        },
+        "LEBL": {
+          "pairs": 28948,
+          "value": 9506.0,
+          "ci": [
+            7768.0,
+            11671.1
+          ],
+          "rows": 14416,
+          "dates": 31
+        },
+        "LEMD": {
+          "pairs": 44022,
+          "value": 3665.8,
+          "ci": [
+            2931.1,
+            4491.7
+          ],
+          "rows": 16769,
+          "dates": 31
+        },
+        "LFPG": {
+          "pairs": 49291,
+          "value": 5617.8,
+          "ci": [
+            4310.6,
+            7142.1
+          ],
+          "rows": 18112,
+          "dates": 31
+        },
+        "LIRF": {
+          "pairs": 24170,
+          "value": 9731.4,
+          "ci": [
+            7632.2,
+            12094.8
+          ],
+          "rows": 12942,
+          "dates": 31
+        },
+        "LSZH": {
+          "pairs": 18228,
+          "value": 5348.7,
+          "ci": [
+            4551.5,
+            6287.6
+          ],
+          "rows": 10700,
+          "dates": 31
+        },
+        "LTFM": {
+          "pairs": 75855,
+          "value": 12298.8,
+          "ci": [
+            8840.0,
+            16777.9
+          ],
+          "rows": 23451,
+          "dates": 31
+        }
+      },
+      "by_airport_plugin": {
+        "EDDM": {
+          "rows": 14239,
+          "plugin_var_s2": 7604.8,
+          "ci": [
+            5804.8,
+            10245.6
+          ],
+          "noise_term_s2": 3814.7,
+          "debiased_s2": 3790.2,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "EGLL": {
+          "rows": 18515,
+          "plugin_var_s2": 10669.5,
+          "ci": [
+            9206.9,
+            12520.3
+          ],
+          "noise_term_s2": 6618.1,
+          "debiased_s2": 4051.4,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LEBL": {
+          "rows": 14416,
+          "plugin_var_s2": 19493.3,
+          "ci": [
+            16951.4,
+            22385.8
+          ],
+          "noise_term_s2": 9954.6,
+          "debiased_s2": 9538.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LEMD": {
+          "rows": 16769,
+          "plugin_var_s2": 8847.2,
+          "ci": [
+            7750.8,
+            10193.7
+          ],
+          "noise_term_s2": 4931.3,
+          "debiased_s2": 3915.8,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LFPG": {
+          "rows": 18112,
+          "plugin_var_s2": 12242.3,
+          "ci": [
+            10429.8,
+            14175.0
+          ],
+          "noise_term_s2": 6150.2,
+          "debiased_s2": 6092.1,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LIRF": {
+          "rows": 12942,
+          "plugin_var_s2": 37345.8,
+          "ci": [
+            31249.0,
+            46154.4
+          ],
+          "noise_term_s2": 27409.9,
+          "debiased_s2": 9935.9,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LSZH": {
+          "rows": 10700,
+          "plugin_var_s2": 10645.4,
+          "ci": [
+            8712.0,
+            13070.2
+          ],
+          "noise_term_s2": 5660.4,
+          "debiased_s2": 4985.0,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LTFM": {
+          "rows": 23451,
+          "plugin_var_s2": 18963.8,
+          "ci": [
+            15329.3,
+            23379.2
+          ],
+          "noise_term_s2": 6746.8,
+          "debiased_s2": 12217.0,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "by_hour": {
+        "00-06": {
+          "pairs": 44892,
+          "value": 11454.8,
+          "ci": [
+            7375.7,
+            17422.7
+          ],
+          "rows": 15978,
+          "dates": 31
+        },
+        "06-10": {
+          "pairs": 73105,
+          "value": 5815.6,
+          "ci": [
+            4800.5,
+            6901.6
+          ],
+          "rows": 29032,
+          "dates": 31
+        },
+        "10-14": {
+          "pairs": 80622,
+          "value": 5417.4,
+          "ci": [
+            4805.3,
+            6047.3
+          ],
+          "rows": 30657,
+          "dates": 31
+        },
+        "14-18": {
+          "pairs": 70974,
+          "value": 7583.7,
+          "ci": [
+            6272.5,
+            8917.2
+          ],
+          "rows": 28192,
+          "dates": 31
+        },
+        "18-24": {
+          "pairs": 55811,
+          "value": 6629.9,
+          "ci": [
+            4594.6,
+            9093.9
+          ],
+          "rows": 25285,
+          "dates": 31
+        }
+      },
+      "by_hour_plugin": {
+        "00-06": {
+          "rows": 15978,
+          "plugin_var_s2": 16669.9,
+          "ci": [
+            13349.0,
+            21113.6
+          ],
+          "noise_term_s2": 7124.2,
+          "debiased_s2": 9545.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "06-10": {
+          "rows": 29032,
+          "plugin_var_s2": 12550.0,
+          "ci": [
+            11392.7,
+            13841.8
+          ],
+          "noise_term_s2": 6668.0,
+          "debiased_s2": 5882.0,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "10-14": {
+          "rows": 30657,
+          "plugin_var_s2": 14836.9,
+          "ci": [
+            13637.2,
+            16307.2
+          ],
+          "noise_term_s2": 8756.0,
+          "debiased_s2": 6080.9,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "14-18": {
+          "rows": 28192,
+          "plugin_var_s2": 17211.8,
+          "ci": [
+            15269.5,
+            19355.1
+          ],
+          "noise_term_s2": 9257.6,
+          "debiased_s2": 7954.2,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "18-24": {
+          "rows": 25285,
+          "plugin_var_s2": 17899.1,
+          "ci": [
+            14424.4,
+            22482.7
+          ],
+          "noise_term_s2": 9932.0,
+          "debiased_s2": 7967.1,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "by_cell_size": {
+        "2-3": {
+          "pairs": 15120,
+          "value": 9228.2,
+          "ci": [
+            6992.4,
+            11892.8
+          ],
+          "rows": 18453,
+          "dates": 31
+        },
+        "4-5": {
+          "pairs": 68358,
+          "value": 7272.4,
+          "ci": [
+            6366.8,
+            8291.8
+          ],
+          "rows": 38487,
+          "dates": 31
+        },
+        "6-9": {
+          "pairs": 189099,
+          "value": 6699.7,
+          "ci": [
+            5703.6,
+            7950.6
+          ],
+          "rows": 61721,
+          "dates": 31
+        },
+        "10-19": {
+          "pairs": 52827,
+          "value": 7209.1,
+          "ci": [
+            5367.5,
+            9402.4
+          ],
+          "rows": 10483,
+          "dates": 31
+        },
+        "20-+": {
+          "pairs": 0,
+          "value": null,
+          "ci": [
+            null,
+            null
+          ],
+          "rows": 0,
+          "dates": 0
+        }
+      },
+      "by_cell_size_plugin": {
+        "2-3": {
+          "rows": 18453,
+          "plugin_var_s2": 27389.0,
+          "ci": [
+            23739.6,
+            32084.8
+          ],
+          "noise_term_s2": 17673.8,
+          "debiased_s2": 9715.2,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "4-5": {
+          "rows": 38487,
+          "plugin_var_s2": 17329.2,
+          "ci": [
+            16074.2,
+            18653.4
+          ],
+          "noise_term_s2": 10063.5,
+          "debiased_s2": 7265.6,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "6-9": {
+          "rows": 61721,
+          "plugin_var_s2": 12217.4,
+          "ci": [
+            11220.8,
+            13415.8
+          ],
+          "noise_term_s2": 5491.7,
+          "debiased_s2": 6725.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "10-19": {
+          "rows": 10483,
+          "plugin_var_s2": 10356.4,
+          "ci": [
+            8493.4,
+            12415.6
+          ],
+          "noise_term_s2": 3392.6,
+          "debiased_s2": 6963.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "20-+": {
+          "rows": 0,
+          "plugin_var_s2": null,
+          "noise_term_s2": null,
+          "debiased_s2": null
+        }
+      },
+      "by_regime": {
+        "nm_bulk (eligible)": {
+          "pairs": 325404,
+          "value": 7020.2,
+          "ci": [
+            6155.4,
+            8182.8
+          ],
+          "rows": 129144,
+          "dates": 31
+        },
+        "nm_bulk at EHAM/EDDF (held)": {
+          "pairs": 129193,
+          "value": 3002.9,
+          "ci": [
+            2680.4,
+            3367.5
+          ],
+          "rows": 39864,
+          "dates": 31
+        },
+        "nm_late": {
+          "pairs": 6557,
+          "value": 65937.8,
+          "ci": [
+            36830.1,
+            102525.1
+          ],
+          "rows": 7579,
+          "dates": 31
+        },
+        "nonm": {
+          "pairs": 798,
+          "value": 65894.0,
+          "ci": [
+            22005.0,
+            153523.1
+          ],
+          "rows": 1012,
+          "dates": 29
+        },
+        "noac": {
+          "pairs": 33,
+          "value": 2001578.3,
+          "ci": [
+            -1844365.8,
+            6545913.3
+          ],
+          "rows": 52,
+          "dates": 13
+        }
+      },
+      "by_regime_plugin": {
+        "nm_bulk (eligible)": {
+          "rows": 129144,
+          "plugin_var_s2": 15778.0,
+          "ci": [
+            14597.9,
+            17101.3
+          ],
+          "noise_term_s2": 8424.5,
+          "debiased_s2": 7353.5,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "nm_bulk at EHAM/EDDF (held)": {
+          "rows": 39864,
+          "plugin_var_s2": 6410.8,
+          "ci": [
+            5762.9,
+            7133.8
+          ],
+          "noise_term_s2": 3247.7,
+          "debiased_s2": 3163.1,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "nm_late": {
+          "rows": 7579,
+          "plugin_var_s2": 124424.3,
+          "ci": [
+            101388.5,
+            156274.5
+          ],
+          "noise_term_s2": 69321.0,
+          "debiased_s2": 55103.2,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "nonm": {
+          "rows": 1012,
+          "plugin_var_s2": 244096.1,
+          "ci": [
+            99019.5,
+            453723.8
+          ],
+          "noise_term_s2": 162736.8,
+          "debiased_s2": 81359.4,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "noac": {
+          "rows": 52,
+          "plugin_var_s2": 6519269.8,
+          "ci": [
+            2333502.1,
+            12261639.6
+          ],
+          "noise_term_s2": 5631599.7,
+          "debiased_s2": 887670.1,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "persistence": {
+        "lag_0": {
+          "pairs": 325404,
+          "value": 7020.2,
+          "ci": [
+            6109.7,
+            8170.8
+          ],
+          "rows": 129144,
+          "dates": 31
+        },
+        "lag_1": {
+          "pairs": 351063,
+          "value": 5471.4,
+          "ci": [
+            4647.7,
+            6396.3
+          ],
+          "rows": 129346,
+          "dates": 31
+        },
+        "lag_2": {
+          "pairs": 344026,
+          "value": 3456.0,
+          "ci": [
+            2710.1,
+            4414.3
+          ],
+          "rows": 128580,
+          "dates": 31
+        },
+        "lag_3": {
+          "pairs": 337166,
+          "value": 2777.3,
+          "ci": [
+            2091.2,
+            3704.1
+          ],
+          "rows": 127888,
+          "dates": 31
+        },
+        "lag_4": {
+          "pairs": 330996,
+          "value": 2089.6,
+          "ci": [
+            1499.2,
+            2785.5
+          ],
+          "rows": 127078,
+          "dates": 31
+        },
+        "lag_5": {
+          "pairs": 325043,
+          "value": 2078.1,
+          "ci": [
+            1543.4,
+            2796.7
+          ],
+          "rows": 126291,
+          "dates": 31
+        },
+        "lag_6": {
+          "pairs": 319822,
+          "value": 1585.2,
+          "ci": [
+            1015.4,
+            2218.8
+          ],
+          "rows": 125624,
+          "dates": 31
+        }
+      },
+      "autocorrelation": {
+        "lag_0": {
+          "cell_pairs": 28431,
+          "rho_plugin": 1.0,
+          "rho_debiased": 1.0,
+          "cov_s2": 14042.2,
+          "var_plugin_s2": 14042.2,
+          "var_debiased_s2": 7292.2,
+          "per_cell": {
+            "rho_plugin": 1.0,
+            "rho_debiased": 1.0,
+            "cov_s2": 23613.2,
+            "var_plugin_s2": 23613.2,
+            "var_debiased_s2": 13890.4
+          }
+        },
+        "lag_1": {
+          "cell_pairs": 27037,
+          "rho_plugin": 0.3768,
+          "rho_debiased": 0.738,
+          "cov_s2": 5467.4,
+          "var_plugin_s2": 14707.8,
+          "var_debiased_s2": 7602.5,
+          "per_cell": {
+            "rho_plugin": 0.2825,
+            "rho_debiased": 0.5146,
+            "cov_s2": 6060.4,
+            "var_plugin_s2": 21500.8,
+            "var_debiased_s2": 11790.2
+          }
+        },
+        "lag_2": {
+          "cell_pairs": 26842,
+          "rho_plugin": 0.2369,
+          "rho_debiased": 0.4642,
+          "cov_s2": 3449.3,
+          "var_plugin_s2": 14571.3,
+          "var_debiased_s2": 7469.5,
+          "per_cell": {
+            "rho_plugin": 0.1765,
+            "rho_debiased": 0.3299,
+            "cov_s2": 3669.8,
+            "var_plugin_s2": 20741.7,
+            "var_debiased_s2": 10995.6
+          }
+        },
+        "lag_3": {
+          "cell_pairs": 26713,
+          "rho_plugin": 0.1903,
+          "rho_debiased": 0.3741,
+          "cov_s2": 2771.3,
+          "var_plugin_s2": 14405.2,
+          "var_debiased_s2": 7325.4,
+          "per_cell": {
+            "rho_plugin": 0.1455,
+            "rho_debiased": 0.2652,
+            "cov_s2": 3083.0,
+            "var_plugin_s2": 20954.8,
+            "var_debiased_s2": 11423.7
+          }
+        },
+        "lag_4": {
+          "cell_pairs": 26538,
+          "rho_plugin": 0.141,
+          "rho_debiased": 0.2782,
+          "cov_s2": 2083.8,
+          "var_plugin_s2": 14575.5,
+          "var_debiased_s2": 7395.8,
+          "per_cell": {
+            "rho_plugin": 0.1056,
+            "rho_debiased": 0.1933,
+            "cov_s2": 2255.6,
+            "var_plugin_s2": 20916.2,
+            "var_debiased_s2": 11261.2
+          }
+        },
+        "lag_5": {
+          "cell_pairs": 26374,
+          "rho_plugin": 0.1388,
+          "rho_debiased": 0.2745,
+          "cov_s2": 2071.2,
+          "var_plugin_s2": 14577.6,
+          "var_debiased_s2": 7266.9,
+          "per_cell": {
+            "rho_plugin": 0.113,
+            "rho_debiased": 0.2047,
+            "cov_s2": 2452.3,
+            "var_plugin_s2": 21124.5,
+            "var_debiased_s2": 11420.0
+          }
+        },
+        "lag_6": {
+          "cell_pairs": 26242,
+          "rho_plugin": 0.1048,
+          "rho_debiased": 0.2075,
+          "cov_s2": 1580.9,
+          "var_plugin_s2": 14636.4,
+          "var_debiased_s2": 7298.1,
+          "per_cell": {
+            "rho_plugin": 0.0775,
+            "rho_debiased": 0.1391,
+            "cov_s2": 1709.2,
+            "var_plugin_s2": 21360.1,
+            "var_debiased_s2": 11631.5
+          }
+        },
+        "note": "matched cell pairs at each lag.  The headline numbers weight each cell pair by n_a * n_b -- the number of row pairs it carries, the same weight the cross-product table uses -- and `per_cell` repeats them with one weight per cell.  `rho_plugin` is the assignment's statistic on the plug-in mean; `rho_debiased` removes the within-cell noise from the denominator only, because noise in two different bins is independent"
+      },
+      "crossover_population": {
+        "eligible_rows": 131956,
+        "rows_in_cells_with_2_runways_and_2_operators": 62870,
+        "rows_with_all_four_relations_non_empty": 8571,
+        "matched_pct_of_eligible": 6.5,
+        "cells_touched_by_matched_rows": 2096,
+        "unmatched_rows_by_reason": {
+          "single_runway_cell": 62307,
+          "single_operator_cell": 13462,
+          "2x2_cell_but_a_relation_empty": 54299
+        },
+        "note": "the matched rule is row-level: a row is kept when all four relations have at least one counterpart, so every relation is estimated on the same rows and the same days",
+        "q10_predeclared_rule": {
+          "min_rows_per_intersection": 3,
+          "cells": 28431,
+          "cells_supported": 0,
+          "cells_unsupported": 28431,
+          "cells_supported_pct": 0.0,
+          "rows_in_the_chosen_2x2": 0,
+          "rows_pct_of_eligible": 0.0,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner"
+        }
+      },
+      "q10_rule_grain_scan": {
+        "10min": {
+          "min_rows_per_intersection": 3,
+          "cells": 28431,
+          "cells_supported": 0,
+          "cells_unsupported": 28431,
+          "cells_supported_pct": 0.0,
+          "rows_in_the_chosen_2x2": 0,
+          "rows_pct_of_eligible": 0.0,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 10
+        },
+        "30min": {
+          "min_rows_per_intersection": 3,
+          "cells": 10140,
+          "cells_supported": 38,
+          "cells_unsupported": 10102,
+          "cells_supported_pct": 0.37,
+          "rows_in_the_chosen_2x2": 616,
+          "rows_pct_of_eligible": 0.47,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 30,
+          "relations": {
+            "same_rwy_same_op": {
+              "pairs": 1026,
+              "value": 4282.2,
+              "ci": [
+                2478.9,
+                6084.4
+              ],
+              "rows": 616,
+              "dates": 24
+            },
+            "same_rwy_diff_op": {
+              "pairs": 1243,
+              "value": 4788.6,
+              "ci": [
+                2832.1,
+                6861.4
+              ],
+              "rows": 616,
+              "dates": 24
+            },
+            "diff_rwy_same_op": {
+              "pairs": 1240,
+              "value": -1302.1,
+              "ci": [
+                -3542.6,
+                1086.7
+              ],
+              "rows": 616,
+              "dates": 24
+            },
+            "diff_rwy_diff_op": {
+              "pairs": 1253,
+              "value": -678.0,
+              "ci": [
+                -2631.3,
+                1347.9
+              ],
+              "rows": 616,
+              "dates": 24
+            }
+          },
+          "components": {
+            "airport_window_s2": -678.0,
+            "runway_given_window_s2": 5466.6,
+            "operator_given_window_s2": -624.1,
+            "additivity_residual_s2": 117.7,
+            "shared_component_on_these_rows_s2": 1655.1,
+            "sum_of_components_s2": 4282.2,
+            "fractions_of_the_sum": {
+              "airport_shared_pct": -15.8,
+              "runway_shared_pct": 127.7,
+              "operator_shared_pct": -14.6,
+              "additivity_pct": 2.7
+            },
+            "fractions_of_the_shared_component": {
+              "denominator_s2": 1655.1,
+              "airport_shared_pct": -41.0,
+              "runway_shared_pct": 330.3,
+              "operator_shared_pct": -37.7,
+              "additivity_pct": 7.1
+            }
+          },
+          "coverage": {
+            "LEMD": {
+              "same_rwy_same_op": {
+                "pairs": 1026,
+                "dates": 24,
+                "met": true
+              },
+              "same_rwy_diff_op": {
+                "pairs": 1243,
+                "dates": 24,
+                "met": true
+              },
+              "diff_rwy_same_op": {
+                "pairs": 1240,
+                "dates": 24,
+                "met": true
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 1253,
+                "dates": 24,
+                "met": true
+              }
+            }
+          },
+          "airports_supported": [
+            "LEMD"
+          ]
+        },
+        "60min": {
+          "min_rows_per_intersection": 3,
+          "cells": 5249,
+          "cells_supported": 83,
+          "cells_unsupported": 5166,
+          "cells_supported_pct": 1.58,
+          "rows_in_the_chosen_2x2": 1970,
+          "rows_pct_of_eligible": 1.49,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 60,
+          "relations": {
+            "same_rwy_same_op": {
+              "pairs": 5759,
+              "value": 3291.9,
+              "ci": [
+                1876.4,
+                4771.6
+              ],
+              "rows": 1970,
+              "dates": 31
+            },
+            "same_rwy_diff_op": {
+              "pairs": 5829,
+              "value": 2914.8,
+              "ci": [
+                1796.8,
+                4162.9
+              ],
+              "rows": 1970,
+              "dates": 31
+            },
+            "diff_rwy_same_op": {
+              "pairs": 6000,
+              "value": 778.4,
+              "ci": [
+                -360.9,
+                1990.8
+              ],
+              "rows": 1970,
+              "dates": 31
+            },
+            "diff_rwy_diff_op": {
+              "pairs": 5872,
+              "value": 383.5,
+              "ci": [
+                -645.8,
+                1435.4
+              ],
+              "rows": 1970,
+              "dates": 31
+            }
+          },
+          "components": {
+            "airport_window_s2": 383.5,
+            "runway_given_window_s2": 2531.3,
+            "operator_given_window_s2": 394.9,
+            "additivity_residual_s2": -17.8,
+            "shared_component_on_these_rows_s2": 1827.4,
+            "sum_of_components_s2": 3291.9,
+            "fractions_of_the_sum": {
+              "airport_shared_pct": 11.6,
+              "runway_shared_pct": 76.9,
+              "operator_shared_pct": 12.0,
+              "additivity_pct": -0.5
+            },
+            "fractions_of_the_shared_component": {
+              "denominator_s2": 1827.4,
+              "airport_shared_pct": 21.0,
+              "runway_shared_pct": 138.5,
+              "operator_shared_pct": 21.6,
+              "additivity_pct": -1.0
+            }
+          },
+          "coverage": {
+            "LEBL": {
+              "same_rwy_same_op": {
+                "pairs": 34,
+                "dates": 1,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 38,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 39,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 42,
+                "dates": 1,
+                "met": false
+              }
+            },
+            "LEMD": {
+              "same_rwy_same_op": {
+                "pairs": 5725,
+                "dates": 31,
+                "met": true
+              },
+              "same_rwy_diff_op": {
+                "pairs": 5791,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_same_op": {
+                "pairs": 5961,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 5830,
+                "dates": 31,
+                "met": true
+              }
+            }
+          },
+          "airports_supported": [
+            "LEMD"
+          ]
+        },
+        "90min": {
+          "min_rows_per_intersection": 3,
+          "cells": 3611,
+          "cells_supported": 158,
+          "cells_unsupported": 3453,
+          "cells_supported_pct": 4.38,
+          "rows_in_the_chosen_2x2": 4224,
+          "rows_pct_of_eligible": 3.2,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 90,
+          "relations": {
+            "same_rwy_same_op": {
+              "pairs": 15356,
+              "value": 3154.6,
+              "ci": [
+                2145.6,
+                4527.6
+              ],
+              "rows": 4224,
+              "dates": 31
+            },
+            "same_rwy_diff_op": {
+              "pairs": 13931,
+              "value": 2140.0,
+              "ci": [
+                837.1,
+                3908.5
+              ],
+              "rows": 4224,
+              "dates": 31
+            },
+            "diff_rwy_same_op": {
+              "pairs": 14880,
+              "value": 624.7,
+              "ci": [
+                -656.9,
+                2570.9
+              ],
+              "rows": 4224,
+              "dates": 31
+            },
+            "diff_rwy_diff_op": {
+              "pairs": 13956,
+              "value": 1731.0,
+              "ci": [
+                391.6,
+                3507.0
+              ],
+              "rows": 4224,
+              "dates": 31
+            }
+          },
+          "components": {
+            "airport_window_s2": 1731.0,
+            "runway_given_window_s2": 409.0,
+            "operator_given_window_s2": -1106.3,
+            "additivity_residual_s2": 2120.9,
+            "shared_component_on_these_rows_s2": 1921.9,
+            "sum_of_components_s2": 3154.6,
+            "fractions_of_the_sum": {
+              "airport_shared_pct": 54.9,
+              "runway_shared_pct": 13.0,
+              "operator_shared_pct": -35.1,
+              "additivity_pct": 67.2
+            },
+            "fractions_of_the_shared_component": {
+              "denominator_s2": 1921.9,
+              "airport_shared_pct": 90.1,
+              "runway_shared_pct": 21.3,
+              "operator_shared_pct": -57.6,
+              "additivity_pct": 110.4
+            }
+          },
+          "coverage": {
+            "EGLL": {
+              "same_rwy_same_op": {
+                "pairs": 448,
+                "dates": 3,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 231,
+                "dates": 3,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 479,
+                "dates": 3,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 228,
+                "dates": 3,
+                "met": false
+              }
+            },
+            "LEBL": {
+              "same_rwy_same_op": {
+                "pairs": 162,
+                "dates": 1,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 63,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 63,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 63,
+                "dates": 1,
+                "met": false
+              }
+            },
+            "LEMD": {
+              "same_rwy_same_op": {
+                "pairs": 13116,
+                "dates": 31,
+                "met": true
+              },
+              "same_rwy_diff_op": {
+                "pairs": 12823,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_same_op": {
+                "pairs": 13306,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 12937,
+                "dates": 31,
+                "met": true
+              }
+            },
+            "LFPG": {
+              "same_rwy_same_op": {
+                "pairs": 1485,
+                "dates": 8,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 728,
+                "dates": 8,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 880,
+                "dates": 8,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 646,
+                "dates": 8,
+                "met": false
+              }
+            },
+            "LTFM": {
+              "same_rwy_same_op": {
+                "pairs": 145,
+                "dates": 1,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 86,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 152,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 82,
+                "dates": 1,
+                "met": false
+              }
+            }
+          },
+          "airports_supported": [
+            "LEMD"
+          ]
+        }
+      },
+      "crossover": {
+        "same_rwy_same_op": {
+          "pairs": 71504,
+          "value": 11593.8,
+          "ci": [
+            9978.6,
+            13803.8
+          ],
+          "rows": 60397,
+          "dates": 31
+        },
+        "same_rwy_diff_op": {
+          "pairs": 149144,
+          "value": 7755.6,
+          "ci": [
+            7063.8,
+            8551.1
+          ],
+          "rows": 104935,
+          "dates": 31
+        },
+        "diff_rwy_same_op": {
+          "pairs": 40731,
+          "value": 4537.7,
+          "ci": [
+            2052.7,
+            8010.0
+          ],
+          "rows": 32711,
+          "dates": 31
+        },
+        "diff_rwy_diff_op": {
+          "pairs": 64025,
+          "value": 1778.6,
+          "ci": [
+            1153.1,
+            2533.7
+          ],
+          "rows": 55895,
+          "dates": 31
+        }
+      },
+      "variance_components": {
+        "airport_window_s2": 1778.6,
+        "runway_given_window_s2": 5977.0,
+        "operator_given_window_s2": 2759.1,
+        "additivity_residual_s2": 1079.1,
+        "note": "cov(diff,diff) = Var(window); each same-X row minus it is Var(X | window); the fourth cell is the additivity check, not an assumption",
+        "shared_component_on_these_rows_s2": 7020.2,
+        "sum_of_components_s2": 11593.8,
+        "fractions_of_the_sum": {
+          "airport_shared_pct": 15.3,
+          "runway_shared_pct": 51.6,
+          "operator_shared_pct": 23.8,
+          "additivity_pct": 9.3,
+          "denominator_s2": 11593.8
+        },
+        "fractions_of_the_shared_component": {
+          "denominator_s2": 7020.2,
+          "airport_shared_pct": 25.3,
+          "runway_shared_pct": 85.1,
+          "operator_shared_pct": 39.3,
+          "additivity_pct": 15.4,
+          "note": "the assignment's own denominator: the shared component read on the SAME rows.  These four do not add to 100 % -- the components are conditional variances whose sum is the same-runway-same-operator relation, while the shared component is the pair-weighted average over all four"
+        }
+      },
+      "crossover_matched": {
+        "same_rwy_same_op": {
+          "pairs": 9614,
+          "value": 10534.7,
+          "ci": [
+            8777.0,
+            12598.1
+          ],
+          "rows": 8571,
+          "dates": 31
+        },
+        "same_rwy_diff_op": {
+          "pairs": 7068,
+          "value": 9167.1,
+          "ci": [
+            7859.5,
+            10542.1
+          ],
+          "rows": 8571,
+          "dates": 31
+        },
+        "diff_rwy_same_op": {
+          "pairs": 8962,
+          "value": 1909.0,
+          "ci": [
+            131.4,
+            3620.4
+          ],
+          "rows": 8571,
+          "dates": 31
+        },
+        "diff_rwy_diff_op": {
+          "pairs": 7664,
+          "value": 1241.9,
+          "ci": [
+            313.6,
+            2189.0
+          ],
+          "rows": 8571,
+          "dates": 31
+        }
+      },
+      "variance_components_matched": {
+        "airport_window_s2": 1241.9,
+        "runway_given_window_s2": 7925.2,
+        "operator_given_window_s2": 667.1,
+        "additivity_residual_s2": 700.5,
+        "note": "cov(diff,diff) = Var(window); each same-X row minus it is Var(X | window); the fourth cell is the additivity check, not an assumption",
+        "shared_component_on_these_rows_s2": 5785.4,
+        "sum_of_components_s2": 10534.7,
+        "fractions_of_the_sum": {
+          "airport_shared_pct": 11.8,
+          "runway_shared_pct": 75.2,
+          "operator_shared_pct": 6.3,
+          "additivity_pct": 6.6,
+          "denominator_s2": 10534.7
+        },
+        "fractions_of_the_shared_component": {
+          "denominator_s2": 5785.4,
+          "airport_shared_pct": 21.5,
+          "runway_shared_pct": 137.0,
+          "operator_shared_pct": 11.5,
+          "additivity_pct": 12.1,
+          "note": "the assignment's own denominator: the shared component read on the SAME rows.  These four do not add to 100 % -- the components are conditional variances whose sum is the same-runway-same-operator relation, while the shared component is the pair-weighted average over all four"
+        }
+      },
+      "crossover_coverage": {
+        "EDDM": {
+          "same_rwy_same_op": {
+            "pairs": 1498,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 1354,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 1580,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 1438,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "EGLL": {
+          "same_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          }
+        },
+        "LEBL": {
+          "same_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          }
+        },
+        "LEMD": {
+          "same_rwy_same_op": {
+            "pairs": 1425,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 2042,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 1491,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 2281,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LFPG": {
+          "same_rwy_same_op": {
+            "pairs": 2661,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 1728,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 2222,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 2060,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LIRF": {
+          "same_rwy_same_op": {
+            "pairs": 11,
+            "dates": 8,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 14,
+            "dates": 8,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 12,
+            "dates": 8,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 12,
+            "dates": 8,
+            "met": false
+          }
+        },
+        "LSZH": {
+          "same_rwy_same_op": {
+            "pairs": 87,
+            "dates": 19,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 80,
+            "dates": 19,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 90,
+            "dates": 19,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 76,
+            "dates": 19,
+            "met": false
+          }
+        },
+        "LTFM": {
+          "same_rwy_same_op": {
+            "pairs": 3932,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 1850,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 3566,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 1798,
+            "dates": 31,
+            "met": true
+          }
+        }
+      },
+      "crossover_coverage_note": "counted on the matched rows only (all four relations non-empty), so an airport that meets the rule meets it on the population the components are read on",
+      "crossover_airports_supported": [
+        "EDDM",
+        "LEMD",
+        "LFPG",
+        "LTFM"
+      ],
+      "crossover_matched_supported_airports": {
+        "same_rwy_same_op": {
+          "pairs": 9516,
+          "value": 10513.1,
+          "ci": [
+            8722.5,
+            12470.4
+          ],
+          "rows": 8433,
+          "dates": 31
+        },
+        "same_rwy_diff_op": {
+          "pairs": 6973,
+          "value": 9174.5,
+          "ci": [
+            7690.8,
+            10602.1
+          ],
+          "rows": 8433,
+          "dates": 31
+        },
+        "diff_rwy_same_op": {
+          "pairs": 8860,
+          "value": 1857.5,
+          "ci": [
+            140.0,
+            3566.3
+          ],
+          "rows": 8433,
+          "dates": 31
+        },
+        "diff_rwy_diff_op": {
+          "pairs": 7577,
+          "value": 1224.4,
+          "ci": [
+            310.2,
+            2162.4
+          ],
+          "rows": 8433,
+          "dates": 31
+        }
+      },
+      "observables": {
+        "n_cells": 28431,
+        "n_features": 370,
+        "cross_fitted_r2_cell_mean": 0.0294,
+        "cross_fitted_r2_shared_part": 0.063,
+        "cross_fitted_r2_note": "the first is the count-weighted out-of-block R^2 of the PLUG-IN cell mean, whose denominator carries the within-cell noise E[Var(eps)/n_c] that no model can reach; the second removes that noise from both sides and is the assignment's oracle-free upper bound",
+        "plugin_second_moment_s2": 15778.0,
+        "plugin_noise_term_s2": 8424.5,
+        "plugin_debiased_s2": 7353.5,
+        "plugin_debiased_after_s2": 6890.3,
+        "feature_note": "cell means of the exp-039 row feature set (359 columns) plus the count/window block; NOT the literal v10 member frame, which is not reproducible at this cost",
+        "A_mean_r_h": 546.651,
+        "B_mean_h2": 669.681,
+        "mse_gain_s2": 423.62,
+        "ci": [
+          117.17,
+          711.56
+        ],
+        "unrestricted_scale": 0.8163,
+        "shared_before": {
+          "pairs": 325404,
+          "value": 7020.2,
+          "ci": [
+            6132.2,
+            8118.7
+          ],
+          "rows": 129144,
+          "dates": 31
+        },
+        "shared_after": {
+          "pairs": 325404,
+          "value": 6449.7,
+          "ci": [
+            5749.1,
+            7359.7
+          ],
+          "rows": 129144,
+          "dates": 31
+        },
+        "fraction_of_shared_explained": 0.0813,
+        "top_features": [
+          "AIRCRAFT_OPERATOR_flt=95828822709b52d2167a5400012d395c3cf1c2978c05e5cc41dccf6fcf559188",
+          "AIRCRAFT_OPERATOR_flt=65b92f7aceccfa29f570209f189d1d2471db6ea69b035e01424f5bacec566c71",
+          "w3600_r_p10",
+          "day_n_dep",
+          "RUNWAY_mvt=25",
+          "RUNWAY_mvt=35L",
+          "RUNWAY_mvt=36",
+          "w3600_r_mean"
+        ]
+      },
+      "runway_grain": {
+        "n_cells": 40521,
+        "median_cell_size": 4.0,
+        "shared": {
+          "cell_ge_2": {
+            "pairs": 220648,
+            "value": 8999.4,
+            "ci": [
+              8149.6,
+              9963.8
+            ],
+            "rows": 123159,
+            "dates": 31
+          },
+          "cell_ge_4": {
+            "pairs": 190907,
+            "value": 8661.4,
+            "ci": [
+              7828.7,
+              9663.6
+            ],
+            "rows": 85433,
+            "dates": 31
+          },
+          "cell_ge_6": {
+            "pairs": 106787,
+            "value": 8300.4,
+            "ci": [
+              7161.2,
+              9584.3
+            ],
+            "rows": 37218,
+            "dates": 31
+          },
+          "cell_ge_10": {
+            "pairs": 1295,
+            "value": 2683.8,
+            "ci": [
+              452.5,
+              5599.8
+            ],
+            "rows": 278,
+            "dates": 19
+          }
+        },
+        "persistence": {
+          "lag_0": {
+            "pairs": 220648,
+            "value": 8999.4,
+            "ci": [
+              8135.6,
+              10036.5
+            ],
+            "rows": 123159,
+            "dates": 31
+          },
+          "lag_1": {
+            "pairs": 244006,
+            "value": 6530.4,
+            "ci": [
+              5785.1,
+              7342.5
+            ],
+            "rows": 123003,
+            "dates": 31
+          },
+          "lag_2": {
+            "pairs": 235822,
+            "value": 3941.2,
+            "ci": [
+              3230.1,
+              4823.8
+            ],
+            "rows": 120509,
+            "dates": 31
+          },
+          "lag_3": {
+            "pairs": 228882,
+            "value": 2917.4,
+            "ci": [
+              2312.3,
+              3669.4
+            ],
+            "rows": 118128,
+            "dates": 31
+          },
+          "lag_4": {
+            "pairs": 222188,
+            "value": 2077.5,
+            "ci": [
+              1564.6,
+              2699.1
+            ],
+            "rows": 115753,
+            "dates": 31
+          },
+          "lag_5": {
+            "pairs": 216011,
+            "value": 2065.3,
+            "ci": [
+              1555.7,
+              2635.5
+            ],
+            "rows": 113348,
+            "dates": 31
+          },
+          "lag_6": {
+            "pairs": 210381,
+            "value": 1461.0,
+            "ci": [
+              959.1,
+              1982.2
+            ],
+            "rows": 111133,
+            "dates": 31
+          }
+        },
+        "autocorrelation": {
+          "lag_0": {
+            "cell_pairs": 40521,
+            "rho_plugin": 1.0,
+            "rho_debiased": 1.0,
+            "cov_s2": 18136.8,
+            "var_plugin_s2": 18136.8,
+            "var_debiased_s2": 9861.0,
+            "per_cell": {
+              "rho_plugin": 1.0,
+              "rho_debiased": 1.0,
+              "cov_s2": 29017.0,
+              "var_plugin_s2": 29017.0,
+              "var_debiased_s2": 20137.3
+            }
+          },
+          "lag_1": {
+            "cell_pairs": 35554,
+            "rho_plugin": 0.3532,
+            "rho_debiased": 0.6608,
+            "cov_s2": 6529.5,
+            "var_plugin_s2": 18894.9,
+            "var_debiased_s2": 10318.9,
+            "per_cell": {
+              "rho_plugin": 0.2966,
+              "rho_debiased": 0.4637,
+              "cov_s2": 7526.6,
+              "var_plugin_s2": 25986.3,
+              "var_debiased_s2": 16856.8
+            }
+          },
+          "lag_2": {
+            "cell_pairs": 34876,
+            "rho_plugin": 0.2126,
+            "rho_debiased": 0.3978,
+            "cov_s2": 3939.2,
+            "var_plugin_s2": 18582.4,
+            "var_debiased_s2": 9960.4,
+            "per_cell": {
+              "rho_plugin": 0.1802,
+              "rho_debiased": 0.286,
+              "cov_s2": 4455.3,
+              "var_plugin_s2": 24384.7,
+              "var_debiased_s2": 15178.3
+            }
+          },
+          "lag_3": {
+            "cell_pairs": 34219,
+            "rho_plugin": 0.1573,
+            "rho_debiased": 0.2938,
+            "cov_s2": 2915.8,
+            "var_plugin_s2": 18410.3,
+            "var_debiased_s2": 9809.2,
+            "per_cell": {
+              "rho_plugin": 0.1358,
+              "rho_debiased": 0.2127,
+              "cov_s2": 3403.3,
+              "var_plugin_s2": 24798.7,
+              "var_debiased_s2": 15752.5
+            }
+          },
+          "lag_4": {
+            "cell_pairs": 33601,
+            "rho_plugin": 0.1106,
+            "rho_debiased": 0.2074,
+            "cov_s2": 2075.8,
+            "var_plugin_s2": 18480.9,
+            "var_debiased_s2": 9821.2,
+            "per_cell": {
+              "rho_plugin": 0.0936,
+              "rho_debiased": 0.1471,
+              "cov_s2": 2365.8,
+              "var_plugin_s2": 24460.6,
+              "var_debiased_s2": 15395.3
+            }
+          },
+          "lag_5": {
+            "cell_pairs": 32921,
+            "rho_plugin": 0.1092,
+            "rho_debiased": 0.2046,
+            "cov_s2": 2063.1,
+            "var_plugin_s2": 18637.7,
+            "var_debiased_s2": 9843.8,
+            "per_cell": {
+              "rho_plugin": 0.0903,
+              "rho_debiased": 0.141,
+              "cov_s2": 2322.9,
+              "var_plugin_s2": 25141.6,
+              "var_debiased_s2": 15883.9
+            }
+          },
+          "lag_6": {
+            "cell_pairs": 32325,
+            "rho_plugin": 0.0766,
+            "rho_debiased": 0.1441,
+            "cov_s2": 1460.2,
+            "var_plugin_s2": 18420.0,
+            "var_debiased_s2": 9630.1,
+            "per_cell": {
+              "rho_plugin": 0.0703,
+              "rho_debiased": 0.1096,
+              "cov_s2": 1819.5,
+              "var_plugin_s2": 24920.3,
+              "var_debiased_s2": 15686.6
+            }
+          },
+          "note": "matched cell pairs at each lag.  The headline numbers weight each cell pair by n_a * n_b -- the number of row pairs it carries, the same weight the cross-product table uses -- and `per_cell` repeats them with one weight per cell.  `rho_plugin` is the assignment's statistic on the plug-in mean; `rho_debiased` removes the within-cell noise from the denominator only, because noise in two different bins is independent"
+        },
+        "plugin_cell_mean": {
+          "cell_ge_2": {
+            "rows": 123159,
+            "plugin_var_s2": 19468.2,
+            "ci": [
+              18164.6,
+              20957.5
+            ],
+            "noise_term_s2": 9731.3,
+            "debiased_s2": 9736.9,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          },
+          "cell_ge_4": {
+            "rows": 85433,
+            "plugin_var_s2": 16602.9,
+            "ci": [
+              15504.8,
+              17838.3
+            ],
+            "noise_term_s2": 7760.8,
+            "debiased_s2": 8842.1,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          },
+          "cell_ge_6": {
+            "rows": 37218,
+            "plugin_var_s2": 14336.7,
+            "ci": [
+              13078.4,
+              15802.5
+            ],
+            "noise_term_s2": 5933.0,
+            "debiased_s2": 8403.7,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          },
+          "cell_ge_10": {
+            "rows": 278,
+            "plugin_var_s2": 5183.5,
+            "ci": [
+              2820.9,
+              9163.2
+            ],
+            "noise_term_s2": 2935.3,
+            "debiased_s2": 2248.1,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          }
+        },
+        "observables": {
+          "n_cells": 40521,
+          "n_features": 371,
+          "cross_fitted_r2_cell_mean": 0.0402,
+          "cross_fitted_r2_shared_part": 0.0805,
+          "cross_fitted_r2_note": "the first is the count-weighted out-of-block R^2 of the PLUG-IN cell mean, whose denominator carries the within-cell noise E[Var(eps)/n_c] that no model can reach; the second removes that noise from both sides and is the assignment's oracle-free upper bound",
+          "plugin_second_moment_s2": 19468.2,
+          "plugin_noise_term_s2": 9731.3,
+          "plugin_debiased_s2": 9736.9,
+          "plugin_debiased_after_s2": 8953.5,
+          "feature_note": "cell means of the exp-039 row feature set (359 columns) plus the count/window block; NOT the literal v10 member frame, which is not reproducible at this cost",
+          "A_mean_r_h": 772.251,
+          "B_mean_h2": 788.259,
+          "mse_gain_s2": 756.24,
+          "ci": [
+            454.24,
+            1073.34
+          ],
+          "unrestricted_scale": 0.9797,
+          "shared_before": {
+            "pairs": 220648,
+            "value": 8999.4,
+            "ci": [
+              8163.5,
+              10004.6
+            ],
+            "rows": 123159,
+            "dates": 31
+          },
+          "shared_after": {
+            "pairs": 220648,
+            "value": 8212.5,
+            "ci": [
+              7505.7,
+              9068.8
+            ],
+            "rows": 123159,
+            "dates": 31
+          },
+          "fraction_of_shared_explained": 0.0874,
+          "top_features": [
+            "AIRCRAFT_OPERATOR_flt=95828822709b52d2167a5400012d395c3cf1c2978c05e5cc41dccf6fcf559188",
+            "w3600_r_p10",
+            "day_n_dep",
+            "AIRCRAFT_OPERATOR_flt=65b92f7aceccfa29f570209f189d1d2471db6ea69b035e01424f5bacec566c71",
+            "RUNWAY_mvt=35L",
+            "day_r_mean",
+            "w3600_r_mean",
+            "RUNWAY_mvt=25"
+          ]
+        }
+      }
+    },
+    "december": {
+      "fold": "december",
+      "month": "2025-12",
+      "n_rows": 165677,
+      "n_eligible": 123016,
+      "n_cells": 27212,
+      "median_cell_size": 6.0,
+      "cell_size_p90": 9.0,
+      "headline": {
+        "cell_ge_2": {
+          "pairs": 305489,
+          "value": 4573.0,
+          "ci": [
+            3967.6,
+            5293.8
+          ],
+          "rows": 119592,
+          "dates": 31
+        },
+        "cell_ge_4": {
+          "pairs": 290908,
+          "value": 4557.6,
+          "ci": [
+            3978.0,
+            5250.5
+          ],
+          "rows": 101449,
+          "dates": 31
+        },
+        "cell_ge_6": {
+          "pairs": 232212,
+          "value": 4165.0,
+          "ci": [
+            3671.9,
+            4801.4
+          ],
+          "rows": 68345,
+          "dates": 31
+        },
+        "cell_ge_10": {
+          "pairs": 55572,
+          "value": 3767.5,
+          "ci": [
+            3063.7,
+            4523.1
+          ],
+          "rows": 10971,
+          "dates": 31
+        },
+        "q04_support_dep6_arr6": {
+          "pairs": 96085,
+          "value": 4206.4,
+          "ci": [
+            3548.2,
+            4972.1
+          ],
+          "rows": 29443,
+          "dates": 31
+        },
+        "q04_support_note": "exp-039 analysis/q04.json cross_product_r_rbar_self_excluded on the same support; assignments/cell.md quotes a different triple (see RESULTS 1)"
+      },
+      "plugin_cell_mean": {
+        "cell_ge_2": {
+          "rows": 119592,
+          "plugin_var_s2": 11375.6,
+          "ci": [
+            10374.1,
+            12683.0
+          ],
+          "noise_term_s2": 6479.9,
+          "debiased_s2": 4895.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "cell_ge_4": {
+          "rows": 101449,
+          "plugin_var_s2": 9956.2,
+          "ci": [
+            9039.5,
+            11073.2
+          ],
+          "noise_term_s2": 5124.2,
+          "debiased_s2": 4832.0,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "cell_ge_6": {
+          "rows": 68345,
+          "plugin_var_s2": 8278.9,
+          "ci": [
+            7620.6,
+            9191.8
+          ],
+          "noise_term_s2": 4034.5,
+          "debiased_s2": 4244.4,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "cell_ge_10": {
+          "rows": 10971,
+          "plugin_var_s2": 6363.8,
+          "ci": [
+            5624.8,
+            7190.8
+          ],
+          "noise_term_s2": 2625.8,
+          "debiased_s2": 3737.9,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "by_airport": {
+        "EDDM": {
+          "pairs": 22514,
+          "value": 2805.5,
+          "ci": [
+            1967.6,
+            3999.9
+          ],
+          "rows": 10502,
+          "dates": 31
+        },
+        "EGLL": {
+          "pairs": 53830,
+          "value": 4243.5,
+          "ci": [
+            3507.4,
+            5060.4
+          ],
+          "rows": 19037,
+          "dates": 31
+        },
+        "LEBL": {
+          "pairs": 25429,
+          "value": 5247.6,
+          "ci": [
+            3924.8,
+            7057.2
+          ],
+          "rows": 12867,
+          "dates": 31
+        },
+        "LEMD": {
+          "pairs": 46877,
+          "value": 2857.2,
+          "ci": [
+            2311.7,
+            3467.7
+          ],
+          "rows": 17019,
+          "dates": 31
+        },
+        "LFPG": {
+          "pairs": 50547,
+          "value": 4513.5,
+          "ci": [
+            3539.2,
+            5663.0
+          ],
+          "rows": 17829,
+          "dates": 31
+        },
+        "LIRF": {
+          "pairs": 20144,
+          "value": 7125.6,
+          "ci": [
+            5096.9,
+            9215.6
+          ],
+          "rows": 11328,
+          "dates": 31
+        },
+        "LSZH": {
+          "pairs": 16787,
+          "value": 5516.7,
+          "ci": [
+            4637.8,
+            6470.5
+          ],
+          "rows": 9561,
+          "dates": 31
+        },
+        "LTFM": {
+          "pairs": 69361,
+          "value": 5388.2,
+          "ci": [
+            3539.3,
+            8286.0
+          ],
+          "rows": 21449,
+          "dates": 31
+        }
+      },
+      "by_airport_plugin": {
+        "EDDM": {
+          "rows": 10502,
+          "plugin_var_s2": 9498.6,
+          "ci": [
+            6822.0,
+            13832.7
+          ],
+          "noise_term_s2": 5528.2,
+          "debiased_s2": 3970.4,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "EGLL": {
+          "rows": 19037,
+          "plugin_var_s2": 10262.3,
+          "ci": [
+            8794.7,
+            12073.1
+          ],
+          "noise_term_s2": 5786.9,
+          "debiased_s2": 4475.4,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LEBL": {
+          "rows": 12867,
+          "plugin_var_s2": 10522.2,
+          "ci": [
+            8173.7,
+            14398.4
+          ],
+          "noise_term_s2": 4978.0,
+          "debiased_s2": 5544.2,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LEMD": {
+          "rows": 17019,
+          "plugin_var_s2": 6508.7,
+          "ci": [
+            5952.2,
+            7099.8
+          ],
+          "noise_term_s2": 3913.2,
+          "debiased_s2": 2595.5,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LFPG": {
+          "rows": 17829,
+          "plugin_var_s2": 10791.7,
+          "ci": [
+            9069.8,
+            12927.5
+          ],
+          "noise_term_s2": 5896.4,
+          "debiased_s2": 4895.3,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LIRF": {
+          "rows": 11328,
+          "plugin_var_s2": 25564.3,
+          "ci": [
+            22407.5,
+            28638.9
+          ],
+          "noise_term_s2": 19660.6,
+          "debiased_s2": 5903.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LSZH": {
+          "rows": 9561,
+          "plugin_var_s2": 8808.4,
+          "ci": [
+            7834.9,
+            9929.6
+          ],
+          "noise_term_s2": 3985.4,
+          "debiased_s2": 4823.0,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LTFM": {
+          "rows": 21449,
+          "plugin_var_s2": 11449.1,
+          "ci": [
+            7870.8,
+            17313.0
+          ],
+          "noise_term_s2": 5134.3,
+          "debiased_s2": 6314.8,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "by_hour": {
+        "00-06": {
+          "pairs": 14887,
+          "value": 3854.2,
+          "ci": [
+            2823.6,
+            5027.7
+          ],
+          "rows": 6138,
+          "dates": 31
+        },
+        "06-10": {
+          "pairs": 66506,
+          "value": 5268.3,
+          "ci": [
+            4221.5,
+            6518.9
+          ],
+          "rows": 26381,
+          "dates": 31
+        },
+        "10-14": {
+          "pairs": 86712,
+          "value": 4934.5,
+          "ci": [
+            4058.4,
+            5970.1
+          ],
+          "rows": 31203,
+          "dates": 31
+        },
+        "14-18": {
+          "pairs": 72432,
+          "value": 4007.3,
+          "ci": [
+            3432.5,
+            4739.5
+          ],
+          "rows": 28141,
+          "dates": 31
+        },
+        "18-24": {
+          "pairs": 64952,
+          "value": 4173.9,
+          "ci": [
+            3343.8,
+            5147.0
+          ],
+          "rows": 27729,
+          "dates": 31
+        }
+      },
+      "by_hour_plugin": {
+        "00-06": {
+          "rows": 6138,
+          "plugin_var_s2": 12943.1,
+          "ci": [
+            11087.6,
+            14776.6
+          ],
+          "noise_term_s2": 8171.3,
+          "debiased_s2": 4771.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "06-10": {
+          "rows": 26381,
+          "plugin_var_s2": 11600.1,
+          "ci": [
+            9865.4,
+            13930.7
+          ],
+          "noise_term_s2": 6049.5,
+          "debiased_s2": 5550.6,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "10-14": {
+          "rows": 31203,
+          "plugin_var_s2": 11932.7,
+          "ci": [
+            10459.4,
+            13630.3
+          ],
+          "noise_term_s2": 6322.0,
+          "debiased_s2": 5610.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "14-18": {
+          "rows": 28141,
+          "plugin_var_s2": 10152.9,
+          "ci": [
+            9003.1,
+            11448.7
+          ],
+          "noise_term_s2": 6068.2,
+          "debiased_s2": 4084.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "18-24": {
+          "rows": 27729,
+          "plugin_var_s2": 11327.2,
+          "ci": [
+            9984.6,
+            12873.0
+          ],
+          "noise_term_s2": 7110.5,
+          "debiased_s2": 4216.8,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "by_cell_size": {
+        "2-3": {
+          "pairs": 14581,
+          "value": 4879.5,
+          "ci": [
+            3288.5,
+            6847.8
+          ],
+          "rows": 18143,
+          "dates": 31
+        },
+        "4-5": {
+          "pairs": 58696,
+          "value": 6110.9,
+          "ci": [
+            4973.4,
+            7406.3
+          ],
+          "rows": 33104,
+          "dates": 31
+        },
+        "6-9": {
+          "pairs": 176640,
+          "value": 4290.0,
+          "ci": [
+            3758.5,
+            4953.0
+          ],
+          "rows": 57374,
+          "dates": 31
+        },
+        "10-19": {
+          "pairs": 55572,
+          "value": 3767.5,
+          "ci": [
+            3094.2,
+            4520.3
+          ],
+          "rows": 10971,
+          "dates": 31
+        },
+        "20-+": {
+          "pairs": 0,
+          "value": null,
+          "ci": [
+            null,
+            null
+          ],
+          "rows": 0,
+          "dates": 0
+        }
+      },
+      "by_cell_size_plugin": {
+        "2-3": {
+          "rows": 18143,
+          "plugin_var_s2": 19310.8,
+          "ci": [
+            16381.7,
+            22601.6
+          ],
+          "noise_term_s2": 14060.6,
+          "debiased_s2": 5250.2,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "4-5": {
+          "rows": 33104,
+          "plugin_var_s2": 13409.2,
+          "ci": [
+            11839.4,
+            15224.6
+          ],
+          "noise_term_s2": 7373.9,
+          "debiased_s2": 6035.3,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "6-9": {
+          "rows": 57374,
+          "plugin_var_s2": 8644.4,
+          "ci": [
+            7943.8,
+            9586.6
+          ],
+          "noise_term_s2": 4303.9,
+          "debiased_s2": 4340.5,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "10-19": {
+          "rows": 10971,
+          "plugin_var_s2": 6363.8,
+          "ci": [
+            5612.3,
+            7195.8
+          ],
+          "noise_term_s2": 2625.8,
+          "debiased_s2": 3737.9,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "20-+": {
+          "rows": 0,
+          "plugin_var_s2": null,
+          "noise_term_s2": null,
+          "debiased_s2": null
+        }
+      },
+      "by_regime": {
+        "nm_bulk (eligible)": {
+          "pairs": 305489,
+          "value": 4573.0,
+          "ci": [
+            3955.2,
+            5293.3
+          ],
+          "rows": 119592,
+          "dates": 31
+        },
+        "nm_bulk at EHAM/EDDF (held)": {
+          "pairs": 109584,
+          "value": 3167.1,
+          "ci": [
+            2577.2,
+            3800.4
+          ],
+          "rows": 34884,
+          "dates": 31
+        },
+        "nm_late": {
+          "pairs": 2155,
+          "value": 81072.2,
+          "ci": [
+            49991.1,
+            110211.7
+          ],
+          "rows": 2240,
+          "dates": 31
+        },
+        "nonm": {
+          "pairs": 314,
+          "value": 336964.2,
+          "ci": [
+            32240.6,
+            796560.0
+          ],
+          "rows": 304,
+          "dates": 25
+        },
+        "noac": {
+          "pairs": 7,
+          "value": -1671343.1,
+          "ci": [
+            -4239889.1,
+            -1243252.1
+          ],
+          "rows": 6,
+          "dates": 2
+        }
+      },
+      "by_regime_plugin": {
+        "nm_bulk (eligible)": {
+          "rows": 119592,
+          "plugin_var_s2": 11375.6,
+          "ci": [
+            10371.8,
+            12686.8
+          ],
+          "noise_term_s2": 6479.9,
+          "debiased_s2": 4895.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "nm_bulk at EHAM/EDDF (held)": {
+          "rows": 34884,
+          "plugin_var_s2": 6282.3,
+          "ci": [
+            5604.4,
+            7055.7
+          ],
+          "noise_term_s2": 3164.1,
+          "debiased_s2": 3118.2,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "nm_late": {
+          "rows": 2240,
+          "plugin_var_s2": 102955.2,
+          "ci": [
+            80730.5,
+            122761.4
+          ],
+          "noise_term_s2": 55823.2,
+          "debiased_s2": 47132.0,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "nonm": {
+          "rows": 304,
+          "plugin_var_s2": 325559.9,
+          "ci": [
+            78718.9,
+            538779.3
+          ],
+          "noise_term_s2": 68839.3,
+          "debiased_s2": 256720.6,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "noac": {
+          "rows": 6,
+          "plugin_var_s2": null,
+          "noise_term_s2": null,
+          "debiased_s2": null
+        }
+      },
+      "persistence": {
+        "lag_0": {
+          "pairs": 305489,
+          "value": 4573.0,
+          "ci": [
+            3977.5,
+            5300.4
+          ],
+          "rows": 119592,
+          "dates": 31
+        },
+        "lag_1": {
+          "pairs": 328818,
+          "value": 3173.2,
+          "ci": [
+            2685.9,
+            3792.8
+          ],
+          "rows": 119753,
+          "dates": 31
+        },
+        "lag_2": {
+          "pairs": 321103,
+          "value": 1904.6,
+          "ci": [
+            1526.1,
+            2394.1
+          ],
+          "rows": 119180,
+          "dates": 31
+        },
+        "lag_3": {
+          "pairs": 313523,
+          "value": 1298.0,
+          "ci": [
+            923.7,
+            1763.4
+          ],
+          "rows": 118543,
+          "dates": 31
+        },
+        "lag_4": {
+          "pairs": 306472,
+          "value": 872.0,
+          "ci": [
+            595.8,
+            1202.5
+          ],
+          "rows": 117812,
+          "dates": 31
+        },
+        "lag_5": {
+          "pairs": 300146,
+          "value": 702.3,
+          "ci": [
+            427.3,
+            1004.3
+          ],
+          "rows": 116991,
+          "dates": 31
+        },
+        "lag_6": {
+          "pairs": 294151,
+          "value": 685.6,
+          "ci": [
+            450.1,
+            948.0
+          ],
+          "rows": 116256,
+          "dates": 31
+        }
+      },
+      "autocorrelation": {
+        "lag_0": {
+          "cell_pairs": 27212,
+          "rho_plugin": 1.0,
+          "rho_debiased": 1.0,
+          "cov_s2": 9980.9,
+          "var_plugin_s2": 9980.9,
+          "var_debiased_s2": 4835.2,
+          "per_cell": {
+            "rho_plugin": 1.0,
+            "rho_debiased": 1.0,
+            "cov_s2": 18409.6,
+            "var_plugin_s2": 18409.6,
+            "var_debiased_s2": 11028.1
+          }
+        },
+        "lag_1": {
+          "cell_pairs": 25440,
+          "rho_plugin": 0.3069,
+          "rho_debiased": 0.6422,
+          "cov_s2": 3166.0,
+          "var_plugin_s2": 10341.8,
+          "var_debiased_s2": 4980.9,
+          "per_cell": {
+            "rho_plugin": 0.2198,
+            "rho_debiased": 0.4069,
+            "cov_s2": 3536.4,
+            "var_plugin_s2": 15839.5,
+            "var_debiased_s2": 8433.9
+          }
+        },
+        "lag_2": {
+          "cell_pairs": 25307,
+          "rho_plugin": 0.1832,
+          "rho_debiased": 0.3859,
+          "cov_s2": 1900.0,
+          "var_plugin_s2": 10398.8,
+          "var_debiased_s2": 4968.4,
+          "per_cell": {
+            "rho_plugin": 0.1437,
+            "rho_debiased": 0.2639,
+            "cov_s2": 2300.6,
+            "var_plugin_s2": 15844.2,
+            "var_debiased_s2": 8511.2
+          }
+        },
+        "lag_3": {
+          "cell_pairs": 25189,
+          "rho_plugin": 0.1225,
+          "rho_debiased": 0.2564,
+          "cov_s2": 1294.6,
+          "var_plugin_s2": 10462.3,
+          "var_debiased_s2": 5031.7,
+          "per_cell": {
+            "rho_plugin": 0.0967,
+            "rho_debiased": 0.1736,
+            "cov_s2": 1604.8,
+            "var_plugin_s2": 16663.1,
+            "var_debiased_s2": 9328.1
+          }
+        },
+        "lag_4": {
+          "cell_pairs": 25035,
+          "rho_plugin": 0.0825,
+          "rho_debiased": 0.1746,
+          "cov_s2": 868.7,
+          "var_plugin_s2": 10315.6,
+          "var_debiased_s2": 4898.8,
+          "per_cell": {
+            "rho_plugin": 0.0832,
+            "rho_debiased": 0.1516,
+            "cov_s2": 1350.9,
+            "var_plugin_s2": 16382.8,
+            "var_debiased_s2": 9076.1
+          }
+        },
+        "lag_5": {
+          "cell_pairs": 24884,
+          "rho_plugin": 0.0649,
+          "rho_debiased": 0.1368,
+          "cov_s2": 698.3,
+          "var_plugin_s2": 10719.1,
+          "var_debiased_s2": 5090.7,
+          "per_cell": {
+            "rho_plugin": 0.0635,
+            "rho_debiased": 0.1144,
+            "cov_s2": 1040.6,
+            "var_plugin_s2": 16312.3,
+            "var_debiased_s2": 9048.5
+          }
+        },
+        "lag_6": {
+          "cell_pairs": 24731,
+          "rho_plugin": 0.0633,
+          "rho_debiased": 0.1343,
+          "cov_s2": 681.5,
+          "var_plugin_s2": 10667.2,
+          "var_debiased_s2": 5016.2,
+          "per_cell": {
+            "rho_plugin": 0.0802,
+            "rho_debiased": 0.1441,
+            "cov_s2": 1318.9,
+            "var_plugin_s2": 16245.1,
+            "var_debiased_s2": 9008.7
+          }
+        },
+        "note": "matched cell pairs at each lag.  The headline numbers weight each cell pair by n_a * n_b -- the number of row pairs it carries, the same weight the cross-product table uses -- and `per_cell` repeats them with one weight per cell.  `rho_plugin` is the assignment's statistic on the plug-in mean; `rho_debiased` removes the within-cell noise from the denominator only, because noise in two different bins is independent"
+      },
+      "crossover_population": {
+        "eligible_rows": 123016,
+        "rows_in_cells_with_2_runways_and_2_operators": 56843,
+        "rows_with_all_four_relations_non_empty": 8097,
+        "matched_pct_of_eligible": 6.58,
+        "cells_touched_by_matched_rows": 1980,
+        "unmatched_rows_by_reason": {
+          "single_runway_cell": 59496,
+          "single_operator_cell": 13523,
+          "2x2_cell_but_a_relation_empty": 48746
+        },
+        "note": "the matched rule is row-level: a row is kept when all four relations have at least one counterpart, so every relation is estimated on the same rows and the same days",
+        "q10_predeclared_rule": {
+          "min_rows_per_intersection": 3,
+          "cells": 27212,
+          "cells_supported": 0,
+          "cells_unsupported": 27212,
+          "cells_supported_pct": 0.0,
+          "rows_in_the_chosen_2x2": 0,
+          "rows_pct_of_eligible": 0.0,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner"
+        }
+      },
+      "q10_rule_grain_scan": {
+        "10min": {
+          "min_rows_per_intersection": 3,
+          "cells": 27212,
+          "cells_supported": 0,
+          "cells_unsupported": 27212,
+          "cells_supported_pct": 0.0,
+          "rows_in_the_chosen_2x2": 0,
+          "rows_pct_of_eligible": 0.0,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 10
+        },
+        "30min": {
+          "min_rows_per_intersection": 3,
+          "cells": 9909,
+          "cells_supported": 48,
+          "cells_unsupported": 9861,
+          "cells_supported_pct": 0.48,
+          "rows_in_the_chosen_2x2": 853,
+          "rows_pct_of_eligible": 0.69,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 30,
+          "relations": {
+            "same_rwy_same_op": {
+              "pairs": 1635,
+              "value": 3378.0,
+              "ci": [
+                1824.5,
+                5240.6
+              ],
+              "rows": 853,
+              "dates": 27
+            },
+            "same_rwy_diff_op": {
+              "pairs": 1883,
+              "value": 2604.8,
+              "ci": [
+                1155.3,
+                4403.2
+              ],
+              "rows": 853,
+              "dates": 27
+            },
+            "diff_rwy_same_op": {
+              "pairs": 1876,
+              "value": -437.9,
+              "ci": [
+                -1615.7,
+                618.4
+              ],
+              "rows": 853,
+              "dates": 27
+            },
+            "diff_rwy_diff_op": {
+              "pairs": 1896,
+              "value": -1184.3,
+              "ci": [
+                -2542.5,
+                32.3
+              ],
+              "rows": 853,
+              "dates": 27
+            }
+          },
+          "components": {
+            "airport_window_s2": -1184.3,
+            "runway_given_window_s2": 3789.1,
+            "operator_given_window_s2": 746.4,
+            "additivity_residual_s2": 26.8,
+            "shared_component_on_these_rows_s2": 1009.7,
+            "sum_of_components_s2": 3378.0,
+            "fractions_of_the_sum": {
+              "airport_shared_pct": -35.1,
+              "runway_shared_pct": 112.2,
+              "operator_shared_pct": 22.1,
+              "additivity_pct": 0.8
+            },
+            "fractions_of_the_shared_component": {
+              "denominator_s2": 1009.7,
+              "airport_shared_pct": -117.3,
+              "runway_shared_pct": 375.3,
+              "operator_shared_pct": 73.9,
+              "additivity_pct": 2.7
+            }
+          },
+          "coverage": {
+            "LEMD": {
+              "same_rwy_same_op": {
+                "pairs": 1635,
+                "dates": 27,
+                "met": true
+              },
+              "same_rwy_diff_op": {
+                "pairs": 1883,
+                "dates": 27,
+                "met": true
+              },
+              "diff_rwy_same_op": {
+                "pairs": 1876,
+                "dates": 27,
+                "met": true
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 1896,
+                "dates": 27,
+                "met": true
+              }
+            }
+          },
+          "airports_supported": [
+            "LEMD"
+          ]
+        },
+        "60min": {
+          "min_rows_per_intersection": 3,
+          "cells": 5138,
+          "cells_supported": 93,
+          "cells_unsupported": 5045,
+          "cells_supported_pct": 1.81,
+          "rows_in_the_chosen_2x2": 2386,
+          "rows_pct_of_eligible": 1.94,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 60,
+          "relations": {
+            "same_rwy_same_op": {
+              "pairs": 8033,
+              "value": 2200.0,
+              "ci": [
+                1446.9,
+                3080.3
+              ],
+              "rows": 2386,
+              "dates": 31
+            },
+            "same_rwy_diff_op": {
+              "pairs": 7722,
+              "value": 1884.0,
+              "ci": [
+                906.6,
+                3098.1
+              ],
+              "rows": 2386,
+              "dates": 31
+            },
+            "diff_rwy_same_op": {
+              "pairs": 7751,
+              "value": -189.3,
+              "ci": [
+                -815.7,
+                457.1
+              ],
+              "rows": 2386,
+              "dates": 31
+            },
+            "diff_rwy_diff_op": {
+              "pairs": 7507,
+              "value": -314.1,
+              "ci": [
+                -986.6,
+                332.5
+              ],
+              "rows": 2386,
+              "dates": 31
+            }
+          },
+          "components": {
+            "airport_window_s2": -314.1,
+            "runway_given_window_s2": 2198.1,
+            "operator_given_window_s2": 124.8,
+            "additivity_residual_s2": 191.2,
+            "shared_component_on_these_rows_s2": 915.6,
+            "sum_of_components_s2": 2200.0,
+            "fractions_of_the_sum": {
+              "airport_shared_pct": -14.3,
+              "runway_shared_pct": 99.9,
+              "operator_shared_pct": 5.7,
+              "additivity_pct": 8.7
+            },
+            "fractions_of_the_shared_component": {
+              "denominator_s2": 915.6,
+              "airport_shared_pct": -34.3,
+              "runway_shared_pct": 240.1,
+              "operator_shared_pct": 13.6,
+              "additivity_pct": 20.9
+            }
+          },
+          "coverage": {
+            "EDDM": {
+              "same_rwy_same_op": {
+                "pairs": 207,
+                "dates": 2,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 117,
+                "dates": 2,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 196,
+                "dates": 2,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 117,
+                "dates": 2,
+                "met": false
+              }
+            },
+            "LEMD": {
+              "same_rwy_same_op": {
+                "pairs": 7295,
+                "dates": 31,
+                "met": true
+              },
+              "same_rwy_diff_op": {
+                "pairs": 7275,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_same_op": {
+                "pairs": 7189,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 7056,
+                "dates": 31,
+                "met": true
+              }
+            },
+            "LFPG": {
+              "same_rwy_same_op": {
+                "pairs": 531,
+                "dates": 6,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 330,
+                "dates": 6,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 366,
+                "dates": 6,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 334,
+                "dates": 6,
+                "met": false
+              }
+            }
+          },
+          "airports_supported": [
+            "LEMD"
+          ]
+        },
+        "90min": {
+          "min_rows_per_intersection": 3,
+          "cells": 3508,
+          "cells_supported": 146,
+          "cells_unsupported": 3362,
+          "cells_supported_pct": 4.16,
+          "rows_in_the_chosen_2x2": 4421,
+          "rows_pct_of_eligible": 3.59,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 90,
+          "relations": {
+            "same_rwy_same_op": {
+              "pairs": 19618,
+              "value": 1819.0,
+              "ci": [
+                1258.6,
+                2507.3
+              ],
+              "rows": 4421,
+              "dates": 31
+            },
+            "same_rwy_diff_op": {
+              "pairs": 15827,
+              "value": 1730.7,
+              "ci": [
+                1135.7,
+                2387.7
+              ],
+              "rows": 4421,
+              "dates": 31
+            },
+            "diff_rwy_same_op": {
+              "pairs": 18344,
+              "value": 49.4,
+              "ci": [
+                -437.7,
+                642.4
+              ],
+              "rows": 4421,
+              "dates": 31
+            },
+            "diff_rwy_diff_op": {
+              "pairs": 16065,
+              "value": -684.3,
+              "ci": [
+                -1328.7,
+                -120.4
+              ],
+              "rows": 4421,
+              "dates": 31
+            }
+          },
+          "components": {
+            "airport_window_s2": -684.3,
+            "runway_given_window_s2": 2415.0,
+            "operator_given_window_s2": 733.7,
+            "additivity_residual_s2": -645.4,
+            "shared_component_on_these_rows_s2": 758.6,
+            "sum_of_components_s2": 1819.0,
+            "fractions_of_the_sum": {
+              "airport_shared_pct": -37.6,
+              "runway_shared_pct": 132.8,
+              "operator_shared_pct": 40.3,
+              "additivity_pct": -35.5
+            },
+            "fractions_of_the_shared_component": {
+              "denominator_s2": 758.6,
+              "airport_shared_pct": -90.2,
+              "runway_shared_pct": 318.3,
+              "operator_shared_pct": 96.7,
+              "additivity_pct": -85.1
+            }
+          },
+          "coverage": {
+            "EDDM": {
+              "same_rwy_same_op": {
+                "pairs": 546,
+                "dates": 4,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 273,
+                "dates": 4,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 535,
+                "dates": 4,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 273,
+                "dates": 4,
+                "met": false
+              }
+            },
+            "LEBL": {
+              "same_rwy_same_op": {
+                "pairs": 12,
+                "dates": 1,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 18,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 18,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 18,
+                "dates": 1,
+                "met": false
+              }
+            },
+            "LEMD": {
+              "same_rwy_same_op": {
+                "pairs": 16217,
+                "dates": 31,
+                "met": true
+              },
+              "same_rwy_diff_op": {
+                "pairs": 14427,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_same_op": {
+                "pairs": 15832,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 14671,
+                "dates": 31,
+                "met": true
+              }
+            },
+            "LFPG": {
+              "same_rwy_same_op": {
+                "pairs": 2456,
+                "dates": 11,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 989,
+                "dates": 11,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 1551,
+                "dates": 11,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 983,
+                "dates": 11,
+                "met": false
+              }
+            },
+            "LTFM": {
+              "same_rwy_same_op": {
+                "pairs": 387,
+                "dates": 1,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 120,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 408,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 120,
+                "dates": 1,
+                "met": false
+              }
+            }
+          },
+          "airports_supported": [
+            "LEMD"
+          ]
+        }
+      },
+      "crossover": {
+        "same_rwy_same_op": {
+          "pairs": 66160,
+          "value": 7574.0,
+          "ci": [
+            6505.1,
+            8877.9
+          ],
+          "rows": 55312,
+          "dates": 31
+        },
+        "same_rwy_diff_op": {
+          "pairs": 140540,
+          "value": 5556.9,
+          "ci": [
+            5014.5,
+            6137.1
+          ],
+          "rows": 97328,
+          "dates": 31
+        },
+        "diff_rwy_same_op": {
+          "pairs": 38766,
+          "value": 1517.7,
+          "ci": [
+            312.5,
+            3487.0
+          ],
+          "rows": 29704,
+          "dates": 31
+        },
+        "diff_rwy_diff_op": {
+          "pairs": 60023,
+          "value": 934.5,
+          "ci": [
+            430.7,
+            1554.1
+          ],
+          "rows": 51348,
+          "dates": 31
+        }
+      },
+      "variance_components": {
+        "airport_window_s2": 934.5,
+        "runway_given_window_s2": 4622.4,
+        "operator_given_window_s2": 583.2,
+        "additivity_residual_s2": 1433.9,
+        "note": "cov(diff,diff) = Var(window); each same-X row minus it is Var(X | window); the fourth cell is the additivity check, not an assumption",
+        "shared_component_on_these_rows_s2": 4573.0,
+        "sum_of_components_s2": 7574.0,
+        "fractions_of_the_sum": {
+          "airport_shared_pct": 12.3,
+          "runway_shared_pct": 61.0,
+          "operator_shared_pct": 7.7,
+          "additivity_pct": 18.9,
+          "denominator_s2": 7574.0
+        },
+        "fractions_of_the_shared_component": {
+          "denominator_s2": 4573.0,
+          "airport_shared_pct": 20.4,
+          "runway_shared_pct": 101.1,
+          "operator_shared_pct": 12.8,
+          "additivity_pct": 31.4,
+          "note": "the assignment's own denominator: the shared component read on the SAME rows.  These four do not add to 100 % -- the components are conditional variances whose sum is the same-runway-same-operator relation, while the shared component is the pair-weighted average over all four"
+        }
+      },
+      "crossover_matched": {
+        "same_rwy_same_op": {
+          "pairs": 8719,
+          "value": 7197.7,
+          "ci": [
+            5987.5,
+            8433.4
+          ],
+          "rows": 8097,
+          "dates": 31
+        },
+        "same_rwy_diff_op": {
+          "pairs": 6970,
+          "value": 6953.8,
+          "ci": [
+            5685.0,
+            8348.0
+          ],
+          "rows": 8097,
+          "dates": 31
+        },
+        "diff_rwy_same_op": {
+          "pairs": 8338,
+          "value": 1251.6,
+          "ci": [
+            384.8,
+            2157.9
+          ],
+          "rows": 8097,
+          "dates": 31
+        },
+        "diff_rwy_diff_op": {
+          "pairs": 7748,
+          "value": 434.5,
+          "ci": [
+            -371.4,
+            1214.7
+          ],
+          "rows": 8097,
+          "dates": 31
+        }
+      },
+      "variance_components_matched": {
+        "airport_window_s2": 434.5,
+        "runway_given_window_s2": 6519.3,
+        "operator_given_window_s2": 817.1,
+        "additivity_residual_s2": -573.2,
+        "note": "cov(diff,diff) = Var(window); each same-X row minus it is Var(X | window); the fourth cell is the additivity check, not an assumption",
+        "shared_component_on_these_rows_s2": 3934.8,
+        "sum_of_components_s2": 7197.7,
+        "fractions_of_the_sum": {
+          "airport_shared_pct": 6.0,
+          "runway_shared_pct": 90.6,
+          "operator_shared_pct": 11.4,
+          "additivity_pct": -8.0,
+          "denominator_s2": 7197.7
+        },
+        "fractions_of_the_shared_component": {
+          "denominator_s2": 3934.8,
+          "airport_shared_pct": 11.0,
+          "runway_shared_pct": 165.7,
+          "operator_shared_pct": 20.8,
+          "additivity_pct": -14.6,
+          "note": "the assignment's own denominator: the shared component read on the SAME rows.  These four do not add to 100 % -- the components are conditional variances whose sum is the same-runway-same-operator relation, while the shared component is the pair-weighted average over all four"
+        }
+      },
+      "crossover_coverage": {
+        "EDDM": {
+          "same_rwy_same_op": {
+            "pairs": 962,
+            "dates": 29,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 896,
+            "dates": 29,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 1029,
+            "dates": 29,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 925,
+            "dates": 29,
+            "met": true
+          }
+        },
+        "EGLL": {
+          "same_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          }
+        },
+        "LEBL": {
+          "same_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          }
+        },
+        "LEMD": {
+          "same_rwy_same_op": {
+            "pairs": 1724,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 2472,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 1738,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 2828,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LFPG": {
+          "same_rwy_same_op": {
+            "pairs": 2974,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 2007,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 2704,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 2398,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LIRF": {
+          "same_rwy_same_op": {
+            "pairs": 8,
+            "dates": 6,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 8,
+            "dates": 6,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 6,
+            "dates": 6,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 6,
+            "dates": 6,
+            "met": false
+          }
+        },
+        "LSZH": {
+          "same_rwy_same_op": {
+            "pairs": 140,
+            "dates": 25,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 103,
+            "dates": 25,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 104,
+            "dates": 25,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 96,
+            "dates": 25,
+            "met": false
+          }
+        },
+        "LTFM": {
+          "same_rwy_same_op": {
+            "pairs": 2911,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 1484,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 2756,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 1494,
+            "dates": 31,
+            "met": true
+          }
+        }
+      },
+      "crossover_coverage_note": "counted on the matched rows only (all four relations non-empty), so an airport that meets the rule meets it on the population the components are read on",
+      "crossover_airports_supported": [
+        "EDDM",
+        "LEMD",
+        "LFPG",
+        "LTFM"
+      ],
+      "crossover_matched_supported_airports": {
+        "same_rwy_same_op": {
+          "pairs": 8571,
+          "value": 7051.9,
+          "ci": [
+            5769.8,
+            8373.3
+          ],
+          "rows": 7922,
+          "dates": 31
+        },
+        "same_rwy_diff_op": {
+          "pairs": 6860,
+          "value": 6886.3,
+          "ci": [
+            5600.3,
+            8322.5
+          ],
+          "rows": 7922,
+          "dates": 31
+        },
+        "diff_rwy_same_op": {
+          "pairs": 8228,
+          "value": 1200.7,
+          "ci": [
+            305.2,
+            2151.3
+          ],
+          "rows": 7922,
+          "dates": 31
+        },
+        "diff_rwy_diff_op": {
+          "pairs": 7645,
+          "value": 397.9,
+          "ci": [
+            -405.0,
+            1246.4
+          ],
+          "rows": 7922,
+          "dates": 31
+        }
+      },
+      "observables": {
+        "n_cells": 27212,
+        "n_features": 370,
+        "cross_fitted_r2_cell_mean": 0.018,
+        "cross_fitted_r2_shared_part": 0.0418,
+        "cross_fitted_r2_note": "the first is the count-weighted out-of-block R^2 of the PLUG-IN cell mean, whose denominator carries the within-cell noise E[Var(eps)/n_c] that no model can reach; the second removes that noise from both sides and is the assignment's oracle-free upper bound",
+        "plugin_second_moment_s2": 11375.6,
+        "plugin_noise_term_s2": 6479.9,
+        "plugin_debiased_s2": 4895.7,
+        "plugin_debiased_after_s2": 4690.8,
+        "feature_note": "cell means of the exp-039 row feature set (359 columns) plus the count/window block; NOT the literal v10 member frame, which is not reproducible at this cost",
+        "A_mean_r_h": 273.611,
+        "B_mean_h2": 326.426,
+        "mse_gain_s2": 220.8,
+        "ci": [
+          133.3,
+          312.07
+        ],
+        "unrestricted_scale": 0.8382,
+        "shared_before": {
+          "pairs": 305489,
+          "value": 4573.0,
+          "ci": [
+            3968.6,
+            5304.3
+          ],
+          "rows": 119592,
+          "dates": 31
+        },
+        "shared_after": {
+          "pairs": 305489,
+          "value": 4416.0,
+          "ci": [
+            3821.8,
+            5172.2
+          ],
+          "rows": 119592,
+          "dates": 31
+        },
+        "fraction_of_shared_explained": 0.0343,
+        "top_features": [
+          "w600_r_excess",
+          "RUNWAY_mvt=25",
+          "RUNWAY_mvt=16L",
+          "RUNWAY_mvt=27R",
+          "AIRCRAFT_TYPE_mvt=A35K",
+          "eobt_lobt",
+          "w3600_r_excess",
+          "r_prev5_stand"
+        ]
+      },
+      "runway_grain": {
+        "n_cells": 38357,
+        "median_cell_size": 4.0,
+        "shared": {
+          "cell_ge_2": {
+            "pairs": 206700,
+            "value": 6202.6,
+            "ci": [
+              5606.6,
+              6928.6
+            ],
+            "rows": 113974,
+            "dates": 31
+          },
+          "cell_ge_4": {
+            "pairs": 179247,
+            "value": 6178.9,
+            "ci": [
+              5570.5,
+              6818.7
+            ],
+            "rows": 78847,
+            "dates": 31
+          },
+          "cell_ge_6": {
+            "pairs": 104459,
+            "value": 5558.8,
+            "ci": [
+              5039.5,
+              6070.6
+            ],
+            "rows": 35965,
+            "dates": 31
+          },
+          "cell_ge_10": {
+            "pairs": 1875,
+            "value": 5081.5,
+            "ci": [
+              1431.8,
+              9886.3
+            ],
+            "rows": 413,
+            "dates": 21
+          }
+        },
+        "persistence": {
+          "lag_0": {
+            "pairs": 206700,
+            "value": 6202.6,
+            "ci": [
+              5567.8,
+              6921.4
+            ],
+            "rows": 113974,
+            "dates": 31
+          },
+          "lag_1": {
+            "pairs": 228088,
+            "value": 4065.1,
+            "ci": [
+              3521.1,
+              4722.7
+            ],
+            "rows": 113771,
+            "dates": 31
+          },
+          "lag_2": {
+            "pairs": 220164,
+            "value": 2303.3,
+            "ci": [
+              1900.7,
+              2780.7
+            ],
+            "rows": 111638,
+            "dates": 31
+          },
+          "lag_3": {
+            "pairs": 213028,
+            "value": 1559.3,
+            "ci": [
+              1160.6,
+              2077.5
+            ],
+            "rows": 109544,
+            "dates": 31
+          },
+          "lag_4": {
+            "pairs": 206374,
+            "value": 1074.6,
+            "ci": [
+              724.7,
+              1470.7
+            ],
+            "rows": 107284,
+            "dates": 31
+          },
+          "lag_5": {
+            "pairs": 200922,
+            "value": 876.5,
+            "ci": [
+              558.4,
+              1231.4
+            ],
+            "rows": 105335,
+            "dates": 31
+          },
+          "lag_6": {
+            "pairs": 195486,
+            "value": 814.1,
+            "ci": [
+              539.2,
+              1145.7
+            ],
+            "rows": 103430,
+            "dates": 31
+          }
+        },
+        "autocorrelation": {
+          "lag_0": {
+            "cell_pairs": 38357,
+            "rho_plugin": 1.0,
+            "rho_debiased": 1.0,
+            "cov_s2": 13228.4,
+            "var_plugin_s2": 13228.4,
+            "var_debiased_s2": 6886.3,
+            "per_cell": {
+              "rho_plugin": 1.0,
+              "rho_debiased": 1.0,
+              "cov_s2": 22619.2,
+              "var_plugin_s2": 22619.2,
+              "var_debiased_s2": 15509.4
+            }
+          },
+          "lag_1": {
+            "cell_pairs": 33054,
+            "rho_plugin": 0.3021,
+            "rho_debiased": 0.5886,
+            "cov_s2": 4056.4,
+            "var_plugin_s2": 13486.3,
+            "var_debiased_s2": 6949.6,
+            "per_cell": {
+              "rho_plugin": 0.2301,
+              "rho_debiased": 0.368,
+              "cov_s2": 4480.7,
+              "var_plugin_s2": 19344.5,
+              "var_debiased_s2": 12017.8
+            }
+          },
+          "lag_2": {
+            "cell_pairs": 32497,
+            "rho_plugin": 0.1711,
+            "rho_debiased": 0.3356,
+            "cov_s2": 2298.4,
+            "var_plugin_s2": 13406.8,
+            "var_debiased_s2": 6821.6,
+            "per_cell": {
+              "rho_plugin": 0.1511,
+              "rho_debiased": 0.2433,
+              "cov_s2": 2916.4,
+              "var_plugin_s2": 19165.5,
+              "var_debiased_s2": 11840.8
+            }
+          },
+          "lag_3": {
+            "cell_pairs": 31909,
+            "rho_plugin": 0.1147,
+            "rho_debiased": 0.2249,
+            "cov_s2": 1554.9,
+            "var_plugin_s2": 13391.1,
+            "var_debiased_s2": 6829.4,
+            "per_cell": {
+              "rho_plugin": 0.1007,
+              "rho_debiased": 0.1606,
+              "cov_s2": 1993.3,
+              "var_plugin_s2": 19755.3,
+              "var_debiased_s2": 12395.8
+            }
+          },
+          "lag_4": {
+            "cell_pairs": 31293,
+            "rho_plugin": 0.0791,
+            "rho_debiased": 0.1557,
+            "cov_s2": 1070.1,
+            "var_plugin_s2": 13162.4,
+            "var_debiased_s2": 6704.9,
+            "per_cell": {
+              "rho_plugin": 0.0821,
+              "rho_debiased": 0.1315,
+              "cov_s2": 1602.9,
+              "var_plugin_s2": 19321.9,
+              "var_debiased_s2": 12022.6
+            }
+          },
+          "lag_5": {
+            "cell_pairs": 30768,
+            "rho_plugin": 0.0632,
+            "rho_debiased": 0.1251,
+            "cov_s2": 870.9,
+            "var_plugin_s2": 13683.5,
+            "var_debiased_s2": 6917.1,
+            "per_cell": {
+              "rho_plugin": 0.0655,
+              "rho_debiased": 0.1054,
+              "cov_s2": 1279.0,
+              "var_plugin_s2": 19160.6,
+              "var_debiased_s2": 11813.5
+            }
+          },
+          "lag_6": {
+            "cell_pairs": 30304,
+            "rho_plugin": 0.059,
+            "rho_debiased": 0.1162,
+            "cov_s2": 809.2,
+            "var_plugin_s2": 13541.4,
+            "var_debiased_s2": 6786.4,
+            "per_cell": {
+              "rho_plugin": 0.0689,
+              "rho_debiased": 0.1102,
+              "cov_s2": 1347.7,
+              "var_plugin_s2": 19058.9,
+              "var_debiased_s2": 11782.8
+            }
+          },
+          "note": "matched cell pairs at each lag.  The headline numbers weight each cell pair by n_a * n_b -- the number of row pairs it carries, the same weight the cross-product table uses -- and `per_cell` repeats them with one weight per cell.  `rho_plugin` is the assignment's statistic on the plug-in mean; `rho_debiased` removes the within-cell noise from the denominator only, because noise in two different bins is independent"
+        },
+        "plugin_cell_mean": {
+          "cell_ge_2": {
+            "rows": 113974,
+            "plugin_var_s2": 14147.7,
+            "ci": [
+              13019.0,
+              15460.7
+            ],
+            "noise_term_s2": 7693.0,
+            "debiased_s2": 6454.7,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          },
+          "cell_ge_4": {
+            "rows": 78847,
+            "plugin_var_s2": 12109.0,
+            "ci": [
+              11203.4,
+              13167.6
+            ],
+            "noise_term_s2": 5676.5,
+            "debiased_s2": 6432.5,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          },
+          "cell_ge_6": {
+            "rows": 35965,
+            "plugin_var_s2": 10119.6,
+            "ci": [
+              9585.0,
+              10727.7
+            ],
+            "noise_term_s2": 4441.9,
+            "debiased_s2": 5677.7,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          },
+          "cell_ge_10": {
+            "rows": 413,
+            "plugin_var_s2": 8827.5,
+            "ci": [
+              4539.4,
+              14734.1
+            ],
+            "noise_term_s2": 3695.4,
+            "debiased_s2": 5132.1,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          }
+        },
+        "observables": {
+          "n_cells": 38357,
+          "n_features": 371,
+          "cross_fitted_r2_cell_mean": 0.0176,
+          "cross_fitted_r2_shared_part": 0.0385,
+          "cross_fitted_r2_note": "the first is the count-weighted out-of-block R^2 of the PLUG-IN cell mean, whose denominator carries the within-cell noise E[Var(eps)/n_c] that no model can reach; the second removes that noise from both sides and is the assignment's oracle-free upper bound",
+          "plugin_second_moment_s2": 14147.7,
+          "plugin_noise_term_s2": 7693.0,
+          "plugin_debiased_s2": 6454.7,
+          "plugin_debiased_after_s2": 6206.2,
+          "feature_note": "cell means of the exp-039 row feature set (359 columns) plus the count/window block; NOT the literal v10 member frame, which is not reproducible at this cost",
+          "A_mean_r_h": 364.362,
+          "B_mean_h2": 490.69,
+          "mse_gain_s2": 238.03,
+          "ci": [
+            114.8,
+            358.46
+          ],
+          "unrestricted_scale": 0.7425,
+          "shared_before": {
+            "pairs": 206700,
+            "value": 6202.6,
+            "ci": [
+              5576.3,
+              6947.7
+            ],
+            "rows": 113974,
+            "dates": 31
+          },
+          "shared_after": {
+            "pairs": 206700,
+            "value": 5986.8,
+            "ci": [
+              5406.9,
+              6644.0
+            ],
+            "rows": 113974,
+            "dates": 31
+          },
+          "fraction_of_shared_explained": 0.0348,
+          "top_features": [
+            "RUNWAY_mvt=25",
+            "RUNWAY_mvt=16L",
+            "RUNWAY_mvt=NA",
+            "RUNWAY_mvt=27R",
+            "d_aobt_eobt",
+            "aobt_eobt",
+            "c_seg",
+            "AIRCRAFT_TYPE_mvt=A35K"
+          ]
+        }
+      }
+    },
+    "january": {
+      "fold": "january",
+      "month": "2025-01",
+      "n_rows": 153706,
+      "n_eligible": 115366,
+      "n_cells": 27019,
+      "median_cell_size": 6.0,
+      "cell_size_p90": 9.0,
+      "headline": {
+        "cell_ge_2": {
+          "pairs": 270417,
+          "value": 5318.1,
+          "ci": [
+            4188.9,
+            6935.3
+          ],
+          "rows": 111607,
+          "dates": 31
+        },
+        "cell_ge_4": {
+          "pairs": 254691,
+          "value": 5414.8,
+          "ci": [
+            4291.2,
+            7107.3
+          ],
+          "rows": 91861,
+          "dates": 31
+        },
+        "cell_ge_6": {
+          "pairs": 197323,
+          "value": 5496.6,
+          "ci": [
+            4158.2,
+            7580.2
+          ],
+          "rows": 59404,
+          "dates": 31
+        },
+        "cell_ge_10": {
+          "pairs": 39761,
+          "value": 9598.2,
+          "ci": [
+            4570.2,
+            18628.1
+          ],
+          "rows": 8021,
+          "dates": 31
+        },
+        "q04_support_dep6_arr6": {
+          "pairs": 71628,
+          "value": 4885.0,
+          "ci": [
+            3711.2,
+            6152.8
+          ],
+          "rows": 22492,
+          "dates": 31
+        },
+        "q04_support_note": "exp-039 analysis/q04.json cross_product_r_rbar_self_excluded on the same support; assignments/cell.md quotes a different triple (see RESULTS 1)"
+      },
+      "plugin_cell_mean": {
+        "cell_ge_2": {
+          "rows": 111607,
+          "plugin_var_s2": 11508.1,
+          "ci": [
+            10312.9,
+            12978.1
+          ],
+          "noise_term_s2": 6655.7,
+          "debiased_s2": 4852.4,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "cell_ge_4": {
+          "rows": 91861,
+          "plugin_var_s2": 10419.4,
+          "ci": [
+            9255.7,
+            11883.8
+          ],
+          "noise_term_s2": 5330.9,
+          "debiased_s2": 5088.5,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "cell_ge_6": {
+          "rows": 59404,
+          "plugin_var_s2": 9521.6,
+          "ci": [
+            8259.3,
+            11136.9
+          ],
+          "noise_term_s2": 4421.9,
+          "debiased_s2": 5099.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "cell_ge_10": {
+          "rows": 8021,
+          "plugin_var_s2": 12700.1,
+          "ci": [
+            7403.7,
+            22187.5
+          ],
+          "noise_term_s2": 3271.5,
+          "debiased_s2": 9428.6,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "by_airport": {
+        "EDDM": {
+          "pairs": 20287,
+          "value": 1929.7,
+          "ci": [
+            1312.1,
+            2726.2
+          ],
+          "rows": 10053,
+          "dates": 31
+        },
+        "EGLL": {
+          "pairs": 51948,
+          "value": 5057.8,
+          "ci": [
+            3713.2,
+            6486.4
+          ],
+          "rows": 18706,
+          "dates": 31
+        },
+        "LEBL": {
+          "pairs": 20693,
+          "value": 4052.7,
+          "ci": [
+            2910.8,
+            5501.3
+          ],
+          "rows": 11460,
+          "dates": 31
+        },
+        "LEMD": {
+          "pairs": 41186,
+          "value": 3197.4,
+          "ci": [
+            2445.0,
+            4160.4
+          ],
+          "rows": 15728,
+          "dates": 31
+        },
+        "LFPG": {
+          "pairs": 41362,
+          "value": 4933.2,
+          "ci": [
+            3833.1,
+            6212.7
+          ],
+          "rows": 16053,
+          "dates": 31
+        },
+        "LIRF": {
+          "pairs": 18299,
+          "value": 5208.7,
+          "ci": [
+            3519.1,
+            7285.1
+          ],
+          "rows": 10569,
+          "dates": 31
+        },
+        "LSZH": {
+          "pairs": 14324,
+          "value": 6028.1,
+          "ci": [
+            4697.4,
+            7586.9
+          ],
+          "rows": 8575,
+          "dates": 31
+        },
+        "LTFM": {
+          "pairs": 62318,
+          "value": 8584.2,
+          "ci": [
+            4922.7,
+            14635.7
+          ],
+          "rows": 20463,
+          "dates": 31
+        }
+      },
+      "by_airport_plugin": {
+        "EDDM": {
+          "rows": 10053,
+          "plugin_var_s2": 6599.1,
+          "ci": [
+            5377.0,
+            8169.1
+          ],
+          "noise_term_s2": 4445.0,
+          "debiased_s2": 2154.1,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "EGLL": {
+          "rows": 18706,
+          "plugin_var_s2": 11807.7,
+          "ci": [
+            9552.2,
+            14616.0
+          ],
+          "noise_term_s2": 6520.0,
+          "debiased_s2": 5287.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LEBL": {
+          "rows": 11460,
+          "plugin_var_s2": 7051.2,
+          "ci": [
+            5889.3,
+            8593.0
+          ],
+          "noise_term_s2": 3419.4,
+          "debiased_s2": 3631.8,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LEMD": {
+          "rows": 15728,
+          "plugin_var_s2": 6754.5,
+          "ci": [
+            5988.1,
+            7699.7
+          ],
+          "noise_term_s2": 3666.4,
+          "debiased_s2": 3088.0,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LFPG": {
+          "rows": 16053,
+          "plugin_var_s2": 13990.9,
+          "ci": [
+            11191.5,
+            17209.3
+          ],
+          "noise_term_s2": 8465.8,
+          "debiased_s2": 5525.1,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LIRF": {
+          "rows": 10569,
+          "plugin_var_s2": 21123.4,
+          "ci": [
+            18002.8,
+            24837.8
+          ],
+          "noise_term_s2": 16545.2,
+          "debiased_s2": 4578.1,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LSZH": {
+          "rows": 8575,
+          "plugin_var_s2": 10377.4,
+          "ci": [
+            9105.5,
+            11788.9
+          ],
+          "noise_term_s2": 4928.9,
+          "debiased_s2": 5448.6,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "LTFM": {
+          "rows": 20463,
+          "plugin_var_s2": 13193.9,
+          "ci": [
+            10093.9,
+            17597.6
+          ],
+          "noise_term_s2": 6171.6,
+          "debiased_s2": 7022.3,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "by_hour": {
+        "00-06": {
+          "pairs": 13359,
+          "value": 8390.5,
+          "ci": [
+            5217.2,
+            11920.4
+          ],
+          "rows": 5733,
+          "dates": 31
+        },
+        "06-10": {
+          "pairs": 58386,
+          "value": 7511.1,
+          "ci": [
+            4186.6,
+            13236.3
+          ],
+          "rows": 24508,
+          "dates": 31
+        },
+        "10-14": {
+          "pairs": 76367,
+          "value": 5032.7,
+          "ci": [
+            4039.4,
+            6142.3
+          ],
+          "rows": 28908,
+          "dates": 31
+        },
+        "14-18": {
+          "pairs": 66322,
+          "value": 4122.2,
+          "ci": [
+            3388.2,
+            4922.6
+          ],
+          "rows": 26722,
+          "dates": 31
+        },
+        "18-24": {
+          "pairs": 55983,
+          "value": 4103.8,
+          "ci": [
+            3150.3,
+            5274.8
+          ],
+          "rows": 25736,
+          "dates": 31
+        }
+      },
+      "by_hour_plugin": {
+        "00-06": {
+          "rows": 5733,
+          "plugin_var_s2": 19358.4,
+          "ci": [
+            15346.9,
+            23916.6
+          ],
+          "noise_term_s2": 12020.8,
+          "debiased_s2": 7337.6,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "06-10": {
+          "rows": 24508,
+          "plugin_var_s2": 12992.6,
+          "ci": [
+            10255.6,
+            16986.1
+          ],
+          "noise_term_s2": 6860.7,
+          "debiased_s2": 6131.9,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "10-14": {
+          "rows": 28908,
+          "plugin_var_s2": 11233.4,
+          "ci": [
+            9977.4,
+            12500.6
+          ],
+          "noise_term_s2": 6419.3,
+          "debiased_s2": 4814.0,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "14-18": {
+          "rows": 26722,
+          "plugin_var_s2": 8679.0,
+          "ci": [
+            7881.8,
+            9560.9
+          ],
+          "noise_term_s2": 4874.2,
+          "debiased_s2": 3804.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "18-24": {
+          "rows": 25736,
+          "plugin_var_s2": 11499.2,
+          "ci": [
+            10113.1,
+            13352.7
+          ],
+          "noise_term_s2": 7380.5,
+          "debiased_s2": 4118.7,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        }
+      },
+      "by_cell_size": {
+        "2-3": {
+          "pairs": 15726,
+          "value": 3752.3,
+          "ci": [
+            2239.8,
+            5393.7
+          ],
+          "rows": 19746,
+          "dates": 31
+        },
+        "4-5": {
+          "pairs": 57368,
+          "value": 5133.3,
+          "ci": [
+            4181.0,
+            6158.3
+          ],
+          "rows": 32457,
+          "dates": 31
+        },
+        "6-9": {
+          "pairs": 157562,
+          "value": 4461.6,
+          "ci": [
+            3780.5,
+            5164.4
+          ],
+          "rows": 51383,
+          "dates": 31
+        },
+        "10-19": {
+          "pairs": 39761,
+          "value": 9598.2,
+          "ci": [
+            4540.1,
+            19038.7
+          ],
+          "rows": 8021,
+          "dates": 31
+        },
+        "20-+": {
+          "pairs": 0,
+          "value": null,
+          "ci": [
+            null,
+            null
+          ],
+          "rows": 0,
+          "dates": 0
+        }
+      },
+      "by_cell_size_plugin": {
+        "2-3": {
+          "rows": 19746,
+          "plugin_var_s2": 16569.8,
+          "ci": [
+            14253.8,
+            19146.4
+          ],
+          "noise_term_s2": 12818.6,
+          "debiased_s2": 3751.2,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "4-5": {
+          "rows": 32457,
+          "plugin_var_s2": 12061.0,
+          "ci": [
+            10683.6,
+            13486.4
+          ],
+          "noise_term_s2": 6994.7,
+          "debiased_s2": 5066.3,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "6-9": {
+          "rows": 51383,
+          "plugin_var_s2": 9024.1,
+          "ci": [
+            8247.3,
+            9898.7
+          ],
+          "noise_term_s2": 4601.5,
+          "debiased_s2": 4422.6,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "10-19": {
+          "rows": 8021,
+          "plugin_var_s2": 12700.1,
+          "ci": [
+            7375.1,
+            22381.5
+          ],
+          "noise_term_s2": 3271.5,
+          "debiased_s2": 9428.6,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "20-+": {
+          "rows": 0,
+          "plugin_var_s2": null,
+          "noise_term_s2": null,
+          "debiased_s2": null
+        }
+      },
+      "by_regime": {
+        "nm_bulk (eligible)": {
+          "pairs": 270417,
+          "value": 5318.1,
+          "ci": [
+            4203.4,
+            6887.2
+          ],
+          "rows": 111607,
+          "dates": 31
+        },
+        "nm_bulk at EHAM/EDDF (held)": {
+          "pairs": 93446,
+          "value": 3072.6,
+          "ci": [
+            2580.3,
+            3671.4
+          ],
+          "rows": 31776,
+          "dates": 31
+        },
+        "nm_late": {
+          "pairs": 1369,
+          "value": 47439.4,
+          "ci": [
+            26193.8,
+            77470.3
+          ],
+          "rows": 1597,
+          "dates": 30
+        },
+        "nonm": {
+          "pairs": 146,
+          "value": 167604.8,
+          "ci": [
+            56784.9,
+            230406.6
+          ],
+          "rows": 189,
+          "dates": 19
+        },
+        "noac": {
+          "pairs": 1,
+          "value": 151267.8,
+          "ci": [
+            151267.8,
+            151267.8
+          ],
+          "rows": 2,
+          "dates": 1
+        }
+      },
+      "by_regime_plugin": {
+        "nm_bulk (eligible)": {
+          "rows": 111607,
+          "plugin_var_s2": 11508.1,
+          "ci": [
+            10327.1,
+            12961.3
+          ],
+          "noise_term_s2": 6655.7,
+          "debiased_s2": 4852.4,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "nm_bulk at EHAM/EDDF (held)": {
+          "rows": 31776,
+          "plugin_var_s2": 6823.1,
+          "ci": [
+            5933.0,
+            7847.9
+          ],
+          "noise_term_s2": 4070.1,
+          "debiased_s2": 2753.0,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "nm_late": {
+          "rows": 1597,
+          "plugin_var_s2": 115288.7,
+          "ci": [
+            87992.7,
+            152486.2
+          ],
+          "noise_term_s2": 64907.7,
+          "debiased_s2": 50380.9,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "nonm": {
+          "rows": 189,
+          "plugin_var_s2": 241418.0,
+          "ci": [
+            114980.6,
+            336202.1
+          ],
+          "noise_term_s2": 84889.7,
+          "debiased_s2": 156528.3,
+          "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+        },
+        "noac": {
+          "rows": 2,
+          "plugin_var_s2": null,
+          "noise_term_s2": null,
+          "debiased_s2": null
+        }
+      },
+      "persistence": {
+        "lag_0": {
+          "pairs": 270417,
+          "value": 5318.1,
+          "ci": [
+            4202.3,
+            6942.0
+          ],
+          "rows": 111607,
+          "dates": 31
+        },
+        "lag_1": {
+          "pairs": 291972,
+          "value": 3936.0,
+          "ci": [
+            2921.6,
+            5284.4
+          ],
+          "rows": 111913,
+          "dates": 31
+        },
+        "lag_2": {
+          "pairs": 284550,
+          "value": 2447.0,
+          "ci": [
+            1835.0,
+            3332.2
+          ],
+          "rows": 111305,
+          "dates": 31
+        },
+        "lag_3": {
+          "pairs": 278224,
+          "value": 1739.5,
+          "ci": [
+            1238.9,
+            2353.0
+          ],
+          "rows": 110691,
+          "dates": 31
+        },
+        "lag_4": {
+          "pairs": 271710,
+          "value": 1322.9,
+          "ci": [
+            878.7,
+            1939.2
+          ],
+          "rows": 109915,
+          "dates": 31
+        },
+        "lag_5": {
+          "pairs": 265882,
+          "value": 1126.3,
+          "ci": [
+            827.9,
+            1503.5
+          ],
+          "rows": 109235,
+          "dates": 31
+        },
+        "lag_6": {
+          "pairs": 260462,
+          "value": 910.9,
+          "ci": [
+            584.8,
+            1275.0
+          ],
+          "rows": 108536,
+          "dates": 31
+        }
+      },
+      "autocorrelation": {
+        "lag_0": {
+          "cell_pairs": 27019,
+          "rho_plugin": 1.0,
+          "rho_debiased": 1.0,
+          "cov_s2": 10930.4,
+          "var_plugin_s2": 10930.4,
+          "var_debiased_s2": 5474.2,
+          "per_cell": {
+            "rho_plugin": 1.0,
+            "rho_debiased": 1.0,
+            "cov_s2": 18610.9,
+            "var_plugin_s2": 18610.9,
+            "var_debiased_s2": 11374.3
+          }
+        },
+        "lag_1": {
+          "cell_pairs": 25197,
+          "rho_plugin": 0.3424,
+          "rho_debiased": 0.6842,
+          "cov_s2": 3879.6,
+          "var_plugin_s2": 11394.8,
+          "var_debiased_s2": 5816.9,
+          "per_cell": {
+            "rho_plugin": 0.1959,
+            "rho_debiased": 0.3519,
+            "cov_s2": 3155.7,
+            "var_plugin_s2": 16206.8,
+            "var_debiased_s2": 8982.3
+          }
+        },
+        "lag_2": {
+          "cell_pairs": 25038,
+          "rho_plugin": 0.2143,
+          "rho_debiased": 0.4396,
+          "cov_s2": 2383.9,
+          "var_plugin_s2": 11140.8,
+          "var_debiased_s2": 5523.9,
+          "per_cell": {
+            "rho_plugin": 0.1304,
+            "rho_debiased": 0.2373,
+            "cov_s2": 2061.0,
+            "var_plugin_s2": 16270.1,
+            "var_debiased_s2": 9060.1
+          }
+        },
+        "lag_3": {
+          "cell_pairs": 24899,
+          "rho_plugin": 0.1489,
+          "rho_debiased": 0.3045,
+          "cov_s2": 1677.1,
+          "var_plugin_s2": 11084.5,
+          "var_debiased_s2": 5409.8,
+          "per_cell": {
+            "rho_plugin": 0.0914,
+            "rho_debiased": 0.1657,
+            "cov_s2": 1447.2,
+            "var_plugin_s2": 16123.7,
+            "var_debiased_s2": 8939.1
+          }
+        },
+        "lag_4": {
+          "cell_pairs": 24779,
+          "rho_plugin": 0.1115,
+          "rho_debiased": 0.2286,
+          "cov_s2": 1263.1,
+          "var_plugin_s2": 10892.6,
+          "var_debiased_s2": 5182.3,
+          "per_cell": {
+            "rho_plugin": 0.0731,
+            "rho_debiased": 0.1333,
+            "cov_s2": 1147.4,
+            "var_plugin_s2": 15512.6,
+            "var_debiased_s2": 8390.6
+          }
+        },
+        "lag_5": {
+          "cell_pairs": 24644,
+          "rho_plugin": 0.0933,
+          "rho_debiased": 0.1929,
+          "cov_s2": 1069.3,
+          "var_plugin_s2": 11049.7,
+          "var_debiased_s2": 5245.0,
+          "per_cell": {
+            "rho_plugin": 0.0477,
+            "rho_debiased": 0.0853,
+            "cov_s2": 763.4,
+            "var_plugin_s2": 16156.0,
+            "var_debiased_s2": 9040.6
+          }
+        },
+        "lag_6": {
+          "cell_pairs": 24494,
+          "rho_plugin": 0.0747,
+          "rho_debiased": 0.1554,
+          "cov_s2": 854.3,
+          "var_plugin_s2": 11215.2,
+          "var_debiased_s2": 5369.4,
+          "per_cell": {
+            "rho_plugin": 0.0596,
+            "rho_debiased": 0.1055,
+            "cov_s2": 967.3,
+            "var_plugin_s2": 16667.5,
+            "var_debiased_s2": 9576.4
+          }
+        },
+        "note": "matched cell pairs at each lag.  The headline numbers weight each cell pair by n_a * n_b -- the number of row pairs it carries, the same weight the cross-product table uses -- and `per_cell` repeats them with one weight per cell.  `rho_plugin` is the assignment's statistic on the plug-in mean; `rho_debiased` removes the within-cell noise from the denominator only, because noise in two different bins is independent"
+      },
+      "crossover_population": {
+        "eligible_rows": 115366,
+        "rows_in_cells_with_2_runways_and_2_operators": 51465,
+        "rows_with_all_four_relations_non_empty": 7129,
+        "matched_pct_of_eligible": 6.18,
+        "cells_touched_by_matched_rows": 1754,
+        "unmatched_rows_by_reason": {
+          "single_runway_cell": 57223,
+          "single_operator_cell": 14395,
+          "2x2_cell_but_a_relation_empty": 44336
+        },
+        "note": "the matched rule is row-level: a row is kept when all four relations have at least one counterpart, so every relation is estimated on the same rows and the same days",
+        "q10_predeclared_rule": {
+          "min_rows_per_intersection": 3,
+          "cells": 27019,
+          "cells_supported": 0,
+          "cells_unsupported": 27019,
+          "cells_supported_pct": 0.0,
+          "rows_in_the_chosen_2x2": 0,
+          "rows_pct_of_eligible": 0.0,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner"
+        }
+      },
+      "q10_rule_grain_scan": {
+        "10min": {
+          "min_rows_per_intersection": 3,
+          "cells": 27019,
+          "cells_supported": 0,
+          "cells_unsupported": 27019,
+          "cells_supported_pct": 0.0,
+          "rows_in_the_chosen_2x2": 0,
+          "rows_pct_of_eligible": 0.0,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 10
+        },
+        "30min": {
+          "min_rows_per_intersection": 3,
+          "cells": 9838,
+          "cells_supported": 34,
+          "cells_unsupported": 9804,
+          "cells_supported_pct": 0.35,
+          "rows_in_the_chosen_2x2": 585,
+          "rows_pct_of_eligible": 0.51,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 30,
+          "relations": {
+            "same_rwy_same_op": {
+              "pairs": 1089,
+              "value": 4044.8,
+              "ci": [
+                1948.6,
+                6075.7
+              ],
+              "rows": 585,
+              "dates": 23
+            },
+            "same_rwy_diff_op": {
+              "pairs": 1253,
+              "value": 4435.6,
+              "ci": [
+                1723.5,
+                6872.4
+              ],
+              "rows": 585,
+              "dates": 23
+            },
+            "diff_rwy_same_op": {
+              "pairs": 1277,
+              "value": -76.4,
+              "ci": [
+                -1577.5,
+                1713.4
+              ],
+              "rows": 585,
+              "dates": 23
+            },
+            "diff_rwy_diff_op": {
+              "pairs": 1259,
+              "value": -64.3,
+              "ci": [
+                -1899.6,
+                1960.8
+              ],
+              "rows": 585,
+              "dates": 23
+            }
+          },
+          "components": {
+            "airport_window_s2": -64.3,
+            "runway_given_window_s2": 4499.9,
+            "operator_given_window_s2": -12.1,
+            "additivity_residual_s2": -378.7,
+            "shared_component_on_these_rows_s2": 2005.8,
+            "sum_of_components_s2": 4044.8,
+            "fractions_of_the_sum": {
+              "airport_shared_pct": -1.6,
+              "runway_shared_pct": 111.3,
+              "operator_shared_pct": -0.3,
+              "additivity_pct": -9.4
+            },
+            "fractions_of_the_shared_component": {
+              "denominator_s2": 2005.8,
+              "airport_shared_pct": -3.2,
+              "runway_shared_pct": 224.3,
+              "operator_shared_pct": -0.6,
+              "additivity_pct": -18.9
+            }
+          },
+          "coverage": {
+            "LEMD": {
+              "same_rwy_same_op": {
+                "pairs": 1089,
+                "dates": 23,
+                "met": true
+              },
+              "same_rwy_diff_op": {
+                "pairs": 1253,
+                "dates": 23,
+                "met": true
+              },
+              "diff_rwy_same_op": {
+                "pairs": 1277,
+                "dates": 23,
+                "met": true
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 1259,
+                "dates": 23,
+                "met": true
+              }
+            }
+          },
+          "airports_supported": [
+            "LEMD"
+          ]
+        },
+        "60min": {
+          "min_rows_per_intersection": 3,
+          "cells": 5114,
+          "cells_supported": 80,
+          "cells_unsupported": 5034,
+          "cells_supported_pct": 1.56,
+          "rows_in_the_chosen_2x2": 1922,
+          "rows_pct_of_eligible": 1.67,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 60,
+          "relations": {
+            "same_rwy_same_op": {
+              "pairs": 6057,
+              "value": 5330.8,
+              "ci": [
+                2843.6,
+                8076.4
+              ],
+              "rows": 1922,
+              "dates": 31
+            },
+            "same_rwy_diff_op": {
+              "pairs": 5977,
+              "value": 5375.9,
+              "ci": [
+                2551.8,
+                8569.6
+              ],
+              "rows": 1922,
+              "dates": 31
+            },
+            "diff_rwy_same_op": {
+              "pairs": 6115,
+              "value": 2158.8,
+              "ci": [
+                26.5,
+                4913.0
+              ],
+              "rows": 1922,
+              "dates": 31
+            },
+            "diff_rwy_diff_op": {
+              "pairs": 5725,
+              "value": 1720.3,
+              "ci": [
+                -249.8,
+                4169.7
+              ],
+              "rows": 1922,
+              "dates": 31
+            }
+          },
+          "components": {
+            "airport_window_s2": 1720.3,
+            "runway_given_window_s2": 3655.6,
+            "operator_given_window_s2": 438.5,
+            "additivity_residual_s2": -483.6,
+            "shared_component_on_these_rows_s2": 3663.8,
+            "sum_of_components_s2": 5330.8,
+            "fractions_of_the_sum": {
+              "airport_shared_pct": 32.3,
+              "runway_shared_pct": 68.6,
+              "operator_shared_pct": 8.2,
+              "additivity_pct": -9.1
+            },
+            "fractions_of_the_shared_component": {
+              "denominator_s2": 3663.8,
+              "airport_shared_pct": 47.0,
+              "runway_shared_pct": 99.8,
+              "operator_shared_pct": 12.0,
+              "additivity_pct": -13.2
+            }
+          },
+          "coverage": {
+            "LEMD": {
+              "same_rwy_same_op": {
+                "pairs": 6057,
+                "dates": 31,
+                "met": true
+              },
+              "same_rwy_diff_op": {
+                "pairs": 5977,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_same_op": {
+                "pairs": 6115,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 5725,
+                "dates": 31,
+                "met": true
+              }
+            }
+          },
+          "airports_supported": [
+            "LEMD"
+          ]
+        },
+        "90min": {
+          "min_rows_per_intersection": 3,
+          "cells": 3497,
+          "cells_supported": 127,
+          "cells_unsupported": 3370,
+          "cells_supported_pct": 3.63,
+          "rows_in_the_chosen_2x2": 3618,
+          "rows_pct_of_eligible": 3.14,
+          "note": "the queue's rule is on the CELL and is applied before any covariance; the population read is the chosen 2x2 subgrid, so every relation has at least three rows at each corner",
+          "window_minutes": 90,
+          "relations": {
+            "same_rwy_same_op": {
+              "pairs": 14511,
+              "value": 2984.4,
+              "ci": [
+                1590.5,
+                4489.6
+              ],
+              "rows": 3618,
+              "dates": 31
+            },
+            "same_rwy_diff_op": {
+              "pairs": 12698,
+              "value": 3061.6,
+              "ci": [
+                1502.2,
+                4815.5
+              ],
+              "rows": 3618,
+              "dates": 31
+            },
+            "diff_rwy_same_op": {
+              "pairs": 14264,
+              "value": 952.4,
+              "ci": [
+                -139.3,
+                2368.3
+              ],
+              "rows": 3618,
+              "dates": 31
+            },
+            "diff_rwy_diff_op": {
+              "pairs": 12377,
+              "value": 1063.6,
+              "ci": [
+                -82.1,
+                2495.5
+              ],
+              "rows": 3618,
+              "dates": 31
+            }
+          },
+          "components": {
+            "airport_window_s2": 1063.6,
+            "runway_given_window_s2": 1998.0,
+            "operator_given_window_s2": -111.2,
+            "additivity_residual_s2": 34.0,
+            "shared_component_on_these_rows_s2": 2022.9,
+            "sum_of_components_s2": 2984.4,
+            "fractions_of_the_sum": {
+              "airport_shared_pct": 35.6,
+              "runway_shared_pct": 66.9,
+              "operator_shared_pct": -3.7,
+              "additivity_pct": 1.1
+            },
+            "fractions_of_the_shared_component": {
+              "denominator_s2": 2022.9,
+              "airport_shared_pct": 52.6,
+              "runway_shared_pct": 98.8,
+              "operator_shared_pct": -5.5,
+              "additivity_pct": 1.7
+            }
+          },
+          "coverage": {
+            "LEBL": {
+              "same_rwy_same_op": {
+                "pairs": 15,
+                "dates": 1,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 21,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 21,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 21,
+                "dates": 1,
+                "met": false
+              }
+            },
+            "LEMD": {
+              "same_rwy_same_op": {
+                "pairs": 13837,
+                "dates": 31,
+                "met": true
+              },
+              "same_rwy_diff_op": {
+                "pairs": 12335,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_same_op": {
+                "pairs": 13701,
+                "dates": 31,
+                "met": true
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 11971,
+                "dates": 31,
+                "met": true
+              }
+            },
+            "LFPG": {
+              "same_rwy_same_op": {
+                "pairs": 481,
+                "dates": 4,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 264,
+                "dates": 4,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 380,
+                "dates": 4,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 307,
+                "dates": 4,
+                "met": false
+              }
+            },
+            "LSZH": {
+              "same_rwy_same_op": {
+                "pairs": 178,
+                "dates": 1,
+                "met": false
+              },
+              "same_rwy_diff_op": {
+                "pairs": 78,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_same_op": {
+                "pairs": 162,
+                "dates": 1,
+                "met": false
+              },
+              "diff_rwy_diff_op": {
+                "pairs": 78,
+                "dates": 1,
+                "met": false
+              }
+            }
+          },
+          "airports_supported": [
+            "LEMD"
+          ]
+        }
+      },
+      "crossover": {
+        "same_rwy_same_op": {
+          "pairs": 61946,
+          "value": 9315.7,
+          "ci": [
+            7113.7,
+            12853.0
+          ],
+          "rows": 52376,
+          "dates": 31
+        },
+        "same_rwy_diff_op": {
+          "pairs": 124364,
+          "value": 5369.1,
+          "ci": [
+            4627.8,
+            6132.6
+          ],
+          "rows": 89116,
+          "dates": 31
+        },
+        "diff_rwy_same_op": {
+          "pairs": 33651,
+          "value": 3520.3,
+          "ci": [
+            780.2,
+            7899.8
+          ],
+          "rows": 28368,
+          "dates": 31
+        },
+        "diff_rwy_diff_op": {
+          "pairs": 50456,
+          "value": 1483.3,
+          "ci": [
+            752.2,
+            2258.7
+          ],
+          "rows": 45701,
+          "dates": 31
+        }
+      },
+      "variance_components": {
+        "airport_window_s2": 1483.3,
+        "runway_given_window_s2": 3885.8,
+        "operator_given_window_s2": 2037.0,
+        "additivity_residual_s2": 1909.6,
+        "note": "cov(diff,diff) = Var(window); each same-X row minus it is Var(X | window); the fourth cell is the additivity check, not an assumption",
+        "shared_component_on_these_rows_s2": 5318.1,
+        "sum_of_components_s2": 9315.7,
+        "fractions_of_the_sum": {
+          "airport_shared_pct": 15.9,
+          "runway_shared_pct": 41.7,
+          "operator_shared_pct": 21.9,
+          "additivity_pct": 20.5,
+          "denominator_s2": 9315.7
+        },
+        "fractions_of_the_shared_component": {
+          "denominator_s2": 5318.1,
+          "airport_shared_pct": 27.9,
+          "runway_shared_pct": 73.1,
+          "operator_shared_pct": 38.3,
+          "additivity_pct": 35.9,
+          "note": "the assignment's own denominator: the shared component read on the SAME rows.  These four do not add to 100 % -- the components are conditional variances whose sum is the same-runway-same-operator relation, while the shared component is the pair-weighted average over all four"
+        }
+      },
+      "crossover_matched": {
+        "same_rwy_same_op": {
+          "pairs": 7523,
+          "value": 8163.9,
+          "ci": [
+            6012.1,
+            10384.9
+          ],
+          "rows": 7129,
+          "dates": 31
+        },
+        "same_rwy_diff_op": {
+          "pairs": 5867,
+          "value": 7327.2,
+          "ci": [
+            5850.1,
+            8993.8
+          ],
+          "rows": 7129,
+          "dates": 31
+        },
+        "diff_rwy_same_op": {
+          "pairs": 7186,
+          "value": 2203.9,
+          "ci": [
+            800.2,
+            3748.8
+          ],
+          "rows": 7129,
+          "dates": 31
+        },
+        "diff_rwy_diff_op": {
+          "pairs": 6328,
+          "value": 767.7,
+          "ci": [
+            -184.9,
+            1695.4
+          ],
+          "rows": 7129,
+          "dates": 31
+        }
+      },
+      "variance_components_matched": {
+        "airport_window_s2": 767.7,
+        "runway_given_window_s2": 6559.5,
+        "operator_given_window_s2": 1436.2,
+        "additivity_residual_s2": -599.5,
+        "note": "cov(diff,diff) = Var(window); each same-X row minus it is Var(X | window); the fourth cell is the additivity check, not an assumption",
+        "shared_component_on_these_rows_s2": 4649.9,
+        "sum_of_components_s2": 8163.9,
+        "fractions_of_the_sum": {
+          "airport_shared_pct": 9.4,
+          "runway_shared_pct": 80.3,
+          "operator_shared_pct": 17.6,
+          "additivity_pct": -7.3,
+          "denominator_s2": 8163.9
+        },
+        "fractions_of_the_shared_component": {
+          "denominator_s2": 4649.9,
+          "airport_shared_pct": 16.5,
+          "runway_shared_pct": 141.1,
+          "operator_shared_pct": 30.9,
+          "additivity_pct": -12.9,
+          "note": "the assignment's own denominator: the shared component read on the SAME rows.  These four do not add to 100 % -- the components are conditional variances whose sum is the same-runway-same-operator relation, while the shared component is the pair-weighted average over all four"
+        }
+      },
+      "crossover_coverage": {
+        "EDDM": {
+          "same_rwy_same_op": {
+            "pairs": 879,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 763,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 929,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 790,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "EGLL": {
+          "same_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          }
+        },
+        "LEBL": {
+          "same_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 0,
+            "dates": 0,
+            "met": false
+          }
+        },
+        "LEMD": {
+          "same_rwy_same_op": {
+            "pairs": 1641,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 2205,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 1717,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 2468,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LFPG": {
+          "same_rwy_same_op": {
+            "pairs": 2195,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 1449,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 2006,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 1664,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LIRF": {
+          "same_rwy_same_op": {
+            "pairs": 1,
+            "dates": 1,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 2,
+            "dates": 1,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 1,
+            "dates": 1,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 1,
+            "dates": 1,
+            "met": false
+          }
+        },
+        "LSZH": {
+          "same_rwy_same_op": {
+            "pairs": 87,
+            "dates": 19,
+            "met": false
+          },
+          "same_rwy_diff_op": {
+            "pairs": 60,
+            "dates": 19,
+            "met": false
+          },
+          "diff_rwy_same_op": {
+            "pairs": 67,
+            "dates": 19,
+            "met": false
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 57,
+            "dates": 19,
+            "met": false
+          }
+        },
+        "LTFM": {
+          "same_rwy_same_op": {
+            "pairs": 2720,
+            "dates": 31,
+            "met": true
+          },
+          "same_rwy_diff_op": {
+            "pairs": 1388,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 2466,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_diff_op": {
+            "pairs": 1349,
+            "dates": 31,
+            "met": true
+          }
+        }
+      },
+      "crossover_coverage_note": "counted on the matched rows only (all four relations non-empty), so an airport that meets the rule meets it on the population the components are read on",
+      "crossover_airports_supported": [
+        "EDDM",
+        "LEMD",
+        "LFPG",
+        "LTFM"
+      ],
+      "crossover_matched_supported_airports": {
+        "same_rwy_same_op": {
+          "pairs": 7435,
+          "value": 8025.4,
+          "ci": [
+            5950.8,
+            10398.5
+          ],
+          "rows": 7030,
+          "dates": 31
+        },
+        "same_rwy_diff_op": {
+          "pairs": 5806,
+          "value": 7270.3,
+          "ci": [
+            5814.2,
+            8889.7
+          ],
+          "rows": 7030,
+          "dates": 31
+        },
+        "diff_rwy_same_op": {
+          "pairs": 7118,
+          "value": 2258.6,
+          "ci": [
+            943.2,
+            3817.8
+          ],
+          "rows": 7030,
+          "dates": 31
+        },
+        "diff_rwy_diff_op": {
+          "pairs": 6270,
+          "value": 767.4,
+          "ci": [
+            -277.1,
+            1675.3
+          ],
+          "rows": 7030,
+          "dates": 31
+        }
+      },
+      "observables": {
+        "n_cells": 27019,
+        "n_features": 370,
+        "cross_fitted_r2_cell_mean": 0.0088,
+        "cross_fitted_r2_shared_part": 0.021,
+        "cross_fitted_r2_note": "the first is the count-weighted out-of-block R^2 of the PLUG-IN cell mean, whose denominator carries the within-cell noise E[Var(eps)/n_c] that no model can reach; the second removes that noise from both sides and is the assignment's oracle-free upper bound",
+        "plugin_second_moment_s2": 11508.1,
+        "plugin_noise_term_s2": 6655.7,
+        "plugin_debiased_s2": 4852.4,
+        "plugin_debiased_after_s2": 4750.6,
+        "feature_note": "cell means of the exp-039 row feature set (359 columns) plus the count/window block; NOT the literal v10 member frame, which is not reproducible at this cost",
+        "A_mean_r_h": 241.984,
+        "B_mean_h2": 361.054,
+        "mse_gain_s2": 122.92,
+        "ci": [
+          -59.29,
+          319.92
+        ],
+        "unrestricted_scale": 0.6702,
+        "shared_before": {
+          "pairs": 270417,
+          "value": 5318.1,
+          "ci": [
+            4198.6,
+            6951.1
+          ],
+          "rows": 111607,
+          "dates": 31
+        },
+        "shared_after": {
+          "pairs": 270417,
+          "value": 5175.5,
+          "ci": [
+            4057.6,
+            6903.0
+          ],
+          "rows": 111607,
+          "dates": 31
+        },
+        "fraction_of_shared_explained": 0.0268,
+        "top_features": [
+          "doy",
+          "dom",
+          "r_prev10_rwy",
+          "w3600_r_mean",
+          "r_aobt",
+          "d_t_aobt",
+          "w600_r_mean",
+          "r_prev30_apt"
+        ]
+      },
+      "runway_grain": {
+        "n_cells": 37629,
+        "median_cell_size": 4.0,
+        "shared": {
+          "cell_ge_2": {
+            "pairs": 186310,
+            "value": 6681.3,
+            "ci": [
+              5511.3,
+              8240.2
+            ],
+            "rows": 105665,
+            "dates": 31
+          },
+          "cell_ge_4": {
+            "pairs": 158876,
+            "value": 6825.9,
+            "ci": [
+              5573.2,
+              8511.3
+            ],
+            "rows": 70270,
+            "dates": 31
+          },
+          "cell_ge_6": {
+            "pairs": 91012,
+            "value": 6797.8,
+            "ci": [
+              5104.0,
+              9077.9
+            ],
+            "rows": 31309,
+            "dates": 31
+          },
+          "cell_ge_10": {
+            "pairs": 1870,
+            "value": 10628.2,
+            "ci": [
+              3511.2,
+              18002.6
+            ],
+            "rows": 407,
+            "dates": 21
+          }
+        },
+        "persistence": {
+          "lag_0": {
+            "pairs": 186310,
+            "value": 6681.3,
+            "ci": [
+              5505.0,
+              8194.8
+            ],
+            "rows": 105665,
+            "dates": 31
+          },
+          "lag_1": {
+            "pairs": 206076,
+            "value": 4646.7,
+            "ci": [
+              3616.4,
+              5953.1
+            ],
+            "rows": 105912,
+            "dates": 31
+          },
+          "lag_2": {
+            "pairs": 198094,
+            "value": 2627.3,
+            "ci": [
+              2082.5,
+              3318.3
+            ],
+            "rows": 103840,
+            "dates": 31
+          },
+          "lag_3": {
+            "pairs": 191730,
+            "value": 1926.5,
+            "ci": [
+              1473.8,
+              2430.6
+            ],
+            "rows": 101939,
+            "dates": 31
+          },
+          "lag_4": {
+            "pairs": 185600,
+            "value": 1449.1,
+            "ci": [
+              1045.4,
+              1885.4
+            ],
+            "rows": 99917,
+            "dates": 31
+          },
+          "lag_5": {
+            "pairs": 180264,
+            "value": 1216.7,
+            "ci": [
+              878.0,
+              1590.5
+            ],
+            "rows": 98162,
+            "dates": 31
+          },
+          "lag_6": {
+            "pairs": 175270,
+            "value": 1106.5,
+            "ci": [
+              704.5,
+              1559.3
+            ],
+            "rows": 96502,
+            "dates": 31
+          }
+        },
+        "autocorrelation": {
+          "lag_0": {
+            "cell_pairs": 37629,
+            "rho_plugin": 1.0,
+            "rho_debiased": 1.0,
+            "cov_s2": 13931.1,
+            "var_plugin_s2": 13931.1,
+            "var_debiased_s2": 7293.3,
+            "per_cell": {
+              "rho_plugin": 1.0,
+              "rho_debiased": 1.0,
+              "cov_s2": 22435.7,
+              "var_plugin_s2": 22435.7,
+              "var_debiased_s2": 15353.9
+            }
+          },
+          "lag_1": {
+            "cell_pairs": 32207,
+            "rho_plugin": 0.3194,
+            "rho_debiased": 0.5998,
+            "cov_s2": 4598.9,
+            "var_plugin_s2": 14505.1,
+            "var_debiased_s2": 7849.7,
+            "per_cell": {
+              "rho_plugin": 0.2034,
+              "rho_debiased": 0.3225,
+              "cov_s2": 3988.0,
+              "var_plugin_s2": 19515.1,
+              "var_debiased_s2": 12266.2
+            }
+          },
+          "lag_2": {
+            "cell_pairs": 31547,
+            "rho_plugin": 0.1836,
+            "rho_debiased": 0.355,
+            "cov_s2": 2567.1,
+            "var_plugin_s2": 13981.3,
+            "var_debiased_s2": 7319.6,
+            "per_cell": {
+              "rho_plugin": 0.1254,
+              "rho_debiased": 0.1995,
+              "cov_s2": 2415.1,
+              "var_plugin_s2": 19752.2,
+              "var_debiased_s2": 12598.7
+            }
+          },
+          "lag_3": {
+            "cell_pairs": 31078,
+            "rho_plugin": 0.1331,
+            "rho_debiased": 0.257,
+            "cov_s2": 1862.0,
+            "var_plugin_s2": 13920.7,
+            "var_debiased_s2": 7267.6,
+            "per_cell": {
+              "rho_plugin": 0.0907,
+              "rho_debiased": 0.1438,
+              "cov_s2": 1757.8,
+              "var_plugin_s2": 19605.0,
+              "var_debiased_s2": 12443.8
+            }
+          },
+          "lag_4": {
+            "cell_pairs": 30551,
+            "rho_plugin": 0.1005,
+            "rho_debiased": 0.1968,
+            "cov_s2": 1383.6,
+            "var_plugin_s2": 13531.7,
+            "var_debiased_s2": 6895.3,
+            "per_cell": {
+              "rho_plugin": 0.0765,
+              "rho_debiased": 0.1219,
+              "cov_s2": 1461.6,
+              "var_plugin_s2": 19059.2,
+              "var_debiased_s2": 12005.5
+            }
+          },
+          "lag_5": {
+            "cell_pairs": 30097,
+            "rho_plugin": 0.0818,
+            "rho_debiased": 0.1587,
+            "cov_s2": 1153.4,
+            "var_plugin_s2": 13710.3,
+            "var_debiased_s2": 6999.9,
+            "per_cell": {
+              "rho_plugin": 0.0486,
+              "rho_debiased": 0.0767,
+              "cov_s2": 940.1,
+              "var_plugin_s2": 19674.7,
+              "var_debiased_s2": 12558.1
+            }
+          },
+          "lag_6": {
+            "cell_pairs": 29599,
+            "rho_plugin": 0.0736,
+            "rho_debiased": 0.1436,
+            "cov_s2": 1040.7,
+            "var_plugin_s2": 14020.4,
+            "var_debiased_s2": 7166.1,
+            "per_cell": {
+              "rho_plugin": 0.0551,
+              "rho_debiased": 0.0873,
+              "cov_s2": 1075.5,
+              "var_plugin_s2": 19810.5,
+              "var_debiased_s2": 12552.1
+            }
+          },
+          "note": "matched cell pairs at each lag.  The headline numbers weight each cell pair by n_a * n_b -- the number of row pairs it carries, the same weight the cross-product table uses -- and `per_cell` repeats them with one weight per cell.  `rho_plugin` is the assignment's statistic on the plug-in mean; `rho_debiased` removes the within-cell noise from the denominator only, because noise in two different bins is independent"
+        },
+        "plugin_cell_mean": {
+          "cell_ge_2": {
+            "rows": 105665,
+            "plugin_var_s2": 14395.7,
+            "ci": [
+              12933.4,
+              16171.2
+            ],
+            "noise_term_s2": 7992.6,
+            "debiased_s2": 6403.1,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          },
+          "cell_ge_4": {
+            "rows": 70270,
+            "plugin_var_s2": 12706.1,
+            "ci": [
+              11139.2,
+              14765.4
+            ],
+            "noise_term_s2": 5878.0,
+            "debiased_s2": 6828.1,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          },
+          "cell_ge_6": {
+            "rows": 31309,
+            "plugin_var_s2": 11795.3,
+            "ci": [
+              9801.2,
+              14680.5
+            ],
+            "noise_term_s2": 4913.5,
+            "debiased_s2": 6881.9,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          },
+          "cell_ge_10": {
+            "rows": 407,
+            "plugin_var_s2": 13600.2,
+            "ci": [
+              5905.2,
+              21184.3
+            ],
+            "noise_term_s2": 3369.1,
+            "debiased_s2": 10231.1,
+            "note": "Var(plug-in cell mean) = Var(mu_c) + E[Var(eps)/n_c]; the third number is the first minus the second and is what the self-excluded cross-product estimates directly"
+          }
+        },
+        "observables": {
+          "n_cells": 37629,
+          "n_features": 371,
+          "cross_fitted_r2_cell_mean": 0.0084,
+          "cross_fitted_r2_shared_part": 0.0189,
+          "cross_fitted_r2_note": "the first is the count-weighted out-of-block R^2 of the PLUG-IN cell mean, whose denominator carries the within-cell noise E[Var(eps)/n_c] that no model can reach; the second removes that noise from both sides and is the assignment's oracle-free upper bound",
+          "plugin_second_moment_s2": 14395.7,
+          "plugin_noise_term_s2": 7992.6,
+          "plugin_debiased_s2": 6403.1,
+          "plugin_debiased_after_s2": 6282.1,
+          "feature_note": "cell means of the exp-039 row feature set (359 columns) plus the count/window block; NOT the literal v10 member frame, which is not reproducible at this cost",
+          "A_mean_r_h": 302.476,
+          "B_mean_h2": 455.093,
+          "mse_gain_s2": 149.86,
+          "ci": [
+            0.41,
+            317.4
+          ],
+          "unrestricted_scale": 0.6646,
+          "shared_before": {
+            "pairs": 186310,
+            "value": 6681.3,
+            "ci": [
+              5552.4,
+              8280.8
+            ],
+            "rows": 105665,
+            "dates": 31
+          },
+          "shared_after": {
+            "pairs": 186310,
+            "value": 6566.1,
+            "ci": [
+              5363.9,
+              8065.8
+            ],
+            "rows": 105665,
+            "dates": 31
+          },
+          "fraction_of_shared_explained": 0.0172,
+          "top_features": [
+            "dom",
+            "doy",
+            "r_aobt",
+            "d_t_aobt",
+            "w600_r_mean",
+            "w3600_r_mean",
+            "r_prev30_apt",
+            "r_prev10_apt"
+          ]
+        }
+      }
+    }
+  },
+  "wall_s": 272.4
+}

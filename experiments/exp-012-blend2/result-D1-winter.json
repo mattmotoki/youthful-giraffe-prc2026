@@ -1,0 +1,50 @@
+{
+  "name": "D1-winter",
+  "folds": {
+    "july_loo": {
+      "rmse": 308.2153967689476,
+      "rmse_bulk": 268.7395495146902,
+      "rmse_tail": 2587.203290478306,
+      "rmse_no_nm": 1196.377792457962,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.2423683975733055,
+      "sse_share_no_nm": 0.3108007683237697,
+      "bias": 4.965323311060065,
+      "rmse_noac": 3565.163656441295,
+      "n_noac": 339,
+      "sse_share_noac": 0.2378316680282383,
+      "fold": "july_loo",
+      "seeds": [
+        7,
+        107,
+        207
+      ],
+      "best_iteration": 158,
+      "refit_rounds": 186,
+      "n_features": 121,
+      "seconds": 3763,
+      "raw_below_floor": 0,
+      "guard_touched": 1,
+      "guard_bounds": [
+        -20657.0,
+        9069.0
+      ],
+      "per_seed_rmse": [
+        311.29713464598575,
+        311.4355799458637,
+        307.72239756164356
+      ],
+      "oof": "experiments/exp-012-blend2/oof/D1-winter-july_loo.parquet"
+    }
+  },
+  "provenance": {
+    "modules": "surface[VERSION=2,BUCKET=1200.0,UNIMPEDED_Q=0.2] phi[VERSION=3,phidef=rows/150/100] lirf[VERSION=2] tail[VERSION=1.1.0] day_state[VERSION=1]",
+    "threads": 24,
+    "linear_tree": true,
+    "es_rounds": 100,
+    "pipeline": "exp-007-winter/code/pipeline (git 19cd199)"
+  },
+  "argv": "--name D1-winter --folds july_loo --seeds 7,107,207"
+}

@@ -1,0 +1,63 @@
+{
+ "cell": "LEMD/reached",
+ "fold_support": {
+  "july_loo": {
+   "rows": 9366,
+   "days": 31,
+   "rows_per_day_min_med_max": [
+    160,
+    305,
+    351
+   ],
+   "first_day": "2025-07-01",
+   "last_day": "2025-07-31"
+  },
+  "december": {
+   "rows": 810,
+   "days": 31,
+   "rows_per_day_min_med_max": [
+    12,
+    24,
+    53
+   ],
+   "first_day": "2025-12-01",
+   "last_day": "2025-12-31"
+  },
+  "january": {
+   "rows": 0,
+   "days": 0,
+   "rows_per_day_min_med_max": null,
+   "first_day": null,
+   "last_day": null
+  }
+ },
+ "ranking_rows_by_month": {
+  "2026-01": {
+   "class_rows_reached": 900,
+   "reached_share": 0.9298,
+   "class_share": 0.0576
+  },
+  "2026-07": {
+   "class_rows_reached": 7839,
+   "reached_share": 0.8564,
+   "class_share": 0.4542
+  }
+ },
+ "extrapolation_by_season": {
+  "summer 2026-07 on july_loo": 0.84,
+  "winter 2026-01 on december": 1.11
+ },
+ "note": "the projection weights every fold's per-row gain by the cell's WHOLE ranking weight, so its per-fold 'extrapolation' column reads 0.9x on july and 10.8x on december. Season by season the support is tighter: july's 9,366 rows over 31 days price the 7,839 rows of 2026-07, and december's 810 rows over 31 days price the 900 rows of 2026-01. 90 % of what this file moves is summer.",
+ "disjointness_precheck": {
+  "what": "on the rows the new cell would move, do v16's bytes equal v12's? If they do not, the write would replace something that is not this lane's own, and serve.py's check_disjoint guard would stop it.",
+  "rows_on_this_lanes_own_class_boundary": {
+   "2026-01": 891,
+   "2026-07": 7837,
+   "total": 8728
+  },
+  "max_abs_v16_minus_v12": 0.0,
+  "rows_differing": 0,
+  "against_the_shared_class_vector": "the census counts 900 + 7,839 = 8,739; the 11-row gap is the class-RULE difference between this lane's own obs_has_clock and the shared vector, the same order as the 20 to 31 rows the record already carries. The exact set is settled at serve time by the re-emitted class vector.",
+  "verdict": "clear: the new cell's ranking rows are untouched by the other lane in v16."
+ }
+}

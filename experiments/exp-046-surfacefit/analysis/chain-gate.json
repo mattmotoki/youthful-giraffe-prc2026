@@ -1,0 +1,312 @@
+{
+  "all_three_checks": {
+    "kept_rows": 2275,
+    "placebo_rate": {
+      "day": 0.0,
+      "stand": 0.042717086834733894
+    },
+    "pool_pass_rate": 0.28666834677419356,
+    "pool_true_fraction_estimate": 0.30161805274164644,
+    "precision": 0.895932555440644,
+    "true_rate_on_the_shipped": 0.8515256369927651
+  },
+  "checks": {
+    "i_offblock_clock": {
+      "false_rate_used": 0.06092436974789916,
+      "placebo": {
+        "day": {
+          "ci95": [
+            0.0,
+            0.0007822404479370364
+          ],
+          "passes": 0,
+          "rate": 0.0,
+          "rows": 4907,
+          "with_the_field": 4907
+        },
+        "day_gated_placements_only": {
+          "ci95": [
+            0.0,
+            0.08379879090173831
+          ],
+          "passes": 0,
+          "rate": 0.0,
+          "rows": 42,
+          "with_the_field": 42
+        },
+        "stand": {
+          "ci95": [
+            0.04965719043741181,
+            0.07454752351796458
+          ],
+          "passes": 87,
+          "rate": 0.06092436974789916,
+          "rows": 1428,
+          "with_the_field": 1428
+        },
+        "stand_gated_placements_only": {
+          "ci95": [
+            0.8754449702069554,
+            0.9999999999999999
+          ],
+          "passes": 27,
+          "rate": 1.0,
+          "rows": 27,
+          "with_the_field": 27
+        }
+      },
+      "pool_after_step_0": {
+        "ci95": [
+          0.3430083165265398,
+          0.3640387306893182
+        ],
+        "passes": 2805,
+        "rate": 0.35345262096774194,
+        "rows": 7936,
+        "with_the_field": 7936
+      },
+      "pool_before_step_0": {
+        "ci95": [
+          0.36222212805332754,
+          0.38307999377039614
+        ],
+        "passes": 3075,
+        "rate": 0.37259178480552524,
+        "rows": 8253,
+        "with_the_field": 8253
+      },
+      "pool_true_fraction_estimate": 0.32903098042105017,
+      "precision_at_a_grid_of_priors": {
+        "0.1": 0.6340399049240067,
+        "0.25": 0.8386476113023039,
+        "0.5": 0.9397330606892415,
+        "0.75": 0.9790700995357059,
+        "0.9": 0.9929246421549377
+      },
+      "precision_if_that_estimate_holds": 0.8843455608667162,
+      "threshold": 1299.140999984741,
+      "true_on_the_shipped": {
+        "ci95": [
+          0.9418490001006327,
+          0.9570333466997752
+        ],
+        "passes": 3020,
+        "rate": 0.9499842717835797,
+        "rows": 3179,
+        "with_the_field": 3179
+      },
+      "what": "|segment off-block - departure AOBT_3_flt| <= the shipped p95"
+    },
+    "ii_runway_agreement": {
+      "false_rate_used": 0.43040554310169143,
+      "placebo": {
+        "day": {
+          "ci95": [
+            0.4166117199463018,
+            0.44430824545535713
+          ],
+          "passes": 2112,
+          "rate": 0.43040554310169143,
+          "rows": 4907,
+          "with_the_field": 4907
+        },
+        "day_gated_placements_only": {
+          "ci95": [
+            0.4220623987475905,
+            0.7088234882664468
+          ],
+          "passes": 24,
+          "rate": 0.5714285714285714,
+          "rows": 42,
+          "with_the_field": 42
+        },
+        "stand": {
+          "ci95": [
+            0.335455406220105,
+            0.3851840559666179
+          ],
+          "passes": 514,
+          "rate": 0.3599439775910364,
+          "rows": 1428,
+          "with_the_field": 1428
+        },
+        "stand_gated_placements_only": {
+          "ci95": [
+            0.8754449702069554,
+            0.9999999999999999
+          ],
+          "passes": 27,
+          "rate": 1.0,
+          "rows": 27,
+          "with_the_field": 27
+        }
+      },
+      "pool_after_step_0": {
+        "ci95": [
+          0.5094146341032518,
+          0.5313922260438083
+        ],
+        "passes": 4130,
+        "rate": 0.5204133064516129,
+        "rows": 7936,
+        "with_the_field": 7936
+      },
+      "pool_before_step_0": {
+        "ci95": [
+          0.5244249145316505,
+          0.5459409757300787
+        ],
+        "passes": 4417,
+        "rate": 0.5351993214588634,
+        "rows": 8253,
+        "with_the_field": 8253
+      },
+      "pool_true_fraction_estimate": 0.16418659804300292,
+      "precision_at_a_grid_of_priors": {
+        "0.1": 0.20168122148637715,
+        "0.25": 0.43113856116703714,
+        "0.5": 0.6945344857590348,
+        "0.75": 0.8721403534671226,
+        "0.9": 0.953408685121095
+      },
+      "precision_if_that_estimate_holds": 0.30874419093197897,
+      "threshold": null,
+      "true_on_the_shipped": {
+        "ci95": [
+          0.9729725241032445,
+          0.9830914330144211
+        ],
+        "passes": 3111,
+        "rate": 0.9786096256684492,
+        "rows": 3179,
+        "with_the_field": 3179
+      },
+      "what": "the runway the wheels-off position implies IS RUNWAY_mvt"
+    },
+    "iii_stand_position": {
+      "false_rate_used": 0.8895375992526856,
+      "placebo": {
+        "day": {
+          "ci95": [
+            0.8797972794655966,
+            0.8985796231920533
+          ],
+          "passes": 3809,
+          "rate": 0.8895375992526856,
+          "rows": 4907,
+          "with_the_field": 4282
+        },
+        "day_gated_placements_only": {
+          "ci95": [
+            0.8013576647190122,
+            0.9741639742314014
+          ],
+          "passes": 37,
+          "rate": 0.925,
+          "rows": 42,
+          "with_the_field": 40
+        },
+        "stand": {
+          "ci95": [
+            0.806828444744713,
+            0.8505566366303959
+          ],
+          "passes": 941,
+          "rate": 0.8298059964726632,
+          "rows": 1428,
+          "with_the_field": 1134
+        },
+        "stand_gated_placements_only": {
+          "ci95": [
+            0.7194219917684523,
+            0.9614796517258462
+          ],
+          "passes": 24,
+          "rate": 0.8888888888888888,
+          "rows": 27,
+          "with_the_field": 27
+        }
+      },
+      "pool_after_step_0": {
+        "ci95": [
+          0.8679238917750047,
+          0.8838392623093128
+        ],
+        "passes": 5770,
+        "rate": 0.8761008199210446,
+        "rows": 7936,
+        "with_the_field": 6586
+      },
+      "pool_before_step_0": {
+        "ci95": [
+          0.8718225722063255,
+          0.8871751584416956
+        ],
+        "passes": 6070,
+        "rate": 0.8797101449275362,
+        "rows": 8253,
+        "with_the_field": 6900
+      },
+      "pool_true_fraction_estimate": -0.2232038396140218,
+      "precision_at_a_grid_of_priors": {
+        "0.1": 0.10604982106409676,
+        "0.25": 0.2624779779933656,
+        "0.5": 0.5163650339465596,
+        "0.75": 0.7620761488736586,
+        "0.9": 0.905741087279608
+      },
+      "precision_if_that_estimate_holds": null,
+      "threshold": 2.8262993073576896,
+      "true_on_the_shipped": {
+        "ci95": [
+          0.9413929604895881,
+          0.9569477297961195
+        ],
+        "passes": 2891,
+        "rate": 0.9497371879106439,
+        "rows": 3179,
+        "with_the_field": 3044
+      },
+      "what": "the segment's start position is within the shipped p95 of the placed departure's learned stand centroid"
+    }
+  },
+  "face": {
+    "all three checks": {
+      "board_s_at_x1_2": 0.08459558432170411,
+      "board_s_at_x1_5": 0.12621661180798252,
+      "rows": 2275
+    },
+    "fold_mode3_rows": 2762,
+    "level_s": 246.6571,
+    "runway only": {
+      "board_s_at_x1_2": 0.15359500919109337,
+      "board_s_at_x1_5": 0.2291637537131113,
+      "rows": 4130
+    },
+    "s2_per_chain_row_measured_on_the_folds": 6324.618369779243,
+    "the whole pool after step 0": {
+      "board_s_at_x1_2": 0.2952252195073015,
+      "board_s_at_x1_5": 0.44047602750489384,
+      "rows": 7936
+    }
+  },
+  "pool_after_step_0": 7936,
+  "shipped_rows": 3179,
+  "stale_reference_in_the_record": {
+    "now": 8253,
+    "value": 8478,
+    "why": "8,478 = 11,579 - 3,101, both counted BEFORE the claimed-set repair of section 21.5. On the shipped matcher the pass makes 11,432 unique pairs and gates 3,179, so the ungated pool is 8,253. The probe reproduces analysis/chain-pass.json exactly (2026-01: 4,785 pairs, 3,403 ungated; 2026-07: 6,647 and 4,850)"
+  },
+  "step_0_why_the_take_off_check_failed": {
+    "field": "wheels_gap_s = t_airborne - obs_wheels_off",
+    "pool_median_s": 4644.740000009537,
+    "poorly_observed": 7936,
+    "reading": "the well-observed class is EVIDENCE AGAINST the placement and leaves the pool; only the poorly-observed class can be rescued by an independent check",
+    "shipped_median_s": 29.02999997138977,
+    "threshold_s": 62.40500009059905,
+    "well_observed_and_still_disagrees": 317
+  },
+  "threshold_quantile_on_the_shipped": 95,
+  "ungated_rows_before_step_0": 8253,
+  "what": "Do the three independent checks corroborate any of the ungated chain pairs?"
+}

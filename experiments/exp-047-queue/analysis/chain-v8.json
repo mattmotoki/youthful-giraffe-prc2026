@@ -1,0 +1,379 @@
+{
+ "what": "exp-047 \u00a77bh: recorded rule revival (a) \u2014 the exp-040 chain update priced on v8, complement only.",
+ "pre_registration": "RESULTS \u00a77bh, commit 0c6bc52, written before this ran",
+ "no_fit_no_serve": "arithmetic only; exp-040's analysis/ is read, never written",
+ "0_the_provenance_gate": {
+  "record": "experiments/exp-040-chain/analysis/price-v12.json",
+  "board": {
+   "recomputed": 0.11536514636873108,
+   "in_the_record": 0.11536514636873108,
+   "delta": 0.0
+  },
+  "folds": {
+   "july_loo": {
+    "gain_rmse": {
+     "recomputed": 0.12995813889290275,
+     "in_the_record": 0.12995813889290275,
+     "delta": 0.0
+    },
+    "A": {
+     "recomputed": 61.65921650317476,
+     "in_the_record": 61.65921650317476,
+     "delta": 0.0
+    },
+    "B": {
+     "recomputed": 49.631971113674254,
+     "in_the_record": 49.631971113674254,
+     "delta": 0.0
+    }
+   },
+   "december": {
+    "gain_rmse": {
+     "recomputed": 0.06792575973642556,
+     "in_the_record": 0.06792575973642556,
+     "delta": 0.0
+    },
+    "A": {
+     "recomputed": 46.718901794919745,
+     "in_the_record": 46.718901794919745,
+     "delta": 0.0
+    },
+    "B": {
+     "recomputed": 65.70174028472292,
+     "in_the_record": 65.70174028472292,
+     "delta": 0.0
+    }
+   },
+   "january": {
+    "gain_rmse": {
+     "recomputed": 0.10083904981843261,
+     "in_the_record": 0.10083904981843261,
+     "delta": 0.0
+    },
+    "A": {
+     "recomputed": 62.6194740828661,
+     "in_the_record": 62.6194740828661,
+     "delta": 0.0
+    },
+    "B": {
+     "recomputed": 57.19060858972872,
+     "in_the_record": 57.19060858972872,
+     "delta": 0.0
+    }
+   }
+  },
+  "reproduces_exactly": true
+ },
+ "1_the_rows": {
+  "per_fold": {
+   "july_loo": {
+    "fold_rows": 190713,
+    "held_regime_rows": 186779,
+    "rows_the_delta_moves": 143906,
+    "with_a_clock": 88370,
+    "v8_moves": 88428,
+    "occupied_fold_side": 89251,
+    "complement_fold_side": 101462,
+    "complement_rows_the_delta_moves": 94316,
+    "floor_bound_all": 1946,
+    "floor_bound_complement": 616,
+    "r_equals_r12_on_the_complement": true,
+    "trimmed_12h_rows_removed": 10
+   },
+   "december": {
+    "fold_rows": 165677,
+    "held_regime_rows": 164034,
+    "rows_the_delta_moves": 127663,
+    "with_a_clock": 101701,
+    "v8_moves": 102186,
+    "occupied_fold_side": 102558,
+    "complement_fold_side": 63119,
+    "complement_rows_the_delta_moves": 59799,
+    "floor_bound_all": 1926,
+    "floor_bound_complement": 342,
+    "r_equals_r12_on_the_complement": true,
+    "trimmed_12h_rows_removed": 2
+   },
+   "january": {
+    "fold_rows": 153706,
+    "held_regime_rows": 152274,
+    "rows_the_delta_moves": 118775,
+    "with_a_clock": 69504,
+    "v8_moves": 69840,
+    "occupied_fold_side": 70246,
+    "complement_fold_side": 83460,
+    "complement_rows_the_delta_moves": 79049,
+    "floor_bound_all": 1401,
+    "floor_bound_complement": 504,
+    "r_equals_r12_on_the_complement": true,
+    "trimmed_12h_rows_removed": 4
+   }
+  },
+  "served_cells": [
+   "EDDF/reached",
+   "LEMD/reached",
+   "LTFM/unreached"
+  ],
+  "the_stated_approximation": {
+   "what": "v8's fold analogue is p12 + d_bag10, so on the complement it is p12; this lane's own v14/v17 bytes on its served cells are NOT modelled",
+   "per_fold": {
+    "july_loo": {
+     "complement_rows_in_this_lanes_served_cells": 38263,
+     "share_of_the_complement": 0.3771
+    },
+    "december": {
+     "complement_rows_in_this_lanes_served_cells": 24577,
+     "share_of_the_complement": 0.3894
+    },
+    "january": {
+     "complement_rows_in_this_lanes_served_cells": 24233,
+     "share_of_the_complement": 0.2904
+    }
+   }
+  }
+ },
+ "2_the_reads": {
+  "i_all_moved_rows": {
+   "raw": {
+    "folds": {
+     "july_loo": {
+      "rows": 190713,
+      "rows_changed": 143906,
+      "A": 55.2199,
+      "B": 49.632,
+      "gain_mse_s2": 60.8079,
+      "gain_rmse_s": 0.1115,
+      "ci95": [
+       0.04347,
+       0.18534
+      ],
+      "clear_of_zero": true,
+      "rmse_v8_s": 272.7309,
+      "scale_A_over_B": 1.1126
+     },
+     "december": {
+      "rows": 165677,
+      "rows_changed": 127663,
+      "A": 32.0764,
+      "B": 65.7017,
+      "gain_mse_s2": -1.549,
+      "gain_rmse_s": -0.00417,
+      "ci95": [
+       -0.12076,
+       0.09451
+      ],
+      "clear_of_zero": false,
+      "rmse_v8_s": 185.8988,
+      "scale_A_over_B": 0.4882
+     },
+     "january": {
+      "rows": 153706,
+      "rows_changed": 118774,
+      "A": 52.5752,
+      "B": 57.1905,
+      "gain_mse_s2": 47.96,
+      "gain_rmse_s": 0.07292,
+      "ci95": [
+       0.02911,
+       0.15619
+      ],
+      "clear_of_zero": true,
+      "rmse_v8_s": 328.8858,
+      "scale_A_over_B": 0.9193
+     }
+    },
+    "board_gain_s": 0.09221,
+    "board_v8": 298.9045,
+    "every_fold_clear": false,
+    "clears_the_floor": false,
+    "registered_prediction_band": [
+     0.0,
+     0.09
+    ],
+    "inside_the_registered_band": false
+   },
+   "trimmed_12h": {
+    "folds": {
+     "july_loo": {
+      "rows": 190703,
+      "rows_changed": 143905,
+      "A": 55.3801,
+      "B": 49.6296,
+      "gain_mse_s2": 61.1307,
+      "gain_rmse_s": 0.11562,
+      "ci95": [
+       0.04413,
+       0.19422
+      ],
+      "clear_of_zero": true,
+      "rmse_v8_s": 264.4137,
+      "scale_A_over_B": 1.1159
+     },
+     "december": {
+      "rows": 165675,
+      "rows_changed": 127663,
+      "A": 32.0767,
+      "B": 65.7025,
+      "gain_mse_s2": -1.549,
+      "gain_rmse_s": -0.00417,
+      "ci95": [
+       -0.12086,
+       0.09452
+      ],
+      "clear_of_zero": false,
+      "rmse_v8_s": 185.8114,
+      "scale_A_over_B": 0.4882
+     },
+     "january": {
+      "rows": 153702,
+      "rows_changed": 118774,
+      "A": 52.5766,
+      "B": 57.192,
+      "gain_mse_s2": 47.9612,
+      "gain_rmse_s": 0.12277,
+      "ci95": [
+       0.05425,
+       0.18965
+      ],
+      "clear_of_zero": true,
+      "rmse_v8_s": 195.3913,
+      "scale_A_over_B": 0.9193
+     }
+    },
+    "board_gain_s": 0.11702,
+    "board_v8": 236.3458,
+    "every_fold_clear": false,
+    "clears_the_floor": true
+   }
+  },
+  "ii_complement_only": {
+   "raw": {
+    "folds": {
+     "july_loo": {
+      "rows": 190713,
+      "rows_changed": 94316,
+      "A": 43.0636,
+      "B": 31.0981,
+      "gain_mse_s2": 55.029,
+      "gain_rmse_s": 0.1009,
+      "ci95": [
+       0.0563,
+       0.14438
+      ],
+      "clear_of_zero": true,
+      "rmse_v8_s": 272.7309,
+      "scale_A_over_B": 1.3848
+     },
+     "december": {
+      "rows": 165677,
+      "rows_changed": 59799,
+      "A": 17.6561,
+      "B": 37.5778,
+      "gain_mse_s2": -2.2657,
+      "gain_rmse_s": -0.00609,
+      "ci95": [
+       -0.1188,
+       0.07795
+      ],
+      "clear_of_zero": false,
+      "rmse_v8_s": 185.8988,
+      "scale_A_over_B": 0.4699
+     },
+     "january": {
+      "rows": 153706,
+      "rows_changed": 79049,
+      "A": 42.4663,
+      "B": 43.0972,
+      "gain_mse_s2": 41.8353,
+      "gain_rmse_s": 0.06361,
+      "ci95": [
+       0.02667,
+       0.13268
+      ],
+      "clear_of_zero": true,
+      "rmse_v8_s": 328.8858,
+      "scale_A_over_B": 0.9854
+     }
+    },
+    "board_gain_s": 0.08229,
+    "board_v8": 298.9045,
+    "every_fold_clear": false,
+    "clears_the_floor": false,
+    "registered_prediction_band": [
+     0.02,
+     0.1
+    ],
+    "inside_the_registered_band": true
+   },
+   "trimmed_12h": {
+    "folds": {
+     "july_loo": {
+      "rows": 190703,
+      "rows_changed": 94315,
+      "A": 43.2231,
+      "B": 31.0948,
+      "gain_mse_s2": 55.3515,
+      "gain_rmse_s": 0.10469,
+      "ci95": [
+       0.05788,
+       0.15284
+      ],
+      "clear_of_zero": true,
+      "rmse_v8_s": 264.4137,
+      "scale_A_over_B": 1.39
+     },
+     "december": {
+      "rows": 165675,
+      "rows_changed": 59799,
+      "A": 17.6563,
+      "B": 37.5783,
+      "gain_mse_s2": -2.2657,
+      "gain_rmse_s": -0.0061,
+      "ci95": [
+       -0.11885,
+       0.07799
+      ],
+      "clear_of_zero": false,
+      "rmse_v8_s": 185.8114,
+      "scale_A_over_B": 0.4699
+     },
+     "january": {
+      "rows": 153702,
+      "rows_changed": 79049,
+      "A": 42.4674,
+      "B": 43.0983,
+      "gain_mse_s2": 41.8364,
+      "gain_rmse_s": 0.10709,
+      "ci95": [
+       0.05006,
+       0.16241
+      ],
+      "clear_of_zero": true,
+      "rmse_v8_s": 195.3913,
+      "scale_A_over_B": 0.9854
+     }
+    },
+    "board_gain_s": 0.10446,
+    "board_v8": 236.3458,
+    "every_fold_clear": false,
+    "clears_the_floor": true
+   }
+  },
+  "the_comparison_registered_in_7bh": {
+   "ii_over_i": 0.892,
+   "ii_exceeds_i": false,
+   "what_that_would_mean": "(ii) > (i) means the with-clock half is NEGATIVE under the chain update on the current head -- the surface head has spent that alignment -- and the member's residue lives only where the surface programme does not reach."
+  },
+  "the_record_for_comparison": {
+   "increment_vs_v12": 0.11536514636873108,
+   "increment_vs_v11": 0.13248624785722996,
+   "composite_vs_v10": 0.5949334518622322
+  }
+ },
+ "verdict": {
+  "i_all_moved_rows": "FAIL",
+  "ii_complement_only": "FAIL",
+  "the_gate": "every fold clear on the raw read AND the board above the 0.1 s floor",
+  "no_serve": "the desk rules the serve; no candidate bytes were written here"
+ }
+}

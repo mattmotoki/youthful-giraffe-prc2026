@@ -1,0 +1,125 @@
+{
+  "ranking": {
+    "T-tailv2": "artifacts/exp-012/pred/T-tailv2-ranking.parquet",
+    "F1-fresh": "artifacts/exp-012/pred/F1-fresh-s1-ranking.parquet",
+    "C2-cat": "artifacts/exp-008/pred/C2-d8p-ranking.parquet",
+    "L2-hub": "artifacts/exp-008/pred/L2-hub-ranking.parquet",
+    "D1-winter": "artifacts/exp-012/pred/D1-winter-deice-v1-ranking.parquet",
+    "N1-nmtail": "artifacts/exp-012/pred/N1-nmtail-ranking.parquet"
+  },
+  "mode": "hybrid: nnls in nm_late, nnls elsewhere",
+  "weights": {
+    "nm_late": {
+      "T-tailv2": 0.06760849873881451,
+      "C2-cat": 0.07085320015586664,
+      "L2-hub": 0.0,
+      "D1-winter": 0.1498353622824811,
+      "F1-fresh": 0.4750533878279596,
+      "N1-nmtail": 0.252836149202466
+    },
+    "nm_bulk": {
+      "T-tailv2": 0.12133644256129841,
+      "C2-cat": 0.036592004357779546,
+      "L2-hub": 0.15384927201452583,
+      "D1-winter": 0.06833590845964722,
+      "F1-fresh": 0.6221946137079091,
+      "N1-nmtail": 0.0
+    },
+    "nonm": {
+      "T-tailv2": 0.12133644256129841,
+      "C2-cat": 0.036592004357779546,
+      "L2-hub": 0.15384927201452583,
+      "D1-winter": 0.06833590845964722,
+      "F1-fresh": 0.6221946137079091,
+      "N1-nmtail": 0.0
+    },
+    "noac": {
+      "T-tailv2": 0.12133644256129841,
+      "C2-cat": 0.036592004357779546,
+      "L2-hub": 0.15384927201452583,
+      "D1-winter": 0.06833590845964722,
+      "F1-fresh": 0.6221946137079091,
+      "N1-nmtail": 0.0
+    },
+    "_all": {
+      "T-tailv2": 0.12133644256129841,
+      "C2-cat": 0.036592004357779546,
+      "L2-hub": 0.15384927201452583,
+      "D1-winter": 0.06833590845964722,
+      "F1-fresh": 0.6221946137079091,
+      "N1-nmtail": 0.0
+    }
+  },
+  "floor": 60.0,
+  "guard_bounds": [
+    -20657.0,
+    9069.0
+  ],
+  "late_cut": 1800.0,
+  "prepare_members": true,
+  "blend_version": 5,
+  "rotated": {
+    "july_loo": 289.3189,
+    "december": 207.7722,
+    "january": 340.8188
+  },
+  "board_estimate": 313.1731,
+  "core4_flat_board": 313.6282,
+  "candidate": {
+    "path": "submissions/candidates/exp-012-blend-4.parquet",
+    "sha256": "3b7e558a0b542690673f5ad01ade7a0c210a998905928e5e95434c752549337d",
+    "n": 344841,
+    "members": [
+      "T-tailv2",
+      "F1-fresh",
+      "C2-cat",
+      "L2-hub",
+      "D1-winter",
+      "N1-nmtail"
+    ],
+    "weights": {
+      "nm_late": {
+        "T-tailv2": 0.06760849873881451,
+        "F1-fresh": 0.4750533878279596,
+        "C2-cat": 0.07085320015586664,
+        "L2-hub": 0.0,
+        "D1-winter": 0.1498353622824811,
+        "N1-nmtail": 0.252836149202466
+      },
+      "nm_bulk": {
+        "T-tailv2": 0.12133644256129841,
+        "F1-fresh": 0.6221946137079091,
+        "C2-cat": 0.036592004357779546,
+        "L2-hub": 0.15384927201452583,
+        "D1-winter": 0.06833590845964722,
+        "N1-nmtail": 0.0
+      },
+      "nonm": {
+        "T-tailv2": 0.12133644256129841,
+        "F1-fresh": 0.6221946137079091,
+        "C2-cat": 0.036592004357779546,
+        "L2-hub": 0.15384927201452583,
+        "D1-winter": 0.06833590845964722,
+        "N1-nmtail": 0.0
+      },
+      "noac": {
+        "T-tailv2": 0.12133644256129841,
+        "F1-fresh": 0.6221946137079091,
+        "C2-cat": 0.036592004357779546,
+        "L2-hub": 0.15384927201452583,
+        "D1-winter": 0.06833590845964722,
+        "N1-nmtail": 0.0
+      },
+      "_all": {
+        "T-tailv2": 0.12133644256129841,
+        "F1-fresh": 0.6221946137079091,
+        "C2-cat": 0.036592004357779546,
+        "L2-hub": 0.15384927201452583,
+        "D1-winter": 0.06833590845964722,
+        "N1-nmtail": 0.0
+      }
+    },
+    "late_cut": 1800.0,
+    "blend_version": 5
+  }
+}

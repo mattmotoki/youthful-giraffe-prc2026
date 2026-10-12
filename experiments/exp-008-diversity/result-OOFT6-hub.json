@@ -1,0 +1,39 @@
+{
+  "name": "OOFT6-hub",
+  "folds": {
+    "july_loo": {
+      "rmse": 310.8342084665029,
+      "rmse_bulk": 271.67755228678345,
+      "rmse_tail": 2589.387314183833,
+      "rmse_no_nm": 1265.8854351296652,
+      "rmse_noac": 3880.0599309161967,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.2387041428651127,
+      "sse_share_no_nm": 0.34212534379855986,
+      "sse_share_noac": 0.2769737753399845,
+      "bias": 0.09530168330567426,
+      "fold": "july_loo",
+      "rounds": 2100,
+      "seeds": [
+        7
+      ],
+      "seconds": 374,
+      "oof": "experiments/exp-012-blend2/oof/OOFT6-hub-july_loo.parquet",
+      "argv": "--kind lgb --name OOFT6-hub --variant plain --huber-delta 1200 --folds july_loo --rounds-m6 3225 --rounds-m11 2100 --outdir ../exp-012-blend2/oof"
+    }
+  },
+  "argv": "--kind lgb --name OOFT6-hub --variant plain --huber-delta 1200 --folds july_loo --rounds-m6 3225 --rounds-m11 2100 --outdir ../exp-012-blend2/oof",
+  "argv_history": [
+    "--kind lgb --name OOFT6-hub --variant plain --huber-delta 1200 --folds july_loo --rounds-m6 3225 --rounds-m11 2100 --outdir ../exp-012-blend2/oof"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 6,
+  "gpu": "1"
+}

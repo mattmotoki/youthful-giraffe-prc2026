@@ -1,0 +1,163 @@
+{
+  "step": "3 serving path and 4 census",
+  "arm": "ridge",
+  "base": "v11",
+  "served_amplitude": 0.5618,
+  "fit_months": [
+    "2025-07",
+    "2025-12",
+    "2025-01"
+  ],
+  "fit_rows": 370338,
+  "n_features": 202,
+  "candidate": "submissions/candidates/exp-044-zerosum-v11.parquet",
+  "sha256": "7dee4ce9e07a95f78b6e551a96d501f81e8831bd4ebdbb591659b4467ed12bf0",
+  "bytes": 4707609,
+  "prediction": {
+    "min": 60.4192,
+    "max": 115306.599,
+    "finite": true
+  },
+  "checks": {
+    "max_abs_cell_sum": 1.4210854715202004e-14,
+    "cell_sum_check": true,
+    "floor_passes": true,
+    "bound_iterations": 0,
+    "cells_zeroed_by_bound": 0
+  },
+  "identical_to_v10": {
+    "noac": [
+      388,
+      0.0
+    ],
+    "EHAM": [
+      38182,
+      0.0
+    ],
+    "EDDF": [
+      36317,
+      0.0
+    ],
+    "vs_v10_bytes_noac": 0.0,
+    "vs_v10_bytes_EHAM": 0.0
+  },
+  "census": {
+    "n_ranking_departures": 344841,
+    "n_eligible": 253964,
+    "eligible_pct": 73.65,
+    "n_cells_eligible": 55570,
+    "n_scored_cohort": 210597,
+    "share_eligible_in_cells_under_four": 17.08,
+    "n_changed": 210597,
+    "rms_update_all_scored": 6.4978,
+    "rms_update_over_eligible": 5.917,
+    "rms_update_over_all_departures": 5.0779,
+    "max_abs_update": 112.981,
+    "by_month": {
+      "2026-01": {
+        "n_departures": 152719,
+        "n_eligible": 114653,
+        "n_scored": 90525,
+        "rms_update": 6.5182
+      },
+      "2026-07": {
+        "n_departures": 192122,
+        "n_eligible": 139311,
+        "n_scored": 120072,
+        "rms_update": 6.4823
+      }
+    },
+    "by_airport": {
+      "EDDF": {
+        "n_departures": 36317,
+        "n_eligible": 0,
+        "n_scored": 0,
+        "rms_update": 0.0
+      },
+      "EDDM": {
+        "n_departures": 25966,
+        "n_eligible": 24163,
+        "n_scored": 17838,
+        "rms_update": 5.2974
+      },
+      "EGLL": {
+        "n_departures": 39840,
+        "n_eligible": 38157,
+        "n_scored": 36597,
+        "rms_update": 8.0416
+      },
+      "EHAM": {
+        "n_departures": 38182,
+        "n_eligible": 0,
+        "n_scored": 0,
+        "rms_update": 0.0
+      },
+      "LEBL": {
+        "n_departures": 30080,
+        "n_eligible": 27918,
+        "n_scored": 22105,
+        "rms_update": 5.6253
+      },
+      "LEMD": {
+        "n_departures": 36954,
+        "n_eligible": 35079,
+        "n_scored": 29417,
+        "rms_update": 6.5454
+      },
+      "LFPG": {
+        "n_departures": 39872,
+        "n_eligible": 36775,
+        "n_scored": 31735,
+        "rms_update": 6.5819
+      },
+      "LIRF": {
+        "n_departures": 26899,
+        "n_eligible": 25259,
+        "n_scored": 17903,
+        "rms_update": 7.3127
+      },
+      "LSZH": {
+        "n_departures": 23150,
+        "n_eligible": 20685,
+        "n_scored": 13930,
+        "rms_update": 5.8933
+      },
+      "LTFM": {
+        "n_departures": 47581,
+        "n_eligible": 45928,
+        "n_scored": 41072,
+        "rms_update": 5.5138
+      }
+    }
+  },
+  "provenance": {
+    "v10_file_sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78",
+    "ranking_file_sha256": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+    "git_commit": "0beec1f3aad39a02a1629848af98f664b4481f57",
+    "code_sha256_exp044": {
+      "cohorts.py": "ed89a81d5549a77933bbaf3b9a894ec91d5e4d29d4d3c6dfb9d354069f8b7eaa",
+      "controls.py": "5415896d4b8ec25c0e29fa7ddfda94bdef98304a2001dcc5ef23f0fb01dac412",
+      "density.py": "42e7fe8177c70e9339b116e98d35086bdcdf040da7f08ea8956ae0c9e5acc68a",
+      "learner.py": "4308b4365ca0db304172dff7be4f98b0a14875227c8d18866dcdeeabf1947ba7",
+      "records.py": "fd0bbfcdc5e1f2d931b2c5bb3cb9cf4412e8935084db100c6f48052b90e9141c",
+      "repair.py": "69b47bc94c7fcbbe3e6533ce204a69ae34b09bb45bd5627edc09c837e4db154b",
+      "serve.py": "6242896d6f0575729456adf74420e9023196cdeb2b4cbd6ea45c6394c5c5afc4",
+      "tables.py": "7d07db427b35fbebe11b4faaa5465a068d637e59bfd0e1948c40b225fb75966c",
+      "v11base.py": "99d65527b204c3b0c51e336d3751283f190b8addb2293660c2b255bf45c05458",
+      "verdict.py": "3b2ed28fda56c83dbeefa969280c98b4c54acdd0e079f3c8c63c7e231158b8c8",
+      "zs.py": "d6592475cc3990ee197cae469ae9ef231f49dcf50ed3820283fe983cca019dbe"
+    },
+    "code_sha256_exp039_imported": {
+      "donor.py": "3f0402718cafc41bc7b3ebfc0b3b410855da6e54986b74b71f143a38d3edcda2",
+      "packet.py": "4542b8481052c1b7c03cca7e6050b48cce5cdee1b7e8f90dbd26331bd7f02439",
+      "q03.py": "30604f8a4b6f93f281e4fa9d1914183caf1ea345fa67ec8ff8456942bbd187cb",
+      "q04.py": "330b665faa581f66fd5538632d8f71d2f3e041134481ceb3ad879359eed4f443",
+      "q05.py": "1dc2d5c9b00c0ff5543cc5d1b6cb153a7203865062097c66428766c9c42fe113",
+      "q06.py": "d13bf853d30bfca4021ef9bf6b3415d712b85459d423f14df2fe55632c850e15",
+      "rowfeat.py": "8f52719827545be5f5fb5a7701ef8f0cd1246ac0a5b80a1d64923cbfbd823007",
+      "tables.py": "e20f9a45074a5fa38205816f33ad5e4df64c4b2d6847f4dc68b8a26fb1768877",
+      "v10.py": "a5842eafbfa7391c91c9c18f2e36dddf7bcb9a366d279e842b6931ddc412b6f4"
+    }
+  },
+  "wall_s": 12.7
+}

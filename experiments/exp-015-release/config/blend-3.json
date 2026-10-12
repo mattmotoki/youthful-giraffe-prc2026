@@ -1,0 +1,253 @@
+{
+  "name": "exp-012-blend-3",
+  "description": "The repaired standing blend: four general members equally weighted plus exp-010's NM-tail head as a specialist inside nm_late. The winter member is the bounded ds_deice_hr arm, replacing the 25-column day-state block that extrapolated on disrupted days.",
+  "python": ".venv/bin/python",
+  "folds": [
+    "july_loo",
+    "december",
+    "january"
+  ],
+  "board_shares": {
+    "july_loo": 0.5571321275602379,
+    "january": 0.4428678724397621
+  },
+  "guard_bounds": {
+    "july_loo": [
+      -20657.0,
+      9069.0
+    ],
+    "december": [
+      -20657.0,
+      9069.0
+    ],
+    "january": [
+      -20657.0,
+      9069.0
+    ]
+  },
+  "submission_guard_bounds": [
+    -20657.0,
+    9069.0
+  ],
+  "blend": {
+    "inside_rule": "nnls",
+    "outside_rule": "flat",
+    "regime_split": "nm_late",
+    "why": "The desk's rule for four general members is flat unless a fitted vector beats flat in EVERY rotation; it does not (NNLS wins only december, by 0.001). N1-nmtail then earns 0.297-0.336 inside nm_late across the three rotations and exactly 0.000 in nm_bulk, so it is carried as a regime specialist. As a fifth general member it is worth -0.492 s. With the repaired winter member the specialist's share inside nm_late rises from 0.3299 to 0.3522 and the winter member's falls from 0.2401 to 0.1454."
+  },
+  "members": [
+    {
+      "name": "T-tailv2",
+      "producer": "experiments/exp-008-diversity/tail_ranking.py",
+      "args": [],
+      "env": {
+        "PRC_THREADS": 6
+      },
+      "seeds": [
+        7
+      ],
+      "budget": "prc.tail_model declares n_estimators 500 (main) / 300 (noac head); no early stopping, so the multi-month budget rule does not apply - what this member needs instead is a scan to justify the constants.",
+      "oof": "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+      "ranking": "artifacts/exp-012/pred/T-tailv2-ranking.parquet",
+      "deterministic": true,
+      "notes": "noac head pinned to v2 by NOAC_PIN in the producer. The OOF is exp-009's versioned v2 file, byte-identical to what these weights were fitted on.",
+      "declared": {
+        "threads": 6,
+        "device": "cpu",
+        "seeds": [
+          7
+        ],
+        "bit_stable_at_6": "pending the five-member separation"
+      },
+      "sha_as_built": {
+        "sha256": "e9d97994642c9c3a95dbb5249a7e6f687709755411b4d633f3c9829ec783e3c0",
+        "threads": 6,
+        "as_of": "2026-09-05",
+        "note": "see hash_semantics"
+      }
+    },
+    {
+      "name": "C2-cat",
+      "producer": "experiments/exp-008-diversity/run.py",
+      "args": [
+        "--submit",
+        "--kind",
+        "cat",
+        "--name",
+        "C2-d8p",
+        "--depth",
+        "8",
+        "--rounds-m6",
+        "3625",
+        "--rounds-m11",
+        "5325"
+      ],
+      "cwd": "experiments/exp-008-diversity",
+      "env": {
+        "PRC_THREADS": 6,
+        "PRC_GPU": 1
+      },
+      "seeds": [
+        7
+      ],
+      "budget": "5325 rounds from a single early-stop month (2025-11), rescaled by 12/11 to 5809. NOT compliant with the multi-month budget rule; bringing it into compliance costs about 1.3 GPU-hours.",
+      "oof": "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+      "ranking": "artifacts/exp-008/pred/C2-d8p-ranking.parquet",
+      "deterministic": true,
+      "notes": "The only GPU member. GPU 1 per docs/COMPUTE.md compute allocation, which counts 2 feeding CPU threads against this lane's cap. Release thread count is 6 per the desk; the 2 used in the first e2e rebuild is what produced the mismatch that destroyed 48acb7e7.",
+      "declared": {
+        "threads": 6,
+        "device": "gpu:1",
+        "seeds": [
+          7
+        ],
+        "bit_stable_at_6": "pending the five-member separation"
+      },
+      "sha_as_built": {
+        "sha256": "48acb7e7cba9f2135239246466a56040a0b756ae439b9983031997f0bdf3ae5c",
+        "threads": 6,
+        "as_of": "2026-09-05",
+        "note": "see hash_semantics"
+      }
+    },
+    {
+      "name": "L2-hub",
+      "producer": "experiments/exp-008-diversity/run.py",
+      "args": [
+        "--submit",
+        "--kind",
+        "lgb",
+        "--name",
+        "L2-hub",
+        "--variant",
+        "plain",
+        "--huber-delta",
+        "1200",
+        "--rounds-m6",
+        "3225",
+        "--rounds-m11",
+        "2100"
+      ],
+      "cwd": "experiments/exp-008-diversity",
+      "env": {
+        "PRC_THREADS": 6
+      },
+      "seeds": [
+        7
+      ],
+      "budget": "2100 rounds from a single early-stop month (2025-11), rescaled by 12/11 to 2291. Not compliant by method but VALIDATED by measurement: the patience-900 alternative of 8725 rounds scores 314.41 on july_loo against this arm's 310.84, so the count is right even though the instrument that drew it is the disfavoured one.",
+      "oof": "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet",
+      "ranking": "artifacts/exp-008/pred/L2-hub-ranking.parquet",
+      "deterministic": true,
+      "declared": {
+        "threads": 6,
+        "device": "cpu",
+        "seeds": [
+          7
+        ],
+        "bit_stable_at_6": "pending the five-member separation"
+      },
+      "sha_as_built": {
+        "sha256": "8da562fc1b6590cc9f58e5b8fffa8a940f3b3928beaac7becf7ee497f9432d83",
+        "threads": 6,
+        "as_of": "2026-09-05",
+        "note": "see hash_semantics"
+      }
+    },
+    {
+      "name": "D1-winter",
+      "producer": "experiments/exp-012-blend2/winter_arm.py",
+      "args": [
+        "--name",
+        "D1-winter-deice-v1",
+        "--submit",
+        "--seeds",
+        "7,107,207",
+        "--ds-columns",
+        "deice"
+      ],
+      "cwd": "experiments/exp-012-blend2",
+      "env": {
+        "PRC_THREADS": 6
+      },
+      "seeds": [
+        7,
+        107,
+        207
+      ],
+      "budget": "125 rounds, drawn under the multi-month rule and the FIRST member to hit its wide-spread branch: per-month optima 2025-07 107, 2025-01 148, 2025-11 223, median 148, relative spread 0.784 which is above the 0.5 threshold, so the minimum applies rather than the median. The block arm's scan on the same months was [109, 129, 142] at spread 0.256.",
+      "oof": "experiments/exp-012-blend2/published/D1-winter-deice-v1-{fold}.parquet",
+      "ranking": "artifacts/exp-012/pred/D1-winter-deice-v1-ranking.parquet",
+      "deterministic": false,
+      "nondeterminism": "linear_tree=True, which LightGBM's deterministic=True does not cover across thread counts. Measured: the same seed at the same thread count drew 148 rounds on one run and 186 on another and scored 307.45 against 311.30 on july_loo, against a seed-to-seed spread of 3.7 s on the same fold. The blend is insensitive to it - a 0.77 s change in this member moves the board estimate 0.014 s.",
+      "notes": "PUBLISHED to exp-016 with a pinned hash (published/MEMBER-D1-winter-deice-v1.md). A rebuild is expected to differ and the pipeline restores the published file rather than clobbering it. Serves 125 rounds while the OOF drew 142/176/221 per fold; the same mismatch on the previous winter member measured 0.014 s.",
+      "declared": {
+        "threads": 6,
+        "device": "cpu",
+        "seeds": [
+          7,
+          107,
+          207
+        ],
+        "bit_stable_at_6": "pending the five-member separation"
+      },
+      "sha_as_built": {
+        "sha256": "8865d3d866012d1421a08eee4c24ce9cfe53dbc0e255d8a3ff1894b68c368fd2",
+        "threads": 6,
+        "as_of": "2026-09-05",
+        "note": "see hash_semantics"
+      }
+    },
+    {
+      "name": "N1-nmtail",
+      "producer": "experiments/exp-012-blend2/nmtail_submit.py",
+      "args": [],
+      "cwd": "experiments/exp-012-blend2",
+      "env": {
+        "PRC_THREADS": 6
+      },
+      "seeds": [
+        7,
+        107,
+        207
+      ],
+      "budget": "prc.nmtail declares n_estimators 900 with no early stopping, so the multi-month budget rule does not apply; what it needs instead is a scan to justify the constant.",
+      "oof": "experiments/exp-010-nmtail/oof/nmtail-phi_{fold}.parquet",
+      "ranking": "artifacts/exp-012/pred/N1-nmtail-ranking.parquet",
+      "deterministic": true,
+      "notes": "Predicts NM-joined departures only; y_pred is null on 5,290 non-NM ranking rows. prc.blend VERSION 5 permits that ONLY because this member's weight outside nm_late is exactly 0.000, and verifies it rather than trusting it.",
+      "declared": {
+        "threads": 6,
+        "device": "cpu",
+        "seeds": [
+          7,
+          107,
+          207
+        ],
+        "bit_stable_at_6": "pending the five-member separation"
+      },
+      "sha_as_built": {
+        "sha256": "772a2511b298570c2be36466e3a4f02c36fe83acde7b8fec0eb269c66285a96c",
+        "threads": 6,
+        "as_of": "2026-09-05",
+        "note": "see hash_semantics"
+      }
+    }
+  ],
+  "output": "submissions/candidates/exp-012-blend-3.parquet",
+  "expected_sha256": "f91db30a7f3bc4da41a1f1599627cdbe48741ba80c8017105b8a1ba79f9631e0",
+  "expected_board_estimate": 317.661,
+  "manifest": "experiments/exp-015-release/MANIFEST-blend-3.md",
+  "reproducibility": {
+    "definition": "Bytes reproduce at the DECLARED configuration below: per-member thread count, device, seeds, round count, and the library versions the manifest records. A different thread count gives a different file with the same score to within the recorded spread; see docs/REPRODUCE.md section 4 for the two gates.",
+    "release_threads": 6,
+    "release_threads_why": "6 is this lane's compute allocation and therefore the only count we can verify twice. The originals were fitted at 16 and those conditions are unrecoverable.",
+    "evidence": {
+      "T-tailv2": "16 -> 6 reproduced byte-for-byte",
+      "C2-cat": "16 -> 2 did not (48acb7e7 -> 56f95373); GPU",
+      "L2-hub": "16 -> 6 did not (8da562fc -> 29adfc27); plain trees on CPU, so not a GPU effect"
+    },
+    "gate_2_score": "Rebuild and compare fold RMSE rather than SHA when bytes differ. This is the gate that matters for the result: organisers reproduce the finding, not the file."
+  },
+  "hash_semantics": "`sha_as_built` records the hash of a SPECIFIC past build, with the date and thread count that produced it. It is a record, not a promise about the next build: this field was revised three times on 2026-09-05/06 and each revision felt like bookkeeping when it was actually re-asserting a claim about the future. The build compares against it explicitly and reports; it does not assume. Framing adopted from exp-016, who reached it first."
+}

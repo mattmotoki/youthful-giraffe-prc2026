@@ -1,0 +1,70 @@
+{
+  "verdict": "PASS",
+  "unit": "D145-G-bag-033-read-preparation",
+  "reviewed_UTC": "2026-10-02T20:04:55.493795+00:00",
+  "reviewer": "fresh correctness reviewer /root/g3_result_review",
+  "stage_source_sha256": "5696c44d594645e9cd0b81ce33c1d9d9987d0048c98f141b98212f2d41c89d2a",
+  "read_source_sha256": {
+    "stage_bag_stack6_033.py": "5696c44d594645e9cd0b81ce33c1d9d9987d0048c98f141b98212f2d41c89d2a",
+    "read_bag_033.py": "cead74b9b1393e93134a5191742962f95fc177e36b7fff08e0b9d01ceea3b36e"
+  },
+  "stage_verdict": "PASS",
+  "reader_verdict": "PASS",
+  "scope": "Source correctness for label-free parent staging and the later complete matched-bag held read. No real stage, score, fit, or remote job was run by this reviewer.",
+  "blocking_findings": [],
+  "evidence_sha256": {
+    "BAG-SPEC-033.md": "831df173d6854111f9b251989ecb41091d332785e5ca089eef336bca7cc4b7c2",
+    "BAG-PLAN-033.json": "fd485bc7ef9ccd2b1995675dd44b208b53e7617881d8958f0e984dae581e5434",
+    "BAG-RUN-PINS-033.json": "ec626e7e10dcedbe2f6fa0fa4c18e328bf360c3836a8d7d3d2a1bc46122b2a4e",
+    "REVIEW-BAG-SOURCE-033.json": "e734f795a6bddcfeade9dd383db2ea415f04018b103b234be8fc647df6a593e3",
+    "SCREEN-PINS.json": "dc4f2b6d81bf63ce6368848db9fa57c6def55718143b98deb5d2a004d4235c53",
+    "SCREEN-DATA-PINS.json": "afd01f7e9d7c4b6e9d2257d48c684a795cb6a450da8e70df625f50c3d14859d3",
+    "results/BAG-STACK-PINS-033.json": "4e2cf7a3de51d76cbc4b21bfd74d13abf7b9f2739c6bd8f49da2c670ffd399f0",
+    "results/BAG-READ-CHECK-033.json": "ff5983ce50fd1d459228a6027822045934f40ab6634160d696bf2d7cee7ceeb9"
+  },
+  "stage_checks": [
+    "All14 saved stack6 archive and input hashes match the source pins. The stage selects the exact pinned main repository and imports the archived assembly dependencies. Frozen fit code is unchanged.",
+    "The frozen bundle schema has no held-label columns. Stage code does not call the held label loader or quality scorer. Existing admission receipts are read only for their frozen contract checks.",
+    "The archived loader validates the joint members, fallback, HB3u ownership, hashes, IDs, base digests, scope, and inherited coefficients. The stage requires exact parent parity against saved stack6 before it saves TERMS.",
+    "Independent reconstruction requires exact parity for the signed member assembly, pair fallback/extension, and no-plan/C39/C73/C33/C55 tail. The staged fit base applies C39/C33 and leaves C73/C55 for serving, as in the frozen fitting convention.",
+    "Stage output is write-once and binds terms, plan, stack pins, source, review, row count, and parity receipts. Stage approval does not approve a quality read on an incomplete bag."
+  ],
+  "reader_checks": [
+    "Both lane receipts must be completed, with the exact six-task order for their three matched seeds. Plan, run pins, source, FIT and held-vector hashes must agree with supervisor completion records.",
+    "All12 fits must pass recipe, seed,12 full epochs, frozen1723505 training losses, ten admitted months, no held-label selection, artifact hashes, checkpoint reload proof, exact344419 held ID order, finite values and floor60 before fold labels or any quality score are loaded.",
+    "A and B are equal means of their same six seeds. AB gives equal weight to all twelve fits. Both fixed half-bags are reported without selecting one. The annual032 model is not used as held validation; the frozen parent contains the028 held counterpart.",
+    "Ordinary uses four signed members and clock uses three. WLS uses the frozen primary scope, HB3u base, C39 scaling, ranking row weights, and the other month only. C0 is a separate weights-only refit. Noac and off-scope rows retain the exact frozen fallback and tail.",
+    "The reader reconstructs and checks saved parent assembly before new scores. Serving applies the unchanged no-plan/C39/C73/C33/C55 order and requires exact off-scope parity. The archived clip and stand-floor functions are used.",
+    "Complete-bag raw B-versus-A and AB-versus-A diagnostics precede served-score calculations. Primary gains are full served increments over the frozen stack6; C0 contrasts and matched bag/half-bag contrasts remain separate.",
+    "The registered frozen GS protocol uses2000 seed601 airport-day draws with cell means recomputed. Month, class, airport and five-pair contributions are saved. Independent fixed-row weighted sums must match primary GS totals.",
+    "Summary without_top5_fixed_weights and top5_fixed_weight_G are fixed-row contribution subtraction. GS G_without_top_days removes those days and recomputes cell means. These are distinct diagnostics and must stay distinct in the report.",
+    "The LIRF exclusion is July ordinary, as stated by its saved keys. Rho compares raw bag errors against frozen stack6 errors; ordinary body requires the pinned score-only body part and primary scope. Body is plan present, abs(BLOCK-SCHED)>6 seconds and label below3600, with ordinary class in scope.",
+    "The under+60 flag uses each complete served bag against frozen stack6. It does not use raw-member quality, C0-relative gains, or a single fit. The desk decides entry. No annual fit, stack write, upload, or automatic entry is called."
+  ],
+  "deterministic_checks": {
+    "syntax_parse": "PASS",
+    "saved_helper_check": "PASS on current reader SHA",
+    "independent_check": "PASS on prior280fc34b reader bytes; subsequent change only names fixed-weight top5 output keys; fitted helper unchanged",
+    "synthetic_rows": 72,
+    "other_month_coefficient_recovery": true,
+    "own_month_label_poison_invariant": true,
+    "clock_control_poison_invariant": true,
+    "off_scope_fallback_exact": true,
+    "real_data_scored": false
+  },
+  "launch_requirements": "The later reader must use an assigned CPU lane and nice19, CUDA hidden, OMP no more than six, BLAS/MKL/NUMEXPR one,24GiB cap, and the prior pinned PRC_DATA_DIR and PRC_VALIDATION_DIR roots. Future launch environment and real output/result parity still require checks. No quality read is allowed until all12 fits pass the reader audit.",
+  "report_limits": "Intervals condition on saved seed vectors and2025 days, not seed variance or annual transfer. Rho and raw diagnostics do not identify a causal mechanism. No entry decision is made here.",
+  "review_actions": {
+    "local_source_hash_and_schema_checks": true,
+    "synthetic_helper_checks": true,
+    "held_labels_opened": false,
+    "real_quality_score": false,
+    "model_fit": false,
+    "model_inference": false,
+    "remote_execution": false,
+    "implementation_changes": false,
+    "files_written": [
+      "REVIEW-BAG-READ-SOURCE-033.json"
+    ]
+  }
+}

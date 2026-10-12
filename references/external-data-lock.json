@@ -1,0 +1,126 @@
+{
+  "generated_on": "2026-09-02",
+  "raw_manifest": "references/external-data-manifest.json",
+  "sources": [
+    {
+      "id": "prc-2024-open-dataset-v2",
+      "title": "Dataset for EUROCONTROL PRC 2024 Data Challenge on Aircraft Take-off Weight Estimation",
+      "doi": "10.4121/8cb8484b-dbe7-4750-8b87-a5b1dbc621b4.v2",
+      "landing_url": "https://data.4tu.nl/datasets/8cb8484b-dbe7-4750-8b87-a5b1dbc621b4/2",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Junzi Sun, Enrico Spinielli, Xavier Olive, and Martin Strohmeier. EUROCONTROL PRC 2024 Data Challenge dataset, DOI 10.4121/8cb8484b-dbe7-4750-8b87-a5b1dbc621b4.v2.",
+      "complete_uncompressed_bytes": 306644797093,
+      "selected_flight_list": {
+        "name": "flight_list.csv",
+        "bytes": 101091663,
+        "md5": "2da9db49afcae255eab0828f1e2f8575",
+        "url": "https://data.4tu.nl/file/8cb8484b-dbe7-4750-8b87-a5b1dbc621b4/2bfbef1a-a75b-4045-a46e-3325bf363c27"
+      },
+      "trajectory_archive": {
+        "files": 365,
+        "bytes": 306373396928,
+        "download_scope": "One Parquet file for each day of 2022"
+      },
+      "status": "EDA_AND_LEAKAGE_SAFE_HISTORICAL_AGGREGATE_CANDIDATE",
+      "use": "Historical 2022 flight-level taxi-out values for priors and aggregates. Actual trajectories remain research-only until the organizer defines the prediction cut-off."
+    },
+    {
+      "id": "open-meteo-era5-airport-points",
+      "title": "ERA5 hourly airport-point weather through Open-Meteo",
+      "api_endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "service_terms_url": "https://open-meteo.com/en/terms",
+      "upstream_doi": "10.24381/cds.adbb2d47",
+      "license": "CC BY 4.0",
+      "license_url": "https://open-meteo.com/en/license",
+      "attribution": "Weather data by Open-Meteo.com; ERA5 source: Copernicus Climate Change Service.",
+      "retrieved_on": "2026-09-02",
+      "query": {
+        "start_date": "2024-01-01",
+        "end_date": "2025-12-31",
+        "hourly": [
+          "temperature_2m",
+          "relative_humidity_2m",
+          "dew_point_2m",
+          "precipitation",
+          "rain",
+          "snowfall",
+          "pressure_msl",
+          "cloud_cover",
+          "cloud_cover_low",
+          "wind_speed_10m",
+          "wind_direction_10m"
+        ],
+        "models": "era5",
+        "timezone": "GMT",
+        "wind_speed_unit": "ms",
+        "precipitation_unit": "mm",
+        "format": "csv"
+      },
+      "airport_points": [
+        {"airport": "EDDF", "requested": [50.026, 8.543], "returned": [50.0, 8.5], "elevation_m": 100.0},
+        {"airport": "EDDM", "requested": [48.354, 11.786], "returned": [48.25, 11.75], "elevation_m": 453.0},
+        {"airport": "EGLL", "requested": [51.478, -0.461], "returned": [51.5, -0.5], "elevation_m": 24.0},
+        {"airport": "EHAM", "requested": [52.309, 4.764], "returned": [52.25, 4.75], "elevation_m": 6.0},
+        {"airport": "LEBL", "requested": [41.297, 2.078], "returned": [41.5, 2.0], "elevation_m": 2.0},
+        {"airport": "LEMD", "requested": [40.494, -3.567], "returned": [40.5, -3.5], "elevation_m": 618.0},
+        {"airport": "LFPG", "requested": [49.013, 2.55], "returned": [49.0, 2.5], "elevation_m": 109.0},
+        {"airport": "LIRF", "requested": [41.804, 12.251], "returned": [42.0, 12.25], "elevation_m": 1.0},
+        {"airport": "LTAI", "requested": [36.899, 30.8], "returned": [37.0, 30.75], "elevation_m": 59.0},
+        {"airport": "LTFM", "requested": [41.275, 28.752], "returned": [41.25, 28.75], "elevation_m": 57.0},
+        {"airport": "LSZH", "requested": [47.465, 8.549], "returned": [47.5, 8.5], "elevation_m": 420.0}
+      ],
+      "expected_rows_per_airport": 17544,
+      "join_spec": {
+        "keys": ["departure_airport", "scheduled_utc_hour"],
+        "time_tolerance": "exact hour",
+        "missing_rule": "keep the departure and leave weather features null"
+      },
+      "status": "EDA_ONLY_PENDING_TERMS_AND_PREDICTION_CUTOFF",
+      "model_use_requirements": [
+        "The organizer confirms that post-event reanalysis is valid at the competition prediction cut-off.",
+        "The retrieval route is valid for prize use: direct Copernicus CDS, self-hosted or commercial Open-Meteo, or a documented basis for use of the free non-commercial endpoint."
+      ],
+      "use": "Training-side EDA only. Do not use this snapshot in a prize submission while either requirement is unresolved."
+    },
+    {
+      "id": "copernicus-cds-era5-airport-points",
+      "title": "ERA5 hourly airport-point weather from the Copernicus Climate Data Store",
+      "time_series_catalogue_url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-timeseries",
+      "parent_catalogue_url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+      "time_series_doi": "10.24381/1cf1ad76",
+      "parent_doi": "10.24381/cds.adbb2d47",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Generated using Copernicus Climate Change Service information 2026. Modified ERA5 airport-point extracts.",
+      "retrieval": {
+        "credential": "Free CDS account and personal access token; the token is not stored in this repository.",
+        "format": "NetCDF normalized from the original CDS ZIP responses",
+        "request_count": 44,
+        "airport_points": 11,
+        "periods_kept": [
+          "2024-01-01/2024-12-31",
+          "2025-01-01/2025-12-31",
+          "2026-01-01/2026-01-31",
+          "2026-07-01/2026-07-31"
+        ],
+        "variables": [
+          "2m_temperature",
+          "2m_dewpoint_temperature",
+          "mean_sea_level_pressure",
+          "10m_u_component_of_wind",
+          "10m_v_component_of_wind",
+          "total_precipitation",
+          "total_cloud_cover",
+          "low_cloud_cover",
+          "snowfall"
+        ],
+        "expected_airport_hours": 209352,
+        "estimated_transfer_bytes": "10-25 MiB; engineering estimate pending the completed manifest"
+      },
+      "status": "EDA_AND_VALIDATION_CANDIDATE_PENDING_PREDICTION_CUTOFF",
+      "use": "Direct CDS is valid for competition and commercial use with attribution. Event-hour reanalysis remains outside the prize model until the organizer confirms the prediction cut-off."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "member": "V3-allin-v1",
+  "fold": "ranking",
+  "n_frame_columns": 171,
+  "column_sha": "declared-by-producer-not-yet-emitted",
+  "threads": 12,
+  "rounds": 660,
+  "seeds": 1,
+  "source_record": "experiments/exp-001-retro-v1/result-v3-allin-rank.json",
+  "source_sha256": "e132f35d2f312d1b815bdf096443322c460d3cad126ef088098ee6dee5cb0c87",
+  "value_column": "y_pred",
+  "provenance_note": "Column-renamed copy of retro-v1's twelve-month fit submissions/candidates/exp-001-retro-v3-allin-rank.parquet (sha e132f35d2f312d1b), whose value column is TAXITIME_SEC_mvt because it is written in the SUBMISSION format, not the member format. prc.blend.stack_members expects y_pred and raised KeyError rather than silently taking a wrong column, which is the behaviour we want. Values are unchanged; only the column name differs. The source file is untouched. Note submissions/ is gitignored, so that source has no address in git and this copy is the durable one.",
+  "sha256": "199fd5146966e98cae244be62c5bbdebd2951832374c7f920a4c97d5ef8a0fd4"
+}

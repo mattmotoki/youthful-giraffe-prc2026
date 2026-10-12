@@ -1,0 +1,88 @@
+july oracle fold (16 threads, before the compute allocation cap; 9638 s under load ~400):
+  legal_all_rows      584.9   trained on every departure with no _flt column, scored on the segment
+  legal_segment_only  753.0   trained on the segment's rows only
+  oracle_block_sched  211.2   the same model plus the TRUE BLOCK-SCHED as a feature
+  oracle_arithmetic     0.0   (MVT-SCHED) - (BLOCK-SCHED), the identity
+  segment_mean        692.0   predict the training segment mean
+Two things fall out.
+(1) legal_all_rows 584.9 already beats the best baseline (prc.tail_model v2, 651.4) on july, and
+    segment-only training is far worse (753.0), confirming tail_model's finding 11 on this
+    segment rather than inheriting it.
+(2) The 211.2 vs 0.0 gap is the whole finding. Given a feature that determines the target
+    exactly, the tree still loses 211 s, because the target is the difference of two quantities
+    of scale ~4600 s and a tree can only approximate a subtraction with splits. That is a
+    representation penalty, not an information one, and it applies to EVERY candidate in
+    question 1, since all of them are differences of large timestamps. It is direct evidence for
+    question 3: model BLOCK-SCHED as the target and subtract, rather than predicting taxi from
+    two large terms and hoping the tree finds the difference.
+july_loo, first three configs (segment RMSE / all-rows RMSE):
+  base    570.8 / 518.0
+  op      572.9 / 516.1
+  stand   652.1 / 498.4
+The stand family is the sharpest result so far and it splits the two populations: it IMPROVES
+all rows by 19.6 s and DEGRADES the segment by 81.3 s. Its coverage is 96 %+ on NM rows and
+21.9 % on the segment (the stand bounds need a stand neighbour, and these delayed flights often
+have none), so a model trained on every departure learns to lean on a feature the segment does
+not have, and the segment's rows land in leaves shaped by rows that do. That is a concrete
+mechanism for why "train on all departures and score a sub-population" can go wrong, and it
+argues for either coverage-matched features or a head trained where coverage matches.
+BUG in my own bracket feature, found because its result contradicted the coverage story
+(99 % coverage but +102 s on the segment). `brk_next_span` used searchsorted(..., "left") on
+both sides, so for any departure that has an AOBT — 98 % of training rows — the "next
+neighbour" was the row itself and the column was literally its own take-off minus AOBT.
+Verified: 100.0 % of AOBT rows had brk_next_gap == 0 and brk_next_span == own span, against
+0.1 % of segment rows. Not label leakage (AOBT is a legal column) but a train/serve semantic
+mismatch: one column meaning two different things in the two populations, so the model learned
+"this is my own span" from the majority and applied it to the segment where it is a neighbour's.
+Fixed with "right" on the next side; residual self-reads 0.99 % (genuine same-second
+neighbours), segment coverage unchanged at 98.9 %. Cache, ablation.json and OOF cleared and the
+whole ablation restarted rather than patching the affected configs, so no result in the table
+predates the fix.
+bracket after the self-reference fix, july_loo: segment 564.1 (was 672.8), all rows 522.3.
+A 108.7 s swing on the segment from which side of searchsorted the "next neighbour" is taken.
+The direction on all rows flips too (498->522 relative movement): before the fix the column
+handed every NM row its own take-off minus AOBT, which flattered the full population and
+wrecked the segment; after it, it is a genuine neighbour statistic that helps the segment
+(-6.7 s) and costs the full population a little (+4.3 s). Both signs are what the diagnosis
+predicts, which is the strongest evidence I have that the diagnosis is right.
+op (operator recovered from the FLIGHT_mvt callsign prefix) is consistently slightly NEGATIVE on
+the segment: july_loo 572.9 vs base 570.8, december 589.0 vs 585.9. It does help the full
+population a little (516.1 vs 518.0; 325.0 vs 333.8).
+Diagnosis: exp-002 finding 5 shows the operator predicts WHO lacks an NM join — charter and
+non-EU carriers have 8 % no-NM rates against 0.3 % for the home shuttles — which is a statement
+about selection into the segment, not about how long those aircraft then taxi. Conditioned on
+being in the segment, the carrier adds nothing about the taxi and costs the model a
+high-cardinality split. Worth stating because the assignment lists operator as a candidate on
+the strength of that finding, and the finding is about the wrong quantity.
+december surface: segment 493.3 against base 585.9, a 92.6 s gain — and the best existing
+baseline on december is prc.tail_model v2 at 493.0. So the surface family alone closes the
+entire 93 s gap by which my plain legal model was losing to the baseline on that fold, and lands
+on top of it. Combined with july_loo (550.2 against a 569.8 baseline) the surface neighbour
+columns are the candidate that works, on both folds, and they are the ones measured on flights
+that DO have an AOBT: what taxi-out is actually running at that airport and runway right now.
+That is the mechanism the assignment guessed at in candidate 4 and it is the only candidate so
+far that pays.
+january's segment number is two rows. The 1,372-row segment has target sd 2,840 s; the top two
+are LFPG at 58,206 s and 84,240 s with block_sched of -56,163 and -82,500 s, i.e. a block time
+stamped about a day before the schedule — date-rollover artefacts, the same pair the desk
+flagged. Drop them and the sd falls from 2,840 to 803 s (n=1,370). So every january segment
+figure in this experiment (base 2,823, tail_model 2,794) is dominated by two rows and cannot
+rank anything. I will report january twice: the raw number COMMON requires, and the number with
+those two rows removed, which is the one that carries information. Not a trim chosen after
+seeing results — the rows are identifiable from block_sched alone, without the target.
+Board value of this lane, using the desk's calibration (board = clean + 4 s; v1 scored 265.7612
+at rank 1) and the rollover-trimmed segment on the two ranking-analogue folds, mixed 56 % July /
+44 % January as the ranking months are:
+  deployed segment RMSE in that mix : 609.5  (prc.tail_model v2: 569.3 july_loo, 657.2 january)
+  lane headroom if the segment were PERFECT : -10.95 s of board
+  segment 560 -> -1.68 s | 520 -> -2.94 s | 480 -> -4.11 s
+  my best so far (surface) in that mix : 602.3 -> -0.25 s
+So the whole lane is worth at most 11 s and my current best is worth a quarter of a second.
+The reason is the comparison I had not made: against the DEPLOYED baseline rather than my own
+base, surface wins july (-77.4) and july_loo (-19.2), ties december (+0.2) and LOSES january
+(662.9 vs 657.2). The two folds it wins are the two least like the ranking months, and january
+is 44 % of the scored rows.
+This is decision-relevant: the leaders climb 3-6 s a day and our margin is 4.9 s, so a lane
+worth 0.25 s now and 3 s if pushed hard is a weak use of a runner unless the segment can be
+taken well below 520, which nothing measured suggests. Reported to the desk as a stopping
+question rather than decided here.

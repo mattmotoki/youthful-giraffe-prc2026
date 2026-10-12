@@ -1,0 +1,761 @@
+{
+  "arm": "c_lgb_kishctl@leaves_255x300_lr050+guard995",
+  "head_rebuilds_bit_for_bit": true,
+  "leaves": 255,
+  "member_spread_covmatch": {
+    "december": {
+      "guard_cut_s": 1940.177772328259,
+      "mean_abs_bag_s": 74.97145701339497,
+      "member_disagreement_rms_s": 15.454761577022918,
+      "rows_moved_by_the_bag": 102186
+    },
+    "january": {
+      "guard_cut_s": 1855.256340282004,
+      "mean_abs_bag_s": 74.56218996585369,
+      "member_disagreement_rms_s": 13.488460713128998,
+      "rows_moved_by_the_bag": 69840
+    },
+    "july_loo": {
+      "guard_cut_s": 1834.2676306265398,
+      "mean_abs_bag_s": 81.99491751540494,
+      "member_disagreement_rms_s": 12.763158687767332,
+      "rows_moved_by_the_bag": 88428
+    }
+  },
+  "member_spread_head": {
+    "december": {
+      "guard_cut_s": 1940.177772328259,
+      "mean_abs_bag_s": 74.34078629298554,
+      "member_disagreement_rms_s": 15.275365380849344,
+      "rows_moved_by_the_bag": 102186
+    },
+    "january": {
+      "guard_cut_s": 1855.256340282004,
+      "mean_abs_bag_s": 75.3681022000294,
+      "member_disagreement_rms_s": 13.911760319269712,
+      "rows_moved_by_the_bag": 69840
+    },
+    "july_loo": {
+      "guard_cut_s": 1834.2676306265398,
+      "mean_abs_bag_s": 84.44799729536119,
+      "member_disagreement_rms_s": 12.109640998477337,
+      "rows_moved_by_the_bag": 88428
+    }
+  },
+  "members": {
+    "1": {
+      "refitted_this_run": true,
+      "seconds": 195.6,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5625892330624914,
+          "max": 4.260996088304911,
+          "min": 0.15525742158421632,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "f157278efd8abd81cd7b9ae48c5f765ef4a9a2cea6bfd5f8ad9c5bd45c86ad0d"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481402325537653,
+          "max": 4.417384960863264,
+          "min": 0.1609557448435394,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "793445a127e6ad4a08e8d97019965df84bb49b155f5b93ae8dcf8403877692df"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5479261758717461,
+          "max": 4.468976360985835,
+          "min": 0.16283557472203533,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "9edcd7a74164b55ebd9b8542646ad0fae89f27d30172e2fa329e2ed79ffb8a88"
+        }
+      }
+    },
+    "2": {
+      "refitted_this_run": true,
+      "seconds": 192.7,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5626011793924081,
+          "max": 4.260995920154162,
+          "min": 0.1552574154573269,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "0923a2afe0d1e1e186f1038e92c6b13397d5bd317b3ea137102203828c386bb8"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481431593000466,
+          "max": 4.417292032811345,
+          "min": 0.16095235883486098,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "0d456307f9efd8cf3d393d412d3b23efb4f2a5abc7099f05a23662add1c57ac7"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5479166915911293,
+          "max": 4.468875817034373,
+          "min": 0.16283191121370622,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "0fe9f32d61564c217856b27dcc81978afba58d2cd83eddaf7bdcfaa0a4b649a9"
+        }
+      }
+    },
+    "3": {
+      "refitted_this_run": true,
+      "seconds": 191.6,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5625898097150749,
+          "max": 4.260948990393282,
+          "min": 0.15525570548305828,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "514647cb8c0600018cafdf4cd7926001240c138025dd2be293ef40bd3531efd8"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481325356398483,
+          "max": 4.417214707458341,
+          "min": 0.16094954133991807,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "8fc4b99e13cb9cc139640830eea49719b921c59270a3a1203eb8d8b46614f4ea"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5479093620049438,
+          "max": 4.468959479850548,
+          "min": 0.1628349596260616,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "edbdc1a03141420291b20c4640024be03306afa0fdab797d83825a44489d4827"
+        }
+      }
+    },
+    "4": {
+      "refitted_this_run": true,
+      "seconds": 190.9,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5625766978455011,
+          "max": 4.261144098273624,
+          "min": 0.15526281460632543,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "ec98bd3e58e6a1410b356847fec3676a0de477125a30d4f9fbd8c69333f3e555"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481277115940227,
+          "max": 4.4175299051299275,
+          "min": 0.16096102616101757,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "d3e7ec1741061d98190e7e97f92dbb38b55b408032395d89cc853917c9b6f86f"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5479226742551009,
+          "max": 4.468995490032111,
+          "min": 0.1628362717248818,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "bf12d14e5b27b8f2463a9a1971f6b634ffc8422aa5cab39b65a94bd40454c363"
+        }
+      }
+    },
+    "5": {
+      "refitted_this_run": true,
+      "seconds": 190.9,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.562597746971816,
+          "max": 4.26101037063441,
+          "min": 0.15525794198780418,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "52fb5dfd72cdfcbd2c15dd9942ef09eec1b6a3667779315740eede19dc7541d1"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481150801035071,
+          "max": 4.417042956790341,
+          "min": 0.16094328328069515,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "04eb015220110c31dcdeb17a028d4456503417a727fea32567927bc1e6a6ddad"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5478893535955826,
+          "max": 4.468569139015821,
+          "min": 0.16282073682221884,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "fa20478d47909b8fb6b91a04502c6a57d724f93f0290d3e8f81892e9f4deeec3"
+        }
+      }
+    },
+    "6": {
+      "refitted_this_run": true,
+      "seconds": 191.9,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5625907500468629,
+          "max": 4.260944097452788,
+          "min": 0.1552555271995515,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "6c4e9838f3298018f0916369b7e498db729b39fdb74c13ee39230bc09600ac68"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481333380821204,
+          "max": 4.417250131294239,
+          "min": 0.16095083207412905,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "6e6fdfa80618ddab91248f37c098153e4a4feb5828e9aaa8d14ebf6a28d590e8"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5479147046860275,
+          "max": 4.468885528032432,
+          "min": 0.16283226505221918,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "7f30c02ecc4fd17107a58b5b7b755daa75dd47460f736385ae5410c7a0c5949e"
+        }
+      }
+    },
+    "7": {
+      "refitted_this_run": true,
+      "seconds": 191.4,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5625993282602776,
+          "max": 4.261234244572354,
+          "min": 0.15526609925658474,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "754bfd2acb19e5da9e164011533fa2f707988d9f8ef8d841e8a32c8674fea872"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481370231711862,
+          "max": 4.417361819365719,
+          "min": 0.1609549016394702,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "b60eb8755087a1c7088f33078b46e753c330215cf3a64e857626a655c0f330da"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5479032174867438,
+          "max": 4.468841964628405,
+          "min": 0.1628306777375058,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "15e5d0d403e0d87bb27e192dade14f6ae2b7516ec967e75f576979176083c070"
+        }
+      }
+    },
+    "8": {
+      "refitted_this_run": true,
+      "seconds": 191.5,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5625943735214177,
+          "max": 4.261118311619014,
+          "min": 0.15526187502097424,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "826e368bb8fb6b8cb120d4fb6b45f69bd1c11e5622deb4e38c43e731cfb61c07"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481301187548657,
+          "max": 4.417269900744953,
+          "min": 0.16095155241131795,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "4edf9ee7d008ac8a7a1b28f23037c6ebebe578bb00263bd79c4e1e7ffaaa7912"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5479035567206892,
+          "max": 4.468841027202671,
+          "min": 0.16283064358063273,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "1f848dc9491ec03edd89232a24e359613c79c4d3b0b0c57986c1184c473a76ef"
+        }
+      }
+    },
+    "9": {
+      "refitted_this_run": true,
+      "seconds": 191.4,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5625854867519472,
+          "max": 4.261014958349485,
+          "min": 0.1552581091498477,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "5bc423fedd9cef35eb25acb769c177d381bae1670a5fcad67a7b956e478a6408"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481112815711378,
+          "max": 4.416974392170258,
+          "min": 0.16094078499956432,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "7c504758851775bba7b389486d6b4e46711f67b506fb9565eaf8c82ff5ac1e6f"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5478893415407263,
+          "max": 4.468615222577683,
+          "min": 0.16282241596363176,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "e23608c674e6387de3e8552d87fbbd1d0823817628be386b4cef7d997601ac9d"
+        }
+      }
+    },
+    "10": {
+      "refitted_this_run": true,
+      "seconds": 191.4,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5625984635757522,
+          "max": 4.26105303742517,
+          "min": 0.15525949663272368,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "9c7d01803665848fa62248095904e2ba38c04f876f3d1b916c02edce5e97c593"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5481491944918466,
+          "max": 4.417431264526517,
+          "min": 0.1609574320047612,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "b2803dadfdcbbd760e0fdefec198bf8c976e0a1da328073d6f357578621460c0"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.547927301562855,
+          "max": 4.468971165623963,
+          "min": 0.16283538541923578,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "dc818898c71099ab45099a424e168639fad649dd993a3977e54814511a661e62"
+        }
+      }
+    }
+  },
+  "pre_registration": {
+    "alpha": 1.222501,
+    "band_s": [
+      -0.35,
+      -0.05
+    ],
+    "kish_effective_fraction_of_the_map": 0.56258,
+    "map_sha256_prefix": "396541472f4fdee8",
+    "permutation_seed": 47,
+    "point_estimate_board_s": -0.2,
+    "reading_the_gate_applies_to": "in_fold",
+    "reasoning": "if section 47.11's loss is the SAMPLE, the control reads near -0.25; if it is the COMPOSITION, near 0. I expect mostly sample, because that mechanism is a 44 % cut in effective rows and nothing in the argument used the airports' identity",
+    "registered_in": "RESULTS.md section 47.13, commit 112fc7e, before this file ran it",
+    "weight_extremes": {
+      "max": 4.2609,
+      "min": 0.1553
+    },
+    "what_it_cannot_settle": "Kish is matched but PLACEMENT is not -- the control's heaviest weight sits on LFPG's few hundred rows where covmatch's sat on LEMD's 4,182 -- so a control that loses much less has two explanations and one permutation cannot choose between them"
+  },
+  "prices": {
+    "cross_fitted_beside_it": {
+      "cross_fitted": {
+        "all_row_ci95": [
+          0.0,
+          0.0
+        ],
+        "all_row_gain_s": 0.0,
+        "by_fold": {
+          "december": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 165677,
+            "rows_moved": 0
+          },
+          "january": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 153706,
+            "rows_moved": 0
+          },
+          "july_loo": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 190713,
+            "rows_moved": 0
+          }
+        },
+        "clean_gain_s": 0.0,
+        "every_fold_interval_clear": false
+      },
+      "in_fold": {
+        "all_row_ci95": [
+          -0.19436764604943874,
+          -0.04445395727503013
+        ],
+        "all_row_gain_s": -0.10998433050156109,
+        "clean_gain_s": -0.13432823587902476,
+        "every_fold_interval_clear": false
+      },
+      "label": "the same increment, cross-fitted, reported beside it",
+      "out_of_fold_selection": {
+        "december": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "january": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -92.53833408070379,
+              "tail_passes": true
+            },
+            "july_loo": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -44.47679865029593,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "july_loo",
+            "january"
+          ]
+        },
+        "january": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "december": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -220.38982198096977,
+              "tail_passes": true
+            },
+            "july_loo": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -44.47679865029593,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "july_loo",
+            "december"
+          ]
+        },
+        "july_loo": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "december": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -220.38982198096977,
+              "tail_passes": true
+            },
+            "january": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -92.53833408070379,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "december",
+            "january"
+          ]
+        }
+      },
+      "rule": "crossfit.py: the rung is taken on a fold only if, on both other folds, its increment interval is clear of zero and its registered whole-update tail clause passes",
+      "selection_premium_s": -0.10998433050156109
+    },
+    "in_fold_over_v8_head": {
+      "board_all_row": {
+        "arm": 299.0144361727538,
+        "base": 298.90445184225223,
+        "gain_s": -0.10998433050156109,
+        "interval": {
+          "ci95": [
+            -0.19436764604943874,
+            -0.04445395727503013
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.11181581263976452,
+          "share_of_draws_positive": 0.0
+        }
+      },
+      "board_clean": {
+        "arm": 244.84906504986515,
+        "base": 244.71473681398612,
+        "gain_s": -0.13432823587902476,
+        "interval": {
+          "ci95": [
+            -0.21650485958769608,
+            -0.05239573539720795
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.1348813555455912,
+          "share_of_draws_positive": 0.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 43.235435195226245,
+          "B_mean_dd": 306.86069237142226,
+          "ci95": [
+            -287.14436776662086,
+            -152.95398272572154
+          ],
+          "mse_gain_s2": -220.38982198096977,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 88.43213485135013,
+          "B_mean_dd": 269.40260378340406,
+          "ci95": [
+            -161.7628860608063,
+            -26.99840606081853
+          ],
+          "mse_gain_s2": -92.53833408070379,
+          "rows": 153706,
+          "rows_moved": 69838
+        },
+        "july_loo": {
+          "A_mean_rd": 126.38073132437786,
+          "B_mean_dd": 297.23826129905166,
+          "ci95": [
+            -94.43413350870537,
+            4.065947054033698
+          ],
+          "mse_gain_s2": -44.47679865029593,
+          "rows": 190713,
+          "rows_moved": 88421
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 43.235435195226245,
+          "B_mean_dd": 306.86069237142226,
+          "ci95": [
+            -289.2809518231926,
+            -156.02228438126036
+          ],
+          "mse_gain_s2": -220.38982198096977,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 88.43328553233243,
+          "B_mean_dd": 269.40610925631023,
+          "ci95": [
+            -163.48831645025138,
+            -30.857421381561515
+          ],
+          "mse_gain_s2": -92.53953819164535,
+          "rows": 153704,
+          "rows_moved": 69838
+        },
+        "july_loo": {
+          "A_mean_rd": 126.38073132437786,
+          "B_mean_dd": 297.23826129905166,
+          "ci95": [
+            -96.12615123869807,
+            1.9263598967587263
+          ],
+          "mse_gain_s2": -44.47679865029593,
+          "rows": 190713,
+          "rows_moved": 88421
+        }
+      },
+      "every_fold_interval_clear": false,
+      "every_moving_fold_interval_clear": false,
+      "folds_with_no_moved_row": [],
+      "label": "c_lgb_kishctl as an increment over v8's head",
+      "rows_moved": {
+        "december": 102186,
+        "january": 69838,
+        "july_loo": 88421
+      },
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -15175.955349733862,
+          "passes_the_clause": false,
+          "rmse_arm": 1756.241577008907,
+          "rmse_base": 1751.915671904615,
+          "rmse_gain_s": -4.3259051042919054,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.10847828021472741
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -918.5613585361036,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.87318983019,
+          "rmse_base": 5980.796397761006,
+          "rmse_gain_s": -0.07679206918419368,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.020988385634474756
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 287.20717351356376,
+          "passes_the_clause": true,
+          "rmse_arm": 2386.225187592233,
+          "rmse_base": 2386.285367065955,
+          "rmse_gain_s": 0.06017947372220078,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": -0.022211879280250445
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 62385.274901869045,
+          "passes_the_clause": true,
+          "rmse_arm": 1756.241577008907,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 17.672105140425174,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.01420567256904576
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 39125.61844039491,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.87318983019,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.2700012431942014,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.0147162034650184
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 45671.2495207625,
+          "passes_the_clause": true,
+          "rmse_arm": 2386.225187592233,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 9.550656559375057,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.026257576371427133
+        }
+      }
+    }
+  },
+  "seconds": 1922.8,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "vector": "experiments/exp-046-surfacefit/work/d-kishctl10-255-free.npz",
+  "verdict": {
+    "above_the_upload_floor_0_1_s": false,
+    "every_fold_interval_clear": false,
+    "fold_expected_to_fail_was_right": null,
+    "fold_that_failed": [
+      "july_loo",
+      "december",
+      "january"
+    ],
+    "folds_clear": {
+      "december": false,
+      "january": false,
+      "july_loo": false
+    },
+    "increment_board_s": -0.10998433050156109,
+    "increment_ci95": [
+      -0.19436764604943874,
+      -0.04445395727503013
+    ],
+    "inside_the_registered_band": true,
+    "interval_half_width_s": 0.0749568443872043,
+    "reading_the_gate_applies_to": "in_fold",
+    "the_arm_passes_its_gate": false,
+    "the_registration_was_right": true
+  },
+  "weights": {
+    "airports_not_named_get_weight": 1.0,
+    "alpha": 1.2225009066063814,
+    "kish_effective_fraction_of_the_map": 0.5625798274180769,
+    "map": {
+      "EDDF": 0.15525275277761733,
+      "EDDM": 0.47602081707540495,
+      "EGLL": 0.2422447572657783,
+      "EHAM": 1.8388527747769154,
+      "LEBL": 0.46866297322061445,
+      "LEMD": 0.7209650450781423,
+      "LFPG": 4.260867954226344,
+      "LIRF": 0.3901851472730138,
+      "LSZH": 2.5245324469683554
+    },
+    "map_sha256": "396541472f4fdee8579924d263433541678e6e9568d20e603c7a138986efaaab",
+    "max": 4.260867954226344,
+    "min": 0.15525275277761733,
+    "permutation_seed": 47,
+    "source": "experiments/exp-046-surfacefit/analysis/control-weights.json"
+  },
+  "what": "`c_lgb_covmatch` -- the composition-matched head, pre-registered in RESULTS section 47.9.",
+  "which": "kishctl"
+}

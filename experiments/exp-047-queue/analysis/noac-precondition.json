@@ -1,0 +1,563 @@
+{
+ "what": "exp-047 \u00a77bf: the exp-048 noac precondition and backlog line 69's revival condition.",
+ "pre_registration": "RESULTS \u00a77bf, commit cce5eeb, written before this ran",
+ "the_rule": "exp-033: NO NOAC ROW MOVES.  No arm, no head, no candidate, no serve in this block.",
+ "0_the_coverage_census": {
+  "definition": {
+   "noac": "AIRCRAFT_TYPE_mvt is null (exp-033)",
+   "carries_an_observation": "obs_has_clock -- the row has an off-block clock",
+   "the_wider_flag": "obs_matched -- the matcher reached the row at all",
+   "source": "artifacts/exp-047/block/<month>.parquet, the emission (counts and masks only; the fitted read below rebuilds the block)"
+  },
+  "months": {
+   "2025-07": {
+    "rows": 190713,
+    "noac_rows": 339,
+    "noac_with_a_clock": 275,
+    "noac_matched": 290,
+    "noac_clock_share": 0.8112,
+    "all_rows_clock_share": 0.4634,
+    "by_airport": {
+     "LFPG": {
+      "noac_rows": 1,
+      "noac_with_a_clock": 0,
+      "noac_matched": 0,
+      "all_rows_clock_share": 0.0222
+     },
+     "LIRF": {
+      "noac_rows": 337,
+      "noac_with_a_clock": 275,
+      "noac_matched": 290,
+      "all_rows_clock_share": 0.8809
+     },
+     "LTFM": {
+      "noac_rows": 1,
+      "noac_with_a_clock": 0,
+      "noac_matched": 0,
+      "all_rows_clock_share": 0.0
+     }
+    }
+   },
+   "2025-12": {
+    "rows": 165677,
+    "noac_rows": 89,
+    "noac_with_a_clock": 38,
+    "noac_matched": 46,
+    "noac_clock_share": 0.427,
+    "all_rows_clock_share": 0.6139,
+    "by_airport": {
+     "LIRF": {
+      "noac_rows": 88,
+      "noac_with_a_clock": 38,
+      "noac_matched": 46,
+      "all_rows_clock_share": 0.4977
+     },
+     "LTFM": {
+      "noac_rows": 1,
+      "noac_with_a_clock": 0,
+      "noac_matched": 0,
+      "all_rows_clock_share": 0.0
+     }
+    }
+   },
+   "2025-01": {
+    "rows": 153706,
+    "noac_rows": 63,
+    "noac_with_a_clock": 3,
+    "noac_matched": 3,
+    "noac_clock_share": 0.0476,
+    "all_rows_clock_share": 0.4522,
+    "by_airport": {
+     "LIRF": {
+      "noac_rows": 60,
+      "noac_with_a_clock": 0,
+      "noac_matched": 0,
+      "all_rows_clock_share": 0.0
+     },
+     "LSZH": {
+      "noac_rows": 3,
+      "noac_with_a_clock": 3,
+      "noac_matched": 3,
+      "all_rows_clock_share": 0.8986
+     }
+    }
+   },
+   "2026-01": {
+    "rows": 152719,
+    "noac_rows": 108,
+    "noac_with_a_clock": 38,
+    "noac_matched": 60,
+    "noac_clock_share": 0.3519,
+    "all_rows_clock_share": 0.5904,
+    "by_airport": {
+     "LIRF": {
+      "noac_rows": 107,
+      "noac_with_a_clock": 38,
+      "noac_matched": 59,
+      "all_rows_clock_share": 0.506
+     },
+     "LSZH": {
+      "noac_rows": 1,
+      "noac_with_a_clock": 0,
+      "noac_matched": 1,
+      "all_rows_clock_share": 0.916
+     }
+    }
+   },
+   "2026-07": {
+    "rows": 192122,
+    "noac_rows": 280,
+    "noac_with_a_clock": 0,
+    "noac_matched": 0,
+    "noac_clock_share": 0.0,
+    "all_rows_clock_share": 0.5396,
+    "by_airport": {
+     "LIRF": {
+      "noac_rows": 276,
+      "noac_with_a_clock": 0,
+      "noac_matched": 0,
+      "all_rows_clock_share": 0.0008
+     },
+     "LTFM": {
+      "noac_rows": 4,
+      "noac_with_a_clock": 0,
+      "noac_matched": 0,
+      "all_rows_clock_share": 0.0
+     }
+    }
+   }
+  },
+  "totals": {
+   "fold_noac_rows": 491,
+   "fold_noac_with_a_clock": 316,
+   "ranking_noac_rows": 388,
+   "ranking_noac_with_a_clock": 38
+  }
+ },
+ "1_the_exp_048_screen": {
+  "bar": 0.06,
+  "bar_source": "exp-048 revival 1, quoted in \u00a77bf",
+  "features": 184,
+  "target": "r12 - d (the v8 residual, fold side)",
+  "fit_rows": "ALL rows of the rotation folds",
+  "learner": "ridge alpha 10",
+  "per_fold": {
+   "july_loo": {
+    "scored_rows": 275,
+    "fit_rows": 165677,
+    "fit_folds": [
+     "december"
+    ],
+    "R2_about_the_mean": -0.0508,
+    "R2_about_zero": -0.0168,
+    "rms_residual_s": 3540.0,
+    "rms_prediction_s": 323.8,
+    "correlation": -0.1392
+   },
+   "december": {
+    "scored_rows": 38,
+    "fit_rows": 190713,
+    "fit_folds": [
+     "july_loo"
+    ],
+    "R2_about_the_mean": -0.044,
+    "R2_about_zero": -0.0439,
+    "rms_residual_s": 1574.4,
+    "rms_prediction_s": 202.1,
+    "correlation": -0.1118
+   },
+   "january": {
+    "scored_rows": 3,
+    "fit_rows": 356390,
+    "fit_folds": [
+     "july_loo",
+     "december"
+    ],
+    "R2_about_the_mean": -4.8987,
+    "R2_about_zero": -0.0074,
+    "rms_residual_s": 4064.3,
+    "rms_prediction_s": 22.6,
+    "correlation": 0.9949
+   }
+  },
+  "pooled": {
+   "scored_rows": 316,
+   "R2_about_the_mean": -0.0496,
+   "R2_about_zero": -0.0174,
+   "ci95_about_the_mean": [
+    -0.1012,
+    -0.0028
+   ],
+   "correlation": -0.1217,
+   "rho_needed_to_close_the_gap": 0.259,
+   "rho_needed_inside_the_budget": 0.309,
+   "meets_the_letter_of_the_bar": false,
+   "interval_clears_zero": false,
+   "interval_clears_the_bar": false,
+   "the_permutation_null": {
+    "draws": 200,
+    "median": -0.0265,
+    "p2_5": -0.0424,
+    "p97_5": -0.0085,
+    "share_at_or_above_the_observed": 0.99,
+    "share_at_or_above_the_bar": 0.0
+   },
+   "the_non_noac_context_read": {
+    "draws": 20,
+    "median_R2": -0.0222,
+    "min": -0.0691,
+    "max": 0.0231,
+    "what": "the same estimator on equal-sized samples of NON-noac rows with a clock -- says whether 0.06 is reachable on ordinary rows at all"
+   }
+  },
+  "verdict": "FAIL: below exp-048's bar of 0.06"
+ },
+ "2_backlog_line_69": {
+  "definition": "prc.tail_model.placeholder_label -- BLOCK and SCHED in the same minute, both present (exp-022)",
+  "why_it_is_2026_valid": "observation status is produced by the matcher on the ranking months too, needs no label and no upload",
+  "bar": "the pooled intervals disjoint AND the same direction in all three fold months (registered \u00a77bf)",
+  "per_month": {
+   "2025-07": {
+    "rows": 190713,
+    "placeholder_rows": 7500,
+    "placeholder_rate": 0.03933,
+    "observed": {
+     "rows": 88370,
+     "rate": 0.03896,
+     "ci95": [
+      0.03656,
+      0.04162
+     ]
+    },
+    "no_observation": {
+     "rows": 102343,
+     "rate": 0.03964,
+     "ci95": [
+      0.03799,
+      0.04127
+     ]
+    },
+    "lift_no_obs_over_obs": 1.017,
+    "intervals_disjoint": false,
+    "direction": "no observation is MORE often a placeholder",
+    "share_of_placeholders_with_no_observation": 0.5409
+   },
+   "2025-12": {
+    "rows": 165677,
+    "placeholder_rows": 8070,
+    "placeholder_rate": 0.04871,
+    "observed": {
+     "rows": 101701,
+     "rate": 0.04674,
+     "ci95": [
+      0.04402,
+      0.04939
+     ]
+    },
+    "no_observation": {
+     "rows": 63976,
+     "rate": 0.05183,
+     "ci95": [
+      0.05001,
+      0.05383
+     ]
+    },
+    "lift_no_obs_over_obs": 1.109,
+    "intervals_disjoint": true,
+    "direction": "no observation is MORE often a placeholder",
+    "share_of_placeholders_with_no_observation": 0.4109
+   },
+   "2025-01": {
+    "rows": 153706,
+    "placeholder_rows": 7799,
+    "placeholder_rate": 0.05074,
+    "observed": {
+     "rows": 69504,
+     "rate": 0.04552,
+     "ci95": [
+      0.04213,
+      0.04848
+     ]
+    },
+    "no_observation": {
+     "rows": 84202,
+     "rate": 0.05505,
+     "ci95": [
+      0.05225,
+      0.05782
+     ]
+    },
+    "lift_no_obs_over_obs": 1.209,
+    "intervals_disjoint": true,
+    "direction": "no observation is MORE often a placeholder",
+    "share_of_placeholders_with_no_observation": 0.5943
+   }
+  },
+  "by_airport": {
+   "EDDF": {
+    "observed": {
+     "rows": 45308,
+     "rate": 0.03523,
+     "ci95": [
+      0.03251,
+      0.03807
+     ]
+    },
+    "no_observation": {
+     "rows": 8846,
+     "rate": 0.03154,
+     "ci95": [
+      0.02715,
+      0.03591
+     ]
+    },
+    "lift": 0.895,
+    "intervals_disjoint": false
+   },
+   "EDDM": {
+    "observed": {
+     "rows": 28225,
+     "rate": 0.04875,
+     "ci95": [
+      0.04459,
+      0.05286
+     ]
+    },
+    "no_observation": {
+     "rows": 10901,
+     "rate": 0.04339,
+     "ci95": [
+      0.03818,
+      0.04948
+     ]
+    },
+    "lift": 0.89,
+    "intervals_disjoint": false
+   },
+   "EGLL": {
+    "observed": {
+     "rows": 19035,
+     "rate": 0.04313,
+     "ci95": [
+      0.03951,
+      0.04678
+     ]
+    },
+    "no_observation": {
+     "rows": 41175,
+     "rate": 0.04216,
+     "ci95": [
+      0.03913,
+      0.04502
+     ]
+    },
+    "lift": 0.978,
+    "intervals_disjoint": false
+   },
+   "EHAM": {
+    "observed": {
+     "rows": 57292,
+     "rate": 0.03535,
+     "ci95": [
+      0.03258,
+      0.03842
+     ]
+    },
+    "no_observation": {
+     "rows": 3115,
+     "rate": 0.03242,
+     "ci95": [
+      0.02609,
+      0.03938
+     ]
+    },
+    "lift": 0.917,
+    "intervals_disjoint": false
+   },
+   "LEBL": {
+    "observed": {
+     "rows": 37786,
+     "rate": 0.05094,
+     "ci95": [
+      0.0472,
+      0.05471
+     ]
+    },
+    "no_observation": {
+     "rows": 5035,
+     "rate": 0.05025,
+     "ci95": [
+      0.04321,
+      0.0569
+     ]
+    },
+    "lift": 0.986,
+    "intervals_disjoint": false
+   },
+   "LEMD": {
+    "observed": {
+     "rows": 21337,
+     "rate": 0.03904,
+     "ci95": [
+      0.03565,
+      0.04231
+     ]
+    },
+    "no_observation": {
+     "rows": 31976,
+     "rate": 0.04272,
+     "ci95": [
+      0.03876,
+      0.04667
+     ]
+    },
+    "lift": 1.094,
+    "intervals_disjoint": false
+   },
+   "LFPG": {
+    "observed": {
+     "rows": 1629,
+     "rate": 0.03499,
+     "ci95": [
+      0.02601,
+      0.04523
+     ]
+    },
+    "no_observation": {
+     "rows": 57761,
+     "rate": 0.03663,
+     "ci95": [
+      0.03413,
+      0.03903
+     ]
+    },
+    "lift": 1.047,
+    "intervals_disjoint": false
+   },
+   "LIRF": {
+    "observed": {
+     "rows": 19406,
+     "rate": 0.09327,
+     "ci95": [
+      0.08838,
+      0.0987
+     ]
+    },
+    "no_observation": {
+     "rows": 19190,
+     "rate": 0.10448,
+     "ci95": [
+      0.09966,
+      0.10888
+     ]
+    },
+    "lift": 1.12,
+    "intervals_disjoint": true
+   },
+   "LSZH": {
+    "observed": {
+     "rows": 29557,
+     "rate": 0.03106,
+     "ci95": [
+      0.02828,
+      0.03393
+     ]
+    },
+    "no_observation": {
+     "rows": 3374,
+     "rate": 0.02727,
+     "ci95": [
+      0.02197,
+      0.03352
+     ]
+    },
+    "lift": 0.878,
+    "intervals_disjoint": false
+   }
+  },
+  "pooled": {
+   "observed": {
+    "rows": 259575,
+    "rate": 0.04377,
+    "ci95": [
+     0.04205,
+     0.04547
+    ]
+   },
+   "no_observation": {
+    "rows": 250521,
+    "rate": 0.04793,
+    "ci95": [
+     0.04608,
+     0.04977
+    ]
+   },
+   "lift_no_obs_over_obs": 1.095,
+   "intervals_disjoint": true,
+   "share_of_placeholders_with_no_observation": 0.5138,
+   "share_of_rows_with_no_observation": 0.4911,
+   "same_direction_in_all_three_months": true,
+   "meets_the_registered_bar": true,
+   "directions": {
+    "2025-07": "no observation is MORE often a placeholder",
+    "2025-12": "no observation is MORE often a placeholder",
+    "2025-01": "no observation is MORE often a placeholder"
+   }
+  },
+  "verdict": "MET in kind: observation status predicts placeholder status label-free",
+  "2b_the_stratified_read": {
+   "what": "exp-047 \u00a77bf step 2b: is the pooled placeholder signal a real one, or airport mix?",
+   "why": "the pooled contrast mixes airports whose observation share and whose placeholder rate BOTH differ, which is the classic composition trap: LIRF's placeholder rate is 0.093-0.105 against 0.031-0.051 elsewhere, and LFPG is 3 % observed against EHAM's 95 %.",
+   "crude": {
+    "rate_no_observation": 0.04793,
+    "rate_observed": 0.04377,
+    "lift": 1.0951,
+    "difference": 0.004164
+   },
+   "stratified_by_airport": {
+    "strata": 9,
+    "rate_no_observation": 0.04408,
+    "rate_observed": 0.04425,
+    "difference": -0.00016,
+    "lift": 0.99629,
+    "lift_ci95": [
+     0.9442,
+     1.0436
+    ],
+    "difference_ci95": [
+     -0.002567,
+     0.001862
+    ],
+    "draws": 500,
+    "lift_interval_includes_1": true
+   },
+   "stratified_by_airport_and_month": {
+    "strata": 24,
+    "rate_no_observation": 0.0427,
+    "rate_observed": 0.04241,
+    "difference": 0.00029,
+    "lift": 1.00682,
+    "lift_ci95": [
+     0.961,
+     1.0507
+    ],
+    "difference_ci95": [
+     -0.001642,
+     0.00212
+    ],
+    "draws": 500,
+    "lift_interval_includes_1": true
+   },
+   "reading": "the crude contrast is 1.0951; stratified by airport it is 0.9963 [0.9442, 1.0436] and by airport x month 1.0068 [0.961, 1.0507].  The pooled signal is airport composition."
+  }
+ },
+ "the_exp_033_assertion": {
+  "what": "the served arm vector must be exactly 0 on every noac row",
+  "max_abs_d_on_noac_rows": {
+   "july_loo": 0.0,
+   "december": 0.0,
+   "january": 0.0
+  },
+  "holds": true
+ }
+}

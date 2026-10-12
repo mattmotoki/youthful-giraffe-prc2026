@@ -1,0 +1,36 @@
+{
+ "fold": "july_loo",
+ "n_cloud": 190713,
+ "n_local": 190713,
+ "n_matched": 190713,
+ "cloud_file": "/path/to/scratch/real-out/f1/kaggle-f1-real-july_loo.parquet",
+ "local_file": "experiments/exp-018-fresh/oof/july_loo.parquet",
+ "cloud_sha256": "aba2c07fb6f7abf38a924f476235787a6bce1ad76b8d613caf16101599dda4ea",
+ "local_sha256": "ba1b2d9a1d7af94df627e7f21556524abd15e958f10055f345478d0b9e048b9b",
+ "cloud": {
+  "rmse": 293.9247575969229,
+  "rmse_le3600": 251.93665236821673,
+  "rmse_gt3600": 2593.5896056474526,
+  "n": 190713,
+  "n_gt3600": 656
+ },
+ "local": {
+  "rmse": 293.6499939114469,
+  "rmse_le3600": 251.97590376888286,
+  "rmse_gt3600": 2583.416602961949,
+  "n": 190713,
+  "n_gt3600": 656
+ },
+ "delta": {
+  "rmse_cloud_minus_local": 0.27476368547598895,
+  "identical": false,
+  "max_abs": 368.4496606492071,
+  "mean_abs": 9.964090085877691,
+  "median_abs": 5.954399810223322,
+  "p99_abs": 63.131566776967,
+  "rms": 16.572171338500723,
+  "corr": 0.9996967325822094,
+  "rows_over_1s": 171457,
+  "rows_over_60s": 2209
+ }
+}

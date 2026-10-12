@@ -1,0 +1,573 @@
+{
+ "branch_copy": "analysis/chain-pass/block_with_chain.py",
+ "cell_s": 600.0,
+ "gate_b_lives_in": "code/finding7.py, re-asserted with the pass on",
+ "months": {
+  "2026-01": {
+   "placebo": {
+    "day": {
+     "by_airport": {
+      "EDDF": 8,
+      "EGLL": 3,
+      "LFPG": 4,
+      "LIRF": 2,
+      "LSZH": 1
+     },
+     "cells_abs": {
+      "cells_with_a_real_placement": 1283,
+      "contested_cells_placebo_ge_real": 5,
+      "placebo_only_cells": 12,
+      "real_rows_in_contested_cells": 5
+     },
+     "cells_tod": {
+      "cells_with_a_real_placement": 418,
+      "contested_cells_placebo_ge_real": 1,
+      "placebo_only_cells": 1,
+      "real_rows_in_contested_cells": 1
+     },
+     "placed": 18,
+     "real_by_airport": {
+      "EDDF": 474,
+      "EDDM": 2,
+      "EGLL": 315,
+      "EHAM": 7,
+      "LEBL": 41,
+      "LEMD": 34,
+      "LFPG": 237,
+      "LIRF": 272
+     },
+     "real_placed": 1382,
+     "share_of_real": 0.013
+    },
+    "stand": {
+     "by_airport": {
+      "EDDF": 6,
+      "EGLL": 2,
+      "LEBL": 1,
+      "LFPG": 1,
+      "LIRF": 6
+     },
+     "cells_abs": {
+      "cells_with_a_real_placement": 1283,
+      "contested_cells_placebo_ge_real": 12,
+      "placebo_only_cells": 4,
+      "real_rows_in_contested_cells": 12
+     },
+     "cells_tod": {
+      "cells_with_a_real_placement": 418,
+      "contested_cells_placebo_ge_real": 2,
+      "placebo_only_cells": 0,
+      "real_rows_in_contested_cells": 2
+     },
+     "placed": 16,
+     "real_by_airport": {
+      "EDDF": 474,
+      "EDDM": 2,
+      "EGLL": 315,
+      "EHAM": 7,
+      "LEBL": 41,
+      "LEMD": 34,
+      "LFPG": 237,
+      "LIRF": 272
+     },
+     "real_placed": 1382,
+     "share_of_real": 0.0116
+    }
+   },
+   "report": {
+    "after_the_take_off_agreement": 1382,
+    "after_uniqueness_both_ways": 4785,
+    "by_airport": {
+     "EDDF": 474,
+     "EDDM": 2,
+     "EGLL": 315,
+     "EHAM": 7,
+     "LEBL": 41,
+     "LEMD": 34,
+     "LFPG": 237,
+     "LIRF": 272
+    },
+    "check_s": 60.0,
+    "declined_no_leg": 742,
+    "declined_no_take_off_agreement": 3403,
+    "declined_not_unique": 4825,
+    "max_turnaround_s": 86400.0,
+    "of_them_an_arrival_identity_and_not_a_departure_one": 10352,
+    "placed": 1382,
+    "ran": true,
+    "segments_left_by_both_passes": 15741,
+    "why": null,
+    "with_an_inbound_leg_before_their_own_off_block": 9610
+   },
+   "sweep": {
+    "columns": {
+     "arr_gap_reception_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "arr_present": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "arr_stand_occupancy_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "arr_taxi_in_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "callsign_n": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "clock_ok": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "dt_takeoff": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "has_wheels_off": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "match_mode": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "matched_on_modal": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "n_ground_points": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_ambiguous": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_has_clock": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_icao": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_matched": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_n_candidates": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_seg_taxi": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_taxi": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_taxi_motion": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_wheels_off": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "reach_class": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seen_before_move_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seg_dt_median_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seg_gap_max_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seg_points": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seg_span_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_cos": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_dist_km": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_lat": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_lon": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_sin": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_stop_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "time_to_250m": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "turnaround_anchored": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     }
+    },
+    "columns_swept": 34,
+    "rows_compared": 151337,
+    "total_values_changed_on_rows_the_pass_did_not_place": 0
+   }
+  },
+  "2026-07": {
+   "placebo": {
+    "day": {
+     "by_airport": {
+      "EDDF": 18,
+      "LEMD": 2,
+      "LFPG": 4
+     },
+     "cells_abs": {
+      "cells_with_a_real_placement": 1493,
+      "contested_cells_placebo_ge_real": 10,
+      "placebo_only_cells": 11,
+      "real_rows_in_contested_cells": 10
+     },
+     "cells_tod": {
+      "cells_with_a_real_placement": 371,
+      "contested_cells_placebo_ge_real": 1,
+      "placebo_only_cells": 2,
+      "real_rows_in_contested_cells": 1
+     },
+     "placed": 24,
+     "real_by_airport": {
+      "EDDF": 1292,
+      "EDDM": 4,
+      "EGLL": 45,
+      "EHAM": 12,
+      "LEBL": 47,
+      "LEMD": 168,
+      "LFPG": 212,
+      "LIRF": 1,
+      "LSZH": 16
+     },
+     "real_placed": 1797,
+     "share_of_real": 0.0134
+    },
+    "stand": {
+     "by_airport": {
+      "EDDF": 10,
+      "EGLL": 1,
+      "LEMD": 1,
+      "LFPG": 1
+     },
+     "cells_abs": {
+      "cells_with_a_real_placement": 1493,
+      "contested_cells_placebo_ge_real": 8,
+      "placebo_only_cells": 3,
+      "real_rows_in_contested_cells": 8
+     },
+     "cells_tod": {
+      "cells_with_a_real_placement": 371,
+      "contested_cells_placebo_ge_real": 1,
+      "placebo_only_cells": 1,
+      "real_rows_in_contested_cells": 1
+     },
+     "placed": 13,
+     "real_by_airport": {
+      "EDDF": 1292,
+      "EDDM": 4,
+      "EGLL": 45,
+      "EHAM": 12,
+      "LEBL": 47,
+      "LEMD": 168,
+      "LFPG": 212,
+      "LIRF": 1,
+      "LSZH": 16
+     },
+     "real_placed": 1797,
+     "share_of_real": 0.0072
+    }
+   },
+   "report": {
+    "after_the_take_off_agreement": 1797,
+    "after_uniqueness_both_ways": 6647,
+    "by_airport": {
+     "EDDF": 1292,
+     "EDDM": 4,
+     "EGLL": 45,
+     "EHAM": 12,
+     "LEBL": 47,
+     "LEMD": 168,
+     "LFPG": 212,
+     "LIRF": 1,
+     "LSZH": 16
+    },
+    "check_s": 60.0,
+    "declined_no_leg": 564,
+    "declined_no_take_off_agreement": 4850,
+    "declined_not_unique": 7424,
+    "max_turnaround_s": 86400.0,
+    "of_them_an_arrival_identity_and_not_a_departure_one": 14635,
+    "placed": 1797,
+    "ran": true,
+    "segments_left_by_both_passes": 17018,
+    "why": null,
+    "with_an_inbound_leg_before_their_own_off_block": 14071
+   },
+   "sweep": {
+    "columns": {
+     "arr_gap_reception_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "arr_present": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "arr_stand_occupancy_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "arr_taxi_in_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "callsign_n": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "clock_ok": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "dt_takeoff": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "has_wheels_off": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "match_mode": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "matched_on_modal": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "n_ground_points": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_ambiguous": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_has_clock": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_icao": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_matched": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_n_candidates": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_seg_taxi": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_taxi": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_taxi_motion": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "obs_wheels_off": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "reach_class": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seen_before_move_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seg_dt_median_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seg_gap_max_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seg_points": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "seg_span_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_cos": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_dist_km": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_lat": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_lon": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_sin": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "stand_stop_s": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "time_to_250m": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     },
+     "turnaround_anchored": {
+      "changed_where_both_present": 0,
+      "gained": 0,
+      "lost": 0
+     }
+    },
+    "columns_swept": 34,
+    "rows_compared": 190325,
+    "total_values_changed_on_rows_the_pass_did_not_place": 0
+   }
+  }
+ },
+ "ordered_by": "the desk, 2026-09-09, GO on analysis/chain-spec.md",
+ "placebo_shift_h": 24.0,
+ "seed": 20260909,
+ "shipped_matcher_sha256_unchanged": "6fdf39519eb0f500c06230e2972d3c8300aa6222ed8d9b003998ddf6e286093b",
+ "spec": "experiments/exp-046-surfacefit/analysis/chain-spec.md",
+ "totals": {
+  "agrees_with_turnaround_py": false,
+  "placebo_day": 42,
+  "placebo_stand": 29,
+  "placed": 3179,
+  "turnaround_py": {
+   "placebo_day": 32,
+   "placebo_stand": 34,
+   "placed": 3101
+  },
+  "values_changed_on_rows_the_pass_did_not_place": 0
+ },
+ "what": "the turnaround pass's gates, run inside block.build"
+}

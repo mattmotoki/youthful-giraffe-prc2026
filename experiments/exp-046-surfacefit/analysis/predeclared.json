@@ -1,0 +1,30 @@
+{
+  "written_before_any_arm_ran": "2026-09-08",
+  "base": "v11 = v10 + 0.217*(stack-5 - v10), fold-side, exp-039 v10.load() and exp-036 bases.load()",
+  "rotation": "score fold f, fit on the OTHER two fold months. Only 2025-01, 2025-07 and 2025-12 carry an out-of-fold v11 residual, so 'the 2025 months other than the scored fold' is those two.",
+  "amplitude": "one weight per airport, fitted on the fitting months only, clipped to [0, 1]. An airport with fewer than MIN_AIRPORT_ROWS fitting rows gets weight 0 and is left at v11.",
+  "MIN_AIRPORT_ROWS": 200,
+  "cross_fit": "day blocks inside the fitting months: 5 contiguous blocks per month, a row's prediction always comes from a model that did not see its block",
+  "lgb": {
+    "objective": "l2",
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_child_samples": 100,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "n_jobs": 3,
+    "seed": 46,
+    "verbosity": -1
+  },
+  "arms": {
+    "a_linear": "p11 + w_airport * (obs_taxi - offset_airport - p11) on matched rows",
+    "b_lgb": "p11 + s_airport * lgb(feature block -> r11) on matched rows",
+    "c_lgb_shipped": "arm b with the 76 non-vocabulary numeric columns of the shipped feature block beside the observation"
+  },
+  "gate": "all-row paired gain over v11 with every fold interval clear of zero",
+  "noac": "d = 0 on every noac row, by construction and checked",
+  "bootstrap": {"draws": 2000, "unit": "calendar day inside the fold", "seed": 46}
+}

@@ -1,0 +1,697 @@
+{
+ "what": "\u00a77ap: the pre-registered fold read of \u00a77ao's reading F",
+ "frozen": {
+  "tol_km": 2.2149,
+  "min_other_days": 3,
+  "map_min_rows": 1,
+  "gap_cut_s": 62.405,
+  "check_i_thr_s": 1299.0,
+  "seed": 47,
+  "bar": 0.896,
+  "face_per_true_row_s": 4.150880274937902e-05,
+  "spec": "RESULTS \u00a77ap, committed at 2b17a2a before any fold was read"
+ },
+ "declared": {
+  "july_loo": {
+   "t": 0.6564,
+   "f": 0.0744,
+   "q": 0.3122,
+   "pi_hat": 0.4086,
+   "precision": 0.8591,
+   "rows_admitted": 148,
+   "expected_true_rows": 127.1,
+   "face_s_at_1_2": 0.0053,
+   "clears_the_bar": false,
+   "label": "declared",
+   "month": "2025-07",
+   "block": "block-2025-07-8179f74417c8cb99-ungated.parquet",
+   "tol_km": 2.2149,
+   "census": {
+    "mode3_shipped": 1170,
+    "mode4_admitted": 2675,
+    "kept_by_the_gate": 897,
+    "refused_total": 1778,
+    "clock_only_pool": 474
+   },
+   "rates": {
+    "t_shipped": {
+     "rows": 1170,
+     "passes": 768,
+     "rate": 0.6564,
+     "ci95": [
+      0.6287,
+      0.6831
+     ]
+    },
+    "f_stand_placebo": {
+     "rows": 3845,
+     "passes": 286,
+     "rate": 0.0744,
+     "ci95": [
+      0.0665,
+      0.0831
+     ]
+    },
+    "q_clock_only_pool": {
+     "rows": 474,
+     "passes": 148,
+     "rate": 0.3122,
+     "ci95": [
+      0.2722,
+      0.3553
+     ]
+    }
+   },
+   "coverage": {
+    "no_service_key_shipped": 0.0068,
+    "no_service_key_pool": 0.0,
+    "no_centroid_shipped": 0.3316,
+    "no_centroid_pool": 0.6498,
+    "stands_in_the_map": 446
+   },
+   "interval": {
+    "draws": 2000,
+    "unit": "calendar day",
+    "seed": 47,
+    "pi_hat_ci95": [
+     0.33,
+     0.4975
+    ],
+    "precision_ci95": [
+     0.8105,
+     0.8982
+    ],
+    "share_of_draws_at_or_above_the_bar": 0.0315
+   },
+   "per_month_p95_sensitivity_km": 1.3835
+  },
+  "december": {
+   "t": 0.6829,
+   "f": 0.1147,
+   "q": 0.5198,
+   "pi_hat": 0.713,
+   "precision": 0.9367,
+   "rows_admitted": 538,
+   "expected_true_rows": 503.9,
+   "face_s_at_1_2": 0.0209,
+   "clears_the_bar": true,
+   "label": "declared",
+   "month": "2025-12",
+   "block": "block-2025-12-d35b7171d7062341-ungated.parquet",
+   "tol_km": 2.2149,
+   "census": {
+    "mode3_shipped": 861,
+    "mode4_admitted": 3864,
+    "kept_by_the_gate": 858,
+    "refused_total": 3006,
+    "clock_only_pool": 1035
+   },
+   "rates": {
+    "t_shipped": {
+     "rows": 861,
+     "passes": 588,
+     "rate": 0.6829,
+     "ci95": [
+      0.6511,
+      0.7131
+     ]
+    },
+    "f_stand_placebo": {
+     "rows": 4725,
+     "passes": 542,
+     "rate": 0.1147,
+     "ci95": [
+      0.1059,
+      0.1241
+     ]
+    },
+    "q_clock_only_pool": {
+     "rows": 1035,
+     "passes": 538,
+     "rate": 0.5198,
+     "ci95": [
+      0.4894,
+      0.5501
+     ]
+    }
+   },
+   "coverage": {
+    "no_service_key_shipped": 0.0128,
+    "no_service_key_pool": 0.0058,
+    "no_centroid_shipped": 0.3101,
+    "no_centroid_pool": 0.4464,
+    "stands_in_the_map": 427
+   },
+   "interval": {
+    "draws": 2000,
+    "unit": "calendar day",
+    "seed": 47,
+    "pi_hat_ci95": [
+     0.6326,
+     0.7942
+    ],
+    "precision_ci95": [
+     0.9116,
+     0.9577
+    ],
+    "share_of_draws_at_or_above_the_bar": 0.999
+   },
+   "per_month_p95_sensitivity_km": 1.5275
+  },
+  "january": {
+   "t": 0.6594,
+   "f": 0.1063,
+   "q": 0.5583,
+   "pi_hat": 0.8172,
+   "precision": 0.9652,
+   "rows_admitted": 225,
+   "expected_true_rows": 217.2,
+   "face_s_at_1_2": 0.009,
+   "clears_the_bar": true,
+   "label": "declared",
+   "month": "2025-01",
+   "block": "block-2025-01-cb4d6289cb421aa2-ungated.parquet",
+   "tol_km": 2.2149,
+   "census": {
+    "mode3_shipped": 731,
+    "mode4_admitted": 1667,
+    "kept_by_the_gate": 742,
+    "refused_total": 925,
+    "clock_only_pool": 403
+   },
+   "rates": {
+    "t_shipped": {
+     "rows": 731,
+     "passes": 482,
+     "rate": 0.6594,
+     "ci95": [
+      0.6243,
+      0.6928
+     ]
+    },
+    "f_stand_placebo": {
+     "rows": 2398,
+     "passes": 255,
+     "rate": 0.1063,
+     "ci95": [
+      0.0946,
+      0.1193
+     ]
+    },
+    "q_clock_only_pool": {
+     "rows": 403,
+     "passes": 225,
+     "rate": 0.5583,
+     "ci95": [
+      0.5095,
+      0.606
+     ]
+    }
+   },
+   "coverage": {
+    "no_service_key_shipped": 0.0014,
+    "no_service_key_pool": 0.005,
+    "no_centroid_shipped": 0.3297,
+    "no_centroid_pool": 0.3797,
+    "stands_in_the_map": 284
+   },
+   "interval": {
+    "draws": 2000,
+    "unit": "calendar day",
+    "seed": 47,
+    "pi_hat_ci95": [
+     0.7097,
+     0.9361
+    ],
+    "precision_ci95": [
+     0.9396,
+     0.9893
+    ],
+    "share_of_draws_at_or_above_the_bar": 1.0
+   },
+   "per_month_p95_sensitivity_km": 1.3744
+  }
+ },
+ "sensitivity_per_month_tolerance": {
+  "july_loo": {
+   "t": 0.6342,
+   "f": 0.0585,
+   "q": 0.2532,
+   "pi_hat": 0.3382,
+   "precision": 0.8471,
+   "rows_admitted": 120,
+   "expected_true_rows": 101.7,
+   "face_s_at_1_2": 0.0042,
+   "clears_the_bar": false,
+   "label": "per-month p95",
+   "month": "2025-07",
+   "block": "block-2025-07-8179f74417c8cb99-ungated.parquet",
+   "tol_km": 1.3835,
+   "census": {
+    "mode3_shipped": 1170,
+    "mode4_admitted": 2675,
+    "kept_by_the_gate": 897,
+    "refused_total": 1778,
+    "clock_only_pool": 474
+   },
+   "rates": {
+    "t_shipped": {
+     "rows": 1170,
+     "passes": 742,
+     "rate": 0.6342,
+     "ci95": [
+      0.6062,
+      0.6613
+     ]
+    },
+    "f_stand_placebo": {
+     "rows": 3845,
+     "passes": 225,
+     "rate": 0.0585,
+     "ci95": [
+      0.0515,
+      0.0664
+     ]
+    },
+    "q_clock_only_pool": {
+     "rows": 474,
+     "passes": 120,
+     "rate": 0.2532,
+     "ci95": [
+      0.2161,
+      0.2942
+     ]
+    }
+   },
+   "coverage": {
+    "no_service_key_shipped": 0.0068,
+    "no_service_key_pool": 0.0,
+    "no_centroid_shipped": 0.3316,
+    "no_centroid_pool": 0.6498,
+    "stands_in_the_map": 446
+   },
+   "interval": {
+    "draws": 2000,
+    "unit": "calendar day",
+    "seed": 47,
+    "pi_hat_ci95": [
+     0.2608,
+     0.4268
+    ],
+    "precision_ci95": [
+     0.7869,
+     0.8916
+    ],
+    "share_of_draws_at_or_above_the_bar": 0.014
+   },
+   "per_month_p95_sensitivity_km": 1.3835
+  },
+  "december": {
+   "t": 0.6551,
+   "f": 0.0948,
+   "q": 0.4367,
+   "pi_hat": 0.6102,
+   "precision": 0.9154,
+   "rows_admitted": 452,
+   "expected_true_rows": 413.8,
+   "face_s_at_1_2": 0.0172,
+   "clears_the_bar": true,
+   "label": "per-month p95",
+   "month": "2025-12",
+   "block": "block-2025-12-d35b7171d7062341-ungated.parquet",
+   "tol_km": 1.5275,
+   "census": {
+    "mode3_shipped": 861,
+    "mode4_admitted": 3864,
+    "kept_by_the_gate": 858,
+    "refused_total": 3006,
+    "clock_only_pool": 1035
+   },
+   "rates": {
+    "t_shipped": {
+     "rows": 861,
+     "passes": 564,
+     "rate": 0.6551,
+     "ci95": [
+      0.6227,
+      0.6861
+     ]
+    },
+    "f_stand_placebo": {
+     "rows": 4725,
+     "passes": 448,
+     "rate": 0.0948,
+     "ci95": [
+      0.0868,
+      0.1035
+     ]
+    },
+    "q_clock_only_pool": {
+     "rows": 1035,
+     "passes": 452,
+     "rate": 0.4367,
+     "ci95": [
+      0.4068,
+      0.4671
+     ]
+    }
+   },
+   "coverage": {
+    "no_service_key_shipped": 0.0128,
+    "no_service_key_pool": 0.0058,
+    "no_centroid_shipped": 0.3101,
+    "no_centroid_pool": 0.4464,
+    "stands_in_the_map": 427
+   },
+   "interval": {
+    "draws": 2000,
+    "unit": "calendar day",
+    "seed": 47,
+    "pi_hat_ci95": [
+     0.5328,
+     0.6924
+    ],
+    "precision_ci95": [
+     0.8869,
+     0.9394
+    ],
+    "share_of_draws_at_or_above_the_bar": 0.9105
+   },
+   "per_month_p95_sensitivity_km": 1.5275
+  },
+  "january": {
+   "t": 0.6361,
+   "f": 0.0805,
+   "q": 0.3251,
+   "pi_hat": 0.4402,
+   "precision": 0.8614,
+   "rows_admitted": 131,
+   "expected_true_rows": 112.8,
+   "face_s_at_1_2": 0.0047,
+   "clears_the_bar": false,
+   "label": "per-month p95",
+   "month": "2025-01",
+   "block": "block-2025-01-cb4d6289cb421aa2-ungated.parquet",
+   "tol_km": 1.3744,
+   "census": {
+    "mode3_shipped": 731,
+    "mode4_admitted": 1667,
+    "kept_by_the_gate": 742,
+    "refused_total": 925,
+    "clock_only_pool": 403
+   },
+   "rates": {
+    "t_shipped": {
+     "rows": 731,
+     "passes": 465,
+     "rate": 0.6361,
+     "ci95": [
+      0.6006,
+      0.6702
+     ]
+    },
+    "f_stand_placebo": {
+     "rows": 2398,
+     "passes": 193,
+     "rate": 0.0805,
+     "ci95": [
+      0.0703,
+      0.0921
+     ]
+    },
+    "q_clock_only_pool": {
+     "rows": 403,
+     "passes": 131,
+     "rate": 0.3251,
+     "ci95": [
+      0.2812,
+      0.3723
+     ]
+    }
+   },
+   "coverage": {
+    "no_service_key_shipped": 0.0014,
+    "no_service_key_pool": 0.005,
+    "no_centroid_shipped": 0.3297,
+    "no_centroid_pool": 0.3797,
+    "stands_in_the_map": 284
+   },
+   "interval": {
+    "draws": 2000,
+    "unit": "calendar day",
+    "seed": 47,
+    "pi_hat_ci95": [
+     0.3528,
+     0.5318
+    ],
+    "precision_ci95": [
+     0.8064,
+     0.9042
+    ],
+    "share_of_draws_at_or_above_the_bar": 0.0665
+   },
+   "per_month_p95_sensitivity_km": 1.3744
+  }
+ },
+ "sensitivity_km_metric_block": {
+  "july_loo": {
+   "t": 0.6564,
+   "f": 0.0744,
+   "q": 0.3113,
+   "pi_hat": 0.407,
+   "precision": 0.8583,
+   "rows_admitted": 151,
+   "expected_true_rows": 129.6,
+   "face_s_at_1_2": 0.0054,
+   "clears_the_bar": false,
+   "label": "km-metric block",
+   "month": "2025-07",
+   "block": "block-2025-07-8179f74417c8cb99-ungated-km.parquet",
+   "tol_km": 2.2149,
+   "census": {
+    "mode3_shipped": 1170,
+    "mode4_admitted": 2675,
+    "kept_by_the_gate": 897,
+    "refused_total": 1778,
+    "clock_only_pool": 485
+   },
+   "rates": {
+    "t_shipped": {
+     "rows": 1170,
+     "passes": 768,
+     "rate": 0.6564,
+     "ci95": [
+      0.6287,
+      0.6831
+     ]
+    },
+    "f_stand_placebo": {
+     "rows": 3845,
+     "passes": 286,
+     "rate": 0.0744,
+     "ci95": [
+      0.0665,
+      0.0831
+     ]
+    },
+    "q_clock_only_pool": {
+     "rows": 485,
+     "passes": 151,
+     "rate": 0.3113,
+     "ci95": [
+      0.2717,
+      0.3539
+     ]
+    }
+   },
+   "coverage": {
+    "no_service_key_shipped": 0.0068,
+    "no_service_key_pool": 0.0,
+    "no_centroid_shipped": 0.3316,
+    "no_centroid_pool": 0.6515,
+    "stands_in_the_map": 446
+   },
+   "interval": {
+    "draws": 2000,
+    "unit": "calendar day",
+    "seed": 47,
+    "pi_hat_ci95": [
+     0.3326,
+     0.494
+    ],
+    "precision_ci95": [
+     0.8124,
+     0.8972
+    ],
+    "share_of_draws_at_or_above_the_bar": 0.027
+   },
+   "per_month_p95_sensitivity_km": 1.3835
+  },
+  "december": {
+   "t": 0.6829,
+   "f": 0.1147,
+   "q": 0.5159,
+   "pi_hat": 0.7061,
+   "precision": 0.9347,
+   "rows_admitted": 502,
+   "expected_true_rows": 469.2,
+   "face_s_at_1_2": 0.0195,
+   "clears_the_bar": true,
+   "label": "km-metric block",
+   "month": "2025-12",
+   "block": "block-2025-12-d35b7171d7062341-ungated-km.parquet",
+   "tol_km": 2.2149,
+   "census": {
+    "mode3_shipped": 861,
+    "mode4_admitted": 3864,
+    "kept_by_the_gate": 881,
+    "refused_total": 2983,
+    "clock_only_pool": 973
+   },
+   "rates": {
+    "t_shipped": {
+     "rows": 861,
+     "passes": 588,
+     "rate": 0.6829,
+     "ci95": [
+      0.6511,
+      0.7131
+     ]
+    },
+    "f_stand_placebo": {
+     "rows": 4725,
+     "passes": 542,
+     "rate": 0.1147,
+     "ci95": [
+      0.1059,
+      0.1241
+     ]
+    },
+    "q_clock_only_pool": {
+     "rows": 973,
+     "passes": 502,
+     "rate": 0.5159,
+     "ci95": [
+      0.4845,
+      0.5472
+     ]
+    }
+   },
+   "coverage": {
+    "no_service_key_shipped": 0.0128,
+    "no_service_key_pool": 0.0051,
+    "no_centroid_shipped": 0.3101,
+    "no_centroid_pool": 0.4491,
+    "stands_in_the_map": 427
+   },
+   "interval": {
+    "draws": 2000,
+    "unit": "calendar day",
+    "seed": 47,
+    "pi_hat_ci95": [
+     0.6217,
+     0.7939
+    ],
+    "precision_ci95": [
+     0.9078,
+     0.9575
+    ],
+    "share_of_draws_at_or_above_the_bar": 0.997
+   },
+   "per_month_p95_sensitivity_km": 1.5275
+  },
+  "january": {
+   "t": 0.6594,
+   "f": 0.1063,
+   "q": 0.5569,
+   "pi_hat": 0.8147,
+   "precision": 0.9646,
+   "rows_admitted": 225,
+   "expected_true_rows": 217.0,
+   "face_s_at_1_2": 0.009,
+   "clears_the_bar": true,
+   "label": "km-metric block",
+   "month": "2025-01",
+   "block": "block-2025-01-cb4d6289cb421aa2-ungated-km.parquet",
+   "tol_km": 2.2149,
+   "census": {
+    "mode3_shipped": 731,
+    "mode4_admitted": 1667,
+    "kept_by_the_gate": 738,
+    "refused_total": 929,
+    "clock_only_pool": 404
+   },
+   "rates": {
+    "t_shipped": {
+     "rows": 731,
+     "passes": 482,
+     "rate": 0.6594,
+     "ci95": [
+      0.6243,
+      0.6928
+     ]
+    },
+    "f_stand_placebo": {
+     "rows": 2398,
+     "passes": 255,
+     "rate": 0.1063,
+     "ci95": [
+      0.0946,
+      0.1193
+     ]
+    },
+    "q_clock_only_pool": {
+     "rows": 404,
+     "passes": 225,
+     "rate": 0.5569,
+     "ci95": [
+      0.5082,
+      0.6046
+     ]
+    }
+   },
+   "coverage": {
+    "no_service_key_shipped": 0.0014,
+    "no_service_key_pool": 0.005,
+    "no_centroid_shipped": 0.3297,
+    "no_centroid_pool": 0.3812,
+    "stands_in_the_map": 284
+   },
+   "interval": {
+    "draws": 2000,
+    "unit": "calendar day",
+    "seed": 47,
+    "pi_hat_ci95": [
+     0.7084,
+     0.9327
+    ],
+    "precision_ci95": [
+     0.9389,
+     0.9887
+    ],
+    "share_of_draws_at_or_above_the_bar": 1.0
+   },
+   "per_month_p95_sensitivity_km": 1.3744
+  }
+ },
+ "verdict": {
+  "precision_by_fold": {
+   "july_loo": 0.8591,
+   "december": 0.9367,
+   "january": 0.9652
+  },
+  "rows_by_fold": {
+   "july_loo": 148,
+   "december": 538,
+   "january": 225
+  },
+  "clears_the_bar_on_every_fold": false,
+  "interval_lower_bounds": {
+   "july_loo": 0.8105,
+   "december": 0.9116,
+   "january": 0.9396
+  },
+  "interval_clear_of_the_bar_on_every_fold": false,
+  "reading": "not a rider: the frozen recipe does not clear 0.896 on every fold"
+ }
+}

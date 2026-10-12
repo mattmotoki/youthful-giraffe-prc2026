@@ -1,0 +1,429 @@
+{
+  "bootstrap": {
+    "draws": 2000,
+    "paired": "one set of day resamples prices every level",
+    "seed": 46
+  },
+  "bounded_alternative_power_law": {
+    "C_the_asymptote_s": 0.8859018997398931,
+    "alpha": 0.682503128911139,
+    "alpha_ci95": [
+      0.3288360450563204,
+      1.091088235294117
+    ],
+    "asymptote_ci95": [
+      0.3598408869649117,
+      2.554540591912124
+    ],
+    "draws_at_the_grid_edge": 0.0,
+    "fitted_points_s": [
+      -0.1921923053464992,
+      -0.535901495332589,
+      -1.3959815625635181
+    ],
+    "form": "g(u) = C * (1 - u**-alpha), u = rows / current rows",
+    "measured_points_s": [
+      -0.1658901573368894,
+      -0.5506993371238877,
+      -1.3939219973377135
+    ],
+    "post_hoc": "NOT registered. Section 47.15 registered the one-parameter log fit and that reading stands as the scored one; this is reported beside it because the shape diagnostics above say the log form is wrong, and a wrong form extrapolated 1.7 nats upward is the weakest link in section 47.12's chain",
+    "predictions": {
+      "x10": {
+        "ci95": [
+          0.33254066974505314,
+          1.4002692730463802
+        ],
+        "gain_over_the_current_panel_s": 0.7018744939034505
+      },
+      "x1_45": {
+        "ci95": [
+          0.11853621125374955,
+          0.31039565150360193
+        ],
+        "gain_over_the_current_panel_s": 0.19843551599159207
+      },
+      "x1_50": {
+        "ci95": [
+          0.12732998085457872,
+          0.3362787605590989
+        ],
+        "gain_over_the_current_panel_s": 0.21415944385982713
+      },
+      "x1_55": {
+        "ci95": [
+          0.13529347128314,
+          0.361010549143951
+        ],
+        "gain_over_the_current_panel_s": 0.22902550809538763
+      },
+      "x1_60": {
+        "ci95": [
+          0.14272726589201068,
+          0.38492267641060635
+        ],
+        "gain_over_the_current_panel_s": 0.24310598767101868
+      },
+      "x2": {
+        "ci95": [
+          0.18921057298405014,
+          0.5471181745175759
+        ],
+        "gain_over_the_current_panel_s": 0.33391125273293326
+      },
+      "x3": {
+        "ci95": [
+          0.25306007530244296,
+          0.812177788012537
+        ],
+        "gain_over_the_current_panel_s": 0.4673504179650488
+      },
+      "x5": {
+        "ci95": [
+          0.30037068246069004,
+          1.0922551931021403
+        ],
+        "gain_over_the_current_panel_s": 0.5905522786571772
+      },
+      "x5_5_the_extended_panel": {
+        "ci95": [
+          0.3065149370124824,
+          1.1402222324685078
+        ],
+        "gain_over_the_current_panel_s": 0.6091530777827344
+      }
+    },
+    "sse": 0.0009150209205190721,
+    "sse_of_the_registered_log_fit": 0.029074908063231118,
+    "what_the_asymptote_means": "C is the whole remaining upside of MORE ROWS OF THE SAME KIND for this recipe on this panel. It is not a bound on the lane: a different recipe, more capacity, or months that carry coverage the folds never see are all outside it",
+    "why_the_1_4_to_1_6_grid": "section 47.17's ONE-MONTH extension (2025-11) lands there, and the exact multiple is not known until queue reports 2025-11's writable row count, so the grid is registered rather than one point"
+  },
+  "is_the_curve_steeper_at_the_bottom": {
+    "ci95": [
+      0.1604621889954427,
+      0.7230708112239526
+    ],
+    "clear_of_zero": true,
+    "k_25pct_minus_k_75pct": 0.42885811963899023,
+    "reading": "positive and clear = the curve flattens faster than log, so the registered extrapolation OVERSTATES the extended panel; negative and clear = it understates; crossing zero = the three levels are consistent with one log slope and the registered form stands"
+  },
+  "one_parameter_fit_as_registered": {
+    "k": 0.9504228445400787,
+    "levels": [
+      "75pct",
+      "50pct",
+      "25pct"
+    ],
+    "residuals_in_bootstrap_sds": [
+      2.0534444330851818,
+      1.1944728575998473,
+      -0.3915337190647472
+    ],
+    "residuals_s": [
+      0.10752945628591726,
+      0.10808357790883105,
+      -0.0763561672722759
+    ]
+  },
+  "per_fold_bounded_fit": {
+    "december": {
+      "alpha": 0.6277096370463079,
+      "asymptote_s2_per_row": 1038.1292941685715,
+      "current_fitting_rows": 159231,
+      "measured_over_the_100pct_member": {
+        "25pct": -1440.2098023003928,
+        "50pct": -565.890459401322,
+        "75pct": -205.85413941941079
+      },
+      "predictions": {
+        "x1.40": {
+          "ci95": [
+            134.87267884994262,
+            274.52467654005306
+          ],
+          "gain_s2_per_row": 197.65299723670537
+        },
+        "x1.45": {
+          "ci95": [
+            146.7955314928323,
+            300.7085994793899
+          ],
+          "gain_s2_per_row": 215.9638939078719
+        },
+        "x1.50": {
+          "ci95": [
+            157.96675248206827,
+            325.5542641476789
+          ],
+          "gain_s2_per_row": 233.27499921427736
+        },
+        "x1.55": {
+          "ci95": [
+            168.4682884824119,
+            349.20140490788634
+          ],
+          "gain_s2_per_row": 249.67158281810632
+        },
+        "x1.60": {
+          "ci95": [
+            178.40883365788739,
+            371.74378293332086
+          ],
+          "gain_s2_per_row": 265.2291896819887
+        }
+      },
+      "units": "s^2 per row, the by_fold currency the gate reads"
+    },
+    "january": {
+      "alpha": 1.0013016270337922,
+      "asymptote_s2_per_row": 273.79919460913084,
+      "current_fitting_rows": 191536,
+      "measured_over_the_100pct_member": {
+        "25pct": -821.4965574563103,
+        "50pct": -291.44596638435905,
+        "75pct": -56.856451496176305
+      },
+      "predictions": {
+        "x1.40": {
+          "ci95": [
+            45.102368625206,
+            120.27908119684996
+          ],
+          "gain_s2_per_row": 78.31397504014346
+        },
+        "x1.45": {
+          "ci95": [
+            48.71604739791864,
+            131.7409262055375
+          ],
+          "gain_s2_per_row": 85.06346553473325
+        },
+        "x1.50": {
+          "ci95": [
+            52.038225818434654,
+            142.31367848244662
+          ],
+          "gain_s2_per_row": 91.36270708852408
+        },
+        "x1.55": {
+          "ci95": [
+            55.10669054265895,
+            152.42814953356597
+          ],
+          "gain_s2_per_row": 97.25529014885342
+        },
+        "x1.60": {
+          "ci95": [
+            57.93936613773817,
+            162.19742328594074
+          ],
+          "gain_s2_per_row": 102.77935469799888
+        }
+      },
+      "units": "s^2 per row, the by_fold currency the gate reads"
+    },
+    "july_loo": {
+      "alpha": 0.4483854818523154,
+      "asymptote_s2_per_row": 983.815412813476,
+      "current_fitting_rows": 172783,
+      "measured_over_the_100pct_member": {
+        "25pct": -847.6001295070892,
+        "50pct": -360.34419697194244,
+        "75pct": -133.026201208384
+      },
+      "predictions": {
+        "x1.40": {
+          "ci95": [
+            65.63585284218426,
+            220.1929052415192
+          ],
+          "gain_s2_per_row": 137.77339492832732
+        },
+        "x1.45": {
+          "ci95": [
+            71.1612338427935,
+            242.86549384850255
+          ],
+          "gain_s2_per_row": 150.9812096308855
+        },
+        "x1.50": {
+          "ci95": [
+            76.2966895289362,
+            264.77666059062193
+          ],
+          "gain_s2_per_row": 163.54535652354036
+        },
+        "x1.55": {
+          "ci95": [
+            81.08140386652248,
+            285.7362338647733
+          ],
+          "gain_s2_per_row": 175.51713794078154
+        },
+        "x1.60": {
+          "ci95": [
+            85.55121072354999,
+            305.6894573522815
+          ],
+          "gain_s2_per_row": 186.9422785087176
+        }
+      },
+      "units": "s^2 per row, the by_fold currency the gate reads"
+    }
+  },
+  "per_level_implied_slope": {
+    "25pct": {
+      "board_gain_s": -1.3939219973377135,
+      "bootstrap_sd_of_the_gain_s": 0.1950181135220413,
+      "implied_k": 1.0055021764725791,
+      "implied_k_ci95": [
+        0.7822609675898474,
+        1.3073292853494296
+      ],
+      "ln_frac": -1.3862943611198906
+    },
+    "50pct": {
+      "board_gain_s": -0.5506993371238877,
+      "bootstrap_sd_of_the_gain_s": 0.09048642438473846,
+      "implied_k": 0.7944912026894723,
+      "implied_k_ci95": [
+        0.5723765796763262,
+        1.085691430372774
+      ],
+      "ln_frac": -0.6931471805599453
+    },
+    "75pct": {
+      "board_gain_s": -0.1658901573368894,
+      "bootstrap_sd_of_the_gain_s": 0.052365408361384515,
+      "implied_k": 0.5766440568335889,
+      "implied_k_ci95": [
+        0.27354206681843346,
+        0.9994612604310512
+      ],
+      "ln_frac": -0.2876820724517809
+    }
+  },
+  "refits_nothing": "reads work/d-curve{25,50,75,100}-255-free.npz and prices them",
+  "seconds": 3.7,
+  "section_47_17_one_extra_month": {
+    "assembled_from": "the three per-fold curves at their OWN multiples, not a board curve at an averaged multiple -- one extra month is a different fraction of each fold's fitting set",
+    "by_2025_11_row_count": {
+      "n105000": {
+        "board_ci95": [
+          0.1381093830304337,
+          0.3774511703832246
+        ],
+        "board_gain_s": 0.24758061610663162,
+        "every_fold_interval_clear_predicted": true,
+        "fold_ci95_s2_per_row": {
+          "december": [
+            189.49604486524095,
+            397.2115091762047
+          ],
+          "january": [
+            55.00030349939247,
+            152.067545306131
+          ],
+          "july_loo": [
+            86.21331959333318,
+            308.79665444831625
+          ]
+        },
+        "gain_s2_per_row_by_fold": {
+          "december": 282.7190782695668,
+          "january": 97.04974472622138,
+          "july_loo": 188.65555178750773
+        },
+        "multiple_by_fold": {
+          "december": 1.659419334174878,
+          "january": 1.5481998162225379,
+          "july_loo": 1.6076986740593693
+        },
+        "n_2025_11_writable_rows": 105000.0
+      },
+      "n70000": {
+        "board_ci95": [
+          0.10572737001029395,
+          0.2743199692851362
+        ],
+        "board_gain_s": 0.18392110000428374,
+        "every_fold_interval_clear_predicted": true,
+        "fold_ci95_s2_per_row": {
+          "december": [
+            144.38369990358123,
+            295.38726120204933
+          ],
+          "january": [
+            42.39969190916828,
+            112.33019010350498
+          ],
+          "july_loo": [
+            66.22224878687757,
+            222.50758006995278
+          ]
+        },
+        "gain_s2_per_row_by_fold": {
+          "december": 212.2452443182286,
+          "january": 73.36352234661342,
+          "july_loo": 139.1604350140075
+        },
+        "multiple_by_fold": {
+          "december": 1.4396128894499187,
+          "january": 1.3654665441483584,
+          "july_loo": 1.405132449372913
+        },
+        "n_2025_11_writable_rows": 70000.0
+      },
+      "n87252": {
+        "board_ci95": [
+          0.12286608806755908,
+          0.3276050903185179
+        ],
+        "board_gain_s": 0.21697288751266797,
+        "every_fold_interval_clear_predicted": true,
+        "fold_ci95_s2_per_row": {
+          "december": [
+            168.05190665729415,
+            348.25818518253976
+          ],
+          "january": [
+            49.097449484003256,
+            132.97483407393494
+          ],
+          "july_loo": [
+            76.788399704993,
+            266.93236074591533
+          ]
+        },
+        "gain_s2_per_row_by_fold": {
+          "december": 249.01906279731486,
+          "january": 85.78254585454508,
+          "july_loo": 164.76357264982477
+        },
+        "multiple_by_fold": {
+          "december": 1.5479586261469187,
+          "january": 1.4555383844290368,
+          "july_loo": 1.504980235324077
+        },
+        "n_2025_11_writable_rows": 87252.0
+      }
+    },
+    "n87252_is": "the mean usable rows per month over the three fold months"
+  },
+  "status": "POST-HOC. Written while curve.py ran, registers no band, moves no gate. Section 47.15's registered reading is the one-parameter fit; this asks whether that form is the right one and reports the answer beside it.",
+  "two_parameter_fit": {
+    "intercept_a": 0.18687558429644316,
+    "intercept_ci95": [
+      0.09049910362810694,
+      0.3057301306798634
+    ],
+    "intercept_consistent_with_the_anchor": false,
+    "slope_ci95": [
+      0.8790264619465052,
+      1.4607879609841843
+    ],
+    "slope_k": 1.1284320889459472,
+    "why_it_matters": "the anchor at frac = 1 is exact by construction, so a non-zero intercept is not a free parameter -- it is the log form failing"
+  },
+  "what": "Does the log law actually FIT? -- a post-hoc diagnostic on section 47.15's four levels."
+}

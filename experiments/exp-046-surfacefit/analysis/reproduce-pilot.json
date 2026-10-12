@@ -1,0 +1,111 @@
+{
+  "agreement": {
+    "mse_gain_delta_s2": -64.5611275929632,
+    "offset_delta_s": 0.019999980926513672,
+    "rmse_base_delta_s": -0.30088754263317696,
+    "rmse_updated_delta_s": -0.0872977948433089,
+    "rows_delta": 6,
+    "rows_delta_share": 0.001721664275466284
+  },
+  "fold": "july_loo",
+  "median_offset_s_pooled_pipeline": -291.4800000190735,
+  "pipeline_heldout_v10": {
+    "A_mean_rd": 5498.5722749018005,
+    "B_mean_dd": 5510.835550871558,
+    "mse_gain_s2_per_matched_row": 5486.308998932043,
+    "rmse_base_on_these_rows": 142.44977269763945,
+    "rmse_base_plus_update": 121.67838239669814,
+    "rows": 3491,
+    "scales_by_day": {
+      "2025-07-09": 0.4964412043245135,
+      "2025-07-10": 0.49308898828466763,
+      "2025-07-11": 0.4935202198951522,
+      "2025-07-12": 0.47775665858056915,
+      "2025-07-13": 0.4772935155004476
+    }
+  },
+  "pipeline_heldout_v10_wide": {
+    "A_mean_rd": 5359.465599954071,
+    "B_mean_dd": 5384.500932832809,
+    "mse_gain_s2_per_matched_row": 5334.430267075333,
+    "rmse_base_on_these_rows": 142.43013855234935,
+    "rmse_base_plus_update": 122.27801969677994,
+    "rows": 3495,
+    "scales_by_day": {
+      "2025-07-09": 0.49686411822325366,
+      "2025-07-10": 0.47918685490306584,
+      "2025-07-11": 0.4787515581160652,
+      "2025-07-12": 0.46508257924201124,
+      "2025-07-13": 0.4632203249953544
+    }
+  },
+  "pipeline_heldout_v11": {
+    "A_mean_rd": 5498.5722749018005,
+    "B_mean_dd": 5510.835550871558,
+    "mse_gain_s2_per_matched_row": 5486.308998932043,
+    "rmse_base_on_these_rows": 142.44977269763945,
+    "rmse_base_plus_update": 121.67838239669814,
+    "rows": 3491,
+    "scales_by_day": {
+      "2025-07-09": 0.4964412043245135,
+      "2025-07-10": 0.49308898828466763,
+      "2025-07-11": 0.4935202198951522,
+      "2025-07-12": 0.47775665858056915,
+      "2025-07-13": 0.4772935155004476
+    }
+  },
+  "pipeline_heldout_v11_wide": {
+    "A_mean_rd": 5359.465599954071,
+    "B_mean_dd": 5384.500932832809,
+    "mse_gain_s2_per_matched_row": 5334.430267075333,
+    "rmse_base_on_these_rows": 142.43013855234935,
+    "rmse_base_plus_update": 122.27801969677994,
+    "rows": 3495,
+    "scales_by_day": {
+      "2025-07-09": 0.49686411822325366,
+      "2025-07-10": 0.47918685490306584,
+      "2025-07-11": 0.4787515581160652,
+      "2025-07-12": 0.46508257924201124,
+      "2025-07-13": 0.4632203249953544
+    }
+  },
+  "pipeline_wholeweek_v10": {
+    "A_mean_rd": 6339.125160143753,
+    "B_mean_dd": 6360.030187711819,
+    "mse_gain_s2_per_matched_row": 6318.220132575687,
+    "rmse_base_on_these_rows": 146.43753201798154,
+    "rmse_base_plus_update": 122.98670924511187,
+    "rows": 4836,
+    "scales_by_day": {
+      "2025-07-07": 0.5127857093396374,
+      "2025-07-08": 0.4937174672307558,
+      "2025-07-09": 0.5237348070860538,
+      "2025-07-10": 0.5210373350802026,
+      "2025-07-11": 0.5229303151315094,
+      "2025-07-12": 0.5103626463523071,
+      "2025-07-13": 0.5125192656691746
+    }
+  },
+  "published": {
+    "loo_mse_gain_s2": 5550.8701265250065,
+    "loo_scales_by_day": {
+      "2025-07-09": 0.4993500098798261,
+      "2025-07-10": 0.49641299410578543,
+      "2025-07-11": 0.4969389146897921,
+      "2025-07-12": 0.4806166422777537,
+      "2025-07-13": 0.4785930642615638
+    },
+    "median_offset_s_pooled": -291.5,
+    "rmse_v10_on_these_rows_s": 142.75066024027262,
+    "rmse_v10_plus_update_loo_s": 121.76568019154145,
+    "rows_matched_in_fold": 3485
+  },
+  "rows": {
+    "in_fold_with_clock_heldout": 3491,
+    "in_fold_with_clock_heldout_wide": 3495,
+    "in_fold_with_clock_week": 4836,
+    "pilot_heldout": 3485,
+    "wide_only_heldout": 4
+  },
+  "verdict": "REPRODUCED. The pipeline's block and base give the pilot's held-out EHAM numbers to 0.301 s on the base RMSE, 0.087 s on the updated RMSE and 65 s^2 (1.2%) on the paired gain, on 3491 rows against the pilot's 3485 (+0.17%). The row difference is the attributed set of analysis/block-test.json \u2014 the pilot's null-altitude repair, which the harvest's kernels predate, and the per-day against week-concatenated assembly of the same rule \u2014 and there is no third cause."
+}

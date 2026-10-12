@@ -1,0 +1,41 @@
+{
+  "cap_s": 1200,
+  "config": {
+    "learning_rate": 0.04,
+    "min_data_in_leaf": 60,
+    "mode": "p",
+    "n_estimators": 900,
+    "n_features": 78,
+    "num_leaves": 63,
+    "seed": 7
+  },
+  "fold": "april_loo",
+  "hit_the_cap": false,
+  "mode": "p",
+  "producer": "experiments/exp-010-nmtail/code/run_folds.py (run(), injected REOCC)",
+  "reocc_cache": {
+    "bytes": 16076036,
+    "dir": "artifacts/exp-047/reocc",
+    "months_built": [],
+    "wall_s": 0.0
+  },
+  "vector": {
+    "bytes": 2893339,
+    "columns_are_the_contract": true,
+    "ids_identical_to_the_block": true,
+    "in_block_not_in_vector": 0,
+    "in_vector_not_in_block": 0,
+    "n_scored": 175288,
+    "path": "experiments/exp-047-queue/oof/N1-nmtail--april_loo.parquet",
+    "rmse_where_predicted": 338.1589,
+    "rows": 175288,
+    "rows_lost_to_the_join": 0,
+    "sha256": "5494aecab1201e32036942ec46136a4efac6e065346922351510b52efe8a9a84",
+    "stack_members_ok": true,
+    "y_pred_null_share": 0.0,
+    "y_pred_nulls": 0
+  },
+  "wall_min": 1.9,
+  "wall_s": 115.8,
+  "what": "\u00a77bj addendum: N1-nmtail smoked on november_loo"
+}

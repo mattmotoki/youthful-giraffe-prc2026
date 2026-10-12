@@ -1,0 +1,127 @@
+{
+  "block_cache": "block-2025-07-8179f74417c8cb99-122c7d84.parquet",
+  "days_missing": [
+    "EDDM 2025-07-01",
+    "LTFM 2025-06-30",
+    "LTFM 2025-07-01",
+    "LTFM 2025-07-02",
+    "LTFM 2025-07-03",
+    "LTFM 2025-07-04",
+    "LTFM 2025-07-05",
+    "LTFM 2025-07-06",
+    "LTFM 2025-07-07",
+    "LTFM 2025-07-08",
+    "LTFM 2025-07-09",
+    "LTFM 2025-07-10",
+    "LTFM 2025-07-11",
+    "LTFM 2025-07-12",
+    "LTFM 2025-07-13",
+    "LTFM 2025-07-14",
+    "LTFM 2025-07-15",
+    "LTFM 2025-07-16",
+    "LTFM 2025-07-17",
+    "LTFM 2025-07-18",
+    "LTFM 2025-07-19",
+    "LTFM 2025-07-20",
+    "LTFM 2025-07-21",
+    "LTFM 2025-07-22",
+    "LTFM 2025-07-23",
+    "LTFM 2025-07-24",
+    "LTFM 2025-07-25",
+    "LTFM 2025-07-26",
+    "LTFM 2025-07-27",
+    "LTFM 2025-07-28",
+    "LTFM 2025-07-29",
+    "LTFM 2025-07-30",
+    "LTFM 2025-07-31",
+    "LTFM 2025-08-01"
+  ],
+  "days_present": 296,
+  "days_wrong_rule": [],
+  "month": "2025-07",
+  "reach": {
+    "ambiguous": 381,
+    "by_airport": {
+      "EDDF": {
+        "departures": 21334,
+        "matched": 18254,
+        "rate": 0.8556
+      },
+      "EDDM": {
+        "departures": 15825,
+        "matched": 5823,
+        "rate": 0.368
+      },
+      "EGLL": {
+        "departures": 20790,
+        "matched": 2952,
+        "rate": 0.142
+      },
+      "EHAM": {
+        "departures": 22489,
+        "matched": 21644,
+        "rate": 0.9624
+      },
+      "LEBL": {
+        "departures": 16752,
+        "matched": 15024,
+        "rate": 0.8968
+      },
+      "LEMD": {
+        "departures": 18818,
+        "matched": 5246,
+        "rate": 0.2788
+      },
+      "LFPG": {
+        "departures": 21712,
+        "matched": 1013,
+        "rate": 0.0467
+      },
+      "LIRF": {
+        "departures": 15211,
+        "matched": 13891,
+        "rate": 0.9132
+      },
+      "LSZH": {
+        "departures": 12611,
+        "matched": 11160,
+        "rate": 0.8849
+      },
+      "LTFM": {
+        "departures": 25171,
+        "matched": 0,
+        "rate": 0.0
+      }
+    },
+    "clock_check_wheels_off_minus_mvt_s": {
+      "median": -28.539999961853027,
+      "p01": -895.7088000392914,
+      "p99": 31.86439994335177,
+      "share_within_60s": 0.3677095950459591
+    },
+    "departures": 190713,
+    "matched": 95007,
+    "matched_nm": 0.5014,
+    "matched_no_nm": 0.3454,
+    "matched_share": 0.4982,
+    "n_multi_dep": 16,
+    "n_multi_seg": 1081,
+    "no_nm_rows": 3938,
+    "segments_observed": 127099
+  },
+  "rows": 190713,
+  "rule_cover": {
+    "airport_days_by_rule": {
+      "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0": 1350
+    },
+    "airport_days_present": 1350,
+    "airport_days_rejected": 0,
+    "chosen": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+    "n_rules": 1
+  },
+  "rule_overridden": false,
+  "rule_sha256": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+  "rules_seen": [
+    "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "board": {
+    "gap_s": 2.1154,
+    "lead": 260.931,
+    "v10": 263.0464,
+    "v10_pooled_mse_s2": 69193.4
+  },
+  "cost": {
+    "full_2025_gb": 1106.8,
+    "gb_per_day_definition": "published release asset bytes, the bytes transferred",
+    "measured_gb_per_day": 3.5,
+    "measured_seconds_per_day_kernel": 856.9,
+    "note_archive_is_global": "one pass over a day's archive yields EVERY airport, so the cost is per MONTH, not per airport-month: ten boxes cost the same transfer as one",
+    "one_training_month_gb": 108.6,
+    "one_training_month_kernel_hours": 7.4,
+    "per_month_constants_agree": "GB_PER_MONTH['2025-07'] / 31 = 3.503 GB per day against the pilot's measured 3.498, so the per-month constants are already published asset bytes",
+    "pilot_gb_tar_member_payload": 24.1,
+    "pilot_gb_transferred": 24.48,
+    "pilot_tar_overhead_mb": 382.3,
+    "ranking_months_gb": 213.2,
+    "ranking_months_kernel_hours": 14.8
+  },
+  "gain_source": {
+    "obs_offblock_disp": {
+      "frozen_on_development_days_s2": 5388.087682210182,
+      "leave_one_day_out_crossfit_s2": 5550.8701265250065,
+      "used": "frozen_on_development_days"
+    },
+    "obs_offblock_loose": {
+      "frozen_on_development_days_s2": 5164.401138537189,
+      "leave_one_day_out_crossfit_s2": 5157.277853365545,
+      "used": "frozen_on_development_days"
+    }
+  },
+  "if_eham_only": {
+    "obs_offblock_disp": {
+      "board_gain_s": 1.0607,
+      "board_rmse_after_s": 261.9857,
+      "per_matched_row_mse_gain_s2": 5388.1,
+      "pooled_mse_reduction_s2": 556.9,
+      "share_of_gap_to_lead": 0.501
+    },
+    "obs_offblock_loose": {
+      "board_gain_s": 1.0166,
+      "board_rmse_after_s": 262.0298,
+      "per_matched_row_mse_gain_s2": 5164.4,
+      "pooled_mse_reduction_s2": 533.8,
+      "share_of_gap_to_lead": 0.481
+    }
+  },
+  "if_every_airport_matched_eham": {
+    "obs_offblock_disp": {
+      "board_gain_s": 9.7405,
+      "board_rmse_after_s": 253.3059,
+      "per_matched_row_mse_gain_s2": 5388.1,
+      "pooled_mse_reduction_s2": 5029.5,
+      "share_of_gap_to_lead": 4.605
+    },
+    "obs_offblock_loose": {
+      "board_gain_s": 9.3287,
+      "board_rmse_after_s": 253.7177,
+      "per_matched_row_mse_gain_s2": 5164.4,
+      "pooled_mse_reduction_s2": 4820.7,
+      "share_of_gap_to_lead": 4.41
+    }
+  },
+  "measured": {
+    "days": [
+      "2025-07-09",
+      "2025-07-10",
+      "2025-07-11",
+      "2025-07-12",
+      "2025-07-13"
+    ],
+    "eham_departures": 3683,
+    "matched_nm": 0.9699,
+    "matched_no_nm": 0.1552,
+    "matched_share": 0.9571,
+    "obs_offblock_share_of_matched": 0.9887
+  },
+  "ranking_file": {
+    "covered_share_of_ranking": 0.1034,
+    "departures": 344841,
+    "eham": 38182,
+    "eham_no_nm": 1206,
+    "eham_share": 0.1107,
+    "projected_covered_rows": 35641,
+    "projected_eham_reach": 0.9335
+  }
+}

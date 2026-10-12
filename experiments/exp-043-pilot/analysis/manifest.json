@@ -1,0 +1,63 @@
+{
+  "files": {
+    "artifacts/exp-043/census_2025-07-07.parquet": {
+      "bytes": 67225,
+      "sha256": "3480d7eff667d64699bb456ca95f6cb43fb01eecb0380c76fc2925e17bac4d65"
+    },
+    "artifacts/exp-043/census_2025-07-08.parquet": {
+      "bytes": 64400,
+      "sha256": "e95d5b445621c36c9236c3dabbfce9fb8446c603bde28274f2697e56a6f3ab0f"
+    },
+    "artifacts/exp-043/census_2025-07-09.parquet": {
+      "bytes": 68620,
+      "sha256": "38e751bef0e1ac0f5bc420e3c5d839ce3231bef63d2b98753bb5d563b365bfe4"
+    },
+    "artifacts/exp-043/census_2025-07-10.parquet": {
+      "bytes": 68572,
+      "sha256": "1191f3cde650be8243e77fbadd62af46057b19af681badb35bc12e4d3fe3cfb0"
+    },
+    "artifacts/exp-043/census_2025-07-11.parquet": {
+      "bytes": 66830,
+      "sha256": "4eb5e40b4edd9ad7993e553728accf120dcd9983e9d0613f3485d149398ce03f"
+    },
+    "artifacts/exp-043/census_2025-07-12.parquet": {
+      "bytes": 61505,
+      "sha256": "cedcee65c609d78d457d1b4070f04065230002e7b01c0b626623339042340c22"
+    },
+    "artifacts/exp-043/census_2025-07-13.parquet": {
+      "bytes": 65573,
+      "sha256": "910efbac5a7482a3efc96d403d4064a0579f6734dfc55aaf251b0f872f651d1b"
+    },
+    "artifacts/exp-043/points_2025-07-07.parquet": {
+      "bytes": 4491526,
+      "sha256": "e6f4f14fbfd5546ba4ee131096a899371f4777f154846e853d407976e461427f"
+    },
+    "artifacts/exp-043/points_2025-07-08.parquet": {
+      "bytes": 4310625,
+      "sha256": "562b456b2f7ed071800476fff34fb4434de6e032b83baf9db04d0470b893b099"
+    },
+    "artifacts/exp-043/points_2025-07-09.parquet": {
+      "bytes": 4347007,
+      "sha256": "50c41cb49c4d778d63481d44b84712af52d6190cc947f1978d2007145676765e"
+    },
+    "artifacts/exp-043/points_2025-07-10.parquet": {
+      "bytes": 4387403,
+      "sha256": "f52413664aa733a82cd054a3fd3d782a2536f2a39badfdba2fbf8183fc23f215"
+    },
+    "artifacts/exp-043/points_2025-07-11.parquet": {
+      "bytes": 4314956,
+      "sha256": "4776af83b06a45777b60aaaec2103a3056e38f4ba51d81e7e01c7ac0cead27fe"
+    },
+    "artifacts/exp-043/points_2025-07-12.parquet": {
+      "bytes": 3987878,
+      "sha256": "d30b9cca6dab8a5788e45262e1ea9b8f133c1a3f8fc6c92e2c090392c9eeb95c"
+    },
+    "artifacts/exp-043/points_2025-07-13.parquet": {
+      "bytes": 4348365,
+      "sha256": "f2835e152d3f097780f5491fbb63418e545b4cd265b90db2afc95fa44f98a8bb"
+    }
+  },
+  "note": "The pilot's retained slice. `artifacts/` is git-ignored, so this manifest is the committed address of every file: path, byte count and SHA-256. Rebuild any of them with experiments/exp-043-pilot/code/push_kernel.sh.",
+  "produced_by": "experiments/exp-043-pilot/kernels/surface-{gate,rest}/prc-surface.py",
+  "total_bytes": 30650485
+}

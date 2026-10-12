@@ -1,0 +1,55 @@
+{
+ "block_py_sha256_unchanged": "6fdf39519eb0f500c06230e2972d3c8300aa6222ed8d9b003998ddf6e286093b",
+ "cause": "code/turnaround.py approximated 'a departure neither pass claimed' by 'a departure with no clock'.  They are different sets: a STRICT match onto a segment that has a take-off but no off-block is CLAIMED and has no clock.  6,063 rows in 2026-01 and 5,472 in 2026-07 are exactly that, all match_mode 0.  turnaround.py let them compete as free candidates, and the two-way uniqueness rule then DECLINED 78 real placements they contended for.",
+ "disagreement": {
+  "code_turnaround_py": 3101,
+  "in_block_build": 3179,
+  "rows": 78
+ },
+ "gates_at_3179": {
+  "both_bars_still_pass": true,
+  "columns_swept": 34,
+  "contested_abs_cells": {
+   "day": 15,
+   "of": 2776,
+   "stand": 20
+  },
+  "placebo_day": {
+   "placed": 42,
+   "share_of_real": 0.0132
+  },
+  "placebo_stand": {
+   "placed": 29,
+   "share_of_real": 0.0091
+  },
+  "rows_swept": 341662,
+  "sweep_values_changed_on_rows_not_placed": 0
+ },
+ "matched_but_clockless_rows": {
+  "2026-01": 6063,
+  "2026-07": 5472,
+  "all_match_mode": 0
+ },
+ "ordered_by": "analysis/chain-spec.md section 8: a disagreement is a defect, not a result",
+ "proof": {
+  "2026-01": {
+   "approximation": 1345,
+   "spec_semantics": 1382,
+   "turnaround_py_measured": 1345
+  },
+  "2026-07": {
+   "approximation": 1756,
+   "spec_semantics": 1797,
+   "turnaround_py_measured": 1756
+  },
+  "reconciled_exactly": true,
+  "test": "the same in-block pass run with FREE_IS_CLOCKLESS=True",
+  "total": {
+   "approximation": 3101,
+   "spec_semantics": 3179,
+   "turnaround_py_measured": 3101
+  }
+ },
+ "what": "why the two implementations of one key disagreed, and which is right",
+ "which_is_right": "the in-block pass.  analysis/chain-spec.md section 2 says 'an unclaimed ranking DEPARTURE', meaning unclaimed by passes 1 and 2, and that is what block.build implements.  A claimed-but-clockless departure already has its own segment and cannot be the one this segment belongs to, so excluding it from the candidate pool is correct and turnaround.py was conservative by accident, not by design."
+}

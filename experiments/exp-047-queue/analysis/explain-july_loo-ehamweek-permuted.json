@@ -1,0 +1,623 @@
+{
+  "airports": [
+    "EHAM"
+  ],
+  "arms": {
+    "N": {
+      "all": {
+        "after_s2": 2307.5,
+        "before_s2": 2126.8,
+        "ci": [
+          -0.1674,
+          -0.0168
+        ],
+        "gain_over_shared": 0.0109,
+        "gain_over_shared_ci": [
+          -0.0465,
+          0.0749
+        ],
+        "pairs": 18568,
+        "rows": 5082,
+        "share": -0.085
+      },
+      "by_airport": {
+        "EHAM": {
+          "after_s2": 2307.5,
+          "before_s2": 2126.8,
+          "ci": [
+            -0.1736,
+            -0.016
+          ],
+          "pairs": 18568,
+          "rows": 5082,
+          "share": -0.085
+        }
+      },
+      "contract": {
+        "A_mean_rd": 232.31261253210914,
+        "B_mean_dd": 441.5043925384377,
+        "ci95": [
+          -98.88351589125217,
+          159.39340189799432
+        ],
+        "mse_gain_s2": 23.12083252578057,
+        "rows": 5131,
+        "rows_moved": 5131
+      },
+      "contract_matched": {
+        "A_mean_rd": 229.65816345039977,
+        "B_mean_dd": 435.07752216156166,
+        "ci95": [
+          -136.98736900262367,
+          186.78426435391424
+        ],
+        "mse_gain_s2": 24.238804739237892,
+        "rows": 4841,
+        "rows_moved": 4841
+      },
+      "contract_unmatched": {
+        "A_mean_rd": 276.62360565126414,
+        "B_mean_dd": 548.7888045882886,
+        "ci95": [
+          -590.0986409148808,
+          495.30110142480675
+        ],
+        "mse_gain_s2": 4.4584067142396195,
+        "rows": 290,
+        "rows_moved": 290
+      },
+      "features": 24,
+      "matched": {
+        "after_s2": 2311.2,
+        "before_s2": 2143.4,
+        "ci": [
+          -0.1629,
+          -0.0078
+        ],
+        "gain_over_shared": 0.0113,
+        "gain_over_shared_ci": [
+          -0.0639,
+          0.0871
+        ],
+        "pairs": 17504,
+        "rows": 4795,
+        "share": -0.0783
+      },
+      "rmse_matched": {
+        "v11": {
+          "all": 146.4321,
+          "bulk_le3600": 146.4321,
+          "no_nm": 304.2072,
+          "rows": 4841,
+          "rows_no_nm": 17,
+          "tail_gt3600": null
+        },
+        "v11_plus_h": {
+          "all": 146.3494,
+          "bulk_le3600": 146.3494,
+          "no_nm": 296.428,
+          "rows": 4841,
+          "rows_no_nm": 17,
+          "tail_gt3600": null
+        }
+      },
+      "rmse_unmatched": {
+        "v11": {
+          "all": 158.4435,
+          "bulk_le3600": 158.4435,
+          "no_nm": 174.9038,
+          "rows": 290,
+          "rows_no_nm": 73,
+          "tail_gt3600": null
+        },
+        "v11_plus_h": {
+          "all": 158.4294,
+          "bulk_le3600": 158.4294,
+          "no_nm": 171.3667,
+          "rows": 290,
+          "rows_no_nm": 73,
+          "tail_gt3600": null
+        }
+      },
+      "rmse_v11": {
+        "all": 147.1372,
+        "bulk_le3600": 147.1372,
+        "no_nm": 205.6529,
+        "rows": 5131,
+        "rows_no_nm": 90,
+        "tail_gt3600": null
+      },
+      "rmse_v11_plus_h": {
+        "all": 147.0586,
+        "bulk_le3600": 147.0586,
+        "no_nm": 201.0401,
+        "rows": 5131,
+        "rows_no_nm": 90,
+        "tail_gt3600": null
+      },
+      "seconds": 0.0,
+      "unmatched": {
+        "after_s2": 2246.3,
+        "before_s2": 1854.3,
+        "ci": [
+          -0.4684,
+          -0.1005
+        ],
+        "gain_over_shared": 0.0024,
+        "gain_over_shared_ci": [
+          -0.3182,
+          0.2671
+        ],
+        "pairs": 1064,
+        "rows": 287,
+        "share": -0.2114
+      }
+    },
+    "Nf": {
+      "all": {
+        "after_s2": 2220.6,
+        "before_s2": 2126.8,
+        "ci": [
+          -0.1302,
+          0.0085
+        ],
+        "gain_over_shared": 0.0654,
+        "gain_over_shared_ci": [
+          0.0342,
+          0.0981
+        ],
+        "pairs": 18568,
+        "rows": 5082,
+        "share": -0.0441
+      },
+      "by_airport": {
+        "EHAM": {
+          "after_s2": 2220.6,
+          "before_s2": 2126.8,
+          "ci": [
+            -0.1285,
+            0.009
+          ],
+          "pairs": 18568,
+          "rows": 5082,
+          "share": -0.0441
+        }
+      },
+      "contract": {
+        "A_mean_rd": 248.99639447409652,
+        "B_mean_dd": 358.9066626094017,
+        "ci95": [
+          72.70409085603005,
+          208.7089252816037
+        ],
+        "mse_gain_s2": 139.08612633879136,
+        "rows": 5131,
+        "rows_moved": 5131
+      },
+      "contract_matched": {
+        "A_mean_rd": 245.08714404640565,
+        "B_mean_dd": 353.7558057211438,
+        "ci95": [
+          69.90169323362441,
+          200.74408718445096
+        ],
+        "mse_gain_s2": 136.41848237166758,
+        "rows": 4841,
+        "rows_moved": 4841
+      },
+      "contract_unmatched": {
+        "A_mean_rd": 314.25391626875586,
+        "B_mean_dd": 444.8904494923543,
+        "ci95": [
+          -327.82697548256084,
+          663.6206838556404
+        ],
+        "mse_gain_s2": 183.61738304515754,
+        "rows": 290,
+        "rows_moved": 290
+      },
+      "features": 12,
+      "matched": {
+        "after_s2": 2231.8,
+        "before_s2": 2143.4,
+        "ci": [
+          -0.1199,
+          0.0119
+        ],
+        "gain_over_shared": 0.0636,
+        "gain_over_shared_ci": [
+          0.0326,
+          0.0937
+        ],
+        "pairs": 17504,
+        "rows": 4795,
+        "share": -0.0413
+      },
+      "rmse_matched": {
+        "v11": {
+          "all": 146.4321,
+          "bulk_le3600": 146.4321,
+          "no_nm": 304.2072,
+          "rows": 4841,
+          "rows_no_nm": 17,
+          "tail_gt3600": null
+        },
+        "v11_plus_h": {
+          "all": 145.9656,
+          "bulk_le3600": 145.9656,
+          "no_nm": 293.7165,
+          "rows": 4841,
+          "rows_no_nm": 17,
+          "tail_gt3600": null
+        }
+      },
+      "rmse_unmatched": {
+        "v11": {
+          "all": 158.4435,
+          "bulk_le3600": 158.4435,
+          "no_nm": 174.9038,
+          "rows": 290,
+          "rows_no_nm": 73,
+          "tail_gt3600": null
+        },
+        "v11_plus_h": {
+          "all": 157.863,
+          "bulk_le3600": 157.863,
+          "no_nm": 172.0999,
+          "rows": 290,
+          "rows_no_nm": 73,
+          "tail_gt3600": null
+        }
+      },
+      "rmse_v11": {
+        "all": 147.1372,
+        "bulk_le3600": 147.1372,
+        "no_nm": 205.6529,
+        "rows": 5131,
+        "rows_no_nm": 90,
+        "tail_gt3600": null
+      },
+      "rmse_v11_plus_h": {
+        "all": 146.6638,
+        "bulk_le3600": 146.6638,
+        "no_nm": 200.7962,
+        "rows": 5131,
+        "rows_no_nm": 90,
+        "tail_gt3600": null
+      },
+      "seconds": 0.0,
+      "unmatched": {
+        "after_s2": 2036.0,
+        "before_s2": 1854.3,
+        "ci": [
+          -0.2369,
+          0.0227
+        ],
+        "gain_over_shared": 0.099,
+        "gain_over_shared_ci": [
+          -0.1768,
+          0.3579
+        ],
+        "pairs": 1064,
+        "rows": 287,
+        "share": -0.098
+      }
+    },
+    "No": {
+      "all": {
+        "after_s2": 2283.7,
+        "before_s2": 2126.8,
+        "ci": [
+          -0.0966,
+          -0.0508
+        ],
+        "gain_over_shared": -0.0907,
+        "gain_over_shared_ci": [
+          -0.1407,
+          -0.0443
+        ],
+        "pairs": 18568,
+        "rows": 5082,
+        "share": -0.0738
+      },
+      "by_airport": {
+        "EHAM": {
+          "after_s2": 2283.7,
+          "before_s2": 2126.8,
+          "ci": [
+            -0.0959,
+            -0.0508
+          ],
+          "pairs": 18568,
+          "rows": 5082,
+          "share": -0.0738
+        }
+      },
+      "contract": {
+        "A_mean_rd": -29.62710431292121,
+        "B_mean_dd": 133.71066417392817,
+        "ci95": [
+          -299.21681876096403,
+          -94.30141342553975
+        ],
+        "mse_gain_s2": -192.9648727997706,
+        "rows": 5131,
+        "rows_moved": 5131
+      },
+      "contract_matched": {
+        "A_mean_rd": -27.096337593113056,
+        "B_mean_dd": 133.42223801287417,
+        "ci95": [
+          -295.3349625588237,
+          -74.39475097461892
+        ],
+        "mse_gain_s2": -187.61491319910027,
+        "rows": 4841,
+        "rows_moved": 4841
+      },
+      "contract_unmatched": {
+        "A_mean_rd": -71.87345497013267,
+        "B_mean_dd": 138.52539191759118,
+        "ci95": [
+          -769.4345625540468,
+          97.98367591184325
+        ],
+        "mse_gain_s2": -282.2723018578565,
+        "rows": 290,
+        "rows_moved": 290
+      },
+      "features": 12,
+      "matched": {
+        "after_s2": 2292.0,
+        "before_s2": 2143.4,
+        "ci": [
+          -0.0973,
+          -0.042
+        ],
+        "gain_over_shared": -0.0875,
+        "gain_over_shared_ci": [
+          -0.1378,
+          -0.0347
+        ],
+        "pairs": 17504,
+        "rows": 4795,
+        "share": -0.0693
+      },
+      "rmse_matched": {
+        "v11": {
+          "all": 146.4321,
+          "bulk_le3600": 146.4321,
+          "no_nm": 304.2072,
+          "rows": 4841,
+          "rows_no_nm": 17,
+          "tail_gt3600": null
+        },
+        "v11_plus_h": {
+          "all": 147.0714,
+          "bulk_le3600": 147.0714,
+          "no_nm": 308.229,
+          "rows": 4841,
+          "rows_no_nm": 17,
+          "tail_gt3600": null
+        }
+      },
+      "rmse_unmatched": {
+        "v11": {
+          "all": 158.4435,
+          "bulk_le3600": 158.4435,
+          "no_nm": 174.9038,
+          "rows": 290,
+          "rows_no_nm": 73,
+          "tail_gt3600": null
+        },
+        "v11_plus_h": {
+          "all": 159.3318,
+          "bulk_le3600": 159.3318,
+          "no_nm": 174.3123,
+          "rows": 290,
+          "rows_no_nm": 73,
+          "tail_gt3600": null
+        }
+      },
+      "rmse_v11": {
+        "all": 147.1372,
+        "bulk_le3600": 147.1372,
+        "no_nm": 205.6529,
+        "rows": 5131,
+        "rows_no_nm": 90,
+        "tail_gt3600": null
+      },
+      "rmse_v11_plus_h": {
+        "all": 147.7914,
+        "bulk_le3600": 147.7914,
+        "no_nm": 206.3755,
+        "rows": 5131,
+        "rows_no_nm": 90,
+        "tail_gt3600": null
+      },
+      "seconds": 0.0,
+      "unmatched": {
+        "after_s2": 2148.0,
+        "before_s2": 1854.3,
+        "ci": [
+          -0.3115,
+          -0.0782
+        ],
+        "gain_over_shared": -0.1522,
+        "gain_over_shared_ci": [
+          -0.4149,
+          0.0528
+        ],
+        "pairs": 1064,
+        "rows": 287,
+        "share": -0.1583
+      }
+    }
+  },
+  "block": {
+    "anchor_file": {
+      "anchor_median": 3938,
+      "anchor_nm": 186775,
+      "anchor_observed": 0,
+      "rows": 190713
+    },
+    "anchor_obs": {
+      "anchor_median": 3921,
+      "anchor_nm": 181951,
+      "anchor_observed": 4841,
+      "rows": 190713
+    },
+    "events_H": {
+      "file_runs_added": 185872,
+      "observed_runs": 9765,
+      "runway_known": 4841
+    },
+    "events_O": {
+      "file_runs_added": 0,
+      "observed_runs": 9765,
+      "runway_known": 4841
+    },
+    "match": {
+      "by_airport": {
+        "EDDF": {
+          "clock": 0,
+          "rows": 21334
+        },
+        "EDDM": {
+          "clock": 0,
+          "rows": 15825
+        },
+        "EGLL": {
+          "clock": 0,
+          "rows": 20790
+        },
+        "EHAM": {
+          "clock": 4841,
+          "rows": 22489
+        },
+        "LEBL": {
+          "clock": 0,
+          "rows": 16752
+        },
+        "LEMD": {
+          "clock": 0,
+          "rows": 18818
+        },
+        "LFPG": {
+          "clock": 0,
+          "rows": 21712
+        },
+        "LIRF": {
+          "clock": 0,
+          "rows": 15211
+        },
+        "LSZH": {
+          "clock": 0,
+          "rows": 12611
+        },
+        "LTFM": {
+          "clock": 0,
+          "rows": 25171
+        }
+      },
+      "days_present": 7,
+      "days_wrong_rule": 0,
+      "matched": 4930,
+      "matcher_sha256": "4a1040e05a844bd69a30c622c1a6d55acd60dc302c15648593c4982f2ae5b0c9",
+      "rows": 190713,
+      "rules_seen": [
+        "15a72d550241faa28bc3af1acaa5e7f34e448065f8d80cb3b518d3e885796fa9"
+      ],
+      "with_clock": 4841
+    },
+    "neighbour_columns": [
+      "Nf_n_res_cell",
+      "Nf_n_res_rwy_cell",
+      "Nf_n_res_apt_30m",
+      "Nf_n_res_rwy_30m",
+      "Nf_n_res_rwy_60m",
+      "Nf_n_anom_cell",
+      "Nf_n_anom_rwy_cell",
+      "Nf_n_anom_rwy_30m",
+      "Nf_n_n_cell",
+      "Nf_n_n_rwy_cell",
+      "Nf_n_n_rwy_30m",
+      "Nf_n_res_rwy_minus_apt",
+      "No_n_res_cell",
+      "No_n_res_rwy_cell",
+      "No_n_res_apt_30m",
+      "No_n_res_rwy_30m",
+      "No_n_res_rwy_60m",
+      "No_n_anom_cell",
+      "No_n_anom_rwy_cell",
+      "No_n_anom_rwy_30m",
+      "No_n_n_cell",
+      "No_n_n_rwy_cell",
+      "No_n_n_rwy_30m",
+      "No_n_res_rwy_minus_apt"
+    ],
+    "permute_seed": 47,
+    "receipt": {
+      "days_by_airport": {
+        "EDDF": 0,
+        "EDDM": 0,
+        "EGLL": 0,
+        "EHAM": 7,
+        "LEBL": 0,
+        "LEMD": 0,
+        "LFPG": 0,
+        "LIRF": 0,
+        "LSZH": 0,
+        "LTFM": 0
+      },
+      "denominator": "harvested_airport_days",
+      "rate": {
+        "EHAM": 0.9435
+      },
+      "rows_off_harvested_days": 185582,
+      "rows_on_harvested_days": 5131
+    },
+    "receipt_rate": {
+      "EHAM": 0.9435
+    },
+    "rows": 190713,
+    "shift_s": 0.0,
+    "sources": [
+      "F",
+      "O",
+      "H",
+      "N",
+      "geo"
+    ],
+    "summary_days": 7
+  },
+  "by_reach": false,
+  "cells": 779,
+  "cover_only": true,
+  "days": [
+    "2025-07-07",
+    "2025-07-08",
+    "2025-07-09",
+    "2025-07-10",
+    "2025-07-11",
+    "2025-07-12",
+    "2025-07-13"
+  ],
+  "fold": "july_loo",
+  "learner": "ridge",
+  "permute_seed": 47,
+  "rows": 5131,
+  "shared_component_s2": {
+    "ci": [
+      1697.8,
+      2476.8
+    ],
+    "pairs": 18568,
+    "rows": 5082,
+    "value": 2126.8
+  },
+  "shift_s": 0.0,
+  "single_column": false,
+  "split_seed": 0,
+  "thin": 1.0
+}

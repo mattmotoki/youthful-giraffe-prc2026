@@ -1,0 +1,58 @@
+{
+  "name": "SEPX-winter-b",
+  "seeds": [
+    7
+  ],
+  "ds_columns": "deice",
+  "budget": {
+    "months": [
+      "2025-01",
+      "2025-07",
+      "2025-11"
+    ],
+    "per_month": {
+      "2025-01": {
+        "best_iteration": 148,
+        "held_frac": 0.07371824232259512
+      },
+      "2025-07": {
+        "best_iteration": 107,
+        "held_frac": 0.09146700290209285
+      },
+      "2025-11": {
+        "best_iteration": 223,
+        "held_frac": 0.07785531932853312
+      }
+    },
+    "optima": [
+      107,
+      148,
+      223
+    ],
+    "median": 148.0,
+    "spread_rel": 0.784,
+    "wide_threshold": 0.5,
+    "rule": "min (wide spread)",
+    "mean_held_frac": 0.08101352151774037,
+    "rounds": 125
+  },
+  "rounds": 125,
+  "n": 344841,
+  "n_features": 97,
+  "path": "artifacts/exp-012/pred/SEPX-winter-b-ranking.parquet",
+  "sha256": "034fa6936629b914e7336727501303ee69ed6bc65c13315031847d07299780c7",
+  "seconds": 514,
+  "raw_below_floor": 0,
+  "guard_touched": 2,
+  "guard_bounds": [
+    -20657.0,
+    9069.0
+  ],
+  "provenance": {
+    "modules": "surface[VERSION=3,BUCKET=1200.0,UNIMPEDED_Q=0.2] phi[VERSION=3,phidef=rows/150/100] lirf[VERSION=2] tail[VERSION=1.3.0] day_state[VERSION=1]",
+    "threads": 6,
+    "linear_tree": true,
+    "es_rounds": 100,
+    "pipeline": "exp-007-winter/code/pipeline (git 19cd199)"
+  }
+}

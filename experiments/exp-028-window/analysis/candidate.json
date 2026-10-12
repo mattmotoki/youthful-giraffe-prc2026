@@ -1,0 +1,67 @@
+{
+  "config": {
+    "win": 600.0,
+    "rounds": 400,
+    "leaves": 31,
+    "fit_pop": "all",
+    "apply_pop": "all",
+    "use_base": true
+  },
+  "threads": 2,
+  "lightgbm": "4.7.0",
+  "clip": 1200.0,
+  "arms": [
+    {
+      "arm": "window",
+      "win": 600.0,
+      "rounds": 400,
+      "leaves": 31,
+      "fit_pop": "all",
+      "apply_pop": "all",
+      "use_base": true,
+      "july_loo": 0.18699242691036488,
+      "december": 0.4857727882138363,
+      "january": -0.30009251873937615,
+      "clean_board": 258.035008242959,
+      "gain_board": 0.0021698961062384114,
+      "gain_nonoac": 0.05878537566098885,
+      "worst_fold": -0.30009251873937615,
+      "three_folds": false
+    },
+    {
+      "arm": "row",
+      "win": 600.0,
+      "rounds": 400,
+      "leaves": 31,
+      "fit_pop": "all",
+      "apply_pop": "all",
+      "use_base": true,
+      "july_loo": -2.9869995441969763,
+      "december": -0.1532516791097578,
+      "january": -1.0848960639728205,
+      "clean_board": 260.28539983607925,
+      "gain_board": -2.248221697014003,
+      "gain_nonoac": -1.6029769298768315,
+      "worst_fold": -2.9869995441969763,
+      "three_folds": false
+    },
+    {
+      "arm": "shuffle",
+      "win": 600.0,
+      "rounds": 400,
+      "leaves": 31,
+      "fit_pop": "all",
+      "apply_pop": "all",
+      "use_base": true,
+      "july_loo": -2.239271635265709,
+      "december": 0.04274072443988075,
+      "january": -0.753172316655764,
+      "clean_board": 259.69989579058387,
+      "gain_board": -1.6627176515186193,
+      "gain_nonoac": -1.4549477702702234,
+      "worst_fold": -2.239271635265709,
+      "three_folds": false
+    }
+  ],
+  "wall_s": 37.3
+}

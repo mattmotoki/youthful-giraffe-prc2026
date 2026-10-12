@@ -1,0 +1,41 @@
+{
+  "UTC": "2026-10-02T12:03:30.596019+00:00",
+  "annual_model_saved": false,
+  "annual_2026_predictions_saved": false,
+  "existing_model_root": "/path/to/competitions/prc-data-challenge-2026-exp153/experiments/exp-153-grind/results/lane-g-028/v2-watch/outputs/sequence-g-001/sequence",
+  "existing_FIT_sha256": "5eaff7fd96bc463281eb4e9b0fe5311dbe408234b672d4cda34a4e80213f2a5b",
+  "existing_model_sha256": "ba1f93a191ffcaebf3aa08caba252fe68cd78827255be261297e118276d0122b",
+  "existing_input_manifest_sha256": "5f44ada3df9f5a5335b29bc60f72747e60038214d25e44334118f2e8dc8501f0",
+  "existing_training_months": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "existing_training_labels": 1723505,
+  "full_stage_means": "all ten admitted months after train-only epoch selection, not twelve months",
+  "selected_epochs_frozen_for_annual": 12,
+  "reference_fit_seconds": 1964.4323370390002,
+  "reference_development_seconds": 939.1545552399999,
+  "reference_full_plus_prediction_seconds": 1025.2777817990004,
+  "needed": "new all2025-owned encoder/input packet plus frozen same mixed sequence model/seed/optimizer/12epoch annual fit, 344841 ranking rows in official/v37 id order and exact saved-model reload; no annual or ranking labels in model inputs; no new epoch/weight tuning",
+  "preparation_estimate_minutes": [
+    60,
+    90
+  ],
+  "GPU_estimate_minutes": [
+    25,
+    40
+  ],
+  "audit_estimate_minutes": 15,
+  "proposed_GPU_budget_minutes": 90,
+  "GPU_memory_GiB": 10,
+  "ETA_condition": "After desk go: packet in60-90min; complete checked predictions about100-145min plus Kaggle slot wait; no exact wall-clock end while account is full",
+  "new_GPU_launch_authorized": false
+}

@@ -1,0 +1,193 @@
+{
+  "arm": "refitbulk-nomask",
+  "note": "the refit-bulk MAYBE exactly as exp-027 measured it, priced against K2 rather than against v7. Arm 2's control.",
+  "clean": {
+    "july_loo": 284.1774,
+    "december": 204.9052,
+    "january": 218.2115
+  },
+  "vs_stack5": {
+    "july_loo": 1.0256,
+    "december": 0.7067,
+    "january": 0.9187
+  },
+  "vs_v6": {
+    "july_loo": 0.5445,
+    "december": 0.7482,
+    "january": 0.605
+  },
+  "ci_v6": {
+    "july_loo": [
+      -0.5445,
+      -1.0409,
+      -0.1718
+    ],
+    "december": [
+      -0.7482,
+      -1.4989,
+      -0.224
+    ],
+    "january": [
+      -0.605,
+      -0.9562,
+      -0.2532
+    ]
+  },
+  "ci_v6_no_noac": {
+    "july_loo": [
+      -0.6315,
+      -1.1898,
+      -0.1993
+    ],
+    "december": [
+      -0.7685,
+      -1.532,
+      -0.2302
+    ],
+    "january": [
+      -0.6399,
+      -1.0041,
+      -0.2679
+    ]
+  },
+  "slices": {
+    "july_loo": {
+      "n": 190713,
+      "rmse": 284.1774,
+      "le3600": 247.1144,
+      "gt3600": 2405.3532,
+      "no_nm": 1119.7288,
+      "no_nm_flight_id_only": 1120.2636,
+      "noac": 3407.3545,
+      "no_noac": 245.4108,
+      "n_no_nm": 3938
+    },
+    "december": {
+      "n": 165677,
+      "rmse": 204.9052,
+      "le3600": 192.4971,
+      "gt3600": 1779.6467,
+      "no_nm": 660.2369,
+      "no_nm_flight_id_only": 661.0331,
+      "noac": 2010.4588,
+      "no_noac": 199.5902,
+      "n_no_nm": 1649
+    },
+    "january": {
+      "n": 153704,
+      "rmse": 218.2115,
+      "le3600": 196.3088,
+      "gt3600": 2087.8115,
+      "no_nm": 948.6922,
+      "no_nm_flight_id_only": 949.2351,
+      "noac": 3509.4763,
+      "no_noac": 206.3625,
+      "n_no_nm": 1433
+    }
+  },
+  "clean_board": 257.0601,
+  "gain_board_vs_stack5": 0.9771,
+  "gain_board_vs_v6": 0.5628,
+  "predicted_board": 263.1294,
+  "worst_fold_vs_v6": 0.5445,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "vs_K2": {
+    "july_loo": 0.1422,
+    "december": 0.3105,
+    "january": 0.0467
+  },
+  "ci_K2": {
+    "july_loo": [
+      -0.1422,
+      -0.4965,
+      0.1436
+    ],
+    "december": [
+      -0.3105,
+      -0.8736,
+      0.0895
+    ],
+    "january": [
+      -0.0467,
+      -0.2958,
+      0.2287
+    ]
+  },
+  "ci_K2_no_noac": {
+    "july_loo": [
+      -0.1649,
+      -0.5604,
+      0.1661
+    ],
+    "december": [
+      -0.3189,
+      -0.8951,
+      0.0922
+    ],
+    "january": [
+      -0.0494,
+      -0.3116,
+      0.2443
+    ]
+  },
+  "clean_board_K2": 257.1653,
+  "gain_board_vs_K2": 0.1051,
+  "worst_fold_vs_K2": 0.0467,
+  "predicted_board_vs_K2": 262.9776,
+  "vs_v7": {
+    "july_loo": 0.4477,
+    "december": 0.6625,
+    "january": 0.3296
+  },
+  "ci_v7": {
+    "july_loo": [
+      -0.4477,
+      -0.9343,
+      -0.0773
+    ],
+    "december": [
+      -0.6625,
+      -1.4126,
+      -0.1428
+    ],
+    "january": [
+      -0.3296,
+      -0.6393,
+      -0.0042
+    ]
+  },
+  "ci_v7_no_noac": {
+    "july_loo": [
+      -0.5192,
+      -1.0651,
+      -0.0889
+    ],
+    "december": [
+      -0.6805,
+      -1.4388,
+      -0.1489
+    ],
+    "january": [
+      -0.3487,
+      -0.6739,
+      -0.0045
+    ]
+  },
+  "clean_board_v7": 257.4598,
+  "gain_board_vs_v7": 0.3997,
+  "worst_fold_vs_v7": 0.3296,
+  "predicted_board_vs_v7": 263.0626,
+  "gate_v6_inherited": true,
+  "gate_gain_v6_inherited": true,
+  "gate_folds_v6_inherited": true,
+  "gate_gain_K2": true,
+  "gate_folds_K2": true,
+  "gate_mask": true,
+  "source": "refit-bulk",
+  "keep": "all ten",
+  "hold_at_v7": []
+}

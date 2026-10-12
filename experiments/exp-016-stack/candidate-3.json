@@ -1,0 +1,49 @@
+{
+  "path": "submissions/candidates/exp-016-stack-3.parquet",
+  "sha256": "c39bb173e4233ac5cb5a30f290282571d0f61fccb53a20550ee1c4420c4a4fbe",
+  "n": 344841,
+  "members": [
+    "T-tailv2",
+    "C2-cat",
+    "L2-hub",
+    "D1-winter",
+    "N1-nmtail"
+  ],
+  "stacker": "a5 members-only, 5-seed bag, 300 rounds",
+  "offload": [
+    "noac"
+  ],
+  "fit_rows": 510096,
+  "fit_folds": [
+    "july_loo",
+    "december",
+    "january"
+  ],
+  "n_noac_in_fit": 491,
+  "board_estimate_rotated": 317.215,
+  "rotated": {
+    "july_loo": 295.882,
+    "december": 214.374,
+    "january": 342.168
+  },
+  "guard_bounds": [
+    -20657.0,
+    9069.0
+  ],
+  "floor": 60.0,
+  "guard_touched": 0,
+  "ids_match_template": true,
+  "min": 60.0,
+  "median": 957.5664938159109,
+  "p99": 2489.2483660411986,
+  "max": 120110.58354667806,
+  "n_below_floor": 0,
+  "n_nonfinite": 0,
+  "pins": "pins-members-blend3.json",
+  "vs candidate 2": {
+    "rms": 29.31290838985571,
+    "max": 1745.747653689814,
+    "min": -3390.2903154297283,
+    "n_differ": 344817
+  }
+}

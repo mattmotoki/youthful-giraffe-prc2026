@@ -1,0 +1,492 @@
+{
+ "what": "\u00a77ar \u2014 is there a SYSTEMATIC difference between the path that made H and the \u00a733/\u00a734",
+ "diff_table": [
+  {
+   "item": "the fitting function itself",
+   "H_path": "chainfold.py:127 fit_arm, called by chainbundle.py:54",
+   "new_path": "rung511.py:104 calls CF.fit_arm; classplacebo.py:144 calls CF.fit_arm; lfpgrider.py:98 calls CF.fit_arm; nullseed.py:55 fit_at_seed re-implements it",
+   "verdict": "IDENTICAL",
+   "note": "three of the four instruments call the very function that made H.  The fourth, nullseed.fit_at_seed:58-79, is fit_arm:128-149 line for line with two differences, both inert: it names CF.BU.FEATURES where fit_arm names BU.FEATURES (the same module object, chainfold.py:48-53), and it passes seed and leaves explicitly where fit_arm takes the module constants -- at seed 46 and 255 leaves that is the same call"
+  },
+  {
+   "item": "params: leaves / lr / rounds / min_data / bagging / feature fraction",
+   "H_path": "arms.py:71 LGB = predeclared.json['lgb'] -- objective l2, n_estimators 300, learning_rate 0.05, num_leaves 31, min_child_samples 100, feature_fraction 0.8, bagging_fraction 0.8, bagging_freq 1, lambda_l2 1.0, n_jobs 3, verbosity -1; chainfold.py:55 SETTING overrides num_leaves to 255",
+   "new_path": "rung511.py:102 sets CF.SETTING = {'num_leaves': leaves} (511 for A and C, 255 for B); classplacebo.py:142 and lfpgrider.py use 255; nullseed.py:70 passes {'num_leaves': leaves}",
+   "verdict": "IDENTICAL except num_leaves, which is the change under test in A and C",
+   "note": "arms.py:523-526 _lgb_fit always starts from the predeclared dict and applies only the override, so no other parameter can move"
+  },
+  {
+   "item": "seeds",
+   "H_path": "arms.py:73 SEED = predeclared['bootstrap']['seed'] = 46; _lgb_fit:526 p['seed'] = seed",
+   "new_path": "all instruments take the same default; nullseed.py:50 is the ONLY one that moves it, and its row 1 is seed 46, the shipped recipe",
+   "verdict": "IDENTICAL",
+   "note": "the bootstrap rng is np.random.default_rng(A.SEED) in both (chainbundle.py:64, rung511.py:124)"
+  },
+  {
+   "item": "threads",
+   "H_path": "n_jobs 3 in the predeclared params; the run line is OMP_NUM_THREADS=3 (chainbundle.py:16)",
+   "new_path": "the same n_jobs 3; the run lines are OMP_NUM_THREADS=3 (rung511.py:29, nullseed.py:26)",
+   "verdict": "IDENTICAL",
+   "note": "thread count would be the classic reproducibility risk -- rung511.py:14 names it -- but item 2 of this audit measures the refit and finds it exact, so it is not in play here"
+  },
+  {
+   "item": "early stopping",
+   "H_path": "arms.py:528-530 _lgb_fit calls m.fit(X, y) with no eval set and no callbacks",
+   "new_path": "the same function",
+   "verdict": "IDENTICAL",
+   "note": "there is no early stopping on either path"
+  },
+  {
+   "item": "the guard: cut and where it is applied",
+   "H_path": "chainfold.py:144 cuts[f] = G.cut(pan, others) -- guard.py:46-51, the p99.5 quantile of pbase - obs_taxi over the USABLE rows of the two OTHER folds; applied at chainfold.py:148 as a zero on the scored fold",
+   "new_path": "the same lines, since the same function runs; nullseed.py:74,78 repeats them verbatim",
+   "verdict": "IDENTICAL",
+   "note": "the cut is cross-fitted per scored fold and is recomputed from the panel, so a class change moves it -- that is a property of the change, not of the path"
+  },
+  {
+   "item": "the LFPG hold, and its order",
+   "H_path": "chainfold.py:56 HOLD = ('LFPG',); applied at chainfold.py:149, AFTER the fit, the floor and the guard",
+   "new_path": "rung511.py:102 sets CF.HOLD = () and rung511.py:86-93 hold_lfpg applies the same zero afterwards; classplacebo.py:149 and nullseed.py:116 do the same",
+   "verdict": "IDENTICAL IN EFFECT",
+   "note": "the hold is the last statement in fit_arm and nothing downstream of it reads the vector, so zeroing inside the function and zeroing after it are the same operation.  rung511.py:12-15 states the reason it is done outside: C and D must come from ONE fit"
+  },
+  {
+   "item": "the class and row set the fit consumes",
+   "H_path": "chainbundle.py:46-50 build_month -> panel_for(blocks, 1299, GAP_CUT_S); chainfold.py:115-124 panel_for patches A.month_block to return restrict(block, thr, gap) and then builds A.panel_with_block(BA.load()); fit_arm:132 fits on pan[g][pan[g].usable] of the two other folds",
+   "new_path": "rung511.py:218-231 the same build and the same panel_for, on the shipped block for A and the -ungated-km sibling for B and C; nullseed.py:91-95 the shipped block; classplacebo.py:122-133 patches A.month_block with blocks PRE-blanked by placebo_block",
+   "verdict": "IDENTICAL RULE, and the row set is the change under test",
+   "note": "classplacebo.placebo_block:64-91 is chainfold.restrict:92-113 line for line -- the same drop mask, the same column list, the same three flags -- with the forced-in and forced-out swap applied to `keep` before the blanking.  So the placebo differs from H in exactly 33 rows of class membership and in nothing else"
+  },
+  {
+   "item": "the price base and the residual definition",
+   "H_path": "chainfold.py:153-163 price_increment: pbase -> pbase + d_head, rbase -> rbase - d_head, inc = d_new - d_head, then BA.price",
+   "new_path": "rung511.py:124 calls CF.price_increment; every instrument prices through rung511.price",
+   "verdict": "IDENTICAL",
+   "note": "the only thing that changes between reads is WHICH vector is d_head"
+  },
+  {
+   "item": "the rotation: which folds train which",
+   "H_path": "chainfold.py:131-132 others = the two folds that are not scored; leave-one-fold-out",
+   "new_path": "the same line runs",
+   "verdict": "IDENTICAL",
+   "note": "the five contiguous day blocks inside the fitting months (arms.py:548-552, BLOCKS = 5) and the per-airport amplitude clipped to [0,1] (arms.py:553-554) are the same on both paths"
+  }
+ ],
+ "diff_verdict": "no procedural difference: every item the desk named is identical, and the only declared differences are the changes themselves -- num_leaves for A and C, the block for B and C, 33 rows of class membership for the placebo",
+ "independent_confirmation": {
+  "vector": "experiments/exp-046-surfacefit/work/d-lfpg-unheld-fit.npz",
+  "sha256": "01620e927dd21c230a5896ccac7a151343aeb24bc9fcabe240cec96f2fd2c8c1",
+  "what_it_is": "CF.fit_arm at 255 leaves with CF.HOLD = () on the SHIPPED class -- H's own recipe refitted through the new path (lfpgrider.py:95-99)",
+  "by_fold": {
+   "july_loo": {
+    "rows": 190713,
+    "rows_off_LFPG": 169001,
+    "rows_differing_off_LFPG": 0,
+    "max_abs_difference_off_LFPG_s": 0.0,
+    "bit_for_bit_off_LFPG": true,
+    "LFPG_rows_the_free_fit_moves": 552
+   },
+   "december": {
+    "rows": 165677,
+    "rows_off_LFPG": 145899,
+    "rows_differing_off_LFPG": 0,
+    "max_abs_difference_off_LFPG_s": 0.0,
+    "bit_for_bit_off_LFPG": true,
+    "LFPG_rows_the_free_fit_moves": 1246
+   },
+   "january": {
+    "rows": 153706,
+    "rows_off_LFPG": 135806,
+    "rows_differing_off_LFPG": 0,
+    "max_abs_difference_off_LFPG_s": 0.0,
+    "bit_for_bit_off_LFPG": true,
+    "LFPG_rows_the_free_fit_moves": 0
+   }
+  },
+  "reading": "the refit reproduces H exactly off LFPG on every fold, so the two paths are identical in fact and LightGBM is reproducible here.  The refit the desk offered to have me run would return the same answer and is not run"
+ },
+ "decomposition": {
+  "v19_increment_over_the_served_head_HELD": {
+   "arm_vector": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+   "head_is": "the served head 6fdf3951",
+   "lfpg_hold_applied_here": false,
+   "by_fold": {
+    "july_loo": {
+     "A_mean_rd": 296.7949,
+     "B_mean_dd": 442.3624,
+     "gain_2A_minus_B": 151.23,
+     "ratio_2A_over_B": 1.3419,
+     "rows_moved": 87868,
+     "ci95": [
+      96.7,
+      203.17
+     ]
+    },
+    "december": {
+     "A_mean_rd": 361.4117,
+     "B_mean_dd": 599.0403,
+     "gain_2A_minus_B": 123.78,
+     "ratio_2A_over_B": 1.2066,
+     "rows_moved": 100939,
+     "ci95": [
+      77.04,
+      172.13
+     ]
+    },
+    "january": {
+     "A_mean_rd": 310.461,
+     "B_mean_dd": 533.6615,
+     "gain_2A_minus_B": 87.26,
+     "ratio_2A_over_B": 1.1635,
+     "rows_moved": 69839,
+     "ci95": [
+      46.3,
+      128.84
+     ]
+    }
+   },
+   "board_all_row_gain_s": 0.20534
+  },
+  "v19_increment_over_the_served_head_unheld": {
+   "arm_vector": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+   "head_is": "the served head 6fdf3951",
+   "lfpg_hold_applied_here": false,
+   "by_fold": {
+    "july_loo": {
+     "A_mean_rd": 294.7936,
+     "B_mean_dd": 452.9184,
+     "gain_2A_minus_B": 136.67,
+     "ratio_2A_over_B": 1.3018,
+     "rows_moved": 88262,
+     "ci95": [
+      81.99,
+      189.6
+     ]
+    },
+    "december": {
+     "A_mean_rd": 358.3347,
+     "B_mean_dd": 623.4708,
+     "gain_2A_minus_B": 93.2,
+     "ratio_2A_over_B": 1.1495,
+     "rows_moved": 101928,
+     "ci95": [
+      45.34,
+      143.74
+     ]
+    },
+    "january": {
+     "A_mean_rd": 310.461,
+     "B_mean_dd": 533.6615,
+     "gain_2A_minus_B": 87.26,
+     "ratio_2A_over_B": 1.1635,
+     "rows_moved": 69839,
+     "ci95": [
+      46.3,
+      128.84
+     ]
+    }
+   },
+   "board_all_row_gain_s": 0.1918
+  },
+  "A_the_511_rung_shipped_class": {
+   "arm_vector": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-511-guard995.npz",
+   "head_is": "H, v18's bytes",
+   "lfpg_hold_applied_here": false,
+   "by_fold": {
+    "july_loo": {
+     "A_mean_rd": 144.0922,
+     "B_mean_dd": 350.7668,
+     "gain_2A_minus_B": -62.58,
+     "ratio_2A_over_B": 0.8216,
+     "rows_moved": 87868,
+     "ci95": [
+      -117.65,
+      -11.2
+     ]
+    },
+    "december": {
+     "A_mean_rd": 283.4973,
+     "B_mean_dd": 554.4588,
+     "gain_2A_minus_B": 12.54,
+     "ratio_2A_over_B": 1.0226,
+     "rows_moved": 100939,
+     "ci95": [
+      -43.86,
+      61.06
+     ]
+    },
+    "january": {
+     "A_mean_rd": 231.193,
+     "B_mean_dd": 468.5175,
+     "gain_2A_minus_B": -6.13,
+     "ratio_2A_over_B": 0.9869,
+     "rows_moved": 69840,
+     "ci95": [
+      -45.15,
+      29.92
+     ]
+    }
+   },
+   "board_all_row_gain_s": -0.06281
+  },
+  "B_the_plane_metric_class_255": {
+   "arm_vector": "experiments/exp-046-surfacefit/work/d-bundle-km1299-255-free.npz",
+   "head_is": "H, v18's bytes",
+   "lfpg_hold_applied_here": true,
+   "by_fold": {
+    "july_loo": {
+     "A_mean_rd": 116.6486,
+     "B_mean_dd": 318.7262,
+     "gain_2A_minus_B": -85.43,
+     "ratio_2A_over_B": 0.732,
+     "rows_moved": 87875,
+     "ci95": [
+      -134.53,
+      -43.22
+     ]
+    },
+    "december": {
+     "A_mean_rd": 267.0149,
+     "B_mean_dd": 510.816,
+     "gain_2A_minus_B": 23.21,
+     "ratio_2A_over_B": 1.0454,
+     "rows_moved": 100965,
+     "ci95": [
+      -46.23,
+      111.6
+     ]
+    },
+    "january": {
+     "A_mean_rd": 231.124,
+     "B_mean_dd": 437.0177,
+     "gain_2A_minus_B": 25.23,
+     "ratio_2A_over_B": 1.0577,
+     "rows_moved": 69839,
+     "ci95": [
+      -24.7,
+      73.37
+     ]
+    }
+   },
+   "board_all_row_gain_s": -0.06087
+  },
+  "placebo_1_33_rows": {
+   "arm_vector": "experiments/exp-046-surfacefit/work/d-bundle-placebo1-255-free.npz",
+   "head_is": "H, v18's bytes",
+   "lfpg_hold_applied_here": true,
+   "by_fold": {
+    "july_loo": {
+     "A_mean_rd": 134.0933,
+     "B_mean_dd": 316.4889,
+     "gain_2A_minus_B": -48.3,
+     "ratio_2A_over_B": 0.8474,
+     "rows_moved": 87874,
+     "ci95": [
+      -100.51,
+      4.49
+     ]
+    },
+    "december": {
+     "A_mean_rd": 256.6083,
+     "B_mean_dd": 509.3012,
+     "gain_2A_minus_B": 3.92,
+     "ratio_2A_over_B": 1.0077,
+     "rows_moved": 100963,
+     "ci95": [
+      -40.42,
+      46.81
+     ]
+    },
+    "january": {
+     "A_mean_rd": 203.2856,
+     "B_mean_dd": 430.9749,
+     "gain_2A_minus_B": -24.4,
+     "ratio_2A_over_B": 0.9434,
+     "rows_moved": 69839,
+     "ci95": [
+      -72.28,
+      15.45
+     ]
+    }
+   },
+   "board_all_row_gain_s": -0.06304
+  },
+  "placebo_2_33_rows": {
+   "arm_vector": "experiments/exp-046-surfacefit/work/d-bundle-placebo2-255-free.npz",
+   "head_is": "H, v18's bytes",
+   "lfpg_hold_applied_here": true,
+   "by_fold": {
+    "july_loo": {
+     "A_mean_rd": 125.96,
+     "B_mean_dd": 317.558,
+     "gain_2A_minus_B": -65.64,
+     "ratio_2A_over_B": 0.7933,
+     "rows_moved": 87875,
+     "ci95": [
+      -101.18,
+      -34.2
+     ]
+    },
+    "december": {
+     "A_mean_rd": 262.8192,
+     "B_mean_dd": 512.0784,
+     "gain_2A_minus_B": 13.56,
+     "ratio_2A_over_B": 1.0265,
+     "rows_moved": 100961,
+     "ci95": [
+      -48.73,
+      71.65
+     ]
+    },
+    "january": {
+     "A_mean_rd": 209.2539,
+     "B_mean_dd": 421.6475,
+     "gain_2A_minus_B": -3.14,
+     "ratio_2A_over_B": 0.9926,
+     "rows_moved": 69839,
+     "ci95": [
+      -57.43,
+      52.65
+     ]
+    }
+   },
+   "board_all_row_gain_s": -0.06344
+  },
+  "placebo_3_33_rows": {
+   "arm_vector": "experiments/exp-046-surfacefit/work/d-bundle-placebo3-255-free.npz",
+   "head_is": "H, v18's bytes",
+   "lfpg_hold_applied_here": true,
+   "by_fold": {
+    "july_loo": {
+     "A_mean_rd": 120.1405,
+     "B_mean_dd": 321.5347,
+     "gain_2A_minus_B": -81.25,
+     "ratio_2A_over_B": 0.7473,
+     "rows_moved": 87875,
+     "ci95": [
+      -126.66,
+      -34.94
+     ]
+    },
+    "december": {
+     "A_mean_rd": 241.1123,
+     "B_mean_dd": 507.47,
+     "gain_2A_minus_B": -25.25,
+     "ratio_2A_over_B": 0.9503,
+     "rows_moved": 100960,
+     "ci95": [
+      -72.3,
+      20.16
+     ]
+    },
+    "january": {
+     "A_mean_rd": 224.5523,
+     "B_mean_dd": 419.018,
+     "gain_2A_minus_B": 30.09,
+     "ratio_2A_over_B": 1.0718,
+     "rows_moved": 69839,
+     "ci95": [
+      -26.2,
+      98.16
+     ]
+    }
+   },
+   "board_all_row_gain_s": -0.05339
+  }
+ },
+ "reading": {
+  "ratio_2A_over_B_is_the_whole_story": "gain = 2A - B, so a read is positive exactly when 2A/B > 1.  That ratio is twice the regression coefficient of the residual on the increment: it says whether the increment is applied at an amplitude its own signal supports.",
+  "v19_held_the_gate_reading": {
+   "july_loo": 1.3419,
+   "december": 1.2066,
+   "january": 1.1635
+  },
+  "v19_unheld_the_bundle_reading": {
+   "july_loo": 1.3018,
+   "december": 1.1495,
+   "january": 1.1635
+  },
+  "A": {
+   "july_loo": 0.8216,
+   "december": 1.0226,
+   "january": 0.9869
+  },
+  "B": {
+   "july_loo": 0.732,
+   "december": 1.0454,
+   "january": 1.0577
+  },
+  "placebo_1": {
+   "july_loo": 0.8474,
+   "december": 1.0077,
+   "january": 0.9434
+  },
+  "placebo_2": {
+   "july_loo": 0.7933,
+   "december": 1.0265,
+   "january": 0.9926
+  },
+  "placebo_3": {
+   "july_loo": 0.7473,
+   "december": 0.9503,
+   "january": 1.0718
+  }
+ },
+ "placebo_envelope": {
+  "draws": [
+   "placebo_1_33_rows",
+   "placebo_2_33_rows",
+   "placebo_3_33_rows"
+  ],
+  "by_fold_s2_per_row": {
+   "july_loo": [
+    -81.25,
+    -48.3
+   ],
+   "december": [
+    -25.25,
+    13.56
+   ],
+   "january": [
+    -24.4,
+    30.09
+   ]
+  },
+  "board_all_row_s": [
+   -0.06344,
+   -0.05339
+  ],
+  "reads": {
+   "A_the_511_rung_shipped_class": {
+    "by_fold": {
+     "july_loo": -62.58,
+     "december": 12.54,
+     "january": -6.13
+    },
+    "inside_the_envelope": {
+     "july_loo": true,
+     "december": true,
+     "january": true
+    },
+    "inside_on_every_fold": true,
+    "board_all_row_s": -0.06281,
+    "board_inside_the_envelope": true
+   },
+   "B_the_plane_metric_class_255": {
+    "by_fold": {
+     "july_loo": -85.43,
+     "december": 23.21,
+     "january": 25.23
+    },
+    "inside_the_envelope": {
+     "july_loo": false,
+     "december": false,
+     "january": true
+    },
+    "inside_on_every_fold": false,
+    "board_all_row_s": -0.06087,
+    "board_inside_the_envelope": true
+   }
+  }
+ }
+}

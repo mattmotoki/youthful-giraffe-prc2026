@@ -1,0 +1,303 @@
+{
+  "arm": "c_lgb_shipped",
+  "base": {
+    "file": "submissions/candidates/exp-035-k2climb-v11member.parquet",
+    "sha256": "48dd572d61ff2403f13614ce04bdc3a8fd0dbdb5175bef7eb143650ea520ec52"
+  },
+  "census": {
+    "by_airport": {
+      "EDDF": {
+        "fold_rms_update_s": 101.55995726994279,
+        "moved": 14696,
+        "moved_share": 0.4047,
+        "ratio_to_fold": 0.9906808482181881,
+        "rms_update_s": 100.61350461318986,
+        "rows": 36317,
+        "within_a_third": true
+      },
+      "EDDM": {
+        "fold_rms_update_s": 109.73322059667709,
+        "moved": 24992,
+        "moved_share": 0.9625,
+        "ratio_to_fold": 0.9537389903386811,
+        "rms_update_s": 104.65685101848658,
+        "rows": 25966,
+        "within_a_third": true
+      },
+      "EGLL": {
+        "fold_rms_update_s": 113.49940589574858,
+        "moved": 33312,
+        "moved_share": 0.8361,
+        "ratio_to_fold": 0.9376222364897469,
+        "rms_update_s": 106.41956679622935,
+        "rows": 39840,
+        "within_a_third": true
+      },
+      "EHAM": {
+        "fold_rms_update_s": 91.88335265282944,
+        "moved": 35573,
+        "moved_share": 0.9317,
+        "ratio_to_fold": 1.0892496632512738,
+        "rms_update_s": 100.08391093549251,
+        "rows": 38182,
+        "within_a_third": true
+      },
+      "LEBL": {
+        "fold_rms_update_s": 91.27763976366985,
+        "moved": 26591,
+        "moved_share": 0.884,
+        "ratio_to_fold": 1.0634830611538326,
+        "rms_update_s": 97.07222375076441,
+        "rows": 30080,
+        "within_a_third": true
+      },
+      "LEMD": {
+        "fold_rms_update_s": 104.88293454277623,
+        "moved": 26833,
+        "moved_share": 0.7261,
+        "ratio_to_fold": 0.9131375610413932,
+        "rms_update_s": 95.77254704325478,
+        "rows": 36954,
+        "within_a_third": true
+      },
+      "LFPG": {
+        "fold_rms_update_s": 78.24132947996779,
+        "moved": 1612,
+        "moved_share": 0.0404,
+        "ratio_to_fold": 1.487455147337249,
+        "rms_update_s": 116.38046826948774,
+        "rows": 39872,
+        "within_a_third": false
+      },
+      "LIRF": {
+        "fold_rms_update_s": 101.95186669607429,
+        "moved": 5298,
+        "moved_share": 0.197,
+        "ratio_to_fold": 0.6702093053691018,
+        "rms_update_s": 68.32908975945922,
+        "rows": 26899,
+        "within_a_third": true
+      },
+      "LSZH": {
+        "fold_rms_update_s": 95.45654892597292,
+        "moved": 21188,
+        "moved_share": 0.9152,
+        "ratio_to_fold": 1.097394746286071,
+        "rms_update_s": 104.75351528996198,
+        "rows": 23150,
+        "within_a_third": true
+      },
+      "LTFM": {
+        "fold_rms_update_s": null,
+        "moved": 0,
+        "moved_share": 0.0,
+        "ratio_to_fold": null,
+        "rms_update_s": 0.0,
+        "rows": 47581,
+        "within_a_third": false
+      }
+    },
+    "finite": true,
+    "floor_bound_rows": 0,
+    "handover_to_exp_047": {
+      "boundary_is_shared": "exp-047-queue/code/block.py imports this lane's code/block.py as the repo's one matcher and keys its class on the same obs_has_clock column, so the two lanes' populations are complementary by construction and not by agreement. The noac hold is this lane's and any composition of the two candidates has to keep it.",
+      "boundary_matcher_matches_the_pin": true,
+      "boundary_matcher_sha256": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+      "boundary_matcher_sha256_pinned": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+      "composition": "desk, 2026-09-08 14:10: this lane prices and serves the with-clock class and the base elsewhere, exp-047-queue prices and serves the no-clock class and the base elsewhere, each on its own review round; the desk composes the two disjoint updates on the base and verifies the composed file, and either candidate may go up alone.",
+      "exp_047_interface_is_stale": {
+        "2025-01": false,
+        "2025-07": false,
+        "2025-12": false,
+        "2026-01": false,
+        "2026-07": false
+      },
+      "exp_047_interface_matcher_sha256": {
+        "2025-01": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+        "2025-07": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+        "2025-12": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+        "2026-01": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+        "2026-07": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c"
+      },
+      "interface": "artifacts/exp-047/block/<month>.parquet, keyed by MVT_ID_mvt",
+      "left_at_base": 154746,
+      "left_at_base_by_reach_class": {
+        "matched_no_clock": 11492,
+        "strict": 38,
+        "unmatched": 143216
+      },
+      "rows": 344841,
+      "served_class": "obs_has_clock & obs_taxi.notna() & ~noac",
+      "served_rows": 190095
+    },
+    "max_abs_update_s": 1264.9567009576288,
+    "min_prediction_s": 60.41918729411211,
+    "moved": 190095,
+    "noac_identical_to_the_base": true,
+    "noac_rows": 388,
+    "outside_the_with_clock_class_identical_to_the_base": true,
+    "rms_update_s": 100.80970322866959,
+    "rows": 344841,
+    "unchanged": 154746
+  },
+  "fit": {
+    "info": {
+      "fit_rows_by_airport": {
+        "EDDF": 44083,
+        "EDDM": 28206,
+        "EGLL": 18431,
+        "EHAM": 57252,
+        "LEBL": 37639,
+        "LEMD": 21261,
+        "LFPG": 1401,
+        "LIRF": 18701,
+        "LSZH": 29511
+      },
+      "n_features": 103,
+      "oof_rmse_vs_r11": 168.31455775224154,
+      "r11_rmse_on_fit_rows": 201.8613116544835,
+      "weights": {
+        "EDDF": 1.0,
+        "EDDM": 1.0,
+        "EGLL": 1.0,
+        "EHAM": 1.0,
+        "LEBL": 1.0,
+        "LEMD": 1.0,
+        "LFPG": 0.9477489207309551,
+        "LIRF": 0.9551343075752131,
+        "LSZH": 1.0
+      }
+    },
+    "months": [
+      "2025-01",
+      "2025-07",
+      "2025-12"
+    ],
+    "rows": 256485
+  },
+  "gate": {
+    "arm_choice": {
+      "chosen": "c_lgb_shipped",
+      "considered": [
+        {
+          "all_row_gain_s": 8.26934689522352,
+          "arm": "c_lgb_shipped_nbr",
+          "clean_gain_s": 10.012498128460578,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.141025342956539,
+          "arm": "c_lgb_shipped",
+          "clean_gain_s": 9.85614010821834,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 5.029422456086991,
+          "arm": "b_lgb_nbr",
+          "clean_gain_s": 6.074440470454476,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 4.203659086196581,
+          "arm": "b_lgb",
+          "clean_gain_s": 5.073927135198261,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 2.221840378935042,
+          "arm": "a_linear",
+          "clean_gain_s": 2.67785123157185,
+          "eligible": false,
+          "every_fold_interval_clear": false,
+          "servable": true,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 2.088360306207278,
+          "arm": "a_linear_reach",
+          "clean_gain_s": 2.5167269746976046,
+          "eligible": false,
+          "every_fold_interval_clear": false,
+          "servable": true,
+          "tail_clause_passes": false
+        }
+      ],
+      "excluded_by_name": [
+        "b_lgb_placebo",
+        "c_lgb_shipped_noobs",
+        "c_lgb_shipped_placebo"
+      ],
+      "rule": "largest clean gain among arms with every fold interval clear and the registered tail clause passing on every fold; controls and placebos excluded by name"
+    },
+    "both_checked_before_the_write": true,
+    "fold": {
+      "board_all_row_gain_s": 8.141025342956539,
+      "board_interval_ci95": [
+        6.45794421315823,
+        10.238026895164936
+      ],
+      "every_fold_interval_clear": true,
+      "passes": true,
+      "reason": ""
+    },
+    "rms_band_on_the_ratio": [
+      0.6666666666666666,
+      1.3333333333333333
+    ],
+    "rms_within_a_third_everywhere": false,
+    "tail_clause": {
+      "available": true,
+      "by_fold": {
+        "december": {
+          "passes": true,
+          "rmse_gain_s": 19.79106351590758
+        },
+        "january": {
+          "passes": true,
+          "rmse_gain_s": 0.2764640430250438
+        },
+        "july_loo": {
+          "passes": true,
+          "rmse_gain_s": -0.09702304319580435
+        }
+      },
+      "clause": "rows with y > 3600 s not worse by more than 1 s of RMSE (assignments/k2climb.md line 24); tail rule reads it as a secondary guard and not a gate",
+      "passes_on_every_fold": true
+    }
+  },
+  "is_candidate": false,
+  "read_back_identical_to_the_vector_priced": true,
+  "rule": {
+    "cover": {
+      "airport_days_by_rule": {
+        "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0": 1323
+      },
+      "airport_days_present": 1323,
+      "airport_days_rejected": 0,
+      "chosen": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "n_rules": 1
+    },
+    "days_wrong_rule": [],
+    "normalised_by_airborne_alt_ok": true,
+    "rules_seen": [
+      "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+    ]
+  },
+  "sha256": "3d6d5f87a364aad084651306e64ebfcec43d2a49fe8ab819a994cd1a05c00f19",
+  "why_not_a_candidate": [
+    "the served update's RMS per airport is outside [0.6666666666666666, 1.3333333333333333] of the fold side's"
+  ],
+  "written_to": "experiments/exp-046-surfacefit/work/dry-run.parquet"
+}

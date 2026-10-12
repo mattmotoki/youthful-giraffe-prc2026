@@ -1,0 +1,9 @@
+shared airport x 10-min component PER FOLD (singleton-corrected, minn=2),
+no-noac rows, as a percentage of that fold's own MSE and in seconds of that fold's RMSE.
+  head     fold               n      RMSE  shared %  oracle s
+  blend5   july_loo     190,374   247.902    14.88%     19.19
+  blend5   december     165,588   201.750    13.89%     14.54
+  blend5   january      153,641   208.470    12.11%     13.03
+  stack5   july_loo     190,374   246.600    14.37%     18.40
+  stack5   december     165,588   200.316    13.33%     13.83
+  stack5   january      153,641   207.334    11.85%     12.67

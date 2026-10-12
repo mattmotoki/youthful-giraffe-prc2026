@@ -1,0 +1,122 @@
+{
+  "name": "exp-035-k2climb-v11member",
+  "path": "submissions/candidates/exp-035-k2climb-v11member.parquet",
+  "decision": "tail rule, desk 2026-09-08 13:50 UTC",
+  "rule": "masked = where(airport in exp-036 keep, head, v7); served = masked + s * (stack-5 - masked)",
+  "s": 0.217,
+  "keep_airports": [
+    "EDDM",
+    "EGLL",
+    "LEBL",
+    "LEMD",
+    "LFPG",
+    "LIRF",
+    "LSZH",
+    "LTFM"
+  ],
+  "hold_at_v7": [
+    "EDDF",
+    "EHAM"
+  ],
+  "head_file": "submissions/candidates/exp-035-k2climb-mod-refitbulk.parquet",
+  "head_sha256": "4376f9b231d5ebe9a430a257c3da248e8e0c428e95a8a9b733a84fc963eea8a7",
+  "head": "the climbed member (phi,surface,deice) through exp-027's refit-bulk arm; rotation analysis/refit-bulk-k2c-mod.json",
+  "v7_file": "submissions/candidates/exp-030-eham-out.parquet",
+  "v7_sha256": "67b70ee379e62a2a3bc9d91c9d771112baf3233efa3f74f4f95adbd7a3c03ef7",
+  "stack5_file": "submissions/candidates/exp-026-stack-5.parquet",
+  "stack5_sha256": "94f18e47a73265a6db66811ededfc3c935fb2a37fac04bf0cd34d45af708a2a1",
+  "v11_file": "submissions/candidates/exp-038-v10-stack5-blend.parquet",
+  "v11_sha256": "42ca5ee6410938d56c8830e9ec3980d806633c3b2ff15963c0ffe2fe97c39f8c",
+  "gates_table": "experiments/exp-026-rebuild/candidates/ranking-gates.parquet",
+  "gates_table_sha256": "7f14aeea2219eef62b918637b015268cafe15c905a2d4072b878f791e9e2dbfd",
+  "gate_k2_head_returns_v10": 0.0,
+  "gate_k2_head_returns_v11": 0.0,
+  "k2_head_file": "submissions/candidates/exp-027-k2-refitbulk.parquet",
+  "k2_head_sha256": "3e6f3681025f60d7d8af9365c1c18c60d47df146c888c8b80351573211e2cf74",
+  "v10_file": "submissions/uploaded/youthful-giraffe_v10.parquet",
+  "v10_sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78",
+  "sha256": "48dd572d61ff2403f13614ce04bdc3a8fd0dbdb5175bef7eb143650ea520ec52",
+  "n_rows": 344841,
+  "n_from_head": 270342,
+  "n_from_v7": 74499,
+  "n_moved_vs_v11": 269939,
+  "rms_move_vs_v11": 14.4011,
+  "max_abs_move_vs_v11": 607.5814,
+  "fold_update_rms": {
+    "july_loo": 17.083,
+    "december": 12.497,
+    "january": 15.669
+  },
+  "served_over_fold_rms_ratio": 0.9548,
+  "n_noac": 388,
+  "n_eham": 38182,
+  "n_eddf": 36317,
+  "min": 60.41918729411211,
+  "median": 954.1828169726641,
+  "p99": 2578.396783394618,
+  "max": 115306.59901833169,
+  "measured_fold_side": {
+    "gain_board_allrow": 0.3762476861617756,
+    "ci_allrow_1day": [
+      0.2527316405171945,
+      0.5242898699174957
+    ],
+    "gain_board_clean": 0.4460337375538188,
+    "ci_clean_1day": [
+      0.3224000352179658,
+      0.5635439158989761
+    ],
+    "per_fold": {
+      "july_loo": {
+        "gain_rmse": 0.48090852753841773,
+        "ci": [
+          0.31698917579021213,
+          0.6343246860591435
+        ]
+      },
+      "december": {
+        "gain_rmse": 0.5379410128632003,
+        "ci": [
+          0.32536974175647304,
+          0.7780360972231747
+        ]
+      },
+      "january": {
+        "gain_rmse": 0.2684758688283182,
+        "ci": [
+          0.1230342465556518,
+          0.5262098337835713
+        ]
+      }
+    },
+    "tail_clause": {
+      "july_loo": {
+        "n": 656,
+        "rmse_v7": 2406.9612,
+        "rmse_v11": 2403.4748,
+        "rmse_cand": 2395.7758,
+        "vs_v7": 11.1854,
+        "vs_v11": 7.699,
+        "clause_pass": true
+      },
+      "december": {
+        "n": 261,
+        "rmse_v7": 1798.9043,
+        "rmse_v11": 1782.2892,
+        "rmse_cand": 1773.9137,
+        "vs_v7": 24.9906,
+        "vs_v11": 8.3755,
+        "clause_pass": true
+      },
+      "january": {
+        "n": 323,
+        "rmse_v7": 2088.4263,
+        "rmse_v11": 2086.1978,
+        "rmse_cand": 2092.2838,
+        "vs_v7": -3.8575,
+        "vs_v11": -6.086,
+        "clause_pass": false
+      }
+    }
+  }
+}

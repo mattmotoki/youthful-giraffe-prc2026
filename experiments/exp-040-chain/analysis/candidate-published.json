@@ -1,0 +1,182 @@
+{
+  "arm": "published",
+  "rule": "v11 + (H' - v10), H' = published head on nm_bulk+nm_late, v10 elsewhere",
+  "held_regimes": [
+    "nm_bulk",
+    "nm_late"
+  ],
+  "floor": 60.0,
+  "floor_bound_rows": 0,
+  "regime_table": {
+    "path": "experiments/exp-026-rebuild/candidates/ranking-gates.parquet",
+    "sha256": "7f14aeea2219eef62b918637b015268cafe15c905a2d4072b878f791e9e2dbfd"
+  },
+  "served_mask_sha256": "f964eb6a7bda9a15e6d235277b9301b2177bc7283d2116beea9fb99c24af43da",
+  "served_mask_rows": 339558,
+  "rank_gate": {
+    "ranking_rms": 33.80347120486331,
+    "fold_rms_range": [
+      29.453763170663407,
+      35.087416275780946
+    ],
+    "ratio_to_fold_mean": 1.026168915514146,
+    "explained": true
+  },
+  "sources": {
+    "v10": {
+      "path": "submissions/uploaded/youthful-giraffe_v10.parquet",
+      "sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78"
+    },
+    "v11": {
+      "path": "submissions/uploaded/youthful-giraffe_v11.parquet",
+      "sha256": "42ca5ee6410938d56c8830e9ec3980d806633c3b2ff15963c0ffe2fe97c39f8c"
+    },
+    "head": {
+      "path": "experiments/exp-040-chain/candidates/head-published.parquet",
+      "sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78",
+      "member_ranking": "experiments/exp-012-blend2/published/L2-hub8725-ranking.parquet"
+    }
+  },
+  "serving_path_gate": {
+    "published_head_sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78",
+    "v10_sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78",
+    "pass": true
+  },
+  "rows": 344841,
+  "rows_changed_vs_v11": 0,
+  "rows_identical_to_v11": 344841,
+  "rms_vs_v11": 0.0,
+  "rms_changed_vs_v11": 0.0,
+  "max_abs_vs_v11": 0.0,
+  "min": 60.41918729411211,
+  "max": 115306.59901833169,
+  "finite": true,
+  "by_regime": {
+    "nm_bulk": {
+      "rows": 323468,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "nm_late": {
+      "rows": 16090,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "noac": {
+      "rows": 388,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "nonm": {
+      "rows": 4895,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    }
+  },
+  "by_airport": {
+    "EDDF": {
+      "rows": 36317,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "EDDM": {
+      "rows": 25966,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "EGLL": {
+      "rows": 39840,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "EHAM": {
+      "rows": 38182,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "LEBL": {
+      "rows": 30080,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "LEMD": {
+      "rows": 36954,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "LFPG": {
+      "rows": 39872,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "LIRF": {
+      "rows": 26899,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "LSZH": {
+      "rows": 23150,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    },
+    "LTFM": {
+      "rows": 47581,
+      "changed": 0,
+      "rms": 0.0,
+      "max_abs": 0.0
+    }
+  },
+  "fold_side_update": {
+    "july_loo": {
+      "rows_changed": 143906,
+      "rms_changed": 4.624438774722082,
+      "rms_all": 4.017060160848408
+    },
+    "december": {
+      "rows_changed": 127663,
+      "rms_changed": 3.847372977366756,
+      "rms_all": 3.3772693782465235
+    },
+    "january": {
+      "rows_changed": 118775,
+      "rms_changed": 4.262736704579912,
+      "rms_all": 3.7471891654191314
+    }
+  },
+  "regime_gate_arm": null,
+  "held_nonm_rows": 4895,
+  "held_nonm_max_abs_vs_v11": 0.0,
+  "held_noac_rows": 388,
+  "held_noac_max_abs_vs_v11": 0.0,
+  "held_EHAM_rows": 38182,
+  "held_EHAM_max_abs_vs_v11": 0.0,
+  "held_EDDF_rows": 36317,
+  "held_EDDF_max_abs_vs_v11": 0.0,
+  "update_rms_served": 0.0,
+  "update_rms_fold_range": [
+    3.847372977366756,
+    4.624438774722082
+  ],
+  "update_rms_fold_mean": 4.244849485556251,
+  "update_rms_ratio": 0.0,
+  "update_rms_within_third": false,
+  "sha256": "42ca5ee6410938d56c8830e9ec3980d806633c3b2ff15963c0ffe2fe97c39f8c",
+  "path": "experiments/exp-040-chain/candidates/selftest-published.parquet",
+  "selftest_v11_sha256": "42ca5ee6410938d56c8830e9ec3980d806633c3b2ff15963c0ffe2fe97c39f8c",
+  "selftest_pass": true,
+  "wall_s": 0.2,
+  "rebuild_max_abs": 0.0
+}

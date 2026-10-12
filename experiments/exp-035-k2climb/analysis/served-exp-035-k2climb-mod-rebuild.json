@@ -1,0 +1,62 @@
+{
+  "name": "exp-035-k2climb-mod-rebuild",
+  "identity": false,
+  "members": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "K2-window",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "anchor_members": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "F1-fresh",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "blocks": [
+    "depx"
+  ],
+  "win": 600.0,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "exclude_airports": [
+    "EHAM"
+  ],
+  "base": "submissions/candidates/exp-026-stack-5.parquet",
+  "base_sha256": "94f18e47a73265a6db66811ededfc3c935fb2a37fac04bf0cd34d45af708a2a1",
+  "k2_ranking": "experiments/exp-035-k2climb/candidates/mod-ranking.parquet",
+  "k2_ranking_sha256": "09e430521deee65e05a2505dcdcadd26fddafa695a79cf85c8cb2fa0c2247a30",
+  "arm": "k2-hold-eham-out",
+  "anchor_kind": "blend5",
+  "measured_arm": "k2-hold-eham-out",
+  "measured_clean": {
+    "july_loo": 283.9958,
+    "december": 204.8691,
+    "january": 217.9169
+  },
+  "measured_gain_vs_v7": 0.6223,
+  "rows_served": 306271,
+  "rows_from_base": 38570,
+  "guard_touched": 768,
+  "member_prep_touched": 1930,
+  "seeds": [
+    7,
+    107,
+    207,
+    307,
+    407
+  ],
+  "rounds": 300,
+  "lightgbm": "4.7.0",
+  "wall_s": 26.1,
+  "sha256": "e6de36242cbe8edd4e5673854eaaef8f87cb5bdad296289cdd5c45c6b9e6eb0d"
+}

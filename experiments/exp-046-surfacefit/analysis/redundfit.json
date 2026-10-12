@@ -1,0 +1,128 @@
+{
+  "section": "RESULTS 47.75",
+  "seed": 4775,
+  "n_boot": 2000,
+  "cut_C": 0.8978377841709668,
+  "statistic": "R_f = G_f(F2|m1)/G_f(N2|m1); G = R.price mse_gain_s2 over the whole fold",
+  "by_fold": {
+    "december": {
+      "arms": {
+        "N2": {
+          "source": "2025-10",
+          "artifact": "analysis/onemonth-only202510-folds-dec-matchedN2.json",
+          "rows_fitted_extra": 36523,
+          "mvt_id_sha16": "15b6690e5a16582a",
+          "rows_moved": 102209,
+          "G_whole_fold_s2": 368.8083108815599,
+          "G_ci95": [
+            286.6499594643537,
+            444.0807985518419
+          ],
+          "G_six_airport_class_rows_s2_record_only": 699.6787315149023
+        },
+        "F2": {
+          "source": "2025-02",
+          "artifact": "analysis/onemonth-only202502-folds-dec-matchedF2.json",
+          "rows_fitted_extra": 36523,
+          "mvt_id_sha16": "ba70b8fa1bd96ba2",
+          "rows_moved": 102209,
+          "G_whole_fold_s2": 258.43824774983017,
+          "G_ci95": [
+            172.4616939789919,
+            364.70667770838025
+          ],
+          "G_six_airport_class_rows_s2_record_only": 526.7859813660242
+        }
+      },
+      "R_point": 0.7007386767724595,
+      "R_ci95": [
+        0.4907525589308144,
+        1.0080798569041298
+      ],
+      "R_band_by_fold": "STRADDLES",
+      "share_of_draws_with_nonpositive_R": 0.0,
+      "increments_clear_zero": true,
+      "R_six_airport_class_rows_record_only": {
+        "point": 0.7528969477540912,
+        "ci95": [
+          0.5134653563712894,
+          1.104579857692095
+        ],
+        "rows": 77921
+      },
+      "comparators": {
+        "per_row_4769": 0.724,
+        "raw_4769": 0.477,
+        "no_member1_4774": 1.1068
+      },
+      "rows_scored": 165677,
+      "days": 31
+    },
+    "january": {
+      "arms": {
+        "N2": {
+          "source": "2025-03",
+          "artifact": "analysis/onemonth-only202503-folds-jan-matchedN2.json",
+          "rows_fitted_extra": 33473,
+          "mvt_id_sha16": "d58a308f1c605528",
+          "rows_moved": 69834,
+          "G_whole_fold_s2": 392.54508453678875,
+          "G_ci95": [
+            322.31193822083446,
+            464.7980992779533
+          ],
+          "G_six_airport_class_rows_s2_record_only": 858.9185027155752
+        },
+        "F2": {
+          "source": "2025-11",
+          "artifact": "analysis/onemonth-only202511-folds-jan-matchedF2.json",
+          "rows_fitted_extra": 33473,
+          "mvt_id_sha16": "6ff267e64e50d5ef",
+          "rows_moved": 69834,
+          "G_whole_fold_s2": 245.4170194391997,
+          "G_ci95": [
+            179.313630150029,
+            324.398652617396
+          ],
+          "G_six_airport_class_rows_s2_record_only": 536.9595666201059
+        }
+      },
+      "R_point": 0.6251944785623715,
+      "R_ci95": [
+        0.4651406800940568,
+        0.8055345539468288
+      ],
+      "R_band_by_fold": "RETURNS",
+      "share_of_draws_with_nonpositive_R": 0.0,
+      "increments_clear_zero": true,
+      "R_six_airport_class_rows_record_only": {
+        "point": 0.6251577593478811,
+        "ci95": [
+          0.46514068009405674,
+          0.8054324317199775
+        ],
+        "rows": 70242
+      },
+      "comparators": {
+        "per_row_4769": 0.788,
+        "raw_4769": 0.903,
+        "no_member1_4774": 1.0291
+      },
+      "rows_scored": 153706,
+      "days": 31
+    }
+  },
+  "R_pooled": 0.6618896823740675,
+  "R_pooled_ci95": [
+    0.525001149231227,
+    0.8311124938954235
+  ],
+  "pooled_draws_usable": 2000,
+  "verdict": "RETURNS",
+  "comparators_pooled": {
+    "per_row_4769": 0.7553224477003183,
+    "raw_4769": 0.6563009980184397,
+    "no_member1_4774": 1.0672431213177247
+  },
+  "seconds": 3.3
+}

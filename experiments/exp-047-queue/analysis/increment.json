@@ -1,0 +1,299 @@
+{
+  "cells_served": [
+    "EDDF/reached",
+    "LTFM/unreached"
+  ],
+  "conventions": {
+    "cross": {
+      "every_fold_clear": false,
+      "per_fold": {
+        "december": {
+          "by_cell": {
+            "EDDF/reached": {
+              "ci95_s2": [
+                0.0,
+                0.0
+              ],
+              "clear_of_zero": false,
+              "mean_s2": 0.0,
+              "rows": 1561
+            },
+            "LTFM/unreached": {
+              "ci95_s2": [
+                63.68,
+                477.81
+              ],
+              "clear_of_zero": true,
+              "mean_s2": 237.33,
+              "rows": 22608
+            }
+          },
+          "ci95_s2": [
+            61.99,
+            463.07
+          ],
+          "clear_of_zero": true,
+          "fit_folds": [
+            "july_loo",
+            "january"
+          ],
+          "mean_s2": 222.0,
+          "rms_move_s": {
+            "N": 19.664,
+            "N_reach": 21.056,
+            "difference": 8.4895
+          },
+          "rmse_served": {
+            "N": 199.7847,
+            "N_reach": 199.2284,
+            "head": 200.7134
+          },
+          "rows": 24169
+        },
+        "january": {
+          "by_cell": {
+            "EDDF/reached": {
+              "ci95_s2": [
+                0.0,
+                0.0
+              ],
+              "clear_of_zero": false,
+              "mean_s2": 0.0,
+              "rows": 3586
+            },
+            "LTFM/unreached": {
+              "ci95_s2": [
+                -94.72,
+                272.94
+              ],
+              "clear_of_zero": false,
+              "mean_s2": 90.74,
+              "rows": 21368
+            }
+          },
+          "ci95_s2": [
+            -77.03,
+            233.73
+          ],
+          "clear_of_zero": false,
+          "fit_folds": [
+            "july_loo",
+            "december"
+          ],
+          "mean_s2": 77.7,
+          "rms_move_s": {
+            "N": 19.1461,
+            "N_reach": 22.8858,
+            "difference": 12.8245
+          },
+          "rmse_served": {
+            "N": 210.5612,
+            "N_reach": 210.3767,
+            "head": 211.5272
+          },
+          "rows": 24954
+        },
+        "july_loo": {
+          "by_cell": {
+            "EDDF/reached": {
+              "ci95_s2": [
+                0.0,
+                0.0
+              ],
+              "clear_of_zero": false,
+              "mean_s2": 0.0,
+              "rows": 4674
+            },
+            "LTFM/unreached": {
+              "ci95_s2": [
+                67.96,
+                491.55
+              ],
+              "clear_of_zero": true,
+              "mean_s2": 268.0,
+              "rows": 25170
+            }
+          },
+          "ci95_s2": [
+            54.73,
+            414.53
+          ],
+          "clear_of_zero": true,
+          "fit_folds": [
+            "december",
+            "january"
+          ],
+          "mean_s2": 226.03,
+          "rms_move_s": {
+            "N": 18.3114,
+            "N_reach": 19.6312,
+            "difference": 5.4434
+          },
+          "rmse_served": {
+            "N": 256.8326,
+            "N_reach": 256.3922,
+            "head": 258.7256
+          },
+          "rows": 29844
+        }
+      },
+      "pooled_over_the_three_folds": {
+        "ci95_s2": [
+          77.02,
+          294.03
+        ],
+        "clear_of_zero": true,
+        "mean_s2": 177.92,
+        "note": "DIAGNOSTIC ONLY: the three folds pooled on the union of their days. The desk's rule for the slot is per fold, and \u00a77c records the pooled reading as rejected as a serving rule. It says whether the difference is real, not whether it may be served.",
+        "rows": 78967
+      }
+    },
+    "rotation": {
+      "every_fold_clear": false,
+      "per_fold": {
+        "december": {
+          "by_cell": {
+            "EDDF/reached": {
+              "ci95_s2": [
+                0.0,
+                0.0
+              ],
+              "clear_of_zero": false,
+              "mean_s2": 0.0,
+              "rows": 1561
+            },
+            "LTFM/unreached": {
+              "ci95_s2": [
+                57.38,
+                606.41
+              ],
+              "clear_of_zero": true,
+              "mean_s2": 290.01,
+              "rows": 22608
+            }
+          },
+          "ci95_s2": [
+            62.8,
+            570.01
+          ],
+          "clear_of_zero": true,
+          "fit_folds": [
+            "july_loo"
+          ],
+          "mean_s2": 271.28,
+          "rms_move_s": {
+            "N": 21.3993,
+            "N_reach": 24.9239,
+            "difference": 12.1442
+          },
+          "rmse_served": {
+            "N": 199.5784,
+            "N_reach": 198.8976,
+            "head": 200.7134
+          },
+          "rows": 24169
+        },
+        "january": {
+          "by_cell": {
+            "EDDF/reached": {
+              "ci95_s2": [
+                0.0,
+                0.0
+              ],
+              "clear_of_zero": false,
+              "mean_s2": 0.0,
+              "rows": 3586
+            },
+            "LTFM/unreached": {
+              "ci95_s2": [
+                -95.1,
+                268.59
+              ],
+              "clear_of_zero": false,
+              "mean_s2": 90.74,
+              "rows": 21368
+            }
+          },
+          "ci95_s2": [
+            -78.19,
+            240.24
+          ],
+          "clear_of_zero": false,
+          "fit_folds": [
+            "july_loo",
+            "december"
+          ],
+          "mean_s2": 77.7,
+          "rms_move_s": {
+            "N": 19.1461,
+            "N_reach": 22.8858,
+            "difference": 12.8245
+          },
+          "rmse_served": {
+            "N": 210.5612,
+            "N_reach": 210.3767,
+            "head": 211.5272
+          },
+          "rows": 24954
+        },
+        "july_loo": {
+          "by_cell": {
+            "EDDF/reached": {
+              "ci95_s2": [
+                0.0,
+                0.0
+              ],
+              "clear_of_zero": false,
+              "mean_s2": 0.0,
+              "rows": 4674
+            },
+            "LTFM/unreached": {
+              "ci95_s2": [
+                -25.91,
+                512.53
+              ],
+              "clear_of_zero": false,
+              "mean_s2": 229.17,
+              "rows": 25170
+            }
+          },
+          "ci95_s2": [
+            -22.72,
+            440.16
+          ],
+          "clear_of_zero": false,
+          "fit_folds": [
+            "december"
+          ],
+          "mean_s2": 193.28,
+          "rms_move_s": {
+            "N": 16.4638,
+            "N_reach": 19.8076,
+            "difference": 8.2167
+          },
+          "rmse_served": {
+            "N": 256.577,
+            "N_reach": 256.2001,
+            "head": 258.7256
+          },
+          "rows": 29844
+        }
+      },
+      "pooled_over_the_three_folds": {
+        "ci95_s2": [
+          54.69,
+          313.26
+        ],
+        "clear_of_zero": true,
+        "mean_s2": 180.63,
+        "note": "DIAGNOSTIC ONLY: the three folds pooled on the union of their days. The desk's rule for the slot is per fold, and \u00a77c records the pooled reading as rejected as a serving rule. It says whether the difference is real, not whether it may be served.",
+        "rows": 78967
+      }
+    }
+  },
+  "new": "N_reach",
+  "note": "The desk's gate for the v15 slot: the INCREMENT of the per-cell form over arm `N`,\non the rows the file would move, per fold, with day-clustered intervals.",
+  "old": "N",
+  "record": "analysis/arms-step2-unmatched-fitall-3f-split.json",
+  "verdict": "MAYBE: the increment crosses zero on at least one fold"
+}

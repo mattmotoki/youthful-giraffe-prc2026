@@ -1,0 +1,42 @@
+{
+  "note": "Member set for stack-3b, the rebuild of stack-3 after exp-012's reproducibility run refit CatBoost and the original ranking bytes (48acb7e7) were not preserved. Same rotation, same arms, same five-seed bag; only the served C2-cat bytes differ. DO NOT RUN until exp-012 signals 'members final': at the time of writing their rebuild was still refitting L2-hub with D1-winter and N1-nmtail to follow, and the CatBoost GPU-vs-CPU reproducibility separation was unresolved -- if it forces a CPU refit the member changes again. The OOF addresses are unaffected and unchanged.",
+  "oof": {
+    "T-tailv2": "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+    "C2-cat": "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+    "L2-hub": "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-{fold}.parquet",
+    "N1-nmtail": "experiments/exp-010-nmtail/oof/nmtail-phi_{fold}.parquet"
+  },
+  "ranking": {
+    "T-tailv2": "artifacts/exp-012/pred/T-tailv2-ranking.parquet",
+    "C2-cat": "artifacts/exp-008/pred/C2-d8p-ranking.parquet",
+    "L2-hub": "artifacts/exp-008/pred/L2-hub-ranking.parquet",
+    "D1-winter": "artifacts/exp-012/pred/D1-winter-deice-v1-ranking.parquet",
+    "N1-nmtail": "artifacts/exp-012/pred/N1-nmtail-ranking.parquet"
+  },
+  "expected_rotation": {
+    "note": "measured in analysis/swap_deice.csv against the pre-publication copy of the same fit (experiments/exp-012-blend2/oof/D1w-deice-*), whose fold RMSEs 310.28/223.98/349.20 match the published member's interface document exactly. A stack-3 rotation that does not reproduce these has changed something else.",
+    "blend2": {
+      "july_loo": 296.04,
+      "december": 214.82,
+      "january": 342.929,
+      "board": 317.661
+    },
+    "stack-1-form": {
+      "july_loo": 295.882,
+      "december": 214.374,
+      "january": 342.168,
+      "board": 317.215
+    }
+  },
+  "measured_cost_of_the_substitution": "PROVISIONAL. RMS 8.0 s against c39bb173 was measured with C2-cat 56f95373 (2-thread). Three members move before members final, and prc.nmtail VERSION 4 moves N1-nmtail deliberately, so this is re-measured against the final set. The SCORE bound is unaffected: analysis/sensitivity_cat.csv shows a 14.24 s member degradation costs the stacker 0.71 s, and a thread-count difference on one configuration is orders below that.",
+  "ranking_state_2026-09-06T00:20": {
+    "_note": "OBSERVED on disk, not a promise. exp-012 will send members final with two labelled columns (oof and ranking) per member, each with its thread count and module VERSION. Until then these are the bytes present, and members.verify refuses by name on any that moved. An earlier version of this file recorded exp-012's 23:00 hashes as 'expected'; three of those were superseded and one set they sent later turned out to be short-budget separation scratch runs (SEPX-*), not member artifacts -- hence: record what is on disk, verify at build time, promise nothing.",
+    "T-tailv2": "e9d97994  stable, unchanged",
+    "C2-cat": "56f95373  2-thread rebuild; exp-012 will rebuild at 6",
+    "L2-hub": "29adfc27  SETTLED: release config, PRC_THREADS=6, 2,100 rounds rescaled to 2,291, seed 7 \u2014 same producer, budget and seed, only the thread count moved from 16. Needs no rebuild.",
+    "D1-winter": "8865d3d8  6 threads, unchanged, consumed from published/",
+    "N1-nmtail": "7e64c89c  VERSION 2/3 at 8 threads; will be rebuilt at 6 under VERSION 4",
+    "_still_in_flight": "C2-cat (2-thread, to be rebuilt at 6) and N1-nmtail (VERSION 2/3 at 8 threads, to be rebuilt at 6 under VERSION 4). TWO members, not three. My verify flags three because three DIFFER from my pins, but one of those has already reached its final value \u2014 differs-from-pin and still-in-flight are different sets, and reading the first as the second is what crossed the two lanes tonight."
+  }
+}

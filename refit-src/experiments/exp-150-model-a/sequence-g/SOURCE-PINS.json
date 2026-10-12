@@ -1,0 +1,66 @@
+{
+  "recorded_utc": "2026-10-02T07:48:50.640303+00:00",
+  "source_ledger_lines": [
+    894,
+    899,
+    901
+  ],
+  "last_ledger_line": 901,
+  "peer_source_row": "LEVERS C49, lane C sequence-001 +526 [+330,+746], control +142; development before repair/review",
+  "copies": [
+    {
+      "source": "experiments/exp-165-levers/code/rho_screen.py",
+      "commit": "db98383b",
+      "copy": "experiments/exp-150-model-a/sequence-g/upstream/rho_screen.py",
+      "sha256": "503568964d4e4043ed3fc838ac52c63d900c8a8b45d8cc9e12b445c5b48d6851",
+      "working_snapshot": false
+    },
+    {
+      "source": "docs/assignments/2026-10-02-diverse-members.md",
+      "commit": "c60b100d",
+      "copy": "experiments/exp-150-model-a/sequence-g/upstream/assignment.md",
+      "sha256": "34eb342a948afe3c16cfa16bffae19018fd1586e4998b5c1e3bf8eec91fb708b",
+      "working_snapshot": false
+    },
+    {
+      "source": "docs/LEVERS.md",
+      "commit": null,
+      "copy": "experiments/exp-150-model-a/sequence-g/upstream/LEVERS.md",
+      "sha256": "4f1a8e8cfa7116ca77bb9eb4db870ce6505299d9f22bc875ed55627edeba2a8a",
+      "working_snapshot": true
+    },
+    {
+      "source": "experiments/exp-168-fresh-look/code/u7_context.py",
+      "commit": "8b15adb1",
+      "copy": "experiments/exp-150-model-a/sequence-g/upstream/u7_context.py",
+      "sha256": "3716d1e3d47f4fbc0d26efa53d3d65e2ec816d478eab7ff097429d9c8f205d7e",
+      "working_snapshot": false
+    },
+    {
+      "source": "experiments/exp-170-diverse/code/fit.py",
+      "commit": "8b15adb1",
+      "copy": "experiments/exp-150-model-a/sequence-g/upstream/lane-C-fit.py",
+      "sha256": "79ec20fea289f93cbe43b9259fc986a0b0edf8aa07932a56fb24af3d69bbac77",
+      "working_snapshot": false
+    },
+    {
+      "source": "experiments/exp-165-levers/code/rho_screen.py",
+      "commit": "345e5dc2",
+      "copy": "experiments/exp-150-model-a/sequence-g/upstream/rho_screen-r2.py",
+      "sha256": "16e18032f8292bd4fe2b705d70ad4d718250f2852697b8e2bfb21ceeafea08b3",
+      "working_snapshot": false
+    }
+  ],
+  "local_sources": {
+    "prc/weekpair.py": "16a9c2dc5e9530bab8050f348ce88f5930fa0627506b27ca4418f97dedc1c06a",
+    "prc/gscore.py": "356834bc8c0284b9bb5ddebf15168022cda58ce9137d324fe1d93ea0088bd9b3",
+    "experiments/exp-150-model-a/code/learner_a.py": "37da3a3b3cd96401db70e5a6e7e28db7ae8322a7f0798af3a562191df1c4464b"
+  },
+  "desk_source_C50": "8b15adb1: short runway context, arrival-rate -44, paired u7_context check",
+  "entry_read_override": {
+    "desk": "2026-10-02 shared screen ruling",
+    "base": "B",
+    "weights": "ls",
+    "base_commit": "e9771b94"
+  }
+}

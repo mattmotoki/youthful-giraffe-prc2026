@@ -1,0 +1,46 @@
+{
+  "name": "G1cv-s17",
+  "argv": "--name G1cv-s17 --features v2 --target residual --linear-tree --clip-floor 60 --noac-head --residual-guard --phi --lirf --phi-fit cv --seed 17 --folds july,december --no-submission",
+  "folds": {
+    "july": {
+      "rmse": 317.54850615331827,
+      "rmse_bulk": 279.3076479184142,
+      "rmse_tail": 2591.04505326466,
+      "rmse_no_nm": 1311.8773085670384,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.2290094072538123,
+      "sse_share_no_nm": 0.35206297135926923,
+      "bias": 2.100396062849685,
+      "rmse_noac": 3931.318408308385,
+      "n_noac": 339,
+      "sse_share_noac": 0.2724430240566874,
+      "fold": "july",
+      "best_iteration": 151,
+      "refit_rounds": 178,
+      "seconds": 292,
+      "oof": "experiments/exp-001-retro-v1/oof/G1cv-s17-july.parquet"
+    },
+    "december": {
+      "rmse": 221.16378944664768,
+      "rmse_bulk": 204.22797041589064,
+      "rmse_tail": 2148.2260909848274,
+      "rmse_no_nm": 799.8799868999876,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.1486312786936183,
+      "sse_share_no_nm": 0.12971701848198242,
+      "bias": 5.314637408172663,
+      "rmse_noac": 2562.9054829385514,
+      "n_noac": 89,
+      "sse_share_noac": 0.07213813660478614,
+      "fold": "december",
+      "best_iteration": 201,
+      "refit_rounds": 236,
+      "seconds": 593,
+      "oof": "experiments/exp-001-retro-v1/oof/G1cv-s17-december.parquet"
+    }
+  }
+}

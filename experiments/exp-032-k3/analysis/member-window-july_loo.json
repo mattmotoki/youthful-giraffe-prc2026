@@ -1,0 +1,24 @@
+{
+  "arm": "window",
+  "folds": [
+    "july_loo"
+  ],
+  "threads": 6,
+  "lightgbm": "4.7.0",
+  "tail_model_version": "2.6.0",
+  "rows": [
+    {
+      "fold": "july_loo",
+      "arm": "window",
+      "n": 190713,
+      "rmse": 299.5953686164524,
+      "rmse_le3600": 264.6551376154106,
+      "rmse_gt3600": 2408.6552447226495,
+      "n_gt3600": 656,
+      "wall_s": 273.8,
+      "path": "experiments/exp-032-k3/oof/k3-tail-window-july_loo.parquet",
+      "sha256": "12d7c1d12264728d9f87cd2240fea77c12a6c1ff1996c57d916b8c89ccafc527"
+    }
+  ],
+  "identity_checks": []
+}

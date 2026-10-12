@@ -1,0 +1,283 @@
+{
+ "what": "check D: a recurring-service corroboration on the rows (i)&(ii) refuse",
+ "declared_before_the_run": {
+  "min_other_days": 3,
+  "tolerance_quantile": 95.0,
+  "tolerance_km_from_the_shipped_rows": 2.2149,
+  "seed": 47,
+  "gate": {
+   "step_0_gap_cut_s": 62.405,
+   "check_i_abs_dt_offblock_max_s": 1299.0,
+   "check_ii_runway_agreement": true
+  },
+  "shipped_rung": {
+   "kept": 2493,
+   "precision": 0.8958457250066977,
+   "face_s_at_1_2": 0.09270341034849139
+  },
+  "precision_bar": 0.896,
+  "placebo_note": "the stand placebo is re-expressed to reach D: the shipped one permutes a column D does not read, so it would report a false independence",
+  "face_per_true_row_s": 4.150880274937902e-05
+ },
+ "populations": {
+  "pairs": 11432,
+  "shipped": 3179,
+  "pool": 8253,
+  "after_step_0": 7936,
+  "kept_by_the_gate": 2456,
+  "refused": 5797,
+  "day_placebo_pairs": 4907
+ },
+ "rung_reconciliation": {
+  "note": "re-derived here from the committed pairs frame, agreeing with analysis/chain-curve.json and with \u00a77am",
+  "shipped_check_i_alone": 3019,
+  "shipped_check_i_and_ii": 2956,
+  "shipped_t_recomputed": 0.9298522,
+  "curve_t": 0.9298521547656495,
+  "pool_kept_km_metric": 2493,
+  "pool_kept_squared_degrees": 2456,
+  "the_37": 37
+ },
+ "rates": {
+  "t_shipped": {
+   "rows": 3179,
+   "passes": 1770,
+   "rate": 0.5568,
+   "ci95": [
+    0.5395,
+    0.574
+   ]
+  },
+  "q_refused": {
+   "rows": 5797,
+   "passes": 759,
+   "rate": 0.1309,
+   "ci95": [
+    0.1225,
+    0.1399
+   ]
+  },
+  "f_day_placebo": {
+   "rows": 4907,
+   "passes": 1104,
+   "rate": 0.225,
+   "ci95": [
+    0.2135,
+    0.2369
+   ]
+  },
+  "f_stand_placebo": {
+   "rows": 11432,
+   "passes": 981,
+   "rate": 0.0858,
+   "ci95": [
+    0.0808,
+    0.0911
+   ]
+  }
+ },
+ "readings": {
+  "A_declared_harsher_placebo": {
+   "t": 0.5568,
+   "f": 0.225,
+   "q": 0.1309,
+   "pi_hat": -0.2836,
+   "precision": -1.2063,
+   "rows_admitted": 759,
+   "expected_true_rows": null,
+   "face_s_at_1_2": null,
+   "clears_the_shipped_bar": false,
+   "placebo_used": "day"
+  },
+  "B_stand_placebo_only": {
+   "t": 0.5568,
+   "f": 0.0858,
+   "q": 0.1309,
+   "pi_hat": 0.0958,
+   "precision": 0.4073,
+   "rows_admitted": 759,
+   "expected_true_rows": 309.1,
+   "face_s_at_1_2": 0.0128,
+   "clears_the_shipped_bar": false,
+   "why": "post hoc: the day placebo preserves the service and is not a null for D"
+  },
+  "C_stand_half_only_stand_placebo": {
+   "t": 0.5731,
+   "f": 0.1098,
+   "q": 0.3162,
+   "pi_hat": 0.4455,
+   "precision": 0.8075,
+   "rows_admitted": 1833,
+   "expected_true_rows": 1480.1,
+   "face_s_at_1_2": 0.0614,
+   "clears_the_shipped_bar": false,
+   "why": "post hoc: D without the runway clause -- a DIFFERENT check from the one declared, priced because the runway clause is check (ii) re-derived"
+  },
+  "D_stand_half_wider_map": {
+   "t": 0.6713,
+   "f": 0.1333,
+   "q": 0.4345,
+   "pi_hat": 0.5599,
+   "precision": 0.865,
+   "rows_admitted": 2519,
+   "expected_true_rows": 2178.9,
+   "face_s_at_1_2": 0.0904,
+   "clears_the_shipped_bar": false,
+   "why": "post hoc repair: the stand centroid map widened to >= 1 shipped row a stand"
+  },
+  "E_stand_half_clock_only_sub_pool": {
+   "t": 0.5731,
+   "f": 0.1098,
+   "q": 0.3576,
+   "pi_hat": 0.5349,
+   "precision": 0.8572,
+   "rows_admitted": 570,
+   "expected_true_rows": 488.6,
+   "face_s_at_1_2": 0.0203,
+   "clears_the_shipped_bar": false,
+   "why": "post hoc: the 1594 refused rows that pass step 0 and check (ii) and fail the clock alone -- the only class a geometric corroboration could rescue"
+  },
+  "F_stand_half_wider_map_clock_only_sub_pool": {
+   "t": 0.6713,
+   "f": 0.1333,
+   "q": 0.4856,
+   "pi_hat": 0.6548,
+   "precision": 0.9052,
+   "rows_admitted": 774,
+   "expected_true_rows": 700.7,
+   "face_s_at_1_2": 0.0291,
+   "clears_the_shipped_bar": true,
+   "why": "post hoc: D and E together"
+  },
+  "F_by_ranking_month": {
+   "2026-01": {
+    "t": 0.7352,
+    "f": 0.1699,
+    "q": 0.5499,
+    "pi_hat": 0.6722,
+    "precision": 0.8987,
+    "rows_admitted": 397,
+    "expected_true_rows": 356.8,
+    "face_s_at_1_2": 0.0148,
+    "clears_the_shipped_bar": true
+   },
+   "2026-07": {
+    "t": 0.6221,
+    "f": 0.107,
+    "q": 0.4323,
+    "pi_hat": 0.6315,
+    "precision": 0.9088,
+    "rows_admitted": 377,
+    "expected_true_rows": 342.6,
+    "face_s_at_1_2": 0.0142,
+    "clears_the_shipped_bar": true
+   }
+  },
+  "F_interval": {
+   "draws": 2000,
+   "unit": "calendar day",
+   "seed": 47,
+   "pi_hat_ci95": [
+    0.5827,
+    0.7289
+   ],
+   "precision_ci95": [
+    0.8741,
+    0.931
+   ],
+   "share_of_draws_at_or_above_the_bar": 0.7315
+  },
+  "_multiplicity": "readings B to F were written after the declared read A returned a negative pi_hat.  They are post-hoc variants of the declared check, and the bar is advisory on them: a variant that clears 0.896 here needs a pre-registered re-run on a population it has not seen before any row goes to the refit.  Reading F clears it as a point estimate and is recorded as a CANDIDATE, not as a pass -- see F_by_ranking_month and F_interval."
+ },
+ "yield_of_the_declared_check": {
+  "rows_admitted_by_D_alone": 759,
+  "by_ranking_month": {
+   "2026-01": 388,
+   "2026-07": 371
+  },
+  "face_is_a_projection": "the shipped rung's worth per TRUE row applied to D's true rows; it is not a fold measurement, and only surfacefit's refit could make it one"
+ },
+ "post_hoc_why": {
+  "day_placebo_validity": {
+   "check_i_pass_rate_on_the_day_placebo": {
+    "rows": 4907,
+    "passes": 0,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0008
+    ]
+   },
+   "check_iii_cut_km": 2.8263,
+   "check_iii": {
+    "shipped": {
+     "rows": 3179,
+     "with_the_field": 3044,
+     "median_km": 0.556,
+     "check_iii_pass_rate": 0.9497
+    },
+    "refused": {
+     "rows": 5797,
+     "with_the_field": 4561,
+     "median_km": 1.359,
+     "check_iii_pass_rate": 0.8397
+    },
+    "day_placebo": {
+     "rows": 4907,
+     "with_the_field": 4282,
+     "median_km": 1.038,
+     "check_iii_pass_rate": 0.8895
+    }
+   },
+   "reading": "the +24 h shift destroys the clock completely and barely touches the geography: on check (iii) the day placebo passes at a rate ABOVE the refused pool's.  It lands the departure on the same recurring service one day later, so it preserves the invariant D reads.  It is a null for a clock check, which is what \u00a727 used it for, and it is NOT a null for check D"
+  },
+  "the_runway_clause_is_check_ii": {
+   "share_where_the_service_modal_runway_is_the_rows_own_RUNWAY_mvt": {
+    "shipped": 0.9865,
+    "refused": 0.9843,
+    "day_placebo": 0.6919
+   },
+   "runway_half": {
+    "t": 0.9657,
+    "q": 0.3391,
+    "f_day": 0.431
+   },
+   "reading": "the service's modal runway IS the row's own RUNWAY_mvt on 98.7 % of the shipped rows and 98.4 % of the refused, so D's runway clause is check (ii) re-derived from other days.  It is independent by construction and a copy in fact, and the refused pool fails (ii) on most of its rows, so the clause can only suppress the yield"
+  },
+  "coverage_of_the_stand_clause": {
+   "no_service_key_resolved": {
+    "shipped": 0.0041,
+    "refused": 0.0009
+   },
+   "no_centroid_for_the_modal_stand": {
+    "shipped": 0.3967,
+    "refused": 0.5817
+   },
+   "rung_1_share_refused": 0.9934,
+   "reading": "the stand clause fires on only 57 % of the SHIPPED rows at a p95 tolerance, and the shortfall is coverage, not tolerance: the modal stand has no centroid in a map learned from 3,179 rows.  A wider map would raise t and q together"
+  },
+  "admitted_by_why_the_row_was_refused": {
+   "fails_check_i_only": 558,
+   "fails_check_ii_only": 20,
+   "fails_both_i_and_ii": 35,
+   "fails_step_0": 146
+  },
+  "refused_rows_by_why": {
+   "fails_check_i_only": 1594,
+   "fails_check_ii_only": 349,
+   "fails_both_i_and_ii": 3564,
+   "fails_step_0": 317
+  }
+ },
+ "verdict": {
+  "declared_reading": "FAIL: pi_hat is negative -- the declared check D fires LESS often on the refused pool (0.1309) than on the harsher placebo (0.2250), so it finds no excess of true placements there",
+  "why_it_failed": "two causes, both measured: D's runway clause is check (ii) re-derived from other days (the service's modal runway is the row's own RUNWAY_mvt on 98.7 % of the shipped rows), and the day placebo is not a null for a service check (a +24 h shift lands on the same service the next day and passes the shipped stand check at 0.8895, above the refused pool's 0.8397)",
+  "after_the_repair": "the repair the diagnosis asks for -- drop the runway clause, widen the stand centroid map, and read only the rows that fail the clock alone -- is reading F_stand_half_wider_map_clock_only_sub_pool: precision 0.9052 on 774 rows, point estimate above the bar 0.896, interval [0.8741, 0.931], and 0.7315 of the day-clustered draws at or above the bar",
+  "by_ranking_month": {
+   "2026-01": 0.8987,
+   "2026-07": 0.9088
+  },
+  "handshake": "no rows go to surfacefit's fold refit on this section.  The DECLARED check fails; the variant whose point estimate clears the bar was chosen after five tries on the same pool it is priced on, which is the error class round 6 failed on.  The handshake needs a pre-registered read, which this lane can write and the desk can call.",
+  "reading": "the declared check D is NOISE; the repaired variant F is a MAYBE, and its revival is a pre-registered re-run"
+ }
+}

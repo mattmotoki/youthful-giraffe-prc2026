@@ -1,0 +1,808 @@
+{
+ "arm": "N",
+ "board_seconds_per_s2_by_fold": {
+  "december": 0.00195152,
+  "january": 0.00195095,
+  "july_loo": 0.0019518
+ },
+ "cells": {
+  "EDDF/reached": {
+   "face_s": 0.2402,
+   "face_s_at_level_1_2": 0.2883,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      1467.66,
+      7405.1
+     ],
+     "contribution_s2": 197.08,
+     "fold_rows": 1415,
+     "gain_per_row_s2": 3846.5,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": [
+      144.97,
+      2528.48
+     ],
+     "contribution_s2": 62.81,
+     "fold_rows": 3159,
+     "gain_per_row_s2": 1225.9,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": [
+      2211.35,
+      4652.4
+     ],
+     "contribution_s2": 171.01,
+     "fold_rows": 4065,
+     "gain_per_row_s2": 3337.6,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": null,
+    "january": null,
+    "july_loo": null
+   },
+   "ranking_rows": 17668,
+   "served_today": true
+  },
+  "EDDF/unreached": {
+   "face_s": 0.0,
+   "face_s_at_level_1_2": 0.0,
+   "folds": {
+    "december": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 37,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "january": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 128,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "july_loo": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 42,
+     "gain_per_row_s2": null,
+     "priced": false
+    }
+   },
+   "hold_reason": {
+    "december": "unpriced, 37 fold rows",
+    "january": "unpriced, 128 fold rows",
+    "july_loo": "unpriced, 42 fold rows"
+   },
+   "ranking_rows": 3953,
+   "served_today": false
+  },
+  "EDDM/reached": {
+   "face_s": 0.0,
+   "face_s_at_level_1_2": 0.0,
+   "folds": {
+    "december": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 400,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "january": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 144,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "july_loo": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 225,
+     "gain_per_row_s2": null,
+     "priced": false
+    }
+   },
+   "hold_reason": {
+    "december": "unpriced, 400 fold rows",
+    "january": "unpriced, 144 fold rows",
+    "july_loo": "unpriced, 225 fold rows"
+   },
+   "ranking_rows": 929,
+   "served_today": false
+  },
+  "EDDM/unreached": {
+   "face_s": 0.0,
+   "face_s_at_level_1_2": 0.0001,
+   "folds": {
+    "december": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 38,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "january": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 274,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "july_loo": {
+     "ci95_s2": [
+      40.55,
+      660.55
+     ],
+     "contribution_s2": 0.04,
+     "fold_rows": 9820,
+     "gain_per_row_s2": 308.8,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "unpriced, 38 fold rows",
+    "january": "unpriced, 274 fold rows",
+    "july_loo": "supported"
+   },
+   "ranking_rows": 45,
+   "served_today": false
+  },
+  "EGLL/reached": {
+   "face_s": -0.0156,
+   "face_s_at_level_1_2": -0.0187,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      -7105.24,
+      -1956.81
+     ],
+     "contribution_s2": -74.28,
+     "fold_rows": 9609,
+     "gain_per_row_s2": -4045.7,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": [
+      -687.53,
+      896.68
+     ],
+     "contribution_s2": 2.33,
+     "fold_rows": 9165,
+     "gain_per_row_s2": 126.8,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": [
+      -2066.41,
+      282.93
+     ],
+     "contribution_s2": -16.18,
+     "fold_rows": 3933,
+     "gain_per_row_s2": -881.2,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "interval [-7105.24, -1956.81] is not clear of zero above",
+    "january": "interval [-687.53, 896.68] is not clear of zero above",
+    "july_loo": "interval [-2066.41, 282.93] is not clear of zero above"
+   },
+   "ranking_rows": 6331,
+   "served_today": false
+  },
+  "EGLL/unreached": {
+   "face_s": -0.0007,
+   "face_s_at_level_1_2": -0.0008,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      -756.69,
+      1091.93
+     ],
+     "contribution_s2": 0.08,
+     "fold_rows": 1378,
+     "gain_per_row_s2": 144.4,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": [
+      -1727.32,
+      -40.19
+     ],
+     "contribution_s2": -0.53,
+     "fold_rows": 1581,
+     "gain_per_row_s2": -924.7,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": [
+      -620.05,
+      -24.09
+     ],
+     "contribution_s2": -0.18,
+     "fold_rows": 15509,
+     "gain_per_row_s2": -310.0,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "interval [-756.69, 1091.93] is not clear of zero above",
+    "january": "interval [-1727.32, -40.19] is not clear of zero above",
+    "july_loo": "interval [-620.05, -24.09] is not clear of zero above"
+   },
+   "ranking_rows": 197,
+   "served_today": false
+  },
+  "EHAM/reached": {
+   "face_s": 0.0207,
+   "face_s_at_level_1_2": 0.0249,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      -3606.78,
+      -623.61
+     ],
+     "contribution_s2": -13.66,
+     "fold_rows": 1157,
+     "gain_per_row_s2": -1862.8,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": [
+      -453.65,
+      5812.38
+     ],
+     "contribution_s2": 17.83,
+     "fold_rows": 628,
+     "gain_per_row_s2": 2431.7,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": [
+      241.38,
+      1137.25
+     ],
+     "contribution_s2": 4.9,
+     "fold_rows": 1270,
+     "gain_per_row_s2": 668.1,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "interval [-3606.78, -623.61] is not clear of zero above",
+    "january": "interval [-453.65, 5812.38] is not clear of zero above",
+    "july_loo": "supported"
+   },
+   "ranking_rows": 2528,
+   "served_today": false
+  },
+  "EHAM/unreached": {
+   "face_s": 0.0,
+   "face_s_at_level_1_2": 0.0,
+   "folds": {
+    "december": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 31,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "january": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 16,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "july_loo": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 13,
+     "gain_per_row_s2": null,
+     "priced": false
+    }
+   },
+   "hold_reason": {
+    "december": "unpriced, 31 fold rows",
+    "january": "unpriced, 16 fold rows",
+    "july_loo": "unpriced, 13 fold rows"
+   },
+   "ranking_rows": 81,
+   "served_today": false
+  },
+  "LEBL/reached": {
+   "face_s": 0.0309,
+   "face_s_at_level_1_2": 0.0371,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      -27.14,
+      3810.9
+     ],
+     "contribution_s2": 15.46,
+     "fold_rows": 1071,
+     "gain_per_row_s2": 1654.6,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": [
+      417.09,
+      2009.93
+     ],
+     "contribution_s2": 10.35,
+     "fold_rows": 906,
+     "gain_per_row_s2": 1107.4,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": [
+      823.0,
+      3737.62
+     ],
+     "contribution_s2": 20.2,
+     "fold_rows": 2534,
+     "gain_per_row_s2": 2162.1,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "interval [-27.14, 3810.9] is not clear of zero above",
+    "january": "supported",
+    "july_loo": "supported"
+   },
+   "ranking_rows": 3222,
+   "served_today": false
+  },
+  "LEBL/unreached": {
+   "face_s": 0.0,
+   "face_s_at_level_1_2": 0.0,
+   "folds": {
+    "december": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 94,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "january": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 120,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "july_loo": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 310,
+     "gain_per_row_s2": null,
+     "priced": false
+    }
+   },
+   "hold_reason": {
+    "december": "unpriced, 94 fold rows",
+    "january": "unpriced, 120 fold rows",
+    "july_loo": "unpriced, 310 fold rows"
+   },
+   "ranking_rows": 267,
+   "served_today": false
+  },
+  "LEMD/reached": {
+   "face_s": 0.0326,
+   "face_s_at_level_1_2": 0.0391,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      577.17,
+      2242.73
+     ],
+     "contribution_s2": 34.3,
+     "fold_rows": 750,
+     "gain_per_row_s2": 1346.0,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 0,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "july_loo": {
+     "ci95_s2": [
+      740.69,
+      1631.44
+     ],
+     "contribution_s2": 29.98,
+     "fold_rows": 9373,
+     "gain_per_row_s2": 1176.4,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": null,
+    "january": null,
+    "july_loo": null
+   },
+   "ranking_rows": 8787,
+   "served_today": true
+  },
+  "LEMD/unreached": {
+   "face_s": 0.0015,
+   "face_s_at_level_1_2": 0.0018,
+   "folds": {
+    "december": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 47,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "january": {
+     "ci95_s2": [
+      26.93,
+      293.28
+     ],
+     "contribution_s2": 0.61,
+     "fold_rows": 16509,
+     "gain_per_row_s2": 158.2,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": [
+      -101.86,
+      601.39
+     ],
+     "contribution_s2": 0.86,
+     "fold_rows": 5297,
+     "gain_per_row_s2": 223.5,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "unpriced, 47 fold rows",
+    "january": "dark by instrument, not priced here",
+    "july_loo": "interval [-101.86, 601.39] is not clear of zero above"
+   },
+   "ranking_rows": 1334,
+   "served_today": false
+  },
+  "LFPG/reached": {
+   "face_s": -0.0035,
+   "face_s_at_level_1_2": -0.0042,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      -964.07,
+      526.52
+     ],
+     "contribution_s2": -2.5,
+     "fold_rows": 2974,
+     "gain_per_row_s2": -158.6,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 0,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "july_loo": {
+     "ci95_s2": [
+      -1081.8,
+      622.24
+     ],
+     "contribution_s2": -3.22,
+     "fold_rows": 1268,
+     "gain_per_row_s2": -204.4,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "interval [-964.07, 526.52] is not clear of zero above",
+    "january": "unpriced, 0 fold rows",
+    "july_loo": "interval [-1081.8, 622.24] is not clear of zero above"
+   },
+   "ranking_rows": 5438,
+   "served_today": false
+  },
+  "LFPG/unreached": {
+   "face_s": 0.0079,
+   "face_s_at_level_1_2": 0.0095,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      -105.31,
+      912.79
+     ],
+     "contribution_s2": 24.53,
+     "fold_rows": 15656,
+     "gain_per_row_s2": 257.7,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": [
+      -24.25,
+      688.91
+     ],
+     "contribution_s2": 28.5,
+     "fold_rows": 17900,
+     "gain_per_row_s2": 299.5,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": [
+      -397.55,
+      59.32
+     ],
+     "contribution_s2": -15.4,
+     "fold_rows": 19963,
+     "gain_per_row_s2": -161.8,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "interval [-105.31, 912.79] is not clear of zero above",
+    "january": "interval [-24.25, 688.91] is not clear of zero above",
+    "july_loo": "interval [-397.55, 59.32] is not clear of zero above"
+   },
+   "ranking_rows": 32822,
+   "served_today": false
+  },
+  "LIRF/reached": {
+   "face_s": 0.0068,
+   "face_s_at_level_1_2": 0.0082,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      -1483.05,
+      1636.81
+     ],
+     "contribution_s2": 0.72,
+     "fold_rows": 3892,
+     "gain_per_row_s2": 67.0,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 0,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "july_loo": {
+     "ci95_s2": [
+      -3747.04,
+      6465.01
+     ],
+     "contribution_s2": 6.29,
+     "fold_rows": 1680,
+     "gain_per_row_s2": 586.9,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "interval [-1483.05, 1636.81] is not clear of zero above",
+    "january": "dark by instrument, not priced here",
+    "july_loo": "interval [-3747.04, 6465.01] is not clear of zero above"
+   },
+   "ranking_rows": 3694,
+   "served_today": false
+  },
+  "LIRF/unreached": {
+   "face_s": -0.0036,
+   "face_s_at_level_1_2": -0.0043,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      -722.71,
+      1905.37
+     ],
+     "contribution_s2": 28.54,
+     "fold_rows": 2170,
+     "gain_per_row_s2": 561.5,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": [
+      -316.28,
+      167.63
+     ],
+     "contribution_s2": -4.18,
+     "fold_rows": 11317,
+     "gain_per_row_s2": -82.2,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 131,
+     "gain_per_row_s2": null,
+     "priced": false
+    }
+   },
+   "hold_reason": {
+    "december": "interval [-722.71, 1905.37] is not clear of zero above",
+    "january": "dark by instrument, not priced here",
+    "july_loo": "unpriced, 131 fold rows"
+   },
+   "ranking_rows": 17524,
+   "served_today": false
+  },
+  "LSZH/reached": {
+   "face_s": 0.0075,
+   "face_s_at_level_1_2": 0.009,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      -453.53,
+      2830.59
+     ],
+     "contribution_s2": 6.33,
+     "fold_rows": 598,
+     "gain_per_row_s2": 1185.9,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": [
+      -1275.67,
+      2363.67
+     ],
+     "contribution_s2": 2.35,
+     "fold_rows": 890,
+     "gain_per_row_s2": 440.1,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": [
+      -505.92,
+      2511.3
+     ],
+     "contribution_s2": 5.06,
+     "fold_rows": 1684,
+     "gain_per_row_s2": 947.8,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": "interval [-453.53, 2830.59] is not clear of zero above",
+    "january": "interval [-1275.67, 2363.67] is not clear of zero above",
+    "july_loo": "interval [-505.92, 2511.3] is not clear of zero above"
+   },
+   "ranking_rows": 1840,
+   "served_today": false
+  },
+  "LSZH/unreached": {
+   "face_s": 0.0,
+   "face_s_at_level_1_2": 0.0,
+   "folds": {
+    "december": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 50,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "january": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 97,
+     "gain_per_row_s2": null,
+     "priced": false
+    },
+    "july_loo": {
+     "ci95_s2": null,
+     "contribution_s2": 0.0,
+     "fold_rows": 55,
+     "gain_per_row_s2": null,
+     "priced": false
+    }
+   },
+   "hold_reason": {
+    "december": "unpriced, 50 fold rows",
+    "january": "unpriced, 97 fold rows",
+    "july_loo": "unpriced, 55 fold rows"
+   },
+   "ranking_rows": 121,
+   "served_today": false
+  },
+  "LTFM/unreached": {
+   "face_s": 0.1398,
+   "face_s_at_level_1_2": 0.1678,
+   "folds": {
+    "december": {
+     "ci95_s2": [
+      15.23,
+      415.98
+     ],
+     "contribution_s2": 30.49,
+     "fold_rows": 22609,
+     "gain_per_row_s2": 221.0,
+     "priced": true
+    },
+    "january": {
+     "ci95_s2": [
+      36.98,
+      486.75
+     ],
+     "contribution_s2": 34.47,
+     "fold_rows": 21368,
+     "gain_per_row_s2": 249.8,
+     "priced": true
+    },
+    "july_loo": {
+     "ci95_s2": [
+      320.06,
+      1256.44
+     ],
+     "contribution_s2": 101.18,
+     "fold_rows": 25171,
+     "gain_per_row_s2": 733.4,
+     "priced": true
+    }
+   },
+   "hold_reason": {
+    "december": null,
+    "january": null,
+    "july_loo": null
+   },
+   "ranking_rows": 47577,
+   "served_today": true
+  }
+ },
+ "ehams_december_is_a_real_negative": "EHAM/reached reads -1,862.8 [-3,606.8, -623.6] on december, not a thin one: it is held on evidence, not on rows.",
+ "held_face_total_s_at_level_1_2": 0.0906,
+ "lebl_reached_is_the_lane's_closest_maybe": {
+  "not_proposed_here": "this lane does not propose the second of those; it is a rule that would close or open a class of cells and that is the desk's.",
+  "stable_across_two_re_prices": {
+   "after_handshake": [
+    -27.14,
+    3810.9
+   ],
+   "before_lit_record": [
+    -22.31,
+    3800.39
+   ]
+  },
+  "what": "supported on january and july_loo, and it fails december alone -- +1,654.6 s2 per row with a 95 % lower bound of -27.14 on 1,071 fold rows.",
+  "what_would_move_it": "december evidence only. A fourth fold month is not december, so recorded rule's revival does not reach this cell; what reaches it is more LEBL december airport-days from the harvest, or a desk rule that prices a cell on its lit folds when the failing fold's interval crosses zero from ABOVE by less than a per-row hair."
+ },
+ "level": 1.2,
+ "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+ "pin_keys": {
+  "desk_line": {
+   "december": "d35b7171",
+   "january": "cb4d6289",
+   "july_loo": "8179f744"
+  },
+  "reading": "the desk's three are exp-046-surfacefit's block_cache_key values (analysis/fold-population.json), not this lane's population keys. The POPULATIONS agree exactly -- 296 july_loo, 297 december, 218 january, the same counts on both sides -- and the keys differ by design: the sibling's cache key includes the matcher's first 8 hex, and this lane's population key deliberately excludes the matcher and records it beside the key (RESULTS 7p). Registered as a difference of key functions on one population, not a conflict.",
+  "this_lane": {
+   "december": "2f87293c8105ba3d",
+   "january": "40b77efb4fe2f21b",
+   "july_loo": "a26316a156bde7e8"
+  }
+ },
+ "reading_of_the_desk_s_order": "of RESULTS 7q's four options, A and D are SERVES (an already-measured form, one serve and one review round) and are excluded by the desk's own condition; C is deferred under recorded rule and needs three other lanes' vectors; so B -- the held cells -- is the only item that is a fit or a read on this lane alone, and B's work IS this gate read on the re-pinned folds. 7q's numbers predate the lit rule, the rebuild and the turnaround pass, and one of its rows (LEMD/reached, +0.0485 s) has since been served in v17, so the read is done on the handshake record rather than quoted from the table.",
+ "record": "analysis/arms-step2-handshake.json",
+ "served_today": [
+  "EDDF/reached",
+  "LEMD/reached",
+  "LTFM/unreached"
+ ],
+ "top": [
+  "LEBL/reached",
+  "EHAM/reached",
+  "LFPG/unreached",
+  "LSZH/reached",
+  "LIRF/reached"
+ ],
+ "verdict": "nothing above the 0.1 s face at x1.2 is left as a fit or a read: the WHOLE remaining hold, every positive cell summed, is 0.0906 s at x1.2, and the largest single cell is LEBL/reached at 0.0371 s."
+}

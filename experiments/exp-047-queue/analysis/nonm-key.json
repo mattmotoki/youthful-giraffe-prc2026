@@ -1,0 +1,363 @@
+{
+ "declared_before_the_run": {
+  "band_percentiles": [
+   5.0,
+   95.0
+  ],
+  "band_pad_s": 900.0,
+  "min_reference_flights_per_pair": 20,
+  "lag_window_s": [
+   0.0,
+   20000.0
+  ],
+  "shrink_weight": 0.5,
+  "read_rule": "rider only if the 2A-B interval is clear above zero on EVERY fold (\u00a713.1 / recorded rule); otherwise MAYBE if positive and crossing, else noise",
+  "head_rmse_from_7ae": {
+   "july_loo": 1124.68,
+   "december": 694.91,
+   "january": 569.59
+  },
+  "file_clock_rmse_exp043": [
+   350.0,
+   466.0
+  ],
+  "boot": 2000,
+  "seed": 47
+ },
+ "months": {
+  "2025-07": {
+   "funnel": {
+    "1_key_day_lands_after_at_ADES": 356,
+    "2_arrival_carries_an_NM_join": 203,
+    "3_same_origin": 200,
+    "4_usable_clock_the_7ae_set": 198,
+    "5a_same_aircraft_type": 172,
+    "5b_air_time_inside_the_pair_band": 168,
+    "5c_unambiguous_SURVIVORS": 168,
+    "dropped_as_ambiguous": 0,
+    "no_pair_band_at_step_5b": 0
+   },
+   "no_nm_departures": 3934,
+   "no_nm_to_one_of_the_ten": 583,
+   "pairs_with_a_band": 90,
+   "kind": "fold",
+   "fold": "july_loo"
+  },
+  "2025-12": {
+   "funnel": {
+    "1_key_day_lands_after_at_ADES": 174,
+    "2_arrival_carries_an_NM_join": 70,
+    "3_same_origin": 69,
+    "4_usable_clock_the_7ae_set": 69,
+    "5a_same_aircraft_type": 56,
+    "5b_air_time_inside_the_pair_band": 55,
+    "5c_unambiguous_SURVIVORS": 55,
+    "dropped_as_ambiguous": 0,
+    "no_pair_band_at_step_5b": 0
+   },
+   "no_nm_departures": 1643,
+   "no_nm_to_one_of_the_ten": 284,
+   "pairs_with_a_band": 90,
+   "kind": "fold",
+   "fold": "december"
+  },
+  "2025-01": {
+   "funnel": {
+    "1_key_day_lands_after_at_ADES": 149,
+    "2_arrival_carries_an_NM_join": 66,
+    "3_same_origin": 66,
+    "4_usable_clock_the_7ae_set": 66,
+    "5a_same_aircraft_type": 60,
+    "5b_air_time_inside_the_pair_band": 59,
+    "5c_unambiguous_SURVIVORS": 59,
+    "dropped_as_ambiguous": 0,
+    "no_pair_band_at_step_5b": 1
+   },
+   "no_nm_departures": 1432,
+   "no_nm_to_one_of_the_ten": 290,
+   "pairs_with_a_band": 90,
+   "kind": "fold",
+   "fold": "january"
+  },
+  "2026-01": {
+   "funnel": {
+    "1_key_day_lands_after_at_ADES": 207,
+    "2_arrival_carries_an_NM_join": 108,
+    "3_same_origin": 106,
+    "4_usable_clock_the_7ae_set": 106,
+    "5a_same_aircraft_type": 88,
+    "5b_air_time_inside_the_pair_band": 87,
+    "5c_unambiguous_SURVIVORS": 87,
+    "dropped_as_ambiguous": 0,
+    "no_pair_band_at_step_5b": 0
+   },
+   "no_nm_departures": 2449,
+   "no_nm_to_one_of_the_ten": 445,
+   "pairs_with_a_band": 93,
+   "kind": "ranking",
+   "survivors_by_airport": {
+    "LFPG": 15,
+    "EDDM": 12,
+    "EHAM": 12,
+    "LEBL": 11,
+    "LTFM": 11,
+    "EDDF": 10,
+    "LEMD": 9,
+    "EGLL": 5,
+    "LSZH": 2
+   }
+  },
+  "2026-07": {
+   "funnel": {
+    "1_key_day_lands_after_at_ADES": 225,
+    "2_arrival_carries_an_NM_join": 113,
+    "3_same_origin": 113,
+    "4_usable_clock_the_7ae_set": 113,
+    "5a_same_aircraft_type": 91,
+    "5b_air_time_inside_the_pair_band": 90,
+    "5c_unambiguous_SURVIVORS": 90,
+    "dropped_as_ambiguous": 0,
+    "no_pair_band_at_step_5b": 0
+   },
+   "no_nm_departures": 2834,
+   "no_nm_to_one_of_the_ten": 346,
+   "pairs_with_a_band": 93,
+   "kind": "ranking",
+   "survivors_by_airport": {
+    "LEBL": 22,
+    "LFPG": 20,
+    "LEMD": 16,
+    "EDDM": 13,
+    "EGLL": 13,
+    "LTFM": 3,
+    "LSZH": 2,
+    "EHAM": 1
+   }
+  }
+ },
+ "bands": {
+  "july_loo": {
+   "built_from": [
+    "december"
+   ],
+   "pairs": 90,
+   "reference_flights": 26169
+  },
+  "december": {
+   "built_from": [
+    "july_loo"
+   ],
+   "pairs": 90,
+   "reference_flights": 26341
+  },
+  "january": {
+   "built_from": [
+    "july_loo",
+    "december"
+   ],
+   "pairs": 90,
+   "reference_flights": 52510
+  },
+  "ranking": {
+   "built_from": [
+    "july_loo",
+    "december",
+    "january"
+   ],
+   "pairs": 93,
+   "reference_flights": 76827
+  }
+ },
+ "recovered_clock": {
+  "july_loo": {
+   "surviving_rows": 168,
+   "rows_in_a_served_cell": 36,
+   "rmse_head_p12": 336.02,
+   "rmse_recovered_clock": 453.17,
+   "rmse_head_p12_at_7ae": 1124.68,
+   "median_proxy_minus_y_s": -116.5,
+   "iqr_proxy_minus_y_s": [
+    -239.0,
+    10.5
+   ],
+   "p90_abs_proxy_minus_y_s": 496.5,
+   "rows_off_by_over_600s": 14,
+   "share_proxy_beats_head": 0.506,
+   "airports": {
+    "LFPG": 32,
+    "LEBL": 28,
+    "EGLL": 26,
+    "LEMD": 24,
+    "EDDM": 23,
+    "LTFM": 16,
+    "EHAM": 8,
+    "LSZH": 7,
+    "EDDF": 4
+   }
+  },
+  "december": {
+   "surviving_rows": 55,
+   "rows_in_a_served_cell": 12,
+   "rmse_head_p12": 376.92,
+   "rmse_recovered_clock": 702.29,
+   "rmse_head_p12_at_7ae": 694.91,
+   "median_proxy_minus_y_s": -117.0,
+   "iqr_proxy_minus_y_s": [
+    -628.5,
+    59.0
+   ],
+   "p90_abs_proxy_minus_y_s": 1019.8,
+   "rows_off_by_over_600s": 15,
+   "share_proxy_beats_head": 0.309,
+   "airports": {
+    "EDDM": 17,
+    "LFPG": 10,
+    "LEBL": 9,
+    "EGLL": 5,
+    "LEMD": 5,
+    "LTFM": 4,
+    "EDDF": 3,
+    "EHAM": 1,
+    "LSZH": 1
+   }
+  },
+  "january": {
+   "surviving_rows": 59,
+   "rows_in_a_served_cell": 20,
+   "rmse_head_p12": 405.39,
+   "rmse_recovered_clock": 303.16,
+   "rmse_head_p12_at_7ae": 569.59,
+   "median_proxy_minus_y_s": 34.0,
+   "iqr_proxy_minus_y_s": [
+    -67.5,
+    121.5
+   ],
+   "p90_abs_proxy_minus_y_s": 418.0,
+   "rows_off_by_over_600s": 4,
+   "share_proxy_beats_head": 0.576,
+   "airports": {
+    "LFPG": 17,
+    "EDDF": 13,
+    "LTFM": 7,
+    "EDDM": 6,
+    "LEBL": 6,
+    "LEMD": 4,
+    "EGLL": 3,
+    "EHAM": 2,
+    "LSZH": 1
+   }
+  }
+ },
+ "rider": {
+  "substitution": {
+   "july_loo": {
+    "rows": 168,
+    "gain_s2_per_surviving_row": -92452.1,
+    "ci95": [
+     -180804.8,
+     -22528.0
+    ],
+    "clear_above_zero": false
+   },
+   "december": {
+    "rows": 55,
+    "gain_s2_per_surviving_row": -351137.9,
+    "ci95": [
+     -789887.6,
+     -101759.1
+    ],
+    "clear_above_zero": false
+   },
+   "january": {
+    "rows": 59,
+    "gain_s2_per_surviving_row": 72436.3,
+    "ci95": [
+     -4859.8,
+     138433.0
+    ],
+    "clear_above_zero": false
+   }
+  },
+  "shrunk_w0.5": {
+   "july_loo": {
+    "rows": 168,
+    "gain_s2_per_surviving_row": -4271.3,
+    "ci95": [
+     -42959.4,
+     31456.9
+    ],
+    "clear_above_zero": false
+   },
+   "december": {
+    "rows": 55,
+    "gain_s2_per_surviving_row": -116450.5,
+    "ci95": [
+     -295437.0,
+     -21340.0
+    ],
+    "clear_above_zero": false
+   },
+   "january": {
+    "rows": 59,
+    "gain_s2_per_surviving_row": 72764.8,
+    "ci95": [
+     15994.3,
+     117673.5
+    ],
+    "clear_above_zero": true
+   }
+  }
+ },
+ "face": {
+  "substitution": {
+   "surviving_ranking_rows": 177,
+   "pooled_gain_s2_per_surviving_row": -19428.3,
+   "delta_s2_per_ranking_row": -9.9722,
+   "board_gain_s": -0.0194,
+   "face_s_at_1_2": -0.0233,
+   "every_fold_clear": false
+  },
+  "shrunk_w0.5": {
+   "surviving_ranking_rows": 177,
+   "pooled_gain_s2_per_surviving_row": 29845.5,
+   "delta_s2_per_ranking_row": 15.3191,
+   "board_gain_s": 0.0299,
+   "face_s_at_1_2": 0.0358,
+   "every_fold_clear": false
+  }
+ },
+ "surviving_ranking_rows": 177,
+ "remaining_face": {
+  "7ae_recoverable_before": {
+   "rows": 219,
+   "pooled_mse_gap_s2": 799912.8,
+   "delta_s2_per_ranking_row": 508.005,
+   "board_gain_s": 0.9923,
+   "face_s_at_1_2": 1.1908
+  },
+  "tightened_survivors": {
+   "rows": 177,
+   "pooled_mse_gap_s2": 87201.3,
+   "delta_s2_per_ranking_row": 44.759,
+   "board_gain_s": 0.0873,
+   "face_s_at_1_2": 0.1047
+  },
+  "per_fold_gap_vs_with_nm_s2": {
+   "before": {
+    "july_loo": 1209142.8,
+    "december": 445079.9,
+    "january": 285097.4
+   },
+   "after": {
+    "july_loo": 57154.0,
+    "december": 104254.1,
+    "january": 125001.2
+   }
+  },
+  "note": "the ceiling the tightening leaves: the same arithmetic \u00a77ae used, on the rows that survive all three clauses"
+ },
+ "verdict": {
+  "substitution": "noise",
+  "shrunk_w0.5": "noise"
+ }
+}

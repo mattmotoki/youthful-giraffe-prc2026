@@ -1,0 +1,692 @@
+{
+  "arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+  "base": {
+    "bytes_file": "submissions/candidates/exp-046-surface-v2.parquet",
+    "bytes_sha256": "eabd824d925f15223db452557fe113e286ca8ce49302e8a97e79f060c0360ea1",
+    "head_arm": "c_lgb_shipped@leaves_127x300_lr050",
+    "head_file": "submissions/candidates/exp-046-surface-v2.parquet",
+    "head_sha256": "eabd824d925f15223db452557fe113e286ca8ce49302e8a97e79f060c0360ea1",
+    "price_file": "submissions/candidates/exp-035-k2climb-v11member.parquet",
+    "price_sha256": "48dd572d61ff2403f13614ce04bdc3a8fd0dbdb5175bef7eb143650ea520ec52",
+    "set": "v15",
+    "what": "v15's bytes for every row this lane does not serve, v12 as the prediction the update is added to, and v15's own head (127 leaves, unguarded) as the head the increment is priced against"
+  },
+  "base_set": "v15",
+  "census": {
+    "by_airport": {
+      "EDDF": {
+        "fold_rms_update_s": 115.29342412955477,
+        "moved": 14555,
+        "moved_share": 0.4008,
+        "ratio_to_fold": 0.9908230059555203,
+        "rms_update_s": 114.23537706295016,
+        "rows": 36317,
+        "within_a_third": true
+      },
+      "EDDM": {
+        "fold_rms_update_s": 121.72787639591849,
+        "moved": 24716,
+        "moved_share": 0.9519,
+        "ratio_to_fold": 0.9656182110986988,
+        "rms_update_s": 117.54265424627033,
+        "rows": 25966,
+        "within_a_third": true
+      },
+      "EGLL": {
+        "fold_rms_update_s": 123.97453856658228,
+        "moved": 33040,
+        "moved_share": 0.8293,
+        "ratio_to_fold": 1.0344373246743936,
+        "rms_update_s": 128.2438900025578,
+        "rows": 39840,
+        "within_a_third": true
+      },
+      "EHAM": {
+        "fold_rms_update_s": 102.89760867539644,
+        "moved": 35028,
+        "moved_share": 0.9174,
+        "ratio_to_fold": 1.0721262116006764,
+        "rms_update_s": 110.3192233719217,
+        "rows": 38182,
+        "within_a_third": true
+      },
+      "LEBL": {
+        "fold_rms_update_s": 100.87674394168543,
+        "moved": 26577,
+        "moved_share": 0.8835,
+        "ratio_to_fold": 1.1135811602121772,
+        "rms_update_s": 112.33444155700879,
+        "rows": 30080,
+        "within_a_third": true
+      },
+      "LEMD": {
+        "fold_rms_update_s": 122.44150755546555,
+        "moved": 26744,
+        "moved_share": 0.7237,
+        "ratio_to_fold": 0.9230402795391187,
+        "rms_update_s": 113.01844336118803,
+        "rows": 36954,
+        "within_a_third": true
+      },
+      "LFPG": {
+        "fold_rms_update_s": 69.97601701260896,
+        "moved": 0,
+        "moved_share": 0.0,
+        "ratio_to_fold": 0.0,
+        "rms_update_s": 0.0,
+        "rows": 39872,
+        "within_a_third": false
+      },
+      "LIRF": {
+        "fold_rms_update_s": 101.34764386468294,
+        "moved": 5252,
+        "moved_share": 0.1952,
+        "ratio_to_fold": 0.7526436506636865,
+        "rms_update_s": 76.27866066447814,
+        "rows": 26899,
+        "within_a_third": true
+      },
+      "LSZH": {
+        "fold_rms_update_s": 109.5782291310901,
+        "moved": 21091,
+        "moved_share": 0.9111,
+        "ratio_to_fold": 1.0911292286028564,
+        "rms_update_s": 119.56400862347338,
+        "rows": 23150,
+        "within_a_third": true
+      },
+      "LTFM": {
+        "fold_rms_update_s": null,
+        "moved": 0,
+        "moved_share": 0.0,
+        "ratio_to_fold": null,
+        "rms_update_s": 0.0,
+        "rows": 47581,
+        "within_a_third": false
+      }
+    },
+    "every_unserved_row_bit_identical_to_the_bytes_file": true,
+    "finite": true,
+    "floor_bound_rows": 3,
+    "handover_to_exp_047": {
+      "boundary_is_shared": "exp-047-queue/code/block.py imports this lane's code/block.py as the repo's one matcher and keys its class on the same obs_has_clock column, so the two lanes' populations are complementary by construction and not by agreement. The noac hold is this lane's and any composition of the two candidates has to keep it.",
+      "boundary_matcher_matches_the_pin": true,
+      "boundary_matcher_sha256": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+      "boundary_matcher_sha256_pinned": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+      "composition": "desk, 2026-09-08 14:10: this lane prices and serves the with-clock class and the base elsewhere, exp-047-queue prices and serves the no-clock class and the base elsewhere, each on its own review round; the desk composes the two disjoint updates on the base and verifies the composed file, and either candidate may go up alone.",
+      "exp_047_interface_is_stale": {
+        "2025-01": false,
+        "2025-07": false,
+        "2025-12": false,
+        "2026-01": false,
+        "2026-07": false
+      },
+      "exp_047_interface_matcher_sha256": {
+        "2025-01": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+        "2025-07": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+        "2025-12": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+        "2026-01": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+        "2026-07": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c"
+      },
+      "interface": "artifacts/exp-047/block/<month>.parquet, keyed by MVT_ID_mvt",
+      "left_at_base": 154745,
+      "left_at_base_by_reach_class": {
+        "matched_no_clock": 11491,
+        "strict": 38,
+        "unmatched": 143216
+      },
+      "rows": 344841,
+      "served_class": "obs_has_clock & obs_taxi.notna() & ~noac",
+      "served_rows": 190096
+    },
+    "held_airport_rows_identical_to_the_bytes_file": true,
+    "max_abs_update_s": 1054.1184248110512,
+    "min_prediction_s": 60.0,
+    "moved": 188482,
+    "noac_identical_to_the_bytes_file": true,
+    "noac_rows": 388,
+    "outside_the_with_clock_class_identical_to_the_bytes_file": true,
+    "reverted_to_the_price_base": {
+      "MVT_ID_mvt": [],
+      "all_equal_the_price_base": true,
+      "by_airport": {},
+      "head_class_column": "occupied_by_exp_046",
+      "head_occupied_rows": 188484,
+      "max_abs_change_off_the_bytes_s": 0.0,
+      "rows": 0,
+      "what": "OCCUPIED BY THE HEAD (read from the head's own class vector, not inferred from the prediction), out of this serve's class, and untouched by the bytes file: the stale head is dropped and the row carries the price base"
+    },
+    "rms_update_over_the_price_base_s": 115.85818948924567,
+    "rms_update_s": 34.48415255969124,
+    "rows": 344841,
+    "rows_the_bytes_file_keeps": 156357,
+    "served_rows": 188484,
+    "unchanged": 156359
+  },
+  "fit": {
+    "info": {
+      "fit_rows_by_airport": {
+        "EDDF": 44083,
+        "EDDM": 28206,
+        "EGLL": 18431,
+        "EHAM": 57252,
+        "LEBL": 37639,
+        "LEMD": 21261,
+        "LFPG": 1401,
+        "LIRF": 18701,
+        "LSZH": 29511
+      },
+      "lgb_params_overridden": {
+        "num_leaves": 255
+      },
+      "n_features": 103,
+      "oof_rmse_vs_r11": 162.86426366519729,
+      "r11_rmse_on_fit_rows": 201.8613116544835,
+      "weights": {
+        "EDDF": 1.0,
+        "EDDM": 1.0,
+        "EGLL": 1.0,
+        "EHAM": 1.0,
+        "LEBL": 0.9976101057654415,
+        "LEMD": 1.0,
+        "LFPG": 0.7429162728224732,
+        "LIRF": 0.8577167582972598,
+        "LSZH": 1.0
+      }
+    },
+    "months": [
+      "2025-01",
+      "2025-07",
+      "2025-12"
+    ],
+    "rows": 256485
+  },
+  "gate": {
+    "airports_held_at_the_base": [
+      "LFPG"
+    ],
+    "airports_out_of_band": [],
+    "all_checked_before_the_write": true,
+    "arm_choice": {
+      "chosen": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+      "considered": [
+        {
+          "all_row_gain_s": 9.20742948802615,
+          "arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+          "clean_gain_s": 11.156529377775058,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 9.042736144786204,
+          "arm": "c_lgb_shipped@leaves_255x300_lr050",
+          "clean_gain_s": 10.955553021632625,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 9.040412950601137,
+          "arm": "c_lgb_shipped@leaves_127x300_lr050+guard995",
+          "clean_gain_s": 10.952717919076463,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.872911833687112,
+          "arm": "c_lgb_shipped@leaves_127x300_lr050",
+          "clean_gain_s": 10.748371341238226,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.822334471664533,
+          "arm": "c_lgb_shipped@rounds_63x900_lr020",
+          "clean_gain_s": 10.68667914745211,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.714511467542707,
+          "arm": "c_lgb_shipped@rounds_63x1500_lr010",
+          "clean_gain_s": 10.55517849628393,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.703939284560079,
+          "arm": "c_lgb_shipped@leafsize_63x900_lr020_mcs30",
+          "clean_gain_s": 10.542285106777001,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.545073252600844,
+          "arm": "c_lgb_shipped@leaves_63x300_lr050",
+          "clean_gain_s": 10.348577081546154,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.41677171657409,
+          "arm": "c_geom_nbr_centred",
+          "clean_gain_s": 10.19217569566257,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.356822362112666,
+          "arm": "c_lgb_shipped@rounds_31x900_lr020",
+          "clean_gain_s": 10.119105037680413,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.321960186344825,
+          "arm": "c_geom_rwy",
+          "clean_gain_s": 10.07661656532403,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.270470072499222,
+          "arm": "c_nbr_centred",
+          "clean_gain_s": 10.013867563351681,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.267034866460506,
+          "arm": "c_geom",
+          "clean_gain_s": 10.00968206428422,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.22333526161782,
+          "arm": "c_nbr",
+          "clean_gain_s": 9.956429975834311,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.211948511415017,
+          "arm": "c_geom_rwy_rel",
+          "clean_gain_s": 9.942554903871383,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.14152370628807,
+          "arm": "c_nbr_winsor",
+          "clean_gain_s": 9.856747247748984,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.141025342956539,
+          "arm": "c_lgb_shipped",
+          "clean_gain_s": 9.85614010821834,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.124117756747808,
+          "arm": "c_geom_rel",
+          "clean_gain_s": 9.835542724707864,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.122117408777228,
+          "arm": "c_geom_motion",
+          "clean_gain_s": 9.83310388937204,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.062360771534145,
+          "arm": "c_lgb_shipped@leaves_15x600_lr050",
+          "clean_gain_s": 9.760304409216332,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 7.958624345981264,
+          "arm": "c_geom_chord",
+          "clean_gain_s": 9.633944074422288,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 4.203659086196581,
+          "arm": "b_lgb",
+          "clean_gain_s": 5.073927135198261,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 2.221840378935042,
+          "arm": "a_linear",
+          "clean_gain_s": 2.67785123157185,
+          "eligible": false,
+          "every_fold_interval_clear": false,
+          "servable": true,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 2.088360306207278,
+          "arm": "a_linear_reach",
+          "clean_gain_s": 2.5167269746976046,
+          "eligible": false,
+          "every_fold_interval_clear": false,
+          "servable": true,
+          "tail_clause_passes": false
+        }
+      ],
+      "excluded_as_a_superseded_instrument": {
+        "arms": [
+          "b_lgb_nbr",
+          "c_lgb_shipped_nbr"
+        ],
+        "months_rebuilt": {
+          "2025-01": {
+            "on_disk_now": "757cf6a9174f95ef8f62d66ccf7fb1252ee47f163f742b4a73d1e4569e572d3d",
+            "priced_on": "c4d7a8414a58175f4b487e0d1be6a9b4008cd90148b2364d846092edf759db71"
+          },
+          "2025-07": {
+            "on_disk_now": "a759dbbc92da03b0dd26bd6a1aa4f481a71af2cb3f24ebf8fc9689e827ebdff7",
+            "priced_on": "53f250b8353a15ace6f8bb9bf19f1757e0d43c23352be09f65c84f3c5651fd26"
+          },
+          "2025-12": {
+            "on_disk_now": "5a0cf0db8774fcd144622dd5e3a58649757c774257de35615ebaf18af30afd47",
+            "priced_on": "25e417c6b251d8241e916451787359b49040b989bb0ca19fed2fbb69c211efe7"
+          }
+        },
+        "what": "an arm priced against a neighbour block that has since been rebuilt is a reading of a different instrument"
+      },
+      "excluded_as_the_same_arm_under_a_second_name": {
+        "c_lgb_shipped@predeclared_31x300_lr050": "c_lgb_shipped"
+      },
+      "excluded_by_name": [
+        "b_lgb_placebo",
+        "c_lgb_shipped_noobs",
+        "c_lgb_shipped_placebo"
+      ],
+      "rule": "largest clean gain among arms with every fold interval clear and the registered tail clause passing on every fold; controls and placebos excluded by name",
+      "selection": {
+        "arms_compared_after_the_name_exclusions": 24,
+        "arms_passing_every_clause": 15,
+        "arms_priced_on_this_rotation": 27,
+        "entries_in_the_three_priced_tables": 30,
+        "servable_arms_passing_every_clause": 11,
+        "what_this_means": "the chosen arm's interval is the interval of the LARGEST of 15 readings that passed every clause on one and the same three folds, not the interval of a single pre-registered arm. It is quoted with this count beside it and is expected to be optimistic by roughly the spread of the pool. No correction is applied to it, because a correction would be a second choice made on the same data; the count is stated instead."
+      }
+    },
+    "fold": {
+      "airports_held": [
+        "LFPG"
+      ],
+      "as_priced_with_every_airport": {
+        "board_all_row_gain_s": 9.20742948802615,
+        "every_fold_interval_clear": true
+      },
+      "board_all_row_gain_s": 9.192662748274131,
+      "board_interval_ci95": [
+        7.314995116191727,
+        11.557612131278542
+      ],
+      "every_fold_interval_clear": true,
+      "passes": true,
+      "read_on": "the vector that ships: the same saved fold-side update with ['LFPG'] zeroed, no refit",
+      "reason": "",
+      "rows_returned_to_the_base_by_fold": {
+        "december": 989,
+        "january": 0,
+        "july_loo": 394
+      }
+    },
+    "increment_over_the_head": {
+      "arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+      "board_all_row_gain_s": 0.3350163166904281,
+      "board_all_row_interval_ci95": [
+        0.21366309442530423,
+        0.49451237950750393
+      ],
+      "board_clean_gain_s": 0.40875645842601216,
+      "board_clean_interval_ci95": [
+        0.27364611896486724,
+        0.5557857038516132
+      ],
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 375.2143921435096,
+            "B_mean_dd": 613.0703164283731,
+            "ci95": [
+              46.91923197482245,
+              230.15360020789973
+            ],
+            "mse_gain_s2": 137.35846785864615,
+            "rows": 165677,
+            "rows_moved": 99786
+          },
+          "rmse_head": 187.20696479647032,
+          "rmse_new": 186.8397420262837
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 365.0392813455561,
+            "B_mean_dd": 591.5053649928388,
+            "ci95": [
+              57.17563517457352,
+              225.1894804568787
+            ],
+            "mse_gain_s2": 138.57319769827322,
+            "rows": 153706,
+            "rows_moved": 68768
+          },
+          "rmse_head": 329.5926997859998,
+          "rmse_new": 329.38241385132557
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 305.54493442772593,
+            "B_mean_dd": 360.96296241705227,
+            "ci95": [
+              160.39875116145365,
+              353.2258603880788
+            ],
+            "mse_gain_s2": 250.1269064383995,
+            "rows": 190713,
+            "rows_moved": 86519
+          },
+          "rmse_head": 273.69682247818383,
+          "rmse_new": 273.23949884344336
+        }
+      },
+      "december_gain_s": 0.3672227701866291,
+      "every_fold_interval_clear": true,
+      "head_arm": "c_lgb_shipped@leaves_127x300_lr050",
+      "held": [
+        "LFPG"
+      ],
+      "passes": true,
+      "reason": "",
+      "rows_moved_by_the_increment": {
+        "december": 99786,
+        "january": 68768,
+        "july_loo": 86519
+      },
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -5223.630613444012,
+          "passes_the_clause": false,
+          "rmse_arm": 1752.665933943567,
+          "rmse_base": 1751.1751041494488,
+          "rmse_gain_s": -1.4908297941183264,
+          "rows": 261,
+          "rows_moved": 73,
+          "share_of_the_gain": -0.05990944632068876
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 31290.1697264975,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.994452900504,
+          "rmse_base": 5983.609681066529,
+          "rmse_gain_s": 2.61522816602519,
+          "rows": 325,
+          "rows_moved": 94,
+          "share_of_the_gain": 0.4774426591496828
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 44390.07835711559,
+          "passes_the_clause": true,
+          "rmse_arm": 2387.2709803798725,
+          "rmse_base": 2396.5501897771705,
+          "rmse_gain_s": 9.279209397298018,
+          "rows": 656,
+          "rows_moved": 253,
+          "share_of_the_gain": 0.610448514686891
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 74931.87571032534,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.665933943567,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 21.247748205764992,
+          "rows": 261,
+          "rows_moved": 35,
+          "share_of_the_gain": 0.017390291915044577
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 37675.085643350365,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.994452900504,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.1487381728802575,
+          "rows": 325,
+          "rows_moved": 31,
+          "share_of_the_gain": 0.014787118037667722
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 40679.1616564717,
+          "passes_the_clause": true,
+          "rmse_arm": 2387.2709803798725,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 8.504863771735472,
+          "rows": 656,
+          "rows_moved": 86,
+          "share_of_the_gain": 0.02433604864047819
+        }
+      },
+      "what": "the increment over the served head: d = d_new - d_head on the with-clock rows, priced against a base of pbase + d_head, with the airport hold applied to BOTH vectors so the comparison is like for like"
+    },
+    "rms_band_on_the_ratio": [
+      0.6666666666666666,
+      1.3333333333333333
+    ],
+    "rms_breach_accepted_for": [],
+    "rms_breach_covered_by_the_acceptance": false,
+    "rms_within_a_third_everywhere": true,
+    "rows_the_hold_returned_to_the_base": 1533,
+    "tail_clause": {
+      "available": true,
+      "by_fold": {
+        "december": {
+          "passes": true,
+          "rmse_gain_s": 21.38661199485432
+        },
+        "january": {
+          "passes": true,
+          "rmse_gain_s": 3.1487381728802575
+        },
+        "july_loo": {
+          "passes": true,
+          "rmse_gain_s": 8.504863771735472
+        }
+      },
+      "clause": "rows with y > 3600 s not worse by more than 1 s of RMSE (assignments/k2climb.md line 24); tail rule reads it as a secondary guard and not a gate",
+      "passes_on_every_fold": true
+    },
+    "tail_guard": {
+      "cut_read_from": "analysis/guard-arms.json",
+      "cut_s": 1864.41,
+      "frozen_by": "code/guard.py",
+      "quantile": 99.5,
+      "rows_returned_to_the_base": 1560
+    }
+  },
+  "is_candidate": false,
+  "read_back_identical_to_the_vector_priced": true,
+  "rule": {
+    "cover": {
+      "airport_days_by_rule": {
+        "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0": 1323
+      },
+      "airport_days_present": 1323,
+      "airport_days_rejected": 0,
+      "chosen": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "n_rules": 1
+    },
+    "days_wrong_rule": [],
+    "normalised_by_airborne_alt_ok": null,
+    "rules_seen": null
+  },
+  "sha256": "6e1ca65b295623da9f2adf48aa3f748146b76c726c1101f8da10abacad39da8b",
+  "why_not_a_candidate": [
+    "--dry-run was asked for"
+  ],
+  "written_to": "experiments/exp-046-surfacefit/work/dry-run.parquet"
+}

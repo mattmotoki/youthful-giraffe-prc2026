@@ -1,0 +1,9 @@
+{
+  "note": "blend-3b: the re-issue of blend-3 on members that exist and can be rebuilt. Every ranking prediction is at the declared 6-thread release configuration; the NM-tail member's OOF is rebuilt under prc.nmtail VERSION 4, because its VERSION 2 OOF is the exact artifact proved non-reproducible. The exp-008 members keep their 16-thread OOF: a probe measured that a thread change moves the fold RMSE by 0.002 s while scrambling 99.8 percent of rows, so it is disclosable rather than disqualifying.  N1-nmtail is NOT listed here: it is undefined on non-NM rows and enters only through the nm_late regime split, which nmtail_regime.py handles. blend.py's four-member rotation is the CORE, and the hybrid rule adds the specialist on top.",
+  "members": {
+    "T-tailv2": "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+    "C2-cat": "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+    "L2-hub": "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-{fold}.parquet"
+  }
+}

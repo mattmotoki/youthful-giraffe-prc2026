@@ -1,0 +1,194 @@
+{
+ "what": "the expected board move for v20, registered BEFORE the upload (score-feedback rule)",
+ "written_before_the_read": true,
+ "candidate": "v7 = v6's bytes + the bag (255 leaves, K = 5, LFPG held)",
+ "why_the_face_over_v18_is_the_increment_over_v6": "the bag is fitted with LFPG held and the rider moves ONLY LFPG rows, so the two changes are disjoint: the bag's read over v18's bytes is exactly its increment over v6's",
+ "face": {
+  "all_row_s": 0.19937,
+  "all_row_ci95": [
+   0.14426,
+   0.27236
+  ],
+  "by_fold_s2_per_row": {
+   "july_loo": {
+    "gain": 84.94,
+    "ci95": [
+     54.44,
+     115.12
+    ]
+   },
+   "december": {
+    "gain": 176.32,
+    "ci95": [
+     137.42,
+     219.72
+    ]
+   },
+   "january": {
+    "gain": 162.39,
+    "ci95": [
+     124.29,
+     207.63
+    ]
+   }
+  },
+  "source": "experiments/exp-046-surfacefit/analysis/bag-arm.json"
+ },
+ "the_7ar_floor_check": {
+  "why_it_must_be_made": "the bag IS refits -- five of them -- and \u00a77ar measured that a single refit of this arm on a perturbed class reads at a floor of about -0.063 s.  The desk's INSTRUMENT ruling makes the placebo envelope the interpretation floor for any refit read, so a bag read has to clear it before it is read as anything",
+  "placebo_envelope_s2_per_row": {
+   "july_loo": [
+    -81.25,
+    -48.3
+   ],
+   "december": [
+    -25.25,
+    13.56
+   ],
+   "january": [
+    -24.4,
+    30.09
+   ]
+  },
+  "placebo_envelope_board_s": [
+   -0.06344,
+   -0.05339
+  ],
+  "bag_by_fold_s2_per_row": {
+   "july_loo": 84.94,
+   "december": 176.32,
+   "january": 162.39
+  },
+  "clears_the_envelope_on_every_fold": true,
+  "clears_on_the_board": true,
+  "margin_by_fold_s2_per_row": {
+   "july_loo": 102.74,
+   "december": 123.86,
+   "january": 94.2
+  },
+  "reading": "every fold's LOWER bound is above the TOP of its placebo envelope -- july +54.44 against -48.30, december +137.42 against +13.56, january +124.29 against +30.09 -- and on the board the lower bound +0.14426 sits +0.19765 s above the envelope's top of -0.05339.  The bag is not a re-arrangement read: averaging K fits is exactly what removes the re-arrangement variance \u00a77ar priced, and the read clears the floor on every fold, july by the least"
+ },
+ "transfer_history": {
+  "transfers": {
+   "v13": 1.75,
+   "v14": 1.03,
+   "v15": 2.01,
+   "v16": 0.36,
+   "v17": 0.7,
+   "v18": 1.44
+  },
+  "median": 1.235,
+  "mean": 1.215,
+  "range": [
+   0.36,
+   2.01
+  ],
+  "note": "six uploads, unchanged from \u00a77as; when BOARD READING 18 lands, append v19's own transfer and re-read the median before using this table"
+ },
+ "expected_board_MOVE_from_whatever_v19_scores": {
+  "at_face_transfer_1x": 0.1994,
+  "at_the_median_transfer": 0.2462,
+  "at_the_mean_transfer": 0.2422,
+  "under_the_observed_transfer_range_at_face": [
+   0.0718,
+   0.4007
+  ],
+  "under_the_observed_range_on_the_face_interval": [
+   0.0519,
+   0.5474
+  ],
+  "under_the_two_most_recent_uploads": [
+   0.1396,
+   0.2871
+  ]
+ },
+ "expected_board_ABSOLUTE": {
+  "rule": "substitute the actual v19 score for the anchor when BOARD READING 18 lands; the three anchors below are worked examples, not predictions of v19",
+  "anchor_v18_246.3605_the_fallback_if_v19_is_not_read": {
+   "at_face_transfer_1x": 246.1611,
+   "at_the_median_transfer": 246.1143,
+   "at_the_mean_transfer": 246.1183,
+   "under_the_observed_transfer_range_at_face": [
+    245.9598,
+    246.2887
+   ],
+   "under_the_observed_range_on_the_face_interval": [
+    245.8131,
+    246.3086
+   ],
+   "under_the_two_most_recent_uploads": [
+    246.0734,
+    246.2209
+   ]
+  },
+  "anchor_246.3411_v19_at_face_per_7as": {
+   "at_face_transfer_1x": 246.1417,
+   "at_the_median_transfer": 246.0949,
+   "at_the_mean_transfer": 246.0989,
+   "under_the_observed_transfer_range_at_face": [
+    245.9404,
+    246.2693
+   ],
+   "under_the_observed_range_on_the_face_interval": [
+    245.7937,
+    246.2892
+   ],
+   "under_the_two_most_recent_uploads": [
+    246.054,
+    246.2015
+   ]
+  },
+  "anchor_246.3365_v19_at_the_median_per_7as": {
+   "at_face_transfer_1x": 246.1371,
+   "at_the_median_transfer": 246.0903,
+   "at_the_mean_transfer": 246.0943,
+   "under_the_observed_transfer_range_at_face": [
+    245.9358,
+    246.2647
+   ],
+   "under_the_observed_range_on_the_face_interval": [
+    245.7891,
+    246.2846
+   ],
+   "under_the_two_most_recent_uploads": [
+    246.0494,
+    246.1969
+   ]
+  }
+ },
+ "if_v6_is_never_uploaded": {
+  "face_all_row_s": 0.22025,
+  "face_ci95": [
+   0.16206,
+   0.29728
+  ],
+  "what": "v7 would then go up over v18's bytes and carry the bag AND the rider, so the registered face is the combined read, not the bag's",
+  "expected_board_at_face": 246.1403,
+  "under_the_observed_transfer_range": [
+   245.9178,
+   246.2812
+  ],
+  "failure_move_s": 0.0583
+ },
+ "transfer_failure": {
+  "criterion": "a transfer failure is a board MOVE of less than +0.0519 s from whatever v19 scores -- the lowest transfer ever observed on this board (0.36x, v16) applied to the lower end of this candidate's own face interval (+0.14426 s) -- and a score at or above v19's own is not a weak transfer but no transfer at all",
+  "failure_move_under_s": 0.0519,
+  "no_transfer_at_or_above": "the v19 score itself",
+  "at_the_fallback_anchor": {
+   "failure_above": 246.3086,
+   "no_transfer_at_or_above": 246.3605
+  }
+ },
+ "resolution": {
+  "board_display_step_s": 0.0001,
+  "move_at_face_in_display_steps": 1994,
+  "failure_line_in_display_steps": 519,
+  "is_the_move_inside_one_digit_of_board_noise": false,
+  "reading": "NO, and not nearly: the move at face is 1994 display steps and the failure line itself is 519, so unlike v6 (28 steps) both halves of this reading are far above the board's last digit"
+ },
+ "rank": {
+  "second_place": 260.931,
+  "rank_at_risk": false
+ },
+ "what_this_does_not_claim": "it does not predict the direction of the surprise -- six transfers with no trend make a wide band the honest one -- and it is not a claim that v7 should have a slot, which is the desk's call."
+}

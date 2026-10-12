@@ -1,0 +1,12 @@
+{
+  "note": "blend-5 serve side. Each member's twelve-month ranking prediction, matched to the OOF whose weights it was fitted with. V3-allin's file uses the submission column name TAXITIME_SEC_mvt rather than y_pred; the builder renames it. T-tailv4 is pending its fit. All six paths are inside git: artifacts/ and submissions/ are BOTH gitignored (.gitignore lines 20 and 22), which is how member 48acb7e7 was permanently lost from this lane, so nothing blend-5 depends on is left there.",
+  "ranking": {
+    "T-tailv2": "experiments/exp-012-blend2/published/T-tailv4-ranking.parquet",
+    "C2-cat": "experiments/exp-012-blend2/published/C2-cat-ranking.parquet",
+    "L2-hub": "experiments/exp-012-blend2/published/L2-hub8725-ranking.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-ranking.parquet",
+    "F1-fresh": "experiments/exp-012-blend2/published/F1-fresh-s1-ranking.parquet",
+    "V3-allin": "experiments/exp-012-blend2/published/V3-allin-v1-ranking.parquet",
+    "N1-nmtail": "experiments/exp-012-blend2/published/N1-nmtail-v4-ranking.parquet"
+  }
+}

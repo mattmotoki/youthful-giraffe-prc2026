@@ -1,0 +1,206 @@
+{
+  "arm": "k2-mask",
+  "note": "K2 served at EDDM, EGLL, LEBL, LEMD, LFPG, LIRF, LSZH, LTFM; the other 2 airports held at v7. No refit: np.where over committed rotations.",
+  "clean": {
+    "july_loo": 284.3193,
+    "december": 205.2376,
+    "january": 218.2457
+  },
+  "vs_stack5": {
+    "july_loo": 0.8837,
+    "december": 0.3742,
+    "january": 0.8846
+  },
+  "vs_v6": {
+    "july_loo": 0.4026,
+    "december": 0.4158,
+    "january": 0.5709
+  },
+  "ci_v6": {
+    "july_loo": [
+      -0.4026,
+      -0.5769,
+      -0.2687
+    ],
+    "december": [
+      -0.4158,
+      -0.6225,
+      -0.2451
+    ],
+    "january": [
+      -0.5709,
+      -0.7707,
+      -0.4017
+    ]
+  },
+  "ci_v6_no_noac": {
+    "july_loo": [
+      -0.4668,
+      -0.658,
+      -0.3158
+    ],
+    "december": [
+      -0.427,
+      -0.6363,
+      -0.253
+    ],
+    "january": [
+      -0.6038,
+      -0.804,
+      -0.4263
+    ]
+  },
+  "slices": {
+    "july_loo": {
+      "n": 190713,
+      "rmse": 284.3193,
+      "le3600": 247.3142,
+      "gt3600": 2404.279,
+      "no_nm": 1120.9008,
+      "no_nm_flight_id_only": 1121.4312,
+      "noac": 3407.3545,
+      "no_noac": 245.5754,
+      "n_no_nm": 3938
+    },
+    "december": {
+      "n": 165677,
+      "rmse": 205.2376,
+      "le3600": 192.6396,
+      "gt3600": 1794.1323,
+      "no_nm": 663.985,
+      "no_nm_flight_id_only": 664.816,
+      "noac": 2010.4588,
+      "no_noac": 199.9316,
+      "n_no_nm": 1649
+    },
+    "january": {
+      "n": 153704,
+      "rmse": 218.2457,
+      "le3600": 196.3703,
+      "gt3600": 2086.7643,
+      "no_nm": 949.8245,
+      "no_nm_flight_id_only": 950.3952,
+      "noac": 3509.4763,
+      "no_noac": 206.3987,
+      "n_no_nm": 1433
+    }
+  },
+  "clean_board": 257.1604,
+  "gain_board_vs_stack5": 0.8768,
+  "gain_board_vs_v6": 0.4626,
+  "predicted_board": 263.2296,
+  "worst_fold_vs_v6": 0.4026,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "vs_K2": {
+    "july_loo": 0.0002,
+    "december": -0.022,
+    "january": 0.0125
+  },
+  "ci_K2": {
+    "july_loo": [
+      -0.0002,
+      -0.0164,
+      0.0144
+    ],
+    "december": [
+      0.022,
+      0.0105,
+      0.0356
+    ],
+    "january": [
+      -0.0125,
+      -0.033,
+      0.0041
+    ]
+  },
+  "ci_K2_no_noac": {
+    "july_loo": [
+      -0.0003,
+      -0.0188,
+      0.0166
+    ],
+    "december": [
+      0.0226,
+      0.0108,
+      0.0366
+    ],
+    "january": [
+      -0.0133,
+      -0.0349,
+      0.0044
+    ]
+  },
+  "clean_board_K2": 257.1653,
+  "gain_board_vs_K2": 0.0049,
+  "worst_fold_vs_K2": -0.022,
+  "predicted_board_vs_K2": 263.0778,
+  "vs_v7": {
+    "july_loo": 0.3058,
+    "december": 0.3301,
+    "january": 0.2955
+  },
+  "ci_v7": {
+    "july_loo": [
+      -0.3058,
+      -0.4694,
+      -0.1783
+    ],
+    "december": [
+      -0.3301,
+      -0.5351,
+      -0.1742
+    ],
+    "january": [
+      -0.2955,
+      -0.3938,
+      -0.1985
+    ]
+  },
+  "ci_v7_no_noac": {
+    "july_loo": [
+      -0.3546,
+      -0.5409,
+      -0.2097
+    ],
+    "december": [
+      -0.339,
+      -0.5476,
+      -0.1786
+    ],
+    "january": [
+      -0.3125,
+      -0.4141,
+      -0.2121
+    ]
+  },
+  "clean_board_v7": 257.4598,
+  "gain_board_vs_v7": 0.2994,
+  "worst_fold_vs_v7": 0.2955,
+  "predicted_board_vs_v7": 263.1629,
+  "gate_v6_inherited": true,
+  "gate_gain_v6_inherited": true,
+  "gate_folds_v6_inherited": true,
+  "gate_gain_K2": false,
+  "gate_folds_K2": false,
+  "gate_mask": false,
+  "source": "K2",
+  "keep": [
+    "EDDM",
+    "EGLL",
+    "LEBL",
+    "LEMD",
+    "LFPG",
+    "LIRF",
+    "LSZH",
+    "LTFM"
+  ],
+  "hold_at_v7": [
+    "EDDF",
+    "EHAM"
+  ],
+  "mask_rule": "gains on all three folds against v7"
+}

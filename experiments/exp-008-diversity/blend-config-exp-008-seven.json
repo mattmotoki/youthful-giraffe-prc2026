@@ -1,0 +1,34 @@
+{
+  "members": [
+    "L0-lin",
+    "L1-plain",
+    "L2-hub",
+    "L3-monoraw",
+    "C-cat",
+    "X-xgb",
+    "T-tail"
+  ],
+  "mode": "nnls",
+  "per_regime": false,
+  "fit_folds": [
+    "july_loo",
+    "december",
+    "january"
+  ],
+  "fit_rows": 510096,
+  "weights": {
+    "_all": {
+      "L0-lin": 0.029596939927375193,
+      "L1-plain": 0.0,
+      "L2-hub": 0.3330501607320733,
+      "L3-monoraw": 0.0,
+      "C-cat": 0.23451878096836518,
+      "X-xgb": 0.0,
+      "T-tail": 0.40417460868388877
+    }
+  },
+  "floor": 60.0,
+  "late_cut": 1800.0,
+  "blend_version": 3,
+  "note": "Seven-member NNLS weights (Finding 15). Not the shipped candidate; see blend-config-exp-008-blend3.json."
+}

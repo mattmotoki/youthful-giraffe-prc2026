@@ -1,0 +1,58 @@
+{
+  "against_the_harvest": {
+    "columns_compared": [
+      "obs_wheels_off",
+      "t_airborne",
+      "seg_start",
+      "seg_points",
+      "seg_span_s",
+      "stand_stop_s",
+      "obs_offblock_strict",
+      "obs_offblock_loose",
+      "obs_offblock_disp",
+      "n_ground_points",
+      "callsign_modal"
+    ],
+    "columns_that_differ_on_shared_rows": [],
+    "harvest_departure_segments": 5389,
+    "note": "the pilot de-duplicates tied points and the harvest keeps both, so this is the one place the two can disagree; run over the pilot's own de-duplicated slice, which is what its numbers use",
+    "only_in_harvest": 0,
+    "only_in_pilot": 0,
+    "pilot_departure_segments": 5389,
+    "shared": 5389
+  },
+  "days": [
+    "2025-07-07",
+    "2025-07-08",
+    "2025-07-09",
+    "2025-07-10",
+    "2025-07-11",
+    "2025-07-12",
+    "2025-07-13"
+  ],
+  "equivalence": {
+    "reading": "with no ties left, the sort key determines the order, so the segment step is input-order independent and the stable sort is a guard against a future input that does have ties -- not a repair of a number that was wrong",
+    "stable_sort_shuffled_input": {
+      "columns_that_differ": [],
+      "identical": true,
+      "rows": 5389
+    },
+    "unstable_sort_same_input": {
+      "columns_that_differ": [],
+      "identical": true,
+      "rows": 5389
+    },
+    "unstable_sort_shuffled_input": {
+      "columns_that_differ": [],
+      "identical": true,
+      "rows": 5389
+    }
+  },
+  "ties_after_deduplication": 0,
+  "ties_before_deduplication": {
+    "groups_that_disagree_about_on_ground": 72,
+    "rows_in_a_tied_group": 5217,
+    "tied_groups": 2421,
+    "why_it_matters": "only a group that DISAGREES can split a ground run differently, and only before the de-duplication"
+  }
+}

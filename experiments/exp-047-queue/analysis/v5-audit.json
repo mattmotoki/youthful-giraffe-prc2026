@@ -1,0 +1,110 @@
+{
+ "what": "AN INDEPENDENT BYTE AUDIT of `exp-046-surface-v5` against v17 and the v19 class vector.",
+ "claims": {
+  "sha256": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+  "rows_changed_vs_v17": 192435,
+  "served": 193910,
+  "copied": 150931,
+  "occupied_unwritten": 0,
+  "chain_rows": 2456,
+  "chain_by_month": {
+   "2026-01": 1304,
+   "2026-07": 1152
+  },
+  "chain_written": 2171,
+  "chain_lfpg_held": 285,
+  "noac_rows": 388
+ },
+ "items": {
+  "a_sha": {
+   "candidate_sha256": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+   "claimed": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+   "agrees": true,
+   "v17_sha256": "4de323fc4fd9d4865b201b0dd0da1ddcbf7de9e11f1d9bc8af07d293585001ea"
+  },
+  "g_template": {
+   "rows": 344841,
+   "template_rows": 344841,
+   "row_order_is_the_template_order": true,
+   "v17_row_order_is_the_template_order": true,
+   "columns": [
+    "MVT_ID_mvt",
+    "TAXITIME_SEC_mvt"
+   ],
+   "all_finite": true,
+   "non_finite_rows": 0,
+   "min": 60.0,
+   "max": 115306.599,
+   "rows_at_or_below_zero": 0,
+   "duplicate_keys": 0
+  },
+  "b_changed": {
+   "rows_changed_vs_v17": 192435,
+   "claimed": 192435,
+   "agrees": true,
+   "occupied_v19": 193910,
+   "claimed_served": 193910,
+   "changed_rows_outside_occupied": 0,
+   "changed_is_a_subset_of_occupied": true,
+   "occupied_rows_that_did_not_change": 1475,
+   "rows_not_occupied": 150931,
+   "claimed_copied": 150931,
+   "copied_rows_identical_to_v17": 150931,
+   "class_rows_missing_for_a_template_key": 0,
+   "rms_move_s": 32.6736,
+   "max_abs_move_s": 1019.41
+  },
+  "c_occupied_unwritten": {
+   "written": 193910,
+   "occupied": 193910,
+   "occupied_and_not_written": 0,
+   "written_and_not_occupied": 0,
+   "agrees": true
+  },
+  "d_chain": {
+   "chain_mode_4_rows": 2456,
+   "claimed": 2456,
+   "by_month": {
+    "2026-01": 1304,
+    "2026-07": 1152
+   },
+   "claimed_by_month": {
+    "2026-01": 1304,
+    "2026-07": 1152
+   },
+   "agrees_total": true,
+   "agrees_by_month": true,
+   "chain_rows_written": 2171,
+   "claimed_written": 2171,
+   "chain_rows_at_LFPG": 285,
+   "claimed_lfpg_held": 285,
+   "chain_rows_not_written": 285,
+   "chain_rows_not_written_that_are_LFPG": 285,
+   "chain_rows_that_changed_value": 2170,
+   "written_plus_lfpg_held": 2456
+  },
+  "e_noac": {
+   "noac_rows": 388,
+   "claimed": 388,
+   "noac_rows_changed": 0,
+   "untouched": true,
+   "max_abs_diff_on_noac_rows": 0.0
+  },
+  "f_lfpg": {
+   "lfpg_ranking_rows": 39872,
+   "lfpg_rows_changed": 0,
+   "no_lfpg_row_changed": true,
+   "lfpg_rows_occupied": 0,
+   "lfpg_rows_guard_held": 0
+  }
+ },
+ "verdicts": {
+  "a_sha": "AGREE",
+  "b_changed": "AGREE",
+  "c_occupied_unwritten": "AGREE",
+  "d_chain": "AGREE",
+  "e_noac": "AGREE",
+  "f_lfpg": "AGREE",
+  "g_template": "AGREE"
+ }
+}

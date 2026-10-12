@@ -1,0 +1,68 @@
+{
+ "what": "\u00a77bn (ii): the cross-fitted read and the selection premium",
+ "rule": "a cell is selected on fold f only if it is clear positive on BOTH other folds",
+ "tie_break": "larger mean gain over the two FITTING folds",
+ "at_face": {
+  "july_loo": 0.4401,
+  "december": 0.0791,
+  "january": 0.2191
+ },
+ "check": {
+  "july_loo": {
+   "control_from_classes": 285.2029,
+   "control_measured": 285.2029
+  },
+  "december": {
+   "control_from_classes": 205.6118,
+   "control_measured": 205.6118
+  },
+  "january": {
+   "control_from_classes": 338.3816,
+   "control_measured": 338.3816
+  },
+  "worst_abs_error": 9.8e-05
+ },
+ "folds": {
+  "july_loo": {
+   "selected": {},
+   "why": [],
+   "control": 285.2029,
+   "crossfit_rmse": 285.2029,
+   "crossfit_gain": 0.0,
+   "at_face_gain": 0.4401,
+   "selection_premium": 0.4401,
+   "priced_cells": {}
+  },
+  "december": {
+   "selected": {
+    "nonm": "V3-allin"
+   },
+   "why": [
+    {
+     "class": "nonm",
+     "member": "V3-allin",
+     "mean_gain_on_fitting_folds": 0.3296,
+     "also_clear": []
+    }
+   ],
+   "control": 205.6118,
+   "crossfit_rmse": 205.5327,
+   "crossfit_gain": 0.0791,
+   "at_face_gain": 0.0791,
+   "selection_premium": 0.0,
+   "priced_cells": {
+    "nonm": 0.0791
+   }
+  },
+  "january": {
+   "selected": {},
+   "why": [],
+   "control": 338.3816,
+   "crossfit_rmse": 338.3816,
+   "crossfit_gain": 0.0,
+   "at_face_gain": 0.2191,
+   "selection_premium": 0.2191,
+   "priced_cells": {}
+  }
+ }
+}

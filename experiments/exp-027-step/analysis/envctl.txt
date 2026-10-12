@@ -1,0 +1,21 @@
+k2kag minus f1kag on july_loo: both member columns fitted on Kaggle, one
+with the transient-window block and one without; December and January
+keep the committed workstation member in both runs, so the stacker for
+this fold is the same model on both sides and the difference is the
+apply-side member column alone.
+
+  k2-nowin  no EHAM mask  +0.1568 [+0.0631, +0.2720]   no-noac +0.1817 [+0.0748, +0.3113]
+  k2-nowin  v7 EHAM mask  +0.1551 [+0.0630, +0.2690]   no-noac +0.1798 [+0.0742, +0.3106]
+  k2-hold   no EHAM mask  +0.0764 [+0.0063, +0.1679]   no-noac +0.0885 [+0.0075, +0.1942]
+  k2-hold   v7 EHAM mask  +0.0772 [+0.0065, +0.1681]   no-noac +0.0895 [+0.0078, +0.1926]
+
+Only july_loo is a control here: the December and January numbers the two runs
+print are not clean reads, because their stackers train on the changed july_loo
+column.
+
+The three july_loo heads, v6 form, clean:  workstation F1-fresh 284.7219,
+Kaggle F1-fresh 284.7151, Kaggle K2 284.6387.  So the mixed comparison a
+rotation makes is +0.0832 and the controlled one is +0.0764: the machine adds
++0.0068 s of apparent gain and does not hide any.  (Sol round 3, non-blocking 3
+corrected the sign; the first reading of this file called the rotation a lower
+bound.)  No direction is established for December or January.

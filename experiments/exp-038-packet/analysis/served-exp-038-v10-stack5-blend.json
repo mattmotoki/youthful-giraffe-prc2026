@@ -1,0 +1,18 @@
+{
+  "name": "exp-038-v10-stack5-blend",
+  "path": "submissions/candidates/exp-038-v10-stack5-blend.parquet",
+  "rule": "p = v10 + s * (stack-5 - v10)",
+  "s": 0.217,
+  "s_reason": "exp-038 RESULTS section 2b: the leave-one-fold-out amplitude on the two-month rotation is 0.276 (0.304/0.254/0.270); the training-size probe measures -0.0227 of amplitude per doubling of the head's training rows with the seasonal composition held (mean 0.2761 at 319,383 fit rows against 0.2988 at 159,691); the served head trains on twelve months against the rotation's two, which is log2(6)=2.585 doublings, so 0.2761 - 2.585*0.0227 = 0.2174, taken as 0.217. Stated before the build; no board reading was consulted.",
+  "base_file": "submissions/uploaded/youthful-giraffe_v10.parquet",
+  "base_sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78",
+  "source_file": "submissions/candidates/exp-026-stack-5.parquet",
+  "source_sha256": "94f18e47a73265a6db66811ededfc3c935fb2a37fac04bf0cd34d45af708a2a1",
+  "sha256": "42ca5ee6410938d56c8830e9ec3980d806633c3b2ff15963c0ffe2fe97c39f8c",
+  "n_rows": 344841,
+  "n_moved_vs_v10": 306271,
+  "rms_move_vs_v10": 6.7018,
+  "max_abs_move_vs_v10": 174.3555,
+  "min": 60.41918729411211,
+  "max": 115306.59901833169
+}

@@ -1,0 +1,1020 @@
+{
+  "baseline": "v10 (exp-036 refitbulk-mask)",
+  "files": {
+    "K2 (v9)": {
+      "july_loo": "experiments/exp-027-step/oof/exp-027-k2-k2-hold-july_loo.parquet",
+      "december": "experiments/exp-027-step/oof/exp-027-k2-k2-hold-december.parquet",
+      "january": "experiments/exp-027-step/oof/exp-027-k2-k2-hold-january.parquet"
+    },
+    "K2 no-EHAM-mask": {
+      "july_loo": "experiments/exp-027-step/oof/exp-027-k2-k2-hold-july_loo.parquet",
+      "december": "experiments/exp-027-step/oof/exp-027-k2-k2-hold-december.parquet",
+      "january": "experiments/exp-027-step/oof/exp-027-k2-k2-hold-january.parquet"
+    },
+    "refit-bulk": {
+      "july_loo": "experiments/exp-027-step/oof/exp-027-k2-refit-bulk-july_loo.parquet",
+      "december": "experiments/exp-027-step/oof/exp-027-k2-refit-bulk-december.parquet",
+      "january": "experiments/exp-027-step/oof/exp-027-k2-refit-bulk-january.parquet"
+    },
+    "refit-bulk no-EHAM-mask": {
+      "july_loo": "experiments/exp-027-step/oof/exp-027-k2-refit-bulk-july_loo.parquet",
+      "december": "experiments/exp-027-step/oof/exp-027-k2-refit-bulk-december.parquet",
+      "january": "experiments/exp-027-step/oof/exp-027-k2-refit-bulk-january.parquet"
+    },
+    "k3-hold": {
+      "july_loo": "experiments/exp-032-k3/oof/exp-032-k3-k3-hold-july_loo.parquet",
+      "december": "experiments/exp-032-k3/oof/exp-032-k3-k3-hold-december.parquet",
+      "january": "experiments/exp-032-k3/oof/exp-032-k3-k3-hold-january.parquet"
+    },
+    "k3g-hold": {
+      "july_loo": "experiments/exp-032-k3/oof/exp-032-k3-k3g-hold-july_loo.parquet",
+      "december": "experiments/exp-032-k3/oof/exp-032-k3-k3g-hold-december.parquet",
+      "january": "experiments/exp-032-k3/oof/exp-032-k3-k3g-hold-january.parquet"
+    },
+    "k3-hold no-EHAM-mask": {
+      "july_loo": "experiments/exp-032-k3/oof/exp-032-k3-k3-hold-july_loo.parquet",
+      "december": "experiments/exp-032-k3/oof/exp-032-k3-k3-hold-december.parquet",
+      "january": "experiments/exp-032-k3/oof/exp-032-k3-k3-hold-january.parquet"
+    },
+    "k3g-hold no-EHAM-mask": {
+      "july_loo": "experiments/exp-032-k3/oof/exp-032-k3-k3g-hold-july_loo.parquet",
+      "december": "experiments/exp-032-k3/oof/exp-032-k3-k3g-hold-december.parquet",
+      "january": "experiments/exp-032-k3/oof/exp-032-k3-k3g-hold-january.parquet"
+    },
+    "bulk-add-hold": {
+      "july_loo": "experiments/exp-034-bulk/oof/exp-034-bulk-bulk-add-hold-july_loo.parquet",
+      "december": "experiments/exp-034-bulk/oof/exp-034-bulk-bulk-add-hold-december.parquet",
+      "january": "experiments/exp-034-bulk/oof/exp-034-bulk-bulk-add-hold-january.parquet"
+    },
+    "bulk-add-bulkonly-hold": {
+      "july_loo": "experiments/exp-034-bulk/oof/exp-034-bulk-bulk-add-bulkonly-hold-july_loo.parquet",
+      "december": "experiments/exp-034-bulk/oof/exp-034-bulk-bulk-add-bulkonly-hold-december.parquet",
+      "january": "experiments/exp-034-bulk/oof/exp-034-bulk-bulk-add-bulkonly-hold-january.parquet"
+    },
+    "bulk-add-nmbulk-out": {
+      "july_loo": "experiments/exp-034-bulk/oof/exp-034-bulk-bulk-add-nmbulk-out-july_loo.parquet",
+      "december": "experiments/exp-034-bulk/oof/exp-034-bulk-bulk-add-nmbulk-out-december.parquet",
+      "january": "experiments/exp-034-bulk/oof/exp-034-bulk-bulk-add-nmbulk-out-january.parquet"
+    },
+    "bulkonly-nmbulk-out": {
+      "july_loo": "experiments/exp-034-bulk/oof/exp-034-bulk-bulkonly-nmbulk-out-july_loo.parquet",
+      "december": "experiments/exp-034-bulk/oof/exp-034-bulk-bulkonly-nmbulk-out-december.parquet",
+      "january": "experiments/exp-034-bulk/oof/exp-034-bulk-bulkonly-nmbulk-out-january.parquet"
+    },
+    "k2-w300": {
+      "july_loo": "experiments/exp-036-mask/oof/exp-036-k2-w300-july_loo.parquet",
+      "december": "experiments/exp-036-mask/oof/exp-036-k2-w300-december.parquet",
+      "january": "experiments/exp-036-mask/oof/exp-036-k2-w300-january.parquet"
+    },
+    "k2-w300 no-EHAM-mask": {
+      "july_loo": "experiments/exp-036-mask/oof/exp-036-k2-w300-july_loo.parquet",
+      "december": "experiments/exp-036-mask/oof/exp-036-k2-w300-december.parquet",
+      "january": "experiments/exp-036-mask/oof/exp-036-k2-w300-january.parquet"
+    },
+    "w600arrk (staged-extra)": {
+      "july_loo": "experiments/exp-030-window2/oof/exp-028-stack5w-w600arrk-july_loo.parquet",
+      "december": "experiments/exp-030-window2/oof/exp-028-stack5w-w600arrk-december.parquet",
+      "january": "experiments/exp-030-window2/oof/exp-028-stack5w-w600arrk-january.parquet"
+    },
+    "w600w300 (staged-extra)": {
+      "july_loo": "experiments/exp-030-window2/oof/exp-028-stack5w-w600w300-july_loo.parquet",
+      "december": "experiments/exp-030-window2/oof/exp-028-stack5w-w600w300-december.parquet",
+      "january": "experiments/exp-030-window2/oof/exp-028-stack5w-w600w300-january.parquet"
+    },
+    "w600w300w1800 (staged-extra)": {
+      "july_loo": "experiments/exp-030-window2/oof/exp-028-stack5w-w600w300w1800-july_loo.parquet",
+      "december": "experiments/exp-030-window2/oof/exp-028-stack5w-w600w300w1800-december.parquet",
+      "january": "experiments/exp-030-window2/oof/exp-028-stack5w-w600w300w1800-january.parquet"
+    },
+    "v10_served": {
+      "path": "submissions/uploaded/youthful-giraffe_v10.parquet",
+      "sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78",
+      "expected": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78"
+    },
+    "mask": {
+      "path": "experiments/exp-036-mask/analysis/mask.json",
+      "sha256": "c89caa9f1be45d9d40a65de9878d433a209eddf99e0e76b07d7e4cd45acd4b99",
+      "keep": [
+        "EDDM",
+        "EGLL",
+        "LEBL",
+        "LEMD",
+        "LFPG",
+        "LIRF",
+        "LSZH",
+        "LTFM"
+      ]
+    },
+    "dropped": {
+      "exp-035 seed arm": "no head-level fold vector exists: oof/ carries the MEMBER columns k2s1 (3 folds), k2s2 (july_loo only) and k2w (july_loo only), the seed-33 december/january member fits were still on Kaggle at 2026-09-08 (NEXT.md), and rotate.py --arm seeds has not run. Rebuilding it is a member fit, which assignments/packet.md forbids"
+    }
+  },
+  "vectors": {
+    "stack-5": {
+      "source": "exp-026 stack5.PUBLISHED, via exp-030 score.reference",
+      "clean": {
+        "july_loo": 285.2029,
+        "december": 205.6118,
+        "january": 219.1303
+      },
+      "clean_board": 258.0372,
+      "published": {
+        "july_loo": 285.2029,
+        "december": 205.6118,
+        "january": 219.1303,
+        "board": 258.0372
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "c84566e5506e9eda95ee0a1a64803cf113fb358686296601721bb5b9c984d7ee",
+        "december": "676fdd3a7ce0594c190f82d9501e28d2a271b5b19889206e7ece0365c90faabc",
+        "january": "3376861a8208fb9f6b774ac11cbfa3d2b82ad17f08db9260f5a23ed3766a6509"
+      }
+    },
+    "v6": {
+      "source": "exp-028 600 s window stacker, via exp-030 score.reference",
+      "clean": {
+        "july_loo": 284.7219,
+        "december": 205.6534,
+        "january": 218.8166
+      },
+      "clean_board": 257.623,
+      "published": {
+        "july_loo": 284.7219,
+        "december": 205.6534,
+        "january": 218.8166,
+        "board": 257.623
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "0c0b9e1638fefb8ac01a13cf16451387db209a5170d43b6adbc4ec4ed4f6c129",
+        "december": "72c077246df761acf227eeff6ad0f31bb760bb15dd6a9fb91e8b516d0f6ba25e",
+        "january": "0182fcc6a1ae9b8cf13fe0f227ff2e184630bc314a5f50f85e8ca9ffd6771e34"
+      }
+    },
+    "v7": {
+      "source": "exp-030 arm 3 (v6 with EHAM from stack-5), rebuilt by np.where; board 263.4623",
+      "clean": {
+        "july_loo": 284.6251,
+        "december": 205.5677,
+        "january": 218.5412
+      },
+      "clean_board": 257.4598,
+      "published": {
+        "july_loo": 284.6251,
+        "december": 205.5677,
+        "january": 218.5412
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "1476735b62e88ecee90e7640829113743ef23b2ffcbfbd6c27d9036324a72f3d",
+        "december": "24cb0a1ed26ee42b6d55b203c9790cb034e90689f3665ac7c3bc2d31b023b632",
+        "january": "19e00cb27227e241649d1b04764eda7f185aeb80a2bcdb930ed4aa6dd8bb8b10"
+      }
+    },
+    "K2 (v9)": {
+      "source": "exp-027 analysis/candidate-k2.json arm k2-hold-eham-out; board 263.0827",
+      "clean": {
+        "july_loo": 284.3195,
+        "december": 205.2156,
+        "january": 218.2582
+      },
+      "clean_board": 257.1653,
+      "published": {
+        "july_loo": 284.3195,
+        "december": 205.2156,
+        "january": 218.2582
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "3e06fff97b3711815731e49ca1b94826f99d0cf7be22087c0c8e5f13133c41ec",
+        "december": "2bc8fc98819643486763be4daa180f770a4edc40e4d9f5f1038a6e9886c0a33f",
+        "january": "973992c640c79a86bc7131e01e3c25be1151ede65fe7697fd8f43739965965f1"
+      }
+    },
+    "K2 no-EHAM-mask": {
+      "source": "exp-027 arm k2-hold (unmasked)",
+      "clean": {
+        "july_loo": 284.3938,
+        "december": 205.299,
+        "january": 218.4232
+      },
+      "clean_board": 257.273,
+      "published": {
+        "july_loo": 284.3938,
+        "december": 205.299,
+        "january": 218.4232
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "18ce6c04c70a117a1f12552827b39744fde218cbb94ab1e15fc12a6106eb7fc7",
+        "december": "83cf8b9e8bd6872529d972cc7a67243650adb0936f1339010a629c0a117ec753",
+        "january": "9394f0426a34eba561e309d439b766831126a49e375b0e83a37c216fe9aaac10"
+      }
+    },
+    "refit-bulk": {
+      "source": "exp-027 analysis/refit-bulk.json arm k2-refit-bulk-eham-out; never uploaded",
+      "clean": {
+        "july_loo": 284.1774,
+        "december": 204.9052,
+        "january": 218.2115
+      },
+      "clean_board": 257.0601,
+      "published": {
+        "july_loo": 284.1774,
+        "december": 204.9052,
+        "january": 218.2115
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "d72b89642d50b9fbd204308db03f5f402b9c334835a35c4bb9d2882573d252fc",
+        "december": "5b9c0469ca0496184727e236d9e9fb2f4b07f70f4847fabd1ad4ac3697f3a742",
+        "january": "1dfae269e2b816b7c5486729746c1b69277709e68d2a833024e3942648196770"
+      }
+    },
+    "refit-bulk no-EHAM-mask": {
+      "source": "exp-027 refit-bulk (unmasked)",
+      "clean": {
+        "july_loo": 284.2791,
+        "december": 204.9904,
+        "january": 218.1662
+      },
+      "clean_board": 257.1057,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "2ac0a6f198d17248afba4c5c47bd08b1ae0c2e858d097faf297600fb0f7f0d22",
+        "december": "0d01c0aaefa6434cce0c99256dac0c1c5d75501587ca9b890b76fcd520c0c60f",
+        "january": "47897fb925ec50f940db15dc8ccc90ccaf7fd90e83358ac7f5660bd71de307fb"
+      },
+      "gated_on": "EHAM mask on it reproduces refit-bulk row by row",
+      "max_abs_row_difference": 0.0
+    },
+    "k3-hold": {
+      "source": "exp-032 analysis/candidate-k3.json arm k3-hold-eham-out",
+      "clean": {
+        "july_loo": 284.4265,
+        "december": 205.3721,
+        "january": 218.3111
+      },
+      "clean_board": 257.251,
+      "published": {
+        "july_loo": 284.4265,
+        "december": 205.3721,
+        "january": 218.3111
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "1b7c50b2554df8dd89ab68a328c2449b2571a5adf2f929bc65a733b070a8ad72",
+        "december": "153aecf1661f12da363f08964aa85b2f05bad7115ab0b369a1a1c99a2e38bfa2",
+        "january": "3d6172e2c5410b599faeb2c92b659d5aa0e33b948259c1fe0551e6c0e00784f0"
+      }
+    },
+    "k3g-hold": {
+      "source": "exp-032 arm k3g-hold-eham-out (gated K3 member)",
+      "clean": {
+        "july_loo": 284.4235,
+        "december": 205.3879,
+        "january": 218.3125
+      },
+      "clean_board": 257.2497,
+      "published": {
+        "july_loo": 284.4235,
+        "december": 205.3879,
+        "january": 218.3125
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "1b9847f9207f9d480778eef4eba12b3ae85488474a51a06d8b25d64e91c5c35e",
+        "december": "afcb15bf292e280c3b7f6b6842b981ce5091db32148992fcbc19fc96a05d59c7",
+        "january": "e87ec32051ec66752ef29d52b412a858b2ee7cf4f56b1bb8eda70e3cec63d499"
+      }
+    },
+    "k3-hold no-EHAM-mask": {
+      "source": "exp-032 k3-hold (unmasked)",
+      "clean": {
+        "july_loo": 284.5043,
+        "december": 205.4552,
+        "january": 218.4843
+      },
+      "clean_board": 257.364,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "3dd6fcad532ac9924e36a7b98d96876e4e25d2662a53731a8c6cf0efa936d8dc",
+        "december": "4e96c6321113ac0a10511f12ee66966d052106e189e1bee80a8039a085382aa9",
+        "january": "5b177c5c52787846bbad6ee02ff37eab452a4df29fdcf8c722b12e18f4b39f18"
+      },
+      "gated_on": "EHAM mask on it reproduces k3-hold row by row",
+      "max_abs_row_difference": 0.0
+    },
+    "k3g-hold no-EHAM-mask": {
+      "source": "exp-032 k3g-hold (unmasked)",
+      "clean": {
+        "july_loo": 284.5017,
+        "december": 205.4743,
+        "january": 218.4863
+      },
+      "clean_board": 257.3632,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "0640cc53c176bd954c059324c90c04fe05ae4072646b667269d15582d90315d5",
+        "december": "a9d5ee2c4c920ba55994dea88d61c50037100f88b75b717a404fce8b9649db84",
+        "january": "4b84c9294790783888302d6c12efd02db9be5193ecdab224d22da0eeaed01927"
+      },
+      "gated_on": "EHAM mask on it reproduces k3g-hold row by row",
+      "max_abs_row_difference": 0.0
+    },
+    "bulk-add-hold": {
+      "source": "exp-034 analysis/candidate-bulk.json arm bulk-add-hold-eham-out",
+      "clean": {
+        "july_loo": 284.3591,
+        "december": 205.1995,
+        "january": 218.2214
+      },
+      "clean_board": 257.1758,
+      "published": {
+        "july_loo": 284.3591,
+        "december": 205.1995,
+        "january": 218.2214
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "4c0c40159ac0dd52f95060e425aa5c643108338dc60859cd40fbce13a46a8483",
+        "december": "29185acba1d348d660fe30556ca060cf5909373f92cd33e4431fc97a0e3074a1",
+        "january": "6dbd9c417fc5c58ebbe2e04c91c4230b55fe45ffa07a3a4432afe6327e84143d"
+      }
+    },
+    "bulk-add-bulkonly-hold": {
+      "source": "exp-034 arm bulk-add-bulkonly-hold-eham-out",
+      "clean": {
+        "july_loo": 284.3493,
+        "december": 205.208,
+        "january": 218.2338
+      },
+      "clean_board": 257.1744,
+      "published": {
+        "july_loo": 284.3493,
+        "december": 205.208,
+        "january": 218.2338
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "db050a1f63256458927557d2272003b0190b05e3c8e561f3bfd877e55bc2b65d",
+        "december": "88a9182f8bc6d317623f0cc7229fc5e8900e1be1a75eccda99365b2676608c73",
+        "january": "42b43baeeebac09fc1d85f74189ac78b824b25fee9964c2cc59cacf3e029860a"
+      }
+    },
+    "bulk-add-nmbulk-out": {
+      "source": "exp-034 exploratory arm bulk-add-nmbulk-out-eham-out",
+      "clean": {
+        "july_loo": 284.317,
+        "december": 205.2509,
+        "january": 218.228
+      },
+      "clean_board": 257.1523,
+      "published": {
+        "july_loo": 284.317,
+        "december": 205.2509,
+        "january": 218.228
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "4c8744cfad494b0e8fb7ee11c37b4445dc790cb58f9a0415281944cb7a6ec4a6",
+        "december": "7a603110632847ccaebb45e38a3a73a6704bb295281b041ae8394536b3efb859",
+        "january": "1bf7f17e1ee24e73c8d84892c044e29979e795c905f45125e1749513c9096ad0"
+      }
+    },
+    "bulkonly-nmbulk-out": {
+      "source": "exp-034 exploratory arm bulkonly-nmbulk-out-eham-out",
+      "clean": {
+        "july_loo": 284.3308,
+        "december": 205.2091,
+        "january": 218.2434
+      },
+      "clean_board": 257.1666,
+      "published": {
+        "july_loo": 284.3308,
+        "december": 205.2091,
+        "january": 218.2434
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "9ddcc36c9282ad751184bbb0d5e5a98ddedd05a5b0e13cfadc669109365d704e",
+        "december": "76c71679085e9abf0cae1ef6dd1016ceb0351cdb88e2f7676a0bd5597eecae29",
+        "january": "7b6d881db0c4c7d2db64c4f3647c54b3fc8add4b53b36765bb0d1b3837b9c749"
+      }
+    },
+    "k2-w300": {
+      "source": "exp-036 analysis/arm-k2-w300.json (600 s + 300 s widths, EHAM mask)",
+      "clean": {
+        "july_loo": 284.2158,
+        "december": 205.2253,
+        "january": 218.2452
+      },
+      "clean_board": 257.0965,
+      "published": {
+        "july_loo": 284.2158,
+        "december": 205.2253,
+        "january": 218.2452
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "9f4f3c63a42a47a2c40190bd9f3b1db1a45cbb1cacb702f252dc765e236cda92",
+        "december": "14f34d834bc6f7ae410b55c902c08ddd50476df892f5546769e2828bdcc06a4e",
+        "january": "d7c099a7048c9653a82c2490102650ae1a66db15c9061ea2f6c10431bd114113"
+      }
+    },
+    "k2-w300 no-EHAM-mask": {
+      "source": "exp-036 arm 3 unmasked",
+      "clean": {
+        "july_loo": 284.2968,
+        "december": 205.2998,
+        "january": 218.4367
+      },
+      "clean_board": 257.2183,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "eb8166d8f1c1cb2f50ccd97080938cc628aee930975a280318a1e384a9b85172",
+        "december": "5b6fb13f0457d61867ae9bc0a19f862963ffcc95b90fc0b60a1e99cd278264c0",
+        "january": "616472e58b1ff2a0b3e8b0b979e8d3ce5f8bc9d6198e3c6f0d7e0a08e60acad6"
+      },
+      "gated_on": "EHAM mask on it reproduces k2-w300 row by row",
+      "max_abs_row_difference": 0.0
+    },
+    "w600arrk (staged-extra)": {
+      "source": "exp-030 analysis/arm-w600arrk.json (unmasked)",
+      "clean": {
+        "july_loo": 284.7857,
+        "december": 205.7016,
+        "january": 218.7775
+      },
+      "clean_board": 257.6476,
+      "published": {
+        "july_loo": 284.7857,
+        "december": 205.7016,
+        "january": 218.7775
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "7ce457ea3a4173916f495b3b54653b2f879f740dbaaadcc48dc2bbb004ff2946",
+        "december": "846713af2de16a4772b1be56fe3dcf104584431af2a0dd1b046d453d3c7433a6",
+        "january": "4782435fd8c7cab0988cdc6b8f8ee9cd786725d91d9cb4e5e7db474eda06cd19"
+      }
+    },
+    "w600w300 (staged-extra)": {
+      "source": "exp-030 analysis/arm-w600w300.json (unmasked)",
+      "clean": {
+        "july_loo": 284.6135,
+        "december": 205.6432,
+        "january": 218.7987
+      },
+      "clean_board": 257.5495,
+      "published": {
+        "july_loo": 284.6135,
+        "december": 205.6432,
+        "january": 218.7987
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "0d6ac14843db225511dc2c208dd1f00d7d151dd4626f21ce75f17a0ea182907e",
+        "december": "1c288e7c8a9f7c9a440024b164753acec6a3b90ef7bbc381d88981f602db2382",
+        "january": "4e010251b60bf6c7891be68966007ddadce27c2f78b4637382783241bc6dda5e"
+      }
+    },
+    "w600w300w1800 (staged-extra)": {
+      "source": "exp-030 analysis/arm-w600w300w1800.json (unmasked)",
+      "clean": {
+        "july_loo": 284.5221,
+        "december": 205.863,
+        "january": 218.6994
+      },
+      "clean_board": 257.4559,
+      "published": {
+        "july_loo": 284.5221,
+        "december": 205.863,
+        "january": 218.6994
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "7f33e96262502ff9e5ee46bc9fe9ff62d69943289c4c09838c924672121b4df3",
+        "december": "f12efe160b7ab4231a99c92e95e97943c262bf141453464decb85d7724ed1edf",
+        "january": "65cf797313126aa4b246eb254623bce313ea6939d59a794b0c74b1fb42c9bdb7"
+      }
+    },
+    "k2-mask": {
+      "source": "exp-036 arm 1: K2 served at the eight kept airports, v7 elsewhere",
+      "clean": {
+        "july_loo": 284.3193,
+        "december": 205.2376,
+        "january": 218.2457
+      },
+      "clean_board": 257.1604,
+      "published": {
+        "july_loo": 284.3193,
+        "december": 205.2376,
+        "january": 218.2457
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "783696981e97d0207b3580e24f85ea21a5ac1762c1b719bd1a0d978125afd43a",
+        "december": "851e1e2f59bb933d17d59f9596d9f580a8d1e96b2855a9a54074ac7899fc99d1",
+        "january": "0a6d91779bd89d869ed2cdd1a4b4d46cfbcaf3cbd2d57ffb8f32415f97276931"
+      },
+      "mask_keep": [
+        "EDDM",
+        "EGLL",
+        "LEBL",
+        "LEMD",
+        "LFPG",
+        "LIRF",
+        "LSZH",
+        "LTFM"
+      ]
+    },
+    "v10 (exp-036 refitbulk-mask)": {
+      "source": "exp-036 arm 2 = THE BASELINE: refit-bulk at the eight kept airports, v7 elsewhere",
+      "clean": {
+        "july_loo": 284.1572,
+        "december": 204.9218,
+        "january": 218.1506
+      },
+      "clean_board": 257.0248,
+      "published": {
+        "july_loo": 284.1572,
+        "december": 204.9218,
+        "january": 218.1506
+      },
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "9d0654728e7eb58c3d9176238dea98e1b44db023ac8832eb52f37bf1b2698573",
+        "december": "b72a2241ad8eba11b605df21f9ee05c58c6daa5a3e7df9c7ae405d5667178914",
+        "january": "4c6e98c6b609ae7b82a752bdc60cf4081adbdc220aa31ab61cbb232a22865c7f"
+      },
+      "mask_keep": [
+        "EDDM",
+        "EGLL",
+        "LEBL",
+        "LEMD",
+        "LFPG",
+        "LIRF",
+        "LSZH",
+        "LTFM"
+      ]
+    },
+    "exp-037 chain_raw_full": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.3814,
+        "december": 204.9673,
+        "january": 218.702
+      },
+      "clean_board": 257.3703,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "0424280e3f15a88cb777071aef7ab82ea2793ad0dd801d50fcae04474b6f8467",
+        "december": "30b6909a4c0c8adb3f6e4c295d10bf81501e4738799e5ac5a0d1e275b9675d5c",
+        "january": "0ce12e824bd07d123e83ccc6024c2eb51a6c4d6475b0c9fab9eab5a73fe9ca4a"
+      },
+      "noac_rows_moved": {
+        "july_loo": 321,
+        "december": 85,
+        "january": 59
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 chain_raw_clf": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 283.8208,
+        "december": 204.5101,
+        "january": 218.7536
+      },
+      "clean_board": 257.0447,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "f2189b2439f7461cfd52939f24a1a8f427a950f177573cfb6d21c6031f6f1e32",
+        "december": "93ffbe2423b14a4920c99c6e92a59ea5f9fb55ca2fe1cc54f0906debc21f7d2a",
+        "january": "f572e648d362561f87b83eae243a3c341a0d698388183c9c811cc71a877a9f2c"
+      },
+      "noac_rows_moved": {
+        "july_loo": 327,
+        "december": 85,
+        "january": 59
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 chain_raw_reg": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.5131,
+        "december": 205.3857,
+        "january": 218.24
+      },
+      "clean_board": 257.2776,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "5458ef2f55b2501f8a1c4f617c798160c3f918c994c0a76d903ccc7a9ac37872",
+        "december": "4cd3a084bb86e3bae11defb24e75acb61c32356b42c19dfd39f93815eb9ab603",
+        "january": "2c679c12f6fa41023766a75ba3cc3cd74292a25db7afe07322ba4351652b535f"
+      },
+      "noac_rows_moved": {
+        "july_loo": 312,
+        "december": 78,
+        "january": 52
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 chain_raw_clip": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 287.1214,
+        "december": 202.8282,
+        "january": 218.1506
+      },
+      "clean_board": 258.8536,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "a639adc529578bb2d5b1c228324f5fb78267585d032e60eeaf6ccfdf21acc55c",
+        "december": "e42d1ddd01f0624d0fb17235b7c0adf751c674c776b026a7279b2ff4cbc6a6bd",
+        "january": "4c6e98c6b609ae7b82a752bdc60cf4081adbdc220aa31ab61cbb232a22865c7f"
+      },
+      "noac_rows_moved": {
+        "july_loo": 12,
+        "december": 2,
+        "january": 0
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 chain_shr_full": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.1572,
+        "december": 204.9045,
+        "january": 218.2933
+      },
+      "clean_board": 257.0785,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "9d0654728e7eb58c3d9176238dea98e1b44db023ac8832eb52f37bf1b2698573",
+        "december": "b8b5b4d6d498d10baf05c0d40832761331ba2330c32dfad918371e6d9c07b61d",
+        "january": "f1214f3d32001ccbec64e581cc5a0dbc40dafa8a267e1398077482b60c35077a"
+      },
+      "noac_rows_moved": {
+        "july_loo": 0,
+        "december": 85,
+        "january": 59
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 chain_shr_clf": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.0435,
+        "december": 204.7073,
+        "january": 218.7536
+      },
+      "clean_board": 257.1817,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "dff866e8df73a29650dbc5d4a759704f41eeb9d0b98b3203aec53fd08a45b2a4",
+        "december": "28181277eb3ae6cc6c4b2005d33fbe99097a7274d6ef27975f2706abeccd891e",
+        "january": "f572e648d362561f87b83eae243a3c341a0d698388183c9c811cc71a877a9f2c"
+      },
+      "noac_rows_moved": {
+        "july_loo": 327,
+        "december": 85,
+        "january": 59
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 chain_shr_reg": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.1572,
+        "december": 204.9218,
+        "january": 218.1506
+      },
+      "clean_board": 257.0248,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "9d0654728e7eb58c3d9176238dea98e1b44db023ac8832eb52f37bf1b2698573",
+        "december": "b72a2241ad8eba11b605df21f9ee05c58c6daa5a3e7df9c7ae405d5667178914",
+        "january": "4c6e98c6b609ae7b82a752bdc60cf4081adbdc220aa31ab61cbb232a22865c7f"
+      },
+      "noac_rows_moved": {
+        "july_loo": 0,
+        "december": 0,
+        "january": 0
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 chain_shr_clip": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 287.1214,
+        "december": 204.9218,
+        "january": 218.1506
+      },
+      "clean_board": 258.8536,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "a639adc529578bb2d5b1c228324f5fb78267585d032e60eeaf6ccfdf21acc55c",
+        "december": "b72a2241ad8eba11b605df21f9ee05c58c6daa5a3e7df9c7ae405d5667178914",
+        "january": "4c6e98c6b609ae7b82a752bdc60cf4081adbdc220aa31ab61cbb232a22865c7f"
+      },
+      "noac_rows_moved": {
+        "july_loo": 12,
+        "december": 0,
+        "january": 0
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 rot_raw_full": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.3578,
+        "december": 204.3735,
+        "january": 220.1036
+      },
+      "clean_board": 257.8844,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "68d47a997d73c5cff95218921c9c0654fddd2bd549144eb6aab16b1145189dda",
+        "december": "104cc411bbcc089eee79fbc6a387cec853a2c5927db60eb9b98958e043a30a9a",
+        "january": "65fc8a8b9cab195ffec4e3213245d2ea5f33aab8ece4b8d66aba04e8cea57d90"
+      },
+      "noac_rows_moved": {
+        "july_loo": 323,
+        "december": 85,
+        "january": 59
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 rot_raw_clf": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.0455,
+        "december": 204.4717,
+        "january": 219.464
+      },
+      "clean_board": 257.4508,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "cbf131a0b35638ec9eacb6b325432b6c81bfe59058de96e8504c7953628e0b25",
+        "december": "cc714e9da0ef9a4502e8cf7f2bc1a2cd6ee639fe68b1886643b0c3fba54fa618",
+        "january": "6cf1162c591e569d3c4218f12611fc9f9367dc36a2ebdc8e9ba5210aa7e13b78"
+      },
+      "noac_rows_moved": {
+        "july_loo": 327,
+        "december": 85,
+        "january": 59
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 rot_raw_reg": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.0316,
+        "december": 204.7093,
+        "january": 219.1076
+      },
+      "clean_board": 257.3078,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "a0a507d757adad34dfd925abbd5a8c7e161724614dbe4aa750cceaeeba066b9f",
+        "december": "94654850baa3e260216f17f5f528b359c08f2ae8d00b7ecc6c08e47edf3c6552",
+        "january": "1dc10013228f5ef2a4898f112bb35acb791c62eb18c2b3894639ec08814c3165"
+      },
+      "noac_rows_moved": {
+        "july_loo": 314,
+        "december": 80,
+        "january": 55
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 rot_raw_clip": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 287.1214,
+        "december": 202.8282,
+        "january": 218.1506
+      },
+      "clean_board": 258.8536,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "a639adc529578bb2d5b1c228324f5fb78267585d032e60eeaf6ccfdf21acc55c",
+        "december": "e42d1ddd01f0624d0fb17235b7c0adf751c674c776b026a7279b2ff4cbc6a6bd",
+        "january": "4c6e98c6b609ae7b82a752bdc60cf4081adbdc220aa31ab61cbb232a22865c7f"
+      },
+      "noac_rows_moved": {
+        "july_loo": 12,
+        "december": 2,
+        "january": 0
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 rot_shr_full": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.1572,
+        "december": 204.6273,
+        "january": 218.9927
+      },
+      "clean_board": 257.3418,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "9d0654728e7eb58c3d9176238dea98e1b44db023ac8832eb52f37bf1b2698573",
+        "december": "16851204c0247744abcdb61fb589baabdb40185436929daa39b8c0239bd3b0fc",
+        "january": "e8d5366b7982193d59c2e802cc24c20d0e7f7a777944d1dfbdca29f650fcdb6f"
+      },
+      "noac_rows_moved": {
+        "july_loo": 0,
+        "december": 85,
+        "january": 59
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 rot_shr_clf": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.1572,
+        "december": 204.8168,
+        "january": 218.999
+      },
+      "clean_board": 257.3441,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "9d0654728e7eb58c3d9176238dea98e1b44db023ac8832eb52f37bf1b2698573",
+        "december": "7e4e4f9d628b60bcbcb59af9672c8ced20a6ea36573ed1eeb84a22cd7242520a",
+        "january": "11c96244714a47599e769eaeb5a5c0c91dd41c0cd5ccc7de2c89e540938297da"
+      },
+      "noac_rows_moved": {
+        "july_loo": 0,
+        "december": 85,
+        "january": 59
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 rot_shr_reg": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 284.1572,
+        "december": 204.7438,
+        "january": 218.6033
+      },
+      "clean_board": 257.1951,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "9d0654728e7eb58c3d9176238dea98e1b44db023ac8832eb52f37bf1b2698573",
+        "december": "5dabbe8188bb6b9ad2d52f5bdd602ac00455712a2f1150f42bcdc302a391d093",
+        "january": "5f55938aeec796f6f62f8c10347ba3cef8648c38025dd6fb2d05f12e0d2dab7e"
+      },
+      "noac_rows_moved": {
+        "july_loo": 0,
+        "december": 80,
+        "january": 55
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    "exp-037 rot_shr_clip": {
+      "source": "exp-037 work/repair_eval.parquet: v10 with the noac rows served by this chain arm; exp-037 RESULTS section 5 (no candidate parquet was written)",
+      "clean": {
+        "july_loo": 287.1214,
+        "december": 204.9218,
+        "january": 218.1506
+      },
+      "clean_board": 258.8536,
+      "published": null,
+      "gated": true,
+      "sha256_by_fold": {
+        "july_loo": "a639adc529578bb2d5b1c228324f5fb78267585d032e60eeaf6ccfdf21acc55c",
+        "december": "b72a2241ad8eba11b605df21f9ee05c58c6daa5a3e7df9c7ae405d5667178914",
+        "january": "4c6e98c6b609ae7b82a752bdc60cf4081adbdc220aa31ab61cbb232a22865c7f"
+      },
+      "noac_rows_moved": {
+        "july_loo": 12,
+        "december": 0,
+        "january": 0
+      },
+      "gated_on": "exp-037 repair_arms.csv rmse_arm (noac rows, per fold)",
+      "noac_rmse_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    }
+  },
+  "manifest": {
+    "july_loo": {
+      "path": "experiments/exp-038-packet/packet/rows-july_loo.parquet",
+      "rows": 190713,
+      "sha256": "14d461d139a1ad9c9c04a30281ec016629be8dfc57bb3209dde760ae1f52abfd"
+    },
+    "december": {
+      "path": "experiments/exp-038-packet/packet/rows-december.parquet",
+      "rows": 165677,
+      "sha256": "a1a74bddaa746fdb81a52a5c17ce1990e3914477a23a41f2d6b46ec2f9291f48"
+    },
+    "january": {
+      "path": "experiments/exp-038-packet/packet/rows-january.parquet",
+      "rows": 153706,
+      "sha256": "15aeb6f0dc4b073598ad09683d02d2ccb58459c7844e1f4a0492b4d1fe6e8547"
+    }
+  },
+  "draws": 2000,
+  "wall_s": 5.3,
+  "endpoint": "paired all-row Jan/July MSE at the ranking month shares {'july_loo': 0.5571321275602379, 'january': 0.4428678724397621}; clean and december reported separately"
+}

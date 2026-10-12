@@ -1,0 +1,66 @@
+{
+  "D1-winter": {
+    "capped_at_s": null,
+    "checks": {
+      "bytes": 3151207,
+      "columns_are_the_contract": true,
+      "dtypes": [
+        "float64",
+        "object",
+        "float64",
+        "float64"
+      ],
+      "duplicate_ids": 0,
+      "ids_identical_to_the_block": true,
+      "in_block_not_in_vector": 0,
+      "in_vector_not_in_block": 0,
+      "n_scored": 191181,
+      "rmse": 257.0108,
+      "rows": 191181,
+      "rows_lost_to_the_join": 0,
+      "sha256": "0058a578cf9a35727c56b02e0fc48daefacaecc9fa9e3d50aeb95d5baee14527",
+      "stack_members_ok": true,
+      "y_pred_nulls": 0
+    },
+    "config": "winter_arm.py --seeds 7,107,207 --ds-columns deice (3 seeds)",
+    "hit_the_cap": false,
+    "kept": true,
+    "log": "experiments/exp-047-queue/logs/fold-D1-winter-2025-08.log",
+    "path": "experiments/exp-047-queue/oof/D1-winter--august_loo.parquet",
+    "returncode": 0,
+    "wall_min": 4.0,
+    "wall_s": 240.1
+  },
+  "T-tailv2": {
+    "capped_at_s": null,
+    "checks": {
+      "bytes": 3151167,
+      "columns_are_the_contract": true,
+      "dtypes": [
+        "float64",
+        "object",
+        "float64",
+        "float64"
+      ],
+      "duplicate_ids": 0,
+      "ids_identical_to_the_block": true,
+      "in_block_not_in_vector": 0,
+      "in_vector_not_in_block": 0,
+      "n_scored": 191181,
+      "rmse": 261.7637,
+      "rows": 191181,
+      "rows_lost_to_the_join": 0,
+      "sha256": "3d34a116f3efc81a0e1ddb563e844e38118d03d5162be4dd6c090d7d0cbb1f16",
+      "stack_members_ok": true,
+      "y_pred_nulls": 0
+    },
+    "config": "deliver.py, OOF v3 head, one fold",
+    "hit_the_cap": false,
+    "kept": true,
+    "log": "experiments/exp-047-queue/logs/fold-T-tailv2-2025-08.log",
+    "path": "experiments/exp-047-queue/oof/T-tailv2--august_loo.parquet",
+    "returncode": 0,
+    "wall_min": 2.8,
+    "wall_s": 166.9
+  }
+}

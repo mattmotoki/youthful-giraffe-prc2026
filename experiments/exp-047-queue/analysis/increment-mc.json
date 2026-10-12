@@ -1,0 +1,173 @@
+{
+  "boot_refined": 20000,
+  "boot_registered": 2000,
+  "conventions": {
+    "cross": {
+      "per_fold": {
+        "december": {
+          "mean_s2": 129.02,
+          "refined_ci95_s2": [
+            46.67,
+            253.45
+          ],
+          "refined_clear": true,
+          "rows": 24169,
+          "seed_low_bounds_s2": [
+            44.81,
+            47.94,
+            46.55,
+            47.29,
+            47.18,
+            46.96,
+            44.75,
+            46.36,
+            46.42,
+            45.74
+          ],
+          "worst_seed_clear": true,
+          "worst_seed_low_s2": 44.75
+        },
+        "january": {
+          "mean_s2": 79.97,
+          "refined_ci95_s2": [
+            1.22,
+            160.91
+          ],
+          "refined_clear": true,
+          "rows": 24954,
+          "seed_low_bounds_s2": [
+            5.52,
+            1.5,
+            0.23,
+            0.75,
+            2.0,
+            2.46,
+            0.23,
+            3.3,
+            -0.18,
+            -3.48
+          ],
+          "worst_seed_clear": false,
+          "worst_seed_low_s2": -3.48
+        },
+        "july_loo": {
+          "mean_s2": 120.42,
+          "refined_ci95_s2": [
+            35.46,
+            220.69
+          ],
+          "refined_clear": true,
+          "rows": 29844,
+          "seed_low_bounds_s2": [
+            32.24,
+            36.07,
+            35.13,
+            32.85,
+            35.43,
+            34.7,
+            38.5,
+            33.31,
+            39.04,
+            38.98
+          ],
+          "worst_seed_clear": true,
+          "worst_seed_low_s2": 32.24
+        }
+      },
+      "refined_every_fold_clear": true,
+      "worst_seed_every_fold_clear": false
+    },
+    "rotation": {
+      "per_fold": {
+        "december": {
+          "mean_s2": 172.51,
+          "refined_ci95_s2": [
+            60.21,
+            334.44
+          ],
+          "refined_clear": true,
+          "rows": 24169,
+          "seed_low_bounds_s2": [
+            58.32,
+            63.1,
+            58.08,
+            60.96,
+            61.5,
+            58.05,
+            57.13,
+            59.9,
+            60.36,
+            61.33
+          ],
+          "worst_seed_clear": true,
+          "worst_seed_low_s2": 57.13
+        },
+        "january": {
+          "mean_s2": 79.97,
+          "refined_ci95_s2": [
+            1.22,
+            160.91
+          ],
+          "refined_clear": true,
+          "rows": 24954,
+          "seed_low_bounds_s2": [
+            5.52,
+            1.5,
+            0.23,
+            0.75,
+            2.0,
+            2.46,
+            0.23,
+            3.3,
+            -0.18,
+            -3.48
+          ],
+          "worst_seed_clear": false,
+          "worst_seed_low_s2": -3.48
+        },
+        "july_loo": {
+          "mean_s2": 113.52,
+          "refined_ci95_s2": [
+            9.58,
+            237.04
+          ],
+          "refined_clear": true,
+          "rows": 29844,
+          "seed_low_bounds_s2": [
+            4.85,
+            10.24,
+            9.75,
+            7.71,
+            10.33,
+            7.85,
+            10.25,
+            8.51,
+            11.7,
+            9.66
+          ],
+          "worst_seed_clear": true,
+          "worst_seed_low_s2": 4.85
+        }
+      },
+      "refined_every_fold_clear": true,
+      "worst_seed_every_fold_clear": false
+    }
+  },
+  "new": "N_reach_half",
+  "note": "January's increment lands on zero; this says whether that is the data or the draw.",
+  "old": "N",
+  "record": "analysis/arms-step2-unmatched-fitall-3f-shrunk.json",
+  "seeds": [
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+  ],
+  "verdict": "MAYBE: the verdict depends on the fitting convention or on the bootstrap draw, so the increment is not established on every fold"
+}

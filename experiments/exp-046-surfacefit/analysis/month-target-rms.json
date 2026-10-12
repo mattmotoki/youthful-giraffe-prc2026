@@ -1,0 +1,29 @@
+{
+ "by_month": {
+  "2025-02": {
+   "mean_s": 8.18168720886994,
+   "rms_s": 154.10487986333533,
+   "rms_y_true_s": 979.5367417749709,
+   "rows": 68122
+  },
+  "2025-03": {
+   "mean_s": 10.263290282253758,
+   "rms_s": 156.22998932283213,
+   "rms_y_true_s": 964.2573023950142,
+   "rows": 86984
+  },
+  "2025-10": {
+   "mean_s": 8.805618620283456,
+   "rms_s": 175.69061661272207,
+   "rms_y_true_s": 961.57378546564,
+   "rows": 103344
+  },
+  "2025-11": {
+   "mean_s": 12.062647795589355,
+   "rms_s": 174.03247537169977,
+   "rms_y_true_s": 1013.975833842011,
+   "rows": 99709
+  }
+ },
+ "what": "RESULTS 47.48.5: the size of the target each extension month presents -- rms of y_true - pbase6 on the writable rows. NOT the 47.17 mismatch, which is pbase6 - pbase_true and cannot be measured off the fold months because the true price base does not exist on these rows."
+}

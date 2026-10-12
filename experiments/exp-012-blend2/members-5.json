@@ -1,0 +1,11 @@
+{
+  "note": "blend-5 PROBE: blend-4's five plus retro-v1's V3-allin on the v3 frame as a sixth. V3-allin pinned from exp-001's oof/ under a versioned name: july_loo and january from result-V3-allin.json, december from result-V3-allin-dec.json - same argv but for --folds, both 660 rounds, so one config across the three folds. NOT the V3-allin-member-* series, whose july file is fold july (six-month training, RMSE 316.46) rather than july_loo (eleven-month, 301.23); those are different models on the same 190,713 validation rows.",
+  "members": {
+    "T-tailv2": "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+    "C2-cat": "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+    "L2-hub": "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-{fold}.parquet",
+    "F1-fresh": "experiments/exp-012-blend2/published/F1-fresh-s1-{fold}.parquet",
+    "V3-allin": "experiments/exp-012-blend2/published/V3-allin-v1-{fold}.parquet"
+  }
+}

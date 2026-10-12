@@ -1,0 +1,909 @@
+{
+ "rank_rows": 344841,
+ "level": 1.2,
+ "no_nm_definition": "FLIGHT_ID_mvt is null (prc panel `nm_missing`)",
+ "note": "The desk's words are \"same callsign or flight number\". A no-NM row has\nNO callsign -- `CALLSIGN_flt` is a flight-table column and the flight table is exactly\nwhat is missing -- so `FLIGHT_mvt`, the movement table's own flight number, is the only\nkey that exists on both sides. The census reports three tightenings of it, so the desk can\nsee what the key costs: the plain key, the key with the ARRIVAL's `ADEP_mvt` agreeing with\nthe departure's own `ADEP_mvt`, and the key with a USABLE clock (the arrival's\n`AOBT_3_flt` finite and 0 < take-off - AOBT_3 < 20000 s, which is what would actually be\ncarried back). Ambiguous keys -- more than one candidate arrival -- are counted, never\nresolved by a rule invented here.",
+ "months": {
+  "2025-07": {
+   "departures": 190713,
+   "no_nm_departures": 3934,
+   "no_nm_share": 0.02063,
+   "no_nm_to_one_of_the_ten": 583,
+   "share_of_no_nm_going_to_the_ten": 0.1482,
+   "matched_any_arrival": 356,
+   "ambiguous_any": 4,
+   "matched_arrival_with_nm": 203,
+   "ambiguous_with_nm": 0,
+   "matched_with_nm_and_same_adep": 200,
+   "ambiguous_strict": 0,
+   "recoverable_usable_clock": 198,
+   "ambiguous_usable": 0,
+   "recovery_rate_of_no_nm_to_the_ten": 0.3396,
+   "recovery_rate_of_all_no_nm": 0.0503,
+   "median_takeoff_minus_recovered_aobt_s": 901.0,
+   "kind": "fold",
+   "fold": "july_loo"
+  },
+  "2025-12": {
+   "departures": 165677,
+   "no_nm_departures": 1643,
+   "no_nm_share": 0.00992,
+   "no_nm_to_one_of_the_ten": 284,
+   "share_of_no_nm_going_to_the_ten": 0.1729,
+   "matched_any_arrival": 174,
+   "ambiguous_any": 1,
+   "matched_arrival_with_nm": 70,
+   "ambiguous_with_nm": 1,
+   "matched_with_nm_and_same_adep": 69,
+   "ambiguous_strict": 0,
+   "recoverable_usable_clock": 69,
+   "ambiguous_usable": 0,
+   "recovery_rate_of_no_nm_to_the_ten": 0.243,
+   "recovery_rate_of_all_no_nm": 0.042,
+   "median_takeoff_minus_recovered_aobt_s": 962.0,
+   "kind": "fold",
+   "fold": "december"
+  },
+  "2025-01": {
+   "departures": 153706,
+   "no_nm_departures": 1432,
+   "no_nm_share": 0.00932,
+   "no_nm_to_one_of_the_ten": 290,
+   "share_of_no_nm_going_to_the_ten": 0.2025,
+   "matched_any_arrival": 149,
+   "ambiguous_any": 1,
+   "matched_arrival_with_nm": 66,
+   "ambiguous_with_nm": 0,
+   "matched_with_nm_and_same_adep": 66,
+   "ambiguous_strict": 0,
+   "recoverable_usable_clock": 66,
+   "ambiguous_usable": 0,
+   "recovery_rate_of_no_nm_to_the_ten": 0.2276,
+   "recovery_rate_of_all_no_nm": 0.0461,
+   "median_takeoff_minus_recovered_aobt_s": 995.5,
+   "kind": "fold",
+   "fold": "january"
+  },
+  "2026-01": {
+   "departures": 152719,
+   "no_nm_departures": 2449,
+   "no_nm_share": 0.01604,
+   "no_nm_to_one_of_the_ten": 445,
+   "share_of_no_nm_going_to_the_ten": 0.1817,
+   "matched_any_arrival": 207,
+   "ambiguous_any": 2,
+   "matched_arrival_with_nm": 108,
+   "ambiguous_with_nm": 0,
+   "matched_with_nm_and_same_adep": 106,
+   "ambiguous_strict": 0,
+   "recoverable_usable_clock": 106,
+   "ambiguous_usable": 0,
+   "recovery_rate_of_no_nm_to_the_ten": 0.2382,
+   "recovery_rate_of_all_no_nm": 0.0433,
+   "median_takeoff_minus_recovered_aobt_s": 960.5,
+   "kind": "ranking"
+  },
+  "2026-07": {
+   "departures": 192122,
+   "no_nm_departures": 2834,
+   "no_nm_share": 0.01475,
+   "no_nm_to_one_of_the_ten": 346,
+   "share_of_no_nm_going_to_the_ten": 0.1221,
+   "matched_any_arrival": 225,
+   "ambiguous_any": 1,
+   "matched_arrival_with_nm": 113,
+   "ambiguous_with_nm": 0,
+   "matched_with_nm_and_same_adep": 113,
+   "ambiguous_strict": 0,
+   "recoverable_usable_clock": 113,
+   "ambiguous_usable": 0,
+   "recovery_rate_of_no_nm_to_the_ten": 0.3266,
+   "recovery_rate_of_all_no_nm": 0.0399,
+   "median_takeoff_minus_recovered_aobt_s": 862.0,
+   "kind": "ranking"
+  }
+ },
+ "regime_rmse": {
+  "p12": {
+   "july_loo": {
+    "rows": 190713,
+    "rows_no_nm": 3934,
+    "rmse_no_nm": 1118.45,
+    "rmse_with_nm": 236.13,
+    "mse_no_nm": 1250939.8,
+    "mse_with_nm": 55755.4,
+    "by_airport": {
+     "EDDF": {
+      "rows_no_nm": 435,
+      "rows_with_nm": 20899,
+      "rmse_no_nm": 328.04,
+      "rmse_with_nm": 180.77,
+      "mse_gap_s2": 74935.0
+     },
+     "EDDM": {
+      "rows_no_nm": 172,
+      "rows_with_nm": 15653,
+      "rmse_no_nm": 607.9,
+      "rmse_with_nm": 166.78,
+      "mse_gap_s2": 341728.0
+     },
+     "EGLL": {
+      "rows_no_nm": 338,
+      "rows_with_nm": 20452,
+      "rmse_no_nm": 1125.47,
+      "rmse_with_nm": 235.14,
+      "mse_gap_s2": 1211391.3
+     },
+     "EHAM": {
+      "rows_no_nm": 515,
+      "rows_with_nm": 21974,
+      "rmse_no_nm": 222.42,
+      "rmse_with_nm": 160.37,
+      "mse_gap_s2": 23753.0
+     },
+     "LEBL": {
+      "rows_no_nm": 428,
+      "rows_with_nm": 16324,
+      "rmse_no_nm": 301.62,
+      "rmse_with_nm": 258.25,
+      "mse_gap_s2": 24280.5
+     },
+     "LEMD": {
+      "rows_no_nm": 277,
+      "rows_with_nm": 18541,
+      "rmse_no_nm": 226.75,
+      "rmse_with_nm": 181.84,
+      "mse_gap_s2": 18348.5
+     },
+     "LFPG": {
+      "rows_no_nm": 663,
+      "rows_with_nm": 21049,
+      "rmse_no_nm": 444.13,
+      "rmse_with_nm": 234.62,
+      "mse_gap_s2": 142205.7
+     },
+     "LIRF": {
+      "rows_no_nm": 337,
+      "rows_with_nm": 14874,
+      "rmse_no_nm": 3415.33,
+      "rmse_with_nm": 426.95,
+      "mse_gap_s2": 11482226.0
+     },
+     "LSZH": {
+      "rows_no_nm": 345,
+      "rows_with_nm": 12266,
+      "rmse_no_nm": 550.64,
+      "rmse_with_nm": 177.08,
+      "mse_gap_s2": 271844.8
+     },
+     "LTFM": {
+      "rows_no_nm": 424,
+      "rows_with_nm": 24747,
+      "rmse_no_nm": 569.9,
+      "rmse_with_nm": 257.69,
+      "mse_gap_s2": 258377.9
+     }
+    },
+    "mse_gap_s2": 1195184.4,
+    "recoverable": {
+     "rows": 198,
+     "rmse": 1124.68,
+     "mse": 1264898.2,
+     "mse_gap_vs_with_nm_s2": 1209142.8,
+     "median_y_true_s": 1017.5,
+     "p90_abs_error_s": 996.6
+    },
+    "no_nm_to_the_ten": {
+     "rows": 583,
+     "rmse": 796.82,
+     "mse": 634926.3,
+     "mse_gap_vs_with_nm_s2": 579170.9,
+     "median_y_true_s": 819.0,
+     "p90_abs_error_s": 595.4
+    },
+    "y_true_percentiles_s": {
+     "no_nm": [
+      1014.0,
+      1725.0,
+      11535.7
+     ],
+     "with_nm": [
+      946.0,
+      1510.0,
+      2583.0
+     ]
+    }
+   },
+   "december": {
+    "rows": 165677,
+    "rows_no_nm": 1643,
+    "rmse_no_nm": 655.22,
+    "rmse_with_nm": 194.46,
+    "mse_no_nm": 429311.0,
+    "mse_with_nm": 37814.6,
+    "by_airport": {
+     "EDDM": {
+      "rows_no_nm": 130,
+      "rows_with_nm": 11905,
+      "rmse_no_nm": 798.75,
+      "rmse_with_nm": 193.76,
+      "mse_gap_s2": 600459.8
+     },
+     "EGLL": {
+      "rows_no_nm": 127,
+      "rows_with_nm": 19873,
+      "rmse_no_nm": 484.44,
+      "rmse_with_nm": 212.75,
+      "mse_gap_s2": 189419.0
+     },
+     "EHAM": {
+      "rows_no_nm": 315,
+      "rows_with_nm": 19143,
+      "rmse_no_nm": 245.06,
+      "rmse_with_nm": 148.1,
+      "mse_gap_s2": 38122.0
+     },
+     "LFPG": {
+      "rows_no_nm": 313,
+      "rows_with_nm": 19465,
+      "rmse_no_nm": 696.6,
+      "rmse_with_nm": 218.22,
+      "mse_gap_s2": 437636.3
+     },
+     "LSZH": {
+      "rows_no_nm": 101,
+      "rows_with_nm": 10484,
+      "rmse_no_nm": 322.23,
+      "rmse_with_nm": 152.46,
+      "mse_gap_s2": 80585.9
+     },
+     "LTFM": {
+      "rows_no_nm": 326,
+      "rows_with_nm": 22283,
+      "rmse_no_nm": 334.41,
+      "rmse_with_nm": 199.87,
+      "mse_gap_s2": 71879.4
+     }
+    },
+    "mse_gap_s2": 391496.4,
+    "recoverable": {
+     "rows": 69,
+     "rmse": 694.91,
+     "mse": 482894.5,
+     "mse_gap_vs_with_nm_s2": 445079.9,
+     "median_y_true_s": 1084.0,
+     "p90_abs_error_s": 866.3
+    },
+    "no_nm_to_the_ten": {
+     "rows": 284,
+     "rmse": 454.95,
+     "mse": 206983.8,
+     "mse_gap_vs_with_nm_s2": 169169.2,
+     "median_y_true_s": 719.5,
+     "p90_abs_error_s": 567.4
+    },
+    "y_true_percentiles_s": {
+     "no_nm": [
+      964.0,
+      2050.0,
+      10189.7
+     ],
+     "with_nm": [
+      911.0,
+      1491.0,
+      2329.0
+     ]
+    }
+   },
+   "january": {
+    "rows": 153706,
+    "rows_no_nm": 1432,
+    "rmse_no_nm": 2835.53,
+    "rmse_with_nm": 198.34,
+    "mse_no_nm": 8040221.7,
+    "mse_with_nm": 39339.9,
+    "by_airport": {
+     "EDDF": {
+      "rows_no_nm": 164,
+      "rows_with_nm": 15332,
+      "rmse_no_nm": 352.55,
+      "rmse_with_nm": 169.03,
+      "mse_gap_s2": 95720.5
+     },
+     "EGLL": {
+      "rows_no_nm": 128,
+      "rows_with_nm": 19292,
+      "rmse_no_nm": 685.73,
+      "rmse_with_nm": 219.3,
+      "mse_gap_s2": 422139.5
+     },
+     "EHAM": {
+      "rows_no_nm": 293,
+      "rows_with_nm": 18167,
+      "rmse_no_nm": 826.15,
+      "rmse_with_nm": 169.53,
+      "mse_gap_s2": 653775.5
+     },
+     "LFPG": {
+      "rows_no_nm": 216,
+      "rows_with_nm": 17684,
+      "rmse_no_nm": 6903.86,
+      "rmse_with_nm": 245.74,
+      "mse_gap_s2": 47602831.1
+     },
+     "LSZH": {
+      "rows_no_nm": 179,
+      "rows_with_nm": 9556,
+      "rmse_no_nm": 880.36,
+      "rmse_with_nm": 172.34,
+      "mse_gap_s2": 745338.3
+     },
+     "LTFM": {
+      "rows_no_nm": 229,
+      "rows_with_nm": 21139,
+      "rmse_no_nm": 499.31,
+      "rmse_with_nm": 212.1,
+      "mse_gap_s2": 204320.4
+     }
+    },
+    "mse_gap_s2": 8000881.8,
+    "recoverable": {
+     "rows": 66,
+     "rmse": 569.59,
+     "mse": 324437.3,
+     "mse_gap_vs_with_nm_s2": 285097.4,
+     "median_y_true_s": 919.0,
+     "p90_abs_error_s": 878.9
+    },
+    "no_nm_to_the_ten": {
+     "rows": 290,
+     "rmse": 827.51,
+     "mse": 684773.1,
+     "mse_gap_vs_with_nm_s2": 645433.2,
+     "median_y_true_s": 777.5,
+     "p90_abs_error_s": 646.7
+    },
+    "y_true_percentiles_s": {
+     "no_nm": [
+      903.0,
+      1856.8,
+      7547.2
+     ],
+     "with_nm": [
+      906.0,
+      1494.0,
+      2577.3
+     ]
+    }
+   }
+  },
+  "p11": {
+   "july_loo": {
+    "rows": 190713,
+    "rows_no_nm": 3934,
+    "rmse_no_nm": 1120.29,
+    "rmse_with_nm": 236.53,
+    "mse_no_nm": 1255059.8,
+    "mse_with_nm": 55947.4,
+    "by_airport": {
+     "EDDF": {
+      "rows_no_nm": 435,
+      "rows_with_nm": 20899,
+      "rmse_no_nm": 328.04,
+      "rmse_with_nm": 180.77,
+      "mse_gap_s2": 74935.0
+     },
+     "EDDM": {
+      "rows_no_nm": 172,
+      "rows_with_nm": 15653,
+      "rmse_no_nm": 612.19,
+      "rmse_with_nm": 167.22,
+      "mse_gap_s2": 346812.0
+     },
+     "EGLL": {
+      "rows_no_nm": 338,
+      "rows_with_nm": 20452,
+      "rmse_no_nm": 1133.88,
+      "rmse_with_nm": 235.9,
+      "mse_gap_s2": 1230031.6
+     },
+     "EHAM": {
+      "rows_no_nm": 515,
+      "rows_with_nm": 21974,
+      "rmse_no_nm": 222.42,
+      "rmse_with_nm": 160.37,
+      "mse_gap_s2": 23753.0
+     },
+     "LEBL": {
+      "rows_no_nm": 428,
+      "rows_with_nm": 16324,
+      "rmse_no_nm": 304.95,
+      "rmse_with_nm": 258.08,
+      "mse_gap_s2": 26393.3
+     },
+     "LEMD": {
+      "rows_no_nm": 277,
+      "rows_with_nm": 18541,
+      "rmse_no_nm": 231.33,
+      "rmse_with_nm": 182.18,
+      "mse_gap_s2": 20324.5
+     },
+     "LFPG": {
+      "rows_no_nm": 663,
+      "rows_with_nm": 21049,
+      "rmse_no_nm": 449.94,
+      "rmse_with_nm": 235.34,
+      "mse_gap_s2": 147057.0
+     },
+     "LIRF": {
+      "rows_no_nm": 337,
+      "rows_with_nm": 14874,
+      "rmse_no_nm": 3415.33,
+      "rmse_with_nm": 426.69,
+      "mse_gap_s2": 11482444.3
+     },
+     "LSZH": {
+      "rows_no_nm": 345,
+      "rows_with_nm": 12266,
+      "rmse_no_nm": 559.43,
+      "rmse_with_nm": 177.22,
+      "mse_gap_s2": 281559.5
+     },
+     "LTFM": {
+      "rows_no_nm": 424,
+      "rows_with_nm": 24747,
+      "rmse_no_nm": 571.19,
+      "rmse_with_nm": 259.32,
+      "mse_gap_s2": 259014.4
+     }
+    },
+    "mse_gap_s2": 1199112.4,
+    "recoverable": {
+     "rows": 198,
+     "rmse": 1122.63,
+     "mse": 1260298.7,
+     "mse_gap_vs_with_nm_s2": 1204351.3,
+     "median_y_true_s": 1017.5,
+     "p90_abs_error_s": 961.5
+    },
+    "no_nm_to_the_ten": {
+     "rows": 583,
+     "rmse": 795.92,
+     "mse": 633488.9,
+     "mse_gap_vs_with_nm_s2": 577541.5,
+     "median_y_true_s": 819.0,
+     "p90_abs_error_s": 585.1
+    },
+    "y_true_percentiles_s": {
+     "no_nm": [
+      1014.0,
+      1725.0,
+      11535.7
+     ],
+     "with_nm": [
+      946.0,
+      1510.0,
+      2583.0
+     ]
+    }
+   },
+   "december": {
+    "rows": 165677,
+    "rows_no_nm": 1643,
+    "rmse_no_nm": 661.01,
+    "rmse_with_nm": 194.83,
+    "mse_no_nm": 436933.6,
+    "mse_with_nm": 37960.4,
+    "by_airport": {
+     "EDDM": {
+      "rows_no_nm": 130,
+      "rows_with_nm": 11905,
+      "rmse_no_nm": 823.41,
+      "rmse_with_nm": 194.4,
+      "mse_gap_s2": 640209.6
+     },
+     "EGLL": {
+      "rows_no_nm": 127,
+      "rows_with_nm": 19873,
+      "rmse_no_nm": 498.92,
+      "rmse_with_nm": 213.3,
+      "mse_gap_s2": 203424.3
+     },
+     "EHAM": {
+      "rows_no_nm": 315,
+      "rows_with_nm": 19143,
+      "rmse_no_nm": 245.06,
+      "rmse_with_nm": 148.1,
+      "mse_gap_s2": 38122.0
+     },
+     "LFPG": {
+      "rows_no_nm": 313,
+      "rows_with_nm": 19465,
+      "rmse_no_nm": 710.31,
+      "rmse_with_nm": 218.83,
+      "mse_gap_s2": 456652.8
+     },
+     "LSZH": {
+      "rows_no_nm": 101,
+      "rows_with_nm": 10484,
+      "rmse_no_nm": 322.26,
+      "rmse_with_nm": 152.87,
+      "mse_gap_s2": 80483.7
+     },
+     "LTFM": {
+      "rows_no_nm": 326,
+      "rows_with_nm": 22283,
+      "rmse_no_nm": 332.37,
+      "rmse_with_nm": 200.58,
+      "mse_gap_s2": 70238.3
+     }
+    },
+    "mse_gap_s2": 398973.2,
+    "recoverable": {
+     "rows": 69,
+     "rmse": 695.53,
+     "mse": 483764.8,
+     "mse_gap_vs_with_nm_s2": 445804.4,
+     "median_y_true_s": 1084.0,
+     "p90_abs_error_s": 839.5
+    },
+    "no_nm_to_the_ten": {
+     "rows": 284,
+     "rmse": 458.67,
+     "mse": 210378.8,
+     "mse_gap_vs_with_nm_s2": 172418.4,
+     "median_y_true_s": 719.5,
+     "p90_abs_error_s": 567.4
+    },
+    "y_true_percentiles_s": {
+     "no_nm": [
+      964.0,
+      2050.0,
+      10189.7
+     ],
+     "with_nm": [
+      911.0,
+      1491.0,
+      2329.0
+     ]
+    }
+   },
+   "january": {
+    "rows": 153706,
+    "rows_no_nm": 1432,
+    "rmse_no_nm": 2835.21,
+    "rmse_with_nm": 198.85,
+    "mse_no_nm": 8038438.8,
+    "mse_with_nm": 39539.6,
+    "by_airport": {
+     "EDDF": {
+      "rows_no_nm": 164,
+      "rows_with_nm": 15332,
+      "rmse_no_nm": 352.55,
+      "rmse_with_nm": 169.03,
+      "mse_gap_s2": 95720.5
+     },
+     "EGLL": {
+      "rows_no_nm": 128,
+      "rows_with_nm": 19292,
+      "rmse_no_nm": 678.01,
+      "rmse_with_nm": 219.57,
+      "mse_gap_s2": 411479.6
+     },
+     "EHAM": {
+      "rows_no_nm": 293,
+      "rows_with_nm": 18167,
+      "rmse_no_nm": 826.15,
+      "rmse_with_nm": 169.53,
+      "mse_gap_s2": 653775.5
+     },
+     "LFPG": {
+      "rows_no_nm": 216,
+      "rows_with_nm": 17684,
+      "rmse_no_nm": 6903.71,
+      "rmse_with_nm": 246.52,
+      "mse_gap_s2": 47600481.4
+     },
+     "LSZH": {
+      "rows_no_nm": 179,
+      "rows_with_nm": 9556,
+      "rmse_no_nm": 876.4,
+      "rmse_with_nm": 172.63,
+      "mse_gap_s2": 738278.2
+     },
+     "LTFM": {
+      "rows_no_nm": 229,
+      "rows_with_nm": 21139,
+      "rmse_no_nm": 498.43,
+      "rmse_with_nm": 213.09,
+      "mse_gap_s2": 203022.0
+     }
+    },
+    "mse_gap_s2": 7998899.2,
+    "recoverable": {
+     "rows": 66,
+     "rmse": 573.82,
+     "mse": 329275.1,
+     "mse_gap_vs_with_nm_s2": 289735.5,
+     "median_y_true_s": 919.0,
+     "p90_abs_error_s": 964.2
+    },
+    "no_nm_to_the_ten": {
+     "rows": 290,
+     "rmse": 828.29,
+     "mse": 686062.6,
+     "mse_gap_vs_with_nm_s2": 646523.0,
+     "median_y_true_s": 777.5,
+     "p90_abs_error_s": 689.9
+    },
+    "y_true_percentiles_s": {
+     "no_nm": [
+      903.0,
+      1856.8,
+      7547.2
+     ],
+     "with_nm": [
+      906.0,
+      1494.0,
+      2577.3
+     ]
+    }
+   }
+  }
+ },
+ "face": {
+  "recoverable|pooled_shares": {
+   "rows": 219,
+   "mse_gap_s2": 4209209.1,
+   "delta_s2_per_ranking_row": 2673.165,
+   "board_gain_s": 5.2656,
+   "face_s_at_1_2": 6.3188
+  },
+  "recoverable|fold_july_loo": {
+   "rows": 219,
+   "mse_gap_s2": 1195184.4,
+   "delta_s2_per_ranking_row": 759.032,
+   "board_gain_s": 1.4841,
+   "face_s_at_1_2": 1.7809
+  },
+  "recoverable|fold_december": {
+   "rows": 219,
+   "mse_gap_s2": 391496.4,
+   "delta_s2_per_ranking_row": 248.63,
+   "board_gain_s": 0.4852,
+   "face_s_at_1_2": 0.5822
+  },
+  "recoverable|fold_january": {
+   "rows": 219,
+   "mse_gap_s2": 8000881.8,
+   "delta_s2_per_ranking_row": 5081.162,
+   "board_gain_s": 10.1053,
+   "face_s_at_1_2": 12.1263
+  },
+  "recoverable|RECOVERABLE_ROWS_pooled_shares": {
+   "rows": 219,
+   "mse_gap_s2": 799912.8,
+   "delta_s2_per_ranking_row": 508.005,
+   "board_gain_s": 0.9923,
+   "face_s_at_1_2": 1.1908
+  },
+  "recoverable|RECOVERABLE_ROWS_fold_july_loo": {
+   "rows": 219,
+   "mse_gap_s2": 1209142.8,
+   "delta_s2_per_ranking_row": 767.897,
+   "board_gain_s": 1.5015,
+   "face_s_at_1_2": 1.8018
+  },
+  "recoverable|RECOVERABLE_ROWS_fold_december": {
+   "rows": 219,
+   "mse_gap_s2": 445079.9,
+   "delta_s2_per_ranking_row": 282.659,
+   "board_gain_s": 0.5517,
+   "face_s_at_1_2": 0.662
+  },
+  "recoverable|RECOVERABLE_ROWS_fold_january": {
+   "rows": 219,
+   "mse_gap_s2": 285097.4,
+   "delta_s2_per_ranking_row": 181.058,
+   "board_gain_s": 0.3532,
+   "face_s_at_1_2": 0.4239
+  },
+  "every_no_nm_row|pooled_shares": {
+   "rows": 5283,
+   "mse_gap_s2": 4209209.1,
+   "delta_s2_per_ranking_row": 64485.522,
+   "board_gain_s": 220.5692,
+   "face_s_at_1_2": 264.683
+  },
+  "every_no_nm_row|fold_july_loo": {
+   "rows": 5283,
+   "mse_gap_s2": 1195184.4,
+   "delta_s2_per_ranking_row": 18310.349,
+   "board_gain_s": 38.6029,
+   "face_s_at_1_2": 46.3235
+  },
+  "every_no_nm_row|fold_december": {
+   "rows": 5283,
+   "mse_gap_s2": 391496.4,
+   "delta_s2_per_ranking_row": 5997.766,
+   "board_gain_s": 11.9726,
+   "face_s_at_1_2": 14.3672
+  },
+  "every_no_nm_row|fold_january": {
+   "rows": 5283,
+   "mse_gap_s2": 8000881.8,
+   "delta_s2_per_ranking_row": 122574.342,
+   "board_gain_s": 256.4644,
+   "face_s_at_1_2": 307.7573
+  },
+  "every_no_nm_row|RECOVERABLE_ROWS_pooled_shares": {
+   "rows": 5283,
+   "mse_gap_s2": 799912.8,
+   "delta_s2_per_ranking_row": 12254.747,
+   "board_gain_s": 25.1221,
+   "face_s_at_1_2": 30.1466
+  },
+  "every_no_nm_row|RECOVERABLE_ROWS_fold_july_loo": {
+   "rows": 5283,
+   "mse_gap_s2": 1209142.8,
+   "delta_s2_per_ranking_row": 18524.194,
+   "board_gain_s": 39.0942,
+   "face_s_at_1_2": 46.9131
+  },
+  "every_no_nm_row|RECOVERABLE_ROWS_fold_december": {
+   "rows": 5283,
+   "mse_gap_s2": 445079.9,
+   "delta_s2_per_ranking_row": 6818.67,
+   "board_gain_s": 13.6572,
+   "face_s_at_1_2": 16.3887
+  },
+  "every_no_nm_row|RECOVERABLE_ROWS_fold_january": {
+   "rows": 5283,
+   "mse_gap_s2": 285097.4,
+   "delta_s2_per_ranking_row": 4367.722,
+   "board_gain_s": 8.6615,
+   "face_s_at_1_2": 10.3938
+  },
+  "recoverable|TRIMMED_pooled_shares": {
+   "rows": 219,
+   "mse_gap_s2": 227251.0,
+   "delta_s2_per_ranking_row": 144.321,
+   "board_gain_s": 0.2815,
+   "face_s_at_1_2": 0.3378
+  },
+  "recoverable|TRIMMED_fold_july_loo": {
+   "rows": 219,
+   "mse_gap_s2": 353891.5,
+   "delta_s2_per_ranking_row": 224.748,
+   "board_gain_s": 0.4385,
+   "face_s_at_1_2": 0.5262
+  },
+  "recoverable|TRIMMED_fold_december": {
+   "rows": 219,
+   "mse_gap_s2": 95667.8,
+   "delta_s2_per_ranking_row": 60.756,
+   "board_gain_s": 0.1185,
+   "face_s_at_1_2": 0.1422
+  },
+  "recoverable|TRIMMED_fold_january": {
+   "rows": 219,
+   "mse_gap_s2": 67935.9,
+   "delta_s2_per_ranking_row": 43.144,
+   "board_gain_s": 0.0841,
+   "face_s_at_1_2": 0.101
+  }
+ },
+ "scored_departures_counted": 344841,
+ "recovered_clock": {
+  "july_loo": {
+   "rows": 198,
+   "rmse_head_p12": 1124.68,
+   "rmse_recovered_clock": 2172.56,
+   "mse_head_p12": 1264898.2,
+   "mse_recovered_clock": 4720015.5,
+   "mse_drop_s2": -3455117.3,
+   "median_proxy_minus_y_s": -115.5,
+   "iqr_proxy_minus_y_s": [
+    -242.0,
+    56.8
+   ],
+   "share_proxy_beats_head": 0.545,
+   "mse_oracle_pick_s2": 935726.6,
+   "p90_abs_proxy_minus_y_s": 602.6,
+   "rows_proxy_off_by_over_600s": 21
+  },
+  "december": {
+   "rows": 69,
+   "rmse_head_p12": 694.91,
+   "rmse_recovered_clock": 2653.51,
+   "mse_head_p12": 482894.5,
+   "mse_recovered_clock": 7041103.4,
+   "mse_drop_s2": -6558208.9,
+   "median_proxy_minus_y_s": -63.0,
+   "iqr_proxy_minus_y_s": [
+    -659.0,
+    115.0
+   ],
+   "share_proxy_beats_head": 0.319,
+   "mse_oracle_pick_s2": 88189.8,
+   "p90_abs_proxy_minus_y_s": 5335.8,
+   "rows_proxy_off_by_over_600s": 24
+  },
+  "january": {
+   "rows": 66,
+   "rmse_head_p12": 569.59,
+   "rmse_recovered_clock": 1815.88,
+   "mse_head_p12": 324437.3,
+   "mse_recovered_clock": 3297412.2,
+   "mse_drop_s2": -2972974.9,
+   "median_proxy_minus_y_s": 46.0,
+   "iqr_proxy_minus_y_s": [
+    -69.2,
+    135.0
+   ],
+   "share_proxy_beats_head": 0.53,
+   "mse_oracle_pick_s2": 118696.4,
+   "p90_abs_proxy_minus_y_s": 782.5,
+   "rows_proxy_off_by_over_600s": 9
+  }
+ },
+ "gap_fragility": {
+  "july_loo": {
+   "rows": 198,
+   "mse": 1264898.2,
+   "mse_ci95_row_bootstrap": [
+    541128.1,
+    2266793.0
+   ],
+   "share_of_mse_in_the_worst_row": 0.25,
+   "share_of_mse_in_the_worst_five": 0.684,
+   "mse_without_the_worst_five": 409646.9,
+   "max_abs_error_s": 7917.4
+  },
+  "december": {
+   "rows": 69,
+   "mse": 482894.5,
+   "mse_ci95_row_bootstrap": [
+    147104.1,
+    1038349.7
+   ],
+   "share_of_mse_in_the_worst_row": 0.532,
+   "share_of_mse_in_the_worst_five": 0.744,
+   "mse_without_the_worst_five": 133482.4,
+   "max_abs_error_s": 4210.3
+  },
+  "january": {
+   "rows": 66,
+   "mse": 324437.3,
+   "mse_ci95_row_bootstrap": [
+    136458.0,
+    586336.1
+   ],
+   "share_of_mse_in_the_worst_row": 0.269,
+   "share_of_mse_in_the_worst_five": 0.694,
+   "mse_without_the_worst_five": 107275.8,
+   "max_abs_error_s": 2398.1
+  }
+ },
+ "mse_gaps_s2": {
+  "whole_no_nm_regime": {
+   "july_loo": 1195184.4,
+   "december": 391496.4,
+   "january": 8000881.8
+  },
+  "recoverable_rows_only": {
+   "july_loo": 1209142.8,
+   "december": 445079.9,
+   "january": 285097.4
+  },
+  "pooled_whole": 4209209.1,
+  "pooled_recoverable": 799912.8,
+  "recoverable_without_worst_five": {
+   "july_loo": 353891.5,
+   "december": 95667.8,
+   "january": 67935.9
+  },
+  "pooled_recoverable_without_worst_five": 227251.0
+ },
+ "face_note": "UPPER BOUND: it credits a recovered row with the WHOLE gap between the two regimes, when the regimes differ in more than the join (a no-NM row is also a different kind of flight). It is arithmetic on (1) and (2), not a fit."
+}

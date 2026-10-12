@@ -1,0 +1,83 @@
+{
+  "note": "exp-026 rebuild of `blend-5 -V3-allin` on published members only.",
+  "_stage_name": "b5-drop-V3-allin",
+  "ranking": {
+    "T-tailv4": "experiments/exp-012-blend2/published/T-tailv4-ranking.parquet",
+    "C2-cat": "experiments/exp-012-blend2/published/C2-cat-ranking.parquet",
+    "L2-hub8725": "experiments/exp-012-blend2/published/L2-hub8725-ranking.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-ranking.parquet",
+    "F1-fresh": "experiments/exp-012-blend2/published/F1-fresh-s1-ranking.parquet",
+    "N1-nmtail": "experiments/exp-012-blend2/published/N1-nmtail-v4-ranking.parquet"
+  },
+  "mode": "hybrid: nnls in nm_late, nnls elsewhere",
+  "weights": {
+    "nm_late": {
+      "T-tailv4": 0.06447821221491229,
+      "C2-cat": 0.06584692944455933,
+      "L2-hub8725": 0.019327868417777106,
+      "D1-winter": 0.14562651519271672,
+      "F1-fresh": 0.4728896243518648,
+      "N1-nmtail": 0.2480863041980159
+    },
+    "nm_bulk": {
+      "T-tailv4": 0.27245854114289647,
+      "C2-cat": 0.0,
+      "L2-hub8725": 0.14697581253979144,
+      "D1-winter": 0.02004876435492438,
+      "F1-fresh": 0.5617405761893494,
+      "N1-nmtail": 0.0
+    },
+    "nonm": {
+      "T-tailv4": 0.27245854114289647,
+      "C2-cat": 0.0,
+      "L2-hub8725": 0.14697581253979144,
+      "D1-winter": 0.02004876435492438,
+      "F1-fresh": 0.5617405761893494,
+      "N1-nmtail": 0.0
+    },
+    "noac": {
+      "T-tailv4": 0.27245854114289647,
+      "C2-cat": 0.0,
+      "L2-hub8725": 0.14697581253979144,
+      "D1-winter": 0.02004876435492438,
+      "F1-fresh": 0.5617405761893494,
+      "N1-nmtail": 0.0
+    },
+    "_all": {
+      "T-tailv4": 0.27245854114289647,
+      "C2-cat": 0.0,
+      "L2-hub8725": 0.14697581253979144,
+      "D1-winter": 0.02004876435492438,
+      "F1-fresh": 0.5617405761893494,
+      "N1-nmtail": 0.0
+    }
+  },
+  "floor": 60.0,
+  "guard_bounds": [
+    -20657.0,
+    9069.0
+  ],
+  "late_cut": 1800.0,
+  "prepare_members": true,
+  "blend_version": 5,
+  "rotated": {
+    "july_loo": 287.418,
+    "december": 208.2407,
+    "january": 339.5657
+  },
+  "rotated_clean": {
+    "july_loo": 287.418,
+    "december": 208.2407,
+    "january": 221.1964
+  },
+  "board_clean": 260.1783,
+  "predict": 264.1783,
+  "member_sha256": {
+    "T-tailv4": "89706c6c3a268726d37f59d5dfe25297ee72acc73bbaec9659d4afcc40c8bfa0",
+    "C2-cat": "52a453481a8bcc967c75c036704bf4d4027b9096819867ec9138324801894c3c",
+    "L2-hub8725": "dd0e8710000ab29b930ec72d8b058b00e6ed86ba3240cad01402c13813527882",
+    "D1-winter": "8865d3d866012d1421a08eee4c24ce9cfe53dbc0e255d8a3ff1894b68c368fd2",
+    "F1-fresh": "e216ab9e0dc7243a55a5ec1f8bba7d4dd8fa5f0108782e42d59344006c8bc5dc",
+    "N1-nmtail": "5feb03d96490d9e7acd7dee59fd94a41a81a45f97b75bb2d016646ac2cf4067b"
+  }
+}

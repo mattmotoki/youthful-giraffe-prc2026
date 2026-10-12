@@ -1,0 +1,52 @@
+{
+  "arm": "base",
+  "folds": [
+    "december",
+    "january"
+  ],
+  "threads": 6,
+  "lightgbm": "4.7.0",
+  "tail_model_version": "2.6.0",
+  "rows": [
+    {
+      "fold": "december",
+      "arm": "base",
+      "n": 165677,
+      "rmse": 222.73634145569847,
+      "rmse_le3600": 208.45099533544402,
+      "rmse_gt3600": 1988.332800486492,
+      "n_gt3600": 261,
+      "wall_s": 60.1,
+      "path": "experiments/exp-032-k3/oof/k3-tail-base-december.parquet",
+      "sha256": "4f2b2a7c1fd70a57e5b561292788096c4d80520a340c8f967410ffb66cc9473e"
+    },
+    {
+      "fold": "january",
+      "arm": "base",
+      "n": 153706,
+      "rmse": 345.71249112956093,
+      "rmse_le3600": 211.91059553080476,
+      "rmse_gt3600": 5944.03562698396,
+      "n_gt3600": 325,
+      "wall_s": 59.3,
+      "path": "experiments/exp-032-k3/oof/k3-tail-base-january.parquet",
+      "sha256": "df3f2ba8cd99ed87b52ef3ff18a79480ab69faf130110f30a38aeacda8f6b1cd"
+    }
+  ],
+  "identity_checks": [
+    {
+      "fold": "december",
+      "rows": 165677,
+      "max_abs_pred_diff": 0.0,
+      "max_abs_label_diff": 0.0,
+      "published_rmse": 222.7363
+    },
+    {
+      "fold": "january",
+      "rows": 153706,
+      "max_abs_pred_diff": 0.0,
+      "max_abs_label_diff": 0.0,
+      "published_rmse": 345.7125
+    }
+  ]
+}

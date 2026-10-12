@@ -1,0 +1,10 @@
+[
+ {"name":"X0_clip3600",      "kwargs":{"rounds":1200,"exact_rounds":300,"clip_z":3600}},
+ {"name":"X1_gap2",          "kwargs":{"rounds":1200,"exact_rounds":300,"clip_z":3600,"exact_weight":"gap2"}},
+ {"name":"X2_eq60_gap2",     "kwargs":{"rounds":1200,"exact_rounds":300,"clip_z":3600,"exact_label":"eq60","exact_weight":"gap2"}},
+ {"name":"X3_ratiolab_gap2", "kwargs":{"rounds":1200,"exact_rounds":300,"clip_z":3600,"exact_label":"ratio","exact_weight":"gap2"}},
+ {"name":"X4_ghost_mixbase", "kwargs":{"rounds":1200,"exact_rounds":300,"clip_z":3600,"ghost_mode":"mixbase"}},
+ {"name":"X5_clip2400",      "kwargs":{"rounds":1200,"exact_rounds":300,"clip_z":2400}},
+ {"name":"X6_clip6000",      "kwargs":{"rounds":1200,"exact_rounds":300,"clip_z":6000}},
+ {"name":"X7_catblend",      "kwargs":{"rounds":1200,"exact_rounds":300,"clip_z":3600,"main_model":"both"}}
+]

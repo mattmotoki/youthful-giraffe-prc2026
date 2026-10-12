@@ -1,0 +1,851 @@
+{
+  "arm": "N",
+  "base": "v13 (surfacefit's with-clock candidate, board 248.4818)",
+  "by_airport_all_row": {
+    "EDDF": {
+      "ci95_rmse_s": [
+        0.3621,
+        1.6773
+      ],
+      "ci95_s2": [
+        113.08,
+        584.55
+      ],
+      "days": 31,
+      "mse_gain_s2": 289.85,
+      "rmse_gain_s": 0.8875,
+      "rows": 17324
+    },
+    "EDDM": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 12035
+    },
+    "EGLL": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 20000
+    },
+    "EHAM": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 19458
+    },
+    "LEBL": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 13835
+    },
+    "LEMD": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 17985
+    },
+    "LFPG": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 19778
+    },
+    "LIRF": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 12068
+    },
+    "LSZH": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 10585
+    },
+    "LTFM": {
+      "ci95_rmse_s": [
+        -0.0307,
+        0.8408
+      ],
+      "ci95_s2": [
+        -12.12,
+        334.47
+      ],
+      "days": 31,
+      "mse_gain_s2": 175.5,
+      "rmse_gain_s": 0.4339,
+      "rows": 22609
+    }
+  },
+  "by_airport_served": {
+    "EDDF": {
+      "ci95_rmse_s": [
+        4.4042,
+        15.013
+      ],
+      "ci95_s2": [
+        1399.23,
+        5953.51
+      ],
+      "days": 31,
+      "mse_gain_s2": 3216.74,
+      "rmse_gain_s": 9.2545,
+      "rows": 1561
+    },
+    "LTFM": {
+      "ci95_rmse_s": [
+        -0.004,
+        0.8566
+      ],
+      "ci95_s2": [
+        -1.64,
+        347.19
+      ],
+      "days": 31,
+      "mse_gain_s2": 175.51,
+      "rmse_gain_s": 0.4346,
+      "rows": 22608
+    }
+  },
+  "cells_served": [
+    "EDDF/reached",
+    "LTFM/unreached"
+  ],
+  "class_rows": 64799,
+  "fold": "december",
+  "matcher_sha256": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+  "pre_hold_all_row": {
+    "ci95_rmse_s": [
+      -0.3136,
+      0.2687
+    ],
+    "ci95_s2": [
+      -127.64,
+      111.57
+    ],
+    "days": 31,
+    "mse_gain_s2": -4.62,
+    "rmse_gain_s": -0.0113,
+    "rows": 165677
+  },
+  "pre_hold_class_rows": {
+    "ci95_rmse_s": [
+      -0.7487,
+      0.6415
+    ],
+    "ci95_s2": [
+      -340.31,
+      292.39
+    ],
+    "days": 31,
+    "mse_gain_s2": -11.81,
+    "rmse_gain_s": -0.0263,
+    "rows": 64799
+  },
+  "projected": {
+    "board_gain_ci95_s": [
+      0.0602,
+      0.8869
+    ],
+    "board_gain_s": 0.4244,
+    "by_airport": {
+      "EDDF": {
+        "contribution_ci95_s2": [
+          65.89,
+          330.49
+        ],
+        "contribution_s2": 170.97,
+        "gain_per_row_s2": 2726.9,
+        "rows": 1604,
+        "weight": 0.0627
+      },
+      "EDDM": {
+        "contribution_ci95_s2": [
+          0.0,
+          0.0
+        ],
+        "contribution_s2": 0.0,
+        "gain_per_row_s2": 0.0,
+        "rows": 447,
+        "weight": 0.00282
+      },
+      "EGLL": {
+        "contribution_ci95_s2": [
+          -136.71,
+          -40.49
+        ],
+        "contribution_s2": -78.84,
+        "gain_per_row_s2": -4164.5,
+        "rows": 11216,
+        "weight": 0.01893
+      },
+      "EHAM": {
+        "contribution_ci95_s2": [
+          -27.4,
+          -4.26
+        ],
+        "contribution_s2": -13.77,
+        "gain_per_row_s2": -1820.6,
+        "rows": 1200,
+        "weight": 0.00757
+      },
+      "LEBL": {
+        "contribution_ci95_s2": [
+          -0.61,
+          36.72
+        ],
+        "contribution_s2": 15.51,
+        "gain_per_row_s2": 1532.8,
+        "rows": 1186,
+        "weight": 0.01012
+      },
+      "LEMD": {
+        "contribution_ci95_s2": [
+          14.36,
+          58.95
+        ],
+        "contribution_s2": 34.71,
+        "gain_per_row_s2": 1182.6,
+        "rows": 866,
+        "weight": 0.02935
+      },
+      "LFPG": {
+        "contribution_ci95_s2": [
+          -20.46,
+          81.12
+        ],
+        "contribution_s2": 18.14,
+        "gain_per_row_s2": 163.5,
+        "rows": 18773,
+        "weight": 0.11095
+      },
+      "LIRF": {
+        "contribution_ci95_s2": [
+          -44.72,
+          112.49
+        ],
+        "contribution_s2": 32.49,
+        "gain_per_row_s2": 528.0,
+        "rows": 6301,
+        "weight": 0.06153
+      },
+      "LSZH": {
+        "contribution_ci95_s2": [
+          -2.66,
+          14.99
+        ],
+        "contribution_s2": 6.22,
+        "gain_per_row_s2": 1093.3,
+        "rows": 648,
+        "weight": 0.00569
+      },
+      "LTFM": {
+        "contribution_ci95_s2": [
+          6.06,
+          59.7
+        ],
+        "contribution_s2": 32.08,
+        "gain_per_row_s2": 232.5,
+        "rows": 22609,
+        "weight": 0.13797
+      }
+    },
+    "ci95_s2": [
+      30.86,
+      454.14
+    ],
+    "largest_contributor": "EDDF",
+    "leave_one_airport_out_s2": {
+      "EDDF": 46.53,
+      "EDDM": 217.5,
+      "EGLL": 296.34,
+      "EHAM": 231.27,
+      "LEBL": 201.99,
+      "LEMD": 182.79,
+      "LFPG": 199.36,
+      "LIRF": 185.01,
+      "LSZH": 211.28,
+      "LTFM": 185.42
+    },
+    "pooled_mse_reduction_s2": 217.5
+  },
+  "projected_served_cells_only": {
+    "board_gain_s": 0.3962,
+    "cells": [
+      "EDDF/reached",
+      "LTFM/unreached"
+    ],
+    "ci95_s2": [
+      94.17,
+      359.65
+    ],
+    "forgone_by_cell": {
+      "EDDF/unreached": 0.0,
+      "EDDM/reached": 0.0,
+      "EDDM/unreached": 0.0,
+      "EGLL/reached": -78.92,
+      "EGLL/unreached": 0.08,
+      "EHAM/reached": -13.77,
+      "EHAM/unreached": 0.0,
+      "LEBL/reached": 15.51,
+      "LEBL/unreached": 0.0,
+      "LEMD/reached": 34.71,
+      "LEMD/unreached": 0.0,
+      "LFPG/reached": -2.9,
+      "LFPG/unreached": 21.04,
+      "LIRF/reached": -1.62,
+      "LIRF/unreached": 34.11,
+      "LSZH/reached": 6.22,
+      "LSZH/unreached": 0.0
+    },
+    "forgone_s2": 14.45,
+    "hold_reason": {
+      "EDDF/unreached": {
+        "december": "unpriced, 43 fold rows",
+        "january": "unpriced, 155 fold rows",
+        "july_loo": "unpriced, 52 fold rows"
+      },
+      "EDDM/reached": {
+        "december": "unpriced, 408 fold rows",
+        "january": "unpriced, 149 fold rows",
+        "july_loo": "unpriced, 230 fold rows"
+      },
+      "EDDM/unreached": {
+        "december": "unpriced, 39 fold rows",
+        "january": "unpriced, 274 fold rows",
+        "july_loo": "supported"
+      },
+      "EGLL/reached": {
+        "december": "interval [-7490.1, -2205.22] is not clear of zero above",
+        "january": "interval [-671.43, 915.33] is not clear of zero above",
+        "july_loo": "interval [-1383.54, 329.91] is not clear of zero above"
+      },
+      "EGLL/unreached": {
+        "december": "interval [-715.5, 1022.44] is not clear of zero above",
+        "january": "interval [-1625.92, -56.35] is not clear of zero above",
+        "july_loo": "interval [-401.8, 154.74] is not clear of zero above"
+      },
+      "EHAM/reached": {
+        "december": "interval [-3737.2, -581.75] is not clear of zero above",
+        "january": "interval [-492.4, 5732.35] is not clear of zero above",
+        "july_loo": "supported"
+      },
+      "EHAM/unreached": {
+        "december": "unpriced, 32 fold rows",
+        "january": "unpriced, 16 fold rows",
+        "july_loo": "unpriced, 13 fold rows"
+      },
+      "LEBL/reached": {
+        "december": "interval [-65.95, 3939.83] is not clear of zero above",
+        "january": "supported",
+        "july_loo": "supported"
+      },
+      "LEBL/unreached": {
+        "december": "unpriced, 99 fold rows",
+        "january": "unpriced, 120 fold rows",
+        "july_loo": "unpriced, 321 fold rows"
+      },
+      "LEMD/reached": {
+        "december": "supported",
+        "january": "unpriced, 0 fold rows",
+        "july_loo": "supported"
+      },
+      "LEMD/unreached": {
+        "december": "unpriced, 48 fold rows",
+        "january": "supported",
+        "july_loo": "interval [-89.55, 637.23] is not clear of zero above"
+      },
+      "LFPG/reached": {
+        "december": "interval [-1192.49, 472.74] is not clear of zero above",
+        "january": "unpriced, 0 fold rows",
+        "july_loo": "interval [-1288.92, 744.77] is not clear of zero above"
+      },
+      "LFPG/unreached": {
+        "december": "interval [-129.25, 806.42] is not clear of zero above",
+        "january": "interval [-27.09, 719.29] is not clear of zero above",
+        "july_loo": "interval [-387.13, 37.49] is not clear of zero above"
+      },
+      "LIRF/reached": {
+        "december": "interval [-1890.16, 1410.4] is not clear of zero above",
+        "january": "unpriced, 0 fold rows",
+        "july_loo": "interval [-3997.08, 6618.4] is not clear of zero above"
+      },
+      "LIRF/unreached": {
+        "december": "interval [-627.77, 2076.02] is not clear of zero above",
+        "january": "interval [-324.5, 165.26] is not clear of zero above",
+        "july_loo": "unpriced, 141 fold rows"
+      },
+      "LSZH/reached": {
+        "december": "interval [-497.71, 2808.59] is not clear of zero above",
+        "january": "interval [-1352.14, 2187.12] is not clear of zero above",
+        "july_loo": "interval [-467.3, 2561.12] is not clear of zero above"
+      },
+      "LSZH/unreached": {
+        "december": "unpriced, 50 fold rows",
+        "january": "unpriced, 98 fold rows",
+        "july_loo": "unpriced, 60 fold rows"
+      }
+    },
+    "min_fold_rows": 500,
+    "note": "the desk's 2026-09-09 cell hold: a cell whose own day-clustered fold interval is not clear of zero above, or which is priced on fewer than 500 rows in ANY fold, is held at the base.",
+    "pooled_mse_reduction_s2": 203.05
+  },
+  "raw_all_row": {
+    "ci95_rmse_s": [
+      0.0595,
+      0.2133
+    ],
+    "ci95_s2": [
+      23.83,
+      90.73
+    ],
+    "days": 31,
+    "mse_gain_s2": 54.26,
+    "rmse_gain_s": 0.1329,
+    "rows": 165677
+  },
+  "raw_all_row_without_EGLL": {
+    "ci95_rmse_s": [
+      0.0644,
+      0.2471
+    ],
+    "ci95_s2": [
+      25.8,
+      102.4
+    ],
+    "days": 31,
+    "mse_gain_s2": 61.71,
+    "rmse_gain_s": 0.1524,
+    "rows": 145677
+  },
+  "raw_served_rows": {
+    "ci95_rmse_s": [
+      0.3539,
+      1.6091
+    ],
+    "ci95_s2": [
+      142.94,
+      619.32
+    ],
+    "days": 31,
+    "mse_gain_s2": 371.93,
+    "rmse_gain_s": 0.9287,
+    "rows": 24169
+  },
+  "raw_served_without_EGLL": {
+    "ci95_rmse_s": [
+      0.3738,
+      1.6098
+    ],
+    "ci95_s2": [
+      149.65,
+      634.46
+    ],
+    "days": 31,
+    "mse_gain_s2": 371.93,
+    "rmse_gain_s": 0.9287,
+    "rows": 24169
+  },
+  "reach_by_airport_month": {
+    "EDDF": {
+      "2025-01": {
+        "clocked": 11755,
+        "reach": 0.7586,
+        "rows": 15496
+      },
+      "2025-07": {
+        "clocked": 16608,
+        "reach": 0.7785,
+        "rows": 21334
+      },
+      "2025-12": {
+        "clocked": 15720,
+        "reach": 0.9074,
+        "rows": 17324
+      },
+      "2026-01": {
+        "clocked": 7388,
+        "reach": 0.4716,
+        "rows": 15667
+      },
+      "2026-07": {
+        "clocked": 7308,
+        "reach": 0.3539,
+        "rows": 20650
+      }
+    },
+    "EDDM": {
+      "2025-01": {
+        "clocked": 10843,
+        "reach": 0.9625,
+        "rows": 11266
+      },
+      "2025-07": {
+        "clocked": 5775,
+        "reach": 0.3649,
+        "rows": 15825
+      },
+      "2025-12": {
+        "clocked": 11588,
+        "reach": 0.9629,
+        "rows": 12035
+      },
+      "2026-01": {
+        "clocked": 10531,
+        "reach": 0.9615,
+        "rows": 10953
+      },
+      "2026-07": {
+        "clocked": 14461,
+        "reach": 0.9632,
+        "rows": 15013
+      }
+    },
+    "EGLL": {
+      "2025-01": {
+        "clocked": 8447,
+        "reach": 0.435,
+        "rows": 19420
+      },
+      "2025-07": {
+        "clocked": 1200,
+        "reach": 0.0577,
+        "rows": 20790
+      },
+      "2025-12": {
+        "clocked": 8784,
+        "reach": 0.4392,
+        "rows": 20000
+      },
+      "2026-01": {
+        "clocked": 13558,
+        "reach": 0.7031,
+        "rows": 19283
+      },
+      "2026-07": {
+        "clocked": 19756,
+        "reach": 0.961,
+        "rows": 20557
+      }
+    },
+    "EHAM": {
+      "2025-01": {
+        "clocked": 17801,
+        "reach": 0.9643,
+        "rows": 18460
+      },
+      "2025-07": {
+        "clocked": 21193,
+        "reach": 0.9424,
+        "rows": 22489
+      },
+      "2025-12": {
+        "clocked": 18258,
+        "reach": 0.9383,
+        "rows": 19458
+      },
+      "2026-01": {
+        "clocked": 15007,
+        "reach": 0.9245,
+        "rows": 16232
+      },
+      "2026-07": {
+        "clocked": 20566,
+        "reach": 0.9369,
+        "rows": 21950
+      }
+    },
+    "LEBL": {
+      "2025-01": {
+        "clocked": 11198,
+        "reach": 0.9153,
+        "rows": 12234
+      },
+      "2025-07": {
+        "clocked": 13792,
+        "reach": 0.8233,
+        "rows": 16752
+      },
+      "2025-12": {
+        "clocked": 12649,
+        "reach": 0.9143,
+        "rows": 13835
+      },
+      "2026-01": {
+        "clocked": 10733,
+        "reach": 0.8797,
+        "rows": 12201
+      },
+      "2026-07": {
+        "clocked": 15858,
+        "reach": 0.887,
+        "rows": 17879
+      }
+    },
+    "LEMD": {
+      "2025-01": {
+        "clocked": 1,
+        "reach": 0.0001,
+        "rows": 16510
+      },
+      "2025-07": {
+        "clocked": 4139,
+        "reach": 0.2199,
+        "rows": 18818
+      },
+      "2025-12": {
+        "clocked": 17119,
+        "reach": 0.9518,
+        "rows": 17985
+      },
+      "2026-01": {
+        "clocked": 15840,
+        "reach": 0.9427,
+        "rows": 16802
+      },
+      "2026-07": {
+        "clocked": 10999,
+        "reach": 0.5458,
+        "rows": 20152
+      }
+    },
+    "LFPG": {
+      "2025-01": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 17900
+      },
+      "2025-07": {
+        "clocked": 396,
+        "reach": 0.0182,
+        "rows": 21712
+      },
+      "2025-12": {
+        "clocked": 1005,
+        "reach": 0.0508,
+        "rows": 19778
+      },
+      "2026-01": {
+        "clocked": 739,
+        "reach": 0.0408,
+        "rows": 18129
+      },
+      "2026-07": {
+        "clocked": 873,
+        "reach": 0.0402,
+        "rows": 21743
+      }
+    },
+    "LIRF": {
+      "2025-01": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 11317
+      },
+      "2025-07": {
+        "clocked": 13247,
+        "reach": 0.8709,
+        "rows": 15211
+      },
+      "2025-12": {
+        "clocked": 5767,
+        "reach": 0.4779,
+        "rows": 12068
+      },
+      "2026-01": {
+        "clocked": 5325,
+        "reach": 0.4814,
+        "rows": 11061
+      },
+      "2026-07": {
+        "clocked": 11,
+        "reach": 0.0007,
+        "rows": 15838
+      }
+    },
+    "LSZH": {
+      "2025-01": {
+        "clocked": 8728,
+        "reach": 0.8966,
+        "rows": 9735
+      },
+      "2025-07": {
+        "clocked": 10849,
+        "reach": 0.8603,
+        "rows": 12611
+      },
+      "2025-12": {
+        "clocked": 9937,
+        "reach": 0.9388,
+        "rows": 10585
+      },
+      "2026-01": {
+        "clocked": 9155,
+        "reach": 0.916,
+        "rows": 9995
+      },
+      "2026-07": {
+        "clocked": 12033,
+        "reach": 0.9147,
+        "rows": 13155
+      }
+    },
+    "LTFM": {
+      "2025-01": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 21368
+      },
+      "2025-07": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 25171
+      },
+      "2025-12": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 22609
+      },
+      "2026-01": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 22396
+      },
+      "2026-07": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 25185
+      }
+    }
+  },
+  "reach_gap_2025_12_vs_ranking": {
+    "EDDF": {
+      "2025-12": 0.9074,
+      "2026-01": 0.4716,
+      "2026-07": 0.3539,
+      "gap_vs_2026_01": -0.4358
+    },
+    "EDDM": {
+      "2025-12": 0.9629,
+      "2026-01": 0.9615,
+      "2026-07": 0.9632,
+      "gap_vs_2026_01": -0.0014
+    },
+    "EGLL": {
+      "2025-12": 0.4392,
+      "2026-01": 0.7031,
+      "2026-07": 0.961,
+      "gap_vs_2026_01": 0.2639
+    },
+    "EHAM": {
+      "2025-12": 0.9383,
+      "2026-01": 0.9245,
+      "2026-07": 0.9369,
+      "gap_vs_2026_01": -0.0138
+    },
+    "LEBL": {
+      "2025-12": 0.9143,
+      "2026-01": 0.8797,
+      "2026-07": 0.887,
+      "gap_vs_2026_01": -0.0346
+    },
+    "LEMD": {
+      "2025-12": 0.9518,
+      "2026-01": 0.9427,
+      "2026-07": 0.5458,
+      "gap_vs_2026_01": -0.0091
+    },
+    "LFPG": {
+      "2025-12": 0.0508,
+      "2026-01": 0.0408,
+      "2026-07": 0.0402,
+      "gap_vs_2026_01": -0.01
+    },
+    "LIRF": {
+      "2025-12": 0.4779,
+      "2026-01": 0.4814,
+      "2026-07": 0.0007,
+      "gap_vs_2026_01": 0.0035
+    },
+    "LSZH": {
+      "2025-12": 0.9388,
+      "2026-01": 0.916,
+      "2026-07": 0.9147,
+      "gap_vs_2026_01": -0.0228
+    },
+    "LTFM": {
+      "2025-12": 0.0,
+      "2026-01": 0.0,
+      "2026-07": 0.0,
+      "gap_vs_2026_01": 0.0
+    }
+  },
+  "rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+  "served_rows": 24169
+}

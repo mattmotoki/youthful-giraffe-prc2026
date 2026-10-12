@@ -1,0 +1,307 @@
+{
+ "expect": {
+  "bytes.candidate_sha256": "f11d34f88b62a43ec2a0cdbeec967a9ee4b7d92e50a5508aa4d30e5a78ea5e1c",
+  "bytes.class.changed_is_a_subset_of_occupied": true,
+  "bytes.class.changed_rows_outside_occupied": 0,
+  "bytes.class.guard_held": 1573,
+  "bytes.class.guard_held_at_the_expected_airports": 96,
+  "bytes.class.noac_rows": 388,
+  "bytes.class.noac_rows_changed": 0,
+  "bytes.class.occupied": 196256,
+  "bytes.class.occupied_and_not_written": 0,
+  "bytes.class.occupied_at_the_expected_airports": 2346,
+  "bytes.class.occupied_unwritten_rows_that_changed": 0,
+  "bytes.class.rows_missing_for_a_template_key": 0,
+  "bytes.class.writable_at_the_expected_airports": 2250,
+  "bytes.class.written": 196256,
+  "bytes.class.written_and_not_occupied": 0,
+  "bytes.class_vs_previous.newly_occupied": 0,
+  "bytes.class_vs_previous.no_longer_occupied": 0,
+  "bytes.moved.changed_rows_at_the_expected_airports": 2250,
+  "bytes.moved.changed_rows_outside_the_expected_airports": 192431,
+  "bytes.moved.rows_changed": 194681,
+  "bytes.moved.rows_reverted_to_the_baseline": 0,
+  "bytes.template.all_finite": true,
+  "bytes.template.duplicate_keys": 0,
+  "bytes.template.previous_row_order_is_the_template_order": true,
+  "bytes.template.row_order_is_the_template_order": true,
+  "bytes.template.rows": 344841,
+  "bytes.template.rows_at_or_below_zero": 0,
+  "increment.board.all_row_ci95_envelope_over_the_seeds": {
+   "inside": [
+    1.3515637996678607,
+    2.186021744216635
+   ],
+   "tol": 0.0
+  },
+  "increment.board.all_row_gain_s": {
+   "tol": 1e-09,
+   "value": 1.7129962200846762
+  },
+  "increment.board.clean_gain_s": {
+   "tol": 1e-09,
+   "value": 2.094463152039765
+  },
+  "increment.lit_rule.dark_folds": [],
+  "increment.lit_rule.every_fold_clears_including_dark": true,
+  "increment.lit_rule.every_lit_fold_clears_on_every_seed": true,
+  "increment.per_fold.december.ci95_envelope_over_the_seeds": {
+   "inside": [
+    1442.6328866575914,
+    1775.6780146779727
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.december.lit": true,
+  "increment.per_fold.december.mse_gain_s2": {
+   "tol": 1e-09,
+   "value": 1595.8148924484772
+  },
+  "increment.per_fold.january.ci95_envelope_over_the_seeds": {
+   "inside": [
+    811.9751135426712,
+    1049.3818311305135
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.january.lit": true,
+  "increment.per_fold.january.mse_gain_s2": {
+   "tol": 1e-09,
+   "value": 924.6066026779075
+  },
+  "increment.per_fold.july_loo.ci95_envelope_over_the_seeds": {
+   "inside": [
+    951.9355095137707,
+    1252.4701034121777
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.july_loo.lit": true,
+  "increment.per_fold.july_loo.mse_gain_s2": {
+   "tol": 1e-09,
+   "value": 1099.3139974090325
+  },
+  "increment.population.december.rows": 165677,
+  "increment.population.december.rows_moved": 102186,
+  "increment.population.december.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.january.rows": 153706,
+  "increment.population.january.rows_moved": 69839,
+  "increment.population.january.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.july_loo.rows": 190713,
+  "increment.population.july_loo.rows_moved": 88426,
+  "increment.population.july_loo.rows_returned_to_the_base_by_the_hold": 0,
+  "pins.by_fold.december.days_agree": true,
+  "pins.by_fold.december.their_airport_days": 297,
+  "pins.by_fold.january.days_agree": true,
+  "pins.by_fold.january.their_airport_days": 218,
+  "pins.by_fold.july_loo.days_agree": true,
+  "pins.by_fold.july_loo.their_airport_days": 296
+ },
+ "finalised_from": {
+  "board_all_row_gain_s": 1.7129962200846762,
+  "candidate_sha256": "f11d34f88b62a43ec2a0cdbeec967a9ee4b7d92e50a5508aa4d30e5a78ea5e1c",
+  "every_fold_interval_clear": true,
+  "serve_report": "experiments/exp-046-surfacefit/analysis/serve-v25.json"
+ },
+ "how_to_run": "OMP_NUM_THREADS=2 ../../.venv/bin/python work/audit.py --head-npz ../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz --arm-npz ../exp-046-surfacefit/work/d-seasonal-bag10-255-free.npz --pins ../exp-046-surfacefit/analysis/fold-population.json --class-vector ../../artifacts/exp-046/class/{month}-v25.parquet --previous-class-vector ../../artifacts/exp-046/class/{month}-v24.parquet --candidate ../../submissions/candidates/exp-046-surface-v11.parquet --previous ../../submissions/uploaded/youthful-giraffe_v18.parquet --baseline ../../submissions/uploaded/youthful-giraffe_v18.parquet --hold '' --changed-expected-at LFPG --expect analysis/audit-expect-v25.json --out analysis/audit-v25.json",
+ "notes_on_the_expectation": "1. The class claims are hard, not carried over by habit: base set v25 changes what the head is FITTED on and nothing about which rows it serves, so occupied, written, guard_held and the two class_vs_previous counts must come back identical to v10's. A difference there is a defect, not an update.\n2. `increment.population.*.rows` are the scored populations at the pins and are likewise unchanged; `rows_moved` counts rows where the ARM differs from the head, and a differently fitted head moves a different number, so it is filled from exp-046-surface-v11's own serve report.\n3. LFPG is the expected airport for the same reason as on v10: v18's head held it and this candidate does not.",
+ "pending": [],
+ "pending_because": "nothing is pending: every figure is filled from analysis/serve-v25.json, the v25 class vector and analysis/seasonal-bag10.json by code/expectfile.py",
+ "sources": {
+  "fold_price": "experiments/exp-046-surfacefit/analysis/seasonal-bag10.json",
+  "hard_claims": "exp-047 analysis/audit-expect-v9.json, the audit that passed on exp-046-surface-v8",
+  "pins": "experiments/exp-046-surfacefit/analysis/fold-population.json",
+  "prediction": "experiments/exp-046-surfacefit/RESULTS.md 47.49.3 (commit f435d25, before 2025-08 existed)",
+  "serve": "experiments/exp-046-surfacefit/analysis/serve-v25.json"
+ },
+ "status": "FINAL. Filled from analysis/serve-v25.json and the v25 class vector after the serve landed. No PENDING, no null.",
+ "the_extension_audit_py_cannot_see": {
+  "1_this_candidate_has_TWO_extensions": "one per served month -- see `the_two_head_claim_audit_py_cannot_see`",
+  "2_why_the_audit_cannot_see_it": "the audit reads BYTES. Neither what a head was fitted on nor which rows it wrote leaves a trace in the parquet, so both are checked against the serve report and against the negative control"
+ },
+ "the_head_is_pinned_by_its_bytes": {
+  "checked_by": "work/audit.py prints the head path; compare with shasum -a 256",
+  "file": "../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+  "sha256": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684",
+  "why": "the same head v8 was priced over, so the audit's increment is comparable with the v9 audit's line for line. Check this sha BEFORE the audit: if it has moved, the increment is over a different base and the audit itself would not say so."
+ },
+ "the_negative_control": {
+  "1_rebuild_each_set": "mean the ten member vectors named per served month above, IN THE ORDER THEY ARE LISTED -- numeric, seed 1 through seed 10, which is the order the serve stacked them in. A mean of ten float64 arrays is summation-order dependent, so glob order (1, 10, 2, ...) reproduces the candidate only to the ULP class. In numeric order a bag rebuilt from STORED arrays is exact (exp-046 RESULTS 47.11's audit table), so this step carries no tolerance",
+  "1a_what_the_numbers_must_then_be": "max_abs_diff_s EXACTLY 0.0 on the rows the class marks written, and rows_differing_above_tolerance (1e-9) = 0. The tolerance is what carries the claim; the exact zero is what says the order was right",
+  "2_compose_by_the_MOVEMENT_TABLE_not_by_the_declaration": "take each ranking row's served month from data/raw/ranking.parquet, not from the class vector's `head_by_exp_046`. That column is a DECLARATION -- queue's own limit -- and this control is what turns it into a measurement",
+  "3_the_positive_half": "price base + the composed mean must reproduce candidate v25 EXACTLY on every row the class marks written_by_exp_046; the candidate is float64 and the rebuild is a mean of stored float64 arrays, so exact means exact. Rows the tail guard returned to the base, and rows outside the class, must equal the BYTES BASE byte for byte -- the `--baseline`/`--previous` file, NOT the price base. The two are different files (v25: bytes youthful-giraffe_v18.parquet, price exp-035-k2climb-v11member.parquet) and they agree only where the k2 lane left the row alone. ROUND 13 measured it on v11: all 148,585 rows outside the class equal the bytes base and only 78,951 of them equal the price base, so the earlier wording was false on 69,634 rows. The 1,573 guard-held rows equal BOTH, which is why the error hid: the guard half of the sentence was true either way",
+  "4_separation": {
+   "2026-01_vs_2026-07": {
+    "max_abs_s": 230.22449909469384,
+    "rms_s": 12.996927191336386,
+    "rows": 152719,
+    "rows_that_differ": 91433
+   },
+   "2026-07_vs_2026-01": {
+    "max_abs_s": 251.47961289202453,
+    "rms_s": 10.762323680986606,
+    "rows": 192122,
+    "rows_that_differ": 104823
+   }
+  },
+  "4_the_negative_half": "price base + the mean of the OTHER set, restricted to a served month's own rows, must NOT reproduce the candidate there. The distance is measured, not asserted, and it is:",
+  "5_and_then_the_declaration_is_measured": "with 3 and 4 both holding, `head_by_exp_046` may be compared to the served month derived in step 2. Agreement on every row is what promotes the column from a declaration to a measurement; disagreement on any row is a defect in the candidate, not in the audit"
+ },
+ "the_registered_prediction": {
+  "every_fold_clear_expected": true,
+  "fold_expected_to_decide_it": "december, at a scaled lower bound of +0.92",
+  "gate": "in-fold, every fold clear, exp-046 rule (a); read under recorded rule's discounted gate, credited = min(read, prediction)",
+  "inside_the_band": null,
+  "measured": 0.3980055221207408,
+  "per_fold_point_estimates_s2_per_row": {
+   "december": 66.01,
+   "january": 224.9,
+   "july_loo": 498.47
+  },
+  "point_estimate_board_s": 0.63115,
+  "quantity": "the K = 10 SEASONAL bag as an in-fold increment over v10's K = 10 three-month head",
+  "registered_in": "exp-046 RESULTS.md 47.49.3, before 2025-08 existed and before any Aug read"
+ },
+ "the_two_head_claim_audit_py_cannot_see": {
+  "0_fits_that_carried_it": 20,
+  "0_what_this_is": "candidate v25 composes its ranking rows from TWO heads, one per served month. `extension.composed_by` = 'served month'. The audit cannot see this in the bytes, so each set is named here in full",
+  "2026-01": {
+   "cache_stem": "d-rank-seasjan-",
+   "extension_rows_built": 358159,
+   "member_files": [
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo1-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo2-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo3-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo4-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo5-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo6-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo7-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo8-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo9-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo10-255.npz"
+   ],
+   "member_order": "NUMERIC, seed 1 first through seed 10 -- the order the serve stacked them in. A mean of ten float64 arrays depends on the summation order, so glob order (1, 10, 2, ...) reproduces the candidate only to the ULP class",
+   "member_sha256": {
+    "1": "dfa8bcc00fe8a6f816a4499af96ddb3b11ed78642d9270f71ffbfb3ae9ddfe6b",
+    "10": "3784a5da12b09d84cdf5cc6b025356319b9bd9de0135ac641e9df963321fc3be",
+    "2": "15acef8d8f1b4a6f04af24dd8bcab8658c75f84ba34360a9527a70ac8f62af08",
+    "3": "1ad34208b49e8b4e58ad957e339f3eda8bf222127bcb1fc3c896b59bb68c2976",
+    "4": "d0dce172091829b991d093b0b2659702f9448fbf28919238ab86e5466284fc82",
+    "5": "fe6c6ac733dc02d46e325bef3412fdc1817a0ed75184481e20625549d06843e0",
+    "6": "5c15515cdb1d4d0151bfe69129cea94e48ac82be2d2aa43a0347f26643afb2db",
+    "7": "d5a19d245fb9542f05fa519f60f12821eccb2e2dcabe105abbfca48db12ee054",
+    "8": "73c8199115277a08e3f0ec8f9bff678cb5dd01e5c441ac7b5fcd33eeb174da37",
+    "9": "6dcd50fc8911e8b5b8ee91bd6c8403a896cb71665a562527b0e300314759e432"
+   },
+   "month_rows": {
+    "2025-02": 68122,
+    "2025-03": 86984,
+    "2025-10": 103344,
+    "2025-11": 99709
+   },
+   "months": [
+    "2025-11",
+    "2025-10",
+    "2025-03",
+    "2025-02"
+   ],
+   "per_fit_extra_rows": {
+    "extra_rows": 358159,
+    "fits": 10,
+    "fold_rows": 261775,
+    "multiple": 2.3682,
+    "total_fit_rows": 619934
+   },
+   "ranking_rows_this_head_wrote": 152719,
+   "shas_checked_before_the_fit": {
+    "2025-02": [
+     "36f7dd9f6d80451a",
+     "32c9e25d05f6ad21"
+    ],
+    "2025-03": [
+     "64c47603ebfdb0c7",
+     "ec26128f3a5eaa74"
+    ],
+    "2025-10": [
+     "2bfc9a6959281d6e",
+     "29932ab196080943"
+    ],
+    "2025-11": [
+     "339ca16ed421a718",
+     "3e231a8f7cd82d83"
+    ]
+   },
+   "what": "the head that wrote candidate v25's 2026-01 rows: fitted on the folds plus 2025-11, 2025-10, 2025-03, 2025-02, bagged over the ten members above"
+  },
+  "2026-07": {
+   "cache_stem": "d-rank-seasjul-",
+   "extension_rows_built": 386574,
+   "member_files": [
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo1-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo2-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo3-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo4-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo5-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo6-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo7-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo8-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo9-255.npz",
+    "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo10-255.npz"
+   ],
+   "member_order": "NUMERIC, seed 1 first through seed 10 -- the order the serve stacked them in. A mean of ten float64 arrays depends on the summation order, so glob order (1, 10, 2, ...) reproduces the candidate only to the ULP class",
+   "member_sha256": {
+    "1": "f15977a6ad49f43553924ea5903b755888b10fd8a38d3cbeed260892b87b28f7",
+    "10": "2cb3280c9109ea8f6ad38c807b5c000b51f1139c69b12752eb910156c670dd0e",
+    "2": "b4f580f8e1c28e60161f2662c6230e1856050958e501ef97ce07bcfdbb7f4c11",
+    "3": "be5e0db534dad7419a4735f630d68e3db5a09afd200acb78e58eda4b9f2830ed",
+    "4": "ee568789b5e1887c211542f6946a8be2dcec7847d8eb1eeecc6bd4d7a048ad65",
+    "5": "6c9d3b2efbb3aa25f5489e4e2f39fc4bc4900220338b1716174c092db743d843",
+    "6": "1c08ffdcf47b7beb01b13024faeb3c29f4d9b8d60bfb405456ed61caf6947dc0",
+    "7": "279232b55548ff6a69265bcb0d00af24c171ae3b5493a6716a1f9b2065f49fe5",
+    "8": "ce3661121a65a4f0c683f6ee78547c5b32551206bba9766a34475487f8ee1b24",
+    "9": "98e19c3606e84a41861c75b6ac9830b0d597d92282e4dc38a9b9bbcafcc78789"
+   },
+   "month_rows": {
+    "2025-03": 86984,
+    "2025-08": 96537,
+    "2025-10": 103344,
+    "2025-11": 99709
+   },
+   "months": [
+    "2025-11",
+    "2025-10",
+    "2025-03",
+    "2025-08"
+   ],
+   "per_fit_extra_rows": {
+    "extra_rows": 386574,
+    "fits": 10,
+    "fold_rows": 261775,
+    "multiple": 2.4767,
+    "total_fit_rows": 648349
+   },
+   "ranking_rows_this_head_wrote": 192122,
+   "shas_checked_before_the_fit": {
+    "2025-03": [
+     "64c47603ebfdb0c7",
+     "ec26128f3a5eaa74"
+    ],
+    "2025-08": [
+     "60c84140c3342390",
+     "137a61f23de48d9d"
+    ],
+    "2025-10": [
+     "2bfc9a6959281d6e",
+     "29932ab196080943"
+    ],
+    "2025-11": [
+     "339ca16ed421a718",
+     "3e231a8f7cd82d83"
+    ]
+   },
+   "what": "the head that wrote candidate v25's 2026-07 rows: fitted on the folds plus 2025-11, 2025-10, 2025-03, 2025-08, bagged over the ten members above"
+  }
+ },
+ "what": "candidate exp-046-surface-v11.parquet, exp-046 serve base set v25 = base set v24 with ONE change: the head is composed BY SERVED MONTH. 2026-01's rows come from a head fitted on the folds plus 2025-11, 2025-10, 2025-03 and 2025-02; 2026-07's from a head fitted on the folds plus 2025-11, 2025-10, 2025-03 and 2025-08. The served months are antipodal, so no one month set serves both (recorded rule, RESULTS 47.46).",
+ "why_the_hold_is_empty": "this path serves the bag EVERYWHERE, LFPG included, exactly as v8 does. --hold LFPG would price a different composition."
+}

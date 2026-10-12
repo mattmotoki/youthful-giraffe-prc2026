@@ -1,0 +1,440 @@
+{
+ "what": "exp-047 \u00a77bd addendum: the tail re-cut by PREDICTION, and the detection question.",
+ "the_check_accepted": "binning by the label makes E[y - p | y large] > 0 for any imperfect predictor.  7bd's tail signed error of +1,953 s is that arithmetic, not a calibration defect, and the reading is withdrawn.  The cut below by p12 decile is the one that can show a defect, because it conditions on the PREDICTION.",
+ "fold": "january",
+ "complement_rows": 84205,
+ "1_the_complement_by_p12_decile": [
+  {
+   "p12_decile": 1,
+   "p12_range_s": [
+    59.0,
+    692.2039951627908
+   ],
+   "rows": 8421,
+   "mean_signed_s": -0.39643536128789447,
+   "rms_s": 187.49212759125928,
+   "median_y_s": 592.0,
+   "rows_above_the_tail_cut": 2,
+   "board_weighted_share": 0.008956283822106509
+  },
+  {
+   "p12_decile": 2,
+   "p12_range_s": [
+    692.2039951627908,
+    791.3840419300121
+   ],
+   "rows": 8420,
+   "mean_signed_s": -3.6760967247022065,
+   "rms_s": 142.6226855404891,
+   "median_y_s": 725.0,
+   "rows_above_the_tail_cut": 2,
+   "board_weighted_share": 0.005181880780408755
+  },
+  {
+   "p12_decile": 3,
+   "p12_range_s": [
+    791.3840419300121,
+    864.3280689070291
+   ],
+   "rows": 8421,
+   "mean_signed_s": -3.8923720885928663,
+   "rms_s": 148.09710310833668,
+   "median_y_s": 819.0,
+   "rows_above_the_tail_cut": 0,
+   "board_weighted_share": 0.0055879807341556115
+  },
+  {
+   "p12_decile": 4,
+   "p12_range_s": [
+    864.3280689070291,
+    930.9162234953991
+   ],
+   "rows": 8420,
+   "mean_signed_s": 6.237357301261937,
+   "rms_s": 924.5513769357019,
+   "median_y_s": 892.0,
+   "rows_above_the_tail_cut": 3,
+   "board_weighted_share": 0.21775708627584284
+  },
+  {
+   "p12_decile": 5,
+   "p12_range_s": [
+    930.9162234953991,
+    995.7625020330814
+   ],
+   "rows": 8421,
+   "mean_signed_s": 0.301175758968226,
+   "rms_s": 647.5016990661923,
+   "median_y_s": 952.0,
+   "rows_above_the_tail_cut": 1,
+   "board_weighted_share": 0.10681779232773116
+  },
+  {
+   "p12_decile": 6,
+   "p12_range_s": [
+    995.7625020330814,
+    1070.9768084766577
+   ],
+   "rows": 8420,
+   "mean_signed_s": -9.058834419242416,
+   "rms_s": 185.9919719404272,
+   "median_y_s": 1016.0,
+   "rows_above_the_tail_cut": 1,
+   "board_weighted_share": 0.008812489148897503
+  },
+  {
+   "p12_decile": 7,
+   "p12_range_s": [
+    1070.9768084766577,
+    1161.2037403033828
+   ],
+   "rows": 8420,
+   "mean_signed_s": -9.774392668080662,
+   "rms_s": 206.5195900018233,
+   "median_y_s": 1086.0,
+   "rows_above_the_tail_cut": 1,
+   "board_weighted_share": 0.010865074428037615
+  },
+  {
+   "p12_decile": 8,
+   "p12_range_s": [
+    1161.2037403033828,
+    1279.943193007627
+   ],
+   "rows": 8421,
+   "mean_signed_s": -16.99716907121494,
+   "rms_s": 229.9569693208685,
+   "median_y_s": 1194.0,
+   "rows_above_the_tail_cut": 3,
+   "board_weighted_share": 0.013472708885370426
+  },
+  {
+   "p12_decile": 9,
+   "p12_range_s": [
+    1279.943193007627,
+    1489.1435396292297
+   ],
+   "rows": 8420,
+   "mean_signed_s": -16.72758308777537,
+   "rms_s": 269.8664491712534,
+   "median_y_s": 1330.0,
+   "rows_above_the_tail_cut": 8,
+   "board_weighted_share": 0.018552736944004253
+  },
+  {
+   "p12_decile": 10,
+   "p12_range_s": [
+    1489.1435396292297,
+    64459.3624702531
+   ],
+   "rows": 8421,
+   "mean_signed_s": -25.007803821322124,
+   "rms_s": 522.505566593086,
+   "median_y_s": 1693.0,
+   "rows_above_the_tail_cut": 209,
+   "board_weighted_share": 0.06955744426438552
+  }
+ ],
+ "2_the_detection_sweep": {
+  "target": "the 230 january complement rows with y > 3600 s",
+  "base_rate_in_the_complement": 0.002731429250044534,
+  "the_bar": "p about 0.15 on more than a thousand rows (BACKLOG line 40)",
+  "reference_points": {
+   "freezing_precip": "11.3x lift at p = 0.022",
+   "flow_state_neighbour_set": "30x, untested here"
+  },
+  "screens_tried": 2162,
+  "features_tried": 180,
+  "best_at_the_bar_p_0_12_to_0_18": [
+   {
+    "feature": "Fto_q_taxi_apt",
+    "direction": ">=",
+    "threshold": 18.0,
+    "p": 0.1254794845911763,
+    "recall": 0.3739130434782609,
+    "precision": 0.008139314783267083,
+    "lift": 2.9798739188043686,
+    "rows_screened": 10566,
+    "tail_rows_caught": 86
+   },
+   {
+    "feature": "Fto_q_taxi_oth",
+    "direction": ">=",
+    "threshold": 9.0,
+    "p": 0.1218692476693783,
+    "recall": 0.2826086956521739,
+    "precision": 0.006334047943870591,
+    "lift": 2.318950030928796,
+    "rows_screened": 10262,
+    "tail_rows_caught": 65
+   },
+   {
+    "feature": "Hob_q_taxi_oth",
+    "direction": ">=",
+    "threshold": 9.0,
+    "p": 0.1275339944183837,
+    "recall": 0.2826086956521739,
+    "precision": 0.006052705093584133,
+    "lift": 2.215947966979356,
+    "rows_screened": 10739,
+    "tail_rows_caught": 65
+   },
+   {
+    "feature": "Fob_q_taxi_oth",
+    "direction": ">=",
+    "threshold": 9.0,
+    "p": 0.13034855412386437,
+    "recall": 0.2782608695652174,
+    "precision": 0.0058309037900874635,
+    "lift": 2.1347445810622383,
+    "rows_screened": 10976,
+    "tail_rows_caught": 64
+   },
+   {
+    "feature": "Hob_cfg_rwy_share_30m",
+    "direction": ">=",
+    "threshold": 1.0,
+    "p": 0.13695148744136335,
+    "recall": 0.2391304347826087,
+    "precision": 0.004769337495664239,
+    "lift": 1.7460959296626402,
+    "rows_screened": 11532,
+    "tail_rows_caught": 55
+   },
+   {
+    "feature": "Hob_cfg_rwy_share_30m",
+    "direction": ">=",
+    "threshold": 1.0,
+    "p": 0.13695148744136335,
+    "recall": 0.2391304347826087,
+    "precision": 0.004769337495664239,
+    "lift": 1.7460959296626402,
+    "rows_screened": 11532,
+    "tail_rows_caught": 55
+   },
+   {
+    "feature": "Hob_cfg_rwy_share_30m",
+    "direction": ">=",
+    "threshold": 1.0,
+    "p": 0.13695148744136335,
+    "recall": 0.2391304347826087,
+    "precision": 0.004769337495664239,
+    "lift": 1.7460959296626402,
+    "rows_screened": 11532,
+    "tail_rows_caught": 55
+   },
+   {
+    "feature": "Hob_cfg_rwy_share_30m",
+    "direction": ">=",
+    "threshold": 1.0,
+    "p": 0.13695148744136335,
+    "recall": 0.2391304347826087,
+    "precision": 0.004769337495664239,
+    "lift": 1.7460959296626402,
+    "rows_screened": 11532,
+    "tail_rows_caught": 55
+   }
+  ],
+  "best_lift_at_any_p": [
+   {
+    "feature": "Nf_n_anom_rwy_30m",
+    "direction": ">=",
+    "threshold": 1079.2645788574214,
+    "p": 0.00497595154682026,
+    "recall": 0.16956521739130434,
+    "precision": 0.09307875894988067,
+    "lift": 34.07694303206392,
+    "rows_screened": 419,
+    "tail_rows_caught": 39
+   },
+   {
+    "feature": "Fto_s_taxi_rwy_rel",
+    "direction": ">=",
+    "threshold": 2.1933533549308777,
+    "p": 0.004916572650080162,
+    "recall": 0.1565217391304348,
+    "precision": 0.08695652173913043,
+    "lift": 31.835538752362947,
+    "rows_screened": 414,
+    "tail_rows_caught": 36
+   },
+   {
+    "feature": "Fto_s_taxi_apt_30m",
+    "direction": ">=",
+    "threshold": 2156.4669848632807,
+    "p": 0.00497595154682026,
+    "recall": 0.14347826086956522,
+    "precision": 0.07875894988066826,
+    "lift": 28.834336411746392,
+    "rows_screened": 419,
+    "tail_rows_caught": 33
+   },
+   {
+    "feature": "Nf_n_anom_cell",
+    "direction": ">=",
+    "threshold": 1219.0433166503824,
+    "p": 0.004869069532688083,
+    "recall": 0.13478260869565217,
+    "precision": 0.07560975609756097,
+    "lift": 27.68138918345705,
+    "rows_screened": 410,
+    "tail_rows_caught": 31
+   },
+   {
+    "feature": "Fto_s_taxi_rwy_30m",
+    "direction": ">=",
+    "threshold": 2173.3155517578125,
+    "p": 0.004916572650080162,
+    "recall": 0.13478260869565217,
+    "precision": 0.0748792270531401,
+    "lift": 27.413936147868096,
+    "rows_screened": 414,
+    "tail_rows_caught": 31
+   },
+   {
+    "feature": "Nf_n_anom_rwy_30m",
+    "direction": ">=",
+    "threshold": 884.1169555664037,
+    "p": 0.0099400273142925,
+    "recall": 0.2565217391304348,
+    "precision": 0.07048984468339307,
+    "lift": 25.806945093761364,
+    "rows_screened": 837,
+    "tail_rows_caught": 59
+   },
+   {
+    "feature": "Hob_s_taxi_apt_30m",
+    "direction": ">=",
+    "threshold": 1756.2293310546909,
+    "p": 0.0099400273142925,
+    "recall": 0.2391304347826087,
+    "precision": 0.06571087216248507,
+    "lift": 24.057321697574153,
+    "rows_screened": 837,
+    "tail_rows_caught": 55
+   },
+   {
+    "feature": "Hob_s_taxi_apt_30m",
+    "direction": ">=",
+    "threshold": 1966.9339965820302,
+    "p": 0.00497595154682026,
+    "recall": 0.11739130434782609,
+    "precision": 0.06443914081145585,
+    "lift": 23.591729791428868,
+    "rows_screened": 419,
+    "tail_rows_caught": 27
+   }
+  ],
+  "multiplicity": "2162 screens over 180 features and 8 quantiles in both directions were swept and the best reported.  A point estimate chosen this way is a CANDIDATE, not a pass: the bar it must clear is a pre-registered re-run on a population it has not seen, which is the rule 7ao's reading F was held to."
+ },
+ "3_is_LFPG_january_variance_predictable": {
+  "by hour": {
+   "all LFPG complement": {
+    "bins_with_100_plus_rows": 22,
+    "rms_range_s": [
+     170.4779927368522,
+     3097.6905541853894
+    ],
+    "mean_sq_ratio_top_over_bottom": 330.1713735854357,
+    "top_bin_mean_sq_ci": [
+     26268.36155704792,
+     29618228.37296939
+    ],
+    "bottom_bin_mean_sq_ci": [
+     21238.074660762722,
+     37839.231151623804
+    ],
+    "intervals_disjoint": false
+   },
+   "LFPG complement, y <= 3600": {
+    "bins_with_100_plus_rows": 22,
+    "rms_range_s": [
+     165.56401350516478,
+     474.8199633884863
+    ],
+    "mean_sq_ratio_top_over_bottom": 8.224813308291345,
+    "top_bin_mean_sq_ci": [
+     132289.262602664,
+     304095.8255592688
+    ],
+    "bottom_bin_mean_sq_ci": [
+     21158.07100490486,
+     35554.245440303595
+    ],
+    "intervals_disjoint": true
+   }
+  },
+  "by flow state decile (Fto_q_taxi_apt)": {
+   "all LFPG complement": {
+    "bins_with_100_plus_rows": 10,
+    "rms_range_s": [
+     209.8326952844088,
+     2736.812028834225
+    ],
+    "mean_sq_ratio_top_over_bottom": 170.11539648220185,
+    "top_bin_mean_sq_ci": [
+     40805.51946084743,
+     20779585.736834336
+    ],
+    "bottom_bin_mean_sq_ci": [
+     35703.55493101047,
+     55101.62732588699
+    ],
+    "intervals_disjoint": false
+   },
+   "LFPG complement, y <= 3600": {
+    "bins_with_100_plus_rows": 10,
+    "rms_range_s": [
+     189.60784295083096,
+     331.02158240025494
+    ],
+    "mean_sq_ratio_top_over_bottom": 3.047895170265639,
+    "top_bin_mean_sq_ci": [
+     68391.81771589987,
+     146988.1730445604
+    ],
+    "bottom_bin_mean_sq_ci": [
+     29604.829867829078,
+     43286.62471736179
+    ],
+    "intervals_disjoint": true
+   }
+  },
+  "by neighbour anomaly count (Nf_n_anom_cell)": {
+   "all LFPG complement": {
+    "bins_with_100_plus_rows": 10,
+    "rms_range_s": [
+     188.6837201680274,
+     2007.5046814098187
+    ],
+    "mean_sq_ratio_top_over_bottom": 113.19943849777592,
+    "top_bin_mean_sq_ci": [
+     32214.52545282293,
+     14759586.766297035
+    ],
+    "bottom_bin_mean_sq_ci": [
+     29882.686226173068,
+     42140.379860783556
+    ],
+    "intervals_disjoint": false
+   },
+   "LFPG complement, y <= 3600": {
+    "bins_with_100_plus_rows": 10,
+    "rms_range_s": [
+     178.1220724663949,
+     349.5978437974722
+    ],
+    "mean_sq_ratio_top_over_bottom": 3.852139549359894,
+    "top_bin_mean_sq_ci": [
+     88715.21315906545,
+     146447.53116849644
+    ],
+    "bottom_bin_mean_sq_ci": [
+     26893.388113144276,
+     38662.50141165521
+    ],
+    "intervals_disjoint": true
+   }
+  }
+ }
+}

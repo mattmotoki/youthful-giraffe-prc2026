@@ -1,0 +1,582 @@
+{
+  "gate_b_lives_in": "code/finding7.py, re-asserted with the pass on",
+  "months": {
+    "2026-01": {
+      "aircraft_type": {
+        "EDDF": {
+          "agree": 479,
+          "agree_share": 0.4893,
+          "disagree": 500,
+          "unknown": 4
+        },
+        "EDDM": {
+          "agree": 2,
+          "agree_share": 1.0,
+          "disagree": 0,
+          "unknown": 0
+        },
+        "EGLL": {
+          "agree": 455,
+          "agree_share": 0.5322,
+          "disagree": 400,
+          "unknown": 6
+        },
+        "EHAM": {
+          "agree": 13,
+          "agree_share": 0.7647,
+          "disagree": 4,
+          "unknown": 1
+        },
+        "LEBL": {
+          "agree": 48,
+          "agree_share": 0.5647,
+          "disagree": 37,
+          "unknown": 0
+        },
+        "LEMD": {
+          "agree": 37,
+          "agree_share": 1.0,
+          "disagree": 0,
+          "unknown": 0
+        },
+        "LFPG": {
+          "agree": 223,
+          "agree_share": 0.2311,
+          "disagree": 742,
+          "unknown": 5
+        },
+        "LIRF": {
+          "agree": 326,
+          "agree_share": 0.6849,
+          "disagree": 150,
+          "unknown": 4
+        },
+        "LSZH": {
+          "agree": 2,
+          "agree_share": 0.4,
+          "disagree": 3,
+          "unknown": 0
+        }
+      },
+      "placebo": {
+        "by_airport": {
+          "EDDF": 1036,
+          "EDDM": 13,
+          "EGLL": 883,
+          "EHAM": 68,
+          "LEBL": 140,
+          "LEMD": 44,
+          "LFPG": 857,
+          "LIRF": 434,
+          "LSZH": 26
+        },
+        "placed": 3501,
+        "real_by_airport": {
+          "EDDF": 983,
+          "EDDM": 2,
+          "EGLL": 861,
+          "EHAM": 18,
+          "LEBL": 85,
+          "LEMD": 37,
+          "LFPG": 970,
+          "LIRF": 480,
+          "LSZH": 5
+        },
+        "real_placed": 3441
+      },
+      "stale_report": {
+        "after_one_to_one_both_ways": 3441,
+        "by_airport": {
+          "EDDF": 983,
+          "EDDM": 2,
+          "EGLL": 861,
+          "EHAM": 18,
+          "LEBL": 85,
+          "LEMD": 37,
+          "LFPG": 970,
+          "LIRF": 480,
+          "LSZH": 5
+        },
+        "declined_contended_one_to_one": 552,
+        "declined_not_unique": 6359,
+        "of_them_an_arrival_identity_and_not_a_departure_one": 10352,
+        "placed": 3441,
+        "ran": true,
+        "segments_left_by_both_passes": 15741,
+        "why": null,
+        "window_s": 60.0,
+        "with_exactly_one_unclaimed_departure_within_the_window": 3993
+      },
+      "sweep": {
+        "columns": {
+          "arr_gap_reception_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "arr_present": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "arr_stand_occupancy_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "arr_taxi_in_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "callsign_n": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "clock_ok": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "dt_takeoff": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "has_wheels_off": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "match_mode": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "matched_on_modal": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "n_ground_points": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_ambiguous": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_has_clock": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_icao": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_matched": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_n_candidates": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_seg_taxi": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_taxi": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_taxi_motion": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_wheels_off": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "reach_class": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seen_before_move_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seg_dt_median_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seg_gap_max_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seg_points": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seg_span_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_cos": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_dist_km": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_lat": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_lon": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_sin": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_stop_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "time_to_250m": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "turnaround_anchored": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          }
+        },
+        "rows_compared": 149278,
+        "total_values_changed_on_rows_the_pass_did_not_place": 0
+      }
+    },
+    "2026-07": {
+      "aircraft_type": {
+        "EDDF": {
+          "agree": 1040,
+          "agree_share": 0.4666,
+          "disagree": 1189,
+          "unknown": 8
+        },
+        "EDDM": {
+          "agree": 9,
+          "agree_share": 0.9,
+          "disagree": 1,
+          "unknown": 0
+        },
+        "EGLL": {
+          "agree": 58,
+          "agree_share": 0.8923,
+          "disagree": 7,
+          "unknown": 0
+        },
+        "EHAM": {
+          "agree": 19,
+          "agree_share": 0.8261,
+          "disagree": 4,
+          "unknown": 0
+        },
+        "LEBL": {
+          "agree": 57,
+          "agree_share": 0.7703,
+          "disagree": 17,
+          "unknown": 0
+        },
+        "LEMD": {
+          "agree": 262,
+          "agree_share": 0.3329,
+          "disagree": 525,
+          "unknown": 4
+        },
+        "LFPG": {
+          "agree": 247,
+          "agree_share": 0.2088,
+          "disagree": 936,
+          "unknown": 12
+        },
+        "LIRF": {
+          "agree": 2,
+          "agree_share": 0.3333,
+          "disagree": 4,
+          "unknown": 0
+        },
+        "LSZH": {
+          "agree": 20,
+          "agree_share": 0.9091,
+          "disagree": 2,
+          "unknown": 1
+        }
+      },
+      "placebo": {
+        "by_airport": {
+          "EDDF": 2144,
+          "EDDM": 36,
+          "EGLL": 68,
+          "EHAM": 49,
+          "LEBL": 111,
+          "LEMD": 951,
+          "LFPG": 1179,
+          "LIRF": 4,
+          "LSZH": 41
+        },
+        "placed": 4583,
+        "real_by_airport": {
+          "EDDF": 2237,
+          "EDDM": 10,
+          "EGLL": 65,
+          "EHAM": 23,
+          "LEBL": 74,
+          "LEMD": 791,
+          "LFPG": 1195,
+          "LIRF": 6,
+          "LSZH": 23
+        },
+        "real_placed": 4424
+      },
+      "stale_report": {
+        "after_one_to_one_both_ways": 4424,
+        "by_airport": {
+          "EDDF": 2237,
+          "EDDM": 10,
+          "EGLL": 65,
+          "EHAM": 23,
+          "LEBL": 74,
+          "LEMD": 791,
+          "LFPG": 1195,
+          "LIRF": 6,
+          "LSZH": 23
+        },
+        "declined_contended_one_to_one": 1242,
+        "declined_not_unique": 8969,
+        "of_them_an_arrival_identity_and_not_a_departure_one": 14635,
+        "placed": 4424,
+        "ran": true,
+        "segments_left_by_both_passes": 17018,
+        "why": null,
+        "window_s": 60.0,
+        "with_exactly_one_unclaimed_departure_within_the_window": 5666
+      },
+      "sweep": {
+        "columns": {
+          "arr_gap_reception_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "arr_present": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "arr_stand_occupancy_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "arr_taxi_in_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "callsign_n": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "clock_ok": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "dt_takeoff": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "has_wheels_off": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "match_mode": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "matched_on_modal": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "n_ground_points": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_ambiguous": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_has_clock": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_icao": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_matched": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_n_candidates": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_seg_taxi": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_taxi": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_taxi_motion": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "obs_wheels_off": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "reach_class": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seen_before_move_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seg_dt_median_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seg_gap_max_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seg_points": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "seg_span_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_cos": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_dist_km": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_lat": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_lon": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_sin": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "stand_stop_s": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "time_to_250m": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          },
+          "turnaround_anchored": {
+            "changed_where_both_present": 0,
+            "gained": 0,
+            "lost": 0
+          }
+        },
+        "rows_compared": 187698,
+        "total_values_changed_on_rows_the_pass_did_not_place": 0
+      }
+    }
+  },
+  "ordered_by": "the desk, 2026-09-09, GO on analysis/reach-spec.md",
+  "placebo_shift_h": 24.0,
+  "verdict": {
+    "leaves_every_other_row_alone": true,
+    "placebo_share_of_real": 1.02784,
+    "placed_real": 7865,
+    "placed_under_the_one_day_shift": 8084,
+    "values_changed_on_rows_the_pass_did_not_place": 0
+  },
+  "what": "the third pass's evidence: what it does not change, and its gates",
+  "window_s": 60.0
+}

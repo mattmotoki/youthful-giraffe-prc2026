@@ -1,0 +1,22 @@
+{
+ "tag": "holdout-november",
+ "mechanism": "final config, held-out fold never used in selection (review finding 2)",
+ "rounds": 1200,
+ "clip_z": 6000.0,
+ "params": {},
+ "seeds": 1,
+ "ghost_mode": "mixbase",
+ "main_model": "both",
+ "exact_rounds": 300,
+ "folds": {
+  "november_loo": {
+   "rmse": 224.11339641751346,
+   "rmse_lo": 188.62572913583145,
+   "rmse_hi": 3278.1007180872725,
+   "n": 162332,
+   "n_hi": 222,
+   "secs": 806.3,
+   "n_train": 1832628
+  }
+ }
+}

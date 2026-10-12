@@ -1,0 +1,64 @@
+{
+  "name": "C9F-jloo",
+  "argv": "--name C9F-jloo --features v2 --target residual --clip-floor 60 --noac-head --learning-rate 0.03 --seed-bag 5 --fixed-rounds 537 --folds july_loo --no-submission",
+  "folds": {
+    "july_loo": {
+      "rmse": 313.76619842569494,
+      "rmse_bulk": 276.6777360824827,
+      "rmse_tail": 2538.296873081134,
+      "rmse_no_nm": 1313.1782509374605,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.22511065899182248,
+      "sse_share_no_nm": 0.3613175931032336,
+      "bias": 3.0443783862082245,
+      "rmse_noac": 3917.6611220755144,
+      "n_noac": 339,
+      "sse_share_noac": 0.27711550267520463,
+      "fold": "july_loo",
+      "best_iteration": 421,
+      "refit_rounds": 537,
+      "seconds": 5017,
+      "oof": "experiments/exp-001-retro-v1/oof/C9F-jloo-july_loo.parquet"
+    }
+  },
+  "phi_settings": null,
+  "lirf_gate": null,
+  "shared_modules": {
+    "surface": {
+      "UNIMPEDED_Q": 0.2,
+      "WINDOWS": [
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ],
+      "BUCKET": 1200.0,
+      "NBR_WINDOW": "1800s",
+      "SHRINK_K": 20.0,
+      "n_families": 7
+    },
+    "phi": {
+      "default_weight": "rows",
+      "default_shrink_rows": 150.0,
+      "default_min_rows": 100,
+      "keys": [
+        [
+          "airport"
+        ],
+        [
+          "airport",
+          "operator"
+        ]
+      ]
+    },
+    "lirf": {
+      "cat_features": [
+        "flight_prefix",
+        "stand_group"
+      ]
+    }
+  }
+}

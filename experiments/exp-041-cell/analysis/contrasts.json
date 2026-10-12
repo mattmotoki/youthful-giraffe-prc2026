@@ -1,0 +1,293 @@
+{
+  "screen": "contrast",
+  "endpoint": "ranking-weighted ALL-ROW january/july board; gain = board(A) - board(B), positive means A is better",
+  "note": "computed from the saved out-of-fold vectors; nothing is fitted here.  Blocks are drawn inside each fold.",
+  "pairs": {
+    "order-ord - order-unord": {
+      "board_rmse_a": 308.5923,
+      "board_rmse_b": 308.5835,
+      "gain_a_minus_b": -0.0089,
+      "ci_block_1d": [
+        -0.0451,
+        0.0268
+      ],
+      "ci_block_2d": [
+        -0.0507,
+        0.0247
+      ],
+      "ci_block_3d": [
+        -0.0504,
+        0.0211
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "order-ord - order-unord2": {
+      "board_rmse_a": 308.5923,
+      "board_rmse_b": 308.5908,
+      "gain_a_minus_b": -0.0015,
+      "ci_block_1d": [
+        -0.0416,
+        0.0354
+      ],
+      "ci_block_2d": [
+        -0.0324,
+        0.0363
+      ],
+      "ci_block_3d": [
+        -0.0353,
+        0.0364
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "order-ord - order-ord_c": {
+      "board_rmse_a": 308.5923,
+      "board_rmse_b": 308.5961,
+      "gain_a_minus_b": 0.0037,
+      "ci_block_1d": [
+        -0.0344,
+        0.0402
+      ],
+      "ci_block_2d": [
+        -0.0277,
+        0.0413
+      ],
+      "ci_block_3d": [
+        -0.0313,
+        0.0405
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "order-ord - order-h0": {
+      "board_rmse_a": 308.5923,
+      "board_rmse_b": 308.5909,
+      "gain_a_minus_b": -0.0014,
+      "ci_block_1d": [
+        -0.0357,
+        0.0307
+      ],
+      "ci_block_2d": [
+        -0.036,
+        0.0331
+      ],
+      "ci_block_3d": [
+        -0.0362,
+        0.0373
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "order-unord - order-h0": {
+      "board_rmse_a": 308.5835,
+      "board_rmse_b": 308.5909,
+      "gain_a_minus_b": 0.0074,
+      "ci_block_1d": [
+        -0.0293,
+        0.0484
+      ],
+      "ci_block_2d": [
+        -0.0252,
+        0.0516
+      ],
+      "ci_block_3d": [
+        -0.0183,
+        0.0521
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "order-unord2 - order-h0": {
+      "board_rmse_a": 308.5908,
+      "board_rmse_b": 308.5909,
+      "gain_a_minus_b": 0.0001,
+      "ci_block_1d": [
+        -0.0366,
+        0.0375
+      ],
+      "ci_block_2d": [
+        -0.0328,
+        0.0309
+      ],
+      "ci_block_3d": [
+        -0.0309,
+        0.0318
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "twofactor-two - twofactor-one": {
+      "board_rmse_a": 308.5473,
+      "board_rmse_b": 308.5147,
+      "gain_a_minus_b": -0.0327,
+      "ci_block_1d": [
+        -0.1214,
+        0.0696
+      ],
+      "ci_block_2d": [
+        -0.1261,
+        0.079
+      ],
+      "ci_block_3d": [
+        -0.1478,
+        0.0867
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "twofactor-two - twofactor-g0": {
+      "board_rmse_a": 308.5473,
+      "board_rmse_b": 308.5909,
+      "gain_a_minus_b": 0.0436,
+      "ci_block_1d": [
+        -0.0113,
+        0.1051
+      ],
+      "ci_block_2d": [
+        -0.0126,
+        0.1077
+      ],
+      "ci_block_3d": [
+        -0.0153,
+        0.112
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "twofactor-two - twofactor-two_c": {
+      "board_rmse_a": 308.5473,
+      "board_rmse_b": 308.5841,
+      "gain_a_minus_b": 0.0368,
+      "ci_block_1d": [
+        -0.0222,
+        0.0997
+      ],
+      "ci_block_2d": [
+        -0.0211,
+        0.099
+      ],
+      "ci_block_3d": [
+        -0.0272,
+        0.1052
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "twofactor-one - twofactor-g0": {
+      "board_rmse_a": 308.5147,
+      "board_rmse_b": 308.5909,
+      "gain_a_minus_b": 0.0762,
+      "ci_block_1d": [
+        -0.0554,
+        0.1965
+      ],
+      "ci_block_2d": [
+        -0.0617,
+        0.1994
+      ],
+      "ci_block_3d": [
+        -0.077,
+        0.2248
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "twofactor-two_q04 - twofactor-one_q04": {
+      "board_rmse_a": 308.5706,
+      "board_rmse_b": 308.5059,
+      "gain_a_minus_b": -0.0647,
+      "ci_block_1d": [
+        -0.1839,
+        0.0604
+      ],
+      "ci_block_2d": [
+        -0.193,
+        0.0726
+      ],
+      "ci_block_3d": [
+        -0.2007,
+        0.075
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "twofactor-two_q04 - twofactor-q04h1": {
+      "board_rmse_a": 308.5706,
+      "board_rmse_b": 308.5808,
+      "gain_a_minus_b": 0.0102,
+      "ci_block_1d": [
+        -0.0445,
+        0.066
+      ],
+      "ci_block_2d": [
+        -0.0465,
+        0.0693
+      ],
+      "ci_block_3d": [
+        -0.0482,
+        0.071
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "twofactor-one_q04 - twofactor-q04h1": {
+      "board_rmse_a": 308.5059,
+      "board_rmse_b": 308.5808,
+      "gain_a_minus_b": 0.0749,
+      "ci_block_1d": [
+        -0.0504,
+        0.2018
+      ],
+      "ci_block_2d": [
+        -0.0779,
+        0.2066
+      ],
+      "ci_block_3d": [
+        -0.0788,
+        0.228
+      ],
+      "clear_of_zero_3d": false,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "crossmonth-base_within - crossmonth-base_cross": {
+      "board_rmse_a": 308.5909,
+      "board_rmse_b": 309.7097,
+      "gain_a_minus_b": 1.1188,
+      "ci_block_1d": [
+        0.7989,
+        1.5481
+      ],
+      "ci_block_2d": [
+        0.7986,
+        1.5689
+      ],
+      "ci_block_3d": [
+        0.776,
+        1.5704
+      ],
+      "clear_of_zero_3d": true,
+      "note": "positive: A is the better arm on the primary endpoint"
+    },
+    "crossmonth-two_within - crossmonth-two_cross": {
+      "board_rmse_a": 308.5503,
+      "board_rmse_b": 309.671,
+      "gain_a_minus_b": 1.1207,
+      "ci_block_1d": [
+        0.7977,
+        1.51
+      ],
+      "ci_block_2d": [
+        0.82,
+        1.5112
+      ],
+      "ci_block_3d": [
+        0.8145,
+        1.5195
+      ],
+      "clear_of_zero_3d": true,
+      "note": "positive: A is the better arm on the primary endpoint"
+    }
+  },
+  "wall_s": 0.5
+}

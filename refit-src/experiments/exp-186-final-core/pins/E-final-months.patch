@@ -1,0 +1,170 @@
+--- a/experiments/exp-169-stack-plan/code/assemble_final_032.py
++++ b/experiments/exp-169-stack-plan/code/assemble_final_032.py
+@@ -21,6 +21,7 @@
+ from stack7 import fit as fit_primary, independent_tail
+ from exploit_rules import prepare_rule
+ from exploit029_rules import apply as exploit_tail
++from final_months169 import final as final_mode, serve_months, n_rows
+ 
+ ROOT = Path(__file__).resolve().parents[3]
+ E = Path(__file__).resolve().parents[1]
+@@ -153,7 +154,9 @@
+     common = manifest['common']; contexts = {}
+     for split in ['fold', 'ranking']:
+         b = rd.frame(common['bundle'][split]).copy()
+-        assert b[ID].is_unique and b.month.isin([1, 7]).all()
++        months = serve_months(split)
++        assert b[ID].is_unique and b.month.isin(months).all()
++        assert months == [1, 7] or sorted(set(b.month.tolist())) == months, 'Final mode: every rank month needs rows.'
+         assert b.cls.isin(['clock', 'ordinary', 'noac']).all()
+         f = rd.frame(common['primary_frame'][split]).copy()
+         pair_source = rd.frame(common['pair_frame'][split])
+@@ -266,7 +269,8 @@
+     for key in ['month', 'cls', 'airport']:
+         result[key] = {str(v): view(b[key].eq(v).to_numpy()) for v in sorted(b[key].unique())}
+     result['airport_month'] = {f'{ap}-{mon:02}': view(b.airport.eq(ap).to_numpy() & b.month.eq(mon).to_numpy())
+-                               for ap in sorted(b.airport.unique()) for mon in [1, 7]}
++                               for ap in sorted(b.airport.unique())
++                               for mon in (sorted(set(b.month.tolist())) if final_mode() else [1, 7])}
+     return result
+ 
+ 
+@@ -274,7 +278,7 @@
+     ids = rd.frame(template_rec)[ID]
+     np.testing.assert_array_equal(c['b'][ID], ids)
+     q = pd.DataFrame({ID: ids.to_numpy('float64'), COL: np.asarray(final, 'float64')})
+-    assert len(q) == 344841 and q[ID].is_unique and np.isfinite(q.to_numpy()).all() and q[COL].min() >= 60
++    assert len(q) == n_rows() and q[ID].is_unique and np.isfinite(q.to_numpy()).all() and q[COL].min() >= 60
+     buffer = io.BytesIO(); q.to_parquet(buffer, index=False)
+     return q, buffer.getvalue()
+ 
+--- a/experiments/exp-169-stack-plan/code/dark_twin035.py
++++ b/experiments/exp-169-stack-plan/code/dark_twin035.py
+@@ -3,6 +3,7 @@
+ import numpy as np
+ import assemble_final_032 as A
+ from stack7 import independent_tail
++from final_months169 import serve_months, assert_served
+ NAMES=['g','mlp','sequence021','sequence_new','dark','control']
+ 
+ def values(c,extra):
+@@ -33,7 +34,7 @@
+     assert split in ['fold','ranking'];b=c['b'];out=np.zeros((len(b),6))
+     for cls in ['ordinary','clock']:
+         names=NAMES if cls=='ordinary' else NAMES[:-1]
+-        for month in [1,7]:
++        for month in serve_months(split):
+             rec=folds[cls][str(month)] if split=='fold' else pooled[cls]
+             assert rec['method']=='practice_scaled_wls' and rec['columns']==names
+             assert rec['trained_on_months']==([8-month] if split=='fold' else [1,7]) and rec['fit_rows']>0
+@@ -43,6 +44,7 @@
+             np.testing.assert_allclose(np.linalg.solve(normal,rhs),coef,rtol=0,atol=1e-10)
+             on=c['scope'] & b.cls.eq(cls).to_numpy() & b.month.eq(month).to_numpy()
+             out[on,:len(names)]=coef
++    assert_served(c['scope'],b.cls,b.month,serve_months(split))
+     return out
+ 
+ def apply_matrix(base,prior,v,w,scope,ordinary):
+@@ -66,10 +68,11 @@
+ def zero_identity(c,extra,parent_weights,split):
+     baseline,_,_=A.pre_stack(c,parent_weights,split);zero=np.zeros((len(c['b']),6))
+     for cls in ['ordinary','clock']:
+-        for month in [1,7]:
++        for month in serve_months(split):
+             rec=parent_weights['primary_fold'][cls][str(month)] if split=='fold' else parent_weights['primary_ranking'][cls]
+             on=c['scope'] & c['b'].cls.eq(cls).to_numpy() & c['b'].month.eq(month).to_numpy()
+             for name,coefficient in zip(rec['columns'],rec['coefficients']):zero[on,NAMES.index(name)]=coefficient
++    assert_served(c['scope'],c['b'].cls,c['b'].month,serve_months(split))
+     z=apply_matrix(c['base'],baseline['pair'],values(c,extra),zero,c['scope'],c['ordinary'])
+     np.testing.assert_array_equal(z,baseline['primary'])
+     np.testing.assert_array_equal(independent_tail(c['b'],z),baseline['pre_exploit'])
+--- a/experiments/exp-169-stack-plan/code/lane_c_swap.py
++++ b/experiments/exp-169-stack-plan/code/lane_c_swap.py
+@@ -8,6 +8,7 @@
+ from head_swap import load_head_swap,fingerprint,checked
+ from joint_blend import _weights
+ from review_verdict import require_pass
++from final_months169 import serve_months, assert_served
+ 
+ ROOT=Path(__file__).resolve().parents[3];EXP=Path(__file__).resolve().parents[1]
+ ID='MVT_ID_mvt'
+@@ -70,6 +71,10 @@
+             annual=_weights(ranking_weights[cls],cls,[1,7],names)
+             use=on&frame.cls.eq(cls).to_numpy()&frame.month.eq(m).to_numpy()
+             weights[use]=held if split=='fold' else annual
++        for m in [m for m in serve_months(split) if m not in (1,7)]:
++            use=on&frame.cls.eq(cls).to_numpy()&frame.month.eq(m).to_numpy()
++            weights[use]=_weights(ranking_weights[cls],cls,[1,7],names)
++    assert_served(on,frame.cls,frame.month,serve_months(split))
+     values=frame[names].to_numpy(float)
+     return LaneCTransition(head_swap,names,values,weights,on,parent.ordinary,array_digest(names,values,weights,on))
+ 
+--- a/experiments/exp-169-stack-plan/code/route_swap.py
++++ b/experiments/exp-169-stack-plan/code/route_swap.py
+@@ -7,6 +7,7 @@
+ from head_swap import fingerprint
+ from diverse_blend import vector_digest
+ from verdict026 import parse as parse_verdicts, require_pass as require_review_pass
++from final_months169 import serve_months, assert_served
+ 
+ 
+ def verdicts(text):
+@@ -75,6 +76,10 @@
+                 held=pair_weights(folds[cls][str(mon)],cls,[8-mon]);annual=pair_weights(pool[cls],cls,[1,7])
+                 q=pair.scope & b.cls.eq(cls).to_numpy() & b.month.eq(mon).to_numpy()
+                 ws[q],wc[q]=held if split=='fold' else annual
++            for mon in [m for m in serve_months(split) if m not in (1,7)]:
++                q=pair.scope & b.cls.eq(cls).to_numpy() & b.month.eq(mon).to_numpy()
++                ws[q],wc[q]=pair_weights(pool[cls],cls,[1,7])
++        assert_served(pair.scope,b.cls,b.month,serve_months(split))
+     return replace(pair,base_digest=vector_digest(pair.ids,base),sequence_weight=ws,control_weight=wc)
+ 
+ 
+--- /dev/null
++++ b/experiments/exp-169-stack-plan/code/final_months169.py
+@@ -0,0 +1,45 @@
++"""Final-mode months and row count for the exp-169 assembly (finalcore, 2026-10-08).
++
++The ranking mode returns the old literals and imports nothing. The final mode ($PRC_RANKING_MODE=final) reads
++prc.data from the repo root and stops when that prc.data has no modes (a frozen source tree).
++"""
++import os
++import sys
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[3]
++
++
++def final():
++    """True unless $PRC_RANKING_MODE is unset or 'ranking'; prc.data checks every other name."""
++    return (os.environ.get('PRC_RANKING_MODE') or 'ranking') != 'ranking'
++
++
++def _data():
++    if str(ROOT) not in sys.path: sys.path.append(str(ROOT))
++    from prc import data as D
++    if not hasattr(D, 'rank_month_numbers'):
++        raise SystemExit(f'Final mode: {D.__file__} has no rank_month_numbers (a prc without modes).')
++    D.ranking_mode()
++    return D
++
++
++def serve_months(split):
++    """Months whose rows get weights: [1, 7] for the held split and in the ranking mode; in the final mode the
++    ranking split gets prc.data.rank_month_numbers()."""
++    assert split in ('fold', 'ranking')
++    if split == 'fold' or not final(): return [1, 7]
++    months = [int(m) for m in _data().rank_month_numbers()]
++    assert 1 in months and 7 in months, months
++    return months
++
++
++def n_rows():
++    """Template rows: 344841 in the ranking mode, prc.data.n_ranking() in the final mode."""
++    return _data().n_ranking() if final() else 344841
++
++
++def assert_served(scope, cls, month, months):
++    """PLAN.md (b) silent zero: every in-scope ordinary or clock row must sit in a month that got weights."""
++    left = scope & cls.isin(['ordinary', 'clock']).to_numpy() & ~month.isin(months).to_numpy()
++    assert not left.any(), f'{int(left.sum())} in-scope rows of months {sorted(set(month[left].tolist()))} get no weights.'

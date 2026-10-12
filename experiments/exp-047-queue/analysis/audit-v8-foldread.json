@@ -1,0 +1,527 @@
+{
+ "what": "the upload audit (RESULTS \u00a77aq)",
+ "arguments": {
+  "head_npz": "../exp-046-surfacefit/work/d-bag5-255-free.npz",
+  "arm_npz": "../exp-046-surfacefit/work/d-bag5-511-free.npz",
+  "pins": "../exp-046-surfacefit/analysis/fold-population.json",
+  "class_vector": null,
+  "previous_class_vector": null,
+  "baseline": null,
+  "months": "2026-01,2026-07",
+  "candidate": null,
+  "previous": null,
+  "hold": "",
+  "changed_forbidden_at": "",
+  "changed_expected_at": "",
+  "draws": 2000,
+  "seeds": "47,101,102,103,104,105,106,107,108,109,110",
+  "expect": "analysis/audit-expect-v8.json",
+  "out": "analysis/audit-v8-foldread.json"
+ },
+ "pins": {
+  "mine": "experiments/exp-047-queue/analysis/pin-manifest.json",
+  "theirs": "experiments/exp-046-surfacefit/analysis/fold-population.json",
+  "by_fold": {
+   "july_loo": {
+    "my_airport_days": 296,
+    "my_block_rows": 190713,
+    "their_block_cache_key": "8179f74417c8cb99",
+    "their_airport_days": 296,
+    "days_agree": true
+   },
+   "december": {
+    "my_airport_days": 297,
+    "my_block_rows": 165677,
+    "their_block_cache_key": "d35b7171d7062341",
+    "their_airport_days": 297,
+    "days_agree": true
+   },
+   "january": {
+    "my_airport_days": 218,
+    "my_block_rows": 153706,
+    "their_block_cache_key": "cb4d6289cb421aa2",
+    "their_airport_days": 218,
+    "days_agree": true
+   }
+  }
+ },
+ "increment": {
+  "head_npz": "experiments/exp-046-surfacefit/work/d-bag5-255-free.npz",
+  "head_sha256": "c6d1f5b6f366c7f885c3f3813ae37e46b28997ee8f0d919ba61fa55000c854ac",
+  "arm_npz": "experiments/exp-046-surfacefit/work/d-bag5-511-free.npz",
+  "arm_sha256": "2914e783e75aa4f56f60da25fbad25ac41d6d7461c260758c181e04892882a9f",
+  "hold": [],
+  "draws": 2000,
+  "seeds": [
+   47,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110
+  ],
+  "arithmetic": "base = p12 + d_head, inc = d_arm - d_head, v = 2*r*inc - inc^2, with the hold applied to BOTH vectors (held rows return to the base, so they carry no increment)",
+  "per_fold": {
+   "july_loo": {
+    "A_mean_rd": 56.5241431942054,
+    "B_mean_dd": 95.14701569394549,
+    "mse_gain_s2": 17.90127069446532,
+    "lit": true,
+    "dark_by_instrument": false,
+    "ci95_primary_seed": [
+     -20.4898,
+     47.4823
+    ],
+    "ci95_envelope_over_the_seeds": [
+     -22.2034,
+     48.0295
+    ],
+    "clears_zero_on_every_seed": false,
+    "rmse_head": 272.7424719408949,
+    "rmse_new": 272.7096527989711,
+    "ratio_2A_over_B": 1.1881432703264956,
+    "rms_increment_s": 9.754333175258342
+   },
+   "december": {
+    "A_mean_rd": 101.15389616752107,
+    "B_mean_dd": 148.586904320045,
+    "mse_gain_s2": 53.72088801499714,
+    "lit": true,
+    "dark_by_instrument": false,
+    "ci95_primary_seed": [
+     20.249,
+     83.946
+    ],
+    "ci95_envelope_over_the_seeds": [
+     19.9795,
+     85.6164
+    ],
+    "clears_zero_on_every_seed": true,
+    "rmse_head": 185.9809999223478,
+    "rmse_new": 185.83651805848422,
+    "ratio_2A_over_B": 1.3615452402136758,
+    "rms_increment_s": 12.189622812870175
+   },
+   "january": {
+    "A_mean_rd": 99.50464957963217,
+    "B_mean_dd": 119.44700944049436,
+    "mse_gain_s2": 79.56228971876997,
+    "lit": true,
+    "dark_by_instrument": false,
+    "ci95_primary_seed": [
+     51.1,
+     108.787
+    ],
+    "ci95_envelope_over_the_seeds": [
+     51.1,
+     111.9823
+    ],
+    "clears_zero_on_every_seed": true,
+    "rmse_head": 328.91991075640703,
+    "rmse_new": 328.79894373656975,
+    "ratio_2A_over_B": 1.6660885868256585,
+    "rms_increment_s": 10.929181554009173
+   }
+  },
+  "population": {
+   "july_loo": {
+    "rows": 190713,
+    "rows_moved": 88422,
+    "rows_returned_to_the_base_by_the_hold": 0,
+    "rows_the_hold_would_have_moved": 0
+   },
+   "december": {
+    "rows": 165677,
+    "rows_moved": 102186,
+    "rows_returned_to_the_base_by_the_hold": 0,
+    "rows_the_hold_would_have_moved": 0
+   },
+   "january": {
+    "rows": 153706,
+    "rows_moved": 69839,
+    "rows_returned_to_the_base_by_the_hold": 0,
+    "rows_the_hold_would_have_moved": 0
+   }
+  },
+  "lit_rule": {
+   "lit_folds": [
+    "july_loo",
+    "december",
+    "january"
+   ],
+   "dark_folds": [],
+   "every_lit_fold_clears_on_every_seed": false,
+   "every_fold_clears_including_dark": false,
+   "rule": "exp-046 \u00a726.5: an EMPTY lit fold is not a crossing; a fold no row of which the arm moves is dark by instrument and abstains.  Read `every_lit_fold_clears_on_every_seed` under the lit rule and `every_fold_clears_including_dark` under the strict one"
+  },
+  "board": {
+   "all_row_base": 298.9269549703677,
+   "all_row_arm": 298.8513266707277,
+   "all_row_gain_s": 0.07562829964001594,
+   "all_row_ci95_primary_seed": [
+    0.032694,
+    0.125557
+   ],
+   "all_row_ci95_envelope_over_the_seeds": [
+    0.032621,
+    0.125557
+   ],
+   "clean_gain_s": 0.0923787215784273,
+   "shares": {
+    "july_loo": 0.5571321275602379,
+    "january": 0.4428678724397621
+   },
+   "note": "the interval is a 2,000-draw bootstrap, so it is reproducible only to its own draw noise; the envelope over the seed list is the robust statement and a claimed interval is checked for lying inside it"
+  }
+ },
+ "expect_file": "analysis/audit-expect-v8.json",
+ "expect_what": "CONDITIONAL candidate v8 = the BAGGED 511 over v7's bytes -- five 511-leaf fits on the same five perturbations, the same seeds and the same shipped panel, priced as an increment over the BAGGED 255 so the churn is divided by five on both sides (exp-046 40.1).  It becomes a candidate ONLY on one branch of 40.1's own decision rule, copied below.",
+ "checks": {
+  "pins.by_fold.july_loo.their_airport_days": {
+   "verdict": "AGREE",
+   "want": 296,
+   "got": 296,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.july_loo.days_agree": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.december.their_airport_days": {
+   "verdict": "AGREE",
+   "want": 297,
+   "got": 297,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.december.days_agree": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.january.their_airport_days": {
+   "verdict": "AGREE",
+   "want": 218,
+   "got": 218,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.january.days_agree": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.july_loo.rows": {
+   "verdict": "AGREE",
+   "want": 190713,
+   "got": 190713,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.july_loo.rows_returned_to_the_base_by_the_hold": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.december.rows": {
+   "verdict": "AGREE",
+   "want": 165677,
+   "got": 165677,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.december.rows_returned_to_the_base_by_the_hold": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.january.rows": {
+   "verdict": "AGREE",
+   "want": 153706,
+   "got": 153706,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.january.rows_returned_to_the_base_by_the_hold": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.template.rows": {
+   "verdict": "MISSING",
+   "want": 344841,
+   "got": null
+  },
+  "bytes.template.row_order_is_the_template_order": {
+   "verdict": "MISSING",
+   "want": true,
+   "got": null
+  },
+  "bytes.template.previous_row_order_is_the_template_order": {
+   "verdict": "MISSING",
+   "want": true,
+   "got": null
+  },
+  "bytes.template.all_finite": {
+   "verdict": "MISSING",
+   "want": true,
+   "got": null
+  },
+  "bytes.template.duplicate_keys": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "bytes.template.rows_at_or_below_zero": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "bytes.class.changed_is_a_subset_of_occupied": {
+   "verdict": "MISSING",
+   "want": true,
+   "got": null
+  },
+  "bytes.class.changed_rows_outside_occupied": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "bytes.class.rows_missing_for_a_template_key": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "bytes.class.noac_rows": {
+   "verdict": "MISSING",
+   "want": 388,
+   "got": null
+  },
+  "bytes.class.noac_rows_changed": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "bytes.class.occupied": {
+   "verdict": "MISSING",
+   "want": 196256,
+   "got": null
+  },
+  "bytes.class.written": {
+   "verdict": "MISSING",
+   "want": 196256,
+   "got": null
+  },
+  "bytes.class.occupied_and_not_written": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "bytes.class.written_and_not_occupied": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "bytes.class.occupied_unwritten_rows_that_changed": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "bytes.class.guard_held": {
+   "verdict": "MISSING",
+   "want": 1573,
+   "got": null
+  },
+  "bytes.class.occupied_at_the_expected_airports": {
+   "verdict": "MISSING",
+   "want": 2346,
+   "got": null
+  },
+  "bytes.class.guard_held_at_the_expected_airports": {
+   "verdict": "MISSING",
+   "want": 96,
+   "got": null
+  },
+  "bytes.class.writable_at_the_expected_airports": {
+   "verdict": "MISSING",
+   "want": 2250,
+   "got": null
+  },
+  "bytes.class_vs_previous.newly_occupied": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "bytes.class_vs_previous.no_longer_occupied": {
+   "verdict": "MISSING",
+   "want": 0,
+   "got": null
+  },
+  "increment.board.all_row_gain_s": {
+   "verdict": "PENDING",
+   "want": 0.0,
+   "got": 0.075628,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "increment.board.clean_gain_s": {
+   "verdict": "PENDING",
+   "want": 0.0,
+   "got": 0.092379,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "increment.per_fold.july_loo.mse_gain_s2": {
+   "verdict": "PENDING",
+   "want": 0.0,
+   "got": 17.901271,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "increment.per_fold.december.mse_gain_s2": {
+   "verdict": "PENDING",
+   "want": 0.0,
+   "got": 53.720888,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "increment.per_fold.january.mse_gain_s2": {
+   "verdict": "PENDING",
+   "want": 0.0,
+   "got": 79.56229,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "increment.per_fold.july_loo.B_mean_dd": {
+   "verdict": "PENDING",
+   "want": 38.0,
+   "got": 95.147016,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "increment.per_fold.july_loo.rms_increment_s": {
+   "verdict": "PENDING",
+   "want": 6.0,
+   "got": 9.754333,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "increment.population.july_loo.rows_moved": {
+   "verdict": "PENDING",
+   "want": 0,
+   "got": 88422,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "increment.population.december.rows_moved": {
+   "verdict": "PENDING",
+   "want": 0,
+   "got": 102186,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "increment.population.january.rows_moved": {
+   "verdict": "PENDING",
+   "want": 0,
+   "got": 69839,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "bytes.candidate_sha256": {
+   "verdict": "PENDING",
+   "want": "TO BE FILLED FROM THE SERVE",
+   "got": null,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "bytes.moved.rows_changed": {
+   "verdict": "PENDING",
+   "want": 0,
+   "got": null,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "bytes.moved.changed_rows_at_the_expected_airports": {
+   "verdict": "PENDING",
+   "want": 0,
+   "got": null,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  },
+  "bytes.moved.rows_reverted_to_the_baseline": {
+   "verdict": "PENDING",
+   "want": 0,
+   "got": null,
+   "why": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims."
+  }
+ },
+ "verdict": {
+  "checks": 48,
+  "agree": 12,
+  "disagree": [],
+  "pending": [
+   "increment.board.all_row_gain_s",
+   "increment.board.clean_gain_s",
+   "increment.per_fold.july_loo.mse_gain_s2",
+   "increment.per_fold.december.mse_gain_s2",
+   "increment.per_fold.january.mse_gain_s2",
+   "increment.per_fold.july_loo.B_mean_dd",
+   "increment.per_fold.july_loo.rms_increment_s",
+   "increment.population.july_loo.rows_moved",
+   "increment.population.december.rows_moved",
+   "increment.population.january.rows_moved",
+   "bytes.candidate_sha256",
+   "bytes.moved.rows_changed",
+   "bytes.moved.changed_rows_at_the_expected_airports",
+   "bytes.moved.rows_reverted_to_the_baseline"
+  ],
+  "not_answered_on_this_run": [
+   "bytes.template.rows",
+   "bytes.template.row_order_is_the_template_order",
+   "bytes.template.previous_row_order_is_the_template_order",
+   "bytes.template.all_finite",
+   "bytes.template.duplicate_keys",
+   "bytes.template.rows_at_or_below_zero",
+   "bytes.class.changed_is_a_subset_of_occupied",
+   "bytes.class.changed_rows_outside_occupied",
+   "bytes.class.rows_missing_for_a_template_key",
+   "bytes.class.noac_rows",
+   "bytes.class.noac_rows_changed",
+   "bytes.class.occupied",
+   "bytes.class.written",
+   "bytes.class.occupied_and_not_written",
+   "bytes.class.written_and_not_occupied",
+   "bytes.class.occupied_unwritten_rows_that_changed",
+   "bytes.class.guard_held",
+   "bytes.class.occupied_at_the_expected_airports",
+   "bytes.class.guard_held_at_the_expected_airports",
+   "bytes.class.writable_at_the_expected_airports",
+   "bytes.class_vs_previous.newly_occupied",
+   "bytes.class_vs_previous.no_longer_occupied"
+  ],
+  "reading": "AGREE on every answerable check, 14 PENDING, 22 NOT ANSWERED (the run did not carry the argument that produces them)"
+ },
+ "what_this_run_is": "exp-047's independent read of the bagged-511 vector through the v8 skeleton's fold half, run 2026-09-09 while exp-046 40.1 was still uncommitted.  There is NO v8 serve -- the desk ruled the registered gate failed on the cross-fitted reading -- so the 14 pending claims stay pending and the 22 byte claims are unanswered by design.  The 12 hard claims agree, and every in-fold figure reproduces exp-046 analysis/bag-511.json exactly.",
+ "what_it_confirms": {
+  "head_pin": "c6d1f5b6f366c7f8... unchanged, so the increment is priced over v7's shipped bytes",
+  "per_fold_gain_s2": {
+   "july_loo": 17.901,
+   "december": 53.721,
+   "january": 79.562
+  },
+  "board_in_fold": 0.07563,
+  "board_clean": 0.09238,
+  "reproduced": "to three decimals on every fold and five on the board"
+ },
+ "three_readings_for_the_desk": {
+  "1_the_verdict_block_is_computed_on_the_wrong_reading": "bag-511.json's verdict block carries board_all_row_s 0.07563 -- the IN-FOLD figure -- and on it reports inside_the_registered_band false and the_registered_expectation_holds false.  But the gate the desk ruled on is the CROSS-FITTED reading, +0.01668 [-0.01829, +0.04705], and that IS inside the registered [-0.04, +0.04] with every_fold_interval_clear false.  Read on the gate's own reading, 40.1's prediction HELD, and it held in detail: it named july as the fold most likely to fail, and july is exactly the fold whose interval straddles zero.  Recorded as a correction offered before 40.1 is committed, not as a challenge to the ruling, which is unaffected: the gate fails either way and there is no v8 serve.",
+  "2_the_resolution_did_not_improve_as_far_as_registered": "40.1 registered B about 38 s2/row on july and rms about 6 s, with the floor falling to roughly [-0.013, -0.011].  Measured: july B 95.15, rms 9.75 s -- 2.5x the registered energy; december 148.59 / 12.19 s; january 119.45 / 10.93 s.  So the instrument resolves better than read A's single-draw pair but not as well as the five-fold division predicted, and 'unresolved' should be recorded at the resolution actually achieved, not the one registered.",
+  "3_where_the_cross_fit_put_the_rung": "out of fold, 511 was taken on july ALONE; december and january both fell back to the 255 head.  The eligibility rule judges a fold on the OTHER TWO, so it lit the one fold whose own increment straddles zero (july [-18.88, +46.57]) and blanked the two whose increments are clear and positive (december +53.72 [+20.25, +83.95], january +79.56 [+51.10, +108.79]).  The 0.0589 selection premium is exactly that collapse.  TEMPERED, and this is the honest half: december carries no board share, so of the two clear folds only january (0.4429) has board weight, and july carries 0.5571.  The rule did not throw away most of the board's evidence -- it placed the rung on the larger share, which happens to be the noisy one.  The revival condition this points at is the eligibility rule, not the capacity ladder."
+ }
+}

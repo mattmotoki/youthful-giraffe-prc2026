@@ -1,0 +1,175 @@
+{
+  "arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+  "fold_gate": {
+    "airports_held": [
+      "LFPG"
+    ],
+    "as_priced_with_every_airport": {
+      "board_all_row_gain_s": 9.20742948802615,
+      "every_fold_interval_clear": true
+    },
+    "board_all_row_gain_s": 9.192662748274131,
+    "board_interval_ci95": [
+      7.314995116191727,
+      11.557612131278542
+    ],
+    "every_fold_interval_clear": true,
+    "passes": true,
+    "read_on": "the vector that ships: the same saved fold-side update with ['LFPG'] zeroed, no refit",
+    "reason": "",
+    "rows_returned_to_the_base_by_fold": {
+      "december": 989,
+      "january": 0,
+      "july_loo": 394
+    }
+  },
+  "head_arm": "c_lgb_shipped@leaves_127x300_lr050",
+  "held": [
+    "LFPG"
+  ],
+  "increment_over_the_v15_head": {
+    "arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+    "board_all_row_gain_s": 0.3350163166904281,
+    "board_all_row_interval_ci95": [
+      0.21366309442530423,
+      0.49451237950750393
+    ],
+    "board_clean_gain_s": 0.40875645842601216,
+    "board_clean_interval_ci95": [
+      0.27364611896486724,
+      0.5557857038516132
+    ],
+    "by_fold": {
+      "december": {
+        "all_row": {
+          "A_mean_rd": 375.2143921435096,
+          "B_mean_dd": 613.0703164283731,
+          "ci95": [
+            46.91923197482245,
+            230.15360020789973
+          ],
+          "mse_gain_s2": 137.35846785864615,
+          "rows": 165677,
+          "rows_moved": 99786
+        },
+        "rmse_head": 187.20696479647032,
+        "rmse_new": 186.8397420262837
+      },
+      "january": {
+        "all_row": {
+          "A_mean_rd": 365.0392813455561,
+          "B_mean_dd": 591.5053649928388,
+          "ci95": [
+            57.17563517457352,
+            225.1894804568787
+          ],
+          "mse_gain_s2": 138.57319769827322,
+          "rows": 153706,
+          "rows_moved": 68768
+        },
+        "rmse_head": 329.5926997859998,
+        "rmse_new": 329.38241385132557
+      },
+      "july_loo": {
+        "all_row": {
+          "A_mean_rd": 305.54493442772593,
+          "B_mean_dd": 360.96296241705227,
+          "ci95": [
+            160.39875116145365,
+            353.2258603880788
+          ],
+          "mse_gain_s2": 250.1269064383995,
+          "rows": 190713,
+          "rows_moved": 86519
+        },
+        "rmse_head": 273.69682247818383,
+        "rmse_new": 273.23949884344336
+      }
+    },
+    "december_gain_s": 0.3672227701866291,
+    "every_fold_interval_clear": true,
+    "head_arm": "c_lgb_shipped@leaves_127x300_lr050",
+    "held": [
+      "LFPG"
+    ],
+    "passes": true,
+    "reason": "",
+    "rows_moved_by_the_increment": {
+      "december": 99786,
+      "january": 68768,
+      "july_loo": 86519
+    },
+    "tail_clause_on_the_increment": {
+      "december": {
+        "clause_s": 1.0,
+        "mse_gain_s2_per_row": -5223.630613444012,
+        "passes_the_clause": false,
+        "rmse_arm": 1752.665933943567,
+        "rmse_base": 1751.1751041494488,
+        "rmse_gain_s": -1.4908297941183264,
+        "rows": 261,
+        "rows_moved": 73,
+        "share_of_the_gain": -0.05990944632068876
+      },
+      "january": {
+        "clause_s": 1.0,
+        "mse_gain_s2_per_row": 31290.1697264975,
+        "passes_the_clause": true,
+        "rmse_arm": 5980.994452900504,
+        "rmse_base": 5983.609681066529,
+        "rmse_gain_s": 2.61522816602519,
+        "rows": 325,
+        "rows_moved": 94,
+        "share_of_the_gain": 0.4774426591496828
+      },
+      "july_loo": {
+        "clause_s": 1.0,
+        "mse_gain_s2_per_row": 44390.07835711559,
+        "passes_the_clause": true,
+        "rmse_arm": 2387.2709803798725,
+        "rmse_base": 2396.5501897771705,
+        "rmse_gain_s": 9.279209397298018,
+        "rows": 656,
+        "rows_moved": 253,
+        "share_of_the_gain": 0.610448514686891
+      }
+    },
+    "tail_clause_on_the_whole_update": {
+      "december": {
+        "clause_s": 1.0,
+        "mse_gain_s2_per_row": 74931.87571032534,
+        "passes_the_clause": true,
+        "rmse_arm": 1752.665933943567,
+        "rmse_base": 1773.913682149332,
+        "rmse_gain_s": 21.247748205764992,
+        "rows": 261,
+        "rows_moved": 35,
+        "share_of_the_gain": 0.017390291915044577
+      },
+      "january": {
+        "clause_s": 1.0,
+        "mse_gain_s2_per_row": 37675.085643350365,
+        "passes_the_clause": true,
+        "rmse_arm": 5980.994452900504,
+        "rmse_base": 5984.1431910733845,
+        "rmse_gain_s": 3.1487381728802575,
+        "rows": 325,
+        "rows_moved": 31,
+        "share_of_the_gain": 0.014787118037667722
+      },
+      "july_loo": {
+        "clause_s": 1.0,
+        "mse_gain_s2_per_row": 40679.1616564717,
+        "passes_the_clause": true,
+        "rmse_arm": 2387.2709803798725,
+        "rmse_base": 2395.775844151608,
+        "rmse_gain_s": 8.504863771735472,
+        "rows": 656,
+        "rows_moved": 86,
+        "share_of_the_gain": 0.02433604864047819
+      }
+    },
+    "what": "the increment over the served head: d = d_new - d_head on the with-clock rows, priced against a base of pbase + d_head, with the airport hold applied to BOTH vectors so the comparison is like for like"
+  },
+  "what": "the v16 gate, read BEFORE the serve (desk, 2026-09-08 19:40 UTC)"
+}

@@ -1,0 +1,966 @@
+{
+  "members": [
+    "K3-tail-gated",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "K2-window",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "members_ungated": [
+    "K3-tail",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "K2-window",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "block": "depx",
+  "win": 600.0,
+  "threads": 3,
+  "seeds": [
+    7,
+    107,
+    207,
+    307,
+    407
+  ],
+  "rounds": 300,
+  "lightgbm": "4.7.0",
+  "gates": {
+    "A_blend5": "pass",
+    "B_stack5": "pass",
+    "C_v6": "pass",
+    "D_k2": {
+      "july_loo": 0.0,
+      "december": 0.0,
+      "january": 0.0
+    },
+    "k2_board_rebuilt": 257.1653
+  },
+  "arms": [
+    {
+      "arm": "k3-only-hold-eham-out",
+      "note": "k3-only-hold with EHAM served from stack-5, v7's mask; members K3-tail/C2-cat/L2-hub8725/D1-winter/F1-fresh/V3-allin/N1-nmtail; anchor blend-5; block depx; noac held at blend-5's anchor; july_loo 22489, december 19458, january 18460 EHAM rows taken back",
+      "clean": {
+        "july_loo": 284.7296,
+        "december": 205.6915,
+        "january": 218.5503
+      },
+      "vs_stack5": {
+        "july_loo": 0.4734,
+        "december": -0.0797,
+        "january": 0.5799
+      },
+      "vs_v6": {
+        "july_loo": -0.0077,
+        "december": -0.0381,
+        "january": 0.2662
+      },
+      "ci_v6": {
+        "july_loo": [
+          0.0077,
+          -0.0686,
+          0.0765
+        ],
+        "december": [
+          0.0381,
+          -0.0623,
+          0.1367
+        ],
+        "january": [
+          -0.2662,
+          -0.4463,
+          -0.1254
+        ]
+      },
+      "ci_v6_no_noac": {
+        "july_loo": [
+          0.0089,
+          -0.0792,
+          0.0889
+        ],
+        "december": [
+          0.0391,
+          -0.0636,
+          0.1401
+        ],
+        "january": [
+          -0.2816,
+          -0.4707,
+          -0.1344
+        ]
+      },
+      "slices": {
+        "july_loo": {
+          "n": 190713,
+          "rmse": 284.7296,
+          "le3600": 247.672,
+          "gt3600": 2407.7232,
+          "no_nm": 1121.4166,
+          "no_nm_flight_id_only": 1121.9362,
+          "noac": 3407.3545,
+          "no_noac": 246.0512,
+          "n_no_nm": 3938
+        },
+        "december": {
+          "n": 165677,
+          "rmse": 205.6915,
+          "le3600": 193.0017,
+          "gt3600": 1802.4482,
+          "no_nm": 664.4091,
+          "no_nm_flight_id_only": 665.2696,
+          "noac": 2010.4588,
+          "no_noac": 200.3978,
+          "n_no_nm": 1649
+        },
+        "january": {
+          "n": 153704,
+          "rmse": 218.5503,
+          "le3600": 196.7027,
+          "gt3600": 2087.0731,
+          "no_nm": 950.5415,
+          "no_nm_flight_id_only": 951.1108,
+          "noac": 3509.4763,
+          "no_noac": 206.7209,
+          "n_no_nm": 1433
+        }
+      },
+      "clean_board": 257.5276,
+      "gain_board_vs_stack5": 0.5096,
+      "gain_board_vs_v6": 0.0953,
+      "predicted_board": 263.5969,
+      "worst_fold_vs_v6": -0.0381,
+      "gate_gain": false,
+      "gate_folds": true,
+      "gate": false,
+      "regimes": [
+        "nm_bulk",
+        "nm_late",
+        "nonm"
+      ],
+      "airport_excluded": "EHAM",
+      "n_rows_taken_from_stack5": {
+        "july_loo": 22489,
+        "december": 19458,
+        "january": 18460
+      },
+      "vs_v7": {
+        "july_loo": -0.1045,
+        "december": -0.1238,
+        "january": -0.0092
+      },
+      "ci_v7": {
+        "july_loo": [
+          0.1045,
+          0.0554,
+          0.1523
+        ],
+        "december": [
+          0.1238,
+          0.0536,
+          0.1955
+        ],
+        "january": [
+          0.0092,
+          -0.0334,
+          0.0498
+        ]
+      },
+      "ci_v7_no_noac": {
+        "july_loo": [
+          0.1212,
+          0.0638,
+          0.1764
+        ],
+        "december": [
+          0.1272,
+          0.0545,
+          0.2013
+        ],
+        "january": [
+          0.0097,
+          -0.0353,
+          0.0527
+        ]
+      },
+      "clean_board_v7": 257.4598,
+      "gain_board_vs_v7": -0.0678,
+      "predicted_board_vs_v7": 263.5301,
+      "vs_k2": {
+        "july_loo": -0.4101,
+        "december": -0.4759,
+        "january": -0.2921
+      },
+      "ci_k2": {
+        "july_loo": [
+          0.4101,
+          0.264,
+          0.5802
+        ],
+        "december": [
+          0.4759,
+          0.3035,
+          0.6765
+        ],
+        "january": [
+          0.2921,
+          0.1838,
+          0.4007
+        ]
+      },
+      "ci_k2_no_noac": {
+        "july_loo": [
+          0.4755,
+          0.3096,
+          0.6705
+        ],
+        "december": [
+          0.4887,
+          0.3098,
+          0.6928
+        ],
+        "january": [
+          0.309,
+          0.1982,
+          0.4224
+        ]
+      },
+      "clean_board_k2": 257.1653,
+      "gain_board_vs_k2": -0.3624,
+      "tail_vs_k2": {
+        "july_loo": {
+          "n": 656,
+          "base": 2404.3074,
+          "arm": 2407.7232,
+          "gain": -3.4158
+        },
+        "december": {
+          "n": 261,
+          "base": 1794.0932,
+          "arm": 1802.4482,
+          "gain": -8.355
+        },
+        "january": {
+          "n": 323,
+          "base": 2086.7198,
+          "arm": 2087.0731,
+          "gain": -0.3533
+        }
+      },
+      "tail_vs_v7": {
+        "july_loo": {
+          "n": 656,
+          "base": 2406.9612,
+          "arm": 2407.7232,
+          "gain": -0.762
+        },
+        "december": {
+          "n": 261,
+          "base": 1798.9043,
+          "arm": 1802.4482,
+          "gain": -3.544
+        },
+        "january": {
+          "n": 323,
+          "base": 2088.4263,
+          "arm": 2087.0731,
+          "gain": 1.3532
+        }
+      }
+    },
+    {
+      "arm": "k3g-only-hold-eham-out",
+      "note": "k3g-only-hold with EHAM served from stack-5, v7's mask; members K3-tail-gated/C2-cat/L2-hub8725/D1-winter/F1-fresh/V3-allin/N1-nmtail; anchor blend-5; block depx; noac held at blend-5's anchor; july_loo 22489, december 19458, january 18460 EHAM rows taken back",
+      "clean": {
+        "july_loo": 284.7198,
+        "december": 205.6884,
+        "january": 218.5655
+      },
+      "vs_stack5": {
+        "july_loo": 0.4832,
+        "december": -0.0765,
+        "january": 0.5648
+      },
+      "vs_v6": {
+        "july_loo": 0.0021,
+        "december": -0.035,
+        "january": 0.2511
+      },
+      "ci_v6": {
+        "july_loo": [
+          -0.0021,
+          -0.077,
+          0.0654
+        ],
+        "december": [
+          0.035,
+          -0.0632,
+          0.1326
+        ],
+        "january": [
+          -0.2511,
+          -0.4309,
+          -0.1105
+        ]
+      },
+      "ci_v6_no_noac": {
+        "july_loo": [
+          -0.0024,
+          -0.0886,
+          0.0757
+        ],
+        "december": [
+          0.0359,
+          -0.0658,
+          0.1369
+        ],
+        "january": [
+          -0.2655,
+          -0.4571,
+          -0.1188
+        ]
+      },
+      "slices": {
+        "july_loo": {
+          "n": 190713,
+          "rmse": 284.7198,
+          "le3600": 247.6521,
+          "gt3600": 2407.9778,
+          "no_nm": 1121.4482,
+          "no_nm_flight_id_only": 1121.9686,
+          "noac": 3407.3545,
+          "no_noac": 246.0398,
+          "n_no_nm": 3938
+        },
+        "december": {
+          "n": 165677,
+          "rmse": 205.6884,
+          "le3600": 192.9982,
+          "gt3600": 1802.4562,
+          "no_nm": 664.3323,
+          "no_nm_flight_id_only": 665.1973,
+          "noac": 2010.4588,
+          "no_noac": 200.3946,
+          "n_no_nm": 1649
+        },
+        "january": {
+          "n": 153704,
+          "rmse": 218.5655,
+          "le3600": 196.7176,
+          "gt3600": 2087.1591,
+          "no_nm": 950.4903,
+          "no_nm_flight_id_only": 951.0591,
+          "noac": 3509.4763,
+          "no_noac": 206.7369,
+          "n_no_nm": 1433
+        }
+      },
+      "clean_board": 257.5273,
+      "gain_board_vs_stack5": 0.5099,
+      "gain_board_vs_v6": 0.0957,
+      "predicted_board": 263.5965,
+      "worst_fold_vs_v6": -0.035,
+      "gate_gain": false,
+      "gate_folds": true,
+      "gate": false,
+      "regimes": [
+        "nm_bulk",
+        "nm_late",
+        "nonm"
+      ],
+      "airport_excluded": "EHAM",
+      "n_rows_taken_from_stack5": {
+        "july_loo": 22489,
+        "december": 19458,
+        "january": 18460
+      },
+      "vs_v7": {
+        "july_loo": -0.0947,
+        "december": -0.1207,
+        "january": -0.0243
+      },
+      "ci_v7": {
+        "july_loo": [
+          0.0947,
+          0.047,
+          0.1422
+        ],
+        "december": [
+          0.1207,
+          0.0507,
+          0.1902
+        ],
+        "january": [
+          0.0243,
+          -0.0198,
+          0.0662
+        ]
+      },
+      "ci_v7_no_noac": {
+        "july_loo": [
+          0.1098,
+          0.0538,
+          0.164
+        ],
+        "december": [
+          0.124,
+          0.0518,
+          0.1968
+        ],
+        "january": [
+          0.0257,
+          -0.0213,
+          0.07
+        ]
+      },
+      "clean_board_v7": 257.4598,
+      "gain_board_vs_v7": -0.0675,
+      "predicted_board_vs_v7": 263.5298,
+      "vs_k2": {
+        "july_loo": -0.4002,
+        "december": -0.4727,
+        "january": -0.3072
+      },
+      "ci_k2": {
+        "july_loo": [
+          0.4002,
+          0.2546,
+          0.5674
+        ],
+        "december": [
+          0.4727,
+          0.2977,
+          0.6746
+        ],
+        "january": [
+          0.3072,
+          0.2005,
+          0.4165
+        ]
+      },
+      "ci_k2_no_noac": {
+        "july_loo": [
+          0.4641,
+          0.297,
+          0.6549
+        ],
+        "december": [
+          0.4855,
+          0.3061,
+          0.6885
+        ],
+        "january": [
+          0.325,
+          0.2124,
+          0.4401
+        ]
+      },
+      "clean_board_k2": 257.1653,
+      "gain_board_vs_k2": -0.362,
+      "tail_vs_k2": {
+        "july_loo": {
+          "n": 656,
+          "base": 2404.3074,
+          "arm": 2407.9778,
+          "gain": -3.6704
+        },
+        "december": {
+          "n": 261,
+          "base": 1794.0932,
+          "arm": 1802.4562,
+          "gain": -8.363
+        },
+        "january": {
+          "n": 323,
+          "base": 2086.7198,
+          "arm": 2087.1591,
+          "gain": -0.4393
+        }
+      },
+      "tail_vs_v7": {
+        "july_loo": {
+          "n": 656,
+          "base": 2406.9612,
+          "arm": 2407.9778,
+          "gain": -1.0167
+        },
+        "december": {
+          "n": 261,
+          "base": 1798.9043,
+          "arm": 1802.4562,
+          "gain": -3.552
+        },
+        "january": {
+          "n": 323,
+          "base": 2088.4263,
+          "arm": 2087.1591,
+          "gain": 1.2673
+        }
+      }
+    },
+    {
+      "arm": "k3-hold-eham-out",
+      "note": "k3-hold with EHAM served from stack-5, v7's mask; members K3-tail/C2-cat/L2-hub8725/D1-winter/K2-window/V3-allin/N1-nmtail; anchor blend-5; block depx; noac held at blend-5's anchor; july_loo 22489, december 19458, january 18460 EHAM rows taken back",
+      "clean": {
+        "july_loo": 284.4265,
+        "december": 205.3721,
+        "january": 218.3111
+      },
+      "vs_stack5": {
+        "july_loo": 0.7764,
+        "december": 0.2398,
+        "january": 0.8191
+      },
+      "vs_v6": {
+        "july_loo": 0.2953,
+        "december": 0.2813,
+        "january": 0.5054
+      },
+      "ci_v6": {
+        "july_loo": [
+          -0.2953,
+          -0.4839,
+          -0.1471
+        ],
+        "december": [
+          -0.2813,
+          -0.4984,
+          -0.1088
+        ],
+        "january": [
+          -0.5054,
+          -0.7103,
+          -0.3272
+        ]
+      },
+      "ci_v6_no_noac": {
+        "july_loo": [
+          -0.3424,
+          -0.5484,
+          -0.1738
+        ],
+        "december": [
+          -0.2889,
+          -0.5122,
+          -0.1135
+        ],
+        "january": [
+          -0.5346,
+          -0.7452,
+          -0.3533
+        ]
+      },
+      "slices": {
+        "july_loo": {
+          "n": 190713,
+          "rmse": 284.4265,
+          "le3600": 247.3716,
+          "gt3600": 2406.2551,
+          "no_nm": 1121.105,
+          "no_nm_flight_id_only": 1121.6285,
+          "noac": 3407.3545,
+          "no_noac": 245.6998,
+          "n_no_nm": 3938
+        },
+        "december": {
+          "n": 165677,
+          "rmse": 205.3721,
+          "le3600": 192.7183,
+          "gt3600": 1798.5377,
+          "no_nm": 664.1382,
+          "no_nm_flight_id_only": 664.994,
+          "noac": 2010.4588,
+          "no_noac": 200.0697,
+          "n_no_nm": 1649
+        },
+        "january": {
+          "n": 153704,
+          "rmse": 218.3111,
+          "le3600": 196.4675,
+          "gt3600": 2085.6777,
+          "no_nm": 950.2338,
+          "no_nm_flight_id_only": 950.8,
+          "noac": 3509.4763,
+          "no_noac": 206.4679,
+          "n_no_nm": 1433
+        }
+      },
+      "clean_board": 257.251,
+      "gain_board_vs_stack5": 0.7861,
+      "gain_board_vs_v6": 0.3719,
+      "predicted_board": 263.3203,
+      "worst_fold_vs_v6": 0.2813,
+      "gate_gain": true,
+      "gate_folds": true,
+      "gate": true,
+      "regimes": [
+        "nm_bulk",
+        "nm_late",
+        "nonm"
+      ],
+      "airport_excluded": "EHAM",
+      "n_rows_taken_from_stack5": {
+        "july_loo": 22489,
+        "december": 19458,
+        "january": 18460
+      },
+      "vs_v7": {
+        "july_loo": 0.1985,
+        "december": 0.1956,
+        "january": 0.23
+      },
+      "ci_v7": {
+        "july_loo": [
+          -0.1985,
+          -0.3719,
+          -0.0597
+        ],
+        "december": [
+          -0.1956,
+          -0.4042,
+          -0.0428
+        ],
+        "january": [
+          -0.23,
+          -0.334,
+          -0.1296
+        ]
+      },
+      "ci_v7_no_noac": {
+        "july_loo": [
+          -0.2302,
+          -0.429,
+          -0.0697
+        ],
+        "december": [
+          -0.2009,
+          -0.4158,
+          -0.0439
+        ],
+        "january": [
+          -0.2433,
+          -0.3518,
+          -0.1369
+        ]
+      },
+      "clean_board_v7": 257.4598,
+      "gain_board_vs_v7": 0.2088,
+      "predicted_board_vs_v7": 263.2535,
+      "vs_k2": {
+        "july_loo": -0.107,
+        "december": -0.1564,
+        "january": -0.0529
+      },
+      "ci_k2": {
+        "july_loo": [
+          0.107,
+          0.0433,
+          0.1713
+        ],
+        "december": [
+          0.1564,
+          0.0874,
+          0.2288
+        ],
+        "january": [
+          0.0529,
+          -0.0022,
+          0.1074
+        ]
+      },
+      "ci_k2_no_noac": {
+        "july_loo": [
+          0.1241,
+          0.0494,
+          0.1984
+        ],
+        "december": [
+          0.1607,
+          0.0895,
+          0.2328
+        ],
+        "january": [
+          0.0559,
+          -0.0024,
+          0.1128
+        ]
+      },
+      "clean_board_k2": 257.1653,
+      "gain_board_vs_k2": -0.0858,
+      "tail_vs_k2": {
+        "july_loo": {
+          "n": 656,
+          "base": 2404.3074,
+          "arm": 2406.2551,
+          "gain": -1.9477
+        },
+        "december": {
+          "n": 261,
+          "base": 1794.0932,
+          "arm": 1798.5377,
+          "gain": -4.4445
+        },
+        "january": {
+          "n": 323,
+          "base": 2086.7198,
+          "arm": 2085.6777,
+          "gain": 1.0421
+        }
+      },
+      "tail_vs_v7": {
+        "july_loo": {
+          "n": 656,
+          "base": 2406.9612,
+          "arm": 2406.2551,
+          "gain": 0.706
+        },
+        "december": {
+          "n": 261,
+          "base": 1798.9043,
+          "arm": 1798.5377,
+          "gain": 0.3665
+        },
+        "january": {
+          "n": 323,
+          "base": 2088.4263,
+          "arm": 2085.6777,
+          "gain": 2.7486
+        }
+      }
+    },
+    {
+      "arm": "k3g-hold-eham-out",
+      "note": "k3g-hold with EHAM served from stack-5, v7's mask; members K3-tail-gated/C2-cat/L2-hub8725/D1-winter/K2-window/V3-allin/N1-nmtail; anchor blend-5; block depx; noac held at blend-5's anchor; july_loo 22489, december 19458, january 18460 EHAM rows taken back",
+      "clean": {
+        "july_loo": 284.4235,
+        "december": 205.3879,
+        "january": 218.3125
+      },
+      "vs_stack5": {
+        "july_loo": 0.7794,
+        "december": 0.224,
+        "january": 0.8178
+      },
+      "vs_v6": {
+        "july_loo": 0.2983,
+        "december": 0.2655,
+        "january": 0.5041
+      },
+      "ci_v6": {
+        "july_loo": [
+          -0.2983,
+          -0.4925,
+          -0.1459
+        ],
+        "december": [
+          -0.2655,
+          -0.4749,
+          -0.0937
+        ],
+        "january": [
+          -0.5041,
+          -0.7065,
+          -0.3265
+        ]
+      },
+      "ci_v6_no_noac": {
+        "july_loo": [
+          -0.3459,
+          -0.5588,
+          -0.1722
+        ],
+        "december": [
+          -0.2727,
+          -0.4845,
+          -0.0969
+        ],
+        "january": [
+          -0.5332,
+          -0.7396,
+          -0.3494
+        ]
+      },
+      "slices": {
+        "july_loo": {
+          "n": 190713,
+          "rmse": 284.4235,
+          "le3600": 247.3531,
+          "gt3600": 2406.7023,
+          "no_nm": 1121.1128,
+          "no_nm_flight_id_only": 1121.6368,
+          "noac": 3407.3545,
+          "no_noac": 245.6963,
+          "n_no_nm": 3938
+        },
+        "december": {
+          "n": 165677,
+          "rmse": 205.3879,
+          "le3600": 192.7375,
+          "gt3600": 1798.3789,
+          "no_nm": 664.2033,
+          "no_nm_flight_id_only": 665.0581,
+          "noac": 2010.4588,
+          "no_noac": 200.086,
+          "n_no_nm": 1649
+        },
+        "january": {
+          "n": 153704,
+          "rmse": 218.3125,
+          "le3600": 196.4638,
+          "gt3600": 2085.9096,
+          "no_nm": 950.2503,
+          "no_nm_flight_id_only": 950.8222,
+          "noac": 3509.4763,
+          "no_noac": 206.4693,
+          "n_no_nm": 1433
+        }
+      },
+      "clean_board": 257.2497,
+      "gain_board_vs_stack5": 0.7875,
+      "gain_board_vs_v6": 0.3733,
+      "predicted_board": 263.3189,
+      "worst_fold_vs_v6": 0.2655,
+      "gate_gain": true,
+      "gate_folds": true,
+      "gate": true,
+      "regimes": [
+        "nm_bulk",
+        "nm_late",
+        "nonm"
+      ],
+      "airport_excluded": "EHAM",
+      "n_rows_taken_from_stack5": {
+        "july_loo": 22489,
+        "december": 19458,
+        "january": 18460
+      },
+      "vs_v7": {
+        "july_loo": 0.2016,
+        "december": 0.1798,
+        "january": 0.2287
+      },
+      "ci_v7": {
+        "july_loo": [
+          -0.2016,
+          -0.3809,
+          -0.0545
+        ],
+        "december": [
+          -0.1798,
+          -0.3803,
+          -0.0281
+        ],
+        "january": [
+          -0.2287,
+          -0.3356,
+          -0.1247
+        ]
+      },
+      "ci_v7_no_noac": {
+        "july_loo": [
+          -0.2337,
+          -0.4397,
+          -0.0644
+        ],
+        "december": [
+          -0.1846,
+          -0.3899,
+          -0.0288
+        ],
+        "january": [
+          -0.2419,
+          -0.351,
+          -0.1359
+        ]
+      },
+      "clean_board_v7": 257.4598,
+      "gain_board_vs_v7": 0.2101,
+      "predicted_board_vs_v7": 263.2522,
+      "vs_k2": {
+        "july_loo": -0.104,
+        "december": -0.1722,
+        "january": -0.0542
+      },
+      "ci_k2": {
+        "july_loo": [
+          0.104,
+          0.0374,
+          0.1705
+        ],
+        "december": [
+          0.1722,
+          0.1049,
+          0.2375
+        ],
+        "january": [
+          0.0542,
+          0.0022,
+          0.1069
+        ]
+      },
+      "ci_k2_no_noac": {
+        "july_loo": [
+          0.1206,
+          0.0435,
+          0.1962
+        ],
+        "december": [
+          0.1769,
+          0.109,
+          0.2435
+        ],
+        "january": [
+          0.0573,
+          0.0023,
+          0.1132
+        ]
+      },
+      "clean_board_k2": 257.1653,
+      "gain_board_vs_k2": -0.0844,
+      "tail_vs_k2": {
+        "july_loo": {
+          "n": 656,
+          "base": 2404.3074,
+          "arm": 2406.7023,
+          "gain": -2.3949
+        },
+        "december": {
+          "n": 261,
+          "base": 1794.0932,
+          "arm": 1798.3789,
+          "gain": -4.2857
+        },
+        "january": {
+          "n": 323,
+          "base": 2086.7198,
+          "arm": 2085.9096,
+          "gain": 0.8102
+        }
+      },
+      "tail_vs_v7": {
+        "july_loo": {
+          "n": 656,
+          "base": 2406.9612,
+          "arm": 2406.7023,
+          "gain": 0.2589
+        },
+        "december": {
+          "n": 261,
+          "base": 1798.9043,
+          "arm": 1798.3789,
+          "gain": 0.5253
+        },
+        "january": {
+          "n": 323,
+          "base": 2088.4263,
+          "arm": 2085.9096,
+          "gain": 2.5168
+        }
+      }
+    }
+  ],
+  "wall_s": 288.3
+}

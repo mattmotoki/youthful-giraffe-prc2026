@@ -1,0 +1,236 @@
+{
+  "airport": "LFPG",
+  "construction": "v19's own vector everywhere except LFPG, where the same fit with the hold lifted is spliced in; the increment is nonzero on LFPG rows and nowhere else by construction",
+  "face": {
+    "at": {
+      "every LFPG class row": {
+        "board_s_at_x1_2": 0.0964517984685358,
+        "board_s_at_x1_5": 0.14390608331505542,
+        "rows": 2346
+      },
+      "projected at the lit folds' release share": {
+        "board_s_at_x1_2": 0.0955060094599105,
+        "board_s_at_x1_5": 0.14249496611418647,
+        "rows": 2323
+      }
+    },
+    "level_is": "v17's board reading; nothing is fitted to it (score-feedback rule)",
+    "level_s": 246.6571,
+    "lfpg_fold_rows_in_the_class_on_the_lit_folds": 1816,
+    "lfpg_fold_rows_of_any_kind_on_the_lit_folds": 41490,
+    "lfpg_ranking_class_under_v19": {
+      "2026-01": 1136,
+      "2026-07": 1210
+    },
+    "release_share_is": "released fold rows / LFPG WITH-CLOCK fold rows on the lit folds: what the guard and the floor leave of the class, which is the fraction the ranking class would release too",
+    "release_share_on_the_lit_folds": 0.9900881057268722,
+    "released_fold_rows": 1798,
+    "s2_per_released_row": 6992.61977706504,
+    "s2_per_released_row_measured_on": [
+      "july_loo",
+      "december"
+    ]
+  },
+  "increment_over_v19": {
+    "board_all_row": {
+      "arm": 299.1278051247471,
+      "base": 299.14720454091145,
+      "gain_s": 0.01939941616433316,
+      "interval": {
+        "ci95": [
+          0.007836841393230997,
+          0.033825724064269
+        ],
+        "clean": false,
+        "draws": 2000,
+        "gain_s_bootstrap_mean": 0.01992861956835506,
+        "share_of_draws_positive": 1.0
+      }
+    },
+    "board_clean": {
+      "arm": 244.98750161326367,
+      "base": 245.01118777027736,
+      "gain_s": 0.02368615701368526,
+      "interval": {
+        "ci95": [
+          0.009574841666866974,
+          0.040713879478632004
+        ],
+        "clean": true,
+        "draws": 2000,
+        "gain_s_bootstrap_mean": 0.023975868158098053,
+        "share_of_draws_positive": 0.9995
+      }
+    },
+    "by_fold": {
+      "december": {
+        "A_mean_rd": 46.821377403257635,
+        "B_mean_dd": 41.73576758829177,
+        "ci95": [
+          28.92832233242996,
+          79.16031341056394
+        ],
+        "mse_gain_s2": 51.90698721822349,
+        "rows": 165677,
+        "rows_moved": 1246
+      },
+      "january": {
+        "A_mean_rd": 0.0,
+        "B_mean_dd": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "mse_gain_s2": 0.0,
+        "rows": 153706,
+        "rows_moved": 0
+      },
+      "july_loo": {
+        "A_mean_rd": 19.06642683442683,
+        "B_mean_dd": 17.300836775357546,
+        "ci95": [
+          7.660351455031558,
+          35.1660073756438
+        ],
+        "mse_gain_s2": 20.83201689349612,
+        "rows": 190713,
+        "rows_moved": 552
+      }
+    },
+    "by_fold_clean": {
+      "december": {
+        "A_mean_rd": 46.821377403257635,
+        "B_mean_dd": 41.73576758829177,
+        "ci95": [
+          28.05325708918504,
+          76.956873057455
+        ],
+        "mse_gain_s2": 51.90698721822349,
+        "rows": 165677,
+        "rows_moved": 1246
+      },
+      "january": {
+        "A_mean_rd": 0.0,
+        "B_mean_dd": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "mse_gain_s2": 0.0,
+        "rows": 153704,
+        "rows_moved": 0
+      },
+      "july_loo": {
+        "A_mean_rd": 19.06642683442683,
+        "B_mean_dd": 17.300836775357546,
+        "ci95": [
+          8.167748635623527,
+          34.67280028325666
+        ],
+        "mse_gain_s2": 20.83201689349612,
+        "rows": 190713,
+        "rows_moved": 552
+      }
+    },
+    "every_fold_interval_clear": false,
+    "every_moving_fold_interval_clear": true,
+    "folds_with_no_moved_row": [
+      "january"
+    ],
+    "rows_moved": {
+      "december": 1246,
+      "january": 0,
+      "july_loo": 552
+    },
+    "tail": {
+      "december": {
+        "clause_s": 1.0,
+        "mse_gain_s2_per_row": 70256.88202160592,
+        "passes_the_clause": true,
+        "rmse_arm": 1753.9991076665335,
+        "rmse_base": 1773.913682149332,
+        "rmse_gain_s": 19.91457448279857,
+        "rows": 261,
+        "rows_moved": 38,
+        "share_of_the_gain": 0.01596202718152879
+      },
+      "january": {
+        "clause_s": 1.0,
+        "mse_gain_s2_per_row": 34537.91490939505,
+        "passes_the_clause": true,
+        "rmse_arm": 5981.256708782908,
+        "rmse_base": 5984.1431910733845,
+        "rmse_gain_s": 2.886482290476124,
+        "rows": 325,
+        "rows_moved": 32,
+        "share_of_the_gain": 0.013207491616282263
+      },
+      "july_loo": {
+        "clause_s": 1.0,
+        "mse_gain_s2_per_row": 43255.328763042686,
+        "passes_the_clause": true,
+        "rmse_arm": 2386.731356197699,
+        "rmse_base": 2395.775844151608,
+        "rmse_gain_s": 9.044487953909083,
+        "rows": 656,
+        "rows_moved": 87,
+        "share_of_the_gain": 0.025071192876388718
+      }
+    }
+  },
+  "lit_rule": {
+    "dark_folds": [
+      "january"
+    ],
+    "every_fold_interval_clear": false,
+    "every_moving_fold_interval_clear": true,
+    "folds_with_no_moved_row": [
+      "january"
+    ],
+    "gate_under_the_lit_rule": true,
+    "lit_folds": [
+      "july_loo",
+      "december"
+    ],
+    "ruling": "desk, 2026-09-09, section 26.5: an empty lit fold is not a crossing; a cell dark by instrument is priced on its lit folds (>= 2, december among them for a winter ranking month)"
+  },
+  "on_top_of": {
+    "candidate": "submissions/candidates/exp-046-surface-v5.parquet",
+    "vector": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+    "vector_sha256": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684"
+  },
+  "refit_agrees_with_the_shipped_vector_off_lfpg": {
+    "december": {
+      "lfpg_rows": 19778,
+      "lfpg_rows_the_rider_moves": 1246,
+      "lfpg_rows_v19_moves": 0,
+      "max_abs_difference_s": 0.0,
+      "max_relative_difference": 0.0,
+      "refit_differs_from_the_shipped_vector_on": 0,
+      "rows_off_lfpg": 145899
+    },
+    "january": {
+      "lfpg_rows": 17900,
+      "lfpg_rows_the_rider_moves": 0,
+      "lfpg_rows_v19_moves": 0,
+      "max_abs_difference_s": 0.0,
+      "max_relative_difference": 0.0,
+      "refit_differs_from_the_shipped_vector_on": 0,
+      "rows_off_lfpg": 135806
+    },
+    "july_loo": {
+      "lfpg_rows": 21712,
+      "lfpg_rows_the_rider_moves": 552,
+      "lfpg_rows_v19_moves": 0,
+      "max_abs_difference_s": 0.0,
+      "max_relative_difference": 0.0,
+      "refit_differs_from_the_shipped_vector_on": 0,
+      "rows_off_lfpg": 169001
+    }
+  },
+  "rider_vector": "experiments/exp-046-surfacefit/work/d-rider-lfpg-on-v19.npz",
+  "seconds": 191.1,
+  "unheld_fit_vector": "experiments/exp-046-surfacefit/work/d-lfpg-unheld-fit.npz",
+  "unheld_fit_was_refitted_this_run": true,
+  "what": "The LFPG rider, priced on top of v19 under the lit rule (desk, 2026-09-09)."
+}

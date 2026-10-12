@@ -1,0 +1,24 @@
+{
+ "tag": "k2-localjan-on",
+ "mechanism": "",
+ "rounds": 400,
+ "clip_z": null,
+ "params": {
+  "num_threads": 3
+ },
+ "seeds": 1,
+ "ghost_mode": "mixbase",
+ "main_model": "lgb",
+ "exact_rounds": 300,
+ "folds": {
+  "january": {
+   "rmse": 342.8805331977688,
+   "rmse_lo": 200.38963067555352,
+   "rmse_hi": 6054.0118851458765,
+   "n": 153706,
+   "n_hi": 325,
+   "secs": 190.3,
+   "n_train": 1840608
+  }
+ }
+}

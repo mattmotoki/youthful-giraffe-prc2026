@@ -1,0 +1,46 @@
+{
+  "baseline_clean_board": 259.1339,
+  "baseline_discounted": 261.3987,
+  "half_width_3fold": 0.1025,
+  "half_width_2fold": 0.1687,
+  "best_arm": "2. month-share, december 0.25",
+  "best_clean_board": 259.0929,
+  "best_gain": 0.041,
+  "best_verdict_face": "killed",
+  "best_arm_discounted": "2. month-share, december 0.75",
+  "best_discounted": 261.2066,
+  "best_gain_discounted": 0.1921,
+  "best_verdict_discounted": "SHIPS",
+  "item3_drop_D1_winter": {
+    "clean_board": 259.178,
+    "cost": 0.044,
+    "source": "analysis/ladder_loo.csv and docs/queue-subsets-2026-09-07.csv",
+    "note": "already measured; a decision, not a run"
+  },
+  "interval_no_noac": [
+    {
+      "arm": "2. month-share, december 0.75",
+      "fold": "july_loo",
+      "delta_no_noac": -0.2903,
+      "lo": -0.3498,
+      "hi": -0.2293,
+      "excludes_zero": true
+    },
+    {
+      "arm": "2. month-share, december 0.75",
+      "fold": "december",
+      "delta_no_noac": 0.0001,
+      "lo": -0.0004,
+      "hi": 0.0007,
+      "excludes_zero": false
+    },
+    {
+      "arm": "2. month-share, december 0.75",
+      "fold": "january",
+      "delta_no_noac": -0.0348,
+      "lo": -0.1371,
+      "hi": 0.0399,
+      "excludes_zero": false
+    }
+  ]
+}

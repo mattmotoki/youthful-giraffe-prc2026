@@ -1,0 +1,64 @@
+{
+  "name": "Q1-jan",
+  "argv": "--name Q1-jan --features v2 --target residual --linear-tree --clip-floor 60 --noac-head --residual-guard --es-mode lastmonth --es-rounds 1000 --learning-rate 0.03 --max-rounds 20000 --folds january --no-submission",
+  "folds": {
+    "january": {
+      "rmse": 347.2035341098443,
+      "rmse_bulk": 213.80379965144397,
+      "rmse_tail": 5953.135257213378,
+      "rmse_no_nm": 2870.9016872790157,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "sse_share_tail": 0.6216068131788536,
+      "sse_share_no_nm": 0.6369723256021781,
+      "bias": 4.983257704594777,
+      "rmse_noac": 3698.29800153593,
+      "n_noac": 63,
+      "sse_share_noac": 0.04650345926907495,
+      "fold": "january",
+      "best_iteration": 600,
+      "refit_rounds": 656,
+      "seconds": 443,
+      "oof": "experiments/exp-001-retro-v1/oof/Q1-jan-january.parquet"
+    }
+  },
+  "phi_settings": null,
+  "lirf_gate": null,
+  "shared_modules": {
+    "surface": {
+      "UNIMPEDED_Q": 0.2,
+      "WINDOWS": [
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ],
+      "BUCKET": 1200.0,
+      "NBR_WINDOW": "1800s",
+      "SHRINK_K": 20.0,
+      "n_families": 7
+    },
+    "phi": {
+      "default_weight": "rows",
+      "default_shrink_rows": 150.0,
+      "default_min_rows": 100,
+      "keys": [
+        [
+          "airport"
+        ],
+        [
+          "airport",
+          "operator"
+        ]
+      ]
+    },
+    "lirf": {
+      "cat_features": [
+        "flight_prefix",
+        "stand_group"
+      ]
+    }
+  }
+}

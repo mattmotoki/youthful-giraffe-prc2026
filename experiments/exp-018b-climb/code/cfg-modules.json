@@ -1,0 +1,7 @@
+[
+ {"name":"m0_base",   "kwargs":{"rounds":1200,"clip_z":6000,"seeds":3,"main_model":"lgb"}},
+ {"name":"m1_phi",    "kwargs":{"rounds":1200,"clip_z":6000,"seeds":3,"main_model":"lgb","extras_kinds":["phi"]}},
+ {"name":"m2_surface","kwargs":{"rounds":1200,"clip_z":6000,"seeds":3,"main_model":"lgb","extras_kinds":["surface"]}},
+ {"name":"m3_deice",  "kwargs":{"rounds":1200,"clip_z":6000,"seeds":3,"main_model":"lgb","extras_kinds":["deice"]}},
+ {"name":"m4_drop",   "kwargs":{"rounds":1200,"clip_z":6000,"seeds":3,"main_model":"lgb","drop_unreached":true}}
+]

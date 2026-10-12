@@ -1,0 +1,99 @@
+{
+  "name": "exp-012-blend-2",
+  "description": "The standing blend as shipped 2026-09-05: four general members equally weighted, plus exp-010's NM-tail head as a specialist inside the nm_late regime only.",
+  "python": ".venv/bin/python",
+  "folds": ["july_loo", "december", "january"],
+  "board_shares": {"july_loo": 0.5571321275602379, "january": 0.4428678724397621},
+  "guard_bounds": {
+    "july_loo": [-20657.0, 9069.0],
+    "december": [-20657.0, 9069.0],
+    "january": [-20657.0, 9069.0]
+  },
+  "submission_guard_bounds": [-20657.0, 9069.0],
+
+  "blend": {
+    "inside_rule": "nnls",
+    "outside_rule": "flat",
+    "regime_split": "nm_late",
+    "why": "The desk's rule for four general members is flat unless a fitted vector beats flat in EVERY rotation; it does not (NNLS wins only december, by 0.001). N1-nmtail then earns 0.297-0.336 inside nm_late across the three rotations and exactly 0.000 in nm_bulk, so it is carried as a regime specialist. As a fifth general member it is worth -0.492 s."
+  },
+
+  "members": [
+    {
+      "name": "T-tailv2",
+      "producer": "experiments/exp-008-diversity/tail_ranking.py",
+      "args": [],
+      "env": {"PRC_THREADS": 6},
+      "seeds": [7],
+      "budget": "prc.tail_model declares n_estimators 500 (main) / 300 (noac head); no early stopping, so the multi-month budget rule does not apply - what this member needs instead is a scan to justify the constants.",
+      "oof": "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+      "ranking": "artifacts/exp-012/pred/T-tailv2-ranking.parquet",
+      "expected_sha256": "e9d97994642c9c3a95dbb5249a7e6f687709755411b4d633f3c9829ec783e3c0",
+      "deterministic": true,
+      "notes": "noac head pinned to v2 by NOAC_PIN in the producer. The OOF is exp-009's versioned v2 file, byte-identical to what these weights were fitted on."
+    },
+    {
+      "name": "C2-cat",
+      "producer": "experiments/exp-008-diversity/run.py",
+      "args": ["--submit", "--kind", "cat", "--name", "C2-d8p", "--depth", "8",
+               "--rounds-m6", "3625", "--rounds-m11", "5325"],
+      "cwd": "experiments/exp-008-diversity",
+      "env": {"PRC_THREADS": 2, "PRC_GPU": 1},
+      "seeds": [7],
+      "budget": "5325 rounds from a single early-stop month (2025-11), rescaled by 12/11 to 5809. NOT compliant with the multi-month budget rule; bringing it into compliance costs about 1.3 GPU-hours.",
+      "oof": "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+      "ranking": "artifacts/exp-008/pred/C2-d8p-ranking.parquet",
+      "expected_sha256": "48acb7e7cba9f2135239246466a56040a0b756ae439b9983031997f0bdf3ae5c",
+      "deterministic": true,
+      "notes": "The only GPU member. GPU 1 per docs/COMPUTE.md compute allocation, which counts 2 feeding CPU threads against this lane's cap."
+    },
+    {
+      "name": "L2-hub",
+      "producer": "experiments/exp-008-diversity/run.py",
+      "args": ["--submit", "--kind", "lgb", "--name", "L2-hub", "--variant", "plain",
+               "--huber-delta", "1200", "--rounds-m6", "3225", "--rounds-m11", "2100"],
+      "cwd": "experiments/exp-008-diversity",
+      "env": {"PRC_THREADS": 6},
+      "seeds": [7],
+      "budget": "2100 rounds from a single early-stop month (2025-11), rescaled by 12/11 to 2291. Not compliant by method but VALIDATED by measurement: the patience-900 alternative of 8725 rounds scores 314.41 on july_loo against this arm's 310.84, so the count is right even though the instrument that drew it is the disfavoured one.",
+      "oof": "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet",
+      "ranking": "artifacts/exp-008/pred/L2-hub-ranking.parquet",
+      "expected_sha256": "8da562fc1b6590cc9f58e5b8fffa8a940f3b3928beaac7becf7ee497f9432d83",
+      "deterministic": true
+    },
+    {
+      "name": "D1-winter",
+      "producer": "experiments/exp-012-blend2/winter_arm.py",
+      "args": ["--name", "D1-winter", "--submit", "--seeds", "7,107,207"],
+      "cwd": "experiments/exp-012-blend2",
+      "env": {"PRC_THREADS": 6},
+      "seeds": [7, 107, 207],
+      "budget": "150 rounds, drawn under the multi-month budget rule: per-month optima 2025-07 109, 2025-01 129, 2025-11 142, median 129, relative spread 0.256 (inside the 0.5 threshold so the median applies), rescaled by the mean held fraction. The single-slice instrument it replaced drew 165.",
+      "oof": "experiments/exp-007-winter/oof/d1-ds-s7-{fold}.parquet",
+      "ranking": "artifacts/exp-012/pred/D1-winter-ranking.parquet",
+      "expected_sha256": "c404b684d2b7a27b6878496d0e5a5acb46d46ebe8120d86646ecd215ccf9d2df",
+      "deterministic": false,
+      "nondeterminism": "linear_tree=True, which LightGBM's deterministic=True does not cover across thread counts. Measured: the same seed at the same thread count drew 148 rounds on one run and 186 on another and scored 307.45 against 311.30 on july_loo, against a seed-to-seed spread of 3.7 s on the same fold. The blend is insensitive to it - a 0.77 s change in this member moves the board estimate 0.014 s.",
+      "notes": "The OOF is exp-007's single-seed arm while the served member is a three-seed twelve-month bag; that mismatch is measured at 0.014 s and disclosed rather than assumed away. UNDER REPAIR: the robustness audit found this member carries the full unbounded 25-column day-state block."
+    },
+    {
+      "name": "N1-nmtail",
+      "producer": "experiments/exp-012-blend2/nmtail_submit.py",
+      "args": [],
+      "cwd": "experiments/exp-012-blend2",
+      "env": {"PRC_THREADS": 6},
+      "seeds": [7, 107, 207],
+      "budget": "prc.nmtail declares n_estimators 900 with no early stopping, so the multi-month budget rule does not apply; what it needs instead is a scan to justify the constant.",
+      "oof": "experiments/exp-010-nmtail/oof/nmtail-phi_{fold}.parquet",
+      "ranking": "artifacts/exp-012/pred/N1-nmtail-ranking.parquet",
+      "expected_sha256": "772a2511b298570c2be36466e3a4f02c36fe83acde7b8fec0eb269c66285a96c",
+      "deterministic": true,
+      "notes": "Predicts NM-joined departures only; y_pred is null on 5,290 non-NM ranking rows. prc.blend VERSION 5 permits that ONLY because this member's weight outside nm_late is exactly 0.000, and verifies it rather than trusting it."
+    }
+  ],
+
+  "output": "submissions/candidates/exp-012-blend-2.parquet",
+  "expected_sha256": "5c57799954cbf0b5df0aff249b758a8d836ce71a91d8836b005e24bb869f8579",
+  "expected_board_estimate": 318.017,
+  "manifest": "experiments/exp-015-release/MANIFEST-blend-2.md"
+}

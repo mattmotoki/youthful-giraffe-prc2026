@@ -1,0 +1,39 @@
+{
+ "member": "T-tailv2",
+ "weight": 0.121,
+ "synthetic": false,
+ "git_commit": "5717971ceb41ce5173f695c3c1d65df31a496d62",
+ "python": "3.12.13",
+ "versions": {
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "pyarrow": "24.0.0",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.10"
+ },
+ "gpu": "none (CPU kernel)",
+ "threads": 4,
+ "env_overrides": {},
+ "cpu_count": 4,
+ "mem_total_gb": 31.3,
+ "peak_gpu_mib": 0,
+ "peak_host_used_gb": 6.79,
+ "steps": [
+  {
+   "label": "member T-tailv2",
+   "cmd": "experiments/exp-008-diversity/tail_ranking.py",
+   "cwd": ".",
+   "rc": 0,
+   "wall_s": 463.2,
+   "child_maxrss_gb": 6.72,
+   "stdout_tail": "[tail] train (4167797, 31) loaded in 10s (noac head pinned to v2)\n[tail] fitted at 428s\n[tail] 2026-01: 152719 rows at 445s\n[tail] 2026-07: 192122 rows at 460s\n[tail] wrote artifacts/exp-012/pred/T-tailv2-ranking.parquet rows=344841 sha256=e9d97994642c9c3a95dbb5249a7e6f687709755411b4d633f3c9829ec783e3c0 in 460s\n",
+   "stderr_tail": ""
+  }
+ ],
+ "collected": {
+  "artifacts/exp-012/pred/T-tailv2-ranking.parquet": {
+   "bytes": 4707333,
+   "as": "T-tailv2--T-tailv2-ranking.parquet"
+  }
+ }
+}

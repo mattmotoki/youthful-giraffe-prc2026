@@ -1,0 +1,270 @@
+{
+ "what": "\u00a77bl: a per-class stacker, registered before the fit",
+ "names": [
+  "T-tailv4",
+  "C2-cat",
+  "L2-hub8725",
+  "D1-winter",
+  "F1-fresh",
+  "V3-allin",
+  "N1-nmtail"
+ ],
+ "fitted_classes": [
+  "nm_bulk",
+  "nm_late",
+  "nonm"
+ ],
+ "held_class": "noac",
+ "held_rule": "exp-033: no noac row moves",
+ "seeds": [
+  7,
+  107,
+  207,
+  307,
+  407
+ ],
+ "rounds": 300,
+ "threads": 2,
+ "instrument": {
+  "july_loo": {
+   "anchor_rmse": 286.3274,
+   "published": 286.3274,
+   "delta": 1.2e-05
+  },
+  "december": {
+   "anchor_rmse": 207.0083,
+   "published": 207.0083,
+   "delta": 4e-06
+  },
+  "january": {
+   "anchor_rmse": 339.0173,
+   "published": 339.0173,
+   "delta": 3.5e-05
+  }
+ },
+ "folds": {
+  "july_loo": {
+   "anchor": 286.3274,
+   "published": 286.3274,
+   "global": 285.2029,
+   "perclass": 285.629,
+   "nnls": 287.7045,
+   "gain_vs_global": -0.4261,
+   "gain_vs_published": 0.6984,
+   "noac_max_move": 0.0,
+   "by_class": {
+    "global": {
+     "nm_bulk": {
+      "n": 172270,
+      "rmse": 208.4312
+     },
+     "nm_late": {
+      "n": 14509,
+      "rmse": 460.4623
+     },
+     "nonm": {
+      "n": 3595,
+      "rmse": 531.777
+     },
+     "noac": {
+      "n": 339,
+      "rmse": 3407.3545
+     }
+    },
+    "perclass": {
+     "nm_bulk": {
+      "n": 172270,
+      "rmse": 208.3753
+     },
+     "nm_late": {
+      "n": 14509,
+      "rmse": 463.3357
+     },
+     "nonm": {
+      "n": 3595,
+      "rmse": 534.8762
+     },
+     "noac": {
+      "n": 339,
+      "rmse": 3407.3545
+     }
+    },
+    "nnls": {
+     "nm_bulk": {
+      "n": 172270,
+      "rmse": 208.5859
+     },
+     "nm_late": {
+      "n": 14509,
+      "rmse": 464.2589
+     },
+     "nonm": {
+      "n": 3595,
+      "rmse": 584.4289
+     },
+     "noac": {
+      "n": 339,
+      "rmse": 3407.3545
+     }
+    }
+   },
+   "nm_bulk_move": 0.0559,
+   "falsifier_nm_bulk_ok": true,
+   "falsifier_noac_ok": true,
+   "vector": {
+    "path": "experiments/exp-047-queue/oof/perclass--july_loo.parquet",
+    "rows": 190713,
+    "sha256": "6193e5bf9065424e43b155a43bd2981b9d90f46b1739720d927c36a574970c70"
+   }
+  },
+  "december": {
+   "anchor": 207.0083,
+   "published": 207.0083,
+   "global": 205.6118,
+   "perclass": 205.6773,
+   "nnls": 206.9653,
+   "gain_vs_global": -0.0654,
+   "gain_vs_published": 1.331,
+   "noac_max_move": 0.0,
+   "by_class": {
+    "global": {
+     "nm_bulk": {
+      "n": 158386,
+      "rmse": 184.6327
+     },
+     "nm_late": {
+      "n": 5648,
+      "rmse": 395.0447
+     },
+     "nonm": {
+      "n": 1554,
+      "rmse": 483.8304
+     },
+     "noac": {
+      "n": 89,
+      "rmse": 2010.4588
+     }
+    },
+    "perclass": {
+     "nm_bulk": {
+      "n": 158386,
+      "rmse": 184.4719
+     },
+     "nm_late": {
+      "n": 5648,
+      "rmse": 396.5508
+     },
+     "nonm": {
+      "n": 1554,
+      "rmse": 488.5484
+     },
+     "noac": {
+      "n": 89,
+      "rmse": 2010.4588
+     }
+    },
+    "nnls": {
+     "nm_bulk": {
+      "n": 158386,
+      "rmse": 184.5653
+     },
+     "nm_late": {
+      "n": 5648,
+      "rmse": 396.5887
+     },
+     "nonm": {
+      "n": 1554,
+      "rmse": 540.1093
+     },
+     "noac": {
+      "n": 89,
+      "rmse": 2010.4588
+     }
+    }
+   },
+   "nm_bulk_move": 0.1608,
+   "falsifier_nm_bulk_ok": true,
+   "falsifier_noac_ok": true,
+   "vector": {
+    "path": "experiments/exp-047-queue/oof/perclass--december.parquet",
+    "rows": 165677,
+    "sha256": "0ea8a96896f6610cb7f3b7c0abce9c636a841a031d76a2300f31a067d41d3ac3"
+   }
+  },
+  "january": {
+   "anchor": 339.0173,
+   "published": 339.0173,
+   "global": 338.3816,
+   "perclass": 338.3154,
+   "nnls": 339.5365,
+   "gain_vs_global": 0.0662,
+   "gain_vs_published": 0.7019,
+   "noac_max_move": 0.0,
+   "by_class": {
+    "global": {
+     "nm_bulk": {
+      "n": 147691,
+      "rmse": 187.7696
+     },
+     "nm_late": {
+      "n": 4583,
+      "rmse": 436.6362
+     },
+     "nonm": {
+      "n": 1369,
+      "rmse": 2801.2789
+     },
+     "noac": {
+      "n": 63,
+      "rmse": 3509.4763
+     }
+    },
+    "perclass": {
+     "nm_bulk": {
+      "n": 147691,
+      "rmse": 187.8372
+     },
+     "nm_late": {
+      "n": 4583,
+      "rmse": 435.2074
+     },
+     "nonm": {
+      "n": 1369,
+      "rmse": 2800.6367
+     },
+     "noac": {
+      "n": 63,
+      "rmse": 3509.4763
+     }
+    },
+    "nnls": {
+     "nm_bulk": {
+      "n": 147691,
+      "rmse": 188.1278
+     },
+     "nm_late": {
+      "n": 4583,
+      "rmse": 439.2008
+     },
+     "nonm": {
+      "n": 1369,
+      "rmse": 2813.0092
+     },
+     "noac": {
+      "n": 63,
+      "rmse": 3509.4763
+     }
+    }
+   },
+   "nm_bulk_move": -0.0676,
+   "falsifier_nm_bulk_ok": true,
+   "falsifier_noac_ok": true,
+   "vector": {
+    "path": "experiments/exp-047-queue/oof/perclass--january.parquet",
+    "rows": 153706,
+    "sha256": "99d0e2b9988b799f40ce5b9bc053b33344592a1f56945567f32990d6932f6e22"
+   }
+  }
+ },
+ "clock_s": 84.2
+}

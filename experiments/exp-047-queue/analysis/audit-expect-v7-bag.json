@@ -1,0 +1,156 @@
+{
+ "what": "candidate v7 = v18's bytes + the BAG (K = 5, 255 leaves) applied EVERYWHERE, LFPG included, served as youthful-giraffe_v19.parquet.  Desk ruling confirmed with surfacefit 2026-09-09: v6 is not uploaded separately (the upload rule's ~0.1 s noise floor) and v7 is bag_free -- the bag with NOTHING held.  v7's LFPG rows therefore carry the BAG's values, not the rider's, and v7 is NOT byte-identical to v6 at LFPG.  Claims from exp-046 analysis/bag-arm.json::prices.bag_free (vector work/d-bag5-255-free.npz).",
+ "sources": {
+  "increment": "experiments/exp-046-surfacefit/analysis/bag-arm.json::prices.bag_free (vector work/d-bag5-255-free.npz) -- the bag everywhere.  surfacefit is patching that block's two LABEL strings in place; the numbers are untouched and this file checks the numbers.",
+  "cross_check": "analysis/audit-expect-v7-bag-held.json prices the BAG ALONE with LFPG held (bag_held).  The difference between the two reads is the BAG's own LFPG contribution, not the rider's.",
+  "floor_check": "this lane's 7au: the bag is refits, so every fold must clear 7ar's placebo envelope; every lower bound does",
+  "pins": "experiments/exp-046-surfacefit/analysis/fold-population.json",
+  "bytes": "the desk's ruling; the candidate sha and the v21 occupancy counts are added when the desk sends the serve"
+ },
+ "how_to_run": "OMP_NUM_THREADS=2 ../../.venv/bin/python work/audit.py --head-npz ../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz --arm-npz ../exp-046-surfacefit/work/d-bag5-255-free.npz --pins ../exp-046-surfacefit/analysis/fold-population.json --class-vector ../../artifacts/exp-046/class/{month}-v21.parquet --previous-class-vector ../../artifacts/exp-046/class/{month}-v20.parquet --candidate ../../submissions/candidates/exp-046-surface-v7.parquet --previous ../../submissions/uploaded/youthful-giraffe_v18.parquet --baseline ../../submissions/uploaded/youthful-giraffe_v17.parquet --hold '' --changed-expected-at LFPG --expect analysis/audit-expect-v7-bag.json --out analysis/audit-v7-bag.json",
+ "why_the_hold_is_empty": "v7 is the bag everywhere, so nothing is held.  --hold LFPG would zero the bag's own LFPG rows and price the bag-alone component instead, which is the cross-check file, not this one.",
+ "expect": {
+  "increment.per_fold.july_loo.mse_gain_s2": {
+   "value": 107.34850405601257,
+   "tol": 1e-09
+  },
+  "increment.per_fold.december.mse_gain_s2": {
+   "value": 226.07966091333805,
+   "tol": 1e-09
+  },
+  "increment.per_fold.january.mse_gain_s2": {
+   "value": 162.39217339106762,
+   "tol": 1e-09
+  },
+  "increment.per_fold.july_loo.ci95_envelope_over_the_seeds": {
+   "inside": [
+    73.91750688516689,
+    138.41347329407893
+   ],
+   "tol": 0.0
+  },
+  "increment.per_fold.december.ci95_envelope_over_the_seeds": {
+   "inside": [
+    175.42616833386734,
+    285.88857217081534
+   ],
+   "tol": 0.0
+  },
+  "increment.per_fold.january.ci95_envelope_over_the_seeds": {
+   "inside": [
+    124.29492922516913,
+    207.626509099704
+   ],
+   "tol": 0.0
+  },
+  "increment.per_fold.july_loo.lit": true,
+  "increment.per_fold.december.lit": true,
+  "increment.per_fold.january.lit": true,
+  "increment.lit_rule.dark_folds": [],
+  "increment.lit_rule.every_lit_fold_clears_on_every_seed": true,
+  "increment.lit_rule.every_fold_clears_including_dark": true,
+  "increment.board.all_row_gain_s": {
+   "value": 0.22024957054372862,
+   "tol": 1e-09
+  },
+  "increment.board.clean_gain_s": {
+   "value": 0.2689649724647438,
+   "tol": 1e-09
+  },
+  "increment.board.all_row_ci95_envelope_over_the_seeds": {
+   "inside": [
+    0.16205881809495679,
+    0.2972785606387432
+   ],
+   "tol": 0.0
+  },
+  "increment.population.july_loo.rows_moved": 88420,
+  "increment.population.december.rows_moved": 102186,
+  "increment.population.january.rows_moved": 69839,
+  "increment.population.july_loo.rows": 190713,
+  "increment.population.december.rows": 165677,
+  "increment.population.january.rows": 153706,
+  "increment.population.july_loo.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.december.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.january.rows_returned_to_the_base_by_the_hold": 0,
+  "pins.by_fold.july_loo.their_airport_days": 296,
+  "pins.by_fold.december.their_airport_days": 297,
+  "pins.by_fold.january.their_airport_days": 218,
+  "pins.by_fold.july_loo.days_agree": true,
+  "pins.by_fold.december.days_agree": true,
+  "pins.by_fold.january.days_agree": true,
+  "bytes.template.row_order_is_the_template_order": true,
+  "bytes.template.previous_row_order_is_the_template_order": true,
+  "bytes.template.all_finite": true,
+  "bytes.template.rows": 344841,
+  "bytes.template.duplicate_keys": 0,
+  "bytes.template.rows_at_or_below_zero": 0,
+  "bytes.moved.changed_rows_at_the_expected_airports": 2250,
+  "bytes.class.changed_is_a_subset_of_occupied": true,
+  "bytes.class.changed_rows_outside_occupied": 0,
+  "bytes.class.rows_missing_for_a_template_key": 0,
+  "bytes.class.noac_rows_changed": 0,
+  "bytes.class.occupied_and_not_written": 0,
+  "bytes.class.written_and_not_occupied": 0,
+  "bytes.class.occupied_unwritten_rows_that_changed": 0,
+  "bytes.class_vs_previous.no_longer_occupied": 0,
+  "bytes.class.occupied_at_the_expected_airports": 2346,
+  "bytes.class.guard_held_at_the_expected_airports": 96,
+  "bytes.class.writable_at_the_expected_airports": 2250,
+  "bytes.candidate_sha256": "128db7c58881959eaa15ba8990c48f083cbe018a195014f943f87de6b8e6b0fb",
+  "bytes.class.occupied": 196256,
+  "bytes.class.guard_held": 1573,
+  "bytes.class_vs_previous.newly_occupied": 0
+ },
+ "notes_on_the_expectation": {
+  "the_changed_rows_are_two_populations_now": "v7 changes the occupied LFPG rows the bag writes AND the occupied non-LFPG rows the bag writes, so 7av's --changed-forbidden-at does not apply to this candidate and no outside-zero claim is made.  changed_rows_outside_the_expected_airports is the bag's non-LFPG population and is READ, not claimed, until the desk names it.",
+  "the_intervals_need_no_tolerance_here": "dry run 2026-09-09 on work/d-bag5-255-free.npz: all three fold intervals AND the board interval lie inside this lane's envelope over eleven bootstrap seeds at tol 0 -- july_loo [73.3240, 142.7207], december [172.3531, 286.7701], january [121.0908, 208.3518], board [0.156145, 0.306028].  The 3.0 s2/row tolerance 7av declared applies only to the HELD cross-check, where december's claimed top sat 1.3042 above the envelope.  This file carries tol 0 on every interval and 1e-9 on every point estimate.",
+  "the_previous_file_is_v18_not_v6": "the ruling makes v7 the next UPLOAD, so the previous upload is youthful-giraffe_v18.parquet and the baseline (for the revert check) is v17.  v6 stays a candidate on disk and is never a link in this chain.",
+  "missing_is_not_disagree": "the byte half cannot be answered until the desk serves the candidate.  Those claims read MISSING on the dry run, reported in not_answered_on_this_run, apart from disagree.",
+  "why_the_LFPG_claim_is_still_2250_under_the_corrected_composition": "measured on v20 before the serve, 2026-09-09: LFPG carries 2,346 occupied rows, of which exactly 96 are guard_held_by_exp_046, leaving 2,250 writable.  v6's rider changed 2,250 LFPG rows and left 96 unchanged, and those 96 are EXACTLY the 96 guard-held rows -- so what held them was the GUARD, not anything about the rider.  v7 runs over the same guard-995 head, so the same 96 stay at the base and the same 2,250 are writable.  The claim's value is unchanged by the composition correction; its REASON is.  It is no longer 'the rider's rows' -- it is occupied-minus-guard-held at LFPG, and the two component counts are claimed beside it so a miss says which half moved.  Condition: if v21 re-emits a different LFPG guard-held count, this claim moves with it and is not a defect.",
+  "no_claim_ties_v7_to_v6_at_LFPG": "v7's LFPG bytes are the bag's, not the rider's, so nothing in this file asserts LFPG equality with v6 or with the rider's values.  The only LFPG claims are POPULATION claims: how many rows changed, how many were occupied, how many the guard held.",
+  "january_is_identical_in_both_files": "january's gain and rows_moved are the same in both files because the bag moves no january LFPG row on the fold side (read E found january dark for LFPG at all).  july_loo 84.939 -> 107.349 and december 176.321 -> 226.080 are the BAG's own LFPG contribution on the two folds that carry LFPG rows: +22.409 and +49.758 s2/row."
+ },
+ "to_be_added_when_the_desk_sends_the_serve": "added 2026-09-09 at the serve (desk 4b06a55): candidate sha 128db7c5, class v21 shas e1e8e1b9 / 2dc52ccc with the class UNCHANGED from v20 (occupied 196,256, guard_held 1,573), so newly_occupied and no_longer_occupied are both claimed 0.  rows_changed and changed_rows_outside_the_expected_airports stay READ, not claimed: the desk has not named the bag's non-LFPG population.",
+ "the_floor_check_this_candidate_must_pass": {
+  "why": "the bag IS refits, so 7ar's placebo envelope is the interpretation floor",
+  "placebo_envelope_s2_per_row": {
+   "july_loo": [
+    -81.25,
+    -48.3
+   ],
+   "december": [
+    -25.25,
+    13.56
+   ],
+   "january": [
+    -24.4,
+    30.09
+   ]
+  },
+  "bag_and_rider_lower_bounds": {
+   "july_loo": 73.91750688516689,
+   "december": 175.42616833386734,
+   "january": 124.29492922516913
+  },
+  "clears_on_every_fold": true
+ },
+ "claims_pinned_to": {
+  "why": "surfacefit is repairing serve.fold_gate for UNHELD serves in round 8, and v7 is the first unheld serve.  If that repair re-prices the bag, every 1e-9 point-estimate claim in this file moves for a reason that is NOT a defect in the candidate.  The exact bytes the claims were read from are pinned here, so a re-emission is detected instead of being audited against silently: if a sha below has changed at the serve, this lane re-runs the dry run against the new figures and marks the affected claims PENDING first, as 7at did for the v20 vector.",
+  "read_at": "2026-09-09T09:25 UTC",
+  "exp-046 files, sha256": {
+   "analysis/bag-arm.json": "86b3e5970485f3967f73e84d100a0fdc5d090a6d218dd179e95136b335fce189",
+   "work/d-bag5-255-free.npz": "c6d1f5b6f366c7f885c3f3813ae37e46b28997ee8f0d919ba61fa55000c854ac",
+   "work/d-bag5-255-guard995.npz": "5aabdb32721928bb9166244ed17651b50110da1012a6cd34faf7f4e43c1217a1",
+   "work/d-bundle-ungated1299-guard995.npz": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684"
+  },
+  "mtimes": {
+   "analysis/bag-arm.json": "2026-09-09T09:00 UTC",
+   "work/d-bag5-255-free.npz": "2026-09-09T09:00 UTC",
+   "work/d-bag5-255-guard995.npz": "2026-09-09T09:00 UTC",
+   "work/d-bundle-ungated1299-guard995.npz": "2026-09-09T06:56 UTC"
+  },
+  "the arm this file prices": "work/d-bag5-255-free.npz",
+  "one pin is expected to move": "surfacefit is patching bag-arm.json's two label strings in place, so its sha256 WILL change while the numbers do not.  At the serve this lane checks that file by its NUMBERS (the five figures claimed here at 1e-9), not by its sha; the three npz pins must still match byte for byte."
+ }
+}

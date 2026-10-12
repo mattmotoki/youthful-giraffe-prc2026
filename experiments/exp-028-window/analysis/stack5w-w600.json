@@ -1,0 +1,61 @@
+{
+  "win": 600.0,
+  "threads": 2,
+  "lightgbm": "4.7.0",
+  "variants": [
+    "depx"
+  ],
+  "block_cols": {
+    "depx": 50
+  },
+  "reproduces_stack5": {
+    "july_loo": 0.0,
+    "december": 0.0,
+    "january": -0.0
+  },
+  "clean": {
+    "blend-5 (anchor)": {
+      "july_loo": 286.3274,
+      "december": 207.0083,
+      "january": 220.2052
+    },
+    "stack-5 full": {
+      "july_loo": 285.808,
+      "december": 205.7799,
+      "january": 219.0768
+    },
+    "stack-5 keep-noac": {
+      "july_loo": 285.2029,
+      "december": 205.6118,
+      "january": 219.1303
+    },
+    "stack-5+depx full": {
+      "july_loo": 285.282,
+      "december": 205.8689,
+      "january": 218.8556
+    },
+    "stack-5+depx keep-noac": {
+      "july_loo": 284.7219,
+      "december": 205.6534,
+      "january": 218.8166
+    }
+  },
+  "clean_board": {
+    "blend-5 (anchor)": 259.1339,
+    "stack-5 full": 258.3898,
+    "stack-5 keep-noac": 258.0372,
+    "stack-5+depx full": 257.9826,
+    "stack-5+depx keep-noac": 257.623
+  },
+  "gain_per_fold": {
+    "depx": {
+      "july_loo": 0.4811,
+      "december": -0.0416,
+      "january": 0.3137
+    }
+  },
+  "three_folds": {
+    "depx": false
+  },
+  "wall_s": 118.8
+}

@@ -1,0 +1,25 @@
+{
+ "rows_moved": 72943,
+ "rows_new_to_this_lane": 9081,
+ "rows_carried_from_v14": 63862,
+ "by_airport": {
+  "EDDF": {
+   "rows": 353,
+   "sum_d2_s2": 224376.6,
+   "rms_move_s": 25.212,
+   "board_bound_if_pure_noise_s": 0.0013
+  },
+  "LEMD": {
+   "rows": 8728,
+   "sum_d2_s2": 9189731.4,
+   "rms_move_s": 32.448,
+   "board_bound_if_pure_noise_s": 0.054
+  }
+ },
+ "note": "FALLBACK round 5, item 4. `increment16.py` treats the WHOLE current EDDF/reached cell as carried by v16, but the matcher rebuild moved rows across the reach line, so some EDDF rows the file writes were held at v12 in v14 and in v16 and are additions the increment did not price. The bound is what those rows could cost if their correction were pure noise: sqrt(sum d^2 / 344,841). An earlier draft of this file used sqrt(sum d^2 / rows), which is the RMS contribution in squared seconds and not a board figure; the bound below is in the board's own units.",
+ "board": {
+  "v16_board": 246.7053,
+  "ranking_rows": 344841,
+  "bound_formula": "sqrt(board^2 + sum d^2 / rows) - board: what the board would LOSE if those rows' corrections carried no signal at all"
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "SB-L0lin-dec",
+  "folds": {
+    "december": {
+      "rmse": 223.68331167095639,
+      "rmse_bulk": 206.06013195943314,
+      "rmse_tail": 2202.252474163359,
+      "rmse_no_nm": 876.7800448623148,
+      "rmse_noac": 2591.7718914694433,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "n_noac": 89,
+      "sse_share_tail": 0.15270221288728728,
+      "sse_share_no_nm": 0.1523664985665369,
+      "sse_share_noac": 0.07211974257065108,
+      "bias": 3.434184890024188,
+      "fold": "december",
+      "rounds": 350,
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "seconds": 981,
+      "oof": "experiments/exp-008-diversity/oof/SB-L0lin-dec-december.parquet",
+      "argv": "--kind lgb --name SB-L0lin-dec --variant lin --seed-bag 5 --folds december --rounds-m6 175 --rounds-m11 350"
+    }
+  },
+  "argv": "--kind lgb --name SB-L0lin-dec --variant lin --seed-bag 5 --folds december --rounds-m6 175 --rounds-m11 350",
+  "argv_history": [
+    "--kind lgb --name SB-L0lin-dec --variant lin --seed-bag 5 --folds december --rounds-m6 175 --rounds-m11 350"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 8,
+  "gpu": "0"
+}

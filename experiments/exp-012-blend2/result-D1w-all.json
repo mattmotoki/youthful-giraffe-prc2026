@@ -1,0 +1,127 @@
+{
+  "name": "D1w-all",
+  "folds": {
+    "july_loo": {
+      "rmse": 307.61303485792945,
+      "rmse_bulk": 265.9348047298756,
+      "rmse_tail": 2649.575508568883,
+      "rmse_no_nm": 1178.4036113595976,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.2551917758602386,
+      "sse_share_no_nm": 0.3027141475646212,
+      "bias": 5.797277661152871,
+      "rmse_noac": 3537.9390572228426,
+      "n_noac": 339,
+      "sse_share_noac": 0.23513139850564835,
+      "fold": "july_loo",
+      "seeds": [
+        7
+      ],
+      "best_iteration": 72,
+      "refit_rounds": 85,
+      "n_features": 121,
+      "seconds": 768,
+      "raw_below_floor": 0,
+      "guard_touched": 0,
+      "guard_bounds": [
+        -20657.0,
+        9069.0
+      ],
+      "per_seed_rmse": [
+        307.61303485792945
+      ],
+      "oof": "experiments/exp-012-blend2/oof/D1w-all-july_loo.parquet",
+      "ds_columns": "all",
+      "ds_cells_clipped": 3229,
+      "clipped": {
+        "rmse": 307.6176012935827,
+        "rmse_bulk": 265.9369462337032,
+        "rmse_tail": 2649.6673634055082,
+        "rmse_no_nm": 1178.403611202598,
+        "n": 190713,
+        "n_tail": 656,
+        "n_no_nm": 3934,
+        "sse_share_tail": 0.2552018931513052,
+        "sse_share_no_nm": 0.30270516025819605,
+        "bias": 5.801163820375959,
+        "rmse_noac": 3537.9390572228426,
+        "n_noac": 339,
+        "sse_share_noac": 0.2351244177319381,
+        "oof": "experiments/exp-012-blend2/oof/D1w-all-clip-july_loo.parquet",
+        "raw_below_floor": 0,
+        "guard_touched": 0,
+        "guard_bounds": [
+          -20657.0,
+          9069.0
+        ]
+      }
+    },
+    "january": {
+      "rmse": 354.1079494997439,
+      "rmse_bulk": 222.00823139657513,
+      "rmse_tail": 6003.532443492496,
+      "rmse_no_nm": 2861.2341049596153,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "sse_share_tail": 0.6077639151392403,
+      "sse_share_no_nm": 0.6082577208453402,
+      "bias": 6.281599358279671,
+      "rmse_noac": 3790.2290991727427,
+      "n_noac": 63,
+      "sse_share_noac": 0.04695796835185263,
+      "fold": "january",
+      "seeds": [
+        7
+      ],
+      "best_iteration": 235,
+      "refit_rounds": 276,
+      "n_features": 121,
+      "seconds": 925,
+      "raw_below_floor": 0,
+      "guard_touched": 0,
+      "guard_bounds": [
+        -20657.0,
+        9069.0
+      ],
+      "per_seed_rmse": [
+        354.1079494997439
+      ],
+      "oof": "experiments/exp-012-blend2/oof/D1w-all-january.parquet",
+      "ds_columns": "all",
+      "ds_cells_clipped": 4640,
+      "clipped": {
+        "rmse": 354.09915423038177,
+        "rmse_bulk": 222.00931853963908,
+        "rmse_tail": 6003.268117988999,
+        "rmse_no_nm": 2861.2335773623367,
+        "n": 153706,
+        "n_tail": 325,
+        "n_no_nm": 1432,
+        "sse_share_tail": 0.6077405881850174,
+        "sse_share_no_nm": 0.6082877132316762,
+        "bias": 6.315276347516076,
+        "rmse_noac": 3790.2290991727427,
+        "n_noac": 63,
+        "sse_share_noac": 0.046960301105854745,
+        "oof": "experiments/exp-012-blend2/oof/D1w-all-clip-january.parquet",
+        "raw_below_floor": 0,
+        "guard_touched": 0,
+        "guard_bounds": [
+          -20657.0,
+          9069.0
+        ]
+      }
+    }
+  },
+  "provenance": {
+    "modules": "surface[VERSION=3,BUCKET=1200.0,UNIMPEDED_Q=0.2] phi[VERSION=3,phidef=rows/150/100] lirf[VERSION=2] tail[VERSION=1.3.0] day_state[VERSION=1]",
+    "threads": 6,
+    "linear_tree": true,
+    "es_rounds": 100,
+    "pipeline": "exp-007-winter/code/pipeline (git 19cd199)"
+  },
+  "argv": "--name D1w-all --folds july_loo,january --seeds 7 --clip"
+}

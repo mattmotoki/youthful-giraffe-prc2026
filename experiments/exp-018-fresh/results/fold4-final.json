@@ -1,0 +1,49 @@
+{
+ "tag": "fold4-final",
+ "mechanism": "final: base=MVT-AOBT/te-median, residual clipped +/-6000, LGBM+CatBoost-GPU blend, SCHED-anchor posterior head, ghost mixbase head",
+ "rounds": 1200,
+ "clip_z": 6000.0,
+ "params": {},
+ "seeds": 1,
+ "ghost_mode": "mixbase",
+ "main_model": "both",
+ "exact_rounds": 300,
+ "folds": {
+  "july": {
+   "rmse": 305.1172252270169,
+   "rmse_lo": 264.17579694397597,
+   "rmse_hi": 2616.4515419664476,
+   "n": 190713,
+   "n_hi": 656,
+   "secs": 435.2,
+   "n_train": 956460
+  },
+  "december": {
+   "rmse": 207.66282900302863,
+   "rmse_lo": 194.13343534334308,
+   "rmse_hi": 1867.7199389413006,
+   "n": 165677,
+   "n_hi": 261,
+   "secs": 952.7,
+   "n_train": 1829235
+  },
+  "january": {
+   "rmse": 343.0557869368614,
+   "rmse_lo": 199.76503665421717,
+   "rmse_hi": 6068.432080742124,
+   "n": 153706,
+   "n_hi": 325,
+   "secs": 817.8,
+   "n_train": 1840608
+  },
+  "july_loo": {
+   "rmse": 293.6499939114469,
+   "rmse_lo": 251.97590376888283,
+   "rmse_hi": 2583.416602961949,
+   "n": 190713,
+   "n_hi": 656,
+   "secs": 779.9,
+   "n_train": 1804320
+  }
+ }
+}

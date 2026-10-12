@@ -1,0 +1,25 @@
+{
+ "tag": "k2c-local-wide",
+ "mechanism": "",
+ "rounds": 400,
+ "clip_z": null,
+ "params": {
+  "num_threads": 3
+ },
+ "seeds": 1,
+ "seed_start": 0,
+ "ghost_mode": "mixbase",
+ "main_model": "lgb",
+ "exact_rounds": 300,
+ "folds": {
+  "july": {
+   "rmse": 310.96943450681044,
+   "rmse_lo": 268.9912464585509,
+   "rmse_hi": 2673.9788710069397,
+   "n": 190713,
+   "n_hi": 656,
+   "secs": 617.4,
+   "n_train": 956460
+  }
+ }
+}

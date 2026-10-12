@@ -1,0 +1,108 @@
+{
+  "name": "L3r-monores",
+  "folds": {
+    "july": {
+      "rmse": 331.56437611306256,
+      "rmse_bulk": 290.84749825452883,
+      "rmse_tail": 2729.878945203679,
+      "rmse_no_nm": 1397.8801479907322,
+      "rmse_noac": 4035.9150942134997,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.23317103123757005,
+      "sse_share_no_nm": 0.366655501983035,
+      "sse_share_noac": 0.26337085687218553,
+      "bias": 3.1935180570068247,
+      "fold": "july",
+      "rounds": 350,
+      "seeds": [
+        7
+      ],
+      "seconds": 210,
+      "oof": "experiments/exp-008-diversity/oof/L3r-monores-july.parquet",
+      "argv": "--kind lgb --name L3r-monores --variant plain --monotone --rounds-m6 350 --rounds-m11 300"
+    },
+    "july_loo": {
+      "rmse": 315.3137088276501,
+      "rmse_bulk": 276.6433816232648,
+      "rmse_tail": 2594.5091066762293,
+      "rmse_no_nm": 1308.3984018371561,
+      "rmse_noac": 3880.0599309161967,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.23288860235985268,
+      "sse_share_no_nm": 0.3551798846974127,
+      "sse_share_noac": 0.26916002625043406,
+      "bias": 2.62015709532601,
+      "fold": "july_loo",
+      "rounds": 300,
+      "seeds": [
+        7
+      ],
+      "seconds": 234,
+      "oof": "experiments/exp-008-diversity/oof/L3r-monores-july_loo.parquet",
+      "argv": "--kind lgb --name L3r-monores --variant plain --monotone --rounds-m6 350 --rounds-m11 300"
+    },
+    "december": {
+      "rmse": 226.23558307483643,
+      "rmse_bulk": 208.28837556133476,
+      "rmse_tail": 2234.657300420006,
+      "rmse_no_nm": 844.7044875540282,
+      "rmse_noac": 2586.9007354164673,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "n_noac": 89,
+      "sse_share_tail": 0.15370157584396182,
+      "sse_share_no_nm": 0.13824935629283894,
+      "sse_share_noac": 0.07023692452687397,
+      "bias": -0.21059285624531968,
+      "fold": "december",
+      "rounds": 300,
+      "seeds": [
+        7
+      ],
+      "seconds": 319,
+      "oof": "experiments/exp-008-diversity/oof/L3r-monores-december.parquet",
+      "argv": "--kind lgb --name L3r-monores --variant plain --monotone --rounds-m6 350 --rounds-m11 300"
+    },
+    "january": {
+      "rmse": 349.8059915743927,
+      "rmse_bulk": 215.55170513603983,
+      "rmse_tail": 5995.292031482208,
+      "rmse_no_nm": 2876.5927811792662,
+      "rmse_noac": 3625.4378425760915,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "n_noac": 63,
+      "sse_share_tail": 0.6210960072359888,
+      "sse_share_no_nm": 0.6300202110934925,
+      "sse_share_noac": 0.04402670342316285,
+      "bias": 3.447709065280136,
+      "fold": "january",
+      "rounds": 300,
+      "seeds": [
+        7
+      ],
+      "seconds": 282,
+      "oof": "experiments/exp-008-diversity/oof/L3r-monores-january.parquet",
+      "argv": "--kind lgb --name L3r-monores --variant plain --monotone --rounds-m6 350 --rounds-m11 300"
+    }
+  },
+  "argv": "--kind lgb --name L3r-monores --variant plain --monotone --rounds-m6 350 --rounds-m11 300",
+  "argv_history": [
+    "--kind lgb --name L3r-monores --variant plain --monotone --rounds-m6 350 --rounds-m11 300"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 16,
+  "gpu": "0"
+}

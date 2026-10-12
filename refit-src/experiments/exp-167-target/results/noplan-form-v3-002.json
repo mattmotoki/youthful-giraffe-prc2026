@@ -1,0 +1,130 @@
+{
+ "base_entry": "submissions/candidates/exp159-fold-F-HB1-w50-x.parquet",
+ "base_sha256": "a5572156bf548dd154eaab1448bf7eea5d173fbb5e233232c9670b9a0cbf10bd",
+ "bet_arm_file": {
+  "distance_of_each_arm_from_v3": {
+   "band": 1041.954200739935,
+   "levers": 1097.906927314847,
+   "zone": 2367.5875422794156
+  },
+  "file": "experiments/exp-167-target/candidates/noplan-bet-arm-002.parquet",
+  "note": "never an entry of its own; the desk decides the arm",
+  "rows": 7,
+  "sha256": "8a6e59a08480afa565301bccf8c0f94d5766cc59a80c3277b4f2d6616992dd01"
+ },
+ "c43_part_in_the_form": true,
+ "class_model_of_v3": "c44",
+ "code_sha256": {
+  "common.py": "02685d04eaafc0917ce9ca8a64be500fdef69c4f8b477efc3ef2d9cabf279496",
+  "noplan_form.py": "2c843ee17de6cecc1220549bc9e8970a3ab9f27121545e58758b05f7c3db2cfa",
+  "noplan_form_v2.py": "529f88ac2ceeef125bfc673a2d94a8950897613d6d5a29acf16c50cb24b225dd",
+  "noplan_form_v3.py": "9ad869fc428e780aa42fc61533c03016b90ad42c10d1973c180242fc2e87b744",
+  "noplan_form_v3_base.py": "7584c9a83f6d1c693a3282c4f9ca12878218dbf0ec00aae206420fd6198214f3"
+ },
+ "entry": {
+  "distance_from_base": 1910.8923160327063,
+  "file": "data/exp167/noplan-form-v3-002-entry.parquet",
+  "max_abs_change_s": 7795.161744781757,
+  "rows": 344841,
+  "rows_changed_from_base": 374,
+  "sha256": "abe2df77484234efcaa7e1ad316d9024052d6689826056182e8c6c8f8ae3faad"
+ },
+ "lines_from": "experiments/exp-167-target/results/noplan-form-v3-001.json",
+ "lines_sha256": "ba9648ffbc88799c4c2a3504abd8bbeaa3cf56cb37bb5e03eaae08d50f8d6165",
+ "rows_2026": {
+  "by_part": {
+   "c20": {
+    "changed": 12,
+    "distance from the base": 147.8607277763109,
+    "distance from v2": 0.1137301454872952,
+    "mean change, s": 289.7991127373848,
+    "rows": 21,
+    "rows changed from v2": 1
+   },
+   "c30": {
+    "changed": 46,
+    "distance from the base": 628.8119557503621,
+    "distance from v2": 0.0,
+    "mean change, s": -533.9948175450444,
+    "rows": 46,
+    "rows changed from v2": 0
+   },
+   "c32": {
+    "changed": 32,
+    "distance from the base": 259.48183611827943,
+    "distance from v2": 0.0,
+    "mean change, s": 581.1758258720497,
+    "rows": 32,
+    "rows changed from v2": 0
+   },
+   "c39": {
+    "changed": 36,
+    "distance from the base": 251.67343323612104,
+    "distance from v2": 0.0,
+    "mean change, s": 1206.2834074373184,
+    "rows": 36,
+    "rows changed from v2": 0
+   },
+   "c43": {
+    "changed": 30,
+    "distance from the base": 531.9298385226522,
+    "distance from v2": 431.84958472760513,
+    "mean change, s": -1262.3091429609049,
+    "rows": 30,
+    "rows changed from v2": 30
+   },
+   "c45": {
+    "changed": 9,
+    "distance from the base": 6.102551669283435,
+    "distance from v2": 22.678250081780558,
+    "mean change, s": 239.88827264545236,
+    "rows": 9,
+    "rows changed from v2": 6
+   },
+   "r1": {
+    "changed": 209,
+    "distance from the base": 85.03197295969734,
+    "distance from v2": 14.634082935871474,
+    "mean change, s": -22.862820122845488,
+    "rows": 209,
+    "rows changed from v2": 209
+   }
+  },
+  "cell": {
+   "break_even_share_over_v2": 0.359401552946665,
+   "distance_base_to_rule": 531.9298385226522,
+   "distance_v2_to_rule": 431.84958472760513,
+   "expected_gain_over_base_by_placeholder_share": {
+    "0.05": 622.0834928493373,
+    "0.1": 531.9298385226522,
+    "0.15": 441.77618419596683,
+    "0.25": 261.46887554259615,
+    "0.35": 81.1615668892257
+   },
+   "expected_gain_over_v2_by_placeholder_share": {
+    "0.05": 515.0891759756182,
+    "0.1": 431.84958472760513,
+    "0.15": 348.6099934795919,
+    "0.25": 182.1308109835654,
+    "0.35": 15.65162848753899
+   },
+   "in_the_served_form": true,
+   "rows": 30
+  },
+  "distance_from_base": 1910.8923160327063,
+  "distance_from_v2": 469.2756478907445,
+  "equal_to_the_lines_tag": {
+   "m_real": true,
+   "p": true,
+   "part": true,
+   "rows_with_a_value_that_does_not_depend_on_the_base_equal": true
+  },
+  "rows": 383,
+  "rows_changed_from_v2": 246
+ },
+ "rows_file": {
+  "file": "experiments/exp-167-target/candidates/noplan-form-v3-002.parquet",
+  "sha256": "6f9b805dc897e0cdf20cb9b0cf3a58ed0bbfca7e76ba221cad58d619df5de988"
+ },
+ "what": "exp-167 M25: the v3 form of the LIRF rows without a plan on another base (lines from the named result)"
+}

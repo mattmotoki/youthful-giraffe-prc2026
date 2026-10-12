@@ -1,0 +1,216 @@
+{
+  "against": "submissions/candidates/exp-046-surface-v2.parquet",
+  "against_sha256": "eabd824d925f15223db452557fe113e286ca8ce49302e8a97e79f060c0360ea1",
+  "candidate": "submissions/candidates/exp-046-surface-v3.parquet",
+  "candidate_sha256": "6f8368da9b8da818a726c7cc6cf20de6ff7777196f1e78d41015a8cda441fdf7",
+  "columns": {
+    "MVT_ID_mvt": "the ranking key",
+    "changed_by_v16": "the rows the shipped candidate actually moves off the file it is composed against (--against); a held airport is NOT moved, so this is narrower than served_by_exp_046, and on a candidate composed on a previous head it also carries the rows REVERTED to the price base, which this lane does not occupy",
+    "guard_held_by_exp_046": "occupied rows the tail guard returned to the price base, so this lane decided their value and the value is the base. Empty on an unguarded candidate. A later serve reads it to tell a guard-held row from a vector that disagrees with its file (round 5 FALLBACK, finding 6)",
+    "noac": "the exp-033 hold; these rows move in neither lane",
+    "obs_has_clock": "the class the desk named; the complement to serve is ~obs_has_clock",
+    "occupied_by_exp_046": "the rows this lane actually writes its own head on: served_by_exp_046 AND not held at the base. THIS is the column a later serve in either lane must complement -- `moved` includes rows this lane gives up (a revert), and `served_by_exp_046` includes rows it holds, so neither leaves every row owned exactly once",
+    "served_by_exp_046": "obs_has_clock & obs_taxi.notna() & ~noac (arms.served_class)",
+    "written_by_exp_046": "occupied AND this lane actually wrote a value here in THESE bytes: occupied_by_exp_046 minus the rows the class gained AFTER the candidate was built. Read this to ask what is in the file; read occupied_by_exp_046 to ask who owns the row next"
+  },
+  "from": "serve.ranking_block() -- the same block the served candidate was built from",
+  "guard": {
+    "cut_s_for_the_ranking_serve": 1864.37,
+    "quantile": 99.5,
+    "rows_held": 1481
+  },
+  "matcher_sha256": "6fdf39519eb0f500c06230e2972d3c8300aa6222ed8d9b003998ddf6e286093b",
+  "months": {
+    "2026-01": {
+      "by_airport": {
+        "EDDF": {
+          "changed_by_v16": 7388,
+          "obs_has_clock": 7894,
+          "rows": 15667,
+          "served_by_exp_046": 7894
+        },
+        "EDDM": {
+          "changed_by_v16": 10531,
+          "obs_has_clock": 10531,
+          "rows": 10953,
+          "served_by_exp_046": 10531
+        },
+        "EGLL": {
+          "changed_by_v16": 13559,
+          "obs_has_clock": 13558,
+          "rows": 19283,
+          "served_by_exp_046": 13558
+        },
+        "EHAM": {
+          "changed_by_v16": 15007,
+          "obs_has_clock": 15007,
+          "rows": 16232,
+          "served_by_exp_046": 15007
+        },
+        "LEBL": {
+          "changed_by_v16": 10733,
+          "obs_has_clock": 10733,
+          "rows": 12201,
+          "served_by_exp_046": 10733
+        },
+        "LEMD": {
+          "changed_by_v16": 15831,
+          "obs_has_clock": 15843,
+          "rows": 16802,
+          "served_by_exp_046": 15843
+        },
+        "LFPG": {
+          "changed_by_v16": 0,
+          "obs_has_clock": 739,
+          "rows": 18129,
+          "served_by_exp_046": 739
+        },
+        "LIRF": {
+          "changed_by_v16": 5287,
+          "obs_has_clock": 5325,
+          "rows": 11061,
+          "served_by_exp_046": 5287
+        },
+        "LSZH": {
+          "changed_by_v16": 9155,
+          "obs_has_clock": 9155,
+          "rows": 9995,
+          "served_by_exp_046": 9155
+        },
+        "LTFM": {
+          "changed_by_v16": 0,
+          "obs_has_clock": 0,
+          "rows": 22396,
+          "served_by_exp_046": 0
+        }
+      },
+      "changed_by_v16": 87491,
+      "guard_held_by_exp_046": 1269,
+      "noac": 108,
+      "not_obs_has_clock": 63934,
+      "obs_has_clock": 88785,
+      "occupied_by_exp_046": 88008,
+      "path": "artifacts/exp-046/class/2026-01-v16.parquet",
+      "rows": 152719,
+      "served_by_exp_046": 88747,
+      "sha256": "3e4b984070cbab5d24929bfd0c142175ad9e4751314d9e3ed2184f32d90c5e5e",
+      "written_by_exp_046": 87490
+    },
+    "2026-07": {
+      "by_airport": {
+        "EDDF": {
+          "changed_by_v16": 7308,
+          "obs_has_clock": 7308,
+          "rows": 20650,
+          "served_by_exp_046": 7308
+        },
+        "EDDM": {
+          "changed_by_v16": 14461,
+          "obs_has_clock": 14461,
+          "rows": 15013,
+          "served_by_exp_046": 14461
+        },
+        "EGLL": {
+          "changed_by_v16": 19755,
+          "obs_has_clock": 19762,
+          "rows": 20557,
+          "served_by_exp_046": 19762
+        },
+        "EHAM": {
+          "changed_by_v16": 20565,
+          "obs_has_clock": 20566,
+          "rows": 21950,
+          "served_by_exp_046": 20566
+        },
+        "LEBL": {
+          "changed_by_v16": 15859,
+          "obs_has_clock": 15859,
+          "rows": 17879,
+          "served_by_exp_046": 15859
+        },
+        "LEMD": {
+          "changed_by_v16": 11000,
+          "obs_has_clock": 11001,
+          "rows": 20152,
+          "served_by_exp_046": 11001
+        },
+        "LFPG": {
+          "changed_by_v16": 0,
+          "obs_has_clock": 873,
+          "rows": 21743,
+          "served_by_exp_046": 873
+        },
+        "LIRF": {
+          "changed_by_v16": 11,
+          "obs_has_clock": 11,
+          "rows": 15838,
+          "served_by_exp_046": 11
+        },
+        "LSZH": {
+          "changed_by_v16": 12032,
+          "obs_has_clock": 12033,
+          "rows": 13155,
+          "served_by_exp_046": 12033
+        },
+        "LTFM": {
+          "changed_by_v16": 0,
+          "obs_has_clock": 0,
+          "rows": 25185,
+          "served_by_exp_046": 0
+        }
+      },
+      "changed_by_v16": 100991,
+      "guard_held_by_exp_046": 212,
+      "noac": 280,
+      "not_obs_has_clock": 90248,
+      "obs_has_clock": 101874,
+      "occupied_by_exp_046": 101001,
+      "path": "artifacts/exp-046/class/2026-07-v16.parquet",
+      "rows": 192122,
+      "served_by_exp_046": 101874,
+      "sha256": "6575b2efda828e2f9d8298f5edc51252e4499fc1177644dc392602cbf985b393",
+      "written_by_exp_046": 100993
+    }
+  },
+  "moved_column": "changed_by_v16",
+  "prefix_months": [
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11"
+  ],
+  "rule_sha256": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+  "suffix": "-v16",
+  "totals": {
+    "airports_held_at_the_base": [
+      "LFPG"
+    ],
+    "changed_by_v16": 188482,
+    "complement_of_the_named_class": 154182,
+    "complement_that_leaves_every_row_once": 155832,
+    "complement_that_leaves_every_row_once_is": "~occupied_by_exp_046 -- every row this lane does not write its own head on, including the held airport and any row reverted to the price base",
+    "guard_held_by_exp_046": 1481,
+    "noac": 388,
+    "not_obs_has_clock": 154182,
+    "obs_has_clock": 190659,
+    "occupied_by_exp_046": 189009,
+    "occupied_rows_at_the_price_base_the_guard_does_not_hold": 526,
+    "occupied_rows_at_the_price_base_why": "the class moved under bytes already written: this vector is emitted on a newer matcher than the candidate was built with, so it carries rows the candidate could not have served",
+    "occupied_rows_whose_value_did_not_change": 528,
+    "rows": 344841,
+    "served_by_exp_046": 190621,
+    "superseded_reading_do_not_use": {
+      "expression": "~changed_by_v16 & ~noac",
+      "rows": 155971,
+      "why": "it strands every row this lane REVERTED to the price base: those rows are changed and so are excluded from the complement, but no lane owns them (round 4 FALLBACK, finding 4)"
+    },
+    "written_by_exp_046": 188483
+  },
+  "what": "this lane's class vector on the two ranking months, written once so the composition reads a file instead of re-deriving it",
+  "written_by": "experiments/exp-046-surfacefit/code/classvec.py"
+}

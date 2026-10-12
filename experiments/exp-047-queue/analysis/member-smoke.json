@@ -1,0 +1,56 @@
+{
+  "C2-cat": {
+    "oof_written": [
+      "experiments/exp-047-queue/work/smoke/_smoke-C2-cat-november_loo.parquet"
+    ],
+    "precondition": "frames.FAMILY has no 'november_loo' entry; injected as 'm11'.",
+    "producer": "experiments/exp-008-diversity/run.py",
+    "reduced_by": "rounds 5325 -> 1, and --cpu (the GPU path is not on this laptop)",
+    "returncode": 0,
+    "runs": true,
+    "stderr_tail": "",
+    "stdout_tail": "smoke-C2-cat\",\n  \"folds\": {\n    \"november_loo\": {\n      \"rmse\": 364.28663546273947,\n      \"rmse_bulk\": 340.02858967169556,\n      \"rmse_tail\": 3550.8914110570095,\n      \"rmse_no_nm\": 1186.8935599546332,\n      \"rmse_noac\": 4791.948303726355,\n      \"n\": 162332,\n      \"n_tail\": 222,\n      \"n_no_nm\": 1349,\n      \"n_noac\": 55,\n      \"sse_share_tail\": 0.12993828808697808,\n      \"sse_share_no_nm\": 0.08821549589223808,\n      \"sse_share_noac\": 0.05862681772018077,\n      \"bias\": 22.329696904200823,\n      \"fold\": \"november_loo\",\n      \"rounds\": 1,\n      \"seeds\": [\n        7\n      ],\n      \"seconds\": 7,\n      \"oof\": \"experiments/exp-047-queue/work/smoke/_smoke-C2-cat-november_loo.parquet\",\n      \"argv\": \"--kind cat --name _smoke-C2-cat --depth 8 --folds november_loo --rounds-m6 1 --rounds-m11 1 --cpu --outdir /path/to/competitions/prc-data-challenge-2026/experiments/exp-047-queue/work/smoke\"\n    }\n  },\n  \"argv\": \"--kind cat --name _smoke-C2-cat --depth 8 --folds november_loo --rounds-m6 1 --rounds-m11 1 --cpu --outdir /path/to/competitions/prc-data-challenge-2026/experiments/exp-047-queue/work/smoke\",\n  \"argv_history\": [\n    \"--kind cat --name _smoke-C2-cat --depth 8 --folds november_loo --rounds-m6 1 --rounds-m11 1 --cpu --outdir /path/to/competitions/prc-data-challenge-2026/experiments/exp-047-queue/work/smoke\"\n  ],\n  \"frame\": {\n    \"version\": \"v2\",\n    \"schema\": \"cf956e1b26b3c11f\",\n    \"numeric_2025_07\": \"605fe71f984628d5\"\n  },\n  \"threads\": 2,\n  \"gpu\": \"0\"\n}\n",
+    "wall_s": 7.0,
+    "why": null
+  },
+  "D1-winter": {
+    "oof_written": [
+      "experiments/exp-012-blend2/oof/_smoke-D1-winter-november_loo.parquet"
+    ],
+    "producer": "experiments/exp-012-blend2/winter_arm.py",
+    "reduced_by": "seeds 3 -> 1 (no round argument exists)",
+    "returncode": 0,
+    "runs": true,
+    "stderr_tail": "",
+    "stdout_tail": "DED_Q=0.2] phi[VERSION=3,phidef=rows/150/100] lirf[VERSION=2] tail[VERSION=1.3.0] day_state[VERSION=1]\", \"threads\": 2, \"linear_tree\": true, \"es_rounds\": 100, \"pipeline\": \"exp-007-winter/code/pipeline (git 19cd199)\"}\n[november_loo] day-state set 'deice': 1 columns, 0 validation cells outside the training range\n[november_loo] train (1922715, 97) valid (162332, 97) built in 83s\nTraining until validation scores don't improve for 100 rounds\nEarly stopping, best iteration is:\n[66]\tvalid_0's rmse: 234.248\n[november_loo] seed 7: best 66 -> refit 78\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[noac] head on 1452 training rows, 60 rounds\n[november_loo] {\"rmse\": 237.0411232398173, \"rmse_bulk\": 206.86715048886828, \"rmse_tail\": 3136.426766475682, \"rmse_no_nm\": 1192.877457663967, \"n\": 162332, \"n_tail\": 222, \"n_no_nm\": 1349, \"sse_share_tail\": 0.23942623994472875, \"sse_share_no_nm\": 0.21045152671090267, \"bias\": -6.444715981563051, \"rmse_noac\": 5333.064173789312, \"n_noac\": 55, \"sse_share_noac\": 0.1715002575595784, \"fold\": \"november_loo\", \"seeds\": [7], \"best_iteration\": 66, \"refit_rounds\": 78, \"n_features\": 97, \"seconds\": 136, \"raw_below_floor\": 0, \"guard_touched\": 1, \"guard_bounds\": [-20657.0, 9069.0], \"per_seed_rmse\": [237.0411232398173], \"oof\": \"experiments/exp-012-blend2/oof/_smoke-D1-winter-november_loo.parquet\", \"ds_columns\": \"deice\", \"ds_cells_clipped\": 0}\n",
+    "wall_s": 137.4,
+    "why": null
+  },
+  "L2-hub": {
+    "oof_written": [
+      "experiments/exp-047-queue/work/smoke/_smoke-L2-hub-november_loo.parquet"
+    ],
+    "precondition": "frames.FAMILY has no 'november_loo' entry; injected as 'm11' (eleven training months, exactly july_loo/december/january).  One additive line in exp-008-diversity/frames.py, the same edit exp-025-cloud already made for the six nested folds.",
+    "producer": "experiments/exp-008-diversity/run.py",
+    "reduced_by": "rounds 8725 -> 1",
+    "returncode": 0,
+    "runs": true,
+    "stderr_tail": "",
+    "stdout_tail": "    \"rmse\": 363.8486280055712,\n      \"rmse_bulk\": 336.98181185827383,\n      \"rmse_tail\": 3725.836401479482,\n      \"rmse_no_nm\": 1263.300318389099,\n      \"rmse_noac\": 5253.044165362495,\n      \"n\": 162332,\n      \"n_tail\": 222,\n      \"n_no_nm\": 1349,\n      \"n_noac\": 55,\n      \"sse_share_tail\": 0.143401903028544,\n      \"sse_share_no_nm\": 0.10017965649818723,\n      \"sse_share_noac\": 0.07062186319197257,\n      \"bias\": 21.548339775869458,\n      \"fold\": \"november_loo\",\n      \"rounds\": 1,\n      \"seeds\": [\n        7\n      ],\n      \"seconds\": 4,\n      \"oof\": \"experiments/exp-047-queue/work/smoke/_smoke-L2-hub-november_loo.parquet\",\n      \"argv\": \"--kind lgb --name _smoke-L2-hub --variant plain --huber-delta 1200 --folds november_loo --rounds-m6 1 --rounds-m11 1 --outdir /path/to/competitions/prc-data-challenge-2026/experiments/exp-047-queue/work/smoke\"\n    }\n  },\n  \"argv\": \"--kind lgb --name _smoke-L2-hub --variant plain --huber-delta 1200 --folds november_loo --rounds-m6 1 --rounds-m11 1 --outdir /path/to/competitions/prc-data-challenge-2026/experiments/exp-047-queue/work/smoke\",\n  \"argv_history\": [\n    \"--kind lgb --name _smoke-L2-hub --variant plain --huber-delta 1200 --folds november_loo --rounds-m6 1 --rounds-m11 1 --outdir /path/to/competitions/prc-data-challenge-2026/experiments/exp-047-queue/work/smoke\"\n  ],\n  \"frame\": {\n    \"version\": \"v2\",\n    \"schema\": \"cf956e1b26b3c11f\",\n    \"numeric_2025_07\": \"605fe71f984628d5\"\n  },\n  \"threads\": 2,\n  \"gpu\": \"1\"\n}\n",
+    "wall_s": 4.6,
+    "why": null
+  },
+  "T-tailv2": {
+    "oof_written": [
+      "experiments/exp-009-noac2/oof/_smoke-november_loo.parquet"
+    ],
+    "producer": "experiments/exp-009-noac2/deliver.py",
+    "reduced_by": "four folds -> one (no round argument exists)",
+    "returncode": 0,
+    "runs": true,
+    "stderr_tail": "",
+    "stdout_tail": "[november_loo] 114s  v4=219.68  v3=232.95\n\n162332 OOF rows -> /path/to/competitions/prc-data-challenge-2026/experiments/exp-009-noac2/oof/_smoke-november_loo.parquet\nsha256 bf01c5db4f0c56901aef6cb5f2a5585f84805352a93d155cfb1df49c2bd45f60\n",
+    "wall_s": 115.0,
+    "why": null
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "name": "D1w-deice",
+  "folds": {
+    "july_loo": {
+      "rmse": 310.28037492720745,
+      "rmse_bulk": 272.14234221097433,
+      "rmse_tail": 2555.7170958797624,
+      "rmse_no_nm": 1193.529461802264,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.23336755848294877,
+      "sse_share_no_nm": 0.3052191161244712,
+      "bias": 6.039374750080726,
+      "rmse_noac": 3564.8880481226797,
+      "n_noac": 339,
+      "sse_share_noac": 0.23464028466308604,
+      "fold": "july_loo",
+      "seeds": [
+        7
+      ],
+      "best_iteration": 121,
+      "refit_rounds": 142,
+      "n_features": 97,
+      "seconds": 643,
+      "raw_below_floor": 0,
+      "guard_touched": 1,
+      "guard_bounds": [
+        -20657.0,
+        9069.0
+      ],
+      "per_seed_rmse": [
+        310.28037492720745
+      ],
+      "oof": "experiments/exp-012-blend2/oof/D1w-deice-july_loo.parquet",
+      "ds_columns": "deice",
+      "ds_cells_clipped": 0
+    },
+    "january": {
+      "rmse": 349.1956510181579,
+      "rmse_bulk": 216.0631996056399,
+      "rmse_tail": 5969.720768409047,
+      "rmse_no_nm": 2846.639726628285,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "sse_share_tail": 0.6179636405145476,
+      "sse_share_no_nm": 0.619126732895246,
+      "bias": 5.854989638765455,
+      "rmse_noac": 3601.2272785740506,
+      "n_noac": 63,
+      "sse_share_noac": 0.04359263674644643,
+      "fold": "january",
+      "seeds": [
+        7
+      ],
+      "best_iteration": 188,
+      "refit_rounds": 221,
+      "n_features": 97,
+      "seconds": 711,
+      "raw_below_floor": 0,
+      "guard_touched": 0,
+      "guard_bounds": [
+        -20657.0,
+        9069.0
+      ],
+      "per_seed_rmse": [
+        349.1956510181579
+      ],
+      "oof": "experiments/exp-012-blend2/oof/D1w-deice-january.parquet",
+      "ds_columns": "deice",
+      "ds_cells_clipped": 0
+    },
+    "december": {
+      "rmse": 223.9847844546283,
+      "rmse_bulk": 206.2105126761029,
+      "rmse_tail": 2212.7568180157837,
+      "rmse_no_nm": 835.5977337369483,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.15374769946600886,
+      "sse_share_no_nm": 0.1380170733423266,
+      "bias": 0.8679932429214,
+      "rmse_noac": 2721.5952801773924,
+      "n_noac": 89,
+      "sse_share_noac": 0.07931180549355255,
+      "fold": "december",
+      "seeds": [
+        7
+      ],
+      "best_iteration": 150,
+      "refit_rounds": 176,
+      "n_features": 97,
+      "seconds": 681,
+      "raw_below_floor": 0,
+      "guard_touched": 0,
+      "guard_bounds": [
+        -20657.0,
+        9069.0
+      ],
+      "per_seed_rmse": [
+        223.9847844546283
+      ],
+      "oof": "experiments/exp-012-blend2/oof/D1w-deice-december.parquet",
+      "ds_columns": "deice",
+      "ds_cells_clipped": 0
+    }
+  },
+  "provenance": {
+    "modules": "surface[VERSION=3,BUCKET=1200.0,UNIMPEDED_Q=0.2] phi[VERSION=3,phidef=rows/150/100] lirf[VERSION=2] tail[VERSION=1.3.0] day_state[VERSION=1]",
+    "threads": 6,
+    "linear_tree": true,
+    "es_rounds": 100,
+    "pipeline": "exp-007-winter/code/pipeline (git 19cd199)"
+  },
+  "argv": "--name D1w-deice --folds december --seeds 7 --ds-columns deice"
+}

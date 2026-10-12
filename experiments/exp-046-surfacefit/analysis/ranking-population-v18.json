@@ -1,0 +1,48 @@
+{
+ "a_change_is_stated_never_a_stop": true,
+ "changed_since_the_previous_serve": {
+  "2026-01": {
+   "airport_days_now": 288,
+   "airport_days_was": 288,
+   "days_added": [],
+   "days_added_count": 0,
+   "days_gone": [],
+   "days_gone_count": 0,
+   "days_resized": [],
+   "days_resized_count": 0,
+   "key_moved": false,
+   "key_now": "bc66e9d3a94c1216",
+   "key_was": "bc66e9d3a94c1216"
+  },
+  "2026-07": {
+   "airport_days_now": 269,
+   "airport_days_was": 269,
+   "days_added": [],
+   "days_added_count": 0,
+   "days_gone": [],
+   "days_gone_count": 0,
+   "days_resized": [],
+   "days_resized_count": 0,
+   "key_moved": false,
+   "key_now": "fdb613d602fbd6bf",
+   "key_was": "fdb613d602fbd6bf"
+  }
+ },
+ "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+ "months": {
+  "2026-01": {
+   "airport_days": 288,
+   "block_cache_key": "bc66e9d3a94c1216"
+  },
+  "2026-07": {
+   "airport_days": 269,
+   "block_cache_key": "fdb613d602fbd6bf"
+  }
+ },
+ "note": "the ranking months are UNPINNED by policy, so this is what a serve on this matcher would read today; analysis/ranking-population.json still carries v17's `latest` and only a real candidate advances it",
+ "read_at_utc": "2026-09-09T05:20:30Z",
+ "read_by": "experiments/exp-046-surfacefit -- the re-price on MATCHER_SHA 122c7d84, recorded before any serve",
+ "recorded_as_latest": false,
+ "what": "the ranking months' population as this serve read it, and the diff against the previous serve's; the ranking months are deliberately UNPINNED (desk, 2026-09-09) so a delivery reaches the served file, and this record is what keeps that visible rather than silent",
+ "why_not": "a dry run does not advance the record; only a candidate does"
+}

@@ -1,0 +1,155 @@
+{
+  "airports_with_a_share": [
+    "EDDF",
+    "EDDM",
+    "EGLL",
+    "EHAM",
+    "LEBL",
+    "LEMD",
+    "LFPG",
+    "LIRF",
+    "LSZH"
+  ],
+  "by_airport": {
+    "EDDF": {
+      "departure_segments": 12853,
+      "departures": 15667,
+      "distinct_keys_per_day": 18608,
+      "false_share_worst_shift": 0.000129,
+      "join_keys": 18722,
+      "mean_forms_per_segment": 1.4566,
+      "mean_segments_per_key_per_day": 1.0061,
+      "segments_all_kinds": 24980,
+      "segments_all_kinds_per_departure": 1.5944,
+      "segments_per_departure": 0.8204,
+      "share_of_keys_reused_that_day": 0.00554
+    },
+    "EDDM": {
+      "departure_segments": 11339,
+      "departures": 10953,
+      "distinct_keys_per_day": 17738,
+      "false_share_worst_shift": 0.0012,
+      "join_keys": 18243,
+      "mean_forms_per_segment": 1.6089,
+      "mean_segments_per_key_per_day": 1.0285,
+      "segments_all_kinds": 36927,
+      "segments_all_kinds_per_departure": 3.3714,
+      "segments_per_departure": 1.0352,
+      "share_of_keys_reused_that_day": 0.02351
+    },
+    "EGLL": {
+      "departure_segments": 18653,
+      "departures": 19283,
+      "distinct_keys_per_day": 29020,
+      "false_share_worst_shift": 0.000261,
+      "join_keys": 29335,
+      "mean_forms_per_segment": 1.5727,
+      "mean_segments_per_key_per_day": 1.0109,
+      "segments_all_kinds": 35679,
+      "segments_all_kinds_per_departure": 1.8503,
+      "segments_per_departure": 0.9673,
+      "share_of_keys_reused_that_day": 0.01061
+    },
+    "EHAM": {
+      "departure_segments": 18458,
+      "departures": 16232,
+      "distinct_keys_per_day": 27903,
+      "false_share_worst_shift": 0.000972,
+      "join_keys": 29716,
+      "mean_forms_per_segment": 1.6099,
+      "mean_segments_per_key_per_day": 1.065,
+      "segments_all_kinds": 52511,
+      "segments_all_kinds_per_departure": 3.235,
+      "segments_per_departure": 1.1371,
+      "share_of_keys_reused_that_day": 0.04881
+    },
+    "LEBL": {
+      "departure_segments": 12330,
+      "departures": 12201,
+      "distinct_keys_per_day": 20007,
+      "false_share_worst_shift": 0.000247,
+      "join_keys": 20170,
+      "mean_forms_per_segment": 1.6358,
+      "mean_segments_per_key_per_day": 1.0081,
+      "segments_all_kinds": 25143,
+      "segments_all_kinds_per_departure": 2.0607,
+      "segments_per_departure": 1.0106,
+      "share_of_keys_reused_that_day": 0.008
+    },
+    "LEMD": {
+      "departure_segments": 18151,
+      "departures": 16802,
+      "distinct_keys_per_day": 28938,
+      "false_share_worst_shift": 0.000119,
+      "join_keys": 29823,
+      "mean_forms_per_segment": 1.643,
+      "mean_segments_per_key_per_day": 1.0306,
+      "segments_all_kinds": 37568,
+      "segments_all_kinds_per_departure": 2.2359,
+      "segments_per_departure": 1.0803,
+      "share_of_keys_reused_that_day": 0.02523
+    },
+    "LFPG": {
+      "departure_segments": 10621,
+      "departures": 18129,
+      "distinct_keys_per_day": 11167,
+      "false_share_worst_shift": 0.000112,
+      "join_keys": 11183,
+      "mean_forms_per_segment": 1.0529,
+      "mean_segments_per_key_per_day": 1.0014,
+      "segments_all_kinds": 14182,
+      "segments_all_kinds_per_departure": 0.7823,
+      "segments_per_departure": 0.5859,
+      "share_of_keys_reused_that_day": 0.00143
+    },
+    "LIRF": {
+      "departure_segments": 10067,
+      "departures": 11061,
+      "distinct_keys_per_day": 15296,
+      "false_share_worst_shift": 0.000183,
+      "join_keys": 15326,
+      "mean_forms_per_segment": 1.5224,
+      "mean_segments_per_key_per_day": 1.002,
+      "segments_all_kinds": 17867,
+      "segments_all_kinds_per_departure": 1.6153,
+      "segments_per_departure": 0.9101,
+      "share_of_keys_reused_that_day": 0.00196
+    },
+    "LSZH": {
+      "departure_segments": 10094,
+      "departures": 9995,
+      "distinct_keys_per_day": 15740,
+      "false_share_worst_shift": 0.000516,
+      "join_keys": 16113,
+      "mean_forms_per_segment": 1.5963,
+      "mean_segments_per_key_per_day": 1.0237,
+      "segments_all_kinds": 23837,
+      "segments_all_kinds_per_departure": 2.3849,
+      "segments_per_departure": 1.0099,
+      "share_of_keys_reused_that_day": 0.01258
+    }
+  },
+  "correlation_false_vs_mean_forms": {
+    "pearson": 0.372,
+    "spearman": 0.35
+  },
+  "correlation_false_vs_mean_segments_per_key": {
+    "pearson": 0.703,
+    "spearman": 0.6
+  },
+  "correlation_false_vs_segments_all_kinds_per_departure": {
+    "pearson": 0.884,
+    "spearman": 0.817
+  },
+  "correlation_false_vs_segments_per_departure": {
+    "pearson": 0.53,
+    "spearman": 0.567
+  },
+  "correlation_false_vs_share_of_keys_reused": {
+    "pearson": 0.693,
+    "spearman": 0.6
+  },
+  "month": "2026-01",
+  "question": "is EDDM's false-match share (finding 7: 0.00120, worst of ten) a CALLSIGN POOL problem, as the desk's rebuild item assumed, or a SEGMENT DENSITY problem?",
+  "rule_sha256": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+}

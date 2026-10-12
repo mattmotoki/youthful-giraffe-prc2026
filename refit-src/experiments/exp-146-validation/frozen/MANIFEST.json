@@ -1,0 +1,91 @@
+{
+  "constants": {
+    "BLOCK_LEN": 7,
+    "BUFFER_DAYS": 1,
+    "FLOOR": 60.0,
+    "MIN_SUPPORT": 2,
+    "N_DRAWS": 2000,
+    "N_RANKING": 344841,
+    "PAIRS": {
+      "1": [
+        1,
+        5,
+        1,
+        6
+      ],
+      "2": [
+        6,
+        12,
+        7,
+        13
+      ],
+      "3": [
+        13,
+        19,
+        14,
+        20
+      ],
+      "4": [
+        20,
+        26,
+        21,
+        27
+      ],
+      "5": [
+        27,
+        31,
+        28,
+        31
+      ]
+    },
+    "SEED": 601,
+    "class_rule": {
+      "abs_dt_offblock_s": 1299.0,
+      "gap_cut_s": 62.405,
+      "kept_mode4": {
+        "2025-01": 742,
+        "2025-07": 897,
+        "2025-12": 858
+      },
+      "runway_agrees": 1.0
+    }
+  },
+  "draws": {
+    "airport_day": "5b42e2d0ff64d4163b39987e7c7e9cda9185c91558920b0ce5ffd71e5e37571f",
+    "common_day": "5ff454c16deafed9afd4736570116cef0f16efbb1975edf45025a96c97b20ec3",
+    "week_block": "3bb3ee75897350b124cc525f8510190da277b7313511827d68fee487d2bac0ca"
+  },
+  "files": {
+    "cells.csv": "90f7c9a03910e2e750fff430d971da800ce9d9afc12153ec80791274cc1520dd",
+    "clock_loss_days.csv": "4f9a697d079bc45668b42fa7cadf185291f7b9988b86d0388f0d35f697dc0f4d",
+    "coverage.csv": "5512d3202b61e2c9b1f03b0f35df6e18728facccb90399ef74e22072d0c76f9c",
+    "rows.parquet": "991252d4ca9718a8d0384e1afa3fc45152f5af070acd3aa91cdb620b2718152d"
+  },
+  "inputs": {
+    "O/artifacts/exp-046/class/2026-01-v25.parquet": "e69f78b4f7d17fa3c0c95151fc171f2c7cd9022efd79489add1bbce119494697",
+    "O/artifacts/exp-046/class/2026-07-v25.parquet": "4eee477d219d32fa2ebb31346dbb105af0736e37ceaf786ec0eb0d0906be13fe",
+    "O/artifacts/exp-047/block/2025-01.parquet": "eb588315471b084656fba8b20e1e411e03560203beb5d63debd5a4959ca62a3f",
+    "O/artifacts/exp-047/block/2025-07.parquet": "00e7f9df5c83b0862a11c60defff02077c5ef68dffc8d17d50a9c17ebbc38a77",
+    "O/artifacts/exp-047/block/2025-12.parquet": "e167c4df047cdb01fbf66c31c8a57653e43e836466a2d7b252196b8f0f90036a",
+    "O/data/raw/ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+    "O/data/raw/training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+    "O/data/raw/training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+    "O/data/raw/training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724",
+    "O/experiments/exp-046-surfacefit/work/block-2025-01-cb4d6289cb421aa2-ungated.parquet": "9cdb97f781512d0bc3d962bbcb43427b669f13787b6856e5e25e47a3eeb70a49",
+    "O/experiments/exp-046-surfacefit/work/block-2025-07-8179f74417c8cb99-ungated.parquet": "e8b99f9150f859be2a4ac6b5d33faa99a4072194506cec8e227cbd1f5a6c1530",
+    "O/experiments/exp-046-surfacefit/work/block-2025-12-d35b7171d7062341-ungated.parquet": "664726d28ca948a1d79fa5d3c38d60831efded1f2b5fc1d7ba4245316c120526"
+  },
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "protocol": "week-pair-1",
+  "revisions": [
+    {
+      "date": "2026-09-30",
+      "replaces_commit": "c61f6c54",
+      "replaces_manifest_sha256": "6f422b435272a71dc8b185e43ea43ad25d76c5af50b02f0a11d8ccad3df2605a",
+      "revision": 1,
+      "why": "exp-146 review: inner(k, j).held drops fold k's buffer days, so every calibration row of fold k is a label row of outer(k); the splits fingerprint changed"
+    }
+  ],
+  "splits_fingerprint": "a59271c0120eb897c1ee3e01f3fa586266abb953b023ba4b930342d24caa0e73"
+}

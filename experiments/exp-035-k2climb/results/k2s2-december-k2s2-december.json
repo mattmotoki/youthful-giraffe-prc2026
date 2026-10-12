@@ -1,0 +1,25 @@
+{
+ "tag": "k2s2-december",
+ "mechanism": "",
+ "rounds": 1200,
+ "clip_z": 6000.0,
+ "params": {
+  "num_threads": 4
+ },
+ "seeds": 1,
+ "seed_start": 2,
+ "ghost_mode": "mixbase",
+ "main_model": "both",
+ "exact_rounds": 300,
+ "folds": {
+  "december": {
+   "rmse": 206.41952442107413,
+   "rmse_lo": 193.59521856353166,
+   "rmse_hi": 1814.89197328053,
+   "n": 165677,
+   "n_hi": 261,
+   "secs": 2635.1,
+   "n_train": 1829235
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+  "board": {
+    "increment_from_june_companion": 0.28754409347710697,
+    "increment_from_june_lead": 0.3945577991994085,
+    "total_over_v10_head_companion": 0.685549615477107,
+    "total_over_v10_head_lead": 0.7925633211994085,
+    "v11_board_over_v10_head": 0.398005522,
+    "why_january_does_not_move": "June is at d = 5 from 2026-01, so it enters no January-head set. The January arm and december keep 47.55's reads exactly"
+  },
+  "break_even_june_alone_value": 120.0302272965771,
+  "companion_at_the_measured_d1_value": {
+    "efficiency_at_k4_measured": 0.624580307644257,
+    "june_alone_value_used": 628.73,
+    "k10_july_increment_over_v11": 308.57454160243566,
+    "k10_july_increment_over_v11_additive": 408.87979271276606,
+    "k1_marginal_additive": 392.6923768251737,
+    "k1_marginal_power_law": 296.358177462497
+  },
+  "disagreement_falsifier_47_44": {
+    "F1_mechanism_falsified_if": "L >= 0",
+    "F2_law_falsified_if_outside": [
+      -0.10614485411056859,
+      0.017188479222764737
+    ],
+    "fitting_multiple": 3.8161,
+    "july_only_L": -0.04447818744390193,
+    "july_only_se": 0.030833333333333334,
+    "note": "47.55 measured L = +0.0119 pooled over three folds and BOTH F1 and F2 fired. This is the july-only restatement at the five-month multiple, registered so the next read scores the same claim rather than a new one; the mechanism is already falsified on the rule as written",
+    "predicted_disagreement_s": 10.027,
+    "rows_june_used": 100000,
+    "three_month_disagreement_s": 10.4831
+  },
+  "falsifiers": {
+    "F_form": "if the read sits closer to the additive companion than to the power-law point by more than july's 83.22 noise floor, the k = 5 form choice was wrong and 47.53's per-k rule takes the additive form at k = 5",
+    "F_gate": "rule (a) on the read: july's five-month increment over v11's july arm must have an interval clear of zero. A negative or crossing interval FAILS the ruling's July head and v11 stands",
+    "F_input": "if the read implies a June alone-value below the break-even 120.0, a d = 1 month did not carry its distance and the cross-fitted line's d = 1 point is falsified a second time",
+    "F_tie": "the ruling itself is falsified if the five-month july read is BELOW the four-month read v11 ships: including a tied month would then have cost the fold it was included for"
+  },
+  "form_choice": "47.53's ruling names the form per k with the evidence for that k. July is the NEAR fold, where the power law was right to 1.6 % at k = 4 (+359.87 against a read of +354.35), so the power law leads here. The additive form is carried as the companion, not as the point, and both June inputs are carried because they differ by 189.32 s2/row against july's 83.22 noise floor",
+  "july_totals": {
+    "a4": [
+      312.9,
+      493.6,
+      229.68,
+      628.73
+    ],
+    "aug_fourth_month_reproduced": 359.87,
+    "p": 0.6642994308458218,
+    "total_3_measured": 685.52,
+    "total_4_measured": 1039.87
+  },
+  "lead_form_power_law_at_the_crossfit_point": {
+    "efficiency_at_k4_measured": 0.624580307644257,
+    "june_alone_value_used": 818.05,
+    "k10_july_increment_over_v11": 423.4150336783621,
+    "k10_july_increment_over_v11_additive": 531.9996094168852,
+    "k1_marginal_additive": 510.9379206683844,
+    "k1_marginal_power_law": 406.65217240381276
+  },
+  "queue_observation": {
+    "and_what_may_not_happen_next": "a noise-aware tie-break would be a NEW parameter. If June's read disappoints, that parameter must be registered BEFORE it is used, never chosen after seeing which month it would drop",
+    "what_it_means_for_this_rule": "a served-distance rule CANNOT see noise, by construction. That is exactly why no fold reading can pick a month, and it is also the risk being taken: the rule includes June whatever its spread",
+    "what_queue_says": "2025-06 is the hardest month built and its members agree most closely, a 14.7 s spread"
+  },
+  "ruling": {
+    "december_reads_with": "the January head (unserved, nearest Feb at d = 2)",
+    "form": "a head's month set is EVERY built month at the MINIMUM served distance, ties included",
+    "january_head": [
+      "2025-11",
+      "2025-10",
+      "2025-03",
+      "2025-02"
+    ],
+    "july_head": [
+      "2025-11",
+      "2025-10",
+      "2025-03",
+      "2025-08",
+      "2025-06"
+    ],
+    "registered_in": "RESULTS.md 47.57, desk ruling, before any 2025-06 read",
+    "why_parameter_free": "served distance is 47.30.1's, fixed by the calendar; the tie is broken by INCLUDING both, which needs no number. No fold reading picks a month"
+  },
+  "served_distances": {
+    "2025-02": {
+      "d_2026_01": 1,
+      "d_2026_07": 5
+    },
+    "2025-06": {
+      "d_2026_01": 5,
+      "d_2026_07": 1
+    },
+    "2025-08": {
+      "d_2026_01": 5,
+      "d_2026_07": 1
+    }
+  },
+  "what": "RESULTS section 47.57: the FIVE-month July head, registered BEFORE any 2025-06 read."
+}

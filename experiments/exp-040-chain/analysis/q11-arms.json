@@ -1,0 +1,154 @@
+{
+  "arms": [
+    {
+      "arm": "v10 replay",
+      "member": "published",
+      "variant": "served",
+      "clean": {
+        "july_loo": 284.1572,
+        "december": 204.9218,
+        "january": 218.1506
+      },
+      "clean_board": 257.0248,
+      "gate_offset": {
+        "july_loo": -0.0,
+        "december": 0.0,
+        "january": 0.0
+      }
+    },
+    {
+      "arm": "none",
+      "member": "none",
+      "variant": "served",
+      "clean": {
+        "july_loo": 284.1269,
+        "december": 204.9115,
+        "january": 218.1619
+      },
+      "clean_board": 257.0104,
+      "noac_shift_rms": {
+        "july_loo": 14.677719368078947,
+        "december": 1.2559590509630451e-11,
+        "january": 2.908239702232084e-11
+      },
+      "noac_n_moved": {
+        "july_loo": 339,
+        "december": 83,
+        "january": 61
+      },
+      "wall_s": 95.5
+    },
+    {
+      "arm": "none d11-noac",
+      "member": "none",
+      "variant": "d11",
+      "clean": {
+        "july_loo": 284.129,
+        "december": 204.9115,
+        "january": 218.1619
+      },
+      "clean_board": 257.0117,
+      "noac_shift_rms": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      },
+      "noac_n_moved": {
+        "july_loo": 0,
+        "december": 0,
+        "january": 0
+      },
+      "wall_s": 95.5
+    },
+    {
+      "arm": "chain",
+      "member": "chain",
+      "variant": "served",
+      "clean": {
+        "july_loo": 284.0533,
+        "december": 205.0184,
+        "january": 218.1154
+      },
+      "clean_board": 256.9476,
+      "noac_shift_rms": {
+        "july_loo": 48.059964703381034,
+        "december": 112.79144038923802,
+        "january": 99.81386296772581
+      },
+      "noac_n_moved": {
+        "july_loo": 339,
+        "december": 89,
+        "january": 63
+      },
+      "wall_s": 88.1
+    },
+    {
+      "arm": "chain d11-noac",
+      "member": "chain",
+      "variant": "d11",
+      "clean": {
+        "july_loo": 284.0552,
+        "december": 205.0515,
+        "january": 218.0741
+      },
+      "clean_board": 256.9332,
+      "noac_shift_rms": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      },
+      "noac_n_moved": {
+        "july_loo": 0,
+        "december": 0,
+        "january": 0
+      },
+      "wall_s": 88.1
+    }
+  ],
+  "member": "C2-cat",
+  "names": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "K2-window",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "mask": {
+    "rule": "serve the K2 change only where it gains on all three folds",
+    "keep": [
+      "EDDM",
+      "EGLL",
+      "LEBL",
+      "LEMD",
+      "LFPG",
+      "LIRF",
+      "LSZH",
+      "LTFM"
+    ],
+    "hold_at_v7": [
+      "EDDF",
+      "EHAM"
+    ],
+    "note": "EHAM is held from stack-5 in v7 and in K2 alike, so the change is exactly zero there and it cannot be kept by this rule.",
+    "table": "analysis/airport_change.csv"
+  },
+  "seeds": [
+    7,
+    107,
+    207,
+    307,
+    407
+  ],
+  "rounds": 300,
+  "block": "depx",
+  "win": 600.0,
+  "threads": 4,
+  "published_v10": {
+    "july_loo": 284.1572,
+    "december": 204.9218,
+    "january": 218.1506
+  },
+  "wall_s": 278.3
+}

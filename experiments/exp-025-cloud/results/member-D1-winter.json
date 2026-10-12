@@ -1,0 +1,39 @@
+{
+ "member": "D1-winter",
+ "weight": 0.068,
+ "synthetic": false,
+ "git_commit": "5717971ceb41ce5173f695c3c1d65df31a496d62",
+ "python": "3.12.13",
+ "versions": {
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "pyarrow": "24.0.0",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.10"
+ },
+ "gpu": "none (CPU kernel)",
+ "threads": 4,
+ "env_overrides": {},
+ "cpu_count": 4,
+ "mem_total_gb": 31.3,
+ "peak_gpu_mib": 0,
+ "peak_host_used_gb": 9.62,
+ "steps": [
+  {
+   "label": "member D1-winter",
+   "cmd": "experiments/exp-012-blend2/winter_arm.py --name D1-winter-deice-v1 --submit --seeds 7,107,207 --ds-columns deice",
+   "cwd": "experiments/exp-012-blend2",
+   "rc": 0,
+   "wall_s": 910.5,
+   "child_maxrss_gb": 9.13,
+   "stdout_tail": "ve value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\nTraining until validation scores don't improve for 100 rounds\nEarly stopping, best iteration is:\n[106]\tvalid_0's rmse: 351.487\n[budget] held out 2025-01: best_iteration 106 (7.4 % of rows)\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\nTraining until validation scores don't improve for 100 rounds\nEarly stopping, best iteration is:\n[104]\tvalid_0's rmse: 318.413\n[budget] held out 2025-07: best_iteration 104 (9.1 % of rows)\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\nTraining until validation scores don't improve for 100 rounds\nEarly stopping, best iteration is:\n[68]\tvalid_0's rmse: 256.661\n[budget] held out 2025-11: best_iteration 68 (7.8 % of rows)\n[budget] optima [68, 104, 106]  median 104  relative spread 0.37  -> median -> refit 125 rounds\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[submit] seed 7: refit 125 (from the budget scan)\n[threads] declared=4 observed=4 library=lightgbm\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[noac] head on 1507 training rows, 60 rounds\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[submit] seed 107: refit 125 (from the budget scan)\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[noac] head on 1507 training rows, 60 rounds\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[submit] seed 207: refit 125 (from the budget scan)\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[noac] head on 1507 training rows, 60 rounds\n[submit] {\"name\": \"D1-winter-deice-v1\", \"seeds\": [7, 107, 207], \"ds_columns\": \"deice\", \"budget\": {\"months\": [\"2025-01\", \"2025-07\", \"2025-11\"], \"per_month\": {\"2025-01\": {\"best_iteration\": 106, \"held_frac\": 0.07371824232259512}, \"2025-07\": {\"best_iteration\": 104, \"held_frac\": 0.09146700290209285}, \"2025-11\": {\"best_iteration\": 68, \"held_frac\": 0.07785531932853312}}, \"optima\": [68, 104, 106], \"median\": 104.0, \"spread_rel\": 0.365, \"wide_threshold\": 0.5, \"rule\": \"median\", \"mean_held_frac\": 0.08101352151774037, \"rounds\": 125}, \"rounds\": 125, \"n\": 344841, \"n_features\": 97, \"path\": \"artifacts/exp-012/pred/D1-winter-deice-v1-ranking.parquet\", \"sha256\": \"eec8dcf27db12a3b11d5a99974d62461314e54a73e74775b0664564b17b41aa7\", \"seconds\": 900, \"raw_below_floor\": 0, \"guard_touched\": 3, \"guard_bounds\": [-20657.0, 9069.0], \"provenance\": {\"modules\": \"surface[VERSION=3,BUCKET=1200.0,UNIMPEDED_Q=0.2] phi[VERSION=3,phidef=rows/150/100] lirf[VERSION=2] tail[VERSION=1.3.0] day_state[VERSION=1]\", \"threads\": 4, \"linear_tree\": true, \"es_rounds\": 100, \"pipeline\": \"exp-007-winter/code/pipeline (git 19cd199)\"}}\n",
+   "stderr_tail": ""
+  }
+ ],
+ "collected": {
+  "artifacts/exp-012/pred/D1-winter-deice-v1-ranking.parquet": {
+   "bytes": 13801323,
+   "as": "D1-winter--D1-winter-deice-v1-ranking.parquet"
+  }
+ }
+}

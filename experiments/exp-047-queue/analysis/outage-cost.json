@@ -1,0 +1,80 @@
+{
+  "cost": {
+    "clocks_discarded": 591,
+    "eddf_own_clock_share_held": 0.4715,
+    "eddf_own_clock_share_lifted": 0.5092,
+    "note": "the hold is what separates the two; the census comparison in the superseded 6a varied nothing because both of its runs used a matcher that already held the days.",
+    "rows_moved_to_no_clock": 2517
+  },
+  "held": {
+    "EDDF 2026-01-27": 0.8225,
+    "EDDF 2026-01-28": 0.6185,
+    "EDDF 2026-01-29": 0.2198,
+    "EDDF 2026-01-30": 0.1387,
+    "EDDF 2026-01-31": 0.1012
+  },
+  "matcher_sha256": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+  "rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+  "runs": {
+    "held": {
+      "by_day": {
+        "2026-01-27": {
+          "clocks": 0,
+          "rows": 462
+        },
+        "2026-01-28": {
+          "clocks": 0,
+          "rows": 498
+        },
+        "2026-01-29": {
+          "clocks": 0,
+          "rows": 505
+        },
+        "2026-01-30": {
+          "clocks": 0,
+          "rows": 548
+        },
+        "2026-01-31": {
+          "clocks": 0,
+          "rows": 504
+        }
+      },
+      "clocks_on_held_days": 0,
+      "eddf_clocks": 7387,
+      "eddf_own_clock_share": 0.4715,
+      "eddf_rows": 15667,
+      "receipt": 26,
+      "rows_on_held_days": 2517
+    },
+    "lifted": {
+      "by_day": {
+        "2026-01-27": {
+          "clocks": 271,
+          "rows": 462
+        },
+        "2026-01-28": {
+          "clocks": 235,
+          "rows": 498
+        },
+        "2026-01-29": {
+          "clocks": 35,
+          "rows": 505
+        },
+        "2026-01-30": {
+          "clocks": 23,
+          "rows": 548
+        },
+        "2026-01-31": {
+          "clocks": 27,
+          "rows": 504
+        }
+      },
+      "clocks_on_held_days": 591,
+      "eddf_clocks": 7978,
+      "eddf_own_clock_share": 0.5092,
+      "eddf_rows": 15667,
+      "receipt": 31,
+      "rows_on_held_days": 2517
+    }
+  }
+}

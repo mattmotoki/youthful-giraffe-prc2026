@@ -1,0 +1,525 @@
+{
+  "cross_fitted_beside_it": {
+    "cross_fitted": {
+      "all_row_ci95": [
+        0.3921776629047969,
+        0.6882080899679287
+      ],
+      "all_row_gain_s": 0.5134734208261307,
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 757.6604103187448,
+          "B_mean_dd": 595.3447398642651,
+          "ci95": [
+            850.9361501168243,
+            993.2788833244921
+          ],
+          "mse_gain_s2": 919.9760807732245,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 286.90409140007495,
+          "B_mean_dd": 246.4528667554484,
+          "ci95": [
+            253.4291993289472,
+            410.9019290730484
+          ],
+          "mse_gain_s2": 327.35531604470145,
+          "rows": 153706,
+          "rows_moved": 69840
+        },
+        "july_loo": {
+          "A_mean_rd": 261.96576509386017,
+          "B_mean_dd": 233.65895843543944,
+          "ci95": [
+            228.73900952387112,
+            357.17092831238324
+          ],
+          "mse_gain_s2": 290.27257175228084,
+          "rows": 190713,
+          "rows_moved": 88424
+        }
+      },
+      "clean_gain_s": 0.6274466907657086,
+      "every_fold_interval_clear": true
+    },
+    "in_fold": {
+      "all_row_ci95": [
+        0.3921776629047969,
+        0.6882080899679287
+      ],
+      "all_row_gain_s": 0.5134734208261307,
+      "clean_gain_s": 0.6274466907657086,
+      "every_fold_interval_clear": true
+    },
+    "label": "the same increment, cross-fitted, beside it",
+    "out_of_fold_selection": {
+      "december": {
+        "chosen": "the 1-month bag at 255 leaves",
+        "eligible": true,
+        "evidence_on_the_selection_folds": {
+          "january": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 327.35531604470145,
+            "tail_passes": true
+          },
+          "july_loo": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 290.27257175228084,
+            "tail_passes": true
+          }
+        },
+        "selected_on": [
+          "july_loo",
+          "january"
+        ]
+      },
+      "january": {
+        "chosen": "the 1-month bag at 255 leaves",
+        "eligible": true,
+        "evidence_on_the_selection_folds": {
+          "december": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 919.9760807732245,
+            "tail_passes": true
+          },
+          "july_loo": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 290.27257175228084,
+            "tail_passes": true
+          }
+        },
+        "selected_on": [
+          "july_loo",
+          "december"
+        ]
+      },
+      "july_loo": {
+        "chosen": "the 1-month bag at 255 leaves",
+        "eligible": true,
+        "evidence_on_the_selection_folds": {
+          "december": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 919.9760807732245,
+            "tail_passes": true
+          },
+          "january": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 327.35531604470145,
+            "tail_passes": true
+          }
+        },
+        "selected_on": [
+          "december",
+          "january"
+        ]
+      }
+    },
+    "rule": "crossfit.py: the rung is taken on a fold only if, on both other folds, its increment interval is clear of zero and its registered whole-update tail clause passes",
+    "selection_premium_s": 0.0
+  },
+  "head_rebuilds_bit_for_bit": true,
+  "leaves": 255,
+  "member_spread_extended": {
+    "december": {
+      "guard_cut_s": 1940.177772328259,
+      "mean_abs_bag_s": 76.31256513704335,
+      "member_disagreement_rms_s": 13.07506428364464,
+      "rows_moved_by_the_bag": 102186
+    },
+    "january": {
+      "guard_cut_s": 1855.256340282004,
+      "mean_abs_bag_s": 76.84990111513576,
+      "member_disagreement_rms_s": 13.05866953484227,
+      "rows_moved_by_the_bag": 69840
+    },
+    "july_loo": {
+      "guard_cut_s": 1834.2676306265398,
+      "mean_abs_bag_s": 85.14368572606028,
+      "member_disagreement_rms_s": 11.619758544427038,
+      "rows_moved_by_the_bag": 88428
+    }
+  },
+  "member_spread_head": {
+    "december": {
+      "guard_cut_s": 1940.177772328259,
+      "mean_abs_bag_s": 74.34078629298554,
+      "member_disagreement_rms_s": 15.275365380849344,
+      "rows_moved_by_the_bag": 102186
+    },
+    "january": {
+      "guard_cut_s": 1855.256340282004,
+      "mean_abs_bag_s": 75.3681022000294,
+      "member_disagreement_rms_s": 13.911760319269712,
+      "rows_moved_by_the_bag": 69840
+    },
+    "july_loo": {
+      "guard_cut_s": 1834.2676306265398,
+      "mean_abs_bag_s": 84.44799729536119,
+      "member_disagreement_rms_s": 12.109640998477337,
+      "rows_moved_by_the_bag": 88428
+    }
+  },
+  "members": {
+    "1": {
+      "from": "d-onemonth-screen-255-free.npz",
+      "refitted_this_run": false
+    },
+    "10": {
+      "extra_rows": {
+        "december": 99709,
+        "january": 99709,
+        "july_loo": 99709
+      },
+      "refitted_this_run": true,
+      "seconds": 302.9,
+      "total_fit_rows": {
+        "december": 258940,
+        "january": 291245,
+        "july_loo": 272492
+      }
+    },
+    "2": {
+      "extra_rows": {
+        "december": 99709,
+        "january": 99709,
+        "july_loo": 99709
+      },
+      "refitted_this_run": true,
+      "seconds": 245.0,
+      "total_fit_rows": {
+        "december": 258940,
+        "january": 291245,
+        "july_loo": 272492
+      }
+    },
+    "3": {
+      "extra_rows": {
+        "december": 99709,
+        "january": 99709,
+        "july_loo": 99709
+      },
+      "refitted_this_run": true,
+      "seconds": 243.8,
+      "total_fit_rows": {
+        "december": 258940,
+        "january": 291245,
+        "july_loo": 272492
+      }
+    },
+    "4": {
+      "extra_rows": {
+        "december": 99709,
+        "january": 99709,
+        "july_loo": 99709
+      },
+      "refitted_this_run": true,
+      "seconds": 271.4,
+      "total_fit_rows": {
+        "december": 258940,
+        "january": 291245,
+        "july_loo": 272492
+      }
+    },
+    "5": {
+      "extra_rows": {
+        "december": 99709,
+        "january": 99709,
+        "july_loo": 99709
+      },
+      "refitted_this_run": true,
+      "seconds": 265.1,
+      "total_fit_rows": {
+        "december": 258940,
+        "january": 291245,
+        "july_loo": 272492
+      }
+    },
+    "6": {
+      "extra_rows": {
+        "december": 99709,
+        "january": 99709,
+        "july_loo": 99709
+      },
+      "refitted_this_run": true,
+      "seconds": 266.1,
+      "total_fit_rows": {
+        "december": 258940,
+        "january": 291245,
+        "july_loo": 272492
+      }
+    },
+    "7": {
+      "extra_rows": {
+        "december": 99709,
+        "january": 99709,
+        "july_loo": 99709
+      },
+      "refitted_this_run": true,
+      "seconds": 271.2,
+      "total_fit_rows": {
+        "december": 258940,
+        "january": 291245,
+        "july_loo": 272492
+      }
+    },
+    "8": {
+      "extra_rows": {
+        "december": 99709,
+        "january": 99709,
+        "july_loo": 99709
+      },
+      "refitted_this_run": true,
+      "seconds": 285.1,
+      "total_fit_rows": {
+        "december": 258940,
+        "january": 291245,
+        "july_loo": 272492
+      }
+    },
+    "9": {
+      "extra_rows": {
+        "december": 99709,
+        "january": 99709,
+        "july_loo": 99709
+      },
+      "refitted_this_run": true,
+      "seconds": 305.0,
+      "total_fit_rows": {
+        "december": 258940,
+        "january": 291245,
+        "july_loo": 272492
+      }
+    }
+  },
+  "nov_writable_rows": 99709,
+  "pre_registration": {
+    "band_s": [
+      0.32,
+      0.62
+    ],
+    "every_fold_clear_expected": true,
+    "fold_expected_to_fail": "january",
+    "gate": "in_fold increment over v8's head, every fold clear, rule (a)",
+    "point_estimate_board_s": 0.49,
+    "registered_in": "RESULTS.md section 47.20, commit 467c89f, before this file ran",
+    "the_naive_figure_deliberately_not_registered": 0.59236,
+    "why": "the +0.28613 bag offset was measured at 523,550 fitting rows; at 1.577x the rows each member is individually more stable, so a bag over less churn buys less. If churn variance falls as 1/n the offset scales by ~0.63 to about +0.18"
+  },
+  "prices": {
+    "in_fold_over_v8_head": {
+      "board_all_row": {
+        "arm": 298.3909784214261,
+        "base": 298.90445184225223,
+        "gain_s": 0.5134734208261307,
+        "interval": {
+          "ci95": [
+            0.3921776629047969,
+            0.6882080899679287
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.5270613879042055,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_clean": {
+        "arm": 244.0872901232204,
+        "base": 244.71473681398612,
+        "gain_s": 0.6274466907657086,
+        "interval": {
+          "ci95": [
+            0.5396221227675632,
+            0.7228312639147297
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.6275796464293423,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 757.6604103187448,
+          "B_mean_dd": 595.3447398642651,
+          "ci95": [
+            850.9361501168243,
+            993.2788833244921
+          ],
+          "mse_gain_s2": 919.9760807732245,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 286.90409140007495,
+          "B_mean_dd": 246.4528667554484,
+          "ci95": [
+            253.4291993289472,
+            410.9019290730484
+          ],
+          "mse_gain_s2": 327.35531604470145,
+          "rows": 153706,
+          "rows_moved": 69840
+        },
+        "july_loo": {
+          "A_mean_rd": 261.96576509386017,
+          "B_mean_dd": 233.65895843543944,
+          "ci95": [
+            228.73900952387112,
+            357.17092831238324
+          ],
+          "mse_gain_s2": 290.27257175228084,
+          "rows": 190713,
+          "rows_moved": 88424
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 757.6604103187448,
+          "B_mean_dd": 595.3447398642651,
+          "ci95": [
+            848.201521520465,
+            994.1657093742326
+          ],
+          "mse_gain_s2": 919.9760807732245,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 286.90782460274244,
+          "B_mean_dd": 246.456073605846,
+          "ci95": [
+            256.14012877261325,
+            411.60650237139737
+          ],
+          "mse_gain_s2": 327.3595755996388,
+          "rows": 153704,
+          "rows_moved": 69840
+        },
+        "july_loo": {
+          "A_mean_rd": 261.96576509386017,
+          "B_mean_dd": 233.65895843543944,
+          "ci95": [
+            229.89676560533152,
+            358.05257879106546
+          ],
+          "mse_gain_s2": 290.27257175228084,
+          "rows": 190713,
+          "rows_moved": 88424
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "label": "the K=10 extended bag as an increment over v8's head",
+      "rows_moved": {
+        "december": 102186,
+        "january": 69840,
+        "july_loo": 88424
+      },
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 701.383692973602,
+          "passes_the_clause": true,
+          "rmse_arm": 1751.7154842530863,
+          "rmse_base": 1751.915671904615,
+          "rmse_gain_s": 0.2001876515287222,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.0012010398403922888
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 7578.886024750416,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.162762454403,
+          "rmse_base": 5980.796397761006,
+          "rmse_gain_s": 0.6336353066035372,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.04895291053100184
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6834.500006802962,
+          "passes_the_clause": true,
+          "rmse_arm": 2384.8528996703963,
+          "rmse_base": 2386.285367065955,
+          "rmse_gain_s": 1.4324673955588878,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.08098867411913102
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 78262.61394457651,
+          "passes_the_clause": true,
+          "rmse_arm": 1751.7154842530863,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 22.1981978962458,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.01529925138509858
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 47623.06582368142,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.162762454403,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.9804286189819322,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.016667382388094672
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 52218.54235405189,
+          "passes_the_clause": true,
+          "rmse_arm": 2384.8528996703963,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 10.922944481211744,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.028431038027857677
+        }
+      }
+    }
+  },
+  "seconds": 2460.0,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "vector": "experiments/exp-046-surfacefit/work/d-onemonth-bag10-255-free.npz",
+  "verdict": {
+    "above_the_upload_floor_0_1_s": true,
+    "at_the_naive_figure": false,
+    "board_gain_s": 0.5134734208261307,
+    "ci95": [
+      0.3921776629047969,
+      0.6882080899679287
+    ],
+    "every_fold_interval_clear": true,
+    "folds_clear": {
+      "december": true,
+      "january": true,
+      "july_loo": true
+    },
+    "inside_the_registered_band": true,
+    "passes_the_gate": true
+  },
+  "what": "RESULTS section 47.20's K = 10 extended bag: the ten perturbations on the extended panel."
+}

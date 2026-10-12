@@ -1,0 +1,63 @@
+{
+  "july_2025_fold_EHAM": {
+    "aobt_taxi": {
+      "iqr": 379.0,
+      "median": 1050.0,
+      "p01": 516.0,
+      "p99": 2384.2399999999943,
+      "rmse_about_median": 380.82109155455487,
+      "rows": 4824
+    },
+    "disagreement": {
+      "iqr": 252.01750004291534,
+      "median": -406.1299999952316,
+      "p01": -1741.9465000176428,
+      "p99": -9.585999972820376,
+      "rmse_about_median": 323.7546030276756,
+      "rows": 4824
+    },
+    "obs_taxi": {
+      "iqr": 354.14999985694885,
+      "median": 611.8800001144409,
+      "p01": 161.31400003433228,
+      "p99": 1330.6640000343325,
+      "rmse_about_median": 258.85994389872775,
+      "rows": 4841
+    }
+  },
+  "question": "is the 3.4x wider served update a January effect or a defect? obs_taxi - (MVT_TIME - AOBT_3) uses no label.",
+  "ranking_EHAM_by_month": {
+    "2026-01": {
+      "aobt_taxi": {
+        "iqr": 489.0,
+        "median": 821.0,
+        "p01": 485.7,
+        "p99": 4566.599999999997,
+        "rmse_about_median": 723.6842786989396,
+        "rows": 911
+      },
+      "days": [
+        "2026-01-01",
+        "2026-01-02"
+      ],
+      "disagreement": {
+        "iqr": 278.7149999141693,
+        "median": -423.0699999332428,
+        "p01": -3944.1500000715255,
+        "p99": -41.8990000486375,
+        "rmse_about_median": 631.2893439213026,
+        "rows": 911
+      },
+      "median_shift_vs_july_s": -16.93999993801117,
+      "obs_taxi": {
+        "iqr": 358.4775002002716,
+        "median": 397.5,
+        "p01": 27.500199902057645,
+        "p99": 1480.706900084019,
+        "rmse_about_median": 304.402155819246,
+        "rows": 928
+      },
+      "width_ratio_to_july": 1.9499007520437877
+    }
+  }
+}

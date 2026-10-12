@@ -1,0 +1,290 @@
+{
+ "what": "\u00a77bm: a per-class member set, V3-allin dropped on nonm only",
+ "names7": [
+  "T-tailv4",
+  "C2-cat",
+  "L2-hub8725",
+  "D1-winter",
+  "F1-fresh",
+  "V3-allin",
+  "N1-nmtail"
+ ],
+ "names6": [
+  "T-tailv4",
+  "C2-cat",
+  "L2-hub8725",
+  "D1-winter",
+  "F1-fresh",
+  "N1-nmtail"
+ ],
+ "arm_class": "nonm",
+ "untouched": [
+  "nm_bulk",
+  "nm_late",
+  "noac"
+ ],
+ "seeds": [
+  7,
+  107,
+  207,
+  307,
+  407
+ ],
+ "rounds": 300,
+ "oracle_cap": {
+  "july_loo": 0.3957,
+  "december": 0.0479,
+  "january": 0.1895
+ },
+ "instrument": {
+  "july_loo": {
+   "anchor_rmse": 286.3274,
+   "published": 286.3274,
+   "delta": 1.2e-05
+  },
+  "december": {
+   "anchor_rmse": 207.0083,
+   "published": 207.0083,
+   "delta": 4e-06
+  },
+  "january": {
+   "anchor_rmse": 339.0173,
+   "published": 339.0173,
+   "delta": 3.5e-05
+  }
+ },
+ "folds": {
+  "july_loo": {
+   "published": 286.3274,
+   "g7": 285.2029,
+   "g6": 286.2728,
+   "mix": 284.7629,
+   "gain_vs_global": 0.4401,
+   "oracle_cap": 0.3957,
+   "nonm_n": 3595,
+   "untouched_max_move": {
+    "nm_bulk": 0.0,
+    "nm_late": 0.0,
+    "noac": 0.0
+   },
+   "by_class": {
+    "g7": {
+     "nm_bulk": {
+      "n": 172270,
+      "rmse": 208.4312
+     },
+     "nm_late": {
+      "n": 14509,
+      "rmse": 460.4623
+     },
+     "noac": {
+      "n": 339,
+      "rmse": 3407.3545
+     },
+     "nonm": {
+      "n": 3595,
+      "rmse": 531.777
+     }
+    },
+    "g6": {
+     "nm_bulk": {
+      "n": 172270,
+      "rmse": 209.6326
+     },
+     "nm_late": {
+      "n": 14509,
+      "rmse": 462.2106
+     },
+     "noac": {
+      "n": 339,
+      "rmse": 3430.868
+     },
+     "nonm": {
+      "n": 3595,
+      "rmse": 519.1153
+     }
+    },
+    "mix": {
+     "nm_bulk": {
+      "n": 172270,
+      "rmse": 208.4312
+     },
+     "nm_late": {
+      "n": 14509,
+      "rmse": 460.4623
+     },
+     "noac": {
+      "n": 339,
+      "rmse": 3407.3545
+     },
+     "nonm": {
+      "n": 3595,
+      "rmse": 519.1153
+     }
+    }
+   },
+   "falsifier_untouched_ok": true,
+   "vector": {
+    "path": "experiments/exp-047-queue/oof/memberset--july_loo.parquet",
+    "rows": 190713,
+    "sha256": "0b720394de6f09a478529bb7a18ce9029958b4196f2fbc07841257ff56735463"
+   },
+   "nonm_gain": 12.6617
+  },
+  "december": {
+   "published": 207.0083,
+   "g7": 205.6118,
+   "g6": 206.9557,
+   "mix": 205.5328,
+   "gain_vs_global": 0.0791,
+   "oracle_cap": 0.0479,
+   "nonm_n": 1554,
+   "untouched_max_move": {
+    "nm_bulk": 0.0,
+    "nm_late": 0.0,
+    "noac": 0.0
+   },
+   "by_class": {
+    "g7": {
+     "nm_bulk": {
+      "n": 158386,
+      "rmse": 184.6327
+     },
+     "nm_late": {
+      "n": 5648,
+      "rmse": 395.0447
+     },
+     "noac": {
+      "n": 89,
+      "rmse": 2010.4588
+     },
+     "nonm": {
+      "n": 1554,
+      "rmse": 483.8304
+     }
+    },
+    "g6": {
+     "nm_bulk": {
+      "n": 158386,
+      "rmse": 185.9103
+     },
+     "nm_late": {
+      "n": 5648,
+      "rmse": 399.2712
+     },
+     "noac": {
+      "n": 89,
+      "rmse": 2019.6659
+     },
+     "nonm": {
+      "n": 1554,
+      "rmse": 480.2355
+     }
+    },
+    "mix": {
+     "nm_bulk": {
+      "n": 158386,
+      "rmse": 184.6327
+     },
+     "nm_late": {
+      "n": 5648,
+      "rmse": 395.0447
+     },
+     "noac": {
+      "n": 89,
+      "rmse": 2010.4588
+     },
+     "nonm": {
+      "n": 1554,
+      "rmse": 480.2355
+     }
+    }
+   },
+   "falsifier_untouched_ok": true,
+   "vector": {
+    "path": "experiments/exp-047-queue/oof/memberset--december.parquet",
+    "rows": 165677,
+    "sha256": "089309e6ad7da05441fb7af735488eed8ed90b5f5c77b5a636bb61e5cc5e1106"
+   },
+   "nonm_gain": 3.5949
+  },
+  "january": {
+   "published": 339.0173,
+   "g7": 338.3816,
+   "g6": 339.1369,
+   "mix": 338.1624,
+   "gain_vs_global": 0.2191,
+   "oracle_cap": 0.1895,
+   "nonm_n": 1369,
+   "untouched_max_move": {
+    "nm_bulk": 0.0,
+    "nm_late": 0.0,
+    "noac": 0.0
+   },
+   "by_class": {
+    "g7": {
+     "nm_bulk": {
+      "n": 147691,
+      "rmse": 187.7696
+     },
+     "nm_late": {
+      "n": 4583,
+      "rmse": 436.6362
+     },
+     "noac": {
+      "n": 63,
+      "rmse": 3509.4763
+     },
+     "nonm": {
+      "n": 1369,
+      "rmse": 2801.2789
+     }
+    },
+    "g6": {
+     "nm_bulk": {
+      "n": 147691,
+      "rmse": 189.1581
+     },
+     "nm_late": {
+      "n": 4583,
+      "rmse": 441.7669
+     },
+     "noac": {
+      "n": 63,
+      "rmse": 3517.371
+     },
+     "nonm": {
+      "n": 1369,
+      "rmse": 2798.3061
+     }
+    },
+    "mix": {
+     "nm_bulk": {
+      "n": 147691,
+      "rmse": 187.7696
+     },
+     "nm_late": {
+      "n": 4583,
+      "rmse": 436.6362
+     },
+     "noac": {
+      "n": 63,
+      "rmse": 3509.4763
+     },
+     "nonm": {
+      "n": 1369,
+      "rmse": 2798.3061
+     }
+    }
+   },
+   "falsifier_untouched_ok": true,
+   "vector": {
+    "path": "experiments/exp-047-queue/oof/memberset--january.parquet",
+    "rows": 153706,
+    "sha256": "f3bbf9dd4b9e4169960a700bd528bb4c70205ed2d8de778c93d8caa9790e8ccf"
+   },
+   "nonm_gain": 2.9728
+  }
+ },
+ "clock_s": 89.5
+}

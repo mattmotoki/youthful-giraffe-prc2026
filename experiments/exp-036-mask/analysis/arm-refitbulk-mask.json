@@ -1,0 +1,248 @@
+{
+  "arm": "refitbulk-mask",
+  "note": "refit-bulk served at EDDM, EGLL, LEBL, LEMD, LFPG, LIRF, LSZH, LTFM; the other 2 airports held at v7. No refit: np.where over committed rotations.",
+  "clean": {
+    "july_loo": 284.1572,
+    "december": 204.9218,
+    "january": 218.1506
+  },
+  "vs_stack5": {
+    "july_loo": 1.0457,
+    "december": 0.69,
+    "january": 0.9796
+  },
+  "vs_v6": {
+    "july_loo": 0.5647,
+    "december": 0.7316,
+    "january": 0.6659
+  },
+  "ci_v6": {
+    "july_loo": [
+      -0.5647,
+      -1.0562,
+      -0.191
+    ],
+    "december": [
+      -0.7316,
+      -1.48,
+      -0.2108
+    ],
+    "january": [
+      -0.6659,
+      -1.0105,
+      -0.3314
+    ]
+  },
+  "ci_v6_no_noac": {
+    "july_loo": [
+      -0.6548,
+      -1.2178,
+      -0.2196
+    ],
+    "december": [
+      -0.7514,
+      -1.5172,
+      -0.2162
+    ],
+    "january": [
+      -0.7044,
+      -1.0576,
+      -0.3466
+    ]
+  },
+  "slices": {
+    "july_loo": {
+      "n": 190713,
+      "rmse": 284.1572,
+      "le3600": 247.0938,
+      "gt3600": 2405.2728,
+      "no_nm": 1119.8114,
+      "no_nm_flight_id_only": 1120.3462,
+      "noac": 3407.3545,
+      "no_noac": 245.3874,
+      "n_no_nm": 3938
+    },
+    "december": {
+      "n": 165677,
+      "rmse": 204.9218,
+      "le3600": 192.5142,
+      "gt3600": 1779.6943,
+      "no_nm": 660.3487,
+      "no_nm_flight_id_only": 661.1451,
+      "noac": 2010.4588,
+      "no_noac": 199.6073,
+      "n_no_nm": 1649
+    },
+    "january": {
+      "n": 153704,
+      "rmse": 218.1506,
+      "le3600": 196.2393,
+      "gt3600": 2087.8888,
+      "no_nm": 947.0474,
+      "no_nm_flight_id_only": 947.5878,
+      "noac": 3509.4763,
+      "no_noac": 206.2981,
+      "n_no_nm": 1433
+    }
+  },
+  "clean_board": 257.0248,
+  "gain_board_vs_stack5": 1.0124,
+  "gain_board_vs_v6": 0.5982,
+  "predicted_board": 263.094,
+  "worst_fold_vs_v6": 0.5647,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "vs_K2": {
+    "july_loo": 0.1623,
+    "december": 0.2938,
+    "january": 0.1076
+  },
+  "ci_K2": {
+    "july_loo": [
+      -0.1623,
+      -0.5158,
+      0.1221
+    ],
+    "december": [
+      -0.2938,
+      -0.8579,
+      0.1081
+    ],
+    "january": [
+      -0.1076,
+      -0.3489,
+      0.157
+    ]
+  },
+  "ci_K2_no_noac": {
+    "july_loo": [
+      -0.1883,
+      -0.5869,
+      0.1419
+    ],
+    "december": [
+      -0.3018,
+      -0.8807,
+      0.1116
+    ],
+    "january": [
+      -0.1138,
+      -0.3593,
+      0.1645
+    ]
+  },
+  "clean_board_K2": 257.1653,
+  "gain_board_vs_K2": 0.1404,
+  "worst_fold_vs_K2": 0.1076,
+  "predicted_board_vs_K2": 262.9423,
+  "vs_v7": {
+    "july_loo": 0.4679,
+    "december": 0.6458,
+    "january": 0.3905
+  },
+  "ci_v7": {
+    "july_loo": [
+      -0.4679,
+      -0.9559,
+      -0.0988
+    ],
+    "december": [
+      -0.6458,
+      -1.3938,
+      -0.1258
+    ],
+    "january": [
+      -0.3905,
+      -0.6802,
+      -0.0799
+    ]
+  },
+  "ci_v7_no_noac": {
+    "july_loo": [
+      -0.5426,
+      -1.097,
+      -0.1161
+    ],
+    "december": [
+      -0.6633,
+      -1.4212,
+      -0.13
+    ],
+    "january": [
+      -0.4131,
+      -0.7213,
+      -0.0842
+    ]
+  },
+  "clean_board_v7": 257.4598,
+  "gain_board_vs_v7": 0.435,
+  "worst_fold_vs_v7": 0.3905,
+  "predicted_board_vs_v7": 263.0273,
+  "vs_refit_bulk": {
+    "july_loo": 0.0202,
+    "december": -0.0167,
+    "january": 0.0609
+  },
+  "ci_refit_bulk": {
+    "july_loo": [
+      -0.0202,
+      -0.0573,
+      0.0132
+    ],
+    "december": [
+      0.0167,
+      -0.0037,
+      0.0388
+    ],
+    "january": [
+      -0.0609,
+      -0.1528,
+      -0.0031
+    ]
+  },
+  "ci_refit_bulk_no_noac": {
+    "july_loo": [
+      -0.0234,
+      -0.0658,
+      0.0155
+    ],
+    "december": [
+      0.0171,
+      -0.0037,
+      0.0399
+    ],
+    "january": [
+      -0.0644,
+      -0.164,
+      -0.0034
+    ]
+  },
+  "clean_board_refit_bulk": 257.0601,
+  "gain_board_vs_refit_bulk": 0.0353,
+  "worst_fold_vs_refit_bulk": -0.0167,
+  "gate_v6_inherited": true,
+  "gate_gain_v6_inherited": true,
+  "gate_folds_v6_inherited": true,
+  "gate_gain_K2": true,
+  "gate_folds_K2": true,
+  "gate_mask": true,
+  "source": "refit-bulk",
+  "keep": [
+    "EDDM",
+    "EGLL",
+    "LEBL",
+    "LEMD",
+    "LFPG",
+    "LIRF",
+    "LSZH",
+    "LTFM"
+  ],
+  "hold_at_v7": [
+    "EDDF",
+    "EHAM"
+  ],
+  "mask_rule": "gains on all three folds against v7"
+}

@@ -1,0 +1,112 @@
+{
+  "hold": [
+    "LFPG"
+  ],
+  "panel": "the v19 serve's own panel: the ungated blocks at the 28.2 gate",
+  "readings": {
+    "the_bundle_that_ships": {
+      "board_all_row_gain_s": 9.450452619652026,
+      "board_clean_gain_s": 11.453191853865661,
+      "board_interval_ci95": [
+        7.5102554990894586,
+        11.851318389583346
+      ],
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 6945.811232017485,
+          "B_mean_dd": 7009.604905765452,
+          "ci95": [
+            6309.210784473633,
+            7630.985532166917
+          ],
+          "mse_gain_s2": 6882.01755826952,
+          "rows": 165677,
+          "rows_moved": 100940
+        },
+        "january": {
+          "A_mean_rd": 5413.2719976160815,
+          "B_mean_dd": 5297.267448203882,
+          "ci95": [
+            4983.304980045286,
+            6089.392131622049
+          ],
+          "mse_gain_s2": 5529.27654702828,
+          "rows": 153706,
+          "rows_moved": 69840
+        },
+        "july_loo": {
+          "A_mean_rd": 6117.659568416873,
+          "B_mean_dd": 6321.596131374794,
+          "ci95": [
+            5361.118415520777,
+            6677.775814280592
+          ],
+          "mse_gain_s2": 5913.723005458954,
+          "rows": 190713,
+          "rows_moved": 87876
+        }
+      },
+      "every_fold_interval_clear": true,
+      "lfpg_rows_zeroed_by_the_hold": {
+        "december": 0,
+        "january": 0,
+        "july_loo": 0
+      },
+      "sha256": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684",
+      "vector": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz"
+    },
+    "v18s_fit_on_the_shipped_block": {
+      "board_all_row_gain_s": 9.29855259669398,
+      "board_clean_gain_s": 11.267751405170259,
+      "board_interval_ci95": [
+        7.421872501874626,
+        11.69826921561762
+      ],
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 6901.162576655821,
+          "B_mean_dd": 6995.078446175621,
+          "ci95": [
+            6236.860043301121,
+            7549.444300424939
+          ],
+          "mse_gain_s2": 6807.246707136021,
+          "rows": 165677,
+          "rows_moved": 100195
+        },
+        "january": {
+          "A_mean_rd": 5376.287871927886,
+          "B_mean_dd": 5283.906989347456,
+          "ci95": [
+            4931.8350304591995,
+            6024.368397873493
+          ],
+          "mse_gain_s2": 5468.668754508315,
+          "rows": 153706,
+          "rows_moved": 69095
+        },
+        "july_loo": {
+          "A_mean_rd": 6062.641016913276,
+          "B_mean_dd": 6326.545690949935,
+          "ci95": [
+            5215.818000941011,
+            6598.481730836008
+          ],
+          "mse_gain_s2": 5798.736342876618,
+          "rows": 190713,
+          "rows_moved": 87070
+        }
+      },
+      "every_fold_interval_clear": true,
+      "lfpg_rows_zeroed_by_the_hold": {
+        "december": 1133,
+        "january": 0,
+        "july_loo": 479
+      },
+      "sha256": "c184d8c8285f492586ec6a7e0493f26012f0c203d8024aba20ed421e893c0fa3",
+      "vector": "experiments/exp-046-surfacefit/work/d-guard-leaves_255x300_lr050-guard995.npz"
+    }
+  },
+  "seed": 46,
+  "what": "The bundle's own whole-update fold gate, per fold, read only (round 7, finding 1)."
+}

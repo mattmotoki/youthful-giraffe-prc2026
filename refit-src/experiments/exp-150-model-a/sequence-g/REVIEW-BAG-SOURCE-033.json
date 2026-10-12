@@ -1,0 +1,59 @@
+{
+  "verdict": "PASS",
+  "unit": "D145-G-bag-033",
+  "reviewed_UTC": "2026-10-02T18:14:01.603802+00:00",
+  "reviewer": "fresh correctness reviewer /root/g3_result_review",
+  "scope": "CPU held-arm fits, two lane queues, and status callbacks only. This is not an admission reader or result review.",
+  "source_sha256": {
+    "fit_bag_033.py": "ddd0aa2329f400ffab5e9462e06831c112b42253583c757cf50a34bceb7c44e2",
+    "lane_bag_033.py": "f90fe39b6c10118e6d6b4b3cec68d607c6c71bf751985e374fdfcbf2d3012401",
+    "watch_bag_033.py": "6d1875bec00e24bf81b248f9d8ea8fa38a40de808425ded4a576da782ce77cab",
+    "fit.py": "e7b3a6cad301b9c43f8c6f1659fe4dc902d0d21f11ed19ffbc69e136d83a14ad",
+    "model.py": "117214b1e2006f9299057ccf55ab343a2e905a71a4055c8b7e63be89f2c93cc9"
+  },
+  "spec_sha256": "831df173d6854111f9b251989ecb41091d332785e5ca089eef336bca7cc4b7c2",
+  "plan_sha256": "fd485bc7ef9ccd2b1995675dd44b208b53e7617881d8958f0e984dae581e5434",
+  "epoch_proof": {
+    "FIT_sha256": "5eaff7fd96bc463281eb4e9b0fe5311dbe408234b672d4cda34a4e80213f2a5b",
+    "SELECTION_sha256": "9d4020ff902b5adcf7fb14da8ee398f8afa2cb8d7daf76fafd8ebc4df4980186",
+    "selected_epochs": 12,
+    "receipt_sha256": "e9488a9644b3a3dbe72592ca863d966fe5e43528e7c71aac460516327adb0ebc"
+  },
+  "evidence_sha256": {
+    "results/BAG-QUEUE-CHECK-033.json": "1603532d26a590aae9bb7291ad121f4fbe5d1fec3f1cf2a9d5463f2e044dedc6",
+    "results/BAG-STACK-PINS-033.json": "4e2cf7a3de51d76cbc4b21bfd74d13abf7b9f2739c6bd8f49da2c670ffd399f0",
+    "results/bag-benchmarks-033/mixed64.json": "3efc7695d58d7c5d7407ce1e268702f1ed25b24c31d3f8a85ef544c96304476e",
+    "results/bag-benchmarks-033/mixed128.json": "d65b3382fb6f3dcd5fc07219ed4bd7b8445e8edc9b06255e54dde1536153a495"
+  },
+  "blocking_findings": [],
+  "corrected_finding": "The queue log handle is now stream. The run-pins dict remains f, so later tasks can check the review pin. The prior code would stop after the first fit.",
+  "checks": [
+    "Recipe A calls the unchanged original Model and uses the unchanged original Arrays, run_epoch, and predict. Recipe B keeps Model.forward and changes only width, layer count, and feedforward width as specified.",
+    "Both recipes use seeds150081 through150086. Each lane queues both recipes for its three seeds. Together the lanes produce six saved fits and held vectors per recipe.",
+    "All full fits use twelve final epochs without new epoch selection. The exact prior FIT and SELECTION files both record twelve epochs; SELECTION records no held labels.",
+    "The full-fit guard requires the later BAG-RUN-PINS-033 file to bind this PASS receipt, source bytes, plan, and old epoch proof. The supervisor checks immutable plan, run pins, review, and source hashes before every child fit.",
+    "The frozen input manifest hash and every member hash are checked. Actual loss indices must be unique, disjoint from held indices, and outside Jan/Jul2025. The frozen packet already proves excluded-day buffers and encoder ownership. Only training labels are opened.",
+    "CPU fits require the exact assigned affinity and nice19, CUDA hidden, six Torch threads, one interop/BLAS/Arrow pool, and a24GiB address-space cap. The original GPU-only fit entry point is unchanged and is not called.",
+    "Training keeps batch256, AdamW.001/.0001, SmoothL1 beta2 with300-second corrections, clipping1, the original mixed ARR/DEP windows, and seed-owned shuffle. Saved held IDs retain frozen order. Original predict rejects nonfinite or below60 values and applies no upper cap.",
+    "Each fit saves its final checkpoint and complete held vector. Reload metadata and first1024 held predictions must match exactly. No held quality score or held-label selection runs.",
+    "The queue uses write-once outputs, an owned lane lock, an18-hour child limit, and TERM/KILL of its own child process group. It records child command, output hashes, task completion, and terminal status. The saved six-child mock check matches the corrected source hash.",
+    "The Mac watcher reads the two owned lane receipts and reports terminal state through the desk callback. It does not launch fits, score held predictions, select a recipe, write a stack, or upload.",
+    "The plan pins the frozen stack6 and uses Gmixed028 for held validation. Annual Gmixed032 saw Jan/Jul labels and is not a held-validation model. The later read must compare complete matched bags and apply the desk under+60 kill rule on served stack6 terms."
+  ],
+  "benchmark_note": "Saved benchmarks pin fit_bag source33e02025, before the added full-fit source guards. The recipe and training loop reviewed here are unchanged. Estimates are training-only:2.4534h for mixed64,7.0523h for mixed128, and28.5171h for each balanced lane; output and audit time are additional.",
+  "admission_scoring": "DISABLED pending a separate fresh read-source review after held arms exist. No recipe or entry decision is made by this receipt.",
+  "review_actions": {
+    "local_source_and_hash_checks": true,
+    "saved_receipts_read": true,
+    "remote_execution": false,
+    "real_fit": false,
+    "GPU_execution": false,
+    "model_inference": false,
+    "held_labels_opened": false,
+    "quality_score": false,
+    "implementation_changes": false,
+    "files_written": [
+      "REVIEW-BAG-SOURCE-033.json"
+    ]
+  }
+}

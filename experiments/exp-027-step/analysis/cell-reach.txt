@@ -1,0 +1,10 @@
+head=stack5  arm=full  win=600s  minn=4  cells/fold={'july_loo': 25806, 'december': 21989, 'january': 20299}  cols=131
+  july_loo  cells 25,806  shared 1,500,073,615  removed   18,194,850 =   1.2 %   at best scale   3.6 % (alpha 0.40 oof, 0.55 in-sample -> 3.9 %)   corr(p,m) +0.141
+  december  cells 21,989  shared  770,378,016  removed  -37,548,466 =  -4.9 %   at best scale   2.8 % (alpha 0.52 oof, 0.39 in-sample -> 3.2 %)   corr(p,m) +0.137
+  january   cells 20,299  shared  688,952,538  removed   -8,415,618 =  -1.2 %   at best scale   2.0 % (alpha 0.47 oof, 0.44 in-sample -> 2.0 %)   corr(p,m) +0.110
+  board 258.0372  ceiling on these cells +12.65 s  REACHED +0.06 s (0.5 %)   at the best scale +0.39 s (3.1 %, out of fold; +0.41 s / 3.3 % if alpha is chosen in sample)
+head=stack5  arm=full  win=1800s  minn=4  cells/fold={'july_loo': 11570, 'december': 10797, 'january': 10728}  cols=131
+  july_loo  cells 11,570  shared 1,324,780,451  removed   17,422,848 =   1.3 %   at best scale   4.6 % (alpha 0.42 oof, 0.54 in-sample -> 4.9 %)   corr(p,m) +0.188
+  december  cells 10,797  shared  710,775,947  removed  -17,635,198 =  -2.5 %   at best scale   4.2 % (alpha 0.50 oof, 0.44 in-sample -> 4.3 %)   corr(p,m) +0.171
+  january   cells 10,728  shared  604,183,156  removed  -19,771,849 =  -3.3 %   at best scale   2.2 % (alpha 0.50 oof, 0.39 in-sample -> 2.3 %)   corr(p,m) +0.136
+  board 258.0372  ceiling on these cells +11.11 s  REACHED -0.01 s (-0.1 %)   at the best scale +0.42 s (3.9 %, out of fold; +0.44 s / 4.1 % if alpha is chosen in sample)

@@ -1,0 +1,92 @@
+{
+ "served_now": [
+  "EDDF/reached",
+  "LEMD/reached",
+  "LTFM/unreached"
+ ],
+ "carried_by_v16": [
+  "EDDF/reached",
+  "LTFM/unreached"
+ ],
+ "added": [
+  "LEMD/reached"
+ ],
+ "arm": "N",
+ "learner": "ridge",
+ "boot": 2000,
+ "seed": 47,
+ "step2": "experiments/exp-047-queue/analysis/arms-step2-lit.json",
+ "per_fold": {
+  "july_loo": {
+   "rows": 190713,
+   "rows_carried_by_v16": 29844,
+   "rows_added": 9366,
+   "added_cells": [
+    "LEMD/reached"
+   ],
+   "increment_s2": 63.15,
+   "increment_ci95_s2": [
+    41.18,
+    87.14
+   ],
+   "increment_per_added_row_s2": 1285.9,
+   "rmse_all_v16": 283.2963,
+   "rmse_all_new": 283.1848,
+   "rmse_clean_v16": 283.2963,
+   "rmse_clean_new": 283.1848,
+   "rms_move_s": 27.2001,
+   "max_abs_move_s": 236.028
+  },
+  "december": {
+   "rows": 165677,
+   "rows_carried_by_v16": 24169,
+   "rows_added": 810,
+   "added_cells": [
+    "LEMD/reached"
+   ],
+   "increment_s2": 6.34,
+   "increment_ci95_s2": [
+    3.17,
+    9.93
+   ],
+   "increment_per_added_row_s2": 1297.7,
+   "rmse_all_v16": 204.0656,
+   "rmse_all_new": 204.0501,
+   "rmse_clean_v16": 204.0656,
+   "rmse_clean_new": 204.0501,
+   "rms_move_s": 27.8519,
+   "max_abs_move_s": 112.9631
+  },
+  "january": {
+   "rows": 153706,
+   "rows_carried_by_v16": 24954,
+   "rows_added": 0,
+   "added_cells": [
+    "LEMD/reached"
+   ],
+   "increment_s2": 0.0,
+   "increment_ci95_s2": [
+    0.0,
+    0.0
+   ],
+   "increment_per_added_row_s2": 0.0,
+   "rmse_all_v16": 337.363,
+   "rmse_all_new": 337.363,
+   "rmse_clean_v16": 217.4767,
+   "rmse_clean_new": 217.4767,
+   "rms_move_s": 0.0,
+   "max_abs_move_s": 0.0
+  }
+ },
+ "board_all": {
+  "v16": 308.4122,
+  "new": 308.3552,
+  "gain_s": 0.057
+ },
+ "board_clean": {
+  "v16": 256.2412,
+  "new": 256.1726,
+  "gain_s": 0.0686
+ },
+ "note": "the increment over the bytes on the board: v16 already carries this lane's v14 update on the carried cells, so the gain priced here is what the lit-fold revival ADDS. Cross-fitted by fold; december is carried beside the board, never inside it."
+}

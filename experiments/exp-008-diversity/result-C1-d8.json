@@ -1,0 +1,105 @@
+{
+  "name": "C1-d8",
+  "argv": "--kind cat --name C1-d8 --depth 8 --folds july_loo --rounds-m6 3625 --rounds-m11 425 --rounds-m11s 600",
+  "folds": {
+    "july": {
+      "rmse": 320.59407411024847,
+      "rmse_bulk": 278.37923680636464,
+      "rmse_tail": 2725.5347119731114,
+      "rmse_no_nm": 1309.1070997779166,
+      "rmse_noac": 3982.8460835319306,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.24860851271242854,
+      "sse_share_no_nm": 0.3439485105042371,
+      "sse_share_noac": 0.274343999852031,
+      "bias": -3.0796271572693468,
+      "fold": "july",
+      "rounds": 3625,
+      "seeds": [
+        7
+      ],
+      "seconds": 494,
+      "oof": "experiments/exp-008-diversity/oof/C1-d8-july.parquet"
+    },
+    "july_loo": {
+      "rmse": 330.62033455032696,
+      "rmse_bulk": 287.5886158698677,
+      "rmse_tail": 2795.8256045259873,
+      "rmse_no_nm": 1309.5186056572177,
+      "rmse_noac": 4020.000684673688,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.24597137863431845,
+      "sse_share_no_nm": 0.3236072793604351,
+      "sse_share_noac": 0.26279223737642776,
+      "bias": 4.325070995903446,
+      "fold": "july_loo",
+      "rounds": 600,
+      "seeds": [
+        7
+      ],
+      "seconds": 211,
+      "oof": "experiments/exp-008-diversity/oof/C1-d8-july_loo.parquet",
+      "argv": "--kind cat --name C1-d8 --depth 8 --folds july_loo --rounds-m6 3625 --rounds-m11 425 --rounds-m11s 600"
+    },
+    "december": {
+      "rmse": 243.88153042143762,
+      "rmse_bulk": 226.6245159047749,
+      "rmse_tail": 2281.5467719874773,
+      "rmse_no_nm": 796.0104696662524,
+      "rmse_noac": 2251.425951148957,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "n_noac": 89,
+      "sse_share_tail": 0.1378729965211337,
+      "sse_share_no_nm": 0.10564649129561608,
+      "sse_share_noac": 0.04578100231283647,
+      "bias": -1.4832569103894118,
+      "fold": "december",
+      "rounds": 425,
+      "seeds": [
+        7
+      ],
+      "seconds": 110,
+      "oof": "experiments/exp-008-diversity/oof/C1-d8-december.parquet"
+    },
+    "january": {
+      "rmse": 361.1279676037396,
+      "rmse_bulk": 234.56964294561243,
+      "rmse_tail": 5975.811074424799,
+      "rmse_no_nm": 2852.5822524231926,
+      "rmse_noac": 3442.606311072663,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "n_noac": 63,
+      "sse_share_tail": 0.578980597790903,
+      "sse_share_no_nm": 0.5813080023266662,
+      "sse_share_noac": 0.037247935140522874,
+      "bias": 7.934184133805726,
+      "fold": "january",
+      "rounds": 425,
+      "seeds": [
+        7
+      ],
+      "seconds": 116,
+      "oof": "experiments/exp-008-diversity/oof/C1-d8-january.parquet"
+    }
+  },
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 16,
+  "gpu": "1",
+  "argv_history": [
+    "--kind cat --name C1-d8 --depth 8 --folds july_loo --rounds-m6 3625 --rounds-m11 425 --rounds-m11s 600"
+  ]
+}

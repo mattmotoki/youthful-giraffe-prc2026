@@ -1,0 +1,124 @@
+---
+title: "Upload 73: trees and a clock head, other views, recording rules, three later steps"
+config:
+  theme: base
+  themeVariables:
+    fontFamily: "Arial"
+    edgeLabelBackground: "#ffffff"
+    fontSize: "20px"
+    lineColor: "#66737d"
+    primaryTextColor: "#22313f"
+    clusterBkg: "#f3f6f8"
+    clusterBorder: "#dfe5ea"
+    titleColor: "#22313f"
+  themeCSS: ".flowchartTitleText { font-size: 30px; font-weight: 700; } .cluster-label .nodeLabel { font-weight: 700; color: #22313f; } .edgeLabel { color: #127c84; }"
+  flowchart:
+    curve: basis
+    nodeSpacing: 34
+    rankSpacing: 62
+    padding: 14
+    wrappingWidth: 300
+    htmlLabels: true
+---
+%% Source of figures/10-pipeline.png. Render on the Mac only (the write-up is not public),
+%% from the repository root, with @mermaid-js/mermaid-cli 12.0.0 and the local Chrome:
+%% PUPPETEER_SKIP_DOWNLOAD=1 PUPPETEER_EXECUTABLE_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+%%   npx -y @mermaid-js/mermaid-cli -i docs/writeup/figures/src/10-pipeline.mmd
+%%   -o docs/writeup/figures/10-pipeline.png -s 2 -b white
+%% Content: METHOD.md section 4.1 diagram and sections 4.2 to 4.10 (inputs of each part: sections 2.2,
+%% 4.2 level 1 and level 2, 4.3, 4.4, 4.10).
+flowchart TD
+  subgraph KEY["Key"]
+    direction LR
+    k1[("Data")] ~~~ k2["Feature step"] ~~~ k3("Learned model")
+    k4[/"Combination"\] ~~~ k5{{"Rule"}} ~~~ k6(["Output"])
+  end
+
+  subgraph INPUTS["Inputs"]
+    direction LR
+    rec[("Supplied flight and<br/>movement records")]
+    adsb[("Open ADS-B<br/>ground tracks")]
+    geo[("Stand positions<br/>X-Plane, OpenStreetMap")]
+    opdi[("OPDI surface<br/>events")]
+    era5[("ERA5<br/>weather")]
+  end
+
+  subgraph FEATURES["Features"]
+    feat["Time gaps, queues, runway state<br/>(labels blank, as in 2026)"]
+    clock["Movement inputs: ADS-B<br/>off-block timed back to<br/>the stand; OPDI leads"]
+  end
+
+  subgraph TREES["Tree models"]
+    trees("8 tree models<br/>LightGBM, CatBoost")
+    stacker("Level-2 tree stacker<br/>fitted without the held month")
+    sept("September entry<br/>earlier tree ensemble")
+  end
+
+  head("Clock head, LightGBM:<br/>label − observed taxi time")
+
+  subgraph VIEWS["Other views of the same movements"]
+    direction LR
+    gru("Runway sequence GRU<br/>and its dark-day twin,<br/>clock hidden on some days") ~~~ ctrl("Row control<br/>no neighbours")
+    tr("Event<br/>transformer") ~~~ mlp("MLP<br/>row inputs")
+  end
+
+  route[/"Route: ½ stacker + ½ September entry"\]
+  half[/"½ route + ½ clock head<br/>on rows with a clock"\]
+  lin[/"Linear stack per row class<br/>weights fitted on held months"\]
+
+  subgraph RULES["Rules for how the label is recorded"]
+    direction LR
+    r1{{"Rome rows without a plan:<br/>join window, placeholder, date"}} --> r2{{"Placeholder practice<br/>by airline and route"}} --> r3{{"Stand and<br/>runway rules"}} --> r4{{"Hard bounds: join window,<br/>stand floors, 60 s"}}
+  end
+
+  quarter[/"¼ step toward the dark-day twin<br/>on rows with an aircraft type but<br/>no plan; not on long-taxi days"\]
+
+  subgraph LATER["Steps of upload 73"]
+    c5[/"Five steps outside<br/>the linear stack:<br/>new clock cells, long routes,<br/>Rome rows without a type,<br/>rollovers"\]
+    l2c("Second-level LightGBM:<br/>remaining error on clock rows<br/>with a plan")
+    l2chalf[/"+ ½ of its correction"\]
+    s7("Airport-traffic transformer:<br/>64 movements before and after,<br/>within 3 h; 3 seeds per mode")
+    ords[/"Per-airport step toward the<br/>transformer on ordinary rows,<br/>coefficient floored at 0"\]
+  end
+
+  out(["Taxi-out time for each of the<br/>344,841 ranking departures"])
+
+  KEY ~~~ INPUTS
+  rec --> feat
+  adsb --> clock
+  geo --> clock
+  opdi --> clock
+  era5 --> sept
+  feat --> TREES
+  clock --> TREES
+  trees --> stacker --> route
+  sept --> route
+  clock --> head
+  feat --> VIEWS
+  clock -. "where present" .-> VIEWS
+  route --> half
+  head --> half
+  half --> lin
+  VIEWS --> lin
+  lin --> RULES
+  RULES --> quarter
+  quarter --> c5
+  c5 --> l2chalf
+  l2c --> l2chalf
+  l2chalf --> ords
+  s7 --> ords
+  ords --> out
+
+  classDef data fill:#e6edf5,stroke:#5b7489,stroke-width:1.5px,color:#22313f
+  classDef feature fill:#eeeeee,stroke:#8a8a8a,stroke-width:1.5px,color:#22313f
+  classDef model fill:#d6efec,stroke:#127c84,stroke-width:1.5px,color:#22313f
+  classDef comb fill:#e9e2f5,stroke:#6c4fa3,stroke-width:1.5px,color:#22313f
+  classDef rule fill:#f6d7d2,stroke:#c0392b,stroke-width:1.5px,color:#22313f
+  classDef output fill:#22313f,stroke:#22313f,color:#ffffff
+  class k1,rec,adsb,geo,opdi,era5 data
+  class k2,feat,clock feature
+  class k3,trees,stacker,sept,head,gru,tr,mlp,ctrl,l2c,s7 model
+  class k4,route,half,lin,quarter,c5,l2chalf,ords comb
+  class k5,r1,r2,r3,r4 rule
+  class k6,out output
+  style KEY fill:#ffffff,stroke:#dfe5ea

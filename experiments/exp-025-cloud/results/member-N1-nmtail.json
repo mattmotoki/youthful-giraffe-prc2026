@@ -1,0 +1,73 @@
+{
+ "member": "N1-nmtail",
+ "weight": 0.253,
+ "synthetic": false,
+ "git_commit": "5717971ceb41ce5173f695c3c1d65df31a496d62",
+ "python": "3.12.13",
+ "versions": {
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "pyarrow": "24.0.0",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.10"
+ },
+ "gpu": "none (CPU kernel)",
+ "threads": 4,
+ "env_overrides": {},
+ "cpu_count": 4,
+ "mem_total_gb": 31.3,
+ "peak_gpu_mib": 0,
+ "peak_host_used_gb": 10.29,
+ "steps": [
+  {
+   "label": "pre: experiments/exp-003-anatomy/code/build_cache.py",
+   "cmd": "experiments/exp-003-anatomy/code/build_cache.py",
+   "cwd": ".",
+   "rc": 0,
+   "wall_s": 23.6,
+   "child_maxrss_gb": 3.99,
+   "stdout_tail": "2025-01 307257\n2025-02 287411\n2025-03 328622\n2025-04 350288\n2025-05 370105\n2025-06 365986\n2025-07 381161\n2025-08 382047\n2025-09 367679\n2025-10 371163\n2025-11 324530\n2025-12 331548\nranking 689534\n/tmp/repo/artifacts/exp-003-anatomy/mvt_all.parquet 4857331 07a697026915d8b4c088771db3c1c48f7a329889f5d9e6cae19f3b8d07eb8559\n",
+   "stderr_tail": ""
+  },
+  {
+   "label": "pre: experiments/exp-003-anatomy/code/features.py",
+   "cmd": "experiments/exp-003-anatomy/code/features.py",
+   "cwd": ".",
+   "rc": 0,
+   "wall_s": 86.8,
+   "child_maxrss_gb": 3.99,
+   "stdout_tail": "built 2025-01 (153706, 99)\nbuilt 2025-02 (143731, 99)\nbuilt 2025-03 (164450, 99)\nbuilt 2025-04 (175288, 99)\nbuilt 2025-05 (185202, 99)\nbuilt 2025-06 (183142, 99)\nbuilt 2025-07 (190713, 99)\nbuilt 2025-08 (191181, 99)\nbuilt 2025-09 (183951, 99)\nbuilt 2025-10 (185674, 99)\nbuilt 2025-11 (162332, 99)\nbuilt 2025-12 (165677, 99)\nbuilt ranking (344841, 99) from 2 monthly frames\n",
+   "stderr_tail": ""
+  },
+  {
+   "label": "pre: experiments/exp-010-nmtail/code/build_reocc.py",
+   "cmd": "experiments/exp-010-nmtail/code/build_reocc.py",
+   "cwd": ".",
+   "rc": 0,
+   "wall_s": 26.0,
+   "child_maxrss_gb": 3.99,
+   "stdout_tail": "built 2025-01\nbuilt 2025-02\nbuilt 2025-03\nbuilt 2025-04\nbuilt 2025-05\nbuilt 2025-06\nbuilt 2025-07\nbuilt 2025-08\nbuilt 2025-09\nbuilt 2025-10\nbuilt 2025-11\nbuilt 2025-12\nbuilt ranking from 2 monthly frames\n",
+   "stderr_tail": ""
+  },
+  {
+   "label": "member N1-nmtail",
+   "cmd": "experiments/exp-012-blend2/nmtail_submit.py",
+   "cwd": "experiments/exp-012-blend2",
+   "rc": 0,
+   "wall_s": 537.2,
+   "child_maxrss_gb": 10.63,
+   "stdout_tail": "[submit] train (2085047, 113) -> NM (2062577, 113); ranking (344841, 113), 339,551 NM rows; built in 6s\n[threads] declared=4 observed=4 library=lightgbm\n[submit] seed 7 done at 194s\n[submit] seed 107 done at 364s\n[submit] seed 207 done at 536s\n[submit] {\"name\": \"N1-nmtail\", \"seeds\": [7, 107, 207], \"n\": 344841, \"n_nm\": 339551, \"config\": {\"mode\": \"phi\", \"n_estimators\": 900, \"learning_rate\": 0.04, \"num_leaves\": 63, \"min_data_in_leaf\": 60, \"num_threads\": 4, \"n_features\": 78, \"nmtail_VERSION\": 4}, \"seed_spread_nm\": 0.0161894082332354, \"path\": \"artifacts/exp-012/pred/N1-nmtail-ranking.parquet\", \"sha256\": \"b5f591916230c3f6facb3100bd5bb668a13f5b7a71a0bb8dc981bb4d56d1d0f4\", \"seconds\": 536}\n",
+   "stderr_tail": ""
+  }
+ ],
+ "collected": {
+  "artifacts/exp-012/pred/N1-nmtail-ranking.parquet": {
+   "bytes": 13587046,
+   "as": "N1-nmtail--N1-nmtail-ranking.parquet"
+  },
+  "experiments/exp-012-blend2/submit-N1-nmtail.json": {
+   "bytes": 508,
+   "as": "N1-nmtail--submit-N1-nmtail.json"
+  }
+ }
+}

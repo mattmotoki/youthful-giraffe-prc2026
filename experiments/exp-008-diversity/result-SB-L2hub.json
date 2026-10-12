@@ -1,0 +1,43 @@
+{
+  "name": "SB-L2hub",
+  "folds": {
+    "july_loo": {
+      "rmse": 309.18873056956767,
+      "rmse_bulk": 270.7304775226624,
+      "rmse_tail": 2560.693878306422,
+      "rmse_no_nm": 1259.8861656621016,
+      "rmse_noac": 3862.1676306263957,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.23593455675875782,
+      "sse_share_no_nm": 0.3425069272644581,
+      "sse_share_noac": 0.2773539320395808,
+      "bias": 0.3755647163255947,
+      "fold": "july_loo",
+      "rounds": 2100,
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "seconds": 2631,
+      "oof": "experiments/exp-008-diversity/oof/SB-L2hub-july_loo.parquet",
+      "argv": "--kind lgb --name SB-L2hub --variant plain --huber-delta 1200 --seed-bag 5 --folds july_loo --rounds-m6 3225 --rounds-m11 2100"
+    }
+  },
+  "argv": "--kind lgb --name SB-L2hub --variant plain --huber-delta 1200 --seed-bag 5 --folds july_loo --rounds-m6 3225 --rounds-m11 2100",
+  "argv_history": [
+    "--kind lgb --name SB-L2hub --variant plain --huber-delta 1200 --seed-bag 5 --folds july_loo --rounds-m6 3225 --rounds-m11 2100"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 12,
+  "gpu": "0"
+}

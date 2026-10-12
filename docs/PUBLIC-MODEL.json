@@ -1,0 +1,203 @@
+{
+  "rows": 344841,
+  "bytes": 4707529,
+  "sha256": "c29c9dc434e2b2e0b910a382d8fd83a9dd6de3e05cf865203ba1a53383623e45",
+  "value_sha256": "ebd02f91888f37ccc3bfa7008ddf4aade995def4de5b3a5c9b78c84b211d9381",
+  "rmse_s": 238.9597,
+  "entry": "v40",
+  "submitted_utc": "2026-10-01 06:23:48",
+  "basis": "Accepted submission row 40: R4-kno, fixed half blend with v32, then the frozen published-mean correction once.",
+  "source_pins": {
+    "exp148": "b80d39f4afa21f2019e21d2ad810c1de14a4d7fd",
+    "exp151": "5f3260a56e249e34973e6f41dcdb81dbdf86915d",
+    "parameters": "a105637f202e8b082e3b4fc0e6b6951d1c01c979"
+  },
+  "component_records": [
+    "docs/PUBLIC-MODEL-v37.json",
+    "docs/PUBLIC-MODEL-v36.json",
+    "docs/PUBLIC-MODEL-v35.json",
+    "docs/PUBLIC-MODEL-v32.json"
+  ],
+  "parameters": {
+    "path": "experiments/exp-151-published-means/frozen-parameters.json",
+    "sha256": "20a3ef9e2854fd81d325db6ffee8470c8fd132a197a673a2c4c2faa9d82297ad",
+    "cells": 20,
+    "mode": "ranking_inspection",
+    "frozen_before_shift_scores": true
+  },
+  "admission": {
+    "path": "release/saved-vectors/v37-support.json",
+    "sha256": "ece79c8561ea989b9beecbc51b82aed740a10d30ed4a270b5584c2efe8896fbe",
+    "rule": "At least two 2025 January/July training rows in month-airport-class cell",
+    "admitted_rows": 322120,
+    "held_rows": 22721,
+    "IDs_or_classes_shipped": false
+  },
+  "external_source_notice": "docs/EUROCONTROL-DATA.md",
+  "board_parameter_source": false,
+  "fresh_fit_reproduced": false,
+  "route": {
+    "members": 8,
+    "added_R4_member_fits": 24,
+    "training_months": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "scored_months": [
+      1,
+      7
+    ],
+    "level2_owners": [
+      "q01",
+      "q07",
+      "qfinal"
+    ],
+    "form": "anchor plus mean raw LightGBM and CatBoost residual, floored at 60 seconds",
+    "CatBoost_task_type": "CPU",
+    "keep_sets": [
+      "noac",
+      "ordna",
+      "unsupported"
+    ],
+    "selected_v32_rows": 26310,
+    "equal_v32_rows": 26311,
+    "weight_on_R4_kno": 0.5,
+    "weight_on_v32": 0.5,
+    "weight_fitted": false,
+    "R4_kno_sha256": "f960ec40010c8343cc90c0ffe52f160ac7c279fcd0242ac15e48b778139cdc86",
+    "R4_B50_sha256": "4c66c9d6ff10fad3a1999df69cdcf7e46cf95a1cd9b79b4be2ea3d53a6a9c585"
+  },
+  "serving": {
+    "changed_rows": 322108,
+    "rms_change_s": 10.916300863520604,
+    "max_abs_change_s": 27.577885825358976,
+    "unsupported_ranking_rows_held": 22721,
+    "base": "r4-b50",
+    "floor_s": 60,
+    "bisection_iterations": 80,
+    "shift_applied_once": true,
+    "unsupported_share_compensated": false
+  },
+  "local_selection": {
+    "baseline": "local shifted B50 stand-in for v37; full-route valid G unmeasured",
+    "total_vs_local_v37": {
+      "G_s2_per_ranking_row": 394.11661550496484,
+      "interval_95": [
+        294.2726403466256,
+        495.38245636264645
+      ],
+      "resampling": {
+        "airport_day": {
+          "se": 50.718042917319174,
+          "lo95": 294.2726403466256,
+          "hi95": 495.38245636264645,
+          "gain_s_lo95": 0.4922549179011071,
+          "gain_s_hi95": 0.8291356840922504,
+          "p_G_le_0": 0.0
+        },
+        "common_day": {
+          "se": 43.010714047128054,
+          "lo95": 308.50354637213877,
+          "hi95": 478.09984959064843,
+          "gain_s_lo95": 0.5160807355437669,
+          "gain_s_hi95": 0.8001705022373358,
+          "p_G_le_0": 0.0
+        },
+        "week_block": {
+          "se": 30.74670919332061,
+          "lo95": 332.5580662533631,
+          "hi95": 451.67384916305315,
+          "gain_s_lo95": 0.5563578702970062,
+          "gain_s_hi95": 0.7558866761641525,
+          "p_G_le_0": 0.0
+        }
+      },
+      "January_G": 117.12674262794822,
+      "July_G": 276.98987287701715
+    },
+    "shift_vs_local_R4_B50": {
+      "G_s2_per_ranking_row": 113.01704214602906,
+      "interval_95": [
+        10.328106799274632,
+        213.0471631895891
+      ],
+      "resampling": {
+        "airport_day": {
+          "se": 52.4267304353189,
+          "lo95": 10.328106799274632,
+          "hi95": 213.0471631895891,
+          "gain_s_lo95": 0.01729208786741765,
+          "gain_s_hi95": 0.35690240935156226,
+          "p_G_le_0": 0.015
+        },
+        "common_day": {
+          "se": 58.71142787339412,
+          "lo95": -6.829799516449985,
+          "hi95": 219.16973956929903,
+          "gain_s_lo95": -0.011434410556375951,
+          "gain_s_hi95": 0.3671654286639523,
+          "p_G_le_0": 0.0335
+        },
+        "week_block": {
+          "se": 83.70465069021088,
+          "lo95": -60.761614918017436,
+          "hi95": 270.6339282650548,
+          "gain_s_lo95": -0.10171136889215404,
+          "gain_s_hi95": 0.45344666392048794,
+          "p_G_le_0": 0.0995
+        }
+      },
+      "January_G": 5.97657312523134,
+      "July_G": 107.04046902079784
+    },
+    "route_vs_local_B50": {
+      "G_s2_per_ranking_row": 395.71097234216927,
+      "interval_95": [
+        296.6763620696216,
+        496.07669365679993
+      ],
+      "resampling": {
+        "airport_day": {
+          "gain_s_hi95": 0.8297290770649397,
+          "gain_s_lo95": 0.4959387414231742,
+          "hi95": 496.07669365679993,
+          "lo95": 296.6763620696216,
+          "p_G_le_0": 0.0,
+          "se": 50.53521108497352
+        },
+        "common_day": {
+          "gain_s_hi95": 0.8012325481892049,
+          "gain_s_lo95": 0.5209225125233843,
+          "hi95": 479.06208062966186,
+          "lo95": 311.6089318680917,
+          "p_G_le_0": 0.0,
+          "se": 42.57837535679054
+        },
+        "week_block": {
+          "gain_s_hi95": 0.7588733621773258,
+          "gain_s_lo95": 0.5586397955457869,
+          "hi95": 453.7673968284034,
+          "lo95": 334.14983950877865,
+          "p_G_le_0": 0.0,
+          "se": 31.181718315695946
+        }
+      },
+      "January_G": 115.01006708982494,
+      "July_G": 280.7009052523444
+    },
+    "optimistic": true,
+    "reason": "Published held-month means contain held labels. Historical v24 bias priors and saved v32 references retain known label paths."
+  },
+  "reproduction_limits": [
+    "Replay uses saved R4-kno model values, replays v32, applies the fixed 0.5 blend, then the unchanged frozen correction; no new fit ran.",
+    "Fresh fitting needs the older member inputs, 24 added month-held member fits, the nine-month R4 stacker inputs and CPU fits, published monthly means and raw/open-clock class support rows.",
+    "The source workbook and original results/step-d table are excluded. The copied model parameter table is attributed to EUROCONTROL and retains its separate data terms."
+  ]
+}

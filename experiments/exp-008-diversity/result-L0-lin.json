@@ -1,0 +1,105 @@
+{
+  "name": "L0-lin",
+  "argv": "--kind lgb --name L0-lin --variant lin --folds july_loo --rounds-m6 175 --rounds-m11 350 --rounds-m11s 125",
+  "folds": {
+    "july": {
+      "rmse": 324.1026195168666,
+      "rmse_bulk": 282.4735295126516,
+      "rmse_tail": 2724.123738568312,
+      "rmse_no_nm": 1350.9940954322633,
+      "rmse_noac": 4035.9150942134997,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.2430032716368443,
+      "sse_share_no_nm": 0.3584230055152457,
+      "sse_share_noac": 0.2756375368615491,
+      "bias": 1.1262053160950685,
+      "fold": "july",
+      "rounds": 175,
+      "seeds": [
+        7
+      ],
+      "seconds": 51,
+      "oof": "experiments/exp-008-diversity/oof/L0-lin-july.parquet"
+    },
+    "july_loo": {
+      "rmse": 323.67714964602226,
+      "rmse_bulk": 285.94710667447333,
+      "rmse_tail": 2601.6694141254543,
+      "rmse_no_nm": 1291.150758979689,
+      "rmse_noac": 3880.0599309161967,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.22223050962201177,
+      "sse_share_no_nm": 0.328234242032625,
+      "sse_share_noac": 0.25543016611268615,
+      "bias": 3.01890745135333,
+      "fold": "july_loo",
+      "rounds": 350,
+      "seeds": [
+        7
+      ],
+      "seconds": 159,
+      "oof": "experiments/exp-008-diversity/oof/L0-lin-july_loo.parquet",
+      "argv": "--kind lgb --name L0-lin --variant lin --folds july_loo --rounds-m6 175 --rounds-m11 350 --rounds-m11s 125"
+    },
+    "december": {
+      "rmse": 224.54787536881656,
+      "rmse_bulk": 206.76460917049232,
+      "rmse_tail": 2216.2105109366453,
+      "rmse_no_nm": 840.6762116427852,
+      "rmse_noac": 2586.9007354164673,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "n_noac": 89,
+      "sse_share_tail": 0.15345548126105915,
+      "sse_share_no_nm": 0.13900005050609615,
+      "sse_share_noac": 0.0712966973809875,
+      "bias": 3.2824571774641624,
+      "fold": "december",
+      "rounds": 350,
+      "seeds": [
+        7
+      ],
+      "seconds": 137,
+      "oof": "experiments/exp-008-diversity/oof/L0-lin-december.parquet"
+    },
+    "january": {
+      "rmse": 347.6308600150791,
+      "rmse_bulk": 213.36046477333792,
+      "rmse_tail": 5972.40490313488,
+      "rmse_no_nm": 2867.9162402159977,
+      "rmse_noac": 3625.4378425760915,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "n_noac": 63,
+      "sse_share_tail": 0.6241002854355507,
+      "sse_share_no_nm": 0.6340864578228231,
+      "sse_share_noac": 0.044579378580158355,
+      "bias": 4.84134187871213,
+      "fold": "january",
+      "rounds": 350,
+      "seeds": [
+        7
+      ],
+      "seconds": 107,
+      "oof": "experiments/exp-008-diversity/oof/L0-lin-january.parquet"
+    }
+  },
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 16,
+  "gpu": "0",
+  "argv_history": [
+    "--kind lgb --name L0-lin --variant lin --folds july_loo --rounds-m6 175 --rounds-m11 350 --rounds-m11s 125"
+  ]
+}

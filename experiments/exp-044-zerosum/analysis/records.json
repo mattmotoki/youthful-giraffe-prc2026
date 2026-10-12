@@ -1,0 +1,923 @@
+{
+  "note": "the COMMON.md slice decomposition for v10 and EVERY arm on the record (Sol round 2, blocking 4: the first version covered only the ridge), and the QUEUE.md row and date contributions for the two ridge designs the candidate is read from",
+  "slices": {
+    "july_loo": {
+      "v10": {
+        "rmse_all": 284.1572,
+        "rmse_le3600": 247.0938,
+        "rmse_gt3600": 2405.2728,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "ridge|dayblock": {
+        "rmse_all": 284.06,
+        "rmse_le3600": 246.9842,
+        "rmse_gt3600": 2405.198,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "ridge|xmonth": {
+        "rmse_all": 284.1288,
+        "rmse_le3600": 247.0589,
+        "rmse_gt3600": 2405.3377,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_small|dayblock": {
+        "rmse_all": 284.0708,
+        "rmse_le3600": 246.9777,
+        "rmse_gt3600": 2405.7621,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_small|xmonth": {
+        "rmse_all": 284.1571,
+        "rmse_le3600": 247.0898,
+        "rmse_gt3600": 2405.3878,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_wide|dayblock": {
+        "rmse_all": 283.9656,
+        "rmse_le3600": 246.8309,
+        "rmse_gt3600": 2406.5171,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_wide|xmonth": {
+        "rmse_all": 284.2006,
+        "rmse_le3600": 247.1328,
+        "rmse_gt3600": 2405.603,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped|dayblock": {
+        "rmse_all": 284.0473,
+        "rmse_le3600": 246.9553,
+        "rmse_gt3600": 2405.6199,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped|xmonth": {
+        "rmse_all": 284.1381,
+        "rmse_le3600": 247.072,
+        "rmse_gt3600": 2405.2649,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped_wide|dayblock": {
+        "rmse_all": 283.8998,
+        "rmse_le3600": 246.7522,
+        "rmse_gt3600": 2406.5978,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped_wide|xmonth": {
+        "rmse_all": 284.1579,
+        "rmse_le3600": 247.0972,
+        "rmse_gt3600": 2405.196,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "ridge|dayblock_frozen": {
+        "rmse_all": 284.0604,
+        "rmse_le3600": 246.9837,
+        "rmse_gt3600": 2405.2251,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "ridge|halfmonth": {
+        "rmse_all": 284.0398,
+        "rmse_le3600": 246.9629,
+        "rmse_gt3600": 2405.1393,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped|dayblock_frozen": {
+        "rmse_all": 284.0479,
+        "rmse_le3600": 246.9553,
+        "rmse_gt3600": 2405.6416,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped|halfmonth": {
+        "rmse_all": 284.0766,
+        "rmse_le3600": 246.9935,
+        "rmse_gt3600": 2405.4936,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped_wide|dayblock_frozen": {
+        "rmse_all": 283.8985,
+        "rmse_le3600": 246.7484,
+        "rmse_gt3600": 2406.6676,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped_wide|halfmonth": {
+        "rmse_all": 283.924,
+        "rmse_le3600": 246.804,
+        "rmse_gt3600": 2405.8871,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_small|dayblock|hess_diag": {
+        "rmse_all": 284.0693,
+        "rmse_le3600": 246.975,
+        "rmse_gt3600": 2405.7893,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_small|xmonth|hess_diag": {
+        "rmse_all": 284.1581,
+        "rmse_le3600": 247.0943,
+        "rmse_gt3600": 2405.2889,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_wide|dayblock|hess_diag": {
+        "rmse_all": 283.9668,
+        "rmse_le3600": 246.83,
+        "rmse_gt3600": 2406.5836,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_wide|xmonth|hess_diag": {
+        "rmse_all": 284.2063,
+        "rmse_le3600": 247.142,
+        "rmse_gt3600": 2405.5262,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped|dayblock|hess_diag_nocachevocab": {
+        "rmse_all": 284.0604,
+        "rmse_le3600": 246.9688,
+        "rmse_gt3600": 2405.6724,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped|xmonth|hess_diag_nocachevocab": {
+        "rmse_all": 284.1263,
+        "rmse_le3600": 247.0587,
+        "rmse_gt3600": 2405.256,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped_wide|dayblock|hess_diag_nocachevocab": {
+        "rmse_all": 283.9237,
+        "rmse_le3600": 246.781,
+        "rmse_gt3600": 2406.5609,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "lgb_shipped_wide|xmonth|hess_diag_nocachevocab": {
+        "rmse_all": 284.1434,
+        "rmse_le3600": 247.0722,
+        "rmse_gt3600": 2405.4453,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "ridge|pathcheck|-": {
+        "rmse_all": 284.0604,
+        "rmse_le3600": 246.9837,
+        "rmse_gt3600": 2405.2251,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "ridge|xmonth_one_1|-": {
+        "rmse_all": 284.1316,
+        "rmse_le3600": 247.0679,
+        "rmse_gt3600": 2405.1643,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      },
+      "ridge|xmonth_one_2|-": {
+        "rmse_all": 284.2158,
+        "rmse_le3600": 247.1543,
+        "rmse_gt3600": 2405.4857,
+        "rmse_nonm": 1120.3462,
+        "n": 190713,
+        "n_le3600": 190057,
+        "n_gt3600": 656,
+        "n_nonm": 3934
+      }
+    },
+    "december": {
+      "v10": {
+        "rmse_all": 204.9218,
+        "rmse_le3600": 192.5142,
+        "rmse_gt3600": 1779.6943,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "ridge|dayblock": {
+        "rmse_all": 204.7886,
+        "rmse_le3600": 192.3738,
+        "rmse_gt3600": 1779.5819,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "ridge|xmonth": {
+        "rmse_all": 204.8487,
+        "rmse_le3600": 192.4206,
+        "rmse_gt3600": 1780.7614,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_small|dayblock": {
+        "rmse_all": 204.835,
+        "rmse_le3600": 192.3982,
+        "rmse_gt3600": 1781.291,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_small|xmonth": {
+        "rmse_all": 204.8406,
+        "rmse_le3600": 192.4177,
+        "rmse_gt3600": 1780.3684,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_wide|dayblock": {
+        "rmse_all": 204.7205,
+        "rmse_le3600": 192.3112,
+        "rmse_gt3600": 1778.8939,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_wide|xmonth": {
+        "rmse_all": 204.8826,
+        "rmse_le3600": 192.4103,
+        "rmse_gt3600": 1783.9415,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped|dayblock": {
+        "rmse_all": 204.8635,
+        "rmse_le3600": 192.4222,
+        "rmse_gt3600": 1781.7322,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped|xmonth": {
+        "rmse_all": 204.8219,
+        "rmse_le3600": 192.4028,
+        "rmse_gt3600": 1780.026,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped_wide|dayblock": {
+        "rmse_all": 204.6478,
+        "rmse_le3600": 192.2249,
+        "rmse_gt3600": 1779.4949,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped_wide|xmonth": {
+        "rmse_all": 204.7974,
+        "rmse_le3600": 192.3503,
+        "rmse_gt3600": 1781.8321,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "ridge|dayblock_frozen": {
+        "rmse_all": 204.7856,
+        "rmse_le3600": 192.3705,
+        "rmse_gt3600": 1779.5879,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "ridge|halfmonth": {
+        "rmse_all": 204.892,
+        "rmse_le3600": 192.4869,
+        "rmse_gt3600": 1779.3815,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped|dayblock_frozen": {
+        "rmse_all": 204.8634,
+        "rmse_le3600": 192.4223,
+        "rmse_gt3600": 1781.7165,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped|halfmonth": {
+        "rmse_all": 204.9365,
+        "rmse_le3600": 192.4966,
+        "rmse_gt3600": 1781.9728,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped_wide|dayblock_frozen": {
+        "rmse_all": 204.671,
+        "rmse_le3600": 192.2432,
+        "rmse_gt3600": 1779.9377,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped_wide|halfmonth": {
+        "rmse_all": 204.802,
+        "rmse_le3600": 192.3838,
+        "rmse_gt3600": 1779.8777,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_small|dayblock|hess_diag": {
+        "rmse_all": 204.8331,
+        "rmse_le3600": 192.3962,
+        "rmse_gt3600": 1781.2941,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_small|xmonth|hess_diag": {
+        "rmse_all": 204.8363,
+        "rmse_le3600": 192.417,
+        "rmse_gt3600": 1780.1032,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_wide|dayblock|hess_diag": {
+        "rmse_all": 204.7219,
+        "rmse_le3600": 192.3217,
+        "rmse_gt3600": 1778.2732,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_wide|xmonth|hess_diag": {
+        "rmse_all": 204.8924,
+        "rmse_le3600": 192.4219,
+        "rmse_gt3600": 1783.8597,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped|dayblock|hess_diag_nocachevocab": {
+        "rmse_all": 204.8559,
+        "rmse_le3600": 192.4153,
+        "rmse_gt3600": 1781.6513,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped|xmonth|hess_diag_nocachevocab": {
+        "rmse_all": 204.814,
+        "rmse_le3600": 192.3956,
+        "rmse_gt3600": 1779.9403,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped_wide|dayblock|hess_diag_nocachevocab": {
+        "rmse_all": 204.6787,
+        "rmse_le3600": 192.2611,
+        "rmse_gt3600": 1779.2674,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "lgb_shipped_wide|xmonth|hess_diag_nocachevocab": {
+        "rmse_all": 204.8128,
+        "rmse_le3600": 192.3641,
+        "rmse_gt3600": 1782.0072,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "ridge|pathcheck|-": {
+        "rmse_all": 204.7856,
+        "rmse_le3600": 192.3705,
+        "rmse_gt3600": 1779.5879,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "ridge|xmonth_one_1|-": {
+        "rmse_all": 204.9034,
+        "rmse_le3600": 192.4717,
+        "rmse_gt3600": 1781.2608,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      },
+      "ridge|xmonth_one_2|-": {
+        "rmse_all": 205.1127,
+        "rmse_le3600": 192.7047,
+        "rmse_gt3600": 1780.5767,
+        "rmse_nonm": 661.1451,
+        "n": 165677,
+        "n_le3600": 165416,
+        "n_gt3600": 261,
+        "n_nonm": 1643
+      }
+    },
+    "january": {
+      "v10": {
+        "rmse_all": 337.826,
+        "rmse_le3600": 196.2393,
+        "rmse_gt3600": 5983.3709,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "ridge|dayblock": {
+        "rmse_all": 337.7674,
+        "rmse_le3600": 196.1275,
+        "rmse_gt3600": 5983.5344,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "ridge|xmonth": {
+        "rmse_all": 337.8102,
+        "rmse_le3600": 196.1944,
+        "rmse_gt3600": 5983.6425,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_small|dayblock": {
+        "rmse_all": 337.6911,
+        "rmse_le3600": 196.0772,
+        "rmse_gt3600": 5982.2758,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_small|xmonth": {
+        "rmse_all": 337.7992,
+        "rmse_le3600": 196.1715,
+        "rmse_gt3600": 5983.7021,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_wide|dayblock": {
+        "rmse_all": 337.4583,
+        "rmse_le3600": 195.6889,
+        "rmse_gt3600": 5982.0628,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_wide|xmonth": {
+        "rmse_all": 337.866,
+        "rmse_le3600": 196.29,
+        "rmse_gt3600": 5983.6518,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped|dayblock": {
+        "rmse_all": 337.6663,
+        "rmse_le3600": 196.0244,
+        "rmse_gt3600": 5982.4301,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped|xmonth": {
+        "rmse_all": 337.7762,
+        "rmse_le3600": 196.1381,
+        "rmse_gt3600": 5983.6069,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped_wide|dayblock": {
+        "rmse_all": 337.3554,
+        "rmse_le3600": 195.5016,
+        "rmse_gt3600": 5982.2093,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped_wide|xmonth": {
+        "rmse_all": 337.84,
+        "rmse_le3600": 196.2341,
+        "rmse_gt3600": 5983.8238,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "ridge|dayblock_frozen": {
+        "rmse_all": 337.7703,
+        "rmse_le3600": 196.1325,
+        "rmse_gt3600": 5983.5342,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "ridge|halfmonth": {
+        "rmse_all": 337.8382,
+        "rmse_le3600": 196.2381,
+        "rmse_gt3600": 5983.7132,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped|dayblock_frozen": {
+        "rmse_all": 337.6663,
+        "rmse_le3600": 196.0244,
+        "rmse_gt3600": 5982.4301,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped|halfmonth": {
+        "rmse_all": 337.7505,
+        "rmse_le3600": 196.128,
+        "rmse_gt3600": 5983.0762,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped_wide|dayblock_frozen": {
+        "rmse_all": 337.3494,
+        "rmse_le3600": 195.492,
+        "rmse_gt3600": 5982.1975,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped_wide|halfmonth": {
+        "rmse_all": 337.6377,
+        "rmse_le3600": 195.9349,
+        "rmse_gt3600": 5983.0522,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_small|dayblock|hess_diag": {
+        "rmse_all": 337.6698,
+        "rmse_le3600": 196.0447,
+        "rmse_gt3600": 5982.2102,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_small|xmonth|hess_diag": {
+        "rmse_all": 337.804,
+        "rmse_le3600": 196.1796,
+        "rmse_gt3600": 5983.7064,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_wide|dayblock|hess_diag": {
+        "rmse_all": 337.4534,
+        "rmse_le3600": 195.6772,
+        "rmse_gt3600": 5982.1137,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_wide|xmonth|hess_diag": {
+        "rmse_all": 337.8545,
+        "rmse_le3600": 196.2781,
+        "rmse_gt3600": 5983.5294,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped|dayblock|hess_diag_nocachevocab": {
+        "rmse_all": 337.6589,
+        "rmse_le3600": 196.0134,
+        "rmse_gt3600": 5982.405,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped|xmonth|hess_diag_nocachevocab": {
+        "rmse_all": 337.7805,
+        "rmse_le3600": 196.1455,
+        "rmse_gt3600": 5983.6063,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped_wide|dayblock|hess_diag_nocachevocab": {
+        "rmse_all": 337.3674,
+        "rmse_le3600": 195.5262,
+        "rmse_gt3600": 5982.1483,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "lgb_shipped_wide|xmonth|hess_diag_nocachevocab": {
+        "rmse_all": 337.8312,
+        "rmse_le3600": 196.2304,
+        "rmse_gt3600": 5983.6476,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "ridge|pathcheck|-": {
+        "rmse_all": 337.7703,
+        "rmse_le3600": 196.1325,
+        "rmse_gt3600": 5983.5342,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "ridge|xmonth_one_1|-": {
+        "rmse_all": 337.8765,
+        "rmse_le3600": 196.3015,
+        "rmse_gt3600": 5983.7553,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      },
+      "ridge|xmonth_one_2|-": {
+        "rmse_all": 337.8036,
+        "rmse_le3600": 196.1899,
+        "rmse_gt3600": 5983.5348,
+        "rmse_nonm": 2835.2355,
+        "n": 153706,
+        "n_le3600": 153381,
+        "n_gt3600": 325,
+        "n_nonm": 1432
+      }
+    }
+  },
+  "dates": [
+    "experiments/exp-044-zerosum/analysis/dates-ridge-dayblock-july_loo.csv",
+    "experiments/exp-044-zerosum/analysis/dates-ridge-xmonth-july_loo.csv",
+    "experiments/exp-044-zerosum/analysis/dates-ridge-dayblock-december.csv",
+    "experiments/exp-044-zerosum/analysis/dates-ridge-xmonth-december.csv",
+    "experiments/exp-044-zerosum/analysis/dates-ridge-dayblock-january.csv",
+    "experiments/exp-044-zerosum/analysis/dates-ridge-xmonth-january.csv"
+  ],
+  "rows": [
+    "experiments/exp-044-zerosum/analysis/rows/rows-ridge-dayblock-july_loo.parquet",
+    "experiments/exp-044-zerosum/analysis/rows/rows-ridge-xmonth-july_loo.parquet",
+    "experiments/exp-044-zerosum/analysis/rows/rows-ridge-dayblock-december.parquet",
+    "experiments/exp-044-zerosum/analysis/rows/rows-ridge-xmonth-december.parquet",
+    "experiments/exp-044-zerosum/analysis/rows/rows-ridge-dayblock-january.parquet",
+    "experiments/exp-044-zerosum/analysis/rows/rows-ridge-xmonth-january.parquet"
+  ],
+  "provenance": {
+    "code_sha256_exp044": {
+      "cohorts.py": "ed89a81d5549a77933bbaf3b9a894ec91d5e4d29d4d3c6dfb9d354069f8b7eaa",
+      "controls.py": "5415896d4b8ec25c0e29fa7ddfda94bdef98304a2001dcc5ef23f0fb01dac412",
+      "density.py": "42e7fe8177c70e9339b116e98d35086bdcdf040da7f08ea8956ae0c9e5acc68a",
+      "learner.py": "4308b4365ca0db304172dff7be4f98b0a14875227c8d18866dcdeeabf1947ba7",
+      "records.py": "fd0bbfcdc5e1f2d931b2c5bb3cb9cf4412e8935084db100c6f48052b90e9141c",
+      "repair.py": "69b47bc94c7fcbbe3e6533ce204a69ae34b09bb45bd5627edc09c837e4db154b",
+      "serve.py": "6242896d6f0575729456adf74420e9023196cdeb2b4cbd6ea45c6394c5c5afc4",
+      "tables.py": "7d07db427b35fbebe11b4faaa5465a068d637e59bfd0e1948c40b225fb75966c",
+      "v11base.py": "99d65527b204c3b0c51e336d3751283f190b8addb2293660c2b255bf45c05458",
+      "verdict.py": "3b2ed28fda56c83dbeefa969280c98b4c54acdd0e079f3c8c63c7e231158b8c8",
+      "zs.py": "d6592475cc3990ee197cae469ae9ef231f49dcf50ed3820283fe983cca019dbe"
+    },
+    "code_sha256_exp039_imported": {
+      "donor.py": "3f0402718cafc41bc7b3ebfc0b3b410855da6e54986b74b71f143a38d3edcda2",
+      "packet.py": "4542b8481052c1b7c03cca7e6050b48cce5cdee1b7e8f90dbd26331bd7f02439",
+      "q03.py": "30604f8a4b6f93f281e4fa9d1914183caf1ea345fa67ec8ff8456942bbd187cb",
+      "q04.py": "330b665faa581f66fd5538632d8f71d2f3e041134481ceb3ad879359eed4f443",
+      "q05.py": "1dc2d5c9b00c0ff5543cc5d1b6cb153a7203865062097c66428766c9c42fe113",
+      "q06.py": "d13bf853d30bfca4021ef9bf6b3415d712b85459d423f14df2fe55632c850e15",
+      "rowfeat.py": "8f52719827545be5f5fb5a7701ef8f0cd1246ac0a5b80a1d64923cbfbd823007",
+      "tables.py": "e20f9a45074a5fa38205816f33ad5e4df64c4b2d6847f4dc68b8a26fb1768877",
+      "v10.py": "a5842eafbfa7391c91c9c18f2e36dddf7bcb9a366d279e842b6931ddc412b6f4"
+    },
+    "v10_fold_vector_sha256": {
+      "july_loo": "69c90a5af928de6b4c480159be605068dbc55421d04389bed74be45a280af017",
+      "december": "c1452e90ed097b0a28f8d6a5f3cbf9f691f6d9d9d64698d559ec84e379b5c9a2",
+      "january": "edf0ac093e6b6e260fb64975f1e27c9fa2165fc6c8f0eddaecbdff379e64bc65"
+    },
+    "uploaded_v10_sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78",
+    "uploaded_v11_sha256": "42ca5ee6410938d56c8830e9ec3980d806633c3b2ff15963c0ffe2fe97c39f8c",
+    "validation_month_file_sha256": {
+      "2025-01": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+      "2025-07": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+      "2025-12": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724"
+    },
+    "ranking_file_sha256": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+    "shipped_cache_sha256": {
+      "2025-01": "ea215884462fdff2bc126ea6b85a7a638cffbc92025e4a6e163ed1a37cd0c783",
+      "2025-07": "574bc960bc8d69c3147fb1838555f81690e7e88dc97c8d4f1960a3eed2c79b73",
+      "2025-12": "1dc95e2b218a69f86e47cea97da56150ac5f84ba303ec138a63ccba00fedee27"
+    },
+    "git_commit": "a059d12870a78c2975f0fcee946eb9ea5b275cbf",
+    "git_dirty": true,
+    "shipped_columns": {
+      "with_cache_vocabulary": 89,
+      "without_cache_vocabulary": 76
+    },
+    "versions": {
+      "python": "3.11.12",
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "lightgbm": "4.7.0"
+    }
+  }
+}

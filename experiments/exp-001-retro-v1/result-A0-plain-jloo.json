@@ -1,0 +1,64 @@
+{
+  "name": "A0-plain-jloo",
+  "argv": "--name A0-plain-jloo --features v2 --target residual --clip-floor 60 --noac-head --residual-guard --es-mode lastmonth --es-rounds 100 --learning-rate 0.03 --folds july_loo --no-submission",
+  "folds": {
+    "july_loo": {
+      "rmse": 315.23441837343415,
+      "rmse_bulk": 278.43128035006,
+      "rmse_tail": 2535.6297683438092,
+      "rmse_no_nm": 1324.6973671449664,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.22255018862398485,
+      "sse_share_no_nm": 0.3642672656067647,
+      "bias": 2.47946373638974,
+      "rmse_noac": 3917.6611220755144,
+      "n_noac": 339,
+      "sse_share_noac": 0.2745401556653717,
+      "fold": "july_loo",
+      "best_iteration": 711,
+      "refit_rounds": 779,
+      "seconds": 1148,
+      "oof": "experiments/exp-001-retro-v1/oof/A0-plain-jloo-july_loo.parquet"
+    }
+  },
+  "phi_settings": null,
+  "lirf_gate": null,
+  "shared_modules": {
+    "surface": {
+      "UNIMPEDED_Q": 0.2,
+      "WINDOWS": [
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ],
+      "BUCKET": 1200.0,
+      "NBR_WINDOW": "1800s",
+      "SHRINK_K": 20.0,
+      "n_families": 7
+    },
+    "phi": {
+      "default_weight": "rows",
+      "default_shrink_rows": 150.0,
+      "default_min_rows": 100,
+      "keys": [
+        [
+          "airport"
+        ],
+        [
+          "airport",
+          "operator"
+        ]
+      ]
+    },
+    "lirf": {
+      "cat_features": [
+        "flight_prefix",
+        "stand_group"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "note": "Candidate 3 member set. The winter member is the REPAIRED deice-only arm, published under a pinned versioned name for exp-016 and any other consumer: experiments/exp-012-blend2/published/D1-winter-deice-v1-{fold}.parquet. The full 25-column day-state block it replaces reached its fold score by extrapolating on disrupted days (4,640 january validation cells outside the training range against this member's 0), which January 2026 cannot be relied on to tolerate.",
+  "members": {
+    "T-tailv2":  "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+    "C2-cat":    "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+    "L2-hub":    "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-{fold}.parquet"
+  }
+}

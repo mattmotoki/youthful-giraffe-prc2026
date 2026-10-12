@@ -1,0 +1,125 @@
+{
+  "algebra_says": 2.0,
+  "by_fold": {
+    "december": {
+      "A_from_the_decomposition": 28.488279153329405,
+      "A_measured": 28.48827915332943,
+      "B": 26.396894482110422,
+      "decomposition_agrees": true,
+      "gain_s2_per_row": 30.579663824548437,
+      "largest_pipeline_nonlinearity_s": 6.394884621840902e-13,
+      "mean_members_1_5": 158.11061091920132,
+      "mean_members_6_10": 215.08716922586012,
+      "per_member_alignment": {
+        "1": 171.86995541438242,
+        "2": 176.76739522165678,
+        "3": 158.9308028770602,
+        "4": 142.02786722322662,
+        "5": 140.95703385968062,
+        "6": 231.58357242000235,
+        "7": 209.65919362186983,
+        "8": 211.95600849240344,
+        "9": 210.23822760752697,
+        "10": 211.99884398749816
+      },
+      "ratio_2A_over_B": 2.1584568724655373,
+      "ratio_ci95": [
+        0.6286317876383858,
+        3.6882819572926886
+      ],
+      "sd_across_members": 32.57680942503694,
+      "se_of_A": 10.301691668435701,
+      "se_of_the_ratio": 0.7805230024628325,
+      "sigma_from_the_algebra_2_0": 0.2030137125562585
+    },
+    "january": {
+      "A_from_the_decomposition": 21.864056802357844,
+      "A_measured": 21.864056802357844,
+      "B": 21.283983560569233,
+      "decomposition_agrees": true,
+      "gain_s2_per_row": 22.444130044146455,
+      "largest_pipeline_nonlinearity_s": 5.897504706808832e-13,
+      "mean_members_1_5": 260.84482637186875,
+      "mean_members_6_10": 304.57293997658445,
+      "per_member_alignment": {
+        "1": 253.74257258085194,
+        "2": 262.71264855982207,
+        "3": 278.479319351889,
+        "4": 225.04084657443408,
+        "5": 284.24874479234677,
+        "6": 316.76783851741266,
+        "7": 309.38237935588324,
+        "8": 304.40705479809355,
+        "9": 287.0352223388894,
+        "10": 305.27220487264333
+      },
+      "ratio_2A_over_B": 2.05450795807447,
+      "ratio_ci95": [
+        0.378283457720038,
+        3.730732458428902
+      ],
+      "sd_across_members": 28.780546214077916,
+      "se_of_A": 9.10120783402222,
+      "se_of_the_ratio": 0.8552165818134857,
+      "sigma_from_the_algebra_2_0": 0.06373585268761511
+    },
+    "july_loo": {
+      "A_from_the_decomposition": 11.050164043294865,
+      "A_measured": 11.050164043294878,
+      "B": 15.794296817289338,
+      "decomposition_agrees": true,
+      "gain_s2_per_row": 6.3060312693004175,
+      "largest_pipeline_nonlinearity_s": 5.471179065352771e-13,
+      "mean_members_1_5": -118.36134470670311,
+      "mean_members_6_10": -96.26101662011338,
+      "per_member_alignment": {
+        "1": -118.34636908988199,
+        "2": -130.55640660088338,
+        "3": -136.20107048578421,
+        "4": -114.01375040348805,
+        "5": -92.68912695347787,
+        "6": -74.3902658612668,
+        "7": -85.34151405596837,
+        "8": -112.44821468932282,
+        "9": -94.85354008292146,
+        "10": -114.27154841108747
+      },
+      "ratio_2A_over_B": 1.399260020388972,
+      "ratio_ci95": [
+        -0.15992647816634165,
+        2.9584465189442857
+      ],
+      "sd_across_members": 19.86608520152606,
+      "se_of_A": 6.282207742778749,
+      "se_of_the_ratio": 0.7955033155894458,
+      "sigma_from_the_algebra_2_0": -0.7551696741400712
+    }
+  },
+  "july_versus_the_others": {
+    "december": {
+      "difference": 0.7591968520765653,
+      "se_of_the_difference": 1.11446923801754,
+      "sigma": 0.681218311083268
+    },
+    "january": {
+      "difference": 0.655247937685498,
+      "se_of_the_difference": 1.1679986844695263,
+      "sigma": 0.5610005785092935
+    }
+  },
+  "quoted_in_42_4": {
+    "december": 2.16,
+    "january": 2.05,
+    "july_loo": 1.4
+  },
+  "seconds": 3.2,
+  "verdict": {
+    "caveats": [
+      "r is built from members 1-5, so a_i for i<=5 sits on both sides of the inner product; this biases the LEVEL of A, not the fold-to-fold comparison",
+      "the three folds come from the same ten member fits, so their ratios are correlated and three folds agreeing is weaker than three independent results"
+    ],
+    "july_differs_from_both_others_beyond_error": false,
+    "july_is_below_the_algebra_beyond_error": false
+  },
+  "what": "Is july's `2A/B` shortfall a fold property, or is it inside the error on `A`?"
+}

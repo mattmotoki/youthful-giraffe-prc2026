@@ -1,0 +1,109 @@
+{
+  "fold": "july_loo",
+  "frozen_on_development_days": {
+    "A_mean_rd": 5418.975314472071,
+    "B_mean_dd": 5673.549490406953,
+    "day_interval_gain_s2": {
+      "days": 5,
+      "exact_scheme": true,
+      "leave_one_day_out_hi": 5444.823830275257,
+      "leave_one_day_out_lo": 4819.317815901028,
+      "point": 5164.401138537189,
+      "resample_hi": 5952.219553040786,
+      "resample_lo": 4353.815442455668
+    },
+    "day_interval_rmse_after_s": {
+      "days": 5,
+      "exact_scheme": true,
+      "leave_one_day_out_hi": 125.14606716426037,
+      "leave_one_day_out_lo": 121.54351261291772,
+      "point": 123.34240901043147,
+      "resample_hi": 127.38851566815163,
+      "resample_lo": 118.84032191653509
+    },
+    "fit_rows": 1342,
+    "fitted_on": [
+      "2025-07-07",
+      "2025-07-08"
+    ],
+    "fitted_scale_A_over_B": 0.9551296456714927,
+    "full_amplitude_mse_gain_s2": 5164.401138537189,
+    "median_offset_s": -189.22000002861023,
+    "rmse_v10_plus_update_s": 123.34240901043147,
+    "rows": 3485,
+    "scale": 0.39178969010775744,
+    "scaled_mse_gain_s2": 5175.823972014275,
+    "scored_rows": 3485
+  },
+  "in_sample": {
+    "A_mean_rd": 13842.271015567352,
+    "B_mean_dd": 37102.49365008392,
+    "fitted_scale_A_over_B": 0.373081959021804,
+    "full_amplitude_mse_gain_s2": -9417.951618949213,
+    "rows": 3485,
+    "scaled_mse_gain_s2": 5164.3015877986045
+  },
+  "in_sample_offset_regime": {
+    "2A_minus_B": {
+      "leave_one_day_out": -9430.48,
+      "pooled": -9417.95,
+      "relative_move_pct": 0.133
+    },
+    "A": {
+      "leave_one_day_out": 13845.54,
+      "pooled": 13842.27,
+      "relative_move_pct": 0.024
+    },
+    "B": {
+      "leave_one_day_out": 37121.57,
+      "pooled": 37102.49,
+      "relative_move_pct": 0.051
+    },
+    "largest_relative_move_pct": 0.133,
+    "what": "A, B and 2A-B under the offset pooled over the scored rows, against the same three under a leave-one-day-out offset"
+  },
+  "kind": "obs_offblock_loose",
+  "leave_one_day_out_scaled": {
+    "A_mean_rd": 5156.795331820765,
+    "B_mean_dd": 5156.312810275985,
+    "fitted_scale_A_over_B": 1.0000935787960379,
+    "full_amplitude_mse_gain_s2": 5157.277853365545,
+    "rows": 3485,
+    "scaled_mse_gain_s2": 5157.27789851933
+  },
+  "leave_one_day_out_unscaled": {
+    "A_mean_rd": 13845.542115580289,
+    "B_mean_dd": 37121.56817755201,
+    "fitted_scale_A_over_B": 0.3729783733638953,
+    "full_amplitude_mse_gain_s2": -9430.483946391436,
+    "rows": 3485,
+    "scaled_mse_gain_s2": 5164.087776610442
+  },
+  "loo_gain_by_scored_day_s2": {
+    "2025-07-09": 4046.381307187985,
+    "2025-07-10": 4163.258806233284,
+    "2025-07-11": 5586.456407624259,
+    "2025-07-12": 5498.957110011305,
+    "2025-07-13": 6456.301412699557
+  },
+  "loo_scales_by_day": {
+    "2025-07-09": 0.3779197776927215,
+    "2025-07-10": 0.37756609437040917,
+    "2025-07-11": 0.3734254446441548,
+    "2025-07-12": 0.36782443345381505,
+    "2025-07-13": 0.3677693871808077
+  },
+  "median_offset_s_pooled": -191.54999995231628,
+  "note": "A one-airport week of the july_loo fold. `in_sample` fits the offset and reads the scale on the same rows and is therefore optimistic; `leave_one_day_out_scaled` is the honest one, because both the median offset and the amplitude come from the other days only. Its full_amplitude_mse_gain_s2 is the per-matched-row MSE the update buys.",
+  "rmse_obs_on_these_rows_s": 172.61431753473687,
+  "rmse_v10_on_these_rows_s": 142.75066024027262,
+  "rmse_v10_plus_update_loo_s": 123.37128168933081,
+  "rows_matched_in_fold": 3485,
+  "v10_clean_rmse": {
+    "december": 204.9218,
+    "january": 218.1506,
+    "july_loo": 284.1572
+  },
+  "v10_serves_at_eham": "stack-5, through v7: EHAM is not in exp-036's kept set (EDDM EGLL LEBL LEMD LFPG LIRF LSZH LTFM), so the vector this update would move at EHAM is v7's, which is what v10 serves there",
+  "v10_sha256": "9d0654728e7eb58c3d9176238dea98e1b44db023ac8832eb52f37bf1b2698573"
+}

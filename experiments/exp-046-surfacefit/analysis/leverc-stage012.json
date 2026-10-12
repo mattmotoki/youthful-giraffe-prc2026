@@ -1,0 +1,356 @@
+{
+ "arm": "experiments/exp-046-surfacefit/work/d-seasonal-bag10-255-free.npz",
+ "bin_s": 600,
+ "board_proxy": {
+  "december": 0.0,
+  "january": 0.00074096,
+  "july_loo": 0.0009318464575330257
+ },
+ "by_fold": {
+  "december": {
+   "stage0_count": {
+    "by_airport": {
+     "EDDF": {
+      "cells": 3044,
+      "row_weighted_mean_cell_size": 6.616923172783351,
+      "rows": 16049
+     },
+     "EDDM": {
+      "cells": 3024,
+      "row_weighted_mean_cell_size": 5.1494935382465945,
+      "rows": 11452
+     },
+     "EGLL": {
+      "cells": 2946,
+      "row_weighted_mean_cell_size": 4.1114467580105725,
+      "rows": 9269
+     },
+     "EHAM": {
+      "cells": 3194,
+      "row_weighted_mean_cell_size": 7.367827420061323,
+      "rows": 18264
+     },
+     "LEBL": {
+      "cells": 3284,
+      "row_weighted_mean_cell_size": 4.753610606897641,
+      "rows": 12671
+     },
+     "LEMD": {
+      "cells": 3629,
+      "row_weighted_mean_cell_size": 6.290262499272452,
+      "rows": 17181
+     },
+     "LFPG": {
+      "cells": 854,
+      "row_weighted_mean_cell_size": 1.9028112449799197,
+      "rows": 1245
+     },
+     "LIRF": {
+      "cells": 2630,
+      "row_weighted_mean_cell_size": 3.177690029615005,
+      "rows": 6078
+     },
+     "LSZH": {
+      "cells": 2945,
+      "row_weighted_mean_cell_size": 4.277593319247409,
+      "rows": 9939
+     }
+    },
+    "cells": 25550,
+    "class_rows": 102148,
+    "fold_rows": 165677,
+    "mean_rows_per_cell": 3.9979647749510763,
+    "median_rows_per_cell": 4.0,
+    "row_weighted_mean_cell_size": 5.5835258644320005,
+    "rows_in_singleton_cells": 4465,
+    "singleton_cells": 4465
+   },
+   "stage1_shared": {
+    "census_row2_for_contrast": [
+     0.0622,
+     0.0769
+    ],
+    "mean_r2_s2": 16298.222679584956,
+    "reachable_share": {
+     "hi": 0.09512080123570131,
+     "lo": 0.05578522381700293,
+     "point": 0.07422895267686994
+    },
+    "shared_component_s2": {
+     "ci": [
+      909.2,
+      1550.3
+     ],
+     "pairs": 234099,
+     "rows": 97683,
+     "value": 1209.8
+    }
+   },
+   "stage2_lambda": {
+    "hi": {
+     "lambda_star_at_the_row_weighted_n": 0.3251540800461248,
+     "mean_lambda_star": 0.30035399340496566,
+     "oracle_ceiling_s2_per_fold_row": 955.8360206908624,
+     "reachable_share": 0.09512080123570131,
+     "recoverable_s2_per_class_row": 465.63879597571827,
+     "recoverable_s2_per_fold_row": 287.0891658548119,
+     "rho": 0.10511988933506052
+    },
+    "lo": {
+     "lambda_star_at_the_row_weighted_n": 0.21309388757834988,
+     "mean_lambda_star": 0.2009125590476568,
+     "oracle_ceiling_s2_per_fold_row": 560.5664129601574,
+     "reachable_share": 0.05578522381700293,
+     "recoverable_s2_per_class_row": 182.66969868612958,
+     "recoverable_s2_per_fold_row": 112.6248325439908,
+     "rho": 0.059081074797956
+    },
+    "point": {
+     "lambda_star_at_the_row_weighted_n": 0.2687440409313628,
+     "mean_lambda_star": 0.25061436344400556,
+     "oracle_ceiling_s2_per_fold_row": 745.9010629115688,
+     "reachable_share": 0.07422895267686994,
+     "recoverable_s2_per_class_row": 303.1932568945579,
+     "recoverable_s2_per_fold_row": 186.93352007379,
+     "rho": 0.08018068062454879
+    }
+   }
+  },
+  "january": {
+   "stage0_count": {
+    "by_airport": {
+     "EDDF": {
+      "cells": 2946,
+      "row_weighted_mean_cell_size": 5.497996473793878,
+      "rows": 12478
+     },
+     "EDDM": {
+      "cells": 2932,
+      "row_weighted_mean_cell_size": 4.972538763310293,
+      "rows": 10706
+     },
+     "EGLL": {
+      "cells": 2882,
+      "row_weighted_mean_cell_size": 3.9443507588532882,
+      "rows": 8895
+     },
+     "EHAM": {
+      "cells": 3162,
+      "row_weighted_mean_cell_size": 7.207796610169492,
+      "rows": 17700
+     },
+     "LEBL": {
+      "cells": 3254,
+      "row_weighted_mean_cell_size": 4.356340288924558,
+      "rows": 11214
+     },
+     "LEMD": {
+      "cells": 1,
+      "row_weighted_mean_cell_size": 1.0,
+      "rows": 1
+     },
+     "LSZH": {
+      "cells": 2831,
+      "row_weighted_mean_cell_size": 3.9927388245972315,
+      "rows": 8814
+     }
+    },
+    "cells": 18008,
+    "class_rows": 69808,
+    "fold_rows": 153706,
+    "mean_rows_per_cell": 3.876499333629498,
+    "median_rows_per_cell": 3.0,
+    "row_weighted_mean_cell_size": 5.279452211780884,
+    "rows_in_singleton_cells": 2762,
+    "singleton_cells": 2762
+   },
+   "stage1_shared": {
+    "census_row2_for_contrast": [
+     0.0622,
+     0.0769
+    ],
+    "mean_r2_s2": 13729.755895187061,
+    "reachable_share": {
+     "hi": 0.08465554732895447,
+     "lo": 0.04903219002138188,
+     "point": 0.06625755089490655
+    },
+    "shared_component_s2": {
+     "ci": [
+      673.2,
+      1162.3
+     ],
+     "pairs": 149370,
+     "rows": 67046,
+     "value": 909.7
+    }
+   },
+   "stage2_lambda": {
+    "hi": {
+     "lambda_star_at_the_row_weighted_n": 0.28355714963882733,
+     "mean_lambda_star": 0.26353219620809293,
+     "oracle_ceiling_s2_per_fold_row": 527.876845406165,
+     "reachable_share": 0.08465554732895447,
+     "recoverable_s2_per_class_row": 306.3034716526664,
+     "recoverable_s2_per_fold_row": 139.11254439728663,
+     "rho": 0.09248490782013599
+    },
+    "lo": {
+     "lambda_star_at_the_row_weighted_n": 0.18076425283261932,
+     "mean_lambda_star": 0.17148689421268723,
+     "oracle_ceiling_s2_per_fold_row": 305.7443795297516,
+     "reachable_share": 0.04903219002138188,
+     "recoverable_s2_per_class_row": 115.44497718398105,
+     "recoverable_s2_per_fold_row": 52.43115406854221,
+     "rho": 0.05156030467790949
+    },
+    "point": {
+     "lambda_star_at_the_row_weighted_n": 0.2329324800868653,
+     "mean_lambda_star": 0.21851993244624235,
+     "oracle_ceiling_s2_per_fold_row": 413.1545782207591,
+     "reachable_share": 0.06625755089490655,
+     "recoverable_s2_per_class_row": 198.78758254634667,
+     "recoverable_s2_per_fold_row": 90.28251052265603,
+     "rho": 0.0709591289958043
+    }
+   }
+  },
+  "july_loo": {
+   "stage0_count": {
+    "by_airport": {
+     "EDDF": {
+      "cells": 3289,
+      "row_weighted_mean_cell_size": 6.493416927899687,
+      "rows": 17545
+     },
+     "EDDM": {
+      "cells": 1271,
+      "row_weighted_mean_cell_size": 5.818292049194526,
+      "rows": 5773
+     },
+     "EGLL": {
+      "cells": 892,
+      "row_weighted_mean_cell_size": 2.17966573816156,
+      "rows": 1436
+     },
+     "EHAM": {
+      "cells": 3479,
+      "row_weighted_mean_cell_size": 7.694183687909807,
+      "rows": 21199
+     },
+     "LEBL": {
+      "cells": 3533,
+      "row_weighted_mean_cell_size": 4.817234240022846,
+      "rows": 14007
+     },
+     "LEMD": {
+      "cells": 2448,
+      "row_weighted_mean_cell_size": 2.3819660368332936,
+      "rows": 4181
+     },
+     "LFPG": {
+      "cells": 457,
+      "row_weighted_mean_cell_size": 1.423913043478261,
+      "rows": 552
+     },
+     "LIRF": {
+      "cells": 3507,
+      "row_weighted_mean_cell_size": 4.456264775413712,
+      "rows": 12690
+     },
+     "LSZH": {
+      "cells": 3144,
+      "row_weighted_mean_cell_size": 4.21482022266837,
+      "rows": 10958
+     }
+    },
+    "cells": 22020,
+    "class_rows": 88341,
+    "fold_rows": 190713,
+    "mean_rows_per_cell": 4.011852861035423,
+    "median_rows_per_cell": 4.0,
+    "row_weighted_mean_cell_size": 5.600015847681145,
+    "rows_in_singleton_cells": 4087,
+    "singleton_cells": 4087
+   },
+   "stage1_shared": {
+    "census_row2_for_contrast": [
+     0.0622,
+     0.0769
+    ],
+    "mean_r2_s2": 30713.906312218107,
+    "reachable_share": {
+     "hi": 0.07059994186208098,
+     "lo": 0.050527600892715116,
+     "point": 0.06063702809626434
+    },
+    "shared_component_s2": {
+     "ci": [
+      1551.9,
+      2168.4
+     ],
+     "pairs": 203185,
+     "rows": 84254,
+     "value": 1862.4
+    }
+   },
+   "stage2_lambda": {
+    "hi": {
+     "lambda_star_at_the_row_weighted_n": 0.25894671803138997,
+     "mean_lambda_star": 0.24207530148448056,
+     "oracle_ceiling_s2_per_fold_row": 1004.4340155102169,
+     "reachable_share": 0.07059994186208098,
+     "recoverable_s2_per_class_row": 524.9160837389477,
+     "recoverable_s2_per_fold_row": 243.14866712590322,
+     "rho": 0.07596291956719917
+    },
+    "lo": {
+     "lambda_star_at_the_row_weighted_n": 0.19665600525277885,
+     "mean_lambda_star": 0.18615711036268645,
+     "oracle_ceiling_s2_per_fold_row": 718.8623633417753,
+     "reachable_share": 0.050527600892715116,
+     "recoverable_s2_per_class_row": 288.8972195718531,
+     "recoverable_s2_per_fold_row": 133.82134030819648,
+     "rho": 0.05321650312344234
+    },
+    "point": {
+     "lambda_star_at_the_row_weighted_n": 0.22895231380114445,
+     "mean_lambda_star": 0.2152721072501915,
+     "oracle_ceiling_s2_per_fold_row": 862.6904217331803,
+     "reachable_share": 0.06063702809626434,
+     "recoverable_s2_per_class_row": 400.92277254275666,
+     "recoverable_s2_per_fold_row": 185.7131849910581,
+     "rho": 0.06455122238145695
+    }
+   }
+  }
+ },
+ "lever_c_board_s": {
+  "BOARD_RELEVANT_clears_the_floor_at_its_bottom": false,
+  "board_relevant_band": {
+   "basis": "my measured ceiling x arm N's realised fraction (7ca vi)",
+   "hi": 0.11811313768304076,
+   "lo": 0.04392427140732063,
+   "note": "a predictor of the cell constant from features available on unlabelled rows",
+   "point_hi": 0.09879231664491887,
+   "point_lo": 0.054391275456191296
+  },
+  "floor_s": 0.1,
+  "fold_side_bound_clears_the_floor": true,
+  "fold_side_oracle_bound": {
+   "hi": 0.32965405501176326,
+   "lo": 0.16355032982714143,
+   "note": "what a shrunk LOO CELL-MEAN arm would read IN FOLD. It uses the cell's other LABELLED rows and is NOT reachable on the board",
+   "point": 0.2399519025479602
+  },
+  "oracle_ceiling": {
+   "hi": 1.3271139065510198,
+   "lo": 0.8964137021902169,
+   "point": 1.1100260297181896
+  },
+  "ranking_rows_with_a_labelled_neighbour": 0,
+  "registered_as": "RESULTS 47.66, the prediction for lever C before any fit; the board-relevant band is the one the floor is applied to"
+ },
+ "seed": 47,
+ "what": "RESULTS section 47.66: lever C stages 0-2 -- the cell-constant residual, priced with NO fit."
+}

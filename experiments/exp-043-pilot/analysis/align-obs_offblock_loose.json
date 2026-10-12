@@ -1,0 +1,69 @@
+{
+  "fold": "july_loo",
+  "frozen_on_development_days": null,
+  "in_sample": {
+    "A_mean_rd": 16972.75608673109,
+    "B_mean_dd": 43298.73975075766,
+    "fitted_scale_A_over_B": 0.3919919190357981,
+    "full_amplitude_mse_gain_s2": -9353.227577295482,
+    "rows": 1345,
+    "scaled_mse_gain_s2": 6653.183229764242
+  },
+  "in_sample_offset_regime": {
+    "2A_minus_B": {
+      "leave_one_day_out": -9346.13,
+      "pooled": -9353.23,
+      "relative_move_pct": 0.076
+    },
+    "A": {
+      "leave_one_day_out": 16987.24,
+      "pooled": 16972.76,
+      "relative_move_pct": 0.085
+    },
+    "B": {
+      "leave_one_day_out": 43320.61,
+      "pooled": 43298.74,
+      "relative_move_pct": 0.051
+    },
+    "largest_relative_move_pct": 0.085,
+    "what": "A, B and 2A-B under the offset pooled over the scored rows, against the same three under a leave-one-day-out offset"
+  },
+  "kind": "obs_offblock_loose",
+  "leave_one_day_out_scaled": {
+    "A_mean_rd": 6721.12950544698,
+    "B_mean_dd": 6899.9824018251165,
+    "fitted_scale_A_over_B": 0.9740792242700752,
+    "full_amplitude_mse_gain_s2": 6542.276609068844,
+    "rows": 1345,
+    "scaled_mse_gain_s2": 6546.912614884509
+  },
+  "leave_one_day_out_unscaled": {
+    "A_mean_rd": 16987.244091055458,
+    "B_mean_dd": 43320.61381467551,
+    "fitted_scale_A_over_B": 0.39212842559725625,
+    "full_amplitude_mse_gain_s2": -9346.125632564595,
+    "rows": 1345,
+    "scaled_mse_gain_s2": 6661.181280661871
+  },
+  "loo_gain_by_scored_day_s2": {
+    "2025-07-07": 6090.385225281845,
+    "2025-07-08": 7000.256349823038
+  },
+  "loo_scales_by_day": {
+    "2025-07-07": 0.4262638318430475,
+    "2025-07-08": 0.36421937563663087
+  },
+  "median_offset_s_pooled": -189.17000007629395,
+  "note": "A one-airport week of the july_loo fold. `in_sample` fits the offset and reads the scale on the same rows and is therefore optimistic; `leave_one_day_out_scaled` is the honest one, because both the median offset and the amplitude come from the other days only. Its full_amplitude_mse_gain_s2 is the per-matched-row MSE the update buys.",
+  "rmse_obs_on_these_rows_s": 183.70326889437152,
+  "rmse_v10_on_these_rows_s": 156.1847093193898,
+  "rmse_v10_plus_update_loo_s": 133.6090820869354,
+  "rows_matched_in_fold": 1345,
+  "v10_clean_rmse": {
+    "december": 204.9218,
+    "january": 218.1506,
+    "july_loo": 284.1572
+  },
+  "v10_serves_at_eham": "stack-5, through v7: EHAM is not in exp-036's kept set (EDDM EGLL LEBL LEMD LFPG LIRF LSZH LTFM), so the vector this update would move at EHAM is v7's, which is what v10 serves there",
+  "v10_sha256": "9d0654728e7eb58c3d9176238dea98e1b44db023ac8832eb52f37bf1b2698573"
+}

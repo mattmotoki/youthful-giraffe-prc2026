@@ -1,0 +1,147 @@
+{
+  "heldout": {
+    "current": {
+      "matched": 3525,
+      "paired_difference_s": -164.24,
+      "rmse_aobt_s": 308.47,
+      "rmse_obs_s": 144.23,
+      "rows_scored": 3476
+    },
+    "match_rows_changed": 4,
+    "repair": {
+      "matched": 3525,
+      "paired_difference_s": -164.24,
+      "rmse_aobt_s": 308.47,
+      "rmse_obs_s": 144.23,
+      "rows_scored": 3476
+    },
+    "rmse_moved_by_s": 0.07,
+    "shipped": {
+      "matched": 3529,
+      "paired_difference_s": -164.34,
+      "rmse_aobt_s": 308.5,
+      "rmse_obs_s": 144.16,
+      "rows_scored": 3480
+    },
+    "stable_only": {
+      "matched": 3529,
+      "paired_difference_s": -164.34,
+      "rmse_aobt_s": 308.5,
+      "rmse_obs_s": 144.16,
+      "rows_scored": 3480
+    }
+  },
+  "rule": {
+    "alt": "repair-2026-09-08: that point must also carry a real altitude, not readsb's null",
+    "current": "what this experiment and the harvest both run now: alt + stable",
+    "shipped": "shipped-2026-09-07: any first non-ground point after a ground run is a take-off, points ordered with an unstable sort",
+    "stable": "repair-2026-09-08+stable-order: the same, and the points are ordered stably, so the same points give one answer on every machine"
+  },
+  "segments": {
+    "current": 5389,
+    "only_in_current": 0,
+    "only_in_shipped": 6,
+    "repair": 5389,
+    "shared": 5389,
+    "shipped": 5395,
+    "stable_only": 5395
+  },
+  "segments_by_arm_against_shipped": {
+    "current": {
+      "only_in_shipped": 6,
+      "only_in_this_arm": 0
+    },
+    "repair": {
+      "only_in_shipped": 6,
+      "only_in_this_arm": 0
+    },
+    "stable_only": {
+      "only_in_shipped": 0,
+      "only_in_this_arm": 0
+    }
+  },
+  "segments_dropped_by_the_repair": [
+    {
+      "callsign_modal": "KLM99L",
+      "icao": "4852f4",
+      "n_ground_points": 60,
+      "seg_points": 60,
+      "t_airborne": 1751899944.86,
+      "takeoff_utc": "2025-07-07 14:52:13.589999914+00:00"
+    },
+    {
+      "callsign_modal": "KLM701",
+      "icao": "4851ad",
+      "n_ground_points": 222,
+      "seg_points": 222,
+      "t_airborne": 1752089693.84,
+      "takeoff_utc": "2025-07-09 19:34:53.670000076+00:00"
+    },
+    {
+      "callsign_modal": "KLM281",
+      "icao": "484fff",
+      "n_ground_points": 290,
+      "seg_points": 290,
+      "t_airborne": 1752155547.61,
+      "takeoff_utc": "2025-07-10 13:52:23.089999914+00:00"
+    },
+    {
+      "callsign_modal": "KLM879",
+      "icao": "4851af",
+      "n_ground_points": 165,
+      "seg_points": 165,
+      "t_airborne": 1752227769.77,
+      "takeoff_utc": "2025-07-11 09:56:09.339999914+00:00"
+    },
+    {
+      "callsign_modal": "NJE7QF",
+      "icao": "490d09",
+      "n_ground_points": 36,
+      "seg_points": 36,
+      "t_airborne": 1752090920.75,
+      "takeoff_utc": "2025-07-09 19:55:19.910000086+00:00"
+    },
+    {
+      "callsign_modal": "MSR758",
+      "icao": "0101df",
+      "n_ground_points": 136,
+      "seg_points": 136,
+      "t_airborne": 1752243385.48,
+      "takeoff_utc": "2025-07-11 14:16:25.099999905+00:00"
+    }
+  ],
+  "stable_column_caveat": "measured on this laptop, where pandas' quicksort is deterministic for a given input, so a small number here is not the size of the defect.  The defect is that the unstable answer is a property of the machine: the harvest measured 14 and 17 segments moving between this laptop and the Kaggle image on the same points (exp-045-harvest/analysis/machine_check.json)",
+  "week": {
+    "current": {
+      "matched": 4901,
+      "paired_difference_s": -176.98,
+      "rmse_aobt_s": 320.97,
+      "rmse_obs_s": 144.0,
+      "rows_scored": 4810
+    },
+    "match_rows_changed": 5,
+    "repair": {
+      "matched": 4901,
+      "paired_difference_s": -176.98,
+      "rmse_aobt_s": 320.97,
+      "rmse_obs_s": 144.0,
+      "rows_scored": 4810
+    },
+    "rmse_moved_by_s": 0.06,
+    "shipped": {
+      "matched": 4906,
+      "paired_difference_s": -177.01,
+      "rmse_aobt_s": 320.95,
+      "rmse_obs_s": 143.94,
+      "rows_scored": 4815
+    },
+    "stable_only": {
+      "matched": 4906,
+      "paired_difference_s": -177.01,
+      "rmse_aobt_s": 320.95,
+      "rmse_obs_s": 143.94,
+      "rows_scored": 4815
+    }
+  },
+  "why": "prices the two repairs made since exp-045-harvest's first kernels ran segments.py as it stood on 2026-09-07.  The harvest has adopted both (8906ea1, afc77ee) and re-derives earlier months from stored points."
+}

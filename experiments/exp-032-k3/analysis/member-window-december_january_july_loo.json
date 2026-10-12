@@ -1,0 +1,50 @@
+{
+  "arm": "window",
+  "folds": [
+    "december",
+    "january",
+    "july_loo"
+  ],
+  "threads": 6,
+  "lightgbm": "4.7.0",
+  "tail_model_version": "2.6.0",
+  "rows": [
+    {
+      "fold": "december",
+      "arm": "window",
+      "n": 165677,
+      "rmse": 219.30615594387586,
+      "rmse_le3600": 204.58136304966368,
+      "rmse_gt3600": 2000.9792636347347,
+      "n_gt3600": 261,
+      "wall_s": 273.5,
+      "path": "experiments/exp-032-k3/oof/k3-tail-window-december.parquet",
+      "sha256": "8f1fc139b7f7c82b24bf8c16c50160ad9a6ffc2ca7bddb89a74d9aac5f6418a1"
+    },
+    {
+      "fold": "january",
+      "arm": "window",
+      "n": 153706,
+      "rmse": 345.08941669134936,
+      "rmse_le3600": 208.39682859779367,
+      "rmse_gt3600": 5985.397918213707,
+      "n_gt3600": 325,
+      "wall_s": 274.6,
+      "path": "experiments/exp-032-k3/oof/k3-tail-window-january.parquet",
+      "sha256": "c24ceabe7b50d42bbf188485ec6f8f50f246dd9106ed10db689d7107ad599e45"
+    },
+    {
+      "fold": "july_loo",
+      "arm": "window",
+      "n": 190713,
+      "rmse": 299.5953686164524,
+      "rmse_le3600": 264.6551376154106,
+      "rmse_gt3600": 2408.6552447226495,
+      "n_gt3600": 656,
+      "wall_s": 272.3,
+      "path": "experiments/exp-032-k3/oof/k3-tail-window-july_loo.parquet",
+      "sha256": "12d7c1d12264728d9f87cd2240fea77c12a6c1ff1996c57d916b8c89ccafc527"
+    }
+  ],
+  "identity_checks": []
+}

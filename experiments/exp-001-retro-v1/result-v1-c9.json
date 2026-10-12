@@ -1,0 +1,103 @@
+{
+  "name": "v1-c9",
+  "argv": "--name v1-c9 --features v2 --target residual --clip-floor 60 --noac-head --residual-guard --es-mode lastmonth --es-rounds 1000 --learning-rate 0.03 --max-rounds 20000 --seed-bag 5 --submission-only Q2-plain-jloo",
+  "folds": {
+    "july_loo": {
+      "rmse": 315.930403471969,
+      "rmse_bulk": 279.41379473382375,
+      "rmse_tail": 2529.4926768916976,
+      "rmse_no_nm": 1330.8158972149304,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.2204994701085601,
+      "sse_share_no_nm": 0.3660219864342835,
+      "bias": 2.2855618919031433,
+      "rmse_noac": 3917.6611220755144,
+      "n_noac": 339,
+      "sse_share_noac": 0.2733318807539655,
+      "fold": "july_loo",
+      "best_iteration": 936,
+      "refit_rounds": 1026,
+      "seconds": 1837,
+      "oof": "experiments/exp-001-retro-v1/oof/Q2-plain-jloo-july_loo.parquet"
+    }
+  },
+  "phi_settings": null,
+  "lirf_gate": null,
+  "shared_modules": {
+    "surface": {
+      "UNIMPEDED_Q": 0.2,
+      "WINDOWS": [
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ],
+      "BUCKET": 1200.0,
+      "NBR_WINDOW": "1800s",
+      "SHRINK_K": 20.0,
+      "n_families": 7
+    },
+    "phi": {
+      "default_weight": "rows",
+      "default_shrink_rows": 150.0,
+      "default_min_rows": 100,
+      "keys": [
+        [
+          "airport"
+        ],
+        [
+          "airport",
+          "operator"
+        ]
+      ]
+    },
+    "lirf": {
+      "cat_features": [
+        "flight_prefix",
+        "stand_group"
+      ]
+    }
+  },
+  "submission": {
+    "path": "submissions/candidates/exp-001-retro-v1-c9.parquet",
+    "sha256": "ee8fa94dfec2c06f6f2cc545c1cff1595981e418582c7c00d807baeb568c71d3",
+    "rounds": 537,
+    "fold_mean_rounds": 1129,
+    "full_early_stop": true,
+    "blend": null,
+    "guard_touched": 0,
+    "guard_bounds": [
+      -20657.0,
+      9069.0
+    ],
+    "seconds": 730,
+    "pred_quantiles": {
+      "0.01": 384.8885903969978,
+      "0.1": 636.122277529586,
+      "0.25": 772.4359771739292,
+      "0.5": 959.1290819653434,
+      "0.75": 1203.6006405672463,
+      "0.9": 1478.6038314789898,
+      "0.99": 2461.2038216579326,
+      "0.999": 4875.445874360468
+    },
+    "pred_mean": 1035.5265026121247,
+    "pred_min": 60.0,
+    "pred_max": 125766.67671587491,
+    "train_quantiles": {
+      "0.01": 291.0,
+      "0.1": 571.0,
+      "0.25": 719.0,
+      "0.5": 912.0,
+      "0.75": 1188.0,
+      "0.9": 1471.0,
+      "0.99": 2339.0,
+      "0.999": 4501.0
+    },
+    "train_mean": 991.200707226264,
+    "n_rows": 344841
+  }
+}

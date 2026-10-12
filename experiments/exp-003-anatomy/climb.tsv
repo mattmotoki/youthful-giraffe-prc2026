@@ -1,0 +1,23 @@
+iteration	mechanism changed	july bulk RMSE	december bulk RMSE	january bulk RMSE	fraction of the gap to a 200 s ceiling closed (july)
+1	A_base: base	244.69	204.45	207.80	0.747
+2	B_base+stats: base+stats	244.70	204.48	208.20	0.747
+3	C_base+occ: base+occ	239.46	199.94	203.60	0.777
+4	D_base+nbr: base+nbr	240.42	200.30	205.27	0.771
+5	E_base+stats+occ: base+stats+occ	239.54	200.32	203.45	0.776
+6	F_all: base+stats+occ+occb+nbr	235.78	195.80	200.88	0.797
+7	G_all_minus_occ: base+stats+occb+nbr	237.35	197.80	203.00	0.789
+8	H_all_minus_occb: base+stats+occ+nbr	236.51	197.18	202.19	0.793
+9	I_all_minus_nbr: base+stats+occ+occb	239.51	199.85	203.46	0.776
+10	J_all_minus_stats: base+occ+occb+nbr	236.32	196.87	201.96	0.794
+11	K_base+occ_prevarr: base+occ_prevarr	239.77	200.16	203.57	0.775
+12	L_base+occ_nextarr: base+occ_nextarr	243.35	203.39	206.77	0.755
+13	M_base+occ_nbrdep: base+occ_nbrdep	243.74	204.28	207.21	0.752
+14	N_base_nosameflight: base_nosf	244.61	204.64	208.11	0.747
+15	O_base_target_taxi: base [target=taxi]	243.44	204.00	206.89	0.754
+16	P_all_clip0: base+stats+occ+occb+nbr	235.40	196.62	201.07	0.800
+17	Q_base+phi: base+phi	245.09	204.28	207.67	0.745
+18	R_best+phi: base+occ+nbr+phi	236.93	197.18	202.11	0.791
+19	S_best_phi_target: base+occ+nbr+phi [target=phi_resid]	237.90	197.12	202.97	0.785
+20	T_best: base+occ+nbr	235.75	196.12	200.89	0.798
+21	U_base+callsign_arrival: base+csn	244.57	204.47	207.71	0.748
+22	V_best+callsign_arrival: base+occ+nbr+csn	236.35	197.35	202.24	0.794

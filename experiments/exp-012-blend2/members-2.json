@@ -1,0 +1,9 @@
+{
+  "note": "Candidate 2 member set: candidate 1's three plus exp-007-winter's d1-ds-s7, found by a repo-wide sweep for OOF sets covering all three board folds. d1-ds is a different lineage again (winter/de-icing features) and it is the first member since the tail model to earn real weight. R0-retro and X2-xgb are dropped: both screened to zero (RESULTS, retro-slot section).  Every member here resolves to a DURABLE address: bytes whose source was untracked or modified are committed under pinned/ with their sha256 in MANIFEST.md; members whose source is tracked and clean keep their git blob. Verify with `python pin_members.py`. The rule exists because review round 1 found the 0.4438-weight member sourcing a file another lane was still editing.",
+  "members": {
+    "T-tailv2": "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+    "C2-cat": "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+    "L2-hub": "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet",
+    "D1-winter": "experiments/exp-007-winter/oof/d1-ds-s7-{fold}.parquet"
+  }
+}

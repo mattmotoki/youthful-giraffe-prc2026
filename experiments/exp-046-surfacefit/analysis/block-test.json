@@ -1,0 +1,223 @@
+{
+  "A0_the_rule": {
+    "aircraft_set_aside_for_an_equal_instant_tie": 76,
+    "assembly": {
+      "note": "the SAME pilot rule on both sides. A ground run that crosses midnight is one segment in the week view and two in the per-day view, and a day file carries a few points of the previous UTC day, so the two assemblies do not produce the same segment population. The harvest kernel reads one daily archive, so the per-day assembly is what the served observation is.",
+      "only_per_day": 46,
+      "only_week_concatenated": 2,
+      "pilot_rule_departures_per_day": 5433,
+      "pilot_rule_departures_week_concatenated": 5389,
+      "week_points_after_the_pilot_dedup": 2049557
+    },
+    "days_rejected_for_a_different_rule": 0,
+    "departure_rows_per_day": {
+      "2025-07-07": {
+        "harvest": 866,
+        "pilot": 866,
+        "shared": 799
+      },
+      "2025-07-08": {
+        "harvest": 760,
+        "pilot": 760,
+        "shared": 746
+      },
+      "2025-07-09": {
+        "harvest": 743,
+        "pilot": 743,
+        "shared": 725
+      },
+      "2025-07-10": {
+        "harvest": 767,
+        "pilot": 767,
+        "shared": 744
+      },
+      "2025-07-11": {
+        "harvest": 792,
+        "pilot": 792,
+        "shared": 776
+      },
+      "2025-07-12": {
+        "harvest": 740,
+        "pilot": 740,
+        "shared": 717
+      },
+      "2025-07-13": {
+        "harvest": 765,
+        "pilot": 765,
+        "shared": 752
+      }
+    },
+    "departures_the_repair_removes": 0,
+    "divergence_note": "the two implementations now run ONE rule and must agree exactly; `departures_the_repair_removes` is the repair's own size, measured live off the summaries through `airborne_alt_ok`. Its effect on MATCHED departures, measured while both rules were in the tree, is analysis/rule-divergence.json (6 segments of 5,441 and 5 matched departures of 4,930).",
+    "implementations_disagree_on": 0,
+    "normalised_by_airborne_alt_ok": true,
+    "rule_cover": {
+      "airport_days_by_rule": {
+        "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0": 9
+      },
+      "airport_days_present": 9,
+      "airport_days_rejected": 0,
+      "chosen": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "n_rules": 1
+    },
+    "rule_required": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+    "rule_versions_used": [
+      "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+    ],
+    "shared_rows_differing": 0,
+    "shared_rows_off_block_identical": true,
+    "tie_note": "exp-045 commit afc77ee: 92 of one gate day's 553,178 points share an (airport, icao, t) with another and 22 of those pairs disagree about on_ground, so an unstable sort lands the pair either way round and the ground run splits at a different point. The harvest now sorts stably; the pilot's segments.py is frozen and does not. Those aircraft are set aside here and the identity is asserted on the rest.",
+    "tied_points_over_the_week": 156
+  },
+  "A_against_pilot_matcher": {
+    "block_matched": 4950,
+    "both_matched": 4901,
+    "cohort_rows": 5131,
+    "different_segment_chosen": 10,
+    "different_segment_from_a_per_day_segment": 10,
+    "different_segment_from_a_tied_aircraft": 10,
+    "different_segment_from_a_week_only_pilot_segment": 0,
+    "different_segment_from_the_rule_repair": 0,
+    "different_segment_from_the_wide_match": 0,
+    "different_segment_unattributed": 0,
+    "differing_obs_taxi": 11,
+    "differing_obs_taxi_from_a_per_day_segment": 10,
+    "differing_obs_taxi_from_a_tied_aircraft": 11,
+    "differing_obs_taxi_from_a_week_only_pilot_segment": 0,
+    "differing_obs_taxi_from_the_rule_repair": 0,
+    "differing_obs_taxi_from_the_wide_match": 0,
+    "differing_obs_taxi_unattributed": 0,
+    "identical_obs_taxi": 4890,
+    "of_which_the_divergent_segment": 0,
+    "only_block_from_a_divergent_segment": 0,
+    "only_block_from_a_per_day_segment": 45,
+    "only_block_from_a_tied_aircraft": 26,
+    "only_block_from_the_form_join": 20,
+    "only_block_from_the_wide_match": 5,
+    "only_block_matched": 49,
+    "only_block_matched_by_the_modal_join_too": 4930,
+    "only_block_unattributed": 0,
+    "only_pilot_matched": 0,
+    "only_pilot_takeoff_outside_week": 0,
+    "pilot_matched": 4901,
+    "same_segment_chosen": 4891,
+    "verdict": "The block matches 4950 of 5131 departures against the pilot's 4901; 4901 are matched by both and 4891 of those choose the same segment, at an identical obs_taxi on 4890. EVERY difference carries a named mechanism and the count with no mechanism is zero in all three tables. 0 rows only the pilot matches. 49 only the block matches: 20 through the strict join reading every callsign form the ground run broadcast where the pilot read the modal one alone, 5 through the desk's wide match, 26 on an aircraft whose points carry two readings at one instant (the harvest sorts stably as of exp-045 commit afc77ee and the pilot's frozen segments.py does not), 45 through a segment the pilot's own rule finds one day at a time but not over seven days at once (46 such departure events over the week against 2 the other way), and 0 through a segment the null-altitude repair removes; the sets overlap, which is why they sum to more than 49. Of the 10 shared rows that choose a different segment, all 10 are on a tied aircraft; so are all 11 of the 11 that carry a different obs_taxi. The harvest kernel reads one daily archive, so the per-day assembly is the served observation and that difference is a property of the source, not a defect.",
+    "wide_matches_total": 5
+  },
+  "B_reach": {
+    "heldout_block": {
+      "departures": 3683,
+      "matched": 3558,
+      "matched_nm": 0.9785,
+      "matched_no_nm": 0.1897,
+      "matched_share": 0.9661,
+      "no_nm_rows": 58,
+      "with_clock": 3511
+    },
+    "heldout_published": {
+      "departures": 3683,
+      "matched": 3525,
+      "matched_nm": 0.9699,
+      "matched_no_nm": 0.1552,
+      "matched_share": 0.9571,
+      "no_nm_rows": 58,
+      "with_obs_offblock_disp": 3485
+    },
+    "note": "reported, not asserted: the pilot is repairing its own experiment and its published counts move with the rule.",
+    "week_block": {
+      "departures": 5131,
+      "matched": 4950,
+      "matched_nm": 0.978,
+      "matched_no_nm": 0.2222,
+      "matched_share": 0.9647,
+      "no_nm_rows": 90,
+      "with_clock": 4865
+    },
+    "week_published": {
+      "departures": 5131,
+      "matched": 4901,
+      "matched_nm": 0.9687,
+      "matched_no_nm": 0.2,
+      "matched_share": 0.9552,
+      "no_nm_rows": 90,
+      "with_obs_offblock_disp": 4827
+    }
+  },
+  "C_placebo": {
+    "by_shift": {
+      "+1.0h": {
+        "funnel": {
+          "after_implied_taxi": 5028,
+          "after_one_to_one": 3,
+          "after_segment_end_window": 3,
+          "candidate_pairs": 36239
+        },
+        "inside_the_implied_taxi_bound": true,
+        "strict": 1,
+        "the_segment_end_guard_removed": 5025,
+        "wide": 3,
+        "wide_share": 0.0005846813486649776
+      },
+      "+1.5h": {
+        "funnel": {
+          "after_implied_taxi": 5022,
+          "after_one_to_one": 0,
+          "after_segment_end_window": 0,
+          "candidate_pairs": 40149
+        },
+        "inside_the_implied_taxi_bound": true,
+        "strict": 0,
+        "the_segment_end_guard_removed": 5022,
+        "wide": 0,
+        "wide_share": 0.0
+      },
+      "+2.0h": {
+        "funnel": {
+          "after_implied_taxi": 18,
+          "after_one_to_one": 0,
+          "after_segment_end_window": 0,
+          "candidate_pairs": 40149
+        },
+        "inside_the_implied_taxi_bound": false,
+        "strict": 0,
+        "the_segment_end_guard_removed": 18,
+        "wide": 0,
+        "wide_share": 0.0
+      }
+    },
+    "cohort_rows": 5131,
+    "max_strict_share_asserted": 0.001,
+    "max_wide_share_asserted": 0.001,
+    "note": "a rule that carried no identity would match the shifted rows too. The funnel says which guard does the work, and a shift inside the implied-taxi bound is the only one that tests the segment-end guard at all.",
+    "real_matched_on_a_non_modal_form": 18,
+    "real_strict": 4945,
+    "real_wide": 5,
+    "real_wide_funnel": {
+      "after_implied_taxi": 5,
+      "after_one_to_one": 5,
+      "after_segment_end_window": 5,
+      "candidate_pairs": 199
+    },
+    "strict_modal_only": {
+      "note": "the modal-only join at the shift that bites: everything the strict placebo now shows is the price of joining on every broadcast form",
+      "shift_h": 1.0,
+      "strict": 0,
+      "wide": 1
+    },
+    "worst_wide_across_shifts": 3,
+    "worst_wide_share": 0.0005846813486649776
+  },
+  "ambiguity": {
+    "n_multi_dep_block": 0,
+    "n_multi_seg_block": 143
+  },
+  "clock_check": {
+    "median": -26.30999994277954,
+    "share_within_60s": 0.9413369713506139
+  },
+  "month_false_match_bound": {
+    "state": "unmeasured",
+    "why": "analysis/finding7.json predates the per-airport bound; re-run code/finding7.py"
+  },
+  "summaries_days_missing": []
+}

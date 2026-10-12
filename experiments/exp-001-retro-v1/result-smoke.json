@@ -1,0 +1,23 @@
+{
+  "name": "smoke",
+  "argv": "--name smoke --folds july --no-submission --max-rounds 300 --es-rounds 50",
+  "folds": {
+    "july": {
+      "rmse": 534.3385128465368,
+      "rmse_bulk": 309.0142216181568,
+      "rmse_tail": 7439.125311456278,
+      "rmse_no_nm": 2994.6397442557604,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.666705957008582,
+      "sse_share_no_nm": 0.6479034182499724,
+      "bias": -0.29462156226313807,
+      "fold": "july",
+      "best_iteration": 206,
+      "refit_rounds": 242,
+      "seconds": 59,
+      "oof": "experiments/exp-001-retro-v1/oof/smoke-july.parquet"
+    }
+  }
+}

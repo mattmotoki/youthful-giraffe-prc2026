@@ -1,0 +1,112 @@
+{
+  "days": [
+    "2025-07-07",
+    "2025-07-08",
+    "2025-07-09",
+    "2025-07-10",
+    "2025-07-11",
+    "2025-07-12",
+    "2025-07-13"
+  ],
+  "expected_correct_at_held_out_precision": 54.7,
+  "first_version_loose_window_no_type": {
+    "max_candidates": 16,
+    "median_candidates_when_any": 2.0,
+    "one_to_one": 68,
+    "rows": 72,
+    "with_any_candidate": 69
+  },
+  "held_out_calibration": {
+    "assigned": 13915,
+    "correct": 13588,
+    "draws": 200,
+    "pool_segments": 560,
+    "precision_assigned_to_the_right_segment": 0.9765,
+    "precision_draw_range": [
+      0.9118,
+      1.0
+    ],
+    "recall_of_all_rows": 0.9436,
+    "rows": 14400,
+    "rows_per_draw": 72,
+    "unassigned": 485,
+    "wrong": 327
+  },
+  "held_out_calibration_at_500_rows": {
+    "assigned": 96924,
+    "correct": 93860,
+    "draws": 200,
+    "pool_segments": 988,
+    "precision_assigned_to_the_right_segment": 0.9684,
+    "precision_draw_range": [
+      0.9443,
+      0.9876
+    ],
+    "recall_of_all_rows": 0.9386,
+    "rows": 100000,
+    "rows_per_draw": 500,
+    "unassigned": 3076,
+    "wrong": 3064
+  },
+  "held_out_calibration_round3_setup": {
+    "assigned": 9711,
+    "correct": 8764,
+    "draws": 20,
+    "pool_segments": 4901,
+    "precision_assigned_to_the_right_segment": 0.9025,
+    "precision_draw_range": [
+      0.8773,
+      0.9237
+    ],
+    "recall_of_all_rows": 0.8764,
+    "rows": 10000,
+    "rows_per_draw": 500,
+    "unassigned": 289,
+    "wrong": 947
+  },
+  "identified": 56,
+  "key": {
+    "aircraft_type_must_agree": true,
+    "assignment": "maximum one-to-one (scipy maximum_bipartite_matching)",
+    "development_days": [
+      "2025-07-07",
+      "2025-07-08"
+    ],
+    "development_p99_abs_wheels_off_minus_mvt_s": 115.1,
+    "development_rows": 1367,
+    "development_type_agreement": 0.9693,
+    "rule": "window = the development days' 99th percentile rounded up to the next 10 s; type agreement required because it holds on 96.9 % of them.  No held-out row took part in either choice.",
+    "window_s": 120.0
+  },
+  "matched_by_callsign": 18,
+  "no_nm_departures": 90,
+  "placebo_one_to_one_by_shift": {
+    "+120_min": 2,
+    "+30_min": 0,
+    "+45_min": 0,
+    "+60_min": 3,
+    "+90_min": 0,
+    "-120_min": 1,
+    "-30_min": 0,
+    "-45_min": 1,
+    "-60_min": 2,
+    "-90_min": 0
+  },
+  "placebo_summary": {
+    "max": 3,
+    "mean": 0.9,
+    "min": 0,
+    "offsets": 10
+  },
+  "reading": "The key identifies 56 of the 72 unmatched no-NM rows, against 0.9 for the same key at ten time-shifted placebos (max 3), so most identifications are not chance.  On held-out rows where the answer is known, the same key returns the RIGHT segment for 97.7% of the rows it assigns, so about 55 of the 56 are expected to be correct and the no-NM receipt estimate is 80.8%.  This is an ESTIMATE UNDER THIS KEY, not a bound in either direction: the key can miss a received aircraft whose type string or clock differs, and it can name the wrong one. It supports 'the no-NM tail is mostly an identity problem'; it does not support 'receipt is not a problem there'.",
+  "receipt_on_no_nm_rows_estimate": 0.8076,
+  "receipt_on_no_nm_rows_if_every_identification_were_right": 0.8222,
+  "tight_key": {
+    "max_candidates": 2,
+    "median_candidates_when_any": 1.0,
+    "one_to_one": 56,
+    "rows": 72,
+    "with_any_candidate": 56
+  },
+  "unmatched": 72
+}

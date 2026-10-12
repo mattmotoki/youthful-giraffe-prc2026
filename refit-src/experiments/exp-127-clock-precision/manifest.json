@@ -1,0 +1,1109 @@
+{
+  "experiment": "exp-127-clock-precision",
+  "input": "PRC ranking.parquet departures and their STAND_mvt names",
+  "source": "X-Plane Scenery Gateway recommended airport scenery; row 1300 stands and row 100 runway ends",
+  "source_license_note": "The Gateway data is GPL version 2 or later, per docs/status/2026-09-25-discord-read.md section 3; the scenery API response does not expose a license field.",
+  "format_reference": "https://developer.x-plane.com/article/airport-data-apt-dat-12-00-file-format-specification/",
+  "earth_radius_m": 6371008.8,
+  "distance_method": "haversine great-circle distance from row 1300 stand coordinates to each row 100 runway-end coordinate",
+  "output_format": "long: one record per uniquely matched PRC stand name and runway end",
+  "source_files": [
+    {
+      "airport": "EDDF",
+      "scenery_id": 103368,
+      "file": "EDDF.dat",
+      "bytes": 1085341,
+      "sha256": "065c3fb5de426519df0afba3df27af9429871c8174ea3d04cffa6c27cba71bea",
+      "date_accepted": "2024-08-16T09:15:18.000Z",
+      "author": "meikelm",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/EDDF",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/103368"
+    },
+    {
+      "airport": "EDDM",
+      "scenery_id": 111124,
+      "file": "EDDM.dat",
+      "bytes": 502311,
+      "sha256": "d7fa09fb2c0cba1d59101d545203018eb8e475a5621ca82b6a02ba497010b6e4",
+      "date_accepted": "2026-06-05T21:33:16.000Z",
+      "author": "Astix10",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/EDDM",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/111124"
+    },
+    {
+      "airport": "EGLL",
+      "scenery_id": 111341,
+      "file": "EGLL.dat",
+      "bytes": 776382,
+      "sha256": "63bde47e67dc3771115e2cd72330d169cc51c64a1d0df99d84c3ead7cf8fad82",
+      "date_accepted": "2026-07-01T13:26:41.000Z",
+      "author": "Litjan",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/EGLL",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/111341"
+    },
+    {
+      "airport": "EHAM",
+      "scenery_id": 111943,
+      "file": "EHAM.dat",
+      "bytes": 642339,
+      "sha256": "a10e69d92923067af7d5f7c378c62f48bc404b468b3c8cc8b90a17a30d41f309",
+      "date_accepted": "2026-08-31T17:53:52.000Z",
+      "author": "KarsCD",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/EHAM",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/111943"
+    },
+    {
+      "airport": "LEBL",
+      "scenery_id": 102255,
+      "file": "LEBL.dat",
+      "bytes": 875588,
+      "sha256": "700163e6f017c5fea72afe0cb6e3213e7f7a25060c26eab4d183f14538e9809b",
+      "date_accepted": "2024-05-13T15:40:50.000Z",
+      "author": "pedromagueija",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/LEBL",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/102255"
+    },
+    {
+      "airport": "LEMD",
+      "scenery_id": 99851,
+      "file": "LEMD.dat",
+      "bytes": 685493,
+      "sha256": "4c5eb8cb712a3fd80ed9f4c9452120c1afe6feed55ad0c01f1632066184e03ff",
+      "date_accepted": "2023-12-24T06:24:47.000Z",
+      "author": "bastienvdc",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/LEMD",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/99851"
+    },
+    {
+      "airport": "LFPG",
+      "scenery_id": 111022,
+      "file": "LFPG.dat",
+      "bytes": 1376481,
+      "sha256": "b1787f8cbd8378f693b6726d6649014a01bcc5c0a329f21898b11d74b10f7090",
+      "date_accepted": "2026-05-26T18:51:18.000Z",
+      "author": "Julian",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/LFPG",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/111022"
+    },
+    {
+      "airport": "LIRF",
+      "scenery_id": 110482,
+      "file": "LIRF.dat",
+      "bytes": 571905,
+      "sha256": "34ec83782108ec317f240c679d6f91a1ec0920751495ec140b694e129a91c59c",
+      "date_accepted": "2026-04-10T17:53:31.000Z",
+      "author": "Astix10",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/LIRF",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/110482"
+    },
+    {
+      "airport": "LSZH",
+      "scenery_id": 106102,
+      "file": "LSZH.dat",
+      "bytes": 525938,
+      "sha256": "d530c122ac93bda5746a9868e6e6bcbd8a3949dfd004834f1fe229a3f1acff98",
+      "date_accepted": "2025-03-24T18:51:25.000Z",
+      "author": "Astix10",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/LSZH",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/106102"
+    },
+    {
+      "airport": "LTFM",
+      "scenery_id": 105504,
+      "file": "LTFM.dat",
+      "bytes": 1617483,
+      "sha256": "cb849f454addd9a611c3d96ba46b8138b8da12eb80120c0efdcfa0369c54ba39",
+      "date_accepted": "2025-01-30T20:34:06.000Z",
+      "author": "Julian",
+      "license": null,
+      "airport_api_url": "https://gateway.x-plane.com/apiv1/airport/LTFM",
+      "scenery_api_url": "https://gateway.x-plane.com/apiv1/scenery/105504"
+    }
+  ],
+  "match_summary": [
+    {
+      "airport": "EDDF",
+      "ranking_stand_names": 238,
+      "uniquely_matched_names": 181,
+      "unique_match_share": 0.760504,
+      "xplane_stand_rows": 227,
+      "runway_ends": 8
+    },
+    {
+      "airport": "EDDM",
+      "ranking_stand_names": 186,
+      "uniquely_matched_names": 144,
+      "unique_match_share": 0.774194,
+      "xplane_stand_rows": 285,
+      "runway_ends": 4
+    },
+    {
+      "airport": "EGLL",
+      "ranking_stand_names": 207,
+      "uniquely_matched_names": 201,
+      "unique_match_share": 0.971014,
+      "xplane_stand_rows": 284,
+      "runway_ends": 4
+    },
+    {
+      "airport": "EHAM",
+      "ranking_stand_names": 202,
+      "uniquely_matched_names": 184,
+      "unique_match_share": 0.910891,
+      "xplane_stand_rows": 224,
+      "runway_ends": 12
+    },
+    {
+      "airport": "LEBL",
+      "ranking_stand_names": 215,
+      "uniquely_matched_names": 204,
+      "unique_match_share": 0.948837,
+      "xplane_stand_rows": 234,
+      "runway_ends": 6
+    },
+    {
+      "airport": "LEMD",
+      "ranking_stand_names": 369,
+      "uniquely_matched_names": 320,
+      "unique_match_share": 0.867209,
+      "xplane_stand_rows": 380,
+      "runway_ends": 8
+    },
+    {
+      "airport": "LFPG",
+      "ranking_stand_names": 361,
+      "uniquely_matched_names": 340,
+      "unique_match_share": 0.941828,
+      "xplane_stand_rows": 513,
+      "runway_ends": 8
+    },
+    {
+      "airport": "LIRF",
+      "ranking_stand_names": 133,
+      "uniquely_matched_names": 127,
+      "unique_match_share": 0.954887,
+      "xplane_stand_rows": 151,
+      "runway_ends": 6
+    },
+    {
+      "airport": "LSZH",
+      "ranking_stand_names": 184,
+      "uniquely_matched_names": 107,
+      "unique_match_share": 0.581522,
+      "xplane_stand_rows": 189,
+      "runway_ends": 6
+    },
+    {
+      "airport": "LTFM",
+      "ranking_stand_names": 357,
+      "uniquely_matched_names": 2,
+      "unique_match_share": 0.005602,
+      "xplane_stand_rows": 351,
+      "runway_ends": 10
+    }
+  ],
+  "output_sha256": "2ce7ad6bf2b2c338272f1f04042027ca6d25d8c03d03708595c27f4882088008",
+  "osm_fallback": {
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "retrieved_utc": "2026-09-25T09:58:50.212338+00:00",
+    "query": "[out:json][timeout:180];\n(\n  node[\"aeroway\"=\"parking_position\"] (41.2,28.6,41.4,28.92);\n  node[\"aeroway\"=\"parking_position\"] (47.38,8.45,47.55,8.65);\n);\nout body;",
+    "response_sha256": "978a0b8306bddf58b5b2fe0a6831679e1f73500c4310e77d220a2316e2eeef59",
+    "output_sha256": "0392699f6b59f7ab1ed5f1654a149fdebf33b2615fc05a006dbcbed3cdaabe15",
+    "license": "OpenStreetMap data is available under ODbL 1.0; attribute OpenStreetMap contributors.",
+    "match_summary": {
+      "LTFM": {
+        "gateway_uniquely_matched_names": 2,
+        "osm_added_names": 5,
+        "osm_unique_total_names": 7,
+        "ranking_stand_names": 357,
+        "ambiguous_names_seen": 0,
+        "added_stand_names": [
+          "601",
+          "602",
+          "603",
+          "604",
+          "H12"
+        ]
+      },
+      "LSZH": {
+        "gateway_uniquely_matched_names": 107,
+        "osm_added_names": 12,
+        "osm_unique_total_names": 119,
+        "ranking_stand_names": 184,
+        "ambiguous_names_seen": 0,
+        "added_stand_names": [
+          "701",
+          "702",
+          "703",
+          "704",
+          "705",
+          "706",
+          "707",
+          "708",
+          "709",
+          "710",
+          "711",
+          "712"
+        ]
+      }
+    },
+    "method": "unique normalized match against OSM ref/ref:* tags; add only ranking stand names not already matched by Gateway"
+  },
+  "combined_unique_matches": {
+    "LTFM": 7,
+    "LSZH": 119
+  },
+  "position_check": {
+    "output": "position_check.csv",
+    "output_sha256": "b6b1bf34be1874a86c273e0adf4ae67bffab7a4a62b25b3b1159454415255916",
+    "manifest": "position_check_manifest.json",
+    "manifest_sha256": "a9300b90cfa4d97bd23199fc02b385bb92d9c031f1feadc234142a21f4b6a61a",
+    "months": [
+      "2025-01",
+      "2025-07",
+      "2025-12"
+    ],
+    "airports_without_adsb_stand_positions": [
+      "LTFM"
+    ],
+    "far_above_definition": "real share within 50m is far above placebo when it is at least 5 percentage points above the 95th percentile of the placebo share",
+    "xplane_airports_far_above_placebo": [
+      "EDDF",
+      "EDDM",
+      "EGLL",
+      "EHAM",
+      "LEBL",
+      "LEMD",
+      "LIRF",
+      "LSZH"
+    ],
+    "xplane_airport_pass_count": 8,
+    "placebo_permutations": 500
+  },
+  "stand_geometry_sha256": "2ce7ad6bf2b2c338272f1f04042027ca6d25d8c03d03708595c27f4882088008",
+  "input_preparation": {
+    "spec": {
+      "file": "SPEC.md",
+      "sha256": "295d568bc9603b47f7a76b702de49bd632cb277e50100565c5b9365535789d34"
+    },
+    "spec_sha256": "295d568bc9603b47f7a76b702de49bd632cb277e50100565c5b9365535789d34",
+    "preparation_script": {
+      "file": "prepare_fold_frames.py",
+      "sha256": "df6aa5c2cea64f73950a1c38a63af07e6680011a2dab7eb08de0203498b59e3e"
+    },
+    "preparation_script_sha256": "df6aa5c2cea64f73950a1c38a63af07e6680011a2dab7eb08de0203498b59e3e",
+    "baseline_reproduction": {
+      "file": "support/baseline_reproduction.json",
+      "sha256": "6d2c5eee25f4af3cf021f06afe3ef3d11082a696fe54098b33693077f709d530",
+      "reproduced_all_three_v22_fold_rmse_exactly": true,
+      "fit_frame_sha256": "fb811f693697ca359050907a5a89d03227e30f11ab0ecaf2d0eadd8a3588f98e",
+      "fit_frame_bytes": 12712346
+    },
+    "geometry_feature_coverage": {
+      "file": "support/geometry_feature_coverage.csv",
+      "sha256": "f423addd878736f7c8f9c73aacc6fedb13bf0b312f8b967268c301130e36e75c",
+      "fit_input_coverage_by_fold": {
+        "july_loo": {
+          "eligible_rows": 88095,
+          "surveyed_stand_rows": 80042,
+          "survey_to_observed_stand_rows": 80042,
+          "survey_to_runway_rows": 80042
+        },
+        "december": {
+          "eligible_rows": 101663,
+          "surveyed_stand_rows": 93189,
+          "survey_to_observed_stand_rows": 93189,
+          "survey_to_runway_rows": 93185
+        },
+        "january": {
+          "eligible_rows": 69501,
+          "surveyed_stand_rows": 61677,
+          "survey_to_observed_stand_rows": 61677,
+          "survey_to_runway_rows": 61677
+        }
+      }
+    },
+    "cluster_population": {
+      "file": "support/fold_cluster_population.csv",
+      "sha256": "d8eeb9c94b75e79571c626e43810f1e9f7203968fec3b5eb5ffedcdbf92b54f4",
+      "airport_day_clusters_by_fold": {
+        "july_loo": 310,
+        "december": 310,
+        "january": 310
+      }
+    },
+    "ranking_side": {
+      "preparation_script": {
+        "file": "prepare_ranking_frame.py",
+        "sha256": "7783e0d565812553142ea8e8bc251fb069f9e7376d42218602b4b36f92f36cf5"
+      },
+      "feature_frame": {
+        "file": "kaggle/dataset/ranking_frame.parquet",
+        "sha256": "3481827b5ce9961c3b4a9567a22fe745f4a7f72c5de0273351be797e11dfb4f0",
+        "bytes": 3592319
+      },
+      "submitting_ids": {
+        "file": "kaggle/dataset/submitting_ids.csv",
+        "sha256": "397ebd40c810d3e305b9f634b99c2bfc40e8daa82357b19e27d9965135e5239e",
+        "bytes": 3448421
+      },
+      "feature_coverage": {
+        "file": "support/ranking_feature_coverage.csv",
+        "sha256": "16915774de9a869dd8b008aedeff3616d505b753585b8633c17b242f7a78ffa7",
+        "bytes": 411
+      },
+      "input_manifest": {
+        "file": "support/ranking_input_manifest.json",
+        "sha256": "9e9d540bce45537025ee2a2192b819bdc61976f0fd8e2a79a23a9cb01026b85e",
+        "bytes": 187043
+      },
+      "ranking_rows": 344841,
+      "template_order_checked": true,
+      "target_columns_present": false,
+      "serving_rule_sha256": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "summary_file_counts": {
+        "2026-01": 288,
+        "2026-07": 269
+      },
+      "LTFM_rows": 47581,
+      "LTFM_with_clock_rows": 0
+    }
+  },
+  "kaggle_fit": {
+    "dataset_slug": "<kaggle-user>/prc-exp127-clock-fold-frames",
+    "kernel_slug": "<kaggle-user>/prc-exp127-clock-geometry",
+    "visibility": "private",
+    "runtime": "CPU",
+    "internet_enabled": false,
+    "status": "Private Kaggle CPU run completed; primary HGB and its one Ridge repair both failed their gate.",
+    "dataset_files": {
+      "SPEC.md": {
+        "sha256": "295d568bc9603b47f7a76b702de49bd632cb277e50100565c5b9365535789d34",
+        "bytes": 6448
+      },
+      "baseline_reproduction.json": {
+        "sha256": "6d2c5eee25f4af3cf021f06afe3ef3d11082a696fe54098b33693077f709d530",
+        "bytes": 6264
+      },
+      "dataset-metadata.json": {
+        "sha256": "854299f7db4f8acf2d543f3520fa946b0413d44d8a5f1c78a8c6472d67b802e3",
+        "bytes": 151
+      },
+      "fold_cluster_population.csv": {
+        "sha256": "d8eeb9c94b75e79571c626e43810f1e9f7203968fec3b5eb5ffedcdbf92b54f4",
+        "bytes": 37346
+      },
+      "fold_frames.parquet": {
+        "sha256": "fb811f693697ca359050907a5a89d03227e30f11ab0ecaf2d0eadd8a3588f98e",
+        "bytes": 12712346
+      },
+      "geometry_feature_coverage.csv": {
+        "sha256": "f423addd878736f7c8f9c73aacc6fedb13bf0b312f8b967268c301130e36e75c",
+        "bytes": 2319
+      },
+      "ranking_feature_coverage.csv": {
+        "sha256": "16915774de9a869dd8b008aedeff3616d505b753585b8633c17b242f7a78ffa7",
+        "bytes": 411
+      },
+      "ranking_frame.parquet": {
+        "sha256": "3481827b5ce9961c3b4a9567a22fe745f4a7f72c5de0273351be797e11dfb4f0",
+        "bytes": 3592319
+      },
+      "ranking_input_manifest.json": {
+        "sha256": "9e9d540bce45537025ee2a2192b819bdc61976f0fd8e2a79a23a9cb01026b85e",
+        "bytes": 187043
+      },
+      "submitting_ids.csv": {
+        "sha256": "397ebd40c810d3e305b9f634b99c2bfc40e8daa82357b19e27d9965135e5239e",
+        "bytes": 3448421
+      }
+    },
+    "kernel_source": {
+      "file": "kaggle/kernel/fit_clock.py",
+      "sha256": "707c791da2012343ea556c764f4c556681fc9f72da987cb4a07998aabed596a4"
+    },
+    "kernel_metadata": {
+      "file": "kaggle/kernel/kernel-metadata.json",
+      "sha256": "4aaeed8d14a273f51f55c99b4ee3ca00f53d812744a0d3d643496779170dbdb4"
+    },
+    "dataset_metadata": {
+      "file": "kaggle/dataset/dataset-metadata.json",
+      "sha256": "854299f7db4f8acf2d543f3520fa946b0413d44d8a5f1c78a8c6472d67b802e3"
+    },
+    "dataset_version": 2,
+    "dataset_created_utc": "2026-09-25T11:18:36.080Z",
+    "dataset_status": "Private dataset version 2 was ready; Kaggle listed all nine expected input files.",
+    "prefit_source_review": {
+      "reviewer": "fresh-context read-only review",
+      "verdict": "no blocking findings",
+      "reviewed_blockers": [
+        "bootstrap denominator",
+        "unknown source flag",
+        "Ridge repair and ranking vector path"
+      ]
+    },
+    "kernel_version": 2,
+    "kernel_pushed_utc": "2026-09-25T11:34:25Z",
+    "kernel_status": "Version 2 completed at 2026-09-25T11:43:39Z. The primary model failed its gate; the one frozen Ridge repair also failed. No ranking vector was written.",
+    "kernel_runs": [
+      {
+        "version": 1,
+        "dataset_version": 2,
+        "status": "error_before_fit",
+        "pushed_utc": "2026-09-25T11:20:03Z",
+        "kernel_source_sha256": "e8b5c946c940c8e2dd9e92636434b666e108dfc45646c64fbec7d9d3037cf1ef",
+        "log_file": "support/kaggle-kernel-v1-error.log",
+        "log_sha256": "b5933723212b1ca989cb0ef2031d36bcd7130d964cde3d6f5df12a622f28ae18",
+        "error": "fold_frames.parquet was not found at the assumed Kaggle input mount; no model fit started."
+      },
+      {
+        "version": 2,
+        "dataset_version": 2,
+        "status": "complete_both_models_failed_D107",
+        "pushed_utc": "2026-09-25T11:34:25Z",
+        "kernel_source_sha256": "707c791da2012343ea556c764f4c556681fc9f72da987cb4a07998aabed596a4",
+        "review": "fresh-context review found no blockers; only dataset path discovery changed",
+        "completed_utc": "2026-09-25T11:43:39Z",
+        "runtime_seconds": 12.407379865646362,
+        "results_sha256": "9cf502c2645cd39923d14e645c53982e40caf8c056fb287c03027f6dc96569ee",
+        "run_receipt_sha256": "b6401d2b577ce6699dd8a0a5fe70b4f1878f3d8ea205fa73eb93c90bb0e79005",
+        "kernel_log_sha256": "98283cd4ac866f3a3d7953e33fe0940b3164b64d456bf20a3747c36ab640283c",
+        "primary_d107_pass": false,
+        "repair_d107_pass": false,
+        "selected_model": null,
+        "ranking_update_vector_written": false,
+        "board_seconds": {
+          "primary_hgb": 0.07541407956891256,
+          "ridge_repair": 0.06646849407757131
+        }
+      }
+    ],
+    "mount_fix_review": {
+      "reviewer": "fresh-context read-only review",
+      "verdict": "no blocking findings",
+      "reviewed_change": "find exactly one fold_frames.parquet under /kaggle/input and load sibling files from its parent; fit inputs and transforms are unchanged"
+    },
+    "output_files": {
+      "prc-exp127-clock-geometry.log": {
+        "file": "kaggle/output-v2/prc-exp127-clock-geometry.log",
+        "bytes": 69902,
+        "sha256": "98283cd4ac866f3a3d7953e33fe0940b3164b64d456bf20a3747c36ab640283c",
+        "committed": true
+      },
+      "primary_diagnosis.json": {
+        "file": "kaggle/output-v2/primary_diagnosis.json",
+        "bytes": 548,
+        "sha256": "8a9b9b1c6e951ce985915693ff334289f51f3e792a70f9c1af1663850cd56475",
+        "committed": true
+      },
+      "primary_fold_predictions.parquet": {
+        "bytes": 3820676,
+        "sha256": "db8f781f78c74d4d9fc64d543e22f6eeacb8d529131786d44a38d10c21afc09b",
+        "kaggle_output_file": "primary_fold_predictions.parquet",
+        "local_copy_ignored_by_git": "kaggle/output/exp127-v2/primary_fold_predictions.parquet",
+        "committed": false
+      },
+      "primary_fold_scores.csv": {
+        "file": "kaggle/output-v2/primary_fold_scores.csv",
+        "bytes": 2205,
+        "sha256": "25e818d79e7a5b5746ff04ce53ae90de3d9c5c0ad44e9836dbf28e2f6150456a",
+        "committed": true
+      },
+      "repair_fold_predictions.parquet": {
+        "bytes": 7065325,
+        "sha256": "2c12fdd623707bff31fad59ad7b2dee6baf050b1561e92ac27e13f4cb3d128b6",
+        "kaggle_output_file": "repair_fold_predictions.parquet",
+        "local_copy_ignored_by_git": "kaggle/output/exp127-v2/repair_fold_predictions.parquet",
+        "committed": false
+      },
+      "repair_fold_scores.csv": {
+        "file": "kaggle/output-v2/repair_fold_scores.csv",
+        "bytes": 2221,
+        "sha256": "37a1758fa41efb3050c1b300dea280197f01e9a74d05f38ea692d4488c891e56",
+        "committed": true
+      },
+      "results.json": {
+        "file": "kaggle/output-v2/results.json",
+        "bytes": 24839,
+        "sha256": "9cf502c2645cd39923d14e645c53982e40caf8c056fb287c03027f6dc96569ee",
+        "committed": true
+      },
+      "run_receipt.json": {
+        "file": "kaggle/output-v2/run_receipt.json",
+        "bytes": 25462,
+        "sha256": "b6401d2b577ce6699dd8a0a5fe70b4f1878f3d8ea205fa73eb93c90bb0e79005",
+        "committed": true
+      }
+    },
+    "fit_result": {
+      "primary_gate": {
+        "positive_on_all_folds": false,
+        "beats_coordinate_sham_on_all_folds_and_pooled": true,
+        "beats_airport_only_on_all_folds_and_pooled": true,
+        "all_fold_and_pooled_95ci_above_zero": false,
+        "pass": false
+      },
+      "repair_gate": {
+        "positive_on_all_folds": true,
+        "beats_coordinate_sham_on_all_folds_and_pooled": true,
+        "beats_airport_only_on_all_folds_and_pooled": true,
+        "all_fold_and_pooled_95ci_above_zero": false,
+        "pass": false
+      },
+      "selected_model": null,
+      "ranking_update_vector_written": false,
+      "primary_board_seconds": 0.07541407956891256,
+      "repair_board_seconds": 0.06646849407757131,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 12728,
+      "cluster_bootstrap_denominator": "sum fold_rows in sampled airport-day clusters for each draw",
+      "selected_output_note": "selected_model is null and ranking_update_vector_written is false. The raw receipt retains selected_folds and selected_board_prices as HGB diagnostics; they are not a selected or approved update."
+    },
+    "output_archive_note": "The two fold prediction Parquet files are large. Their SHA-256 values are recorded above; local copies are ignored by Git. All small outputs are committed."
+  },
+  "source_ledger_row": "exp-126 row 833 (clock precision rationale); exp-129 row 835 (negative geometry marker); exp-125 row 836 (13 exact clocks, 0.004619-second board ceiling); exp-128 row 837 (no-clock residual design failed its gate); exp-129 row 838 (row-level schedule repair failed its gate); exp-127b source row 839 and exp-130 clean exposure row 845; exp-127b fit and label-free transfer source is row 839, with LTFM scope cross-check from exp-130 clean row 845",
+  "rederive": {
+    "assignment": "docs/assignments/2026-09-25-exp127b-clock-rederive.md, read from fetched origin/main before work",
+    "source_ledger_rows": [
+      "exp-127 row 839: static geometry fit failed its gate but was positive on the pooled point estimate; this work is one implied-clock variation.",
+      "exp-130 clean exposure row 845: LTFM is no-clock and holds about 8.7% of estimated board SSE; this with-clock fit does not update it."
+    ],
+    "point_source": {
+      "source": "Exp-045 private Kaggle kernel outputs listed by experiments/exp-045-harvest/manifest.json points_live_on",
+      "manifest_sha256": "dee46269383bfc3027bd72f32f784e8e96201309f135ecb7d94457574449c5d6",
+      "attached_kernel_sources": [
+        "<kaggle-user>/prc-harvest-2025-01-b",
+        "<kaggle-user>/prc-harvest-2025-07-b",
+        "<kaggle-user>/prc-harvest-2025-12",
+        "<kaggle-user>/prc-harvest-2026-01-b",
+        "<kaggle-user>/prc-harvest-2026-01-gate",
+        "<kaggle-user>/prc-harvest-2026-07-b"
+      ],
+      "point_files_read": 155,
+      "point_rows_read": 95616876,
+      "raw_points_downloaded_to_Mac_or_workstation": false
+    },
+    "keys_dataset": {
+      "slug": "<kaggle-user>/prc-exp127b-clock-rederive-keys",
+      "version": 2,
+      "visibility": "private",
+      "keys_rows": 604100,
+      "labels_in_keys": false,
+      "receipt": {
+        "file": "experiments/exp-127-clock-precision/rederive/kaggle/keys-dataset/keys_receipt.json",
+        "bytes": 2612,
+        "sha256": "4d6b39e702bac5dbc37b89cfacd5521211f909744b5c0c5d806154467d129cfa",
+        "committed": true
+      },
+      "expected_points_manifest": {
+        "file": "experiments/exp-127-clock-precision/rederive/kaggle/keys-dataset/points_expected.json",
+        "bytes": 61192,
+        "sha256": "5a25e1e9225811482e4b405408609050b073681fe8d2cd2b264b33c449ee5547",
+        "committed": true
+      },
+      "large_outputs": {
+        "clock_keys.parquet": {
+          "bytes": 13725698,
+          "sha256": "bf0616ac2b57bba6b98537fd236d0e6b7473120eaf279fbc022f18cb7acfdba1",
+          "committed": false
+        },
+        "ranking_ids.csv": {
+          "bytes": 3448421,
+          "sha256": "397ebd40c810d3e305b9f634b99c2bfc40e8daa82357b19e27d9965135e5239e",
+          "committed": false
+        }
+      }
+    },
+    "coverage_kernel": {
+      "slug": "<kaggle-user>/prc-exp127b-clock-rederive-coverage",
+      "visibility": "private",
+      "device": "CPU",
+      "internet": false,
+      "metadata": {
+        "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-kernel/kernel-metadata.json",
+        "bytes": 684,
+        "sha256": "63fdbbcde2342dbcb2ea36e29c88851df70c468a6c2184788990c397001a9c1b",
+        "committed": true
+      },
+      "source_sha256": "06602aa63c297b6771ddc304888b7314ad4ff845d5a9621c1d822f8c10e82978",
+      "completed_version": 5,
+      "runs": [
+        {
+          "version": 1,
+          "status": "error_before_scan",
+          "reason": "Kaggle helper modules were not mounted",
+          "log": {
+            "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v1/prc-exp127b-clock-rederive-coverage.log",
+            "bytes": 1221,
+            "sha256": "2e7d98187e7da4a6b29b5972910336f6ca4ca1dc920318f9447a10a416de2f66",
+            "committed": true
+          }
+        },
+        {
+          "version": 2,
+          "status": "error_before_scan",
+          "reason": "used obs_offblock instead of source field obs_offblock_disp",
+          "log": {
+            "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v2/prc-exp127b-clock-rederive-coverage.log",
+            "bytes": 1794,
+            "sha256": "3abc1a094c4e1f81cff3c7b9ea7f3898c098d63e4a49f6d7f12f0ad32667e331",
+            "committed": true
+          }
+        },
+        {
+          "version": 3,
+          "status": "invalid_join_zero_matches",
+          "reason": "prepared datetime64[us] keys were scaled incorrectly; corrected by keys dataset version 2",
+          "outputs": {
+            "coverage_by_airport.csv": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v3/coverage_by_airport.csv",
+              "bytes": 4546,
+              "sha256": "17a0c5870b4dff3e0efed7e51aeff21584caf9405efafab2f8150c6aa8e05d91",
+              "committed": true
+            },
+            "coverage_summary.json": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v3/coverage_summary.json",
+              "bytes": 784,
+              "sha256": "08b916f2dbc1ecb4df5ddb3b406450f74ce3a894d41d776948f1074e05d0db52",
+              "committed": true
+            },
+            "run_receipt.json": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v3/run_receipt.json",
+              "bytes": 55074,
+              "sha256": "320705e42c32239c1042b02f7f34215ad5c21d50adf6fcb5d554a93c3c399261",
+              "committed": true
+            },
+            "kernel_log": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v3/prc-exp127b-clock-rederive-coverage.log",
+              "bytes": 20642,
+              "sha256": "515dd5ff46162b50a452cb7122086b6961670b26ad2f287cfc87fb9b0d02c8b2",
+              "committed": true
+            },
+            "clock_features.parquet": {
+              "bytes": 7600361,
+              "sha256": "f9332eed3cb69c5bfd19fda493930649afa6a7529b3e5a3a3c09b113acc2a281",
+              "committed": false
+            }
+          }
+        },
+        {
+          "version": 4,
+          "status": "complete_label_free_radius_scan_gate_failed",
+          "reason": "first-ground time passed; 30/60/100 m exit coverage was below 50% in each fold",
+          "outputs": {
+            "coverage_by_airport.csv": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v4/coverage_by_airport.csv",
+              "bytes": 14549,
+              "sha256": "83195226d7744d03468b8961d2a3fe1ad640c82b414015a2ed8529379325d2b1",
+              "committed": true
+            },
+            "coverage_summary.json": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v4/coverage_summary.json",
+              "bytes": 986,
+              "sha256": "725037f25933e09bd4733d545d5323efcaa865ac38e28049af1eb133f47aff80",
+              "committed": true
+            },
+            "run_receipt.json": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v4/run_receipt.json",
+              "bytes": 55287,
+              "sha256": "60552a2db14e23d7ac25005d10c1be77eccfbaef8cf7da312c198e586265eaa2",
+              "committed": true
+            },
+            "kernel_log": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v4/prc-exp127b-clock-rederive-coverage.log",
+              "bytes": 20853,
+              "sha256": "0e81fccf95c6d2ea8b372319bad0a1db02c199212589e81df9e5fc3f790ff5ae",
+              "committed": true
+            },
+            "clock_features.parquet": {
+              "bytes": 30267988,
+              "sha256": "e50615f5a57dedae4b725773f2cbdc6dbcb58c14e73c93970d54b51841ca2c7b",
+              "committed": false
+            }
+          }
+        },
+        {
+          "version": 5,
+          "status": "complete_implied_offblock_gate_passed",
+          "reason": "one desk-directed repair: implied off-block from first ground point, with a fixed 3 kt speed when speed is missing or below 1 kt",
+          "outputs": {
+            "coverage_by_airport.csv": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v5/coverage_by_airport.csv",
+              "bytes": 19678,
+              "sha256": "3e643bb7126619b31190cb6ecbc72cdee7950e6ccbc587075f66482d1342ba9a",
+              "committed": true
+            },
+            "coverage_summary.json": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v5/coverage_summary.json",
+              "bytes": 1219,
+              "sha256": "f2286e2391f5c2b27f8912eab38824438cd248780a16c6fe0b5dc7ded589a467",
+              "committed": true
+            },
+            "run_receipt.json": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v5/run_receipt.json",
+              "bytes": 55530,
+              "sha256": "b8d9578f80c7e29325cc09409be4318f72f45e3f5118b5d44b7a34f04c367f4e",
+              "committed": true
+            },
+            "kernel_log": {
+              "file": "experiments/exp-127-clock-precision/rederive/kaggle/coverage-output-v5/prc-exp127b-clock-rederive-coverage.log",
+              "bytes": 21325,
+              "sha256": "8d8e106f10a80215d9842cace6b2b47140d088e5316c111156bf30885ebd9f36",
+              "committed": true
+            },
+            "clock_features.parquet": {
+              "bytes": 40373421,
+              "sha256": "a1058a1e0d14ff20ccf69d42bd4c364089e4144ad22e19bdfcc2d29d3a6a2ed6",
+              "committed": false
+            }
+          }
+        }
+      ],
+      "gate": {
+        "december": 0.9169576680097498,
+        "january": 0.8874260802002849,
+        "july_loo": 0.9085077727303855,
+        "minimum_required": 0.5,
+        "pass": true
+      },
+      "current_250m_coverage": 1.0,
+      "matched_target_rows": 408306,
+      "ambiguous_target_rows": 0
+    },
+    "frozen_spec": {
+      "path": "experiments/exp-127-clock-precision/rederive/SPEC.md",
+      "sha256": "39778344ec1f85e3f8febbaedb097958b073f84923b3a9fc642f638cc08d11c4",
+      "spec_dataset_slug": "<kaggle-user>/prc-exp127b-clock-rederive-spec",
+      "spec_dataset_version": 1,
+      "spec_file": {
+        "file": "experiments/exp-127-clock-precision/rederive/SPEC.md",
+        "bytes": 4908,
+        "sha256": "39778344ec1f85e3f8febbaedb097958b073f84923b3a9fc642f638cc08d11c4",
+        "committed": true
+      },
+      "review": "fresh-context review found no blocking correctness, scope, or requirement findings before the fit",
+      "spec_dataset_created_utc": "2026-09-25T14:15:53.645Z"
+    },
+    "fit": {
+      "status": "complete_D107_pass",
+      "dataset_slug": "<kaggle-user>/prc-exp127-clock-fold-frames",
+      "dataset_version": 2,
+      "spec_dataset_slug": "<kaggle-user>/prc-exp127b-clock-rederive-spec",
+      "spec_dataset_version": 1,
+      "coverage_kernel_slug": "<kaggle-user>/prc-exp127b-clock-rederive-coverage",
+      "coverage_kernel_version": 5,
+      "kernel_slug": "<kaggle-user>/prc-exp127b-clock-rederive-fit",
+      "kernel_version": 1,
+      "visibility": "private",
+      "device": "CPU",
+      "internet_enabled": false,
+      "kernel_source_commit": "3871130dfdb811c20e7ca56cd85a3ed94f95d29d",
+      "kernel_source_sha256": "66a659e42eee4c0d98b18aaa123b0ea8c0e4f4985828ced570f292876290d05e",
+      "kernel_metadata": {
+        "file": "experiments/exp-127-clock-precision/rederive/kaggle/fit-kernel/kernel-metadata.json",
+        "bytes": 533,
+        "sha256": "5513d4b1f4198438334157d3b018ddcdea0edc5493e4a104ba1a3c6edc62c859",
+        "committed": true
+      },
+      "status_observed": "KernelWorkerStatus.COMPLETE; ranking vector checked against local data/raw/submitting.parquet order and held rows unchanged",
+      "runtime_seconds": 19.91803503036499,
+      "python_version": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+      "scikit_learn_version": "1.6.1",
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 12728,
+      "source_inputs_sha256": {
+        "fold_frames.parquet": "fb811f693697ca359050907a5a89d03227e30f11ab0ecaf2d0eadd8a3588f98e",
+        "baseline_reproduction.json": "6d2c5eee25f4af3cf021f06afe3ef3d11082a696fe54098b33693077f709d530",
+        "fold_cluster_population.csv": "d8eeb9c94b75e79571c626e43810f1e9f7203968fec3b5eb5ffedcdbf92b54f4",
+        "rederive_SPEC.md": "39778344ec1f85e3f8febbaedb097958b073f84923b3a9fc642f638cc08d11c4",
+        "clock_features.parquet": "a1058a1e0d14ff20ccf69d42bd4c364089e4144ad22e19bdfcc2d29d3a6a2ed6",
+        "coverage_summary.json": "f2286e2391f5c2b27f8912eab38824438cd248780a16c6fe0b5dc7ded589a467",
+        "coverage_by_airport.csv": "3e643bb7126619b31190cb6ecbc72cdee7950e6ccbc587075f66482d1342ba9a",
+        "coverage_run_receipt.json": "b8d9578f80c7e29325cc09409be4318f72f45e3f5118b5d44b7a34f04c367f4e",
+        "ranking_frame.parquet": "3481827b5ce9961c3b4a9567a22fe745f4a7f72c5de0273351be797e11dfb4f0",
+        "submitting_ids.csv": "397ebd40c810d3e305b9f634b99c2bfc40e8daa82357b19e27d9965135e5239e"
+      },
+      "selected_model": "hist_gradient_boosting",
+      "primary_d107_gate": {
+        "positive_on_all_folds": true,
+        "beats_coordinate_sham_on_all_folds_and_pooled": true,
+        "beats_airport_only_on_all_folds_and_pooled": true,
+        "all_fold_and_pooled_95ci_above_zero": true,
+        "pass": true
+      },
+      "ridge_repair_run": false,
+      "primary_board_seconds": 0.24426649024462624,
+      "board_mse_gain_s2_per_row": 176.49022201455077,
+      "board_mse_gain_95ci": [
+        117.4555496009095,
+        243.3512416831235
+      ],
+      "ranking_fit": {
+        "family": "hist_gradient_boosting",
+        "training_rows": 257630,
+        "iterations": 100,
+        "ranking_rows_updated": 191739
+      },
+      "ranking_vector": {
+        "file": "experiments/exp-127-clock-precision/rederive/kaggle/fit-output-v1/ranking_update_vector.npz",
+        "bytes": 1970538,
+        "sha256": "6127f23323b10a5359f86c0f369d0342ec715be553a00c53b18ce0feeeff91c3",
+        "committed": true,
+        "rows": 344841,
+        "order": "MVT_ID_mvt order of data/raw/submitting.parquet; exact ID order checked after download",
+        "eligible_rows_updated": 191739,
+        "held_rows_unchanged": 153102,
+        "order_source": {
+          "path": "data/raw/submitting.parquet",
+          "sha256": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+          "rows": 344841,
+          "id_order_match": true
+        },
+        "supplied_id_list_sha256": "397ebd40c810d3e305b9f634b99c2bfc40e8daa82357b19e27d9965135e5239e"
+      },
+      "outputs": {
+        "results.json": {
+          "file": "experiments/exp-127-clock-precision/rederive/kaggle/fit-output-v1/results.json",
+          "bytes": 19048,
+          "sha256": "f60fa2ffde9a9dc811e11b3fea3d98632c0ad20d917250dfde2722c0074f33b8",
+          "committed": true
+        },
+        "run_receipt.json": {
+          "file": "experiments/exp-127-clock-precision/rederive/kaggle/fit-output-v1/run_receipt.json",
+          "bytes": 19568,
+          "sha256": "e6cc141608985df7eabe9ce48f28da43846e267f5cf6dadb07649d63b2a7a536",
+          "committed": true
+        },
+        "primary_fold_scores.csv": {
+          "file": "experiments/exp-127-clock-precision/rederive/kaggle/fit-output-v1/primary_fold_scores.csv",
+          "bytes": 2213,
+          "sha256": "440c562f86c9301263211e4fbf8c0d93ba3d05b17991df496f7b13ad73407cea",
+          "committed": true
+        },
+        "kernel_log": {
+          "file": "experiments/exp-127-clock-precision/rederive/kaggle/fit-output-v1/prc-exp127b-clock-rederive-fit.log",
+          "bytes": 53018,
+          "sha256": "154712361bbc00db8e716c20e99e3b6144800da1bea2d1c81c1c5c3e4dbe0f57",
+          "committed": true
+        },
+        "ranking_update_vector.npz": {
+          "file": "experiments/exp-127-clock-precision/rederive/kaggle/fit-output-v1/ranking_update_vector.npz",
+          "bytes": 1970538,
+          "sha256": "6127f23323b10a5359f86c0f369d0342ec715be553a00c53b18ce0feeeff91c3",
+          "committed": true
+        },
+        "primary_fold_predictions.parquet": {
+          "sha256": "ae2ff9cace82cda87dd12446f8db3704412671d59b974a74aee1bf59e1a6fa34",
+          "committed": false,
+          "downloaded_for_transfer_check": true,
+          "columns_read_for_transfer_check": [
+            "MVT_ID_mvt",
+            "fold",
+            "pred_implied"
+          ],
+          "target_or_residual_columns_read": false
+        },
+        "fold_update_vectors.npz": {
+          "sha256": "8bcfbcc9a298bc539e6373f56287283873f8005fc415b0ea933d41bf707972ad",
+          "bytes": 370898,
+          "committed": false,
+          "note": "Auxiliary archive contains only the final January fold arrays because the output dictionary reused the final fold variable; not used for the transfer check. The full OOF predictions parquet was used instead."
+        }
+      }
+    },
+    "raw_points_downloaded_to_Mac_or_workstation": false,
+    "label_free_transfer_check": {
+      "label_or_residual_values_read": false,
+      "periods": {
+        "2025": "pooled January, July, and December folds",
+        "2026": "pooled January and July ranking months"
+      },
+      "eligibility_denominator": "with current clock, known aircraft type, and airport not LFPG; same rows eligible for candidate update",
+      "coverage_denominator": "all eligible period rows; input median and IQR use rows with an implied off-block input",
+      "delta_denominator": "all eligible period rows, including missing implied-clock features handled by HGB",
+      "input": "current_250m_s - implied_offblock_s; IQR is p75 minus p25",
+      "fold_delta_source": {
+        "file": "primary_fold_predictions.parquet",
+        "sha256": "ae2ff9cace82cda87dd12446f8db3704412671d59b974a74aee1bf59e1a6fa34",
+        "columns_read": [
+          "MVT_ID_mvt",
+          "fold",
+          "pred_implied"
+        ],
+        "rows_joined": 257630
+      },
+      "ranking_delta_source": {
+        "file": "ranking_update_vector.npz",
+        "sha256": "6127f23323b10a5359f86c0f369d0342ec715be553a00c53b18ce0feeeff91c3",
+        "rows_joined": 191739
+      },
+      "by_airport": [
+        {
+          "airport": "EDDF",
+          "eligible_rows_2025_folds": 45308,
+          "eligible_rows_2026_ranking": 16968,
+          "implied_clock_coverage_2025": 0.9097731085018098,
+          "implied_clock_coverage_2026": 0.827145,
+          "input_median_seconds_2025": 183.42172873020172,
+          "input_median_seconds_2026": 233.43899,
+          "input_iqr_seconds_2025": 275.455087,
+          "input_iqr_seconds_2026": 255.734378,
+          "delta_mean_seconds_oof_2025": -9.27964,
+          "delta_mean_seconds_ranking_2026": 7.077125,
+          "delta_rms_seconds_oof_2025": 24.826752,
+          "delta_rms_seconds_ranking_2026": 37.542801,
+          "delta_nonzero_share_oof_2025": 1.0,
+          "delta_nonzero_share_ranking_2026": 1.0,
+          "rms_ratio_ranking_over_oof": 1.5122
+        },
+        {
+          "airport": "EDDM",
+          "eligible_rows_2025_folds": 28225,
+          "eligible_rows_2026_ranking": 24998,
+          "implied_clock_coverage_2025": 0.6745084145261293,
+          "implied_clock_coverage_2026": 0.705976,
+          "input_median_seconds_2025": 334.881227,
+          "input_median_seconds_2026": 345.216373,
+          "input_iqr_seconds_2025": 199.971827,
+          "input_iqr_seconds_2026": 178.224606,
+          "delta_mean_seconds_oof_2025": -12.208047,
+          "delta_mean_seconds_ranking_2026": -12.958184,
+          "delta_rms_seconds_oof_2025": 25.392097,
+          "delta_rms_seconds_ranking_2026": 23.106729,
+          "delta_nonzero_share_oof_2025": 1.0,
+          "delta_nonzero_share_ranking_2026": 1.0,
+          "rms_ratio_ranking_over_oof": 0.91
+        },
+        {
+          "airport": "EGLL",
+          "eligible_rows_2025_folds": 19035,
+          "eligible_rows_2026_ranking": 33680,
+          "implied_clock_coverage_2025": 0.9719989493039138,
+          "implied_clock_coverage_2026": 0.968616,
+          "input_median_seconds_2025": 424.695242,
+          "input_median_seconds_2026": 418.573359,
+          "input_iqr_seconds_2025": 355.541585,
+          "input_iqr_seconds_2026": 233.614487,
+          "delta_mean_seconds_oof_2025": -0.326614,
+          "delta_mean_seconds_ranking_2026": -13.298645,
+          "delta_rms_seconds_oof_2025": 39.202077,
+          "delta_rms_seconds_ranking_2026": 36.195561,
+          "delta_nonzero_share_oof_2025": 1.0,
+          "delta_nonzero_share_ranking_2026": 1.0,
+          "rms_ratio_ranking_over_oof": 0.9233
+        },
+        {
+          "airport": "EHAM",
+          "eligible_rows_2025_folds": 57292,
+          "eligible_rows_2026_ranking": 35592,
+          "implied_clock_coverage_2025": 0.9633805766948265,
+          "implied_clock_coverage_2026": 0.968055,
+          "input_median_seconds_2025": 304.166991,
+          "input_median_seconds_2026": 320.422965,
+          "input_iqr_seconds_2025": 273.406394,
+          "input_iqr_seconds_2026": 207.916064,
+          "delta_mean_seconds_oof_2025": -3.166473,
+          "delta_mean_seconds_ranking_2026": -1.60809,
+          "delta_rms_seconds_oof_2025": 17.365411,
+          "delta_rms_seconds_ranking_2026": 22.392979,
+          "delta_nonzero_share_oof_2025": 1.0,
+          "delta_nonzero_share_ranking_2026": 1.0,
+          "rms_ratio_ranking_over_oof": 1.2895
+        },
+        {
+          "airport": "LEBL",
+          "eligible_rows_2025_folds": 37786,
+          "eligible_rows_2026_ranking": 26680,
+          "implied_clock_coverage_2025": 0.9843857513364739,
+          "implied_clock_coverage_2026": 0.982684,
+          "input_median_seconds_2025": 231.8728,
+          "input_median_seconds_2026": 268.141772,
+          "input_iqr_seconds_2025": 245.519372,
+          "input_iqr_seconds_2026": 254.647527,
+          "delta_mean_seconds_oof_2025": -2.996897,
+          "delta_mean_seconds_ranking_2026": -4.463782,
+          "delta_rms_seconds_oof_2025": 19.923865,
+          "delta_rms_seconds_ranking_2026": 21.540824,
+          "delta_nonzero_share_oof_2025": 1.0,
+          "delta_nonzero_share_ranking_2026": 1.0,
+          "rms_ratio_ranking_over_oof": 1.0812
+        },
+        {
+          "airport": "LEMD",
+          "eligible_rows_2025_folds": 21337,
+          "eligible_rows_2026_ranking": 27046,
+          "implied_clock_coverage_2025": 0.94577494493134,
+          "implied_clock_coverage_2026": 0.950455,
+          "input_median_seconds_2025": 169.135926,
+          "input_median_seconds_2026": 196.775754,
+          "input_iqr_seconds_2025": 265.177376,
+          "input_iqr_seconds_2026": 262.410436,
+          "delta_mean_seconds_oof_2025": -25.552838,
+          "delta_mean_seconds_ranking_2026": -4.941793,
+          "delta_rms_seconds_oof_2025": 33.590981,
+          "delta_rms_seconds_ranking_2026": 24.729888,
+          "delta_nonzero_share_oof_2025": 1.0,
+          "delta_nonzero_share_ranking_2026": 1.0,
+          "rms_ratio_ranking_over_oof": 0.7362
+        },
+        {
+          "airport": "LIRF",
+          "eligible_rows_2025_folds": 19093,
+          "eligible_rows_2026_ranking": 5571,
+          "implied_clock_coverage_2025": 0.9364688629340596,
+          "implied_clock_coverage_2026": 0.985999,
+          "input_median_seconds_2025": 228.776555,
+          "input_median_seconds_2026": 321.168051,
+          "input_iqr_seconds_2025": 243.358225,
+          "input_iqr_seconds_2026": 318.291379,
+          "delta_mean_seconds_oof_2025": 10.735863,
+          "delta_mean_seconds_ranking_2026": 3.762228,
+          "delta_rms_seconds_oof_2025": 38.440996,
+          "delta_rms_seconds_ranking_2026": 31.005457,
+          "delta_nonzero_share_oof_2025": 1.0,
+          "delta_nonzero_share_ranking_2026": 1.0,
+          "rms_ratio_ranking_over_oof": 0.8066
+        },
+        {
+          "airport": "LSZH",
+          "eligible_rows_2025_folds": 29554,
+          "eligible_rows_2026_ranking": 21204,
+          "implied_clock_coverage_2025": 0.8199566894498207,
+          "implied_clock_coverage_2026": 0.881202,
+          "input_median_seconds_2025": 171.622225,
+          "input_median_seconds_2026": 251.074592,
+          "input_iqr_seconds_2025": 261.496548,
+          "input_iqr_seconds_2026": 249.714179,
+          "delta_mean_seconds_oof_2025": -9.958991,
+          "delta_mean_seconds_ranking_2026": -7.369208,
+          "delta_rms_seconds_oof_2025": 17.94322,
+          "delta_rms_seconds_ranking_2026": 18.932995,
+          "delta_nonzero_share_oof_2025": 1.0,
+          "delta_nonzero_share_ranking_2026": 1.0,
+          "rms_ratio_ranking_over_oof": 1.0552
+        }
+      ],
+      "airports_with_more_than_twofold_rms_difference": [],
+      "largest_ranking_to_oof_rms_ratio": {
+        "airport": "EDDF",
+        "ratio": 1.5122
+      },
+      "ltfm": "No current clock; excluded from this clock-model transfer cohort and held unchanged in the ranking vector."
+    },
+    "report": {
+      "file": "experiments/exp-127-clock-precision/rederive/REPORT.md",
+      "bytes": 7879,
+      "sha256": "711de077c5097b191e5194fb777a9f0ea1ee229d3b7a67d7a54415228762a613",
+      "committed": true
+    }
+  }
+}

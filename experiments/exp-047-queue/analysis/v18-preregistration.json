@@ -1,0 +1,211 @@
+{
+ "what": "the expected board move for v18, registered BEFORE the upload (score-feedback rule)",
+ "written_before_the_read": true,
+ "candidate": "submissions/candidates/exp-046-surface-v5.parquet",
+ "candidate_sha256": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+ "board_now": {
+  "file": "youthful-giraffe_v17.parquet",
+  "score": 246.6571,
+  "next_team": 260.931,
+  "lead_s": 14.274
+ },
+ "registered_face": {
+  "all_row_s": 0.20534430269850645,
+  "all_row_ci95": [
+   0.14007700424821792,
+   0.2927427837805026
+  ],
+  "clean_s": 0.2506746339168444,
+  "clean_ci95": [
+   0.18264453578324477,
+   0.31996946783796076
+  ],
+  "source": "experiments/exp-046-surfacefit/analysis/serve-v19.json::gate.increment_over_the_head",
+  "what_it_is": "the increment over the SERVED head with the LFPG hold applied"
+ },
+ "history": [
+  {
+   "upload": "v13",
+   "reading": 12,
+   "lane": "exp-046-surfacefit",
+   "what": "the aircraft's own observed surface clock on the with-clock class",
+   "face_s": 8.128,
+   "board_before": 262.7418,
+   "board_after": 248.4818,
+   "board_move_s": 14.26,
+   "transfer": 1.75,
+   "move_checks": 14.26,
+   "transfer_recomputed": 1.754
+  },
+  {
+   "upload": "v14",
+   "reading": 13,
+   "lane": "exp-047-queue",
+   "what": "the no-clock neighbourhood update on two served cells",
+   "face_s": 0.1854,
+   "board_before": 248.4818,
+   "board_after": 248.2904,
+   "board_move_s": 0.1914,
+   "transfer": 1.03,
+   "move_checks": 0.1914,
+   "transfer_recomputed": 1.032
+  },
+  {
+   "upload": "v15",
+   "reading": 14,
+   "lane": "exp-046-surfacefit",
+   "what": "the 127-leaf head replacing v13's arm on the with-clock class",
+   "face_s": 0.7296,
+   "board_before": 248.2904,
+   "board_after": 246.8263,
+   "board_move_s": 1.4641,
+   "transfer": 2.01,
+   "move_checks": 1.4641,
+   "transfer_recomputed": 2.007
+  },
+  {
+   "upload": "v16",
+   "reading": 15,
+   "lane": "exp-046-surfacefit",
+   "what": "capacity 127 -> 255 leaves plus the p99.5 tail guard",
+   "face_s": 0.335,
+   "board_before": 246.8263,
+   "board_after": 246.7053,
+   "board_move_s": 0.121,
+   "transfer": 0.36,
+   "move_checks": 0.121,
+   "transfer_recomputed": 0.361
+  },
+  {
+   "upload": "v17",
+   "reading": 16,
+   "lane": "exp-047-queue",
+   "what": "the lit-fold revival, LEMD/reached added to the served set",
+   "face_s": 0.0686,
+   "board_before": 246.7053,
+   "board_after": 246.6571,
+   "board_move_s": 0.0482,
+   "transfer": 0.7,
+   "move_checks": 0.0482,
+   "transfer_recomputed": 0.703
+  }
+ ],
+ "transfer_summary": {
+  "all_uploads": [
+   0.36,
+   0.7,
+   1.03,
+   1.75,
+   2.01
+  ],
+  "n": 5,
+  "min": 0.36,
+  "max": 2.01,
+  "median": 1.03,
+  "mean": 1.17,
+  "surfacefit_only": [
+   0.36,
+   1.75,
+   2.01
+  ],
+  "queue_only": [
+   0.7,
+   1.03
+  ]
+ },
+ "expectations": {
+  "at_face_1_00x_on_the_point": {
+   "board_move_s": 0.2053,
+   "expected_board": 246.4518
+  },
+  "at_the_median_transfer_1_03x_on_the_point": {
+   "transfer": 1.03,
+   "board_move_s": 0.2115,
+   "expected_board": 246.4456
+  },
+  "at_the_mean_transfer_on_the_point": {
+   "transfer": 1.17,
+   "board_move_s": 0.2403,
+   "expected_board": 246.4168
+  },
+  "observed_transfer_range_on_the_point": {
+   "transfer_range": [
+    0.36,
+    2.01
+   ],
+   "face_range": [
+    0.20534430269850645,
+    0.20534430269850645
+   ],
+   "board_move_s": [
+    0.0739,
+    0.4127
+   ],
+   "expected_board": [
+    246.2444,
+    246.5832
+   ]
+  },
+  "observed_transfer_range_on_the_face_interval": {
+   "transfer_range": [
+    0.36,
+    2.01
+   ],
+   "face_range": [
+    0.14007700424821792,
+    0.2927427837805026
+   ],
+   "board_move_s": [
+    0.0504,
+    0.5884
+   ],
+   "expected_board": [
+    246.0687,
+    246.6067
+   ]
+  },
+  "the_two_most_recent_uploads_v17_0_70x_and_v16_0_36x": {
+   "transfer_range": [
+    0.36,
+    0.7
+   ],
+   "face_range": [
+    0.20534430269850645,
+    0.20534430269850645
+   ],
+   "board_move_s": [
+    0.0739,
+    0.1437
+   ],
+   "expected_board": [
+    246.5134,
+    246.5832
+   ]
+  },
+  "the_two_most_recent_SURFACEFIT_uploads_v16_0_36x_and_v15_2_01x": {
+   "transfer_range": [
+    0.36,
+    2.01
+   ],
+   "face_range": [
+    0.20534430269850645,
+    0.20534430269850645
+   ],
+   "board_move_s": [
+    0.0739,
+    0.4127
+   ],
+   "expected_board": [
+    246.2444,
+    246.5832
+   ]
+  }
+ },
+ "transfer_failure": {
+  "sentence": "A transfer failure is a board score above 246.6067 -- a move under +0.0504 s, which is the LOWEST transfer ever observed on this board (0.36x, v16) applied to the LOWER end of this candidate's own fold interval (+0.1401 s) -- and a score at or above v17's 246.6571 is not a weak transfer but no transfer at all.",
+  "threshold_board": 246.6067,
+  "threshold_move_s": 0.0504,
+  "no_transfer_at_all_board": 246.6571,
+  "rank_is_not_at_risk": "the next team is at 260.931; every band above leaves rank 1 by more than 14 s, so nothing here is a ranking risk"
+ }
+}

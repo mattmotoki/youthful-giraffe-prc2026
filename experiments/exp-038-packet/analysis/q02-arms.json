@@ -1,0 +1,972 @@
+{
+  "arms": [
+    {
+      "arm": "gate-k2-hold",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "hold",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "F1-fresh",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "blend-5",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": false,
+      "clean": {
+        "july_loo": 284.3195,
+        "december": 205.2156,
+        "january": 218.2582
+      },
+      "clean_board": 257.1653,
+      "wall_s": 36.4,
+      "gate_against": "K2",
+      "gate_offset": {
+        "july_loo": 0.0,
+        "december": 0.0,
+        "january": 0.0
+      },
+      "gate_pass": true
+    },
+    {
+      "arm": "gate-bulk-add-hold",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 8,
+      "anchor": "hold",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "F1-fresh",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "blend-5",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": false,
+      "clean": {
+        "july_loo": 284.3591,
+        "december": 205.1995,
+        "january": 218.2214
+      },
+      "clean_board": 257.1758,
+      "wall_s": 38.0,
+      "gate_against": "bulk-add-hold",
+      "gate_offset": {
+        "july_loo": -0.0,
+        "december": -0.0,
+        "january": 0.0
+      },
+      "gate_pass": true
+    },
+    {
+      "arm": "unchanged (v10 replay)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1572,
+        "december": 204.9218,
+        "january": 218.1506
+      },
+      "clean_board": 257.0248,
+      "wall_s": 39.2,
+      "gate_against": "v10",
+      "gate_offset": {
+        "july_loo": -0.0,
+        "december": 0.0,
+        "january": 0.0
+      },
+      "gate_pass": true
+    },
+    {
+      "arm": "sham refit (seed draw)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        13,
+        113,
+        213,
+        313,
+        413
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1508,
+        "december": 204.9273,
+        "january": 218.1886
+      },
+      "clean_board": 257.0352,
+      "wall_s": 40.8
+    },
+    {
+      "arm": "addition",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 8,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1615,
+        "december": 204.8997,
+        "january": 218.121
+      },
+      "clean_board": 257.0163,
+      "wall_s": 36.1
+    },
+    {
+      "arm": "replacement",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.265,
+        "december": 205.4292,
+        "january": 218.5781
+      },
+      "clean_board": 257.252,
+      "wall_s": 39.9
+    },
+    {
+      "arm": "replacement (sham seed)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        13,
+        113,
+        213,
+        313,
+        413
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.2483,
+        "december": 205.4303,
+        "january": 218.5934
+      },
+      "clean_board": 257.2474,
+      "wall_s": 40.6
+    },
+    {
+      "arm": "replacement-anchorheld",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "v10anchor",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "v10's mixed anchor",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.137,
+        "december": 204.93,
+        "january": 218.1774
+      },
+      "clean_board": 257.0224,
+      "wall_s": 40.1
+    },
+    {
+      "arm": "drop-weather",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "N1-nmtail"
+      ],
+      "n_members": 6,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.2227,
+        "december": 205.4775,
+        "january": 218.5976
+      },
+      "clean_board": 257.2332,
+      "wall_s": 40.1
+    },
+    {
+      "arm": "addition-holdanchor",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 8,
+      "anchor": "hold",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "F1-fresh",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "blend-5",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.3536,
+        "december": 205.2239,
+        "january": 218.2223
+      },
+      "clean_board": 257.1728,
+      "wall_s": 40.9
+    },
+    {
+      "arm": "replacement-holdanchor",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "hold",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "F1-fresh",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "blend-5",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.3267,
+        "december": 205.2332,
+        "january": 218.2822
+      },
+      "clean_board": 257.1787,
+      "wall_s": 36.8
+    },
+    {
+      "arm": "sham refit (draw 2)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        23,
+        123,
+        223,
+        323,
+        423
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1366,
+        "december": 204.9294,
+        "january": 218.1709
+      },
+      "clean_board": 257.0198,
+      "wall_s": 36.6
+    },
+    {
+      "arm": "sham refit (draw 3)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        31,
+        131,
+        231,
+        331,
+        431
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1712,
+        "december": 204.9006,
+        "january": 218.1695
+      },
+      "clean_board": 257.0405,
+      "wall_s": 40.1
+    },
+    {
+      "arm": "sham refit (draw 4)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        41,
+        141,
+        241,
+        341,
+        441
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1448,
+        "december": 204.8964,
+        "january": 218.1828
+      },
+      "clean_board": 257.0292,
+      "wall_s": 49.9
+    },
+    {
+      "arm": "addition (seed draw)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 8,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        13,
+        113,
+        213,
+        313,
+        413
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1487,
+        "december": 204.8999,
+        "january": 218.1577
+      },
+      "clean_board": 257.0222,
+      "wall_s": 40.5
+    },
+    {
+      "arm": "addition (draw 2)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 8,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        23,
+        123,
+        223,
+        323,
+        423
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1646,
+        "december": 204.9034,
+        "january": 218.1577
+      },
+      "clean_board": 257.032,
+      "wall_s": 38.0
+    },
+    {
+      "arm": "addition (draw 3)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 8,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        31,
+        131,
+        231,
+        331,
+        431
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1638,
+        "december": 204.8874,
+        "january": 218.1487
+      },
+      "clean_board": 257.0282,
+      "wall_s": 37.4
+    },
+    {
+      "arm": "addition (draw 4)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 8,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        41,
+        141,
+        241,
+        341,
+        441
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1444,
+        "december": 204.8949,
+        "january": 218.151
+      },
+      "clean_board": 257.0171,
+      "wall_s": 36.8
+    },
+    {
+      "arm": "unchanged (avail rule)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "avail",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, availability-aware",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1572,
+        "december": 204.9218,
+        "january": 218.1506
+      },
+      "clean_board": 257.0248,
+      "wall_s": 36.6,
+      "gate_against": "v10",
+      "gate_offset": {
+        "july_loo": -0.0,
+        "december": 0.0,
+        "january": 0.0
+      },
+      "gate_pass": true
+    },
+    {
+      "arm": "addition (avail anchor)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 8,
+      "anchor": "avail",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, availability-aware",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1296,
+        "december": 204.5643,
+        "january": 218.3487
+      },
+      "clean_board": 257.0823,
+      "wall_s": 37.2
+    },
+    {
+      "arm": "replacement (avail anchor)",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "avail",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "B1-bulk64",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, availability-aware",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.4753,
+        "december": 205.0172,
+        "january": 218.9549
+      },
+      "clean_board": 257.5233,
+      "wall_s": 47.2
+    },
+    {
+      "arm": "drop-weather, head only",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "N1-nmtail"
+      ],
+      "n_members": 6,
+      "anchor": "v10anchor",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "v10's mixed anchor",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.1404,
+        "december": 204.9648,
+        "january": 218.1962
+      },
+      "clean_board": 257.0316,
+      "wall_s": 47.0
+    },
+    {
+      "arm": "drop-weather, anchor only",
+      "members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "V3-allin",
+        "N1-nmtail"
+      ],
+      "n_members": 7,
+      "anchor": "mixed",
+      "anchor_members": [
+        "T-tailv4",
+        "C2-cat",
+        "L2-hub8725",
+        "D1-winter",
+        "K2-window",
+        "N1-nmtail"
+      ],
+      "anchor_rule": "mixed, partial members dropped",
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "mask8": true,
+      "clean": {
+        "july_loo": 284.0472,
+        "december": 205.0884,
+        "january": 218.303
+      },
+      "clean_board": 257.0144,
+      "wall_s": 43.1
+    }
+  ],
+  "weather_member": "V3-allin",
+  "bulk_member": "B1-bulk64",
+  "mask": {
+    "rule": "serve the K2 change only where it gains on all three folds",
+    "keep": [
+      "EDDM",
+      "EGLL",
+      "LEBL",
+      "LEMD",
+      "LFPG",
+      "LIRF",
+      "LSZH",
+      "LTFM"
+    ],
+    "hold_at_v7": [
+      "EDDF",
+      "EHAM"
+    ],
+    "note": "EHAM is held from stack-5 in v7 and in K2 alike, so the change is exactly zero there and it cannot be kept by this rule.",
+    "table": "analysis/airport_change.csv"
+  },
+  "seeds_committed": [
+    7,
+    107,
+    207,
+    307,
+    407
+  ],
+  "seeds_sham": [
+    13,
+    113,
+    213,
+    313,
+    413
+  ],
+  "rounds": 300,
+  "block": "depx",
+  "win": 600.0,
+  "threads": 4,
+  "wall_s": 922.8
+}

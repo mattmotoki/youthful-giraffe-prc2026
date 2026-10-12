@@ -1,0 +1,5 @@
+252c252,253
+<     physical = [c for c in nums if c.startswith(prefixes) or c in PX.Z_COLS or c in physical_names]
+---
+>     physical_admin = {'lirf_flight_len','lirf_ades_is_adep','lirf_stand_num','lirf_stand_retired'}
+>     physical = [c for c in nums if (c.startswith(prefixes) or c in PX.Z_COLS or c in physical_names or c.startswith('lirf_')) and c not in physical_admin]

@@ -1,0 +1,586 @@
+{
+ "rule": "serve form 2' at an airport only where it gains on all three folds AND its own tail rows meet the registered clause (y > 3600 clean, RMSE against v7, 1 s allowance); v11 elsewhere",
+ "selection": "POST-HOC on the three folds it is scored on, as exp-036's mask was; discovery evidence, not a passed gate",
+ "source": "experiments/exp-036-mask/code/mask.py rule, plus \u00a724's clause",
+ "candidate_airports": [
+  "EDDM",
+  "EGLL",
+  "LEBL",
+  "LEMD",
+  "LFPG",
+  "LIRF",
+  "LSZH",
+  "LTFM"
+ ],
+ "selected": [
+  "LEMD"
+ ],
+ "selected_pooled_clause": [
+  "EDDM",
+  "EGLL",
+  "LEMD",
+  "LFPG",
+  "LTFM"
+ ],
+ "selected_gain_only": [
+  "EDDM",
+  "EGLL",
+  "LEMD",
+  "LFPG",
+  "LTFM"
+ ],
+ "held_at_v11": [
+  "EDDM",
+  "EGLL",
+  "LEBL",
+  "LFPG",
+  "LIRF",
+  "LSZH",
+  "LTFM"
+ ],
+ "allowance": 1.0,
+ "tail_threshold": 3600.0,
+ "draws": 2000,
+ "table": {
+  "EDDM": {
+   "airport": "EDDM",
+   "folds": {
+    "july_loo": {
+     "n": 15825,
+     "gain": 0.5628,
+     "ci": [
+      0.1296,
+      1.0176
+     ],
+     "gain_alone_whole_fold": 0.0292,
+     "tail_n": 8,
+     "tail_rmse_v7": 3202.56,
+     "tail_rmse_v11": 3237.1,
+     "tail_rmse_arm": 3210.98,
+     "tail_vs_v7": -8.4221,
+     "tail_vs_v11": 26.1251,
+     "clause_pass": false,
+     "clause_vacuous": false
+    },
+    "december": {
+     "n": 12035,
+     "gain": 1.6138,
+     "ci": [
+      0.0625,
+      3.6076
+     ],
+     "gain_alone_whole_fold": 0.1206,
+     "tail_n": 11,
+     "tail_rmse_v7": 2049.52,
+     "tail_rmse_v11": 2004.09,
+     "tail_rmse_arm": 1923.25,
+     "tail_vs_v7": 126.2677,
+     "tail_vs_v11": 80.8374,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "january": {
+     "n": 11266,
+     "gain": 0.1118,
+     "ci": [
+      -0.4592,
+      0.7006
+     ],
+     "gain_alone_whole_fold": 0.0063,
+     "tail_n": 5,
+     "tail_rmse_v7": 1163.79,
+     "tail_rmse_v11": 1187.64,
+     "tail_rmse_arm": 1184.38,
+     "tail_vs_v7": -20.5872,
+     "tail_vs_v11": 3.259,
+     "clause_pass": false,
+     "clause_vacuous": false
+    }
+   },
+   "folds_positive": 3,
+   "folds_clause_pass": 1,
+   "selected": false,
+   "tail_pooled": {
+    "n": 24,
+    "rmse_v7": 2371.96,
+    "rmse_arm": 2329.03,
+    "vs_v7": 42.9353,
+    "clause_pass": true
+   },
+   "selected_pooled_clause": true,
+   "selected_gain_only": true
+  },
+  "EGLL": {
+   "airport": "EGLL",
+   "folds": {
+    "july_loo": {
+     "n": 20790,
+     "gain": 1.2051,
+     "ci": [
+      0.4604,
+      1.9372
+     ],
+     "gain_alone_whole_fold": 0.127,
+     "tail_n": 173,
+     "tail_rmse_v7": 1845.35,
+     "tail_rmse_v11": 1837.08,
+     "tail_rmse_arm": 1816.82,
+     "tail_vs_v7": 28.5251,
+     "tail_vs_v11": 20.2622,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "december": {
+     "n": 20000,
+     "gain": 0.7481,
+     "ci": [
+      0.2272,
+      1.3569
+     ],
+     "gain_alone_whole_fold": 0.0953,
+     "tail_n": 65,
+     "tail_rmse_v7": 1161.13,
+     "tail_rmse_v11": 1154.7,
+     "tail_rmse_arm": 1151.12,
+     "tail_vs_v7": 10.0108,
+     "tail_vs_v11": 3.5777,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "january": {
+     "n": 19420,
+     "gain": 0.1118,
+     "ci": [
+      -0.3354,
+      0.5415
+     ],
+     "gain_alone_whole_fold": 0.0146,
+     "tail_n": 67,
+     "tail_rmse_v7": 1316.24,
+     "tail_rmse_v11": 1317.93,
+     "tail_rmse_arm": 1328.44,
+     "tail_vs_v7": -12.198,
+     "tail_vs_v11": -10.5097,
+     "clause_pass": false,
+     "clause_vacuous": false
+    }
+   },
+   "folds_positive": 3,
+   "folds_clause_pass": 2,
+   "selected": false,
+   "tail_pooled": {
+    "n": 305,
+    "rmse_v7": 1612.28,
+    "rmse_arm": 1594.47,
+    "vs_v7": 17.8061,
+    "clause_pass": true
+   },
+   "selected_pooled_clause": true,
+   "selected_gain_only": true
+  },
+  "LEBL": {
+   "airport": "LEBL",
+   "folds": {
+    "july_loo": {
+     "n": 16752,
+     "gain": -0.0701,
+     "ci": [
+      -0.4223,
+      0.2879
+     ],
+     "gain_alone_whole_fold": -0.0056,
+     "tail_n": 0,
+     "tail_rmse_v7": null,
+     "tail_rmse_v11": null,
+     "tail_rmse_arm": null,
+     "tail_vs_v7": null,
+     "tail_vs_v11": null,
+     "clause_pass": true,
+     "clause_vacuous": true
+    },
+    "december": {
+     "n": 13835,
+     "gain": 0.3353,
+     "ci": [
+      -0.0047,
+      0.6905
+     ],
+     "gain_alone_whole_fold": 0.0238,
+     "tail_n": 0,
+     "tail_rmse_v7": null,
+     "tail_rmse_v11": null,
+     "tail_rmse_arm": null,
+     "tail_vs_v7": null,
+     "tail_vs_v11": null,
+     "clause_pass": true,
+     "clause_vacuous": true
+    },
+    "january": {
+     "n": 12234,
+     "gain": 0.9168,
+     "ci": [
+      0.2542,
+      1.7568
+     ],
+     "gain_alone_whole_fold": 0.0463,
+     "tail_n": 0,
+     "tail_rmse_v7": null,
+     "tail_rmse_v11": null,
+     "tail_rmse_arm": null,
+     "tail_vs_v7": null,
+     "tail_vs_v11": null,
+     "clause_pass": true,
+     "clause_vacuous": true
+    }
+   },
+   "folds_positive": 2,
+   "folds_clause_pass": 3,
+   "selected": false,
+   "tail_pooled": {
+    "n": 0,
+    "clause_pass": true,
+    "vacuous": true
+   },
+   "selected_pooled_clause": false,
+   "selected_gain_only": false
+  },
+  "LEMD": {
+   "airport": "LEMD",
+   "folds": {
+    "july_loo": {
+     "n": 18818,
+     "gain": 0.4204,
+     "ci": [
+      -0.109,
+      1.2029
+     ],
+     "gain_alone_whole_fold": 0.0267,
+     "tail_n": 0,
+     "tail_rmse_v7": null,
+     "tail_rmse_v11": null,
+     "tail_rmse_arm": null,
+     "tail_vs_v7": null,
+     "tail_vs_v11": null,
+     "clause_pass": true,
+     "clause_vacuous": true
+    },
+    "december": {
+     "n": 17985,
+     "gain": 0.0524,
+     "ci": [
+      -0.1766,
+      0.3012
+     ],
+     "gain_alone_whole_fold": 0.0044,
+     "tail_n": 0,
+     "tail_rmse_v7": null,
+     "tail_rmse_v11": null,
+     "tail_rmse_arm": null,
+     "tail_vs_v7": null,
+     "tail_vs_v11": null,
+     "clause_pass": true,
+     "clause_vacuous": true
+    },
+    "january": {
+     "n": 16510,
+     "gain": 0.588,
+     "ci": [
+      0.1897,
+      1.0196
+     ],
+     "gain_alone_whole_fold": 0.0448,
+     "tail_n": 0,
+     "tail_rmse_v7": null,
+     "tail_rmse_v11": null,
+     "tail_rmse_arm": null,
+     "tail_vs_v7": null,
+     "tail_vs_v11": null,
+     "clause_pass": true,
+     "clause_vacuous": true
+    }
+   },
+   "folds_positive": 3,
+   "folds_clause_pass": 3,
+   "selected": true,
+   "tail_pooled": {
+    "n": 0,
+    "clause_pass": true,
+    "vacuous": true
+   },
+   "selected_pooled_clause": true,
+   "selected_gain_only": true
+  },
+  "LFPG": {
+   "airport": "LFPG",
+   "folds": {
+    "july_loo": {
+     "n": 21712,
+     "gain": 1.0029,
+     "ci": [
+      0.562,
+      1.4065
+     ],
+     "gain_alone_whole_fold": 0.0982,
+     "tail_n": 34,
+     "tail_rmse_v7": 2423.62,
+     "tail_rmse_v11": 2409.45,
+     "tail_rmse_arm": 2406.7,
+     "tail_vs_v7": 16.9174,
+     "tail_vs_v11": 2.7482,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "december": {
+     "n": 19778,
+     "gain": 1.2108,
+     "ci": [
+      0.4711,
+      2.159
+     ],
+     "gain_alone_whole_fold": 0.1654,
+     "tail_n": 37,
+     "tail_rmse_v7": 2371.99,
+     "tail_rmse_v11": 2368.44,
+     "tail_rmse_arm": 2362.07,
+     "tail_vs_v7": 9.9208,
+     "tail_vs_v11": 6.3705,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "january": {
+     "n": 17898,
+     "gain": 0.5721,
+     "ci": [
+      -0.2525,
+      1.3793
+     ],
+     "gain_alone_whole_fold": 0.0772,
+     "tail_n": 102,
+     "tail_rmse_v7": 1419.3,
+     "tail_rmse_v11": 1415.81,
+     "tail_rmse_arm": 1425.89,
+     "tail_vs_v7": -6.5951,
+     "tail_vs_v11": -10.0871,
+     "clause_pass": false,
+     "clause_vacuous": false
+    }
+   },
+   "folds_positive": 3,
+   "folds_clause_pass": 2,
+   "selected": false,
+   "tail_pooled": {
+    "n": 173,
+    "rmse_v7": 1882.93,
+    "rmse_arm": 1878.93,
+    "vs_v7": 3.9983,
+    "clause_pass": true
+   },
+   "selected_pooled_clause": true,
+   "selected_gain_only": true
+  },
+  "LIRF": {
+   "airport": "LIRF",
+   "folds": {
+    "july_loo": {
+     "n": 15211,
+     "gain": -0.1616,
+     "ci": [
+      -0.6831,
+      0.35
+     ],
+     "gain_alone_whole_fold": -0.03,
+     "tail_n": 390,
+     "tail_rmse_v7": 2519.26,
+     "tail_rmse_v11": 2517.32,
+     "tail_rmse_arm": 2514.83,
+     "tail_vs_v7": 4.4352,
+     "tail_vs_v11": 2.491,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "december": {
+     "n": 12068,
+     "gain": 0.177,
+     "ci": [
+      -0.5868,
+      0.9941
+     ],
+     "gain_alone_whole_fold": 0.0215,
+     "tail_n": 105,
+     "tail_rmse_v7": 1933.05,
+     "tail_rmse_v11": 1929.95,
+     "tail_rmse_arm": 1923.57,
+     "tail_vs_v7": 9.4871,
+     "tail_vs_v11": 6.3876,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "january": {
+     "n": 11317,
+     "gain": 0.6608,
+     "ci": [
+      -0.0264,
+      1.445
+     ],
+     "gain_alone_whole_fold": 0.0839,
+     "tail_n": 70,
+     "tail_rmse_v7": 3219.93,
+     "tail_rmse_v11": 3218.94,
+     "tail_rmse_arm": 3222.19,
+     "tail_vs_v7": -2.2638,
+     "tail_vs_v11": -3.2463,
+     "clause_pass": false,
+     "clause_vacuous": false
+    }
+   },
+   "folds_positive": 2,
+   "folds_clause_pass": 2,
+   "selected": false,
+   "tail_pooled": {
+    "n": 565,
+    "rmse_v7": 2521.87,
+    "rmse_arm": 2517.83,
+    "vs_v7": 4.0487,
+    "clause_pass": true
+   },
+   "selected_pooled_clause": false,
+   "selected_gain_only": false
+  },
+  "LSZH": {
+   "airport": "LSZH",
+   "folds": {
+    "july_loo": {
+     "n": 12611,
+     "gain": 0.804,
+     "ci": [
+      -0.1019,
+      1.7746
+     ],
+     "gain_alone_whole_fold": 0.0369,
+     "tail_n": 4,
+     "tail_rmse_v7": 5081.5,
+     "tail_rmse_v11": 5096.1,
+     "tail_rmse_arm": 5065.79,
+     "tail_vs_v7": 15.7148,
+     "tail_vs_v11": 30.3145,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "december": {
+     "n": 10585,
+     "gain": 0.4032,
+     "ci": [
+      0.203,
+      0.6099
+     ],
+     "gain_alone_whole_fold": 0.0195,
+     "tail_n": 1,
+     "tail_rmse_v7": 1729.58,
+     "tail_rmse_v11": 1750.94,
+     "tail_rmse_arm": 1731.7,
+     "tail_vs_v7": -2.1197,
+     "tail_vs_v11": 19.2399,
+     "clause_pass": false,
+     "clause_vacuous": false
+    },
+    "january": {
+     "n": 9735,
+     "gain": -0.0767,
+     "ci": [
+      -0.4444,
+      0.2815
+     ],
+     "gain_alone_whole_fold": -0.0046,
+     "tail_n": 8,
+     "tail_rmse_v7": 3737.1,
+     "tail_rmse_v11": 3721.66,
+     "tail_rmse_arm": 3735.64,
+     "tail_vs_v7": 1.46,
+     "tail_vs_v11": -13.9789,
+     "clause_pass": true,
+     "clause_vacuous": false
+    }
+   },
+   "folds_positive": 2,
+   "folds_clause_pass": 2,
+   "selected": false,
+   "tail_pooled": {
+    "n": 13,
+    "rmse_v7": 4095.07,
+    "rmse_arm": 4088.33,
+    "vs_v7": 6.7472,
+    "clause_pass": true
+   },
+   "selected_pooled_clause": false,
+   "selected_gain_only": false
+  },
+  "LTFM": {
+   "airport": "LTFM",
+   "folds": {
+    "july_loo": {
+     "n": 25171,
+     "gain": 1.5983,
+     "ci": [
+      0.9167,
+      2.316
+     ],
+     "gain_alone_whole_fold": 0.1982,
+     "tail_n": 29,
+     "tail_rmse_v7": 2832.5,
+     "tail_rmse_v11": 2823.55,
+     "tail_rmse_arm": 2802.02,
+     "tail_vs_v7": 30.4779,
+     "tail_vs_v11": 21.5256,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "december": {
+     "n": 22609,
+     "gain": 0.6421,
+     "ci": [
+      0.3079,
+      0.9531
+     ],
+     "gain_alone_whole_fold": 0.0868,
+     "tail_n": 34,
+     "tail_rmse_v7": 1671.77,
+     "tail_rmse_v11": 1573.58,
+     "tail_rmse_arm": 1573.77,
+     "tail_vs_v7": 98.0009,
+     "tail_vs_v11": -0.1972,
+     "clause_pass": true,
+     "clause_vacuous": false
+    },
+    "january": {
+     "n": 21368,
+     "gain": 0.935,
+     "ci": [
+      0.4063,
+      1.5114
+     ],
+     "gain_alone_whole_fold": 0.1298,
+     "tail_n": 11,
+     "tail_rmse_v7": 2595.42,
+     "tail_rmse_v11": 2577.46,
+     "tail_rmse_arm": 2597.97,
+     "tail_vs_v7": -2.5566,
+     "tail_vs_v11": -20.5139,
+     "clause_pass": false,
+     "clause_vacuous": false
+    }
+   },
+   "folds_positive": 3,
+   "folds_clause_pass": 2,
+   "selected": false,
+   "tail_pooled": {
+    "n": 74,
+    "rmse_v7": 2330.15,
+    "rmse_arm": 2284.33,
+    "vs_v7": 45.8262,
+    "clause_pass": true
+   },
+   "selected_pooled_clause": true,
+   "selected_gain_only": true
+  }
+ }
+}

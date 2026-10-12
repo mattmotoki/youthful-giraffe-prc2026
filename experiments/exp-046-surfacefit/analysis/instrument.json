@@ -1,0 +1,591 @@
+{
+  "arm_priced": "leaves_127x300_lr050",
+  "board_readings_for_comparison": {
+    "note": "a re-weighting of the SAME rows applies equally to every update served on them, so a single instrument multiplier can only explain the part the four readings share; it cannot make 1.75 and 0.36 at once",
+    "v13": 1.75,
+    "v14": 1.03,
+    "v15": 2.01,
+    "v16": 0.36
+  },
+  "by_column": {
+    "abs_dt_takeoff_s": {
+      "edges": [
+        15.539999961853027,
+        23.77999997138977,
+        32.519999980926514,
+        64.52999997138977
+      ],
+      "fold": {
+        "median": 27.789999961853027,
+        "missing": 0.0018072478085650217
+      },
+      "fold_gain_s2_per_row": 11593.965031480384,
+      "predicted_multiplier": 0.9745,
+      "ranking": {
+        "median": 24.52999997138977,
+        "missing": 0.0032363489739182104
+      },
+      "reweighted_to_2026_s2_per_row": 11298.236799267428,
+      "sense": "low_is_better",
+      "strata": {
+        "0": {
+          "ci95": [
+            9986.679255972402,
+            11901.221231714224
+          ],
+          "fold_rows": 50914,
+          "fold_share": 0.1996,
+          "mse_gain_s2_per_row": 10880.800581580357,
+          "ranking_share": 0.2461
+        },
+        "1": {
+          "ci95": [
+            9685.94639325999,
+            11076.928499130503
+          ],
+          "fold_rows": 50893,
+          "fold_share": 0.1995,
+          "mse_gain_s2_per_row": 10350.512939146507,
+          "ranking_share": 0.2318
+        },
+        "2": {
+          "ci95": [
+            10094.149775560392,
+            11625.677957819655
+          ],
+          "fold_rows": 50937,
+          "fold_share": 0.1997,
+          "mse_gain_s2_per_row": 10813.361905416548,
+          "ranking_share": 0.2135
+        },
+        "3": {
+          "ci95": [
+            10093.039672647077,
+            11618.724321651038
+          ],
+          "fold_rows": 50952,
+          "fold_share": 0.1997,
+          "mse_gain_s2_per_row": 10830.331169322299,
+          "ranking_share": 0.1738
+        },
+        "4": {
+          "ci95": [
+            13120.305019473377,
+            17517.065527515406
+          ],
+          "fold_rows": 50927,
+          "fold_share": 0.1996,
+          "mse_gain_s2_per_row": 15065.056414359935,
+          "ranking_share": 0.1316
+        },
+        "5": {
+          "ci95": [
+            8381.896137433761,
+            21821.78926947313
+          ],
+          "fold_rows": 461,
+          "fold_share": 0.0018,
+          "mse_gain_s2_per_row": 14828.336524848384,
+          "ranking_share": 0.0032
+        }
+      },
+      "what": "|observed take-off - recorded movement time|"
+    },
+    "matched_on_modal": {
+      "edges": [
+        1.0
+      ],
+      "fold": {
+        "median": 1.0,
+        "missing": 0.0
+      },
+      "fold_gain_s2_per_row": 11593.965031480382,
+      "predicted_multiplier": 0.9994,
+      "ranking": {
+        "median": 1.0,
+        "missing": 0.0
+      },
+      "reweighted_to_2026_s2_per_row": 11586.579770379696,
+      "sense": "high_is_better",
+      "strata": {
+        "0": {
+          "ci95": [
+            7449.294248072241,
+            10218.350761608619
+          ],
+          "fold_rows": 7622,
+          "fold_share": 0.0299,
+          "mse_gain_s2_per_row": 8809.79546191851,
+          "ranking_share": 0.0325
+        },
+        "1": {
+          "ci95": [
+            11016.334009236078,
+            12485.536937083198
+          ],
+          "fold_rows": 247462,
+          "fold_share": 0.9701,
+          "mse_gain_s2_per_row": 11679.719371375804,
+          "ranking_share": 0.9675
+        }
+      },
+      "what": "the join used the segment's modal callsign form"
+    },
+    "n_ground_points": {
+      "edges": [
+        34.0,
+        59.0,
+        88.0,
+        126.0
+      ],
+      "fold": {
+        "median": 73.0,
+        "missing": 0.0
+      },
+      "fold_gain_s2_per_row": 11593.96503148038,
+      "predicted_multiplier": 1.0258,
+      "ranking": {
+        "median": 83.0,
+        "missing": 0.0
+      },
+      "reweighted_to_2026_s2_per_row": 11893.603720723097,
+      "sense": "high_is_better",
+      "strata": {
+        "0": {
+          "ci95": [
+            8455.904252658696,
+            10553.838057046463
+          ],
+          "fold_rows": 50830,
+          "fold_share": 0.1993,
+          "mse_gain_s2_per_row": 9496.936201481429,
+          "ranking_share": 0.1834
+        },
+        "1": {
+          "ci95": [
+            9588.247257876084,
+            11748.511575219
+          ],
+          "fold_rows": 51085,
+          "fold_share": 0.2003,
+          "mse_gain_s2_per_row": 10570.939893145121,
+          "ranking_share": 0.1706
+        },
+        "2": {
+          "ci95": [
+            10619.8643684966,
+            12282.723768077636
+          ],
+          "fold_rows": 49593,
+          "fold_share": 0.1944,
+          "mse_gain_s2_per_row": 11411.679745270303,
+          "ranking_share": 0.1759
+        },
+        "3": {
+          "ci95": [
+            10619.620467623414,
+            12456.214123412294
+          ],
+          "fold_rows": 51785,
+          "fold_share": 0.203,
+          "mse_gain_s2_per_row": 11485.1742657145,
+          "ranking_share": 0.1978
+        },
+        "4": {
+          "ci95": [
+            13529.781626418337,
+            16679.333868403854
+          ],
+          "fold_rows": 51791,
+          "fold_share": 0.203,
+          "mse_gain_s2_per_row": 14944.48961345227,
+          "ranking_share": 0.2723
+        }
+      },
+      "what": "how many of them were on the ground"
+    },
+    "seg_dt_median_s": {
+      "edges": [
+        2.5800000429153442,
+        3.1700000762939453,
+        3.8999998569488525,
+        5.230000019073486
+      ],
+      "fold": {
+        "median": 3.490000009536743,
+        "missing": 0.0
+      },
+      "fold_gain_s2_per_row": 11593.965031480382,
+      "predicted_multiplier": 1.0006,
+      "ranking": {
+        "median": 3.4700000286102295,
+        "missing": 0.0
+      },
+      "reweighted_to_2026_s2_per_row": 11600.784780884398,
+      "sense": "low_is_better",
+      "strata": {
+        "0": {
+          "ci95": [
+            7052.513554890447,
+            8079.658111473432
+          ],
+          "fold_rows": 51003,
+          "fold_share": 0.1999,
+          "mse_gain_s2_per_row": 7553.585645082065,
+          "ranking_share": 0.1905
+        },
+        "1": {
+          "ci95": [
+            8035.019717309371,
+            9128.920674844536
+          ],
+          "fold_rows": 50699,
+          "fold_share": 0.1988,
+          "mse_gain_s2_per_row": 8591.79715174738,
+          "ranking_share": 0.2085
+        },
+        "2": {
+          "ci95": [
+            10284.448324957883,
+            11564.903655534259
+          ],
+          "fold_rows": 51324,
+          "fold_share": 0.2012,
+          "mse_gain_s2_per_row": 10898.31795412335,
+          "ranking_share": 0.2032
+        },
+        "3": {
+          "ci95": [
+            13099.660482923367,
+            15048.110017422845
+          ],
+          "fold_rows": 50931,
+          "fold_share": 0.1997,
+          "mse_gain_s2_per_row": 14024.437030676858,
+          "ranking_share": 0.1957
+        },
+        "4": {
+          "ci95": [
+            14576.775388297883,
+            19785.905615126994
+          ],
+          "fold_rows": 51127,
+          "fold_share": 0.2004,
+          "mse_gain_s2_per_row": 16878.7538981507,
+          "ranking_share": 0.2021
+        }
+      },
+      "what": "the median spacing between heard points"
+    },
+    "seg_gap_max_s": {
+      "edges": [
+        53.75,
+        79.78999996185303,
+        137.6800000667572,
+        229.8600001335144
+      ],
+      "fold": {
+        "median": 102.11000001430511,
+        "missing": 0.0
+      },
+      "fold_gain_s2_per_row": 11593.96503148038,
+      "predicted_multiplier": 1.0483,
+      "ranking": {
+        "median": 120.16000008583069,
+        "missing": 0.0
+      },
+      "reweighted_to_2026_s2_per_row": 12154.189460001457,
+      "sense": "low_is_better",
+      "strata": {
+        "0": {
+          "ci95": [
+            6942.210002729556,
+            8279.727817605324
+          ],
+          "fold_rows": 51010,
+          "fold_share": 0.2,
+          "mse_gain_s2_per_row": 7633.984156237618,
+          "ranking_share": 0.1504
+        },
+        "1": {
+          "ci95": [
+            8264.425665178986,
+            9149.990751181267
+          ],
+          "fold_rows": 50818,
+          "fold_share": 0.1992,
+          "mse_gain_s2_per_row": 8700.810847469702,
+          "ranking_share": 0.1951
+        },
+        "2": {
+          "ci95": [
+            8823.080926870422,
+            9969.991115125147
+          ],
+          "fold_rows": 51211,
+          "fold_share": 0.2008,
+          "mse_gain_s2_per_row": 9377.067687971308,
+          "ranking_share": 0.2032
+        },
+        "3": {
+          "ci95": [
+            9697.809749854925,
+            11043.453440513185
+          ],
+          "fold_rows": 51027,
+          "fold_share": 0.2,
+          "mse_gain_s2_per_row": 10362.595003778577,
+          "ranking_share": 0.2148
+        },
+        "4": {
+          "ci95": [
+            19517.328876611224,
+            24897.19557051699
+          ],
+          "fold_rows": 51018,
+          "fold_share": 0.2,
+          "mse_gain_s2_per_row": 21892.00850694338,
+          "ranking_share": 0.2365
+        }
+      },
+      "what": "the worst reception gap inside the ground run"
+    },
+    "seg_points": {
+      "edges": [
+        34.0,
+        59.0,
+        88.0,
+        126.0
+      ],
+      "fold": {
+        "median": 73.0,
+        "missing": 0.0
+      },
+      "fold_gain_s2_per_row": 11593.96503148038,
+      "predicted_multiplier": 1.0258,
+      "ranking": {
+        "median": 83.0,
+        "missing": 0.0
+      },
+      "reweighted_to_2026_s2_per_row": 11893.603720723097,
+      "sense": "high_is_better",
+      "strata": {
+        "0": {
+          "ci95": [
+            8475.182150198512,
+            10597.370572181437
+          ],
+          "fold_rows": 50830,
+          "fold_share": 0.1993,
+          "mse_gain_s2_per_row": 9496.936201481429,
+          "ranking_share": 0.1834
+        },
+        "1": {
+          "ci95": [
+            9575.531046583614,
+            11725.62252844603
+          ],
+          "fold_rows": 51085,
+          "fold_share": 0.2003,
+          "mse_gain_s2_per_row": 10570.939893145121,
+          "ranking_share": 0.1706
+        },
+        "2": {
+          "ci95": [
+            10615.062409934488,
+            12310.508370952546
+          ],
+          "fold_rows": 49593,
+          "fold_share": 0.1944,
+          "mse_gain_s2_per_row": 11411.679745270303,
+          "ranking_share": 0.1759
+        },
+        "3": {
+          "ci95": [
+            10619.41024355937,
+            12421.770390176269
+          ],
+          "fold_rows": 51785,
+          "fold_share": 0.203,
+          "mse_gain_s2_per_row": 11485.1742657145,
+          "ranking_share": 0.1978
+        },
+        "4": {
+          "ci95": [
+            13473.34685049977,
+            16597.929799880767
+          ],
+          "fold_rows": 51791,
+          "fold_share": 0.203,
+          "mse_gain_s2_per_row": 14944.48961345227,
+          "ranking_share": 0.2723
+        }
+      },
+      "what": "how many points of the run were heard"
+    },
+    "stand_stop_s": {
+      "edges": [
+        0.0,
+        22.039999961853027,
+        195.78999996185303
+      ],
+      "fold": {
+        "median": 0.0,
+        "missing": 0.0
+      },
+      "fold_gain_s2_per_row": 11593.965031480382,
+      "predicted_multiplier": 1.012,
+      "ranking": {
+        "median": 13.855000019073486,
+        "missing": 0.0
+      },
+      "reweighted_to_2026_s2_per_row": 11732.90171552277,
+      "sense": "high_is_better",
+      "strata": {
+        "1": {
+          "ci95": [
+            10317.387493099073,
+            11828.06848940266
+          ],
+          "fold_rows": 153049,
+          "fold_share": 0.6,
+          "mse_gain_s2_per_row": 11005.136382406432,
+          "ranking_share": 0.5245
+        },
+        "2": {
+          "ci95": [
+            10957.858834527158,
+            12682.386805096772
+          ],
+          "fold_rows": 51015,
+          "fold_share": 0.2,
+          "mse_gain_s2_per_row": 11799.628452362209,
+          "ranking_share": 0.2173
+        },
+        "3": {
+          "ci95": [
+            12052.352492105427,
+            14430.36710372223
+          ],
+          "fold_rows": 51020,
+          "fold_share": 0.2,
+          "mse_gain_s2_per_row": 13154.680760524529,
+          "ranking_share": 0.2583
+        }
+      },
+      "what": "how long the aircraft was seen stopped at the stand"
+    },
+    "time_to_250m": {
+      "edges": [
+        34.86599998474127,
+        50.75999999046326,
+        66.78999996185303,
+        121.6800000667572
+      ],
+      "fold": {
+        "median": 58.09999990463257,
+        "missing": 0.0
+      },
+      "fold_gain_s2_per_row": 11593.965031480382,
+      "predicted_multiplier": 1.0052,
+      "ranking": {
+        "median": 62.5,
+        "missing": 0.0
+      },
+      "reweighted_to_2026_s2_per_row": 11653.68921081666,
+      "sense": "low_is_better",
+      "strata": {
+        "0": {
+          "ci95": [
+            10308.90732257556,
+            12211.193794069406
+          ],
+          "fold_rows": 51017,
+          "fold_share": 0.2,
+          "mse_gain_s2_per_row": 11185.059242031375,
+          "ranking_share": 0.1495
+        },
+        "1": {
+          "ci95": [
+            10200.12358917274,
+            11661.374603872917
+          ],
+          "fold_rows": 50998,
+          "fold_share": 0.1999,
+          "mse_gain_s2_per_row": 10909.815431330226,
+          "ranking_share": 0.1861
+        },
+        "2": {
+          "ci95": [
+            10546.776723517665,
+            12206.048673212415
+          ],
+          "fold_rows": 50991,
+          "fold_share": 0.1999,
+          "mse_gain_s2_per_row": 11346.73847758069,
+          "ranking_share": 0.2143
+        },
+        "3": {
+          "ci95": [
+            11353.413592896897,
+            13191.809926792752
+          ],
+          "fold_rows": 51058,
+          "fold_share": 0.2002,
+          "mse_gain_s2_per_row": 12252.718148239179,
+          "ranking_share": 0.2387
+        },
+        "4": {
+          "ci95": [
+            11010.24017754953,
+            13752.682439076665
+          ],
+          "fold_rows": 51020,
+          "fold_share": 0.2,
+          "mse_gain_s2_per_row": 12274.543638756079,
+          "ranking_share": 0.2114
+        }
+      },
+      "what": "time from the stand-departure onset to 250 m"
+    }
+  },
+  "held": [
+    "LFPG"
+  ],
+  "joint_density_ratio": {
+    "quality_and_airport": {
+      "auc_of_the_propensity_in_sample": 0.7627548594169644,
+      "auc_of_the_propensity_out_of_fold": 0.7576877921885476,
+      "ci95": [
+        0.9488793945452175,
+        1.0351181451917477
+      ],
+      "cross_fitted": "3-fold, every weight from a model that did not see the row",
+      "fold_gain_s2_per_row": 11593.96503148038,
+      "predicted_multiplier": 0.9964,
+      "reweighted_to_2026_s2_per_row": 11551.659250331026,
+      "weight_p99_cap": 4.848257540433274
+    },
+    "quality_only": {
+      "auc_of_the_propensity_in_sample": 0.6670127230024223,
+      "auc_of_the_propensity_out_of_fold": 0.6576903731063685,
+      "ci95": [
+        1.0540471623582313,
+        1.09808822106425
+      ],
+      "cross_fitted": "3-fold, every weight from a model that did not see the row",
+      "fold_gain_s2_per_row": 11593.96503148038,
+      "predicted_multiplier": 1.0759,
+      "reweighted_to_2026_s2_per_row": 12473.826195799355,
+      "weight_p99_cap": 2.7320907345651873
+    }
+  },
+  "label_free": "no 2026 label and no board number enters any number below; the propensity model's target is which side a row is on",
+  "no_refit": "the arm's fold vector was saved by capacity.py on the pinned population; this file re-prices it on subsets and re-weights it",
+  "ordered_by": "the desk, 2026-09-09, order 4, after BOARD READING 15",
+  "rows": {
+    "fold_served": 255084,
+    "ranking_served": 188484
+  },
+  "what": "the 2026 instrument's per-row observation quality against the fold months, and whether the difference buys gain"
+}

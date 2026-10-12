@@ -1,0 +1,25 @@
+{
+ "tag": "k2s2-january",
+ "mechanism": "",
+ "rounds": 1200,
+ "clip_z": 6000.0,
+ "params": {
+  "num_threads": 4
+ },
+ "seeds": 1,
+ "seed_start": 2,
+ "ghost_mode": "mixbase",
+ "main_model": "both",
+ "exact_rounds": 300,
+ "folds": {
+  "january": {
+   "rmse": 342.23461053223923,
+   "rmse_lo": 198.11377619455052,
+   "rmse_hi": 6072.049825576613,
+   "n": 153706,
+   "n_hi": 325,
+   "secs": 1546.6,
+   "n_train": 1840608
+  }
+ }
+}

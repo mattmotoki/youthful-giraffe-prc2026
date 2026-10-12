@@ -1,0 +1,40 @@
+{
+  "name": "c2-reslin",
+  "argv": "--name c2-reslin --target residual --linear-tree --no-submission",
+  "folds": {
+    "july": {
+      "rmse": 472.72331834650333,
+      "rmse_bulk": 301.6918031040493,
+      "rmse_tail": 6212.6357030789795,
+      "rmse_no_nm": 2705.848634930294,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.5941023451786341,
+      "sse_share_no_nm": 0.6758448420019353,
+      "bias": 5.651594942611986,
+      "fold": "july",
+      "best_iteration": 69,
+      "refit_rounds": 81,
+      "seconds": 55,
+      "oof": "experiments/exp-001-retro-v1/oof/c2-reslin-july.parquet"
+    },
+    "december": {
+      "rmse": 256.67668270982495,
+      "rmse_bulk": 211.2192403995803,
+      "rmse_tail": 3680.478979922065,
+      "rmse_no_nm": 1427.8193159392729,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.32390237550818096,
+      "sse_share_no_nm": 0.3068661690971543,
+      "bias": 2.555255312347574,
+      "fold": "december",
+      "best_iteration": 394,
+      "refit_rounds": 464,
+      "seconds": 242,
+      "oof": "experiments/exp-001-retro-v1/oof/c2-reslin-december.parquet"
+    }
+  }
+}

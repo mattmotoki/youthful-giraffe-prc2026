@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "reviewer": "fresh-context Sol /root/sequence_g_model_review",
+  "scope": "model.py fit.py smoke.py run_job.py against frozen SPEC and G1 records",
+  "source_sha256": {
+    "model.py": "117214b1e2006f9299057ccf55ab343a2e905a71a4055c8b7e63be89f2c93cc9",
+    "fit.py": "e7b3a6cad301b9c43f8c6f1659fe4dc902d0d21f11ed19ffbc69e136d83a14ad",
+    "smoke.py": "b60f3fe43ae90cba78e38f21352176727213f42e0238c57e72525436f1b6824f",
+    "run_job.py": "695c72780e08c97638ad17b243148ec672a542c29e43167bc59a12279986921e"
+  },
+  "real_CPU_smoke": "PASS;10batchesperarm,finiteoutput/gradient,exactreload,sequencepaddinginvariant,1.88GiBpeak",
+  "independent_Mac_checks": "PASS Torch2.8 synthetic twoarms/padding/reload",
+  "GPU_fit_speed": "untested; grind benchmark gates four-hour budget",
+  "smoke_exit_code_limit": "notcaptured; receipt explicitnull, finalPASSrecord/processended"
+}

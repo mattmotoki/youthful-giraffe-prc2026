@@ -1,0 +1,7 @@
+# Screening runs produce one OOF file per fold; only the ones cited in RESULTS
+# and the ledger are kept in git. Promote a file with `git add -f`.
+oof/*.parquet
+work/importance-*.csv
+work/*.parquet
+work/*.npy
+__pycache__/

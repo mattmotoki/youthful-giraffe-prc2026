@@ -1,0 +1,63 @@
+{
+  "win": 600.0,
+  "threads": 4,
+  "lightgbm": "4.7.0",
+  "variants": [
+    "depx+arrk"
+  ],
+  "block_cols": {
+    "arrk": 40,
+    "depx": 50
+  },
+  "reproduces_stack5": {
+    "july_loo": 0.0,
+    "december": 0.0,
+    "january": -0.0
+  },
+  "reproduces_tol": 0.001,
+  "clean": {
+    "blend-5 (anchor)": {
+      "july_loo": 286.3274,
+      "december": 207.0083,
+      "january": 220.2052
+    },
+    "stack-5 full": {
+      "july_loo": 285.808,
+      "december": 205.7799,
+      "january": 219.0768
+    },
+    "stack-5 keep-noac": {
+      "july_loo": 285.2029,
+      "december": 205.6118,
+      "january": 219.1303
+    },
+    "stack-5+depx+arrk full": {
+      "july_loo": 285.3146,
+      "december": 205.9126,
+      "january": 218.8168
+    },
+    "stack-5+depx+arrk keep-noac": {
+      "july_loo": 284.7857,
+      "december": 205.7016,
+      "january": 218.7775
+    }
+  },
+  "clean_board": {
+    "blend-5 (anchor)": 259.1339,
+    "stack-5 full": 258.3898,
+    "stack-5 keep-noac": 258.0372,
+    "stack-5+depx+arrk full": 257.9881,
+    "stack-5+depx+arrk keep-noac": 257.6476
+  },
+  "gain_per_fold": {
+    "depx+arrk": {
+      "july_loo": 0.4173,
+      "december": -0.0897,
+      "january": 0.3527
+    }
+  },
+  "three_folds": {
+    "depx+arrk": false
+  },
+  "wall_s": 88.6
+}

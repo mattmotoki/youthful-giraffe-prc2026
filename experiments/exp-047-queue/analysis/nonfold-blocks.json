@@ -1,0 +1,379 @@
+{
+  "builder_block_py_sha256": "1f6e14febf90e8b30ba3a745051270278983963ea54608a60c1da5b5c7f86782",
+  "emitted_by": "experiments/exp-047-queue/code/emit.py",
+  "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+  "months": {
+    "2025-01": {
+      "all_nan_columns": [],
+      "bytes": 39423990,
+      "clock_rate": 0.4522,
+      "clocks": 69504,
+      "columns": 186,
+      "month": "2025-01",
+      "obs_matched": 73819,
+      "path": "artifacts/exp-047/block/2025-01.parquet",
+      "rows": 153706,
+      "sha256": "eb588315471b084656fba8b20e1e411e03560203beb5d63debd5a4959ca62a3f",
+      "usable_columns": 186
+    },
+    "2025-02": {
+      "all_nan_columns": [
+        "Nf_n_res_apt_30m",
+        "Nf_n_res_cell",
+        "Nf_n_res_rwy_30m",
+        "Nf_n_res_rwy_60m",
+        "Nf_n_res_rwy_cell",
+        "Nf_n_res_rwy_minus_apt",
+        "No_n_res_apt_30m",
+        "No_n_res_cell",
+        "No_n_res_rwy_30m",
+        "No_n_res_rwy_60m",
+        "No_n_res_rwy_cell",
+        "No_n_res_rwy_minus_apt"
+      ],
+      "bytes": 29480447,
+      "clock_rate": 0.4702,
+      "clocks": 67584,
+      "columns": 185,
+      "columns_absent_vs_fold": [
+        "own_obs_taxi_minus_p11"
+      ],
+      "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "month": "2025-02",
+      "obs_matched": 71572,
+      "path": "artifacts/exp-047/block/2025-02.parquet",
+      "prediction": {
+        "note": "no out-of-fold v11 vector for this month; the `*_n_res_*` columns are absent and the `*_n_anom_*` columns, which need no prediction, stand in their place",
+        "source": null
+      },
+      "rows": 143731,
+      "sha256": "755f9b1e281fb76da969bba69404d24d1d1343b9c2af40cca6d286ac5ca23909",
+      "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "usable_columns": 173
+    },
+    "2025-03": {
+      "all_nan_columns": [
+        "Nf_n_res_apt_30m",
+        "Nf_n_res_cell",
+        "Nf_n_res_rwy_30m",
+        "Nf_n_res_rwy_60m",
+        "Nf_n_res_rwy_cell",
+        "Nf_n_res_rwy_minus_apt",
+        "No_n_res_apt_30m",
+        "No_n_res_cell",
+        "No_n_res_rwy_30m",
+        "No_n_res_rwy_60m",
+        "No_n_res_rwy_cell",
+        "No_n_res_rwy_minus_apt"
+      ],
+      "bytes": 35095711,
+      "clock_rate": 0.5245,
+      "clocks": 86252,
+      "columns": 185,
+      "columns_absent_vs_fold": [
+        "own_obs_taxi_minus_p11"
+      ],
+      "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "month": "2025-03",
+      "obs_matched": 90997,
+      "path": "artifacts/exp-047/block/2025-03.parquet",
+      "prediction": {
+        "note": "no out-of-fold v11 vector for this month; the `*_n_res_*` columns are absent and the `*_n_anom_*` columns, which need no prediction, stand in their place",
+        "source": null
+      },
+      "rows": 164450,
+      "sha256": "355cdeeb9c58e39aa5b5207b7ca3ee3ba67c3e3b7e0e0991fbe0529823ca92d1",
+      "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "usable_columns": 173
+    },
+    "2025-04": {
+      "all_nan_columns": [
+        "Nf_n_res_apt_30m",
+        "Nf_n_res_cell",
+        "Nf_n_res_rwy_30m",
+        "Nf_n_res_rwy_60m",
+        "Nf_n_res_rwy_cell",
+        "Nf_n_res_rwy_minus_apt",
+        "No_n_res_apt_30m",
+        "No_n_res_cell",
+        "No_n_res_rwy_30m",
+        "No_n_res_rwy_60m",
+        "No_n_res_rwy_cell",
+        "No_n_res_rwy_minus_apt"
+      ],
+      "bytes": 36745239,
+      "clock_rate": 0.4997,
+      "clocks": 87583,
+      "columns": 185,
+      "columns_absent_vs_fold": [
+        "own_obs_taxi_minus_p11"
+      ],
+      "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "month": "2025-04",
+      "obs_matched": 91630,
+      "path": "artifacts/exp-047/block/2025-04.parquet",
+      "prediction": {
+        "note": "no out-of-fold v11 vector for this month; the `*_n_res_*` columns are absent and the `*_n_anom_*` columns, which need no prediction, stand in their place",
+        "source": null
+      },
+      "rows": 175288,
+      "sha256": "e429203e1e945d082ca47c704fcd48f01e1f72c5c5175fa962fe411dd064e5af",
+      "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "usable_columns": 173
+    },
+    "2025-05": {
+      "all_nan_columns": [
+        "Nf_n_res_apt_30m",
+        "Nf_n_res_cell",
+        "Nf_n_res_rwy_30m",
+        "Nf_n_res_rwy_60m",
+        "Nf_n_res_rwy_cell",
+        "Nf_n_res_rwy_minus_apt",
+        "No_n_res_apt_30m",
+        "No_n_res_cell",
+        "No_n_res_rwy_30m",
+        "No_n_res_rwy_60m",
+        "No_n_res_rwy_cell",
+        "No_n_res_rwy_minus_apt"
+      ],
+      "bytes": 39641530,
+      "clock_rate": 0.5509,
+      "clocks": 102030,
+      "columns": 185,
+      "columns_absent_vs_fold": [
+        "own_obs_taxi_minus_p11"
+      ],
+      "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "month": "2025-05",
+      "obs_matched": 105908,
+      "path": "artifacts/exp-047/block/2025-05.parquet",
+      "prediction": {
+        "note": "no out-of-fold v11 vector for this month; the `*_n_res_*` columns are absent and the `*_n_anom_*` columns, which need no prediction, stand in their place",
+        "source": null
+      },
+      "rows": 185202,
+      "sha256": "a0d2217ad524e73e822128c47722547bed8c0073a6b8dea1e3ad8d8fba003ead",
+      "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "usable_columns": 173
+    },
+    "2025-06": {
+      "all_nan_columns": [
+        "Nf_n_res_apt_30m",
+        "Nf_n_res_cell",
+        "Nf_n_res_rwy_30m",
+        "Nf_n_res_rwy_60m",
+        "Nf_n_res_rwy_cell",
+        "Nf_n_res_rwy_minus_apt",
+        "No_n_res_apt_30m",
+        "No_n_res_cell",
+        "No_n_res_rwy_30m",
+        "No_n_res_rwy_60m",
+        "No_n_res_rwy_cell",
+        "No_n_res_rwy_minus_apt"
+      ],
+      "bytes": 39620836,
+      "clock_rate": 0.5338,
+      "clocks": 97753,
+      "columns": 185,
+      "columns_absent_vs_fold": [
+        "own_obs_taxi_minus_p11"
+      ],
+      "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "month": "2025-06",
+      "obs_matched": 103373,
+      "path": "artifacts/exp-047/block/2025-06.parquet",
+      "prediction": {
+        "note": "no out-of-fold v11 vector for this month; the `*_n_res_*` columns are absent and the `*_n_anom_*` columns, which need no prediction, stand in their place",
+        "source": null
+      },
+      "rows": 183142,
+      "sha256": "1e87f333163e9dc95d9fe4d4cff60cab2175b7f78015f40e521da6a21656d87c",
+      "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "usable_columns": 173
+    },
+    "2025-07": {
+      "all_nan_columns": [],
+      "bytes": 52507720,
+      "clock_rate": 0.4634,
+      "clocks": 88370,
+      "columns": 186,
+      "month": "2025-07",
+      "obs_matched": 95007,
+      "path": "artifacts/exp-047/block/2025-07.parquet",
+      "rows": 190713,
+      "sha256": "00e7f9df5c83b0862a11c60defff02077c5ef68dffc8d17d50a9c17ebbc38a77",
+      "usable_columns": 186
+    },
+    "2025-08": {
+      "all_nan_columns": [
+        "Nf_n_res_apt_30m",
+        "Nf_n_res_cell",
+        "Nf_n_res_rwy_30m",
+        "Nf_n_res_rwy_60m",
+        "Nf_n_res_rwy_cell",
+        "Nf_n_res_rwy_minus_apt",
+        "No_n_res_apt_30m",
+        "No_n_res_cell",
+        "No_n_res_rwy_30m",
+        "No_n_res_rwy_60m",
+        "No_n_res_rwy_cell",
+        "No_n_res_rwy_minus_apt"
+      ],
+      "bytes": 42551134,
+      "clock_rate": 0.5007,
+      "clocks": 95715,
+      "columns": 185,
+      "columns_absent_vs_fold": [
+        "own_obs_taxi_minus_p11"
+      ],
+      "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "month": "2025-08",
+      "obs_matched": 102314,
+      "path": "artifacts/exp-047/block/2025-08.parquet",
+      "prediction": {
+        "note": "no out-of-fold v11 vector for this month; the `*_n_res_*` columns are absent and the `*_n_anom_*` columns, which need no prediction, stand in their place",
+        "source": null
+      },
+      "rows": 191181,
+      "sha256": "b66d2ae58a40dc05453a323c67bd21cc75a41be957fc48f6d0a0a7a240f849d9",
+      "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "usable_columns": 173
+    },
+    "2025-09": {
+      "all_nan_columns": [
+        "Nf_n_res_apt_30m",
+        "Nf_n_res_cell",
+        "Nf_n_res_rwy_30m",
+        "Nf_n_res_rwy_60m",
+        "Nf_n_res_rwy_cell",
+        "Nf_n_res_rwy_minus_apt",
+        "No_n_res_apt_30m",
+        "No_n_res_cell",
+        "No_n_res_rwy_30m",
+        "No_n_res_rwy_60m",
+        "No_n_res_rwy_cell",
+        "No_n_res_rwy_minus_apt"
+      ],
+      "bytes": 41266630,
+      "clock_rate": 0.5166,
+      "clocks": 95032,
+      "columns": 185,
+      "columns_absent_vs_fold": [
+        "own_obs_taxi_minus_p11"
+      ],
+      "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "month": "2025-09",
+      "obs_matched": 102729,
+      "path": "artifacts/exp-047/block/2025-09.parquet",
+      "prediction": {
+        "note": "no out-of-fold v11 vector for this month; the `*_n_res_*` columns are absent and the `*_n_anom_*` columns, which need no prediction, stand in their place",
+        "source": null
+      },
+      "rows": 183951,
+      "sha256": "5f340d4eaa549b707c0346df662fb5dc45c5fae67c710c8cb22986173047d09f",
+      "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "usable_columns": 173
+    },
+    "2025-10": {
+      "all_nan_columns": [
+        "Nf_n_res_apt_30m",
+        "Nf_n_res_cell",
+        "Nf_n_res_rwy_30m",
+        "Nf_n_res_rwy_60m",
+        "Nf_n_res_rwy_cell",
+        "Nf_n_res_rwy_minus_apt",
+        "No_n_res_apt_30m",
+        "No_n_res_cell",
+        "No_n_res_rwy_30m",
+        "No_n_res_rwy_60m",
+        "No_n_res_rwy_cell",
+        "No_n_res_rwy_minus_apt"
+      ],
+      "bytes": 42438687,
+      "clock_rate": 0.5508,
+      "clocks": 102262,
+      "columns": 185,
+      "columns_absent_vs_fold": [
+        "own_obs_taxi_minus_p11"
+      ],
+      "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "month": "2025-10",
+      "obs_matched": 109844,
+      "path": "artifacts/exp-047/block/2025-10.parquet",
+      "prediction": {
+        "note": "no out-of-fold v11 vector for this month; the `*_n_res_*` columns are absent and the `*_n_anom_*` columns, which need no prediction, stand in their place",
+        "source": null
+      },
+      "rows": 185674,
+      "sha256": "d6eebd2b367813f5538240adc54e5a6de943acd98c9cc91f16344be5448e1cd5",
+      "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "usable_columns": 173
+    },
+    "2025-11": {
+      "all_nan_columns": [
+        "Nf_n_res_apt_30m",
+        "Nf_n_res_cell",
+        "Nf_n_res_rwy_30m",
+        "Nf_n_res_rwy_60m",
+        "Nf_n_res_rwy_cell",
+        "Nf_n_res_rwy_minus_apt",
+        "No_n_res_apt_30m",
+        "No_n_res_cell",
+        "No_n_res_rwy_30m",
+        "No_n_res_rwy_60m",
+        "No_n_res_rwy_cell",
+        "No_n_res_rwy_minus_apt"
+      ],
+      "bytes": 38015028,
+      "clock_rate": 0.6077,
+      "clocks": 98653,
+      "columns": 185,
+      "columns_absent_vs_fold": [
+        "own_obs_taxi_minus_p11"
+      ],
+      "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "month": "2025-11",
+      "obs_matched": 104808,
+      "path": "artifacts/exp-047/block/2025-11.parquet",
+      "prediction": {
+        "note": "no out-of-fold v11 vector for this month; the `*_n_res_*` columns are absent and the `*_n_anom_*` columns, which need no prediction, stand in their place",
+        "source": null
+      },
+      "rows": 162332,
+      "sha256": "c2ba127f3fd0b5fd5489e6d3368bdef58ac72031c2ff4da20df0119263355210",
+      "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "usable_columns": 173
+    },
+    "2025-12": {
+      "all_nan_columns": [],
+      "bytes": 48881917,
+      "clock_rate": 0.6139,
+      "clocks": 101701,
+      "columns": 186,
+      "month": "2025-12",
+      "obs_matched": 107907,
+      "path": "artifacts/exp-047/block/2025-12.parquet",
+      "rows": 165677,
+      "sha256": "e167c4df047cdb01fbf66c31c8a57653e43e836466a2d7b252196b8f0f90036a",
+      "usable_columns": 186
+    }
+  },
+  "non_fold_total": {
+    "bytes": 344855242,
+    "clock_rate": 0.5288,
+    "clocks": 832864,
+    "months": 9,
+    "rows": 1574951
+  },
+  "schema_note": "A non-fold month emits 185 columns and only 173 of them carry a value.  The thirteen that do not are exactly the head-dependent ones: `own_obs_taxi_minus_p11` is absent, and the twelve `{Nf_,No_}_n_res_*` columns are emitted all-NaN.  That is half of the 24-column `N` arm, which is this lane's SPLIT_ARM, so a non-fold month cannot fit `N_reach` until a prediction exists for it.  The other 173 columns -- every F/O/H clock, every `_sc` scaled count, the geometry, the six `*_n_anom_*` columns and the identity columns -- need no head and are complete.",
+  "sources": [
+    "F",
+    "O",
+    "H",
+    "N",
+    "geo"
+  ],
+  "summaries_rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+  "what": "\u00a77bi addendum: the nine non-fold 2025 blocks, built and hashed",
+  "written_by": "experiments/exp-047-queue/work/nonfold_manifest.py"
+}

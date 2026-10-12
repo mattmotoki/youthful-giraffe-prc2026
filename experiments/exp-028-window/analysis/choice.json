@@ -1,0 +1,14 @@
+{
+  "blocks": ["depx"],
+  "win": 600.0,
+  "regimes": ["nm_bulk", "nm_late", "nonm"],
+  "variant": "all-but-noac",
+  "why": "The construction as designed, with no regime selected after the fact: the window block is served everywhere stack-5 does not already fall back on the anchor. Clean board 257.6230 against stack-5's 258.0372, gain +0.4142; folds july_loo +0.481, december -0.042, january +0.314. Under the desk's gate of 2026-09-07 09:28 UTC a fold worse by less than the 0.1025 s rotation noise floor with a day-clustered interval covering zero is a MAYBE, and december is -0.042 with [-0.636, +0.763]. It is also the better bet on the board itself: the board is july_loo 55.7 % and january 44.3 %, and this variant beats every restricted one on both.",
+  "alternative": {
+    "regimes": ["nm_bulk"],
+    "variant": "bulk",
+    "gain_board": 0.2737,
+    "gain_per_fold": {"july_loo": 0.3825, "december": 0.2375, "january": 0.1016},
+    "note": "the conservative candidate: passes the three-fold gate with margin on every fold, at 0.14 s less board and with a regime set chosen after seeing the regime table. One command away: serve.py --regimes nm_bulk --name exp-028-window-bulk"
+  }
+}

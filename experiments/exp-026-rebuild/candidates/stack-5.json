@@ -1,0 +1,46 @@
+{
+  "name": "stack-5",
+  "path": "/path/to/competitions/prc-data-challenge-2026/experiments/exp-026-rebuild/candidates/stack-5.parquet",
+  "sha256": "484fe8b65e165b31da40df8b75caafa7dedad3a810cc336a08ec7a66dce277e2",
+  "n": 344841,
+  "members": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "F1-fresh",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "variant": "keep-noac",
+  "arm": "a5 members-only, 5-seed bag, 300 rounds",
+  "anchor": "blend-5 per-regime hybrid NNLS, rotated",
+  "rotated_clean": {
+    "july_loo": 285.2029,
+    "december": 205.6118,
+    "january": 219.1303
+  },
+  "clean_board": 258.0372,
+  "predict": 262.0372,
+  "min": 61.615150457691946,
+  "median": 954.3870526991125,
+  "p99": 2569.6764423051286,
+  "max": 115306.59901833169,
+  "n_below_floor": 0,
+  "n_nonfinite": 0,
+  "guard_bound_output": 0,
+  "guard_changed_output": 739,
+  "guard_max_change_output": 8.952838470577262e-13,
+  "guard_bound_members": 1,
+  "guard_changed_members": 1337,
+  "n_noac_on_anchor": 388,
+  "member_sha256": {
+    "T-tailv4": "89706c6c3a268726d37f59d5dfe25297ee72acc73bbaec9659d4afcc40c8bfa0",
+    "C2-cat": "52a453481a8bcc967c75c036704bf4d4027b9096819867ec9138324801894c3c",
+    "L2-hub8725": "dd0e8710000ab29b930ec72d8b058b00e6ed86ba3240cad01402c13813527882",
+    "D1-winter": "8865d3d866012d1421a08eee4c24ce9cfe53dbc0e255d8a3ff1894b68c368fd2",
+    "F1-fresh": "e216ab9e0dc7243a55a5ec1f8bba7d4dd8fa5f0108782e42d59344006c8bc5dc",
+    "V3-allin": "199fd5146966e98cae244be62c5bbdebd2951832374c7f920a4c97d5ef8a0fd4",
+    "N1-nmtail": "5feb03d96490d9e7acd7dee59fd94a41a81a45f97b75bb2d016646ac2cf4067b"
+  }
+}

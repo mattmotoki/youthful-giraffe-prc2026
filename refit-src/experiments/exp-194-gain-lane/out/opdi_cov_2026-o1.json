@@ -1,0 +1,253 @@
+{
+ "what": "2026 OPDI coverage (share of typed no-head DEP rows with a finite event lead), by month-airport",
+ "inputs": {
+  "opdi_first_final": "753c3ee9bdd6eb2965e632f1469be91a03534b45d55f7eb8ce154e0b96062aae",
+  "head_part": "a0f28193f359d607cb23fc0852c7e3d06d644967a804c1bc220252f92edc5be6",
+  "final_ranking": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f"
+ },
+ "code": {
+  "dh_opdi_cov.py": "0d188f5f03a752e88740c866829b69cee66eeb83c59b48ee56e2f67027588acd"
+ },
+ "cells": {
+  "1-EDDF": {
+   "rows_no_head": 6591,
+   "exit_parking_position": 0.12669,
+   "exit_apron": 0.05993,
+   "entry_taxiway": 0.32469
+  },
+  "1-EDDM": {
+   "rows_no_head": 424,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.00236
+  },
+  "1-EGLL": {
+   "rows_no_head": 5172,
+   "exit_parking_position": 0.00019,
+   "exit_apron": 0.00019,
+   "entry_taxiway": 0.0
+  },
+  "1-EHAM": {
+   "rows_no_head": 1218,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.00739
+  },
+  "1-LEBL": {
+   "rows_no_head": 1399,
+   "exit_parking_position": 0.00214,
+   "exit_apron": 0.00071,
+   "entry_taxiway": 0.00429
+  },
+  "1-LEMD": {
+   "rows_no_head": 921,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.00109
+  },
+  "1-LFPG": {
+   "rows_no_head": 16999,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  },
+  "1-LIRF": {
+   "rows_no_head": 5255,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  },
+  "1-LSZH": {
+   "rows_no_head": 821,
+   "exit_parking_position": 0.23995,
+   "exit_apron": 0.21559,
+   "entry_taxiway": 0.33252
+  },
+  "1-LTFM": {
+   "rows_no_head": 22396,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  },
+  "2-EDDF": {
+   "rows_no_head": 13192,
+   "exit_parking_position": 0.02198,
+   "exit_apron": 0.01001,
+   "entry_taxiway": 0.068
+  },
+  "2-EDDM": {
+   "rows_no_head": 340,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.00294
+  },
+  "2-EGLL": {
+   "rows_no_head": 5400,
+   "exit_parking_position": 0.00019,
+   "exit_apron": 0.00019,
+   "entry_taxiway": 0.0
+  },
+  "2-EHAM": {
+   "rows_no_head": 1078,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0102
+  },
+  "2-LEBL": {
+   "rows_no_head": 1203,
+   "exit_parking_position": 0.00166,
+   "exit_apron": 0.00083,
+   "entry_taxiway": 0.00998
+  },
+  "2-LEMD": {
+   "rows_no_head": 894,
+   "exit_parking_position": 0.00336,
+   "exit_apron": 0.00336,
+   "entry_taxiway": 0.00447
+  },
+  "2-LFPG": {
+   "rows_no_head": 16566,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  },
+  "2-LIRF": {
+   "rows_no_head": 5868,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  },
+  "2-LSZH": {
+   "rows_no_head": 478,
+   "exit_parking_position": 0.5251,
+   "exit_apron": 0.39958,
+   "entry_taxiway": 0.62762
+  },
+  "2-LTFM": {
+   "rows_no_head": 19519,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  },
+  "6-EDDF": {
+   "rows_no_head": 9164,
+   "exit_parking_position": 0.17067,
+   "exit_apron": 0.05914,
+   "entry_taxiway": 0.42962
+  },
+  "6-EDDM": {
+   "rows_no_head": 940,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.00319,
+   "entry_taxiway": 0.01596
+  },
+  "6-EGLL": {
+   "rows_no_head": 1322,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  },
+  "6-EHAM": {
+   "rows_no_head": 2049,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.00049,
+   "entry_taxiway": 0.0083
+  },
+  "6-LEBL": {
+   "rows_no_head": 1945,
+   "exit_parking_position": 0.00154,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0072
+  },
+  "6-LEMD": {
+   "rows_no_head": 5286,
+   "exit_parking_position": 0.00114,
+   "exit_apron": 0.00076,
+   "entry_taxiway": 0.00189
+  },
+  "6-LFPG": {
+   "rows_no_head": 18914,
+   "exit_parking_position": 0.0,
+   "exit_apron": 5e-05,
+   "entry_taxiway": 0.00011
+  },
+  "6-LIRF": {
+   "rows_no_head": 14820,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.00013
+  },
+  "6-LSZH": {
+   "rows_no_head": 1548,
+   "exit_parking_position": 0.68734,
+   "exit_apron": 0.49419,
+   "entry_taxiway": 0.8385
+  },
+  "6-LTFM": {
+   "rows_no_head": 22693,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  },
+  "7-EDDF": {
+   "rows_no_head": 11149,
+   "exit_parking_position": 0.1984,
+   "exit_apron": 0.0644,
+   "entry_taxiway": 0.51655
+  },
+  "7-EDDM": {
+   "rows_no_head": 549,
+   "exit_parking_position": 0.00182,
+   "exit_apron": 0.00729,
+   "entry_taxiway": 0.06193
+  },
+  "7-EGLL": {
+   "rows_no_head": 748,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  },
+  "7-EHAM": {
+   "rows_no_head": 1372,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.00437
+  },
+  "7-LEBL": {
+   "rows_no_head": 1951,
+   "exit_parking_position": 0.00154,
+   "exit_apron": 0.00051,
+   "entry_taxiway": 0.00564
+  },
+  "7-LEMD": {
+   "rows_no_head": 8900,
+   "exit_parking_position": 0.00034,
+   "exit_apron": 0.00045,
+   "entry_taxiway": 0.0009
+  },
+  "7-LFPG": {
+   "rows_no_head": 20534,
+   "exit_parking_position": 5e-05,
+   "exit_apron": 5e-05,
+   "entry_taxiway": 0.00015
+  },
+  "7-LIRF": {
+   "rows_no_head": 15550,
+   "exit_parking_position": 0.00013,
+   "exit_apron": 6e-05,
+   "entry_taxiway": 0.00019
+  },
+  "7-LSZH": {
+   "rows_no_head": 1089,
+   "exit_parking_position": 0.54545,
+   "exit_apron": 0.40037,
+   "entry_taxiway": 0.70432
+  },
+  "7-LTFM": {
+   "rows_no_head": 25181,
+   "exit_parking_position": 0.0,
+   "exit_apron": 0.0,
+   "entry_taxiway": 0.0
+  }
+ }
+}

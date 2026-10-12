@@ -1,0 +1,83 @@
+{
+ "what": "the expected board move for the v21 upload with v10, registered BEFORE the upload (score-feedback rule)",
+ "written_before_the_read": true,
+ "candidate": "v10 = base set v24, surfacefit's K=10 bag on the THREE-month extension {2025-11, 2025-10, 2025-03}",
+ "the_anchor": {
+  "upload": "v20 (= v9)",
+  "board_score": 245.2901,
+  "read_at": "00:14 UTC 2026-09-10, BOARD READING 19",
+  "rank": "1 of 94",
+  "lead_s": 15.64
+ },
+ "history": {
+  "transfers": {
+   "v13": 1.75,
+   "v14": 1.03,
+   "v15": 2.01,
+   "v16": 0.36,
+   "v17": 0.7,
+   "v18": 1.44,
+   "v19": 2.41,
+   "v20": 0.95
+  },
+  "n": 8,
+  "median": 1.235,
+  "mean": 1.3313,
+  "range": [
+   0.36,
+   2.41
+  ],
+  "two_most_recent": {
+   "v19": 2.41,
+   "v20": 0.95
+  }
+ },
+ "the_face_is": "the bag's read over V9's HEAD -- not the three-month screen's +0.533 over the one-month member, which is a different quantity measured against a different baseline",
+ "rank_is_not_at_risk": {
+  "next_team": 260.931,
+  "note": "every band leaves rank 1 by more than 14 s"
+ },
+ "no_serve_no_upload": "the desk uploads; this lane registers and audits only",
+ "status": "FINAL",
+ "face_s": 0.5588,
+ "face_ci95": [
+  0.4399,
+  0.7281
+ ],
+ "expected_move_s": {
+  "at_face_transfer_1x": 0.5588,
+  "at_the_median_transfer": 0.6901,
+  "at_the_mean_transfer": 0.7439,
+  "under_the_observed_transfer_range_at_face": [
+   0.2012,
+   1.3466
+  ],
+  "under_the_observed_range_on_the_face_interval": [
+   0.1584,
+   1.7547
+  ],
+  "under_the_two_most_recent_uploads": [
+   0.5308,
+   1.3466
+  ]
+ },
+ "expected_score": {
+  "at_face_transfer_1x": 244.7313,
+  "at_the_median_transfer": 244.6,
+  "at_the_mean_transfer": 244.5462,
+  "under_the_observed_transfer_range_at_face": [
+   243.9435,
+   245.0889
+  ],
+  "under_the_observed_range_on_the_face_interval": [
+   243.5354,
+   245.1317
+  ],
+  "under_the_two_most_recent_uploads": [
+   243.9435,
+   244.7593
+  ]
+ },
+ "transfer_failure_move_below_s": 0.1584,
+ "transfer_failure_score_above": 245.1317
+}

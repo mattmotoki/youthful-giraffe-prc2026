@@ -1,0 +1,290 @@
+{
+  "airport": "LIRF",
+  "capacity_gradient": {
+    "c_lgb_shipped": {
+      "added_mse_on_every_other_july_tail": -4748586.4,
+      "added_mse_on_the_lirf_july_tail": 5053561.0,
+      "median_update_on_the_lirf_july_tail": 0.0,
+      "rows_moved_on_the_lirf_july_tail": 226
+    },
+    "c_lgb_shipped@leaves_127x300_lr050": {
+      "added_mse_on_every_other_july_tail": -5180141.5,
+      "added_mse_on_the_lirf_july_tail": 7614502.8,
+      "median_update_on_the_lirf_july_tail": 0.0,
+      "rows_moved_on_the_lirf_july_tail": 226
+    },
+    "c_lgb_shipped@leaves_15x600_lr050": {
+      "added_mse_on_every_other_july_tail": -3810835.4,
+      "added_mse_on_the_lirf_july_tail": -8702035.8,
+      "median_update_on_the_lirf_july_tail": 0.0,
+      "rows_moved_on_the_lirf_july_tail": 226
+    },
+    "c_lgb_shipped@leaves_255x300_lr050": {
+      "added_mse_on_every_other_july_tail": -3420379.3,
+      "added_mse_on_the_lirf_july_tail": 12990784.2,
+      "median_update_on_the_lirf_july_tail": 0.0,
+      "rows_moved_on_the_lirf_july_tail": 226
+    },
+    "c_lgb_shipped@leaves_63x300_lr050": {
+      "added_mse_on_every_other_july_tail": -3782724.1,
+      "added_mse_on_the_lirf_july_tail": -1859930.5,
+      "median_update_on_the_lirf_july_tail": 0.0,
+      "rows_moved_on_the_lirf_july_tail": 226
+    }
+  },
+  "fold": "july_loo",
+  "lirf_july_tail_by_day": {
+    "added_mse_total": 7614502.8,
+    "days_with_a_tail_row": 31,
+    "share_in_the_worst_1_3_5_days": [
+      0.593,
+      1.5585,
+      2.2904
+    ],
+    "tail_rows": 390,
+    "worst_days": [
+      {
+        "added_mse": 4515411.2,
+        "day": "2025-07-28",
+        "median_d": 0.0,
+        "median_r": 1152.1,
+        "median_y": 4649.5,
+        "rows": 42
+      },
+      {
+        "added_mse": 3928067.7,
+        "day": "2025-07-19",
+        "median_d": -47.9,
+        "median_r": 1108.7,
+        "median_y": 5280.0,
+        "rows": 15
+      },
+      {
+        "added_mse": 3423379.5,
+        "day": "2025-07-31",
+        "median_d": 0.0,
+        "median_r": 1571.2,
+        "median_y": 4859.0,
+        "rows": 13
+      },
+      {
+        "added_mse": 2908948.8,
+        "day": "2025-07-18",
+        "median_d": -11.1,
+        "median_r": 1008.8,
+        "median_y": 4976.0,
+        "rows": 14
+      },
+      {
+        "added_mse": 2664250.9,
+        "day": "2025-07-04",
+        "median_d": 0.0,
+        "median_r": 1891.2,
+        "median_y": 5753.0,
+        "rows": 19
+      },
+      {
+        "added_mse": 2550458.6,
+        "day": "2025-07-06",
+        "median_d": -55.9,
+        "median_r": 2123.7,
+        "median_y": 5112.0,
+        "rows": 11
+      },
+      {
+        "added_mse": 2351620.1,
+        "day": "2025-07-20",
+        "median_d": -29.7,
+        "median_r": 1260.2,
+        "median_y": 4658.5,
+        "rows": 14
+      },
+      {
+        "added_mse": 1685697.9,
+        "day": "2025-07-26",
+        "median_d": -35.9,
+        "median_r": 1119.9,
+        "median_y": 5100.5,
+        "rows": 8
+      }
+    ]
+  },
+  "profiles": {
+    "LIRF december tail": {
+      "corr_obs_taxi_with_y": 0.253,
+      "median_y": 5640.0,
+      "median_y_minus_obs_taxi": 3893.38,
+      "rows": 105,
+      "with_clock": 21
+    },
+    "LIRF january tail": {
+      "corr_obs_taxi_with_y": null,
+      "median_y": 4623.5,
+      "median_y_minus_obs_taxi": null,
+      "rows": 70,
+      "with_clock": 0
+    },
+    "LIRF july bulk": {
+      "arr_present": 0.0,
+      "arr_stand_occupancy_s": 5746.43,
+      "clock_ok": 1.0,
+      "corr_obs_taxi_with_r": 0.218,
+      "corr_obs_taxi_with_y": 0.599,
+      "dt_takeoff": -20.47,
+      "matched_on_modal": 1.0,
+      "median_d": -20.26,
+      "median_pbase": 1182.52,
+      "median_r": -53.32,
+      "median_y": 1090.0,
+      "median_y_minus_obs_taxi": 714.06,
+      "obs_ambiguous": 0.0,
+      "obs_seg_taxi": 265.05,
+      "obs_taxi": 327.56,
+      "obs_taxi_motion": 392.38,
+      "rows": 14821,
+      "seen_before_move_s": 47.66,
+      "seg_gap_max_s": 90.65,
+      "seg_points": 36.0,
+      "seg_span_s": 360.73,
+      "stand_dist_km": 1.36,
+      "stand_stop_s": 0.0,
+      "time_to_250m": 42.64,
+      "with_clock": 12746
+    },
+    "LIRF july tail": {
+      "arr_present": 0.0,
+      "arr_stand_occupancy_s": 7668.12,
+      "clock_ok": 1.0,
+      "corr_obs_taxi_with_r": -0.08,
+      "corr_obs_taxi_with_y": 0.018,
+      "dt_takeoff": -24.8,
+      "matched_on_modal": 1.0,
+      "median_d": 0.0,
+      "median_pbase": 3843.68,
+      "median_r": 1358.1,
+      "median_y": 5048.0,
+      "median_y_minus_obs_taxi": 4004.99,
+      "obs_ambiguous": 0.0,
+      "obs_seg_taxi": 371.01,
+      "obs_taxi": 467.18,
+      "obs_taxi_motion": 549.2,
+      "rows": 390,
+      "seen_before_move_s": 61.76,
+      "seg_gap_max_s": 152.72,
+      "seg_points": 38.0,
+      "seg_span_s": 545.83,
+      "stand_dist_km": 1.38,
+      "stand_stop_s": 0.0,
+      "time_to_250m": 50.37,
+      "with_clock": 226
+    },
+    "other airports july bulk": {
+      "arr_present": 0.0,
+      "arr_stand_occupancy_s": 5599.05,
+      "clock_ok": 1.0,
+      "corr_obs_taxi_with_r": 0.309,
+      "corr_obs_taxi_with_y": 0.723,
+      "dt_takeoff": -28.31,
+      "matched_on_modal": 1.0,
+      "median_d": 0.0,
+      "median_pbase": 941.05,
+      "median_r": -13.66,
+      "median_y": 922.0,
+      "median_y_minus_obs_taxi": 370.99,
+      "obs_ambiguous": 0.0,
+      "obs_seg_taxi": 359.94,
+      "obs_taxi": 448.45,
+      "obs_taxi_motion": 546.39,
+      "rows": 175236,
+      "seen_before_move_s": 219.23,
+      "seg_gap_max_s": 86.98,
+      "seg_points": 75.0,
+      "seg_span_s": 609.76,
+      "stand_dist_km": 1.86,
+      "stand_stop_s": 0.0,
+      "time_to_250m": 58.42,
+      "with_clock": 73924
+    },
+    "other airports july tail": {
+      "arr_present": 0.0,
+      "arr_stand_occupancy_s": 8832.24,
+      "clock_ok": 1.0,
+      "corr_obs_taxi_with_r": 0.033,
+      "corr_obs_taxi_with_y": 0.013,
+      "dt_takeoff": -29.36,
+      "matched_on_modal": 1.0,
+      "median_d": 0.0,
+      "median_pbase": 3327.83,
+      "median_r": 1078.49,
+      "median_y": 4370.5,
+      "median_y_minus_obs_taxi": 4631.13,
+      "obs_ambiguous": 0.0,
+      "obs_seg_taxi": 64.3,
+      "obs_taxi": 213.86,
+      "obs_taxi_motion": 486.89,
+      "rows": 266,
+      "seen_before_move_s": 2116.3,
+      "seg_gap_max_s": 278.26,
+      "seg_points": 105.0,
+      "seg_span_s": 2234.58,
+      "stand_dist_km": 1.65,
+      "stand_stop_s": 171.15,
+      "time_to_250m": 106.58,
+      "with_clock": 27
+    }
+  },
+  "tail": "y > 3600 s",
+  "tail_by_airport": {
+    "EDDF": {
+      "added_mse": -3135007.3,
+      "tail_rows": 13,
+      "tail_rows_moved": 4
+    },
+    "EDDM": {
+      "added_mse": 4418006.6,
+      "tail_rows": 8,
+      "tail_rows_moved": 6
+    },
+    "EGLL": {
+      "added_mse": -5322216.5,
+      "tail_rows": 173,
+      "tail_rows_moved": 12
+    },
+    "EHAM": {
+      "added_mse": 117774.7,
+      "tail_rows": 5,
+      "tail_rows_moved": 4
+    },
+    "LEBL": {
+      "added_mse": 0.0,
+      "tail_rows": 0,
+      "tail_rows_moved": 0
+    },
+    "LEMD": {
+      "added_mse": 0.0,
+      "tail_rows": 0,
+      "tail_rows_moved": 0
+    },
+    "LFPG": {
+      "added_mse": 0.0,
+      "tail_rows": 34,
+      "tail_rows_moved": 0
+    },
+    "LIRF": {
+      "added_mse": 7614502.8,
+      "tail_rows": 390,
+      "tail_rows_moved": 226
+    },
+    "LSZH": {
+      "added_mse": -1258698.9,
+      "tail_rows": 4,
+      "tail_rows_moved": 1
+    },
+    "LTFM": {
+      "added_mse": 0.0,
+      "tail_rows": 29,
+      "tail_rows_moved": 0
+    }
+  },
+  "what": "What is different about LIRF's July 2025 rows that every stronger arm pays on."
+}

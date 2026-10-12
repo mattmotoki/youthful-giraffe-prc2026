@@ -1,0 +1,53 @@
+{
+ "cfg": {
+  "fold": "july_loo",
+  "rounds": 1200,
+  "clip_z": 6000,
+  "exact_rounds": 300,
+  "ghost_mode": "mixbase",
+  "main_model": "lgb",
+  "seeds": 1,
+  "thread_arms": [
+   2,
+   4
+  ]
+ },
+ "synthetic": true,
+ "python": "3.12.13",
+ "versions": {
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "pyarrow": "24.0.0",
+  "lightgbm": "4.6.0"
+ },
+ "cpu_count": 4,
+ "git_commit": "5717971ceb41ce5173f695c3c1d65df31a496d62",
+ "steps": [
+  {
+   "tag": "cpu-2thr",
+   "threads": 2,
+   "wall_s": 87.3,
+   "maxrss_gb": 0.6,
+   "stdout_tail": "july_loo   rmse=  301.42 lo= 291.81 hi=   1201.5 (n_hi=16) 77.6s\nTAG cpu-2thr july_loo=301.42\n"
+  },
+  {
+   "tag": "cpu-4thr",
+   "threads": 4,
+   "wall_s": 66.0,
+   "maxrss_gb": 0.61,
+   "stdout_tail": "july_loo   rmse=  301.42 lo= 291.81 hi=   1201.5 (n_hi=16) 62.7s\nTAG cpu-4thr july_loo=301.42\n"
+  }
+ ],
+ "thread_arm_comparison": {
+  "a": "cpu-2thr",
+  "b": "cpu-4thr",
+  "n": 3814,
+  "identical": true,
+  "max_abs": 0.0,
+  "rms": 0.0,
+  "rows_over_1s": 0,
+  "rmse_a": 301.4205609071798,
+  "rmse_b": 301.4205609071798,
+  "rmse_a_minus_b": 0.0
+ }
+}

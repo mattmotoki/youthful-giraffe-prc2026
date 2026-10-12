@@ -1,0 +1,316 @@
+{
+ "clears_the_floor_increment": false,
+ "failure_condition_1_below_the_bar": [
+  "july_loo"
+ ],
+ "failure_condition_2_cells_dropped": {
+  "january": [],
+  "july_loo": [
+   "EDDF/reached"
+  ]
+ },
+ "file": "analysis/arms-step2-leverA-repair2.json",
+ "fitted_scale": {
+  "S_0.5": {
+   "december": 0.4911,
+   "january": 0.6427,
+   "july_loo": 0.9873
+  },
+  "natural_share": {
+   "december": 0.553,
+   "january": 0.516,
+   "july_loo": 0.825
+  },
+  "v17_S1": {
+   "december": 0.3712,
+   "january": 0.7961,
+   "july_loo": 1.1186
+  }
+ },
+ "fold_share": 0.5,
+ "passes_the_bar": false,
+ "per_cell": {
+  "S_0.5": {
+   "EDDF/reached": {
+    "december": [
+     3641.692304046823,
+     [
+      1398.6299290902052,
+      7005.498278011432
+     ]
+    ],
+    "january": [
+     835.6446706159921,
+     [
+      -756.9688931516333,
+      2458.8597109630696
+     ]
+    ],
+    "july_loo": [
+     3742.629867525602,
+     [
+      2437.828850408319,
+      5336.484528624401
+     ]
+    ]
+   },
+   "LEMD/reached": {
+    "december": [
+     1416.8864078474055,
+     [
+      695.5591196322158,
+      2239.1596248748165
+     ]
+    ],
+    "january": [
+     null,
+     null
+    ],
+    "july_loo": [
+     1229.4948423631977,
+     [
+      618.9785583604178,
+      1866.5416056666536
+     ]
+    ]
+   },
+   "LTFM/unreached": {
+    "december": [
+     441.0415606614793,
+     [
+      116.14251982661989,
+      869.1001326367914
+     ]
+    ],
+    "january": [
+     392.06452254753873,
+     [
+      141.17259219471134,
+      681.5665616485301
+     ]
+    ],
+    "july_loo": [
+     1287.6853750622256,
+     [
+      640.0316087927952,
+      2098.610827885031
+     ]
+    ]
+   }
+  },
+  "natural_share": {
+   "EDDF/reached": {
+    "december": [
+     3433.7200587122784,
+     [
+      1283.1194697470007,
+      6645.441203847451
+     ]
+    ],
+    "january": [
+     554.6931339576196,
+     [
+      -1500.0854987628932,
+      2414.2783743353157
+     ]
+    ],
+    "july_loo": [
+     4223.240127885982,
+     [
+      2727.046555009983,
+      6040.915888196882
+     ]
+    ]
+   },
+   "LEMD/reached": {
+    "december": [
+     1438.199173219624,
+     [
+      685.325761953702,
+      2287.5320889605014
+     ]
+    ],
+    "january": [
+     null,
+     null
+    ],
+    "july_loo": [
+     1184.3615051212046,
+     [
+      439.4718504927532,
+      2018.9768840347608
+     ]
+    ]
+   },
+   "LTFM/unreached": {
+    "december": [
+     506.8927815584624,
+     [
+      62.022697733629414,
+      1137.688583449839
+     ]
+    ],
+    "january": [
+     420.6609654137054,
+     [
+      135.2306561527093,
+      760.3101993767376
+     ]
+    ],
+    "july_loo": [
+     1555.9560747743926,
+     [
+      739.7624953571557,
+      2572.822606846969
+     ]
+    ]
+   }
+  },
+  "v17_S1": {
+   "EDDF/reached": {
+    "december": [
+     3620.4955189132934,
+     [
+      1417.8911055845401,
+      6906.048977732837
+     ]
+    ],
+    "january": [
+     1261.44081112407,
+     [
+      335.59476953520345,
+      2500.6510891563225
+     ]
+    ],
+    "july_loo": [
+     3004.6455940430296,
+     [
+      1994.1868814942814,
+      4226.079442710683
+     ]
+    ]
+   },
+   "LEMD/reached": {
+    "december": [
+     1308.6240283699367,
+     [
+      506.360309004412,
+      2235.3658013206623
+     ]
+    ],
+    "january": [
+     null,
+     null
+    ],
+    "july_loo": [
+     1163.599577227687,
+     [
+      676.5711013147139,
+      1652.1216081978584
+     ]
+    ]
+   },
+   "LTFM/unreached": {
+    "december": [
+     232.50340466312366,
+     [
+      37.43209586048844,
+      435.28046315738266
+     ]
+    ],
+    "january": [
+     264.44068357734284,
+     [
+      51.68073299586478,
+      491.0046127627395
+     ]
+    ],
+    "july_loo": [
+     755.5840666147078,
+     [
+      343.7981829469309,
+      1310.3261795743454
+     ]
+    ]
+   }
+  }
+ },
+ "pre_fit_assertion_ok": true,
+ "run": "work/leverA-repair2.sh, 14:34:02 -> 14:36:43 UTC, rc=0",
+ "served_board_s": {
+  "S_0.5": {
+   "december": 0.2187,
+   "january": 0.2065,
+   "july_loo": 0.4508,
+   "share_weighted": 0.3426
+  },
+  "natural_share": {
+   "december": 0.2339,
+   "january": 0.1686,
+   "july_loo": 0.4778,
+   "share_weighted": 0.3409
+  },
+  "v17_S1": {
+   "december": 0.5079,
+   "january": 0.1932,
+   "july_loo": 0.5518,
+   "share_weighted": 0.393
+  }
+ },
+ "served_cells": {
+  "S_0.5": {
+   "december": [
+    "LEBL/reached",
+    "LEMD/reached",
+    "LTFM/unreached"
+   ],
+   "january": [
+    "EDDF/reached",
+    "LEBL/reached",
+    "LEMD/reached",
+    "LTFM/unreached"
+   ],
+   "july_loo": [
+    "LEBL/reached",
+    "LEMD/reached",
+    "LTFM/unreached"
+   ]
+  },
+  "natural_share": {
+   "december": [
+    "LEBL/reached",
+    "LEMD/reached",
+    "LTFM/unreached"
+   ],
+   "january": [
+    "EDDF/reached",
+    "LEMD/reached",
+    "LTFM/unreached"
+   ],
+   "july_loo": [
+    "LEMD/reached",
+    "LIRF/unreached",
+    "LTFM/unreached"
+   ]
+  },
+  "v17_S1": {
+   "december": [
+    "EDDF/reached",
+    "LEBL/reached",
+    "LEMD/reached",
+    "LTFM/unreached"
+   ],
+   "january": [
+    "EDDF/reached",
+    "LEMD/reached",
+    "LTFM/unreached"
+   ],
+   "july_loo": [
+    "EDDF/reached",
+    "LEMD/reached",
+    "LTFM/unreached"
+   ]
+  }
+ },
+ "what": "REPAIR 2 of 7cc (registered in 7cf), read against its bar"
+}

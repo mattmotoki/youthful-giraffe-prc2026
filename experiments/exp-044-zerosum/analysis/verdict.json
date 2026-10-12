@@ -1,0 +1,417 @@
+{
+  "note": "Sol round 1, blocking 7. The predeclared rule applied to the two-way matched table of code/density.py; no new measurement.",
+  "rule": "DENSITY if the ordering by traffic rate survives conditioning on cell rows and the ordering by cell rows does not survive conditioning on traffic rate; MECHANISM if the reverse; MIXED if both survive. Stated before any number was read.",
+  "grids": {
+    "300": {
+      "traffic_given_cell_rows": {
+        "n_pairs": 3,
+        "n_falling": 2,
+        "pairs": [
+          {
+            "cell_rows": "4-5",
+            "from": "4-6",
+            "to": "7-11",
+            "n_from": 18574,
+            "n_to": 35899,
+            "reduction_from": 178.38,
+            "reduction_to": 135.55,
+            "falls": true
+          },
+          {
+            "cell_rows": "4-5",
+            "from": "7-11",
+            "to": "12+",
+            "n_from": 35899,
+            "n_to": 727,
+            "reduction_from": 135.55,
+            "reduction_to": 219.97,
+            "falls": false
+          },
+          {
+            "cell_rows": "6-9",
+            "from": "7-11",
+            "to": "12+",
+            "n_from": 5324,
+            "n_to": 2104,
+            "reduction_from": 65.33,
+            "reduction_to": 43.96,
+            "falls": true
+          }
+        ]
+      },
+      "cell_rows_given_traffic": {
+        "n_pairs": 2,
+        "n_falling": 2,
+        "pairs": [
+          {
+            "traffic_rate": "7-11",
+            "from": "4-5",
+            "to": "6-9",
+            "n_from": 35899,
+            "n_to": 5324,
+            "reduction_from": 135.55,
+            "reduction_to": 65.33,
+            "falls": true
+          },
+          {
+            "traffic_rate": "12+",
+            "from": "4-5",
+            "to": "6-9",
+            "n_from": 727,
+            "n_to": 2104,
+            "reduction_from": 219.97,
+            "reduction_to": 43.96,
+            "falls": true
+          }
+        ]
+      }
+    },
+    "600": {
+      "traffic_given_cell_rows": {
+        "n_pairs": 4,
+        "n_falling": 3,
+        "pairs": [
+          {
+            "cell_rows": "4-5",
+            "from": "1-3",
+            "to": "4-6",
+            "n_from": 2946,
+            "n_to": 42211,
+            "reduction_from": 259.79,
+            "reduction_to": 349.55,
+            "falls": false
+          },
+          {
+            "cell_rows": "4-5",
+            "from": "4-6",
+            "to": "7-11",
+            "n_from": 42211,
+            "n_to": 1197,
+            "reduction_from": 349.55,
+            "reduction_to": 76.25,
+            "falls": true
+          },
+          {
+            "cell_rows": "6-9",
+            "from": "4-6",
+            "to": "7-11",
+            "n_from": 23453,
+            "n_to": 25201,
+            "reduction_from": 186.25,
+            "reduction_to": 152.9,
+            "falls": true
+          },
+          {
+            "cell_rows": "10-19",
+            "from": "7-11",
+            "to": "12+",
+            "n_from": 4025,
+            "n_to": 1351,
+            "reduction_from": -30.08,
+            "reduction_to": -93.19,
+            "falls": true
+          }
+        ]
+      },
+      "cell_rows_given_traffic": {
+        "n_pairs": 3,
+        "n_falling": 2,
+        "pairs": [
+          {
+            "traffic_rate": "4-6",
+            "from": "4-5",
+            "to": "6-9",
+            "n_from": 42211,
+            "n_to": 23453,
+            "reduction_from": 349.55,
+            "reduction_to": 186.25,
+            "falls": true
+          },
+          {
+            "traffic_rate": "7-11",
+            "from": "4-5",
+            "to": "6-9",
+            "n_from": 1197,
+            "n_to": 25201,
+            "reduction_from": 76.25,
+            "reduction_to": 152.9,
+            "falls": false
+          },
+          {
+            "traffic_rate": "7-11",
+            "from": "6-9",
+            "to": "10-19",
+            "n_from": 25201,
+            "n_to": 4025,
+            "reduction_from": 152.9,
+            "reduction_to": -30.08,
+            "falls": true
+          }
+        ]
+      }
+    },
+    "1200": {
+      "traffic_given_cell_rows": {
+        "n_pairs": 5,
+        "n_falling": 4,
+        "pairs": [
+          {
+            "cell_rows": "4-5",
+            "from": "1-3",
+            "to": "4-6",
+            "n_from": 7970,
+            "n_to": 3442,
+            "reduction_from": 214.69,
+            "reduction_to": 284.1,
+            "falls": false
+          },
+          {
+            "cell_rows": "6-9",
+            "from": "1-3",
+            "to": "4-6",
+            "n_from": 4738,
+            "n_to": 21150,
+            "reduction_from": 415.55,
+            "reduction_to": 264.02,
+            "falls": true
+          },
+          {
+            "cell_rows": "6-9",
+            "from": "4-6",
+            "to": "7-11",
+            "n_from": 21150,
+            "n_to": 522,
+            "reduction_from": 264.02,
+            "reduction_to": -58.24,
+            "falls": true
+          },
+          {
+            "cell_rows": "10-19",
+            "from": "4-6",
+            "to": "7-11",
+            "n_from": 18524,
+            "n_to": 14657,
+            "reduction_from": 171.07,
+            "reduction_to": 164.94,
+            "falls": true
+          },
+          {
+            "cell_rows": "20+",
+            "from": "7-11",
+            "to": "12+",
+            "n_from": 848,
+            "n_to": 544,
+            "reduction_from": 273.45,
+            "reduction_to": 3.99,
+            "falls": true
+          }
+        ]
+      },
+      "cell_rows_given_traffic": {
+        "n_pairs": 5,
+        "n_falling": 2,
+        "pairs": [
+          {
+            "traffic_rate": "1-3",
+            "from": "4-5",
+            "to": "6-9",
+            "n_from": 7970,
+            "n_to": 4738,
+            "reduction_from": 214.69,
+            "reduction_to": 415.55,
+            "falls": false
+          },
+          {
+            "traffic_rate": "4-6",
+            "from": "4-5",
+            "to": "6-9",
+            "n_from": 3442,
+            "n_to": 21150,
+            "reduction_from": 284.1,
+            "reduction_to": 264.02,
+            "falls": true
+          },
+          {
+            "traffic_rate": "4-6",
+            "from": "6-9",
+            "to": "10-19",
+            "n_from": 21150,
+            "n_to": 18524,
+            "reduction_from": 264.02,
+            "reduction_to": 171.07,
+            "falls": true
+          },
+          {
+            "traffic_rate": "7-11",
+            "from": "6-9",
+            "to": "10-19",
+            "n_from": 522,
+            "n_to": 14657,
+            "reduction_from": -58.24,
+            "reduction_to": 164.94,
+            "falls": false
+          },
+          {
+            "traffic_rate": "7-11",
+            "from": "10-19",
+            "to": "20+",
+            "n_from": 14657,
+            "n_to": 848,
+            "reduction_from": 164.94,
+            "reduction_to": 273.45,
+            "falls": false
+          }
+        ]
+      }
+    }
+  },
+  "other_readings": {
+    "adjacent_bands": {
+      "traffic_given_cell_rows": [
+        9.0,
+        12.0
+      ],
+      "cell_rows_given_traffic": [
+        6.0,
+        10.0
+      ],
+      "verdict": "MIXED"
+    },
+    "pair_weighted": {
+      "traffic_given_cell_rows": [
+        67140.0,
+        74255.0
+      ],
+      "cell_rows_given_traffic": [
+        55495.0,
+        62800.0
+      ],
+      "verdict": "MIXED"
+    },
+    "first_band_against_last": {
+      "traffic_given_cell_rows": [
+        7.0,
+        9.0
+      ],
+      "cell_rows_given_traffic": [
+        5.0,
+        7.0
+      ],
+      "verdict": "MIXED"
+    },
+    "every_comparison_must_fall": {
+      "traffic_given_cell_rows": [
+        0.0,
+        3.0
+      ],
+      "cell_rows_given_traffic": [
+        1.0,
+        3.0
+      ],
+      "verdict": "NEITHER"
+    }
+  },
+  "other_readings_no_min_pairs": {
+    "adjacent_bands": {
+      "traffic_given_cell_rows": [
+        14.0,
+        20.0
+      ],
+      "cell_rows_given_traffic": [
+        10.0,
+        19.0
+      ],
+      "verdict": "MIXED"
+    },
+    "pair_weighted": {
+      "traffic_given_cell_rows": [
+        67413.0,
+        74724.0
+      ],
+      "cell_rows_given_traffic": [
+        55759.0,
+        63285.0
+      ],
+      "verdict": "MIXED"
+    },
+    "first_band_against_last": {
+      "traffic_given_cell_rows": [
+        5.0,
+        9.0
+      ],
+      "cell_rows_given_traffic": [
+        6.0,
+        11.0
+      ],
+      "verdict": "MIXED"
+    },
+    "every_comparison_must_fall": {
+      "traffic_given_cell_rows": [
+        0.0,
+        3.0
+      ],
+      "cell_rows_given_traffic": [
+        0.0,
+        3.0
+      ],
+      "verdict": "NEITHER"
+    }
+  },
+  "verdict_is_reading_dependent": true,
+  "pooled": {
+    "traffic_given_cell_rows": [
+      9,
+      12
+    ],
+    "cell_rows_given_traffic": [
+      6,
+      10
+    ]
+  },
+  "traffic_marginal_monotone": {
+    "300": {
+      "bands": [
+        "4-6",
+        "7-11",
+        "12+"
+      ],
+      "values": [
+        174.06,
+        126.48,
+        90.89
+      ],
+      "monotone_decreasing": true
+    },
+    "600": {
+      "bands": [
+        "1-3",
+        "4-6",
+        "7-11",
+        "12+"
+      ],
+      "values": [
+        270.29,
+        290.72,
+        125.67,
+        -89.58
+      ],
+      "monotone_decreasing": false
+    },
+    "1200": {
+      "bands": [
+        "1-3",
+        "4-6",
+        "7-11",
+        "12+"
+      ],
+      "values": [
+        278.94,
+        225.79,
+        162.57,
+        -77.86
+      ],
+      "monotone_decreasing": true
+    }
+  },
+  "verdict": "MIXED"
+}

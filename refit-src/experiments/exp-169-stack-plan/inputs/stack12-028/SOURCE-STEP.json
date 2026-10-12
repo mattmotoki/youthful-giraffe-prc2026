@@ -1,0 +1,145 @@
+{
+ "what": "paired step of the candidate pair vector over the reference pair vector; G on base B for both",
+ "reference": {
+  "path": "results/paired-mixed30-037-B/paired_ls.parquet",
+  "sha256": "54b270d8f93be46ddeb9c4a566af9fa00277f8debb5144a97482b1c062d4db28",
+  "on_B": {
+   "G": 2359.619209843514,
+   "interval": {
+    "se": 229.9930624272472,
+    "lo95": 1944.4889971858115,
+    "hi95": 2839.5473698813908,
+    "gain_s_lo95": 3.3486198995154837,
+    "gain_s_hi95": 4.903132889265748,
+    "p_G_le_0": 0.0
+   },
+   "top_airport_days": [
+    {
+     "airport": "LIRF",
+     "month": 7,
+     "day": 13,
+     "contribution": 138.17333095885184
+    },
+    {
+     "airport": "LTFM",
+     "month": 7,
+     "day": 21,
+     "contribution": 89.42564832481811
+    },
+    {
+     "airport": "LTFM",
+     "month": 7,
+     "day": 26,
+     "contribution": 58.31369654101364
+    },
+    {
+     "airport": "EDDF",
+     "month": 7,
+     "day": 7,
+     "contribution": 51.329760145895165
+    },
+    {
+     "airport": "LTFM",
+     "month": 1,
+     "day": 4,
+     "contribution": 48.12531569408386
+    }
+   ],
+   "G_minus_top5_point": 1974.2514581788514
+  }
+ },
+ "candidate": {
+  "path": "results/paired-close30-038-B/paired_ls.parquet",
+  "sha256": "9bffcffc418fd8ff4cee94e48d6af089df240757524a04b706f065a4f92d319e",
+  "on_B": {
+   "G": 2418.7857654088466,
+   "interval": {
+    "se": 222.47190966360796,
+    "lo95": 2012.1696390643854,
+    "hi95": 2876.059035005878,
+    "gain_s_lo95": 3.4658731072020714,
+    "gain_s_hi95": 4.966724063199877,
+    "p_G_le_0": 0.0
+   },
+   "top_airport_days": [
+    {
+     "airport": "LIRF",
+     "month": 7,
+     "day": 13,
+     "contribution": 131.45936345840082
+    },
+    {
+     "airport": "LTFM",
+     "month": 7,
+     "day": 21,
+     "contribution": 89.2830541692683
+    },
+    {
+     "airport": "LTFM",
+     "month": 7,
+     "day": 26,
+     "contribution": 55.06861900126296
+    },
+    {
+     "airport": "EDDF",
+     "month": 7,
+     "day": 7,
+     "contribution": 51.64283465497607
+    },
+    {
+     "airport": "LIRF",
+     "month": 7,
+     "day": 9,
+     "contribution": 49.00470298784312
+    }
+   ],
+   "G_minus_top5_point": 2042.3271911370953
+  }
+ },
+ "step": {
+  "G": 59.16655556533284,
+  "interval": {
+   "se": 24.50220951259728,
+   "lo95": 13.562262221318571,
+   "hi95": 109.28516568974557,
+   "gain_s_lo95": 0.023574517284146168,
+   "gain_s_hi95": 0.19001923079468952,
+   "p_G_le_0": 0.0045
+  },
+  "top_airport_days": [
+   {
+    "airport": "LIRF",
+    "month": 7,
+    "day": 8,
+    "contribution": 12.277352346965374
+   },
+   {
+    "airport": "LIRF",
+    "month": 7,
+    "day": 5,
+    "contribution": 8.980474945078535
+   },
+   {
+    "airport": "LIRF",
+    "month": 7,
+    "day": 15,
+    "contribution": 4.728405557128317
+   },
+   {
+    "airport": "LIRF",
+    "month": 7,
+    "day": 17,
+    "contribution": 4.611297006900184
+   },
+   {
+    "airport": "LFPG",
+    "month": 1,
+    "day": 5,
+    "contribution": 3.6404328214206414
+   }
+  ],
+  "G_minus_top5_point": 24.92859288783979
+ },
+ "base_sha256": "0c249c2bc53ab801426d012bee43c6930fda0fba02053df4bca2929b81e56d11",
+ "code_sha256": "ad6e87d64d26d35f3fd932e99abddaaa03fa57d1214d6db5edec1ba1b9891547"
+}

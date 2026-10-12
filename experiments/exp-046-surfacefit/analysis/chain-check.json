@@ -1,0 +1,70 @@
+{
+  "frames": {
+    "placebo": "work/chain-pairs-placebo-{day,stand}.parquet",
+    "real": "work/chain-pairs.parquet"
+  },
+  "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+  "months": {
+    "2026-01": {
+      "maps": {
+        "runways_learned": {
+          "EDDF": 4,
+          "EDDM": 4,
+          "EGLL": 3,
+          "EHAM": 8,
+          "LEBL": 4,
+          "LEMD": 4,
+          "LFPG": 4,
+          "LIRF": 2,
+          "LSZH": 4
+        },
+        "stands_learned": {
+          "EDDF": 198,
+          "EDDM": 156,
+          "EGLL": 185,
+          "EHAM": 185,
+          "LEBL": 190,
+          "LEMD": 309,
+          "LFPG": 111,
+          "LIRF": 113,
+          "LSZH": 138
+        }
+      }
+    },
+    "2026-07": {
+      "maps": {
+        "runways_learned": {
+          "EDDF": 4,
+          "EDDM": 4,
+          "EGLL": 4,
+          "EHAM": 7,
+          "LEBL": 4,
+          "LEMD": 4,
+          "LFPG": 4,
+          "LSZH": 5
+        },
+        "stands_learned": {
+          "EDDF": 200,
+          "EDDM": 152,
+          "EGLL": 182,
+          "EHAM": 186,
+          "LEBL": 188,
+          "LEMD": 301,
+          "LFPG": 119,
+          "LSZH": 135
+        }
+      }
+    }
+  },
+  "pool": {
+    "gated_shipped": 3179,
+    "ungated": 8253,
+    "ungated_reference": 8478
+  },
+  "probe": "analysis/chain-check/block_probe.py",
+  "reference": {
+    "2026-01": 1382,
+    "2026-07": 1797
+  },
+  "what": "The chain rows' SECOND independent check (desk, 2026-09-09, with the research addendum)."
+}

@@ -1,0 +1,39 @@
+{
+  "name": "C1-d8h60",
+  "folds": {
+    "july": {
+      "rmse": 330.70142574250514,
+      "rmse_bulk": 292.93456696414046,
+      "rmse_tail": 2633.0774933901166,
+      "rmse_no_nm": 1425.3027783866225,
+      "rmse_noac": 4429.019991827672,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.21806134614721287,
+      "sse_share_no_nm": 0.3831741358409123,
+      "sse_share_noac": 0.3188324724763385,
+      "bias": -1.0570464950492529,
+      "fold": "july",
+      "rounds": 3625,
+      "seeds": [
+        7
+      ],
+      "seconds": 735,
+      "oof": "experiments/exp-008-diversity/oof/C1-d8h60-july.parquet",
+      "argv": "--kind cat --name C1-d8h60 --depth 8 --folds july --noac-rounds 60 --rounds-m6 3625 --rounds-m11 425"
+    }
+  },
+  "argv": "--kind cat --name C1-d8h60 --depth 8 --folds july --noac-rounds 60 --rounds-m6 3625 --rounds-m11 425",
+  "argv_history": [
+    "--kind cat --name C1-d8h60 --depth 8 --folds july --noac-rounds 60 --rounds-m6 3625 --rounds-m11 425"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 16,
+  "gpu": "1"
+}

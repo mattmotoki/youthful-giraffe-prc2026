@@ -1,0 +1,40 @@
+{
+  "name": "c1-residual",
+  "argv": "--name c1-residual --target residual --no-submission",
+  "folds": {
+    "july": {
+      "rmse": 501.9680299295944,
+      "rmse_bulk": 317.6002457224834,
+      "rmse_tail": 6635.465032947113,
+      "rmse_no_nm": 2971.028230317997,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.6010549183045979,
+      "sse_share_no_nm": 0.7226291866018579,
+      "bias": 1.349344106463083,
+      "fold": "july",
+      "best_iteration": 333,
+      "refit_rounds": 392,
+      "seconds": 115,
+      "oof": "experiments/exp-001-retro-v1/oof/c1-residual-july.parquet"
+    },
+    "december": {
+      "rmse": 285.0850785709304,
+      "rmse_bulk": 209.6008811386194,
+      "rmse_tail": 4873.104982248633,
+      "rmse_no_nm": 1925.955019825948,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.4602998643347956,
+      "sse_share_no_nm": 0.4526042711395453,
+      "bias": -0.8889316902809176,
+      "fold": "december",
+      "best_iteration": 185,
+      "refit_rounds": 218,
+      "seconds": 111,
+      "oof": "experiments/exp-001-retro-v1/oof/c1-residual-december.parquet"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+ "what": "COMPONENT READ, not a candidate: the BAG ALONE with LFPG held (prices.bag_held, vector work/d-bag5-255-guard995.npz, +0.19937 over v18).  It is NOT v7 -- the desk ruling of 2026-09-09 makes v7 the bag EVERYWHERE (bag_free), priced by analysis/audit-expect-v7-bag.json.  It is also not the sibling candidate the desk names at +0.21877 over v18 (bag_held + the LFPG rider), which is a third composition and is priced by neither file.  This file is kept for one purpose: differenced against the primary it isolates the BAG's own LFPG contribution (+22.409 s2/row july_loo, +49.758 december, 0 january) with no second instrument.",
+ "sources": {
+  "increment": "experiments/exp-046-surfacefit/analysis/bag-arm.json::prices.bag_held (vector work/d-bag5-255-guard995.npz)",
+  "floor_check": "this lane's \u00a77au: the bag is refits, so it must clear \u00a77ar's placebo envelope; every fold's lower bound does",
+  "pins": "experiments/exp-046-surfacefit/analysis/fold-population.json",
+  "bytes": "the desk's order; the candidate sha and the v21 occupancy counts are added when the desk sends the serve"
+ },
+ "how_to_run": "OMP_NUM_THREADS=2 ../../.venv/bin/python work/audit.py --head-npz ../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz --arm-npz ../exp-046-surfacefit/work/d-bag5-255-guard995.npz --pins ../exp-046-surfacefit/analysis/fold-population.json --hold LFPG --expect analysis/audit-expect-v7-bag-held.json --out analysis/audit-v7-bag-held-dryrun.json  (fold side only: the bytes belong to the primary file)",
+ "note_on_previous": "`--previous` is v6 as a CANDIDATE until it is uploaded; when it is, point --previous at submissions/uploaded/youthful-giraffe_v19.parquet and --baseline at v18. The sha check below is on the candidate either way.",
+ "expect": {
+  "increment.per_fold.july_loo.mse_gain_s2": {
+   "value": 84.93910896063088,
+   "tol": 1e-09
+  },
+  "increment.per_fold.december.mse_gain_s2": {
+   "value": 176.32121643622753,
+   "tol": 1e-09
+  },
+  "increment.per_fold.january.mse_gain_s2": {
+   "value": 162.39217339106762,
+   "tol": 1e-09
+  },
+  "increment.per_fold.july_loo.ci95_envelope_over_the_seeds": {
+   "inside": [
+    54.43759048437199,
+    115.1248937807908
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.december.ci95_envelope_over_the_seeds": {
+   "inside": [
+    137.4188029734481,
+    219.72052967081098
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.january.ci95_envelope_over_the_seeds": {
+   "inside": [
+    124.29492922516913,
+    207.626509099704
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.july_loo.lit": true,
+  "increment.per_fold.december.lit": true,
+  "increment.per_fold.january.lit": true,
+  "increment.lit_rule.dark_folds": [],
+  "increment.lit_rule.every_lit_fold_clears_on_every_seed": true,
+  "increment.lit_rule.every_fold_clears_including_dark": true,
+  "increment.board.all_row_gain_s": {
+   "value": 0.19936728192897135,
+   "tol": 1e-09
+  },
+  "increment.board.clean_gain_s": {
+   "value": 0.24345988528642692,
+   "tol": 1e-09
+  },
+  "increment.board.all_row_ci95_envelope_over_the_seeds": {
+   "inside": [
+    0.1442619554104283,
+    0.2723619010688878
+   ],
+   "tol": 0.0
+  },
+  "increment.population.july_loo.rows_moved": 87868,
+  "increment.population.december.rows_moved": 100940,
+  "increment.population.january.rows_moved": 69839,
+  "increment.population.july_loo.rows": 190713,
+  "increment.population.december.rows": 165677,
+  "increment.population.january.rows": 153706,
+  "pins.by_fold.july_loo.their_airport_days": 296,
+  "pins.by_fold.december.their_airport_days": 297,
+  "pins.by_fold.january.their_airport_days": 218,
+  "pins.by_fold.july_loo.days_agree": true,
+  "pins.by_fold.december.days_agree": true,
+  "pins.by_fold.january.days_agree": true
+ },
+ "the_floor_check_this_candidate_must_pass": {
+  "why": "the bag IS refits, so \u00a77ar's placebo envelope is the interpretation floor",
+  "placebo_envelope_s2_per_row": {
+   "july_loo": [
+    -81.25,
+    -48.3
+   ],
+   "december": [
+    -25.25,
+    13.56
+   ],
+   "january": [
+    -24.4,
+    30.09
+   ]
+  },
+  "bag_lower_bounds": {
+   "july_loo": 54.43759048437199,
+   "december": 137.4188029734481,
+   "january": 124.29492922516913
+  },
+  "clears_on_every_fold": true
+ },
+ "notes_on_the_expectation": {
+  "the_point_estimates_are_the_substantive_claims": "the three per-fold gains and the two board figures are claimed to 1e-9 and reproduce to the last digit on the vector already on disk; the interval claims below are about draw noise only.",
+  "why_the_fold_intervals_carry_a_3_s2_tolerance": "the check asks whether the claimed interval lies inside this lane's envelope over eleven bootstrap seeds.  Dry run 2026-09-09 on work/d-bag5-255-guard995.npz: july_loo and january contain surfacefit's interval at tol 0; december's top (219.7205) sits 1.3042 s2/row above this lane's envelope top (218.4163).  That miss is SMALLER than the instrument's own seed-to-seed spread on that same end (2.2569 s2/row on december, 0.9957 on july_loo, 1.4132 on january), so it prices bootstrap draw noise, not a difference about the arm.  The tolerance is declared here at 3.0 s2/row -- above the largest spread measured -- and it is declared BEFORE the serve, on a vector this lane has already read.  It is recorded rather than hidden: with tol 0 this one claim reads DISAGREE, and the point estimate underneath it is exact.",
+  "the_board_interval_carries_no_tolerance": "the board claim [0.14426, 0.27236] lies inside this lane's envelope [0.139696, 0.280316] at tol 0 and is left there.",
+  "missing_is_not_disagree": "this file no longer carries byte claims: the bytes are audited once, against the primary bag+rider file.",
+  "what_the_difference_between_the_two_files_is": "CORRECTION to 7aw as first written: the difference is the BAG's own LFPG rows, NOT the rider.  The row counts coincide with read E's rider populations (552 july, 1,246 december) because both arms move the same LFPG population, not because the values are the rider's -- and the VALUES differ (+22.409 against the rider's +20.83 on july, +49.758 against +51.91 on december), which is the evidence for the corrected reading rather than against it."
+ },
+ "claims_pinned_to": {
+  "why": "surfacefit is repairing serve.fold_gate for UNHELD serves in round 8, and v7 is the first unheld serve.  If that repair re-prices the bag, every 1e-9 point-estimate claim in this file moves for a reason that is NOT a defect in the candidate.  The exact bytes the claims were read from are pinned here, so a re-emission is detected instead of being audited against silently: if a sha below has changed at the serve, this lane re-runs the dry run against the new figures and marks the affected claims PENDING first, as 7at did for the v20 vector.",
+  "read_at": "2026-09-09T09:25 UTC",
+  "exp-046 files, sha256": {
+   "analysis/bag-arm.json": "86b3e5970485f3967f73e84d100a0fdc5d090a6d218dd179e95136b335fce189",
+   "work/d-bag5-255-free.npz": "c6d1f5b6f366c7f885c3f3813ae37e46b28997ee8f0d919ba61fa55000c854ac",
+   "work/d-bag5-255-guard995.npz": "5aabdb32721928bb9166244ed17651b50110da1012a6cd34faf7f4e43c1217a1",
+   "work/d-bundle-ungated1299-guard995.npz": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684"
+  },
+  "mtimes": {
+   "analysis/bag-arm.json": "2026-09-09T09:00 UTC",
+   "work/d-bag5-255-free.npz": "2026-09-09T09:00 UTC",
+   "work/d-bag5-255-guard995.npz": "2026-09-09T09:00 UTC",
+   "work/d-bundle-ungated1299-guard995.npz": "2026-09-09T06:56 UTC"
+  },
+  "the arm this file prices": "work/d-bag5-255-guard995.npz"
+ }
+}

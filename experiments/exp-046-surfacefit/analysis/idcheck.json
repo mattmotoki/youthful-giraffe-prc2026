@@ -1,0 +1,51 @@
+{
+  "by_fold": {
+    "december": {
+      "extension_wrote_outside_the_scoring_set": 0,
+      "in_extension_not_member": 0,
+      "in_member_not_extension": 0,
+      "member_wrote_outside_the_scoring_set": 0,
+      "moved_rows_cached_member": 102209,
+      "moved_rows_extension": 102209,
+      "moved_sets_identical": true,
+      "moved_sha_cached_member": "f50e00dd3de5d1aebc04194fe87e79ac325d56c90becbbbfef9401686a028eaf",
+      "moved_sha_extension": "f50e00dd3de5d1aebc04194fe87e79ac325d56c90becbbbfef9401686a028eaf",
+      "scoring_rows": 102544,
+      "scoring_sets_identical": true,
+      "scoring_sha256": "24c6e467584f6a869c2797a0a62ef92e8a5457cf0f42498af2571c54258a00eb"
+    },
+    "january": {
+      "extension_wrote_outside_the_scoring_set": 0,
+      "in_extension_not_member": 0,
+      "in_member_not_extension": 0,
+      "member_wrote_outside_the_scoring_set": 0,
+      "moved_rows_cached_member": 69836,
+      "moved_rows_extension": 69836,
+      "moved_sets_identical": true,
+      "moved_sha_cached_member": "4d4641395c833c10e85afcef1a52c95d0cd2519023c784704c8f1572f661358f",
+      "moved_sha_extension": "4d4641395c833c10e85afcef1a52c95d0cd2519023c784704c8f1572f661358f",
+      "scoring_rows": 70239,
+      "scoring_sets_identical": true,
+      "scoring_sha256": "5b6b416014a630d035cf82bd87bc339b77fe492f54cd614f06226029fed8a902"
+    },
+    "july_loo": {
+      "extension_wrote_outside_the_scoring_set": 0,
+      "in_extension_not_member": 0,
+      "in_member_not_extension": 0,
+      "member_wrote_outside_the_scoring_set": 0,
+      "moved_rows_cached_member": 88428,
+      "moved_rows_extension": 88428,
+      "moved_sets_identical": true,
+      "moved_sha_cached_member": "547b40b783838b4eef6add99db7e1afb4909a763e2886779a316a91aa182bd0c",
+      "moved_sha_extension": "547b40b783838b4eef6add99db7e1afb4909a763e2886779a316a91aa182bd0c",
+      "scoring_rows": 88992,
+      "scoring_sets_identical": true,
+      "scoring_sha256": "cfa6ff1497928d89dc38e803edbfab6336890202685c24cb9c805aff7338222b"
+    }
+  },
+  "check_1_passes": true,
+  "note": "Both vectors are indexed against ONE rebuilt member-1 panel, so the scoring set is shared by construction and the load-bearing test is that neither vector wrote OUTSIDE it, plus the row-for-row moved-set comparison.",
+  "seconds": 3.2,
+  "voids_a": false,
+  "what": "RESULTS section 47.19 check 1: the extension scored EXACTLY the rows the cached member did."
+}

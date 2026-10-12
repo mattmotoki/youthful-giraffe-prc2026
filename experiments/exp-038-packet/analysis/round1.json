@@ -1,0 +1,49 @@
+{
+  "composition": {
+    "max_move_full_amplitude": 0.362,
+    "max_move_candidate": "exp-037 rot_raw_clip",
+    "max_move_excluding_exp037": 0.0241,
+    "max_move_candidate_excluding_exp037": "k2-w300 no-EHAM-mask",
+    "ordering_changes": true,
+    "blend_at_ranking_mix": [
+      {
+        "candidate": "stack-5",
+        "gain_board_loo_amp": 0.1017,
+        "gain_rankmix_loo_amp": 0.0825
+      },
+      {
+        "candidate": "k2-w300",
+        "gain_board_loo_amp": 0.0788,
+        "gain_rankmix_loo_amp": 0.0666
+      },
+      {
+        "candidate": "K2 (v9)",
+        "gain_board_loo_amp": 0.0344,
+        "gain_rankmix_loo_amp": 0.0267
+      },
+      {
+        "candidate": "refit-bulk",
+        "gain_board_loo_amp": -0.0022,
+        "gain_rankmix_loo_amp": -0.0032
+      },
+      {
+        "candidate": "v7",
+        "gain_board_loo_amp": 0.0075,
+        "gain_rankmix_loo_amp": 0.0082
+      },
+      {
+        "candidate": "v6",
+        "gain_board_loo_amp": 0.0033,
+        "gain_rankmix_loo_amp": 0.0027
+      }
+    ]
+  },
+  "accounting": {
+    "q01_dates_rows": 3038,
+    "q01_dates_note": "one row per candidate x fold x day that MOVED a row; a candidate-fold whose d is identically zero writes none",
+    "candidates_registered": 38,
+    "source_files_hashed": 53,
+    "mask_json_sha256": "c89caa9f1be45d9d40a65de9878d433a209eddf99e0e76b07d7e4cd45acd4b99",
+    "mask_json_matches_record": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "ranking": {
+    "T-tailv2": "artifacts/exp-012/pred/T-tailv2-ranking.parquet",
+    "C2-cat": "artifacts/exp-008/pred/C2-d8p-ranking.parquet",
+    "L2-hub": "artifacts/exp-008/pred/L2-hub-ranking.parquet"
+  },
+  "weights": {
+    "_all": {
+      "T-tailv2": 0.4438303822117739,
+      "C2-cat": 0.22268448843835237,
+      "L2-hub": 0.335135121075903
+    }
+  },
+  "floor": 60.0,
+  "guard_bounds": [
+    -20657.0,
+    9069.0
+  ],
+  "late_cut": 1800.0,
+  "prepare_members": true,
+  "blend_version": 4,
+  "fit_rows": 510096,
+  "fit_folds": [
+    "july_loo",
+    "december",
+    "january"
+  ],
+  "rotated": {
+    "july_loo": 297.9491,
+    "december": 214.9318,
+    "january": 343.2647
+  },
+  "board_estimate": 318.8135,
+  "candidate": {
+    "path": "submissions/candidates/exp-012-blend-1.parquet",
+    "sha256": "541b1b1107fe85a13777409ecf3d66e93ab9c7fbc7a0dfedf054fc50daf77618",
+    "n": 344841,
+    "members": [
+      "T-tailv2",
+      "C2-cat",
+      "L2-hub"
+    ],
+    "weights": {
+      "_all": {
+        "T-tailv2": 0.4438303822117739,
+        "C2-cat": 0.22268448843835237,
+        "L2-hub": 0.335135121075903
+      }
+    },
+    "late_cut": 1800.0,
+    "blend_version": 4
+  }
+}

@@ -1,0 +1,1316 @@
+{
+  "default_target": "final-v-dh-r9-ld",
+  "input_template_sha256": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+  "ranking_sha256": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+  "entries": {
+    "v32": {
+      "recipe": "v32-chain",
+      "sha256": "f09f609429c81fd888e19e75e16f51b57978d55cc2639d6161c894da0baaa0de",
+      "rmse_s": 242.748,
+      "rows": 344841,
+      "bytes": 4707529
+    },
+    "v35": {
+      "recipe": "saved-values",
+      "public_vector": "release/saved-vectors/v35.json",
+      "public_vector_sha256": "23e0e896cee319252b9ed85e5c068df19f1721c0ead60c7d13619179faee23ce",
+      "sha256": "4ece6a4b3616a57cc1a54d2fa63657b590226ff052dafc2f791821566b470e35",
+      "value_sha256": "127281d70bd726326b4a4ed6bee2e21c7c2b87b56a4a8f795dc865fe9ef1a9b4",
+      "id_dtype": "float64",
+      "rows": 344841,
+      "bytes": 4707537,
+      "rmse_s": 241.7342,
+      "fallback_target": "v32",
+      "explicit_fallback_rows": 26310,
+      "equal_to_fallback_rows": 26311
+    },
+    "v36": {
+      "recipe": "fixed-blend",
+      "a": "v35",
+      "b": "v32",
+      "weight_on_a": 0.5,
+      "rows": 344841,
+      "id_dtype": "float64",
+      "sha256": "3ae49f67d62a832c6da7a25ac7538dc62273a9c5f2f7815778f451a24ab5c32f",
+      "value_sha256": "f0e9396892997fdf9a7e99bb397f1a7de3d463f2dbb5ff6cdc9dde5ee103c678",
+      "bytes": 4707537,
+      "board_rmse": 240.0047
+    },
+    "v37": {
+      "recipe": "published-mean-shift",
+      "base": "v36",
+      "parameters": "experiments/exp-151-published-means/frozen-parameters.json",
+      "parameters_sha256": "20a3ef9e2854fd81d325db6ffee8470c8fd132a197a673a2c4c2faa9d82297ad",
+      "parameter_revision": "a105637f202e8b082e3b4fc0e6b6951d1c01c979",
+      "support_vector": {
+        "public_vector": "release/saved-vectors/v37-support.json",
+        "public_vector_sha256": "ece79c8561ea989b9beecbc51b82aed740a10d30ed4a270b5584c2efe8896fbe"
+      },
+      "rows": 344841,
+      "id_dtype": "float64",
+      "bytes": 4707529,
+      "sha256": "2d847eb965ef7b0e58e6655569c2e9546a366b58cad33e7dbfe9c1010097699b",
+      "value_sha256": "eab0730e02bfd6401e8e6fc4ec2b5ced8695ff212d7cdf680ca108a62eba90d0",
+      "rmse_s": 239.938
+    },
+    "r4-kno": {
+      "recipe": "saved-values",
+      "rows": 344841,
+      "id_dtype": "float64",
+      "sha256": "f960ec40010c8343cc90c0ffe52f160ac7c279fcd0242ac15e48b778139cdc86",
+      "value_sha256": "811095cd60f9f628ee658e84c942f67453b726483e26ea503551ff44f0449909",
+      "public_vector": "release/saved-vectors/r4-kno.json",
+      "public_vector_sha256": "a10711b59b7dda6faa15f48c82e6415b017975abd5c012f5cd1f6da5474cb5ba",
+      "bytes": 4707537
+    },
+    "r4-b50": {
+      "recipe": "fixed-blend",
+      "rows": 344841,
+      "id_dtype": "float64",
+      "sha256": "4c66c9d6ff10fad3a1999df69cdcf7e46cf95a1cd9b79b4be2ea3d53a6a9c585",
+      "value_sha256": "25dacfd0e9c6586aee18cfd1b37275240d74f5300b4cf8aaead1c7524beadee8",
+      "a": "r4-kno",
+      "b": "v32",
+      "weight_on_a": 0.5,
+      "bytes": 4707537
+    },
+    "v40": {
+      "recipe": "published-mean-shift",
+      "base": "r4-b50",
+      "parameters": "experiments/exp-151-published-means/frozen-parameters.json",
+      "parameters_sha256": "20a3ef9e2854fd81d325db6ffee8470c8fd132a197a673a2c4c2faa9d82297ad",
+      "parameter_revision": "a105637f202e8b082e3b4fc0e6b6951d1c01c979",
+      "support_vector": {
+        "public_vector": "release/saved-vectors/v37-support.json",
+        "public_vector_sha256": "ece79c8561ea989b9beecbc51b82aed740a10d30ed4a270b5584c2efe8896fbe"
+      },
+      "rows": 344841,
+      "id_dtype": "float64",
+      "bytes": 4707529,
+      "sha256": "c29c9dc434e2b2e0b910a382d8fd83a9dd6de3e05cf865203ba1a53383623e45",
+      "value_sha256": "ebd02f91888f37ccc3bfa7008ddf4aade995def4de5b3a5c9b78c84b211d9381",
+      "rmse_s": 238.9597
+    },
+    "zabd": {
+      "recipe": "assembly",
+      "pack": "release/ZABD-PACK-ranking.json",
+      "pack_sha256": "3b52d708d4338d21ab8cb7b261f093d5e61a7e113813519cc787c21f1123686d",
+      "parent_sha256": "9436b85b0c5b2c83dd4b6b1be16076166337e7c274a3d4e6a59481843fd9cf9c",
+      "with_c65_sha256": "0eec38e86fadd6a658dabd1e877bd7603301429b6523d375421466efd8cb7779",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/zabd-final.json",
+        "public_vector_sha256": "aaf70cd2e95da96a409400f85531d1a4a1816eb31e1cfee8e9448e8f074d44d6"
+      },
+      "rows": 344841,
+      "id_dtype": "float64",
+      "bytes": 4707119,
+      "sha256": "e7b04ffdd02a27d48dfcbf12fd3f682f7adf3fbef711dac5e34125296804a636",
+      "value_sha256": "25d4af9c75f30ceca87128af5f31c5695bd8843230c3a3d017ff0dd456636bfa"
+    },
+    "v64": {
+      "recipe": "composition",
+      "base": "zabd",
+      "base_sha256": "e7b04ffdd02a27d48dfcbf12fd3f682f7adf3fbef711dac5e34125296804a636",
+      "stage": "T11b-L",
+      "pack": "release/ZABD-PACK-ranking.json",
+      "pack_sha256": "3b52d708d4338d21ab8cb7b261f093d5e61a7e113813519cc787c21f1123686d",
+      "p2_rows": 4902,
+      "long_taxi_days": {
+        "EGLL": 1,
+        "EHAM": 8,
+        "LFPG": 3,
+        "LTFM": 3
+      },
+      "changed_rows": 4078,
+      "rows": 344841,
+      "id_dtype": "float64",
+      "bytes": 4707183,
+      "sha256": "9cd421ddc503ef528d7211505436549e44498d015594d37a9080df562050571b",
+      "value_sha256": "38c33ee112b3a451e5d2aa8eff2b1355dc56bdc87d4b3256f150f5e580a10d02"
+    },
+    "v73": {
+      "recipe": "steps",
+      "stage": "v73-steps",
+      "base": "v64",
+      "base_sha256": "9cd421ddc503ef528d7211505436549e44498d015594d37a9080df562050571b",
+      "closure_commit": "48468cad9103967451faa67f4b3c3c58bcee2c00",
+      "official_sha256": {
+        "ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+        "submitting.parquet": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+        "training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+        "training_2025-02-01_2025-03-01.parquet": "b6f9ff2cdb1cfe07c5442f4e1f11bbcdbeafe52852dcb0b8175f62ab84c6a066",
+        "training_2025-03-01_2025-04-01.parquet": "58fde7e5f8b539546af63b41d7f6ec0f2884fdc3d3dd9b6bfca7c59a420dcdd3",
+        "training_2025-04-01_2025-05-01.parquet": "9ffe0cf5741c4863799c41be81475dfaecedabe0ba687b8f8e4eacba992f9390",
+        "training_2025-05-01_2025-06-01.parquet": "5481c0642a8fbb4dc395f93bc713c57f4cc16854fb361d404967077e1fce2ff9",
+        "training_2025-06-01_2025-07-01.parquet": "c3ef5080f2cc636c3416baf1555f7d0ee3519f9046e8043c1c0c8f017a244025",
+        "training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+        "training_2025-08-01_2025-09-01.parquet": "6c8d2aa7a1b6c9dff9a0305a37eb02de1e87a68d07557264f41b77738272c540",
+        "training_2025-09-01_2025-10-01.parquet": "955308a4000947e32a00586d3ee13928949d2231b67f84f6dfb0631893f3754a",
+        "training_2025-10-01_2025-11-01.parquet": "4a31a35601c1bdcd74b8cd6379231ba516a48324e4c2478bf1c9360cd23e687f",
+        "training_2025-11-01_2025-12-01.parquet": "ac36b17db7a537e3baeb682fa4763dacaa1fcc5d9bfa6bf32b3ee5d9f91300b0",
+        "training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724"
+      },
+      "code": {
+        "iso/candidate.py": "65ba56e30aafa013a011b3db51c9a8a94d774be789a7d88c680ddd3d8db040d8",
+        "iso/chain.py": "c3bca4935c7616d540957d9098f99b84804b0f908a2dca8b53d72932b347522a",
+        "iso/dump_chain.py": "cc411d597d600c6620d7f6b760895154db367f745bec74539ae5a849a226f1a3",
+        "iso/features.py": "ca96fc42e65f84afd68c299dd53672628c2f1c34572f6761a026eb707be83422",
+        "iso/finalmode.py": "3cd4d8c2525e116fdb2293ce497dc2e7c90d620f56a6132157a2ee3930f18657",
+        "iso/roll_step.py": "9ed97f61ed1d7024a61e4ce6d1c4bccb8deacbdf92833d83d458bde24edce7b9",
+        "iso/score.py": "4b4cfaa5d0816e7fafcb26248532dadb10455e51f83cc06f5958f703dc62488d",
+        "w2/base.py": "ae1de2a55c792b65cbf93026f2f0691e53701e177817f1b9f651854ba8927bc7",
+        "w2/extra_screen.py": "4d2da4aceb5bcd2d77e6d40b9deff06e011be2c9161867d48c3595b4fe15e920",
+        "w2/l2.py": "6e6ccbc458854baeb7c3cf574775fc59f3a8022bc3f7311f6cccfe2261763db5",
+        "w2/l2c.py": "c9cd2869063d5534e81b37ed57675994ee71a2f57eed3a22ca7b78dc5f2358f9",
+        "w2/ords.py": "d2b5c7cd1a6e52d9794e8833bfcf909cd2b6d852b02cda58cf8038534dc20acf",
+        "w2/out.py": "45dbb8e9ee35211dda81d74fdaa51e28b3a7e076bca090339a4eb7838e23236e"
+      },
+      "member": {
+        "name": "s7",
+        "seeds_per_mode": 3,
+        "npz_sha256": "50331424ab7ab47e3cf26a54c642dff6cb003124e40d3e163fe71787d56ee583",
+        "fold": {
+          "public_vector": "release/saved-vectors/s7c/fold.json",
+          "public_vector_sha256": "c1a88032ce99885a951d8ae59a1d5975d0925fa8e1355399a2c61ebcd88a952e",
+          "rows": 344419,
+          "float32_sha256": "d43377ab7c59d6568b533090eacc815a7ecf2edb9f4d2c6d2ffe03cc8b33437b"
+        },
+        "ranking": {
+          "public_vector": "release/saved-vectors/s7c/ranking.json",
+          "public_vector_sha256": "cfaac03ef6ead93d63292fa3e0c8b3582824654c424ac00fc9557cd41c709564",
+          "rows": 344841,
+          "float32_sha256": "66857bf5e0726bf9f434244d618258d42b588350cc4fd502c7f25272b671caf6"
+        }
+      },
+      "intermediate_sha256": {
+        "c5": {
+          "Darwin-arm64": "6385025469ad60ca87b27dda1fddc2c09344dd85c2df92c8578e6e6107475ab3",
+          "Linux-x86_64": "58a2ac917d9145ec2e1f18055839ae609ffe89060de18288e538da772ce483a0"
+        },
+        "w2-l2c": {
+          "Darwin-arm64": "bf2d93e5f576982b116d3f7528a8184a3481249f27809be8aa63eae908712ce2",
+          "Linux-x86_64": "3922dc2ac03dc86bd3e951ad5c931548e9936cf9c86bafccb4885bde5764bbe6"
+        },
+        "v73": {
+          "Darwin-arm64": "780d7ac89f825c18d89ff4c1010571edf424130030e4fccedfb984fe6e238cfa",
+          "Linux-x86_64": "70236754db85e5f23fac281ebbc9c14a3a4fe33c4e6f34e7c95262eebe1659d8"
+        }
+      },
+      "reference_platform": "Linux-x86_64",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/v73-final.json",
+        "public_vector_sha256": "28b0e1caa7b34cecffb919734301c1f71366020adac8e94c2aa4d3f57ed7434f"
+      },
+      "rows": 344841,
+      "id_dtype": "float64",
+      "bytes": 4707451,
+      "sha256": "70236754db85e5f23fac281ebbc9c14a3a4fe33c4e6f34e7c95262eebe1659d8",
+      "value_sha256": "f2548a17fbb0a4b0361c3154bb687b486a10ce0aef0c38bf1e02850536db366a"
+    },
+    "zabd-final": {
+      "recipe": "assembly",
+      "mode": "final",
+      "pack": "release/ZABD-PACK-final.json",
+      "pack_sha256": "2f5bacc4f3fd894ea522af6d3b201061f09ccc3d1d0f167e081e53f927d06d66",
+      "parent_sha256": "abdcfc8fc7bbb1b8e410e0806c1792ac82f35d66d8355640ac6d1fa7fd3d58b5",
+      "with_c65_sha256": "e6995918664f142c195c8ce345938eeb015eed57a1550b9f74b615b76469c49d",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/zabd.json",
+        "public_vector_sha256": "90039a93dff6ac9d257bb9c8b215e8bd98d9956708a1a986b8889d892fa1084c"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641184,
+      "sha256": "30d26797a964e6d7119adaa713cd865f5b6f25f3877c79cbd3c5096f0b5655f8",
+      "value_sha256": "351dfd63110a43e0e26f9d4804b60366a888b133fe3c92b1417c2754e0376f9d"
+    },
+    "v64-final": {
+      "recipe": "composition",
+      "mode": "final",
+      "base": "zabd-final",
+      "base_sha256": "30d26797a964e6d7119adaa713cd865f5b6f25f3877c79cbd3c5096f0b5655f8",
+      "stage": "T11b-L",
+      "pack": "release/ZABD-PACK-final.json",
+      "pack_sha256": "2f5bacc4f3fd894ea522af6d3b201061f09ccc3d1d0f167e081e53f927d06d66",
+      "p2_rows": 8453,
+      "long_taxi_days": {
+        "EGLL": 2,
+        "EHAM": 9,
+        "LFPG": 3,
+        "LTFM": 7
+      },
+      "changed_rows": 7497,
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641232,
+      "sha256": "8cfb8efb552eb0ee545a3d7ccf476c711157c44757287496b59099b5e70f4af1",
+      "value_sha256": "bb2c1b9a5736d8573f787d69c330d472c751dd5b76b5f2d07336b2106ff0a353"
+    },
+    "final": {
+      "recipe": "steps",
+      "stage": "v73-steps",
+      "mode": "final",
+      "base": "v64-final",
+      "base_sha256": "8cfb8efb552eb0ee545a3d7ccf476c711157c44757287496b59099b5e70f4af1",
+      "closure_commit": "66b11c579",
+      "official_sha256": {
+        "ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+        "submitting.parquet": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+        "training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+        "training_2025-02-01_2025-03-01.parquet": "b6f9ff2cdb1cfe07c5442f4e1f11bbcdbeafe52852dcb0b8175f62ab84c6a066",
+        "training_2025-03-01_2025-04-01.parquet": "58fde7e5f8b539546af63b41d7f6ec0f2884fdc3d3dd9b6bfca7c59a420dcdd3",
+        "training_2025-04-01_2025-05-01.parquet": "9ffe0cf5741c4863799c41be81475dfaecedabe0ba687b8f8e4eacba992f9390",
+        "training_2025-05-01_2025-06-01.parquet": "5481c0642a8fbb4dc395f93bc713c57f4cc16854fb361d404967077e1fce2ff9",
+        "training_2025-06-01_2025-07-01.parquet": "c3ef5080f2cc636c3416baf1555f7d0ee3519f9046e8043c1c0c8f017a244025",
+        "training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+        "training_2025-08-01_2025-09-01.parquet": "6c8d2aa7a1b6c9dff9a0305a37eb02de1e87a68d07557264f41b77738272c540",
+        "training_2025-09-01_2025-10-01.parquet": "955308a4000947e32a00586d3ee13928949d2231b67f84f6dfb0631893f3754a",
+        "training_2025-10-01_2025-11-01.parquet": "4a31a35601c1bdcd74b8cd6379231ba516a48324e4c2478bf1c9360cd23e687f",
+        "training_2025-11-01_2025-12-01.parquet": "ac36b17db7a537e3baeb682fa4763dacaa1fcc5d9bfa6bf32b3ee5d9f91300b0",
+        "training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724",
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "code": {
+        "chain_ids.py": "21278f57df7c026fb2d9416ed6eb1d9752719207d1eb37871a7590731b1559c6",
+        "iso/candidate.py": "65ba56e30aafa013a011b3db51c9a8a94d774be789a7d88c680ddd3d8db040d8",
+        "iso/chain.py": "c3bca4935c7616d540957d9098f99b84804b0f908a2dca8b53d72932b347522a",
+        "iso/dump_chain.py": "cc411d597d600c6620d7f6b760895154db367f745bec74539ae5a849a226f1a3",
+        "iso/features.py": "ca96fc42e65f84afd68c299dd53672628c2f1c34572f6761a026eb707be83422",
+        "iso/finalmode.py": "3cd4d8c2525e116fdb2293ce497dc2e7c90d620f56a6132157a2ee3930f18657",
+        "iso/roll_step.py": "9ed97f61ed1d7024a61e4ce6d1c4bccb8deacbdf92833d83d458bde24edce7b9",
+        "iso/score.py": "4b4cfaa5d0816e7fafcb26248532dadb10455e51f83cc06f5958f703dc62488d",
+        "w2/base.py": "ae1de2a55c792b65cbf93026f2f0691e53701e177817f1b9f651854ba8927bc7",
+        "w2/extra_screen.py": "4d2da4aceb5bcd2d77e6d40b9deff06e011be2c9161867d48c3595b4fe15e920",
+        "w2/l2.py": "6e6ccbc458854baeb7c3cf574775fc59f3a8022bc3f7311f6cccfe2261763db5",
+        "w2/l2c.py": "c9cd2869063d5534e81b37ed57675994ee71a2f57eed3a22ca7b78dc5f2358f9",
+        "w2/ords.py": "d2b5c7cd1a6e52d9794e8833bfcf909cd2b6d852b02cda58cf8038534dc20acf",
+        "w2/out.py": "45dbb8e9ee35211dda81d74fdaa51e28b3a7e076bca090339a4eb7838e23236e"
+      },
+      "member": {
+        "name": "s7",
+        "seeds_per_mode": 3,
+        "fold": {
+          "public_vector": "release/saved-vectors/s7c/final-fold.json",
+          "public_vector_sha256": "19e49189e8aca0b54b8043078f48fefc553aec57dc5046ee949a954915fddb36",
+          "rows": 344419,
+          "file_sha256": "390733bc8634b9d898faea76f7786d6158fc8cde48200df9b0331a2b01556471"
+        },
+        "ranking": {
+          "public_vector": "release/saved-vectors/s7c/final-ranking.json",
+          "public_vector_sha256": "f0ed2cdabda206f2be6b707e011a4323881245bd153066f40d37e2d67eade4e8",
+          "rows": 670790,
+          "file_sha256": "8e3956fd5c929b68e0f66155f5e16bad4e13d1c00b2310d04a75723fa8095deb"
+        }
+      },
+      "intermediate_sha256": {
+        "c5": {
+          "Linux-x86_64": "2f0130a84e934e65f7445d538f79ffb4ae493e04638808942d125d631085ad8f"
+        },
+        "w2-l2c": {
+          "Linux-x86_64": "87972433f677a93f628e3a5207ba483214713901949c82dfb8198c21a3bc9023"
+        },
+        "v73": {
+          "Linux-x86_64": "121e33b9880a7a4907ceeb50c8c6ba587529b502fd2c41d570df8925a72f098a"
+        }
+      },
+      "reference_platform": "Linux-x86_64",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/v.json",
+        "public_vector_sha256": "597b962fae2996af3d2967ed7f7fe08ae98ff284e94a3b92e3724ae5f84aff60"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641506,
+      "sha256": "121e33b9880a7a4907ceeb50c8c6ba587529b502fd2c41d570df8925a72f098a",
+      "value_sha256": "0d2800fb79268209fa56367710b39e003f9339e2012979cd5fd5f06e767c10e6"
+    },
+    "final-dh": {
+      "recipe": "steps",
+      "stage": "dh-step",
+      "mode": "final",
+      "base": "final",
+      "base_sha256": "121e33b9880a7a4907ceeb50c8c6ba587529b502fd2c41d570df8925a72f098a",
+      "official_sha256": {
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "code": {
+        "release/dh_stage.py": "689bb6f41ddf4627861b0a4a5112653a94413fbe253aa11f48b56faf234ea986"
+      },
+      "member": {
+        "name": "DH",
+        "part_sha256": "a89366d17a80ee751fb23b7331d9c6ff907896c8bf12a59f6bc7702d11d1ff4f",
+        "w": 0.164,
+        "scope_rows": 14587,
+        "scope": "EDDF typed no-head rows with dark_b, January, February and June 2026",
+        "pred_DH": {
+          "public_vector": "release/saved-vectors/final-entries/dh/pred_DH.json",
+          "public_vector_sha256": "d2ed372b06a605e9835db888bae44bdcd72a31e0d23603783725c43182a9443b",
+          "rows": 670790
+        },
+        "has_head": {
+          "public_vector": "release/saved-vectors/final-entries/dh/has_head.json",
+          "public_vector_sha256": "ed730bcbce68d476d17ffe7058ee5d14ef1c70fedfd8c9747adf0f36e65e1096",
+          "rows": 670790
+        },
+        "w_pair": {
+          "public_vector": "release/saved-vectors/final-entries/dh/w_pair.json",
+          "public_vector_sha256": "7e115f540a6b4413bb7686922c44779ddbbd3e2babd31f51658a0e2f263a4682",
+          "rows": 670790
+        }
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641506,
+      "sha256": "2fe6c56b2705b0731be2b093f30d2763bccfb0b6ae9600855767cb0d12fef700",
+      "value_sha256": "0dd928c9717c0585cd8fa116227d0f43904c86eb7fa06ff3fc09706c824ab2f4"
+    },
+    "final-ii": {
+      "recipe": "steps",
+      "stage": "v73-steps",
+      "mode": "final",
+      "base": "v64-final",
+      "base_sha256": "8cfb8efb552eb0ee545a3d7ccf476c711157c44757287496b59099b5e70f4af1",
+      "official_sha256": {
+        "ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+        "submitting.parquet": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+        "training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+        "training_2025-02-01_2025-03-01.parquet": "b6f9ff2cdb1cfe07c5442f4e1f11bbcdbeafe52852dcb0b8175f62ab84c6a066",
+        "training_2025-03-01_2025-04-01.parquet": "58fde7e5f8b539546af63b41d7f6ec0f2884fdc3d3dd9b6bfca7c59a420dcdd3",
+        "training_2025-04-01_2025-05-01.parquet": "9ffe0cf5741c4863799c41be81475dfaecedabe0ba687b8f8e4eacba992f9390",
+        "training_2025-05-01_2025-06-01.parquet": "5481c0642a8fbb4dc395f93bc713c57f4cc16854fb361d404967077e1fce2ff9",
+        "training_2025-06-01_2025-07-01.parquet": "c3ef5080f2cc636c3416baf1555f7d0ee3519f9046e8043c1c0c8f017a244025",
+        "training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+        "training_2025-08-01_2025-09-01.parquet": "6c8d2aa7a1b6c9dff9a0305a37eb02de1e87a68d07557264f41b77738272c540",
+        "training_2025-09-01_2025-10-01.parquet": "955308a4000947e32a00586d3ee13928949d2231b67f84f6dfb0631893f3754a",
+        "training_2025-10-01_2025-11-01.parquet": "4a31a35601c1bdcd74b8cd6379231ba516a48324e4c2478bf1c9360cd23e687f",
+        "training_2025-11-01_2025-12-01.parquet": "ac36b17db7a537e3baeb682fa4763dacaa1fcc5d9bfa6bf32b3ee5d9f91300b0",
+        "training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724",
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "closure_commit": "a0c484bab",
+      "code": {
+        "chain_ids.py": "21278f57df7c026fb2d9416ed6eb1d9752719207d1eb37871a7590731b1559c6",
+        "iso/candidate.py": "65ba56e30aafa013a011b3db51c9a8a94d774be789a7d88c680ddd3d8db040d8",
+        "iso/chain.py": "c3bca4935c7616d540957d9098f99b84804b0f908a2dca8b53d72932b347522a",
+        "iso/dump_chain.py": "cc411d597d600c6620d7f6b760895154db367f745bec74539ae5a849a226f1a3",
+        "iso/features.py": "ca96fc42e65f84afd68c299dd53672628c2f1c34572f6761a026eb707be83422",
+        "iso/finalmode.py": "3cd4d8c2525e116fdb2293ce497dc2e7c90d620f56a6132157a2ee3930f18657",
+        "iso/roll_step.py": "9ed97f61ed1d7024a61e4ce6d1c4bccb8deacbdf92833d83d458bde24edce7b9",
+        "iso/score.py": "4b4cfaa5d0816e7fafcb26248532dadb10455e51f83cc06f5958f703dc62488d",
+        "w2/base.py": "ae1de2a55c792b65cbf93026f2f0691e53701e177817f1b9f651854ba8927bc7",
+        "w2/extra_screen.py": "4d2da4aceb5bcd2d77e6d40b9deff06e011be2c9161867d48c3595b4fe15e920",
+        "w2/l2.py": "6e6ccbc458854baeb7c3cf574775fc59f3a8022bc3f7311f6cccfe2261763db5",
+        "w2/l2c.py": "c9cd2869063d5534e81b37ed57675994ee71a2f57eed3a22ca7b78dc5f2358f9",
+        "w2/ords.py": "d2b5c7cd1a6e52d9794e8833bfcf909cd2b6d852b02cda58cf8038534dc20acf",
+        "w2/out.py": "45dbb8e9ee35211dda81d74fdaa51e28b3a7e076bca090339a4eb7838e23236e"
+      },
+      "member": {
+        "name": "s7",
+        "seeds_per_mode": 9,
+        "fold": {
+          "public_vector": "release/saved-vectors/s7c9/final-fold.json",
+          "public_vector_sha256": "f1befc3fe649388e5f8a1b2cc7fe391f15b03dd9e98b385c5b4f51c4211e969b",
+          "rows": 344419,
+          "file_sha256": "7060e1604900decd8493470595a0da150b8ace13077dd3a6fd6ab0c7d6217a1e",
+          "float32_sha256": "a12b7b6a15e4029b0c8c3f78e3b2777d0ebdb7da8a3ebc57d59e64c2cfcebd98",
+          "finite_rows": 339046
+        },
+        "ranking": {
+          "public_vector": "release/saved-vectors/s7c9/final-ranking.json",
+          "public_vector_sha256": "25360d39fda48821cb9b97c620267dad16c22c08395f0914d0e3f31506e58eeb",
+          "rows": 670790,
+          "file_sha256": "3614ed1e94c5331c313d7d098e0a5ddc1b2d62864a972dbb4520e1a61383ae46",
+          "float32_sha256": "573022f1d07de9945f8d362748e9f1f73641938736a0b572d8798b93d6f8792f",
+          "finite_rows": 661713
+        }
+      },
+      "l2c_seeds": 3,
+      "intermediate_sha256": {
+        "c5": {
+          "Linux-x86_64": "2f0130a84e934e65f7445d538f79ffb4ae493e04638808942d125d631085ad8f"
+        },
+        "w2-l2c": {
+          "Linux-x86_64": "87972433f677a93f628e3a5207ba483214713901949c82dfb8198c21a3bc9023"
+        },
+        "v73": {
+          "Linux-x86_64": "280db2058f10a5cc3d44acdcf20aed80aae143cfadf2c9c299ddf7212c4f7afc"
+        }
+      },
+      "reference_platform": "Linux-x86_64",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/v-ii.json",
+        "public_vector_sha256": "a8bc6c03b41bb37ac7e0c87cd49554a4c943582ef855ab83338c6084641fef6c"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641506,
+      "sha256": "280db2058f10a5cc3d44acdcf20aed80aae143cfadf2c9c299ddf7212c4f7afc",
+      "value_sha256": "5ff5bfd8c3ffc1fd64a344c608f702c7efff262f97e86c810c55a5e71c7f1141"
+    },
+    "final-ii-dh": {
+      "recipe": "steps",
+      "stage": "dh-step",
+      "mode": "final",
+      "official_sha256": {
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "code": {
+        "release/dh_stage.py": "689bb6f41ddf4627861b0a4a5112653a94413fbe253aa11f48b56faf234ea986"
+      },
+      "member": {
+        "name": "DH",
+        "part_sha256": "a89366d17a80ee751fb23b7331d9c6ff907896c8bf12a59f6bc7702d11d1ff4f",
+        "w": 0.164,
+        "scope_rows": 14587,
+        "scope": "EDDF typed no-head rows with dark_b, January, February and June 2026",
+        "pred_DH": {
+          "public_vector": "release/saved-vectors/final-entries/dh/pred_DH.json",
+          "public_vector_sha256": "d2ed372b06a605e9835db888bae44bdcd72a31e0d23603783725c43182a9443b",
+          "rows": 670790
+        },
+        "has_head": {
+          "public_vector": "release/saved-vectors/final-entries/dh/has_head.json",
+          "public_vector_sha256": "ed730bcbce68d476d17ffe7058ee5d14ef1c70fedfd8c9747adf0f36e65e1096",
+          "rows": 670790
+        },
+        "w_pair": {
+          "public_vector": "release/saved-vectors/final-entries/dh/w_pair.json",
+          "public_vector_sha256": "7e115f540a6b4413bb7686922c44779ddbbd3e2babd31f51658a0e2f263a4682",
+          "rows": 670790
+        }
+      },
+      "base": "final-ii",
+      "base_sha256": "280db2058f10a5cc3d44acdcf20aed80aae143cfadf2c9c299ddf7212c4f7afc",
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641506,
+      "sha256": "bf47551e420f781527901f9178d4d5c6e3f1089943c3c5c38baa4ced81c49c19",
+      "value_sha256": "1c075bba5b22a2c46d785ffb4812a0f0a1c5ef37c60b8dd8da2ef9eb469ef51f"
+    },
+    "final-iii": {
+      "recipe": "steps",
+      "stage": "v73-steps",
+      "mode": "final",
+      "base": "v64-final",
+      "base_sha256": "8cfb8efb552eb0ee545a3d7ccf476c711157c44757287496b59099b5e70f4af1",
+      "official_sha256": {
+        "ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+        "submitting.parquet": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+        "training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+        "training_2025-02-01_2025-03-01.parquet": "b6f9ff2cdb1cfe07c5442f4e1f11bbcdbeafe52852dcb0b8175f62ab84c6a066",
+        "training_2025-03-01_2025-04-01.parquet": "58fde7e5f8b539546af63b41d7f6ec0f2884fdc3d3dd9b6bfca7c59a420dcdd3",
+        "training_2025-04-01_2025-05-01.parquet": "9ffe0cf5741c4863799c41be81475dfaecedabe0ba687b8f8e4eacba992f9390",
+        "training_2025-05-01_2025-06-01.parquet": "5481c0642a8fbb4dc395f93bc713c57f4cc16854fb361d404967077e1fce2ff9",
+        "training_2025-06-01_2025-07-01.parquet": "c3ef5080f2cc636c3416baf1555f7d0ee3519f9046e8043c1c0c8f017a244025",
+        "training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+        "training_2025-08-01_2025-09-01.parquet": "6c8d2aa7a1b6c9dff9a0305a37eb02de1e87a68d07557264f41b77738272c540",
+        "training_2025-09-01_2025-10-01.parquet": "955308a4000947e32a00586d3ee13928949d2231b67f84f6dfb0631893f3754a",
+        "training_2025-10-01_2025-11-01.parquet": "4a31a35601c1bdcd74b8cd6379231ba516a48324e4c2478bf1c9360cd23e687f",
+        "training_2025-11-01_2025-12-01.parquet": "ac36b17db7a537e3baeb682fa4763dacaa1fcc5d9bfa6bf32b3ee5d9f91300b0",
+        "training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724",
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "closure_commit": "a0c484bab",
+      "code": {
+        "chain_ids.py": "21278f57df7c026fb2d9416ed6eb1d9752719207d1eb37871a7590731b1559c6",
+        "iso/candidate.py": "65ba56e30aafa013a011b3db51c9a8a94d774be789a7d88c680ddd3d8db040d8",
+        "iso/chain.py": "c3bca4935c7616d540957d9098f99b84804b0f908a2dca8b53d72932b347522a",
+        "iso/dump_chain.py": "cc411d597d600c6620d7f6b760895154db367f745bec74539ae5a849a226f1a3",
+        "iso/features.py": "ca96fc42e65f84afd68c299dd53672628c2f1c34572f6761a026eb707be83422",
+        "iso/finalmode.py": "3cd4d8c2525e116fdb2293ce497dc2e7c90d620f56a6132157a2ee3930f18657",
+        "iso/roll_step.py": "9ed97f61ed1d7024a61e4ce6d1c4bccb8deacbdf92833d83d458bde24edce7b9",
+        "iso/score.py": "4b4cfaa5d0816e7fafcb26248532dadb10455e51f83cc06f5958f703dc62488d",
+        "w2/base.py": "ae1de2a55c792b65cbf93026f2f0691e53701e177817f1b9f651854ba8927bc7",
+        "w2/extra_screen.py": "4d2da4aceb5bcd2d77e6d40b9deff06e011be2c9161867d48c3595b4fe15e920",
+        "w2/l2.py": "6e6ccbc458854baeb7c3cf574775fc59f3a8022bc3f7311f6cccfe2261763db5",
+        "w2/l2c.py": "c9931e0a6e2192b2391df6d4b4a74b67ab2592934ce5eb420dc177f59e82c9ae",
+        "w2/ords.py": "d2b5c7cd1a6e52d9794e8833bfcf909cd2b6d852b02cda58cf8038534dc20acf",
+        "w2/out.py": "45dbb8e9ee35211dda81d74fdaa51e28b3a7e076bca090339a4eb7838e23236e"
+      },
+      "code_sources": {
+        "w2/l2c.py": "w2/l2c_candidate_a.py"
+      },
+      "member": {
+        "name": "s7",
+        "seeds_per_mode": 9,
+        "fold": {
+          "public_vector": "release/saved-vectors/s7c9/final-fold.json",
+          "public_vector_sha256": "f1befc3fe649388e5f8a1b2cc7fe391f15b03dd9e98b385c5b4f51c4211e969b",
+          "rows": 344419,
+          "file_sha256": "7060e1604900decd8493470595a0da150b8ace13077dd3a6fd6ab0c7d6217a1e",
+          "float32_sha256": "a12b7b6a15e4029b0c8c3f78e3b2777d0ebdb7da8a3ebc57d59e64c2cfcebd98",
+          "finite_rows": 339046
+        },
+        "ranking": {
+          "public_vector": "release/saved-vectors/s7c9/final-ranking.json",
+          "public_vector_sha256": "25360d39fda48821cb9b97c620267dad16c22c08395f0914d0e3f31506e58eeb",
+          "rows": 670790,
+          "file_sha256": "3614ed1e94c5331c313d7d098e0a5ddc1b2d62864a972dbb4520e1a61383ae46",
+          "float32_sha256": "573022f1d07de9945f8d362748e9f1f73641938736a0b572d8798b93d6f8792f",
+          "finite_rows": 661713
+        },
+        "l2c_npz": "work/w2/s7c-l2c.npz"
+      },
+      "l2c_seeds": 9,
+      "intermediate_sha256": {
+        "c5": {
+          "Linux-x86_64": "2f0130a84e934e65f7445d538f79ffb4ae493e04638808942d125d631085ad8f"
+        },
+        "w2-l2c": {
+          "Linux-x86_64": "72c3e909c8788e086974fe115184798fdb1f9823284376daffbaeb02c28b2fbb"
+        },
+        "v73": {
+          "Linux-x86_64": "6de02372de5d1aea062300a88af7af51606ac2d6aee645c384b09398c9c57378"
+        }
+      },
+      "reference_platform": "Linux-x86_64",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/v-iii.json",
+        "public_vector_sha256": "56935ac3e8c42b5a77996dcd2bf5b57c5fbd301c7ed4cf0f236d2602ba6197cd"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641506,
+      "sha256": "6de02372de5d1aea062300a88af7af51606ac2d6aee645c384b09398c9c57378",
+      "value_sha256": "e265094b2b975410acf719ef6470e0f1bc06e322543063adf0430436dc1bda6b"
+    },
+    "final-iii-dh": {
+      "recipe": "steps",
+      "stage": "dh-step",
+      "mode": "final",
+      "official_sha256": {
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "code": {
+        "release/dh_stage.py": "689bb6f41ddf4627861b0a4a5112653a94413fbe253aa11f48b56faf234ea986"
+      },
+      "member": {
+        "name": "DH",
+        "part_sha256": "a89366d17a80ee751fb23b7331d9c6ff907896c8bf12a59f6bc7702d11d1ff4f",
+        "w": 0.164,
+        "scope_rows": 14587,
+        "scope": "EDDF typed no-head rows with dark_b, January, February and June 2026",
+        "pred_DH": {
+          "public_vector": "release/saved-vectors/final-entries/dh/pred_DH.json",
+          "public_vector_sha256": "d2ed372b06a605e9835db888bae44bdcd72a31e0d23603783725c43182a9443b",
+          "rows": 670790
+        },
+        "has_head": {
+          "public_vector": "release/saved-vectors/final-entries/dh/has_head.json",
+          "public_vector_sha256": "ed730bcbce68d476d17ffe7058ee5d14ef1c70fedfd8c9747adf0f36e65e1096",
+          "rows": 670790
+        },
+        "w_pair": {
+          "public_vector": "release/saved-vectors/final-entries/dh/w_pair.json",
+          "public_vector_sha256": "7e115f540a6b4413bb7686922c44779ddbbd3e2babd31f51658a0e2f263a4682",
+          "rows": 670790
+        }
+      },
+      "base": "final-iii",
+      "base_sha256": "6de02372de5d1aea062300a88af7af51606ac2d6aee645c384b09398c9c57378",
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641506,
+      "sha256": "c45116502cad96dbb270467b9f2ae26fb6e06d9a50ca34ff214253609f44612d",
+      "value_sha256": "3b9f655c53c5886c963db9b269da8004ce177c2b04a5879a2d41ea2a5117f6b5"
+    },
+    "zabd-final-r9": {
+      "recipe": "assembly",
+      "mode": "final",
+      "pack": "release/ZABD-PACK-final-r9.json",
+      "pack_sha256": "136b3f874daa5e8608be96909cc317052b3afd13e3a44237ac19527566af087a",
+      "parent_sha256": "c26b05de56c9895b2d09ff0933e173b1690c74787d0d804a59cadb64bb485581",
+      "with_c65_sha256": "664827850fd6ef3dcc402a9e4a1442585dc9d4598fcf230e63c3e9710c58ae1a",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/r9/zabd.json",
+        "public_vector_sha256": "3ff33a1e45a2e3c8154708a33b25463f68d414919a3e701c687b0b73f7663999"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641184,
+      "sha256": "d26dadd03005d6847daf9ed2e3beb42908b350811def494dcb07d56a63e8f203",
+      "value_sha256": "43974edc699b35fcb1634a7a0ce5b8a2f87b4a5ac395f676154eb477b4df5382"
+    },
+    "v64-final-r9": {
+      "recipe": "composition",
+      "mode": "final",
+      "base": "zabd-final-r9",
+      "base_sha256": "d26dadd03005d6847daf9ed2e3beb42908b350811def494dcb07d56a63e8f203",
+      "stage": "T11b-L",
+      "pack": "release/ZABD-PACK-final-r9.json",
+      "pack_sha256": "136b3f874daa5e8608be96909cc317052b3afd13e3a44237ac19527566af087a",
+      "p2_rows": 8453,
+      "long_taxi_days": {
+        "EGLL": 2,
+        "EHAM": 9,
+        "LFPG": 3,
+        "LTFM": 7
+      },
+      "changed_rows": 7497,
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641232,
+      "sha256": "3884f9058606bb6f0d1b5ec5813cc56014e30293ab4ffb31b703e993b3c70112",
+      "value_sha256": "201a614d061b027fcbd1d45c3164c3d9b2e4aa1ab5050f5f5cd1d090870622ba"
+    },
+    "final-iii-r9": {
+      "recipe": "steps",
+      "stage": "v73-steps",
+      "mode": "final",
+      "base": "v64-final-r9",
+      "base_sha256": "3884f9058606bb6f0d1b5ec5813cc56014e30293ab4ffb31b703e993b3c70112",
+      "official_sha256": {
+        "ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+        "submitting.parquet": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+        "training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+        "training_2025-02-01_2025-03-01.parquet": "b6f9ff2cdb1cfe07c5442f4e1f11bbcdbeafe52852dcb0b8175f62ab84c6a066",
+        "training_2025-03-01_2025-04-01.parquet": "58fde7e5f8b539546af63b41d7f6ec0f2884fdc3d3dd9b6bfca7c59a420dcdd3",
+        "training_2025-04-01_2025-05-01.parquet": "9ffe0cf5741c4863799c41be81475dfaecedabe0ba687b8f8e4eacba992f9390",
+        "training_2025-05-01_2025-06-01.parquet": "5481c0642a8fbb4dc395f93bc713c57f4cc16854fb361d404967077e1fce2ff9",
+        "training_2025-06-01_2025-07-01.parquet": "c3ef5080f2cc636c3416baf1555f7d0ee3519f9046e8043c1c0c8f017a244025",
+        "training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+        "training_2025-08-01_2025-09-01.parquet": "6c8d2aa7a1b6c9dff9a0305a37eb02de1e87a68d07557264f41b77738272c540",
+        "training_2025-09-01_2025-10-01.parquet": "955308a4000947e32a00586d3ee13928949d2231b67f84f6dfb0631893f3754a",
+        "training_2025-10-01_2025-11-01.parquet": "4a31a35601c1bdcd74b8cd6379231ba516a48324e4c2478bf1c9360cd23e687f",
+        "training_2025-11-01_2025-12-01.parquet": "ac36b17db7a537e3baeb682fa4763dacaa1fcc5d9bfa6bf32b3ee5d9f91300b0",
+        "training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724",
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "closure_commit": "046b08bea",
+      "code": {
+        "chain_ids.py": "21278f57df7c026fb2d9416ed6eb1d9752719207d1eb37871a7590731b1559c6",
+        "iso/candidate.py": "65ba56e30aafa013a011b3db51c9a8a94d774be789a7d88c680ddd3d8db040d8",
+        "iso/chain.py": "c3bca4935c7616d540957d9098f99b84804b0f908a2dca8b53d72932b347522a",
+        "iso/dump_chain.py": "cc411d597d600c6620d7f6b760895154db367f745bec74539ae5a849a226f1a3",
+        "iso/features.py": "ca96fc42e65f84afd68c299dd53672628c2f1c34572f6761a026eb707be83422",
+        "iso/finalmode.py": "3cd4d8c2525e116fdb2293ce497dc2e7c90d620f56a6132157a2ee3930f18657",
+        "iso/roll_step.py": "9ed97f61ed1d7024a61e4ce6d1c4bccb8deacbdf92833d83d458bde24edce7b9",
+        "iso/score.py": "4b4cfaa5d0816e7fafcb26248532dadb10455e51f83cc06f5958f703dc62488d",
+        "w2/base.py": "ae1de2a55c792b65cbf93026f2f0691e53701e177817f1b9f651854ba8927bc7",
+        "w2/extra_screen.py": "4d2da4aceb5bcd2d77e6d40b9deff06e011be2c9161867d48c3595b4fe15e920",
+        "w2/l2.py": "6e6ccbc458854baeb7c3cf574775fc59f3a8022bc3f7311f6cccfe2261763db5",
+        "w2/l2c.py": "c9931e0a6e2192b2391df6d4b4a74b67ab2592934ce5eb420dc177f59e82c9ae",
+        "w2/ords.py": "d2b5c7cd1a6e52d9794e8833bfcf909cd2b6d852b02cda58cf8038534dc20acf",
+        "w2/out.py": "45dbb8e9ee35211dda81d74fdaa51e28b3a7e076bca090339a4eb7838e23236e"
+      },
+      "code_sources": {
+        "w2/l2c.py": "w2/l2c_candidate_a.py"
+      },
+      "member": {
+        "name": "s7",
+        "seeds_per_mode": 9,
+        "fold": {
+          "public_vector": "release/saved-vectors/s7c9/final-fold.json",
+          "public_vector_sha256": "f1befc3fe649388e5f8a1b2cc7fe391f15b03dd9e98b385c5b4f51c4211e969b",
+          "rows": 344419,
+          "file_sha256": "7060e1604900decd8493470595a0da150b8ace13077dd3a6fd6ab0c7d6217a1e",
+          "float32_sha256": "a12b7b6a15e4029b0c8c3f78e3b2777d0ebdb7da8a3ebc57d59e64c2cfcebd98",
+          "finite_rows": 339046
+        },
+        "ranking": {
+          "public_vector": "release/saved-vectors/s7c9/final-ranking.json",
+          "public_vector_sha256": "25360d39fda48821cb9b97c620267dad16c22c08395f0914d0e3f31506e58eeb",
+          "rows": 670790,
+          "file_sha256": "3614ed1e94c5331c313d7d098e0a5ddc1b2d62864a972dbb4520e1a61383ae46",
+          "float32_sha256": "573022f1d07de9945f8d362748e9f1f73641938736a0b572d8798b93d6f8792f",
+          "finite_rows": 661713
+        },
+        "l2c_npz": "work/w2/s7c-l2c.npz"
+      },
+      "l2c_seeds": 9,
+      "intermediate_sha256": {
+        "c5": {
+          "Linux-x86_64": "0f8280246f02162d4232577af04f9a23bdf78dd3bc29028536fdbbce18fcf56a"
+        },
+        "w2-l2c": {
+          "Linux-x86_64": "d71244b4f41911bb4bcdd96d9bce2e5957aed665d54c44818a66d66268d76116"
+        },
+        "v73": {
+          "Linux-x86_64": "1c1ed67bdd7e54182bafb9a3eb08b48e6e708e981af6bb607c0016ca1f010c4b"
+        }
+      },
+      "reference_platform": "Linux-x86_64",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/r9/v-iii.json",
+        "public_vector_sha256": "24ddbf8baf15ed45cd7f0ac881ab921c2661da6c7670211e370775a53ee300cb"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "1c1ed67bdd7e54182bafb9a3eb08b48e6e708e981af6bb607c0016ca1f010c4b",
+      "value_sha256": "a8c33583a73bc0dc553e7db1b959792f01be7642f92d608438d437341322d12f"
+    },
+    "final-iii-dh-r9": {
+      "recipe": "steps",
+      "stage": "dh-step",
+      "mode": "final",
+      "official_sha256": {
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "code": {
+        "release/dh_stage.py": "689bb6f41ddf4627861b0a4a5112653a94413fbe253aa11f48b56faf234ea986"
+      },
+      "member": {
+        "name": "DH",
+        "part_sha256": "a89366d17a80ee751fb23b7331d9c6ff907896c8bf12a59f6bc7702d11d1ff4f",
+        "w": 0.164,
+        "scope_rows": 14587,
+        "scope": "EDDF typed no-head rows with dark_b, January, February and June 2026",
+        "pred_DH": {
+          "public_vector": "release/saved-vectors/final-entries/dh/pred_DH.json",
+          "public_vector_sha256": "d2ed372b06a605e9835db888bae44bdcd72a31e0d23603783725c43182a9443b",
+          "rows": 670790
+        },
+        "has_head": {
+          "public_vector": "release/saved-vectors/final-entries/dh/has_head.json",
+          "public_vector_sha256": "ed730bcbce68d476d17ffe7058ee5d14ef1c70fedfd8c9747adf0f36e65e1096",
+          "rows": 670790
+        },
+        "w_pair": {
+          "public_vector": "release/saved-vectors/final-entries/dh/w_pair.json",
+          "public_vector_sha256": "7e115f540a6b4413bb7686922c44779ddbbd3e2babd31f51658a0e2f263a4682",
+          "rows": 670790
+        }
+      },
+      "base": "final-iii-r9",
+      "base_sha256": "1c1ed67bdd7e54182bafb9a3eb08b48e6e708e981af6bb607c0016ca1f010c4b",
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "4ac66707333eab1b32c43db0f412907e05d35e268d6a869065dba3fdc99b8139",
+      "value_sha256": "994deb89cc78360b2045be69221ba477cb59d80eb03821ac7016eb06016d03d0"
+    },
+    "final-iii-r9-ld": {
+      "recipe": "steps",
+      "stage": "v73-steps",
+      "mode": "final",
+      "base": "v64-final-r9",
+      "base_sha256": "3884f9058606bb6f0d1b5ec5813cc56014e30293ab4ffb31b703e993b3c70112",
+      "official_sha256": {
+        "ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+        "submitting.parquet": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+        "training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+        "training_2025-02-01_2025-03-01.parquet": "b6f9ff2cdb1cfe07c5442f4e1f11bbcdbeafe52852dcb0b8175f62ab84c6a066",
+        "training_2025-03-01_2025-04-01.parquet": "58fde7e5f8b539546af63b41d7f6ec0f2884fdc3d3dd9b6bfca7c59a420dcdd3",
+        "training_2025-04-01_2025-05-01.parquet": "9ffe0cf5741c4863799c41be81475dfaecedabe0ba687b8f8e4eacba992f9390",
+        "training_2025-05-01_2025-06-01.parquet": "5481c0642a8fbb4dc395f93bc713c57f4cc16854fb361d404967077e1fce2ff9",
+        "training_2025-06-01_2025-07-01.parquet": "c3ef5080f2cc636c3416baf1555f7d0ee3519f9046e8043c1c0c8f017a244025",
+        "training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+        "training_2025-08-01_2025-09-01.parquet": "6c8d2aa7a1b6c9dff9a0305a37eb02de1e87a68d07557264f41b77738272c540",
+        "training_2025-09-01_2025-10-01.parquet": "955308a4000947e32a00586d3ee13928949d2231b67f84f6dfb0631893f3754a",
+        "training_2025-10-01_2025-11-01.parquet": "4a31a35601c1bdcd74b8cd6379231ba516a48324e4c2478bf1c9360cd23e687f",
+        "training_2025-11-01_2025-12-01.parquet": "ac36b17db7a537e3baeb682fa4763dacaa1fcc5d9bfa6bf32b3ee5d9f91300b0",
+        "training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724",
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "closure_commit": "fa170fcd0",
+      "code": {
+        "chain_ids.py": "21278f57df7c026fb2d9416ed6eb1d9752719207d1eb37871a7590731b1559c6",
+        "iso/candidate.py": "65ba56e30aafa013a011b3db51c9a8a94d774be789a7d88c680ddd3d8db040d8",
+        "iso/chain.py": "c3bca4935c7616d540957d9098f99b84804b0f908a2dca8b53d72932b347522a",
+        "iso/dump_chain.py": "cc411d597d600c6620d7f6b760895154db367f745bec74539ae5a849a226f1a3",
+        "iso/features.py": "ca96fc42e65f84afd68c299dd53672628c2f1c34572f6761a026eb707be83422",
+        "iso/finalmode.py": "3cd4d8c2525e116fdb2293ce497dc2e7c90d620f56a6132157a2ee3930f18657",
+        "iso/roll_step.py": "9ed97f61ed1d7024a61e4ce6d1c4bccb8deacbdf92833d83d458bde24edce7b9",
+        "iso/score.py": "4b4cfaa5d0816e7fafcb26248532dadb10455e51f83cc06f5958f703dc62488d",
+        "w2/base.py": "ae1de2a55c792b65cbf93026f2f0691e53701e177817f1b9f651854ba8927bc7",
+        "w2/extra_screen.py": "4d2da4aceb5bcd2d77e6d40b9deff06e011be2c9161867d48c3595b4fe15e920",
+        "w2/l2.py": "6e6ccbc458854baeb7c3cf574775fc59f3a8022bc3f7311f6cccfe2261763db5",
+        "w2/l2c.py": "c9931e0a6e2192b2391df6d4b4a74b67ab2592934ce5eb420dc177f59e82c9ae",
+        "w2/ords.py": "1da4f3a09fd4b26b70413ec2df3a5fb6a0d96de84b50ec8b6c9f393684976551",
+        "w2/out.py": "45dbb8e9ee35211dda81d74fdaa51e28b3a7e076bca090339a4eb7838e23236e"
+      },
+      "code_sources": {
+        "w2/l2c.py": "w2/l2c_candidate_a.py",
+        "w2/ords.py": "w2/ords_ld.py"
+      },
+      "member": {
+        "name": "s7",
+        "seeds_per_mode": 9,
+        "fold": {
+          "public_vector": "release/saved-vectors/s7c9/final-fold.json",
+          "public_vector_sha256": "f1befc3fe649388e5f8a1b2cc7fe391f15b03dd9e98b385c5b4f51c4211e969b",
+          "rows": 344419,
+          "file_sha256": "7060e1604900decd8493470595a0da150b8ace13077dd3a6fd6ab0c7d6217a1e",
+          "float32_sha256": "a12b7b6a15e4029b0c8c3f78e3b2777d0ebdb7da8a3ebc57d59e64c2cfcebd98",
+          "finite_rows": 339046
+        },
+        "ranking": {
+          "public_vector": "release/saved-vectors/s7c9/final-ranking.json",
+          "public_vector_sha256": "25360d39fda48821cb9b97c620267dad16c22c08395f0914d0e3f31506e58eeb",
+          "rows": 670790,
+          "file_sha256": "3614ed1e94c5331c313d7d098e0a5ddc1b2d62864a972dbb4520e1a61383ae46",
+          "float32_sha256": "573022f1d07de9945f8d362748e9f1f73641938736a0b572d8798b93d6f8792f",
+          "finite_rows": 661713
+        },
+        "l2c_npz": "work/w2/s7c-l2c.npz",
+        "ords_flags": [
+          "--long-days"
+        ]
+      },
+      "l2c_seeds": 9,
+      "intermediate_sha256": {
+        "c5": {
+          "Linux-x86_64": "0f8280246f02162d4232577af04f9a23bdf78dd3bc29028536fdbbce18fcf56a"
+        },
+        "w2-l2c": {
+          "Linux-x86_64": "d71244b4f41911bb4bcdd96d9bce2e5957aed665d54c44818a66d66268d76116"
+        },
+        "v73": {
+          "Linux-x86_64": "260b427b83f99921b26ce372bad78fbcb3718b402e7a8bd0725a914ae3da114d"
+        }
+      },
+      "reference_platform": "Linux-x86_64",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/r9-ld/v-iii.json",
+        "public_vector_sha256": "92525eefd781b5fe9698b73af6b6efbb3ea878255bf6a9d61a742478075a7f4f"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "260b427b83f99921b26ce372bad78fbcb3718b402e7a8bd0725a914ae3da114d",
+      "value_sha256": "f61d475589068180760fc910b0f39a960683030f0cea1a2551786a944484cbcd"
+    },
+    "final-iii-dh-r9-ld": {
+      "recipe": "steps",
+      "stage": "dh-step",
+      "mode": "final",
+      "official_sha256": {
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "code": {
+        "release/dh_stage.py": "689bb6f41ddf4627861b0a4a5112653a94413fbe253aa11f48b56faf234ea986"
+      },
+      "member": {
+        "name": "DH",
+        "part_sha256": "a89366d17a80ee751fb23b7331d9c6ff907896c8bf12a59f6bc7702d11d1ff4f",
+        "w": 0.164,
+        "scope_rows": 14587,
+        "scope": "EDDF typed no-head rows with dark_b, January, February and June 2026",
+        "pred_DH": {
+          "public_vector": "release/saved-vectors/final-entries/dh/pred_DH.json",
+          "public_vector_sha256": "d2ed372b06a605e9835db888bae44bdcd72a31e0d23603783725c43182a9443b",
+          "rows": 670790
+        },
+        "has_head": {
+          "public_vector": "release/saved-vectors/final-entries/dh/has_head.json",
+          "public_vector_sha256": "ed730bcbce68d476d17ffe7058ee5d14ef1c70fedfd8c9747adf0f36e65e1096",
+          "rows": 670790
+        },
+        "w_pair": {
+          "public_vector": "release/saved-vectors/final-entries/dh/w_pair.json",
+          "public_vector_sha256": "7e115f540a6b4413bb7686922c44779ddbbd3e2babd31f51658a0e2f263a4682",
+          "rows": 670790
+        }
+      },
+      "base": "final-iii-r9-ld",
+      "base_sha256": "260b427b83f99921b26ce372bad78fbcb3718b402e7a8bd0725a914ae3da114d",
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "07d4a4e6344f5c681761a00a851d23dd9dd6bc8675861179b0de80b4fe669865",
+      "value_sha256": "b5c91ae73bb8f6274d46df88593c49760aeb7b9e11d8b4711f6a8967d0790c8a"
+    },
+    "final-v": {
+      "recipe": "steps",
+      "stage": "v73-steps",
+      "mode": "final",
+      "base": "v64-final",
+      "base_sha256": "8cfb8efb552eb0ee545a3d7ccf476c711157c44757287496b59099b5e70f4af1",
+      "official_sha256": {
+        "ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+        "submitting.parquet": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+        "training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+        "training_2025-02-01_2025-03-01.parquet": "b6f9ff2cdb1cfe07c5442f4e1f11bbcdbeafe52852dcb0b8175f62ab84c6a066",
+        "training_2025-03-01_2025-04-01.parquet": "58fde7e5f8b539546af63b41d7f6ec0f2884fdc3d3dd9b6bfca7c59a420dcdd3",
+        "training_2025-04-01_2025-05-01.parquet": "9ffe0cf5741c4863799c41be81475dfaecedabe0ba687b8f8e4eacba992f9390",
+        "training_2025-05-01_2025-06-01.parquet": "5481c0642a8fbb4dc395f93bc713c57f4cc16854fb361d404967077e1fce2ff9",
+        "training_2025-06-01_2025-07-01.parquet": "c3ef5080f2cc636c3416baf1555f7d0ee3519f9046e8043c1c0c8f017a244025",
+        "training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+        "training_2025-08-01_2025-09-01.parquet": "6c8d2aa7a1b6c9dff9a0305a37eb02de1e87a68d07557264f41b77738272c540",
+        "training_2025-09-01_2025-10-01.parquet": "955308a4000947e32a00586d3ee13928949d2231b67f84f6dfb0631893f3754a",
+        "training_2025-10-01_2025-11-01.parquet": "4a31a35601c1bdcd74b8cd6379231ba516a48324e4c2478bf1c9360cd23e687f",
+        "training_2025-11-01_2025-12-01.parquet": "ac36b17db7a537e3baeb682fa4763dacaa1fcc5d9bfa6bf32b3ee5d9f91300b0",
+        "training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724",
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "closure_commit": "46a2f4ab7",
+      "code": {
+        "chain_ids.py": "21278f57df7c026fb2d9416ed6eb1d9752719207d1eb37871a7590731b1559c6",
+        "iso/candidate.py": "65ba56e30aafa013a011b3db51c9a8a94d774be789a7d88c680ddd3d8db040d8",
+        "iso/chain.py": "c3bca4935c7616d540957d9098f99b84804b0f908a2dca8b53d72932b347522a",
+        "iso/dump_chain.py": "cc411d597d600c6620d7f6b760895154db367f745bec74539ae5a849a226f1a3",
+        "iso/features.py": "ca96fc42e65f84afd68c299dd53672628c2f1c34572f6761a026eb707be83422",
+        "iso/finalmode.py": "3cd4d8c2525e116fdb2293ce497dc2e7c90d620f56a6132157a2ee3930f18657",
+        "iso/roll_step.py": "9ed97f61ed1d7024a61e4ce6d1c4bccb8deacbdf92833d83d458bde24edce7b9",
+        "iso/score.py": "4b4cfaa5d0816e7fafcb26248532dadb10455e51f83cc06f5958f703dc62488d",
+        "w2/base.py": "ae1de2a55c792b65cbf93026f2f0691e53701e177817f1b9f651854ba8927bc7",
+        "w2/extra_screen.py": "4d2da4aceb5bcd2d77e6d40b9deff06e011be2c9161867d48c3595b4fe15e920",
+        "w2/l2.py": "6e6ccbc458854baeb7c3cf574775fc59f3a8022bc3f7311f6cccfe2261763db5",
+        "w2/l2c.py": "c9931e0a6e2192b2391df6d4b4a74b67ab2592934ce5eb420dc177f59e82c9ae",
+        "w2/ords.py": "d2b5c7cd1a6e52d9794e8833bfcf909cd2b6d852b02cda58cf8038534dc20acf",
+        "w2/out.py": "45dbb8e9ee35211dda81d74fdaa51e28b3a7e076bca090339a4eb7838e23236e"
+      },
+      "code_sources": {
+        "w2/l2c.py": "w2/l2c_candidate_a.py"
+      },
+      "member": {
+        "name": "s7",
+        "seeds_per_mode": 15,
+        "fold": {
+          "public_vector": "release/saved-vectors/s7c15/final-fold.json",
+          "public_vector_sha256": "b77db72bbf56c42ebee96e896eeb8e7786e58e8b7e39515256caece5d10b4ec9",
+          "rows": 344419,
+          "file_sha256": "40bdf34b6ebfcd573ecdef8ef1c46d6a7d28df44d9d3200d360ffbada8c11f66",
+          "float32_sha256": "3046a80d5453cee4a68812d0126bf73a21c397f29a193e7e3f5999d5560f57d0",
+          "finite_rows": 339046
+        },
+        "ranking": {
+          "public_vector": "release/saved-vectors/s7c15/final-ranking.json",
+          "public_vector_sha256": "14c152837a6c31103a4b21bb8e9ebe48f4542c6cedc23a4616ed903c802712b6",
+          "rows": 670790,
+          "file_sha256": "f2995bc391d8ba3d22fcc56ca3a9122abd14eb411ec9d8f20cec56caf6621e03",
+          "float32_sha256": "c3f17c382eef78b19a94cbbedc20c5a58a3809707af194557a68cfb54535e5a4",
+          "finite_rows": 661713
+        },
+        "l2c_npz": "work/w2/s7c-l2c.npz"
+      },
+      "l2c_seeds": 9,
+      "intermediate_sha256": {
+        "c5": {
+          "Linux-x86_64": "2f0130a84e934e65f7445d538f79ffb4ae493e04638808942d125d631085ad8f"
+        },
+        "w2-l2c": {
+          "Linux-x86_64": "a33dae4132f23a78cbad7ec0bad39661822684b7074d332e914d4546f99f4e2d"
+        },
+        "v73": {
+          "Linux-x86_64": "a9146e9d3c057e5fbad3c7acf7f8e448efbbfdfdbe02f9e073948fc6ab34e903"
+        }
+      },
+      "reference_platform": "Linux-x86_64",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/s15/v-v.json",
+        "public_vector_sha256": "55494d074a5fe9b1477c0860981d775ca549349a6508eab9db56e97737c4fafe"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "a9146e9d3c057e5fbad3c7acf7f8e448efbbfdfdbe02f9e073948fc6ab34e903",
+      "value_sha256": "9d5b239cdafc0f712628f2375c5e28012b5859113aa2164ec4b945f50d23519e"
+    },
+    "final-v-dh": {
+      "recipe": "steps",
+      "stage": "dh-step",
+      "mode": "final",
+      "official_sha256": {
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "code": {
+        "release/dh_stage.py": "689bb6f41ddf4627861b0a4a5112653a94413fbe253aa11f48b56faf234ea986"
+      },
+      "member": {
+        "name": "DH",
+        "part_sha256": "a89366d17a80ee751fb23b7331d9c6ff907896c8bf12a59f6bc7702d11d1ff4f",
+        "w": 0.164,
+        "scope_rows": 14587,
+        "scope": "EDDF typed no-head rows with dark_b, January, February and June 2026",
+        "pred_DH": {
+          "public_vector": "release/saved-vectors/final-entries/dh/pred_DH.json",
+          "public_vector_sha256": "d2ed372b06a605e9835db888bae44bdcd72a31e0d23603783725c43182a9443b",
+          "rows": 670790
+        },
+        "has_head": {
+          "public_vector": "release/saved-vectors/final-entries/dh/has_head.json",
+          "public_vector_sha256": "ed730bcbce68d476d17ffe7058ee5d14ef1c70fedfd8c9747adf0f36e65e1096",
+          "rows": 670790
+        },
+        "w_pair": {
+          "public_vector": "release/saved-vectors/final-entries/dh/w_pair.json",
+          "public_vector_sha256": "7e115f540a6b4413bb7686922c44779ddbbd3e2babd31f51658a0e2f263a4682",
+          "rows": 670790
+        }
+      },
+      "base": "final-v",
+      "base_sha256": "a9146e9d3c057e5fbad3c7acf7f8e448efbbfdfdbe02f9e073948fc6ab34e903",
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "833533adfc04e76dbd3f300b5c69945ce305a0111a858b5a08a67ad85f880cfa",
+      "value_sha256": "6c235bcf28d84160d8e73bcbc7603f793b0a8a7fc590551eb25b30d445ede695"
+    },
+    "final-v-r9": {
+      "recipe": "steps",
+      "stage": "v73-steps",
+      "mode": "final",
+      "base": "v64-final-r9",
+      "base_sha256": "3884f9058606bb6f0d1b5ec5813cc56014e30293ab4ffb31b703e993b3c70112",
+      "official_sha256": {
+        "ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+        "submitting.parquet": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+        "training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+        "training_2025-02-01_2025-03-01.parquet": "b6f9ff2cdb1cfe07c5442f4e1f11bbcdbeafe52852dcb0b8175f62ab84c6a066",
+        "training_2025-03-01_2025-04-01.parquet": "58fde7e5f8b539546af63b41d7f6ec0f2884fdc3d3dd9b6bfca7c59a420dcdd3",
+        "training_2025-04-01_2025-05-01.parquet": "9ffe0cf5741c4863799c41be81475dfaecedabe0ba687b8f8e4eacba992f9390",
+        "training_2025-05-01_2025-06-01.parquet": "5481c0642a8fbb4dc395f93bc713c57f4cc16854fb361d404967077e1fce2ff9",
+        "training_2025-06-01_2025-07-01.parquet": "c3ef5080f2cc636c3416baf1555f7d0ee3519f9046e8043c1c0c8f017a244025",
+        "training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+        "training_2025-08-01_2025-09-01.parquet": "6c8d2aa7a1b6c9dff9a0305a37eb02de1e87a68d07557264f41b77738272c540",
+        "training_2025-09-01_2025-10-01.parquet": "955308a4000947e32a00586d3ee13928949d2231b67f84f6dfb0631893f3754a",
+        "training_2025-10-01_2025-11-01.parquet": "4a31a35601c1bdcd74b8cd6379231ba516a48324e4c2478bf1c9360cd23e687f",
+        "training_2025-11-01_2025-12-01.parquet": "ac36b17db7a537e3baeb682fa4763dacaa1fcc5d9bfa6bf32b3ee5d9f91300b0",
+        "training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724",
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "closure_commit": "757fbb271",
+      "code": {
+        "chain_ids.py": "21278f57df7c026fb2d9416ed6eb1d9752719207d1eb37871a7590731b1559c6",
+        "iso/candidate.py": "65ba56e30aafa013a011b3db51c9a8a94d774be789a7d88c680ddd3d8db040d8",
+        "iso/chain.py": "c3bca4935c7616d540957d9098f99b84804b0f908a2dca8b53d72932b347522a",
+        "iso/dump_chain.py": "cc411d597d600c6620d7f6b760895154db367f745bec74539ae5a849a226f1a3",
+        "iso/features.py": "ca96fc42e65f84afd68c299dd53672628c2f1c34572f6761a026eb707be83422",
+        "iso/finalmode.py": "3cd4d8c2525e116fdb2293ce497dc2e7c90d620f56a6132157a2ee3930f18657",
+        "iso/roll_step.py": "9ed97f61ed1d7024a61e4ce6d1c4bccb8deacbdf92833d83d458bde24edce7b9",
+        "iso/score.py": "4b4cfaa5d0816e7fafcb26248532dadb10455e51f83cc06f5958f703dc62488d",
+        "w2/base.py": "ae1de2a55c792b65cbf93026f2f0691e53701e177817f1b9f651854ba8927bc7",
+        "w2/extra_screen.py": "4d2da4aceb5bcd2d77e6d40b9deff06e011be2c9161867d48c3595b4fe15e920",
+        "w2/l2.py": "6e6ccbc458854baeb7c3cf574775fc59f3a8022bc3f7311f6cccfe2261763db5",
+        "w2/l2c.py": "c9931e0a6e2192b2391df6d4b4a74b67ab2592934ce5eb420dc177f59e82c9ae",
+        "w2/ords.py": "d2b5c7cd1a6e52d9794e8833bfcf909cd2b6d852b02cda58cf8038534dc20acf",
+        "w2/out.py": "45dbb8e9ee35211dda81d74fdaa51e28b3a7e076bca090339a4eb7838e23236e"
+      },
+      "code_sources": {
+        "w2/l2c.py": "w2/l2c_candidate_a.py"
+      },
+      "member": {
+        "name": "s7",
+        "seeds_per_mode": 15,
+        "fold": {
+          "public_vector": "release/saved-vectors/s7c15/final-fold.json",
+          "public_vector_sha256": "b77db72bbf56c42ebee96e896eeb8e7786e58e8b7e39515256caece5d10b4ec9",
+          "rows": 344419,
+          "file_sha256": "40bdf34b6ebfcd573ecdef8ef1c46d6a7d28df44d9d3200d360ffbada8c11f66",
+          "float32_sha256": "3046a80d5453cee4a68812d0126bf73a21c397f29a193e7e3f5999d5560f57d0",
+          "finite_rows": 339046
+        },
+        "ranking": {
+          "public_vector": "release/saved-vectors/s7c15/final-ranking.json",
+          "public_vector_sha256": "14c152837a6c31103a4b21bb8e9ebe48f4542c6cedc23a4616ed903c802712b6",
+          "rows": 670790,
+          "file_sha256": "f2995bc391d8ba3d22fcc56ca3a9122abd14eb411ec9d8f20cec56caf6621e03",
+          "float32_sha256": "c3f17c382eef78b19a94cbbedc20c5a58a3809707af194557a68cfb54535e5a4",
+          "finite_rows": 661713
+        },
+        "l2c_npz": "work/w2/s7c-l2c.npz"
+      },
+      "l2c_seeds": 9,
+      "intermediate_sha256": {
+        "c5": {
+          "Linux-x86_64": "0f8280246f02162d4232577af04f9a23bdf78dd3bc29028536fdbbce18fcf56a"
+        },
+        "w2-l2c": {
+          "Linux-x86_64": "b09ec11091a8b02054b8a730790c73678eb00950807911dd1df5cfcd98bca8b7"
+        },
+        "v73": {
+          "Linux-x86_64": "18a7bfb77bfdc5a68387cc9d96acbf3f276d441748fa7c2fd807a340e753ab82"
+        }
+      },
+      "reference_platform": "Linux-x86_64",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/s15/v-r9.json",
+        "public_vector_sha256": "23753ffa7c992a8a91c0042149f671747fe9e876967d90d8ea07f31805e37bf9"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "18a7bfb77bfdc5a68387cc9d96acbf3f276d441748fa7c2fd807a340e753ab82",
+      "value_sha256": "54d25d876fbd4c277dbc851a374c9a66e47cc5cdb3d612881ace037885ea5924"
+    },
+    "final-v-dh-r9": {
+      "recipe": "steps",
+      "stage": "dh-step",
+      "mode": "final",
+      "official_sha256": {
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "code": {
+        "release/dh_stage.py": "689bb6f41ddf4627861b0a4a5112653a94413fbe253aa11f48b56faf234ea986"
+      },
+      "member": {
+        "name": "DH",
+        "part_sha256": "a89366d17a80ee751fb23b7331d9c6ff907896c8bf12a59f6bc7702d11d1ff4f",
+        "w": 0.164,
+        "scope_rows": 14587,
+        "scope": "EDDF typed no-head rows with dark_b, January, February and June 2026",
+        "pred_DH": {
+          "public_vector": "release/saved-vectors/final-entries/dh/pred_DH.json",
+          "public_vector_sha256": "d2ed372b06a605e9835db888bae44bdcd72a31e0d23603783725c43182a9443b",
+          "rows": 670790
+        },
+        "has_head": {
+          "public_vector": "release/saved-vectors/final-entries/dh/has_head.json",
+          "public_vector_sha256": "ed730bcbce68d476d17ffe7058ee5d14ef1c70fedfd8c9747adf0f36e65e1096",
+          "rows": 670790
+        },
+        "w_pair": {
+          "public_vector": "release/saved-vectors/final-entries/dh/w_pair.json",
+          "public_vector_sha256": "7e115f540a6b4413bb7686922c44779ddbbd3e2babd31f51658a0e2f263a4682",
+          "rows": 670790
+        }
+      },
+      "base": "final-v-r9",
+      "base_sha256": "18a7bfb77bfdc5a68387cc9d96acbf3f276d441748fa7c2fd807a340e753ab82",
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "5ce37d698943fed7a1f512aacf9500140ea7ee0809592670fe3a73ec2039fb7e",
+      "value_sha256": "974035418b078ae1147dc858b6d808a0f9d85258c285621d5653a18b8827a536"
+    },
+    "final-v-r9-ld": {
+      "recipe": "steps",
+      "stage": "v73-steps",
+      "mode": "final",
+      "base": "v64-final-r9",
+      "base_sha256": "3884f9058606bb6f0d1b5ec5813cc56014e30293ab4ffb31b703e993b3c70112",
+      "official_sha256": {
+        "ranking.parquet": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86",
+        "submitting.parquet": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+        "training_2025-01-01_2025-02-01.parquet": "a4dc8f152c082c650cd7eb745fe9c641089f34f74df127e6944a188990a0ed94",
+        "training_2025-02-01_2025-03-01.parquet": "b6f9ff2cdb1cfe07c5442f4e1f11bbcdbeafe52852dcb0b8175f62ab84c6a066",
+        "training_2025-03-01_2025-04-01.parquet": "58fde7e5f8b539546af63b41d7f6ec0f2884fdc3d3dd9b6bfca7c59a420dcdd3",
+        "training_2025-04-01_2025-05-01.parquet": "9ffe0cf5741c4863799c41be81475dfaecedabe0ba687b8f8e4eacba992f9390",
+        "training_2025-05-01_2025-06-01.parquet": "5481c0642a8fbb4dc395f93bc713c57f4cc16854fb361d404967077e1fce2ff9",
+        "training_2025-06-01_2025-07-01.parquet": "c3ef5080f2cc636c3416baf1555f7d0ee3519f9046e8043c1c0c8f017a244025",
+        "training_2025-07-01_2025-08-01.parquet": "34d1c5bba7c8596a1c20c09edd3cb2f63277b5a684fa801911660fe0eaf63c9d",
+        "training_2025-08-01_2025-09-01.parquet": "6c8d2aa7a1b6c9dff9a0305a37eb02de1e87a68d07557264f41b77738272c540",
+        "training_2025-09-01_2025-10-01.parquet": "955308a4000947e32a00586d3ee13928949d2231b67f84f6dfb0631893f3754a",
+        "training_2025-10-01_2025-11-01.parquet": "4a31a35601c1bdcd74b8cd6379231ba516a48324e4c2478bf1c9360cd23e687f",
+        "training_2025-11-01_2025-12-01.parquet": "ac36b17db7a537e3baeb682fa4763dacaa1fcc5d9bfa6bf32b3ee5d9f91300b0",
+        "training_2025-12-01_2026-01-01.parquet": "2d357f2f403a86778a69e93f72d8754effe77f1ac0942399b3d1b7728241f724",
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "closure_commit": "757fbb271",
+      "code": {
+        "chain_ids.py": "21278f57df7c026fb2d9416ed6eb1d9752719207d1eb37871a7590731b1559c6",
+        "iso/candidate.py": "65ba56e30aafa013a011b3db51c9a8a94d774be789a7d88c680ddd3d8db040d8",
+        "iso/chain.py": "c3bca4935c7616d540957d9098f99b84804b0f908a2dca8b53d72932b347522a",
+        "iso/dump_chain.py": "cc411d597d600c6620d7f6b760895154db367f745bec74539ae5a849a226f1a3",
+        "iso/features.py": "ca96fc42e65f84afd68c299dd53672628c2f1c34572f6761a026eb707be83422",
+        "iso/finalmode.py": "3cd4d8c2525e116fdb2293ce497dc2e7c90d620f56a6132157a2ee3930f18657",
+        "iso/roll_step.py": "9ed97f61ed1d7024a61e4ce6d1c4bccb8deacbdf92833d83d458bde24edce7b9",
+        "iso/score.py": "4b4cfaa5d0816e7fafcb26248532dadb10455e51f83cc06f5958f703dc62488d",
+        "w2/base.py": "ae1de2a55c792b65cbf93026f2f0691e53701e177817f1b9f651854ba8927bc7",
+        "w2/extra_screen.py": "4d2da4aceb5bcd2d77e6d40b9deff06e011be2c9161867d48c3595b4fe15e920",
+        "w2/l2.py": "6e6ccbc458854baeb7c3cf574775fc59f3a8022bc3f7311f6cccfe2261763db5",
+        "w2/l2c.py": "c9931e0a6e2192b2391df6d4b4a74b67ab2592934ce5eb420dc177f59e82c9ae",
+        "w2/ords.py": "1da4f3a09fd4b26b70413ec2df3a5fb6a0d96de84b50ec8b6c9f393684976551",
+        "w2/out.py": "45dbb8e9ee35211dda81d74fdaa51e28b3a7e076bca090339a4eb7838e23236e"
+      },
+      "code_sources": {
+        "w2/l2c.py": "w2/l2c_candidate_a.py",
+        "w2/ords.py": "w2/ords_ld.py"
+      },
+      "member": {
+        "name": "s7",
+        "seeds_per_mode": 15,
+        "fold": {
+          "public_vector": "release/saved-vectors/s7c15/final-fold.json",
+          "public_vector_sha256": "b77db72bbf56c42ebee96e896eeb8e7786e58e8b7e39515256caece5d10b4ec9",
+          "rows": 344419,
+          "file_sha256": "40bdf34b6ebfcd573ecdef8ef1c46d6a7d28df44d9d3200d360ffbada8c11f66",
+          "float32_sha256": "3046a80d5453cee4a68812d0126bf73a21c397f29a193e7e3f5999d5560f57d0",
+          "finite_rows": 339046
+        },
+        "ranking": {
+          "public_vector": "release/saved-vectors/s7c15/final-ranking.json",
+          "public_vector_sha256": "14c152837a6c31103a4b21bb8e9ebe48f4542c6cedc23a4616ed903c802712b6",
+          "rows": 670790,
+          "file_sha256": "f2995bc391d8ba3d22fcc56ca3a9122abd14eb411ec9d8f20cec56caf6621e03",
+          "float32_sha256": "c3f17c382eef78b19a94cbbedc20c5a58a3809707af194557a68cfb54535e5a4",
+          "finite_rows": 661713
+        },
+        "l2c_npz": "work/w2/s7c-l2c.npz",
+        "ords_flags": [
+          "--long-days"
+        ]
+      },
+      "l2c_seeds": 9,
+      "intermediate_sha256": {
+        "c5": {
+          "Linux-x86_64": "0f8280246f02162d4232577af04f9a23bdf78dd3bc29028536fdbbce18fcf56a"
+        },
+        "w2-l2c": {
+          "Linux-x86_64": "b09ec11091a8b02054b8a730790c73678eb00950807911dd1df5cfcd98bca8b7"
+        },
+        "v73": {
+          "Linux-x86_64": "31b09989b2575af1b9438bd59ed876caa0e049d95c91a9f2a3832326a5bce759"
+        }
+      },
+      "reference_platform": "Linux-x86_64",
+      "comparison_vector": {
+        "public_vector": "release/saved-vectors/final-entries/s15/v-r9-ld.json",
+        "public_vector_sha256": "d5c2a02edb432a16421a464cb2c70300c65e5768943c493422dae4f9043dc6f8"
+      },
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "31b09989b2575af1b9438bd59ed876caa0e049d95c91a9f2a3832326a5bce759",
+      "value_sha256": "e5951f34bbb7fce53bc6b28b4e1a5a6bb4bde9e8d262655250a19b832e66d961"
+    },
+    "final-v-dh-r9-ld": {
+      "recipe": "steps",
+      "stage": "dh-step",
+      "mode": "final",
+      "official_sha256": {
+        "final_ranking.parquet": "4b0692a792846079516a2749e034b0abda55df72c213eabdcda52a4d1f6bc69f",
+        "final_submitting.parquet": "b3445d80e29bf599a5583ca9675f63ddf57b51fdf1ca3f498facb38ea84f3924"
+      },
+      "code": {
+        "release/dh_stage.py": "689bb6f41ddf4627861b0a4a5112653a94413fbe253aa11f48b56faf234ea986"
+      },
+      "member": {
+        "name": "DH",
+        "part_sha256": "a89366d17a80ee751fb23b7331d9c6ff907896c8bf12a59f6bc7702d11d1ff4f",
+        "w": 0.164,
+        "scope_rows": 14587,
+        "scope": "EDDF typed no-head rows with dark_b, January, February and June 2026",
+        "pred_DH": {
+          "public_vector": "release/saved-vectors/final-entries/dh/pred_DH.json",
+          "public_vector_sha256": "d2ed372b06a605e9835db888bae44bdcd72a31e0d23603783725c43182a9443b",
+          "rows": 670790
+        },
+        "has_head": {
+          "public_vector": "release/saved-vectors/final-entries/dh/has_head.json",
+          "public_vector_sha256": "ed730bcbce68d476d17ffe7058ee5d14ef1c70fedfd8c9747adf0f36e65e1096",
+          "rows": 670790
+        },
+        "w_pair": {
+          "public_vector": "release/saved-vectors/final-entries/dh/w_pair.json",
+          "public_vector_sha256": "7e115f540a6b4413bb7686922c44779ddbbd3e2babd31f51658a0e2f263a4682",
+          "rows": 670790
+        }
+      },
+      "base": "final-v-r9-ld",
+      "base_sha256": "31b09989b2575af1b9438bd59ed876caa0e049d95c91a9f2a3832326a5bce759",
+      "rows": 670790,
+      "id_dtype": "float64",
+      "bytes": 8641508,
+      "sha256": "eea300c01d53f4665071fbbd63084a1558a05af7fd52decb60363e1762491b02",
+      "value_sha256": "58c3849babf6768a61cfa6cad4ca0c21943b4e6523b67287c80dcfd73ff26657"
+    }
+  }
+}

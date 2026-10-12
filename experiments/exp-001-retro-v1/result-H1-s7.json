@@ -1,0 +1,108 @@
+{
+  "name": "H1-s7",
+  "argv": "--name H1-s7 --features v2 --target residual --linear-tree --clip-floor 60 --noac-head --residual-guard --phi --lirf --phi-fit cv --folds july,december,january --no-submission",
+  "folds": {
+    "july": {
+      "rmse": 321.93777286537545,
+      "rmse_bulk": 277.98470579308673,
+      "rmse_tail": 2782.6486761489537,
+      "rmse_no_nm": 1230.5396460885017,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.25697828510378756,
+      "sse_share_no_nm": 0.301370964640621,
+      "bias": 6.389310374094768,
+      "rmse_noac": 3711.2275888417157,
+      "n_noac": 339,
+      "sse_share_noac": 0.23621675859233557,
+      "fold": "july",
+      "best_iteration": 42,
+      "refit_rounds": 50,
+      "seconds": 222,
+      "oof": "experiments/exp-001-retro-v1/oof/H1-s7-july.parquet"
+    },
+    "december": {
+      "rmse": 228.82651585760698,
+      "rmse_bulk": 210.65444178912585,
+      "rmse_tail": 2261.390875381778,
+      "rmse_no_nm": 860.5741645537015,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.1538568583818256,
+      "sse_share_no_nm": 0.14026175003623864,
+      "bias": -0.14746524172073652,
+      "rmse_noac": 2707.538077567486,
+      "n_noac": 89,
+      "sse_share_noac": 0.07520803378340941,
+      "fold": "december",
+      "best_iteration": 141,
+      "refit_rounds": 166,
+      "seconds": 634,
+      "oof": "experiments/exp-001-retro-v1/oof/H1-s7-december.parquet"
+    },
+    "january": {
+      "rmse": 356.7148641128074,
+      "rmse_bulk": 225.88420639607946,
+      "rmse_tail": 6008.284970865043,
+      "rmse_no_nm": 2873.6742662814886,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "sse_share_tail": 0.5998617539197284,
+      "sse_share_no_nm": 0.6046232758285434,
+      "bias": 3.1423922312895516,
+      "rmse_noac": 3660.929035269163,
+      "n_noac": 63,
+      "sse_share_noac": 0.04317078408234889,
+      "fold": "january",
+      "best_iteration": 152,
+      "refit_rounds": 179,
+      "seconds": 624,
+      "oof": "experiments/exp-001-retro-v1/oof/H1-s7-january.parquet"
+    }
+  },
+  "phi_settings": {
+    "weight": "rows",
+    "shrink_rows": 150.0,
+    "min_rows": 100
+  },
+  "lirf_gate": "LIRF",
+  "shared_modules": {
+    "surface": {
+      "UNIMPEDED_Q": 0.2,
+      "WINDOWS": [
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ],
+      "BUCKET": 1200.0,
+      "NBR_WINDOW": "1800s",
+      "SHRINK_K": 20.0,
+      "n_families": 7
+    },
+    "phi": {
+      "default_weight": "rows",
+      "default_shrink_rows": 150.0,
+      "default_min_rows": 100,
+      "keys": [
+        [
+          "airport"
+        ],
+        [
+          "airport",
+          "operator"
+        ]
+      ]
+    },
+    "lirf": {
+      "cat_features": [
+        "flight_prefix",
+        "stand_group"
+      ]
+    }
+  }
+}

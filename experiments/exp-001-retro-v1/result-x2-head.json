@@ -1,0 +1,26 @@
+{
+  "name": "x2-head",
+  "argv": "--name x2-head --features v2 --target residual --linear-tree --clip-floor 60 --noac-head --folds december --no-submission",
+  "folds": {
+    "december": {
+      "rmse": 230.775263413719,
+      "rmse_bulk": 214.20353612353415,
+      "rmse_tail": 2174.1152726623704,
+      "rmse_no_nm": 812.1300454704108,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.13981858685416906,
+      "sse_share_no_nm": 0.12281403115584116,
+      "bias": 3.6314938316703413,
+      "rmse_noac": 2408.730921845067,
+      "n_noac": 89,
+      "sse_share_noac": 0.05852290148902271,
+      "fold": "december",
+      "best_iteration": 373,
+      "refit_rounds": 439,
+      "seconds": 267,
+      "oof": "experiments/exp-001-retro-v1/oof/x2-head-december.parquet"
+    }
+  }
+}

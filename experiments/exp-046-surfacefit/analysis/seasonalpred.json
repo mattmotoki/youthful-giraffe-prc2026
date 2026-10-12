@@ -1,0 +1,100 @@
+{
+  "board_by_served_share": {
+    "coefficients": {
+      "SHARES_ratio": 1.2580098088646468,
+      "ca_january": 0.0007409598547517275,
+      "cj_july": 0.0009318464575330257,
+      "coefficient_ratio": 1.2576207085406244,
+      "december_weight": 0.0,
+      "held_out_checks": {
+        "two-month full weight": {
+          "error": -0.00040998683313353546,
+          "measured": 0.8492,
+          "predicted": 0.8487900131668664
+        },
+        "two-month one-third weight": {
+          "error": -0.0002051410082207772,
+          "measured": 0.71958,
+          "predicted": 0.7193748589917792
+        }
+      }
+    },
+    "december_weight": 0.0,
+    "prediction": 0.6311460967400699
+  },
+  "disagreement_falsifier_47_44": {
+    "F1_mechanism_falsified_if": "L >= 0",
+    "F2_law_falsified_if_outside": [
+      -0.06486096250766149,
+      0.006345570692392357
+    ],
+    "aug_rows_used": 100000,
+    "fitting_multiple": {
+      "december": 3.2493,
+      "january": 2.8699,
+      "july_loo": 3.2574
+    },
+    "pooled_L": -0.02925769590763457,
+    "pooled_se": 0.017801633300013463,
+    "predicted_disagreement_s": {
+      "december": 11.216,
+      "january": 10.716,
+      "july_loo": 10.264
+    },
+    "three_month_disagreement_s": {
+      "december": 11.7401,
+      "january": 10.9434,
+      "july_loo": 10.4831
+    }
+  },
+  "gate": "rule (a), section 47.46.2: every fold's increment interval clear, premium 0. The month per served month is the nearest BUILT month by served distance and no fold reading picks it",
+  "k1_to_k10_scaling": {
+    "K1": {
+      "december": 371.52,
+      "january": 249.46,
+      "july_loo": 372.62
+    },
+    "K10": {
+      "december": 350.75,
+      "january": 264.17,
+      "july_loo": 387.98
+    },
+    "ratio": {
+      "december": 0.9441,
+      "january": 1.059,
+      "july_loo": 1.0412
+    },
+    "what": "the only measured calibration: 47.32's K=1 three-month screen against 47.40's K=10 bag, the same quantity priced both ways"
+  },
+  "per_fold": {
+    "december": {
+      "prediction": 66.01108957795005,
+      "scaled_interval": [
+        0.9157716946597761,
+        148.21340035529718
+      ],
+      "source": "47.48 measured K=1 read +69.92, scaled",
+      "watch": "the scaled lower bound is barely above zero; this is the fold that decides the gate"
+    },
+    "january": {
+      "prediction": 224.90348993826663,
+      "scaled_interval": [
+        167.9310454581897,
+        281.8335757235629
+      ],
+      "source": "47.48 measured K=1 read +212.38, scaled"
+    },
+    "july_loo": {
+      "prediction": 498.47443830175513,
+      "row_correction": {
+        "at_a_nominal_100k": 515.5974289160574,
+        "form": "prediction * (2025-08 writable rows / 96679)",
+        "why": "47.46.4 registered this correction's form on Feb BEFORE Feb's read, and Feb landed between the corrected and the uncorrected figure. The uncorrected number is the registered point; the corrected one is the companion, evaluated at the delivered count"
+      },
+      "source": "47.45.3 cross-fitted Aug 4th-month +478.74, scaled"
+    }
+  },
+  "registered_before": "2025-08 exists and before any seasonal fit",
+  "the_arm": "the K = 10 SEASONAL bag as an in-fold increment over v10's head (d-threemonth-bag10-255-free.npz), each leave-one-out fit carrying its own fold's month set: january and december {Nov,Oct,Mar,Feb}, july {Nov,Oct,Mar,Aug}",
+  "what": "Section 47.49 (d): the SEASONAL BAG's registration, before 2025-08 exists."
+}

@@ -1,0 +1,558 @@
+{
+  "cross_fitted_beside_it": {
+    "cross_fitted": {
+      "all_row_ci95": [
+        0.43986622607635584,
+        0.7281067404968451
+      ],
+      "all_row_gain_s": 0.5587645784786446,
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 297.9551884681709,
+          "B_mean_dd": 245.16257142745704,
+          "ci95": [
+            271.21905795504983,
+            436.9100503541586
+          ],
+          "mse_gain_s2": 350.74780550888465,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 260.8098764828536,
+          "B_mean_dd": 257.44843884025255,
+          "ci95": [
+            180.7840708638415,
+            343.0497752020777
+          ],
+          "mse_gain_s2": 264.1713141254546,
+          "rows": 153706,
+          "rows_moved": 69840
+        },
+        "july_loo": {
+          "A_mean_rd": 331.0421836744329,
+          "B_mean_dd": 274.1056417187245,
+          "ci95": [
+            330.43582381867725,
+            457.14088050605665
+          ],
+          "mse_gain_s2": 387.97872563014147,
+          "rows": 190713,
+          "rows_moved": 88425
+        }
+      },
+      "clean_gain_s": 0.6833968168952538,
+      "every_fold_interval_clear": true
+    },
+    "in_fold": {
+      "all_row_ci95": [
+        0.43986622607635584,
+        0.7281067404968451
+      ],
+      "all_row_gain_s": 0.5587645784786446,
+      "clean_gain_s": 0.6833968168952538,
+      "every_fold_interval_clear": true
+    },
+    "label": "the same increment, cross-fitted, beside it",
+    "out_of_fold_selection": {
+      "december": {
+        "chosen": "the 3-month bag at 255 leaves",
+        "eligible": true,
+        "evidence_on_the_selection_folds": {
+          "january": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 264.1713141254546,
+            "tail_passes": true
+          },
+          "july_loo": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 387.97872563014147,
+            "tail_passes": true
+          }
+        },
+        "selected_on": [
+          "july_loo",
+          "january"
+        ]
+      },
+      "january": {
+        "chosen": "the 3-month bag at 255 leaves",
+        "eligible": true,
+        "evidence_on_the_selection_folds": {
+          "december": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 350.74780550888465,
+            "tail_passes": true
+          },
+          "july_loo": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 387.97872563014147,
+            "tail_passes": true
+          }
+        },
+        "selected_on": [
+          "july_loo",
+          "december"
+        ]
+      },
+      "july_loo": {
+        "chosen": "the 3-month bag at 255 leaves",
+        "eligible": true,
+        "evidence_on_the_selection_folds": {
+          "december": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 350.74780550888465,
+            "tail_passes": true
+          },
+          "january": {
+            "interval_clear": true,
+            "mse_gain_s2_per_row": 264.1713141254546,
+            "tail_passes": true
+          }
+        },
+        "selected_on": [
+          "december",
+          "january"
+        ]
+      }
+    },
+    "rule": "crossfit.py: the rung is taken on a fold only if, on both other folds, its increment interval is clear of zero and its registered whole-update tail clause passes",
+    "selection_premium_s": 0.0
+  },
+  "head_rebuilds_bit_for_bit": true,
+  "leaves": 255,
+  "member_spread_extended": {
+    "december": {
+      "guard_cut_s": 1940.177772328259,
+      "mean_abs_bag_s": 76.76404253872505,
+      "member_disagreement_rms_s": 11.740147627284902,
+      "rows_moved_by_the_bag": 102186
+    },
+    "january": {
+      "guard_cut_s": 1855.256340282004,
+      "mean_abs_bag_s": 77.33342385512542,
+      "member_disagreement_rms_s": 10.943352979370284,
+      "rows_moved_by_the_bag": 69840
+    },
+    "july_loo": {
+      "guard_cut_s": 1834.2676306265398,
+      "mean_abs_bag_s": 84.77082673344536,
+      "member_disagreement_rms_s": 10.483124436228719,
+      "rows_moved_by_the_bag": 88428
+    }
+  },
+  "member_spread_head": {
+    "december": {
+      "guard_cut_s": 1940.177772328259,
+      "mean_abs_bag_s": 74.34078629298554,
+      "member_disagreement_rms_s": 15.275365380849344,
+      "rows_moved_by_the_bag": 102186
+    },
+    "january": {
+      "guard_cut_s": 1855.256340282004,
+      "mean_abs_bag_s": 75.3681022000294,
+      "member_disagreement_rms_s": 13.911760319269712,
+      "rows_moved_by_the_bag": 69840
+    },
+    "july_loo": {
+      "guard_cut_s": 1834.2676306265398,
+      "mean_abs_bag_s": 84.44799729536119,
+      "member_disagreement_rms_s": 12.109640998477337,
+      "rows_moved_by_the_bag": 88428
+    }
+  },
+  "members": {
+    "1": {
+      "from": "d-onemonth-twomonth-plus03-255-free.npz",
+      "refitted_this_run": false
+    },
+    "10": {
+      "extra_rows": {
+        "december": 290037,
+        "january": 290037,
+        "july_loo": 290037
+      },
+      "refitted_this_run": true,
+      "seconds": 360.7,
+      "total_fit_rows": {
+        "december": 449268,
+        "january": 481573,
+        "july_loo": 462820
+      }
+    },
+    "2": {
+      "extra_rows": {
+        "december": 290037,
+        "january": 290037,
+        "july_loo": 290037
+      },
+      "refitted_this_run": true,
+      "seconds": 493.6,
+      "total_fit_rows": {
+        "december": 449268,
+        "january": 481573,
+        "july_loo": 462820
+      }
+    },
+    "3": {
+      "extra_rows": {
+        "december": 290037,
+        "january": 290037,
+        "july_loo": 290037
+      },
+      "refitted_this_run": true,
+      "seconds": 500.8,
+      "total_fit_rows": {
+        "december": 449268,
+        "january": 481573,
+        "july_loo": 462820
+      }
+    },
+    "4": {
+      "extra_rows": {
+        "december": 290037,
+        "january": 290037,
+        "july_loo": 290037
+      },
+      "refitted_this_run": true,
+      "seconds": 460.1,
+      "total_fit_rows": {
+        "december": 449268,
+        "january": 481573,
+        "july_loo": 462820
+      }
+    },
+    "5": {
+      "extra_rows": {
+        "december": 290037,
+        "january": 290037,
+        "july_loo": 290037
+      },
+      "refitted_this_run": true,
+      "seconds": 423.7,
+      "total_fit_rows": {
+        "december": 449268,
+        "january": 481573,
+        "july_loo": 462820
+      }
+    },
+    "6": {
+      "extra_rows": {
+        "december": 290037,
+        "january": 290037,
+        "july_loo": 290037
+      },
+      "refitted_this_run": true,
+      "seconds": 417.0,
+      "total_fit_rows": {
+        "december": 449268,
+        "january": 481573,
+        "july_loo": 462820
+      }
+    },
+    "7": {
+      "extra_rows": {
+        "december": 290037,
+        "january": 290037,
+        "july_loo": 290037
+      },
+      "refitted_this_run": true,
+      "seconds": 402.5,
+      "total_fit_rows": {
+        "december": 449268,
+        "january": 481573,
+        "july_loo": 462820
+      }
+    },
+    "8": {
+      "extra_rows": {
+        "december": 290037,
+        "january": 290037,
+        "july_loo": 290037
+      },
+      "refitted_this_run": true,
+      "seconds": 367.6,
+      "total_fit_rows": {
+        "december": 449268,
+        "january": 481573,
+        "july_loo": 462820
+      }
+    },
+    "9": {
+      "extra_rows": {
+        "december": 290037,
+        "january": 290037,
+        "july_loo": 290037
+      },
+      "refitted_this_run": true,
+      "seconds": 359.4,
+      "total_fit_rows": {
+        "december": 449268,
+        "january": 481573,
+        "july_loo": 462820
+      }
+    }
+  },
+  "month_rows": {
+    "2025-03": 86984,
+    "2025-10": 103344,
+    "2025-11": 99709
+  },
+  "months": [
+    "2025-11",
+    "2025-10",
+    "2025-03"
+  ],
+  "nov_writable_rows": 290037,
+  "pre_registration": {
+    "band_s": [
+      0.36,
+      0.58
+    ],
+    "every_fold_clear_expected": true,
+    "falsifier_for_the_argument": "a measured bag benefit at or above +0.20724 -- the one-month value -- says more rows did NOT reduce the churn a bag averages away, and the scaling is wrong",
+    "fold_expected_to_fail": "january",
+    "gate": "in_fold increment over v9's head, every fold clear, rule (a)",
+    "per_fold_band_s2": {
+      "december": [
+        200,
+        440
+      ],
+      "january": [
+        120,
+        300
+      ],
+      "july_loo": [
+        230,
+        450
+      ]
+    },
+    "per_fold_s2": {
+      "december": 316.0,
+      "january": 210.0,
+      "july_loo": 336.0
+    },
+    "point_estimate_board_s": 0.468,
+    "registered_in": "RESULTS.md section 47.33, before this file ran on the three-month stack",
+    "the_naive_figure_deliberately_not_registered": 0.83932,
+    "why": "the SAME churn-scaling argument section 47.20 registered and got right (+0.49 [+0.32,+0.62] against a read of +0.51347). The bag benefit is measured twice: +0.28613 at 1.000x rows (47.16) and +0.20724 at 1.575x (v9 minus the one-month K=1, both over v8's head). Those two points give benefit ~ n^-0.7105, so at the three-month 2.672x the bag buys about +0.1424, not the +0.28613 the naive figure would add. A bag over less churn buys less"
+  },
+  "priced_over": "v9's head",
+  "prices": {
+    "in_fold_over_v9_head": {
+      "board_all_row": {
+        "arm": 297.8322138429475,
+        "base": 298.39097842142615,
+        "gain_s": 0.5587645784786446,
+        "interval": {
+          "ci95": [
+            0.43986622607635584,
+            0.7281067404968451
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.572553090458242,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_clean": {
+        "arm": 243.40389330632516,
+        "base": 244.0872901232204,
+        "gain_s": 0.6833968168952538,
+        "interval": {
+          "ci95": [
+            0.5837018854240263,
+            0.7864983460077013
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.6848690482286811,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 297.9551884681709,
+          "B_mean_dd": 245.16257142745704,
+          "ci95": [
+            271.21905795504983,
+            436.9100503541586
+          ],
+          "mse_gain_s2": 350.74780550888465,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 260.8098764828536,
+          "B_mean_dd": 257.44843884025255,
+          "ci95": [
+            180.7840708638415,
+            343.0497752020777
+          ],
+          "mse_gain_s2": 264.1713141254546,
+          "rows": 153706,
+          "rows_moved": 69840
+        },
+        "july_loo": {
+          "A_mean_rd": 331.0421836744329,
+          "B_mean_dd": 274.1056417187245,
+          "ci95": [
+            330.43582381867725,
+            457.14088050605665
+          ],
+          "mse_gain_s2": 387.97872563014147,
+          "rows": 190713,
+          "rows_moved": 88425
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 297.9551884681709,
+          "B_mean_dd": 245.16257142745704,
+          "ci95": [
+            272.34909963590644,
+            434.02329249269735
+          ],
+          "mse_gain_s2": 350.74780550888465,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 260.81327014699355,
+          "B_mean_dd": 257.4517887652882,
+          "ci95": [
+            180.40940220198505,
+            346.6016148332479
+          ],
+          "mse_gain_s2": 264.17475152869883,
+          "rows": 153704,
+          "rows_moved": 69840
+        },
+        "july_loo": {
+          "A_mean_rd": 331.0421836744329,
+          "B_mean_dd": 274.1056417187245,
+          "ci95": [
+            331.937550204652,
+            455.4053836179068
+          ],
+          "mse_gain_s2": 387.97872563014147,
+          "rows": 190713,
+          "rows_moved": 88425
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "label": "the K=10 extended bag as an increment over v9's head",
+      "rows_moved": {
+        "december": 102186,
+        "january": 69840,
+        "july_loo": 88425
+      },
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -5360.379333430623,
+          "passes_the_clause": false,
+          "rmse_arm": 1753.2448537227924,
+          "rmse_base": 1751.7154842530863,
+          "rmse_gain_s": -1.5293694697061255,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": -0.024075695783272108
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -7134.04560062834,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.759208582711,
+          "rmse_base": 5980.162762454403,
+          "rmse_gain_s": -0.5964461283083438,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": -0.05710087517154854
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 7560.634747300191,
+          "passes_the_clause": true,
+          "rmse_arm": 2383.2672360268366,
+          "rmse_base": 2384.8528996703963,
+          "rmse_gain_s": 1.5856636435596556,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.0670307204458783
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 72902.23461114589,
+          "passes_the_clause": true,
+          "rmse_arm": 1753.2448537227924,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 20.668828426539676,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.01365696120411805
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 40489.02022305309,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.759208582711,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.3839824906735885,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.01357690162081845
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 59779.177101352085,
+          "passes_the_clause": true,
+          "rmse_arm": 2383.2672360268366,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 12.5086081247714,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.0306643640820874
+        }
+      }
+    }
+  },
+  "prices_key_note": "the single key under `prices` NAMES the head, and `priced_over` says the same thing in words. RENAMED 2026-09-10 05:17 UTC from `in_fold_over_v8_head`, which was the schema key hard-coded on every stack and was WRONG on this one: this stack is priced over v9's head. Queue's v10 audit (7bt) caught it; code/onemonthbag.py now declares the key on the stack beside head_name and asserts the two agree (section 47.45.1). No value changed in this rename -- only the key",
+  "seconds": 3792.2,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "stack": "threemonth",
+  "vector": "experiments/exp-046-surfacefit/work/d-threemonth-bag10-255-free.npz",
+  "verdict": {
+    "above_the_upload_floor_0_1_s": true,
+    "at_the_naive_figure": false,
+    "board_gain_s": 0.5587645784786446,
+    "ci95": [
+      0.43986622607635584,
+      0.7281067404968451
+    ],
+    "every_fold_interval_clear": true,
+    "folds_clear": {
+      "december": true,
+      "january": true,
+      "july_loo": true
+    },
+    "inside_the_registered_band": true,
+    "passes_the_gate": true
+  },
+  "what": "RESULTS section 47.20's K = 10 extended bag: the ten perturbations on the extended panel."
+}

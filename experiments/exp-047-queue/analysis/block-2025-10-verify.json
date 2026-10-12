@@ -1,0 +1,89 @@
+{
+  "PASS": true,
+  "all_nan_columns_before": [
+    "Nf_n_res_apt_30m",
+    "Nf_n_res_cell",
+    "Nf_n_res_rwy_30m",
+    "Nf_n_res_rwy_60m",
+    "Nf_n_res_rwy_cell",
+    "Nf_n_res_rwy_minus_apt",
+    "No_n_res_apt_30m",
+    "No_n_res_cell",
+    "No_n_res_rwy_30m",
+    "No_n_res_rwy_60m",
+    "No_n_res_rwy_cell",
+    "No_n_res_rwy_minus_apt"
+  ],
+  "all_nan_columns_now": [],
+  "checks": {
+    "added_is_exactly_own_obs_taxi_minus_p11": true,
+    "is_186": true,
+    "nothing_dropped": true,
+    "nothing_is_all_nan_now": true,
+    "rows_unchanged": true,
+    "the_only_columns_that_moved_are_the_head_dependent_ones": true
+  },
+  "columns_added": [
+    "own_obs_taxi_minus_p11"
+  ],
+  "columns_dropped": [],
+  "head_columns_all_nan": [],
+  "head_columns_expected": [
+    "Nf_n_res_apt_30m",
+    "Nf_n_res_cell",
+    "Nf_n_res_rwy_30m",
+    "Nf_n_res_rwy_60m",
+    "Nf_n_res_rwy_cell",
+    "Nf_n_res_rwy_minus_apt",
+    "No_n_res_apt_30m",
+    "No_n_res_cell",
+    "No_n_res_rwy_30m",
+    "No_n_res_rwy_60m",
+    "No_n_res_rwy_cell",
+    "No_n_res_rwy_minus_apt",
+    "own_obs_taxi_minus_p11"
+  ],
+  "head_columns_missing": [],
+  "head_columns_that_must_move": [
+    "Nf_n_res_apt_30m",
+    "Nf_n_res_cell",
+    "Nf_n_res_rwy_30m",
+    "Nf_n_res_rwy_60m",
+    "Nf_n_res_rwy_cell",
+    "Nf_n_res_rwy_minus_apt",
+    "No_n_res_apt_30m",
+    "No_n_res_cell",
+    "No_n_res_rwy_30m",
+    "No_n_res_rwy_60m",
+    "No_n_res_rwy_cell",
+    "No_n_res_rwy_minus_apt"
+  ],
+  "new": {
+    "bytes": 53878844,
+    "columns": 186,
+    "path": "artifacts/exp-047/block/2025-10.parquet",
+    "rows": 185674,
+    "sha256": "29932ab196080943b502f2270b019796d5bce627f2ec0fc4c1d2084e5441d91f"
+  },
+  "old": {
+    "columns": 185,
+    "path": "artifacts/exp-047/block-185/2025-10.parquet",
+    "rows": 185674,
+    "sha256": "d6eebd2b367813f5538240adc54e5a6de943acd98c9cc91f16344be5448e1cd5"
+  },
+  "shared_columns_identical": 173,
+  "shared_columns_that_differ": {
+    "Nf_n_res_apt_30m": 185494,
+    "Nf_n_res_cell": 182657,
+    "Nf_n_res_rwy_30m": 184751,
+    "Nf_n_res_rwy_60m": 185244,
+    "Nf_n_res_rwy_cell": 175568,
+    "Nf_n_res_rwy_minus_apt": 184751,
+    "No_n_res_apt_30m": 141417,
+    "No_n_res_cell": 122878,
+    "No_n_res_rwy_30m": 135179,
+    "No_n_res_rwy_60m": 139864,
+    "No_n_res_rwy_cell": 114485,
+    "No_n_res_rwy_minus_apt": 135179
+  }
+}

@@ -1,0 +1,281 @@
+{
+ "board_seconds_at_0.632": 0.2869,
+ "board_seconds_at_the_full_oracle": 0.454,
+ "clears_the_floor": true,
+ "delta_s2_by_month_airport": {
+  "2026-01 EGLL": 688379.0,
+  "2026-07 EGLL": 19574.0,
+  "2026-07 LEMD": 3894163.0,
+  "2026-07 LFPG": 43887721.0
+ },
+ "floor_s": 0.1,
+ "fold_ceiling": {
+  "january": {
+   "by_airport": {
+    "EDDF": {
+     "priced": false,
+     "rows": 128
+    },
+    "EDDM": {
+     "priced": false,
+     "rows": 95
+    },
+    "EGLL": {
+     "E_ri_rj": 6296.0,
+     "ci": [
+      4047.7,
+      9807.0
+     ],
+     "mean_sq": 41507.5,
+     "priced": true,
+     "rows": 1498
+    },
+    "EHAM": {
+     "priced": false,
+     "rows": 16
+    },
+    "LEBL": {
+     "priced": false,
+     "rows": 104
+    },
+    "LSZH": {
+     "priced": false,
+     "rows": 97
+    }
+   },
+   "of_which_wide_window": 1938,
+   "pooled": {
+    "E_ri_rj": 6041.2,
+    "ci": [
+     3700.7,
+     9379.2
+    ],
+    "mean_sq": 41921.8,
+    "rows": 1938
+   },
+   "unreached_complement_rows": 69310
+  },
+  "july_loo": {
+   "by_airport": {
+    "EDDF": {
+     "priced": false,
+     "rows": 42
+    },
+    "EDDM": {
+     "priced": false,
+     "rows": 306
+    },
+    "EGLL": {
+     "E_ri_rj": 3871.5,
+     "ci": [
+      1355.9,
+      6136.5
+     ],
+     "mean_sq": 83111.4,
+     "priced": true,
+     "rows": 9205
+    },
+    "EHAM": {
+     "priced": false,
+     "rows": 13
+    },
+    "LEBL": {
+     "priced": false,
+     "rows": 288
+    },
+    "LEMD": {
+     "E_ri_rj": 4977.1,
+     "ci": [
+      2944.2,
+      7623.3
+     ],
+     "mean_sq": 31535.4,
+     "priced": true,
+     "rows": 5272
+    },
+    "LFPG": {
+     "E_ri_rj": 9225.8,
+     "ci": [
+      6023.8,
+      12785.9
+     ],
+     "mean_sq": 58312.6,
+     "priced": true,
+     "rows": 5336
+    },
+    "LIRF": {
+     "priced": false,
+     "rows": 148
+    },
+    "LSZH": {
+     "priced": false,
+     "rows": 55
+    }
+   },
+   "of_which_wide_window": 20665,
+   "pooled": {
+    "E_ri_rj": 5633.8,
+    "ci": [
+     4032.3,
+     7136.0
+    ],
+    "mean_sq": 73070.6,
+    "rows": 20665
+   },
+   "unreached_complement_rows": 76332
+  }
+ },
+ "pooled_substitute_by_month_airport_s2": {
+  "2026-01 EDDF": 1607394.0,
+  "2026-01 EDDM": 114541.0,
+  "2026-01 EHAM": 225264.0,
+  "2026-01 LEBL": 675793.0,
+  "2026-01 LEMD": 198538.0,
+  "2026-01 LFPG": 25428136.0,
+  "2026-01 LIRF": 7242819.0,
+  "2026-01 LSZH": 316897.0,
+  "2026-07 EDDF": 4835243.0,
+  "2026-07 EDDM": 49848.0,
+  "2026-07 EHAM": 71211.0,
+  "2026-07 LEBL": 231437.0,
+  "2026-07 LIRF": 462873.0,
+  "2026-07 LSZH": 99696.0
+ },
+ "pricing_rule": "the lane's: a fold airport read on fewer than 500 rows is UNPRICED and carries no projection (arms.py MIN_CELL)",
+ "ranking": {
+  "2026-01": {
+   "by_airport": {
+    "EDDF": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 128 january rows",
+     "rows": 421
+    },
+    "EDDM": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 95 january rows",
+     "rows": 30
+    },
+    "EGLL": {
+     "board_s_at_0.632": 0.00407,
+     "ceiling_per_row_s2": 6296.0,
+     "priced_on": "january EGLL",
+     "rows": 173
+    },
+    "EHAM": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 16 january rows",
+     "rows": 59
+    },
+    "LEBL": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 104 january rows",
+     "rows": 177
+    },
+    "LEMD": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 0 january rows",
+     "rows": 52
+    },
+    "LFPG": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 0 january rows",
+     "rows": 6660
+    },
+    "LIRF": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 0 january rows",
+     "rows": 1897
+    },
+    "LSZH": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 97 january rows",
+     "rows": 83
+    }
+   },
+   "complement_rows": 61286,
+   "unreached": 41291,
+   "unreached_with_wide_window": 9552,
+   "wide_share_of_unreached": 0.2313
+  },
+  "2026-07": {
+   "by_airport": {
+    "EDDF": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 42 july_loo rows",
+     "rows": 1358
+    },
+    "EDDM": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 306 july_loo rows",
+     "rows": 14
+    },
+    "EGLL": {
+     "board_s_at_0.632": 0.00012,
+     "ceiling_per_row_s2": 3871.5,
+     "priced_on": "july_loo EGLL",
+     "rows": 8
+    },
+    "EHAM": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 13 july_loo rows",
+     "rows": 20
+    },
+    "LEBL": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 288 july_loo rows",
+     "rows": 65
+    },
+    "LEMD": {
+     "board_s_at_0.632": 0.02304,
+     "ceiling_per_row_s2": 4977.1,
+     "priced_on": "july_loo LEMD",
+     "rows": 1238
+    },
+    "LFPG": {
+     "board_s_at_0.632": 0.25971,
+     "ceiling_per_row_s2": 9225.8,
+     "priced_on": "july_loo LFPG",
+     "rows": 7527
+    },
+    "LIRF": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 148 july_loo rows",
+     "rows": 130
+    },
+    "LSZH": {
+     "board_s_at_0.632": 0.0,
+     "ceiling_per_row_s2": null,
+     "priced_on": "UNPRICED: 55 july_loo rows",
+     "rows": 28
+    }
+   },
+   "complement_rows": 87299,
+   "unreached": 62005,
+   "unreached_with_wide_window": 10388,
+   "wide_share_of_unreached": 0.1675
+  }
+ },
+ "realisation": 0.632,
+ "what": "RESULTS \u00a77cg: item 2 of \u00a77ce v priced on the RANKING rows -- zero fit.",
+ "what_a_pooled_substitute_would_add_s_at_0.632": 0.2459,
+ "wide_columns": [
+  "No_n_res_apt_30m",
+  "No_n_res_rwy_30m",
+  "No_n_res_rwy_60m",
+  "No_n_res_rwy_minus_apt",
+  "No_n_anom_rwy_30m"
+ ]
+}

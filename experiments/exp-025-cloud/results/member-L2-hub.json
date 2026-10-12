@@ -1,0 +1,43 @@
+{
+ "member": "L2-hub",
+ "weight": 0.154,
+ "synthetic": false,
+ "git_commit": "5717971ceb41ce5173f695c3c1d65df31a496d62",
+ "python": "3.12.13",
+ "versions": {
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "pyarrow": "24.0.0",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.10"
+ },
+ "gpu": "none (CPU kernel)",
+ "threads": 4,
+ "env_overrides": {},
+ "cpu_count": 4,
+ "mem_total_gb": 31.3,
+ "peak_gpu_mib": 0,
+ "peak_host_used_gb": 4.62,
+ "steps": [
+  {
+   "label": "member L2-hub",
+   "cmd": "experiments/exp-008-diversity/run.py --submit --kind lgb --name L2-hub --variant plain --huber-delta 1200 --rounds-m6 3225 --rounds-m11 2100",
+   "cwd": "experiments/exp-008-diversity",
+   "rc": 0,
+   "wall_s": 957.4,
+   "child_maxrss_gb": 4.22,
+   "stdout_tail": "[submit] train (2085047, 53) ranking (344841, 53) rounds 2291 loaded in 60s\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[threads] declared=4 observed=4 library=lightgbm\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[LightGBM] [Warning] Met negative value in categorical features, will convert it to NaN\n[noac] head on 1507 rows -> 388 valid rows, 60 rounds\n[submit] seed 7 done at 953s\n[submit] residual guard [-20657, 9069] touched 0 rows\n[submit] floor at 60 s; 77 raw rows were below it\n[submit] {\"name\": \"L2-hub\", \"rounds\": 2291, \"seeds\": [7], \"n\": 344841, \"path\": \"artifacts/exp-008/pred/L2-hub-ranking.parquet\", \"sha256\": \"9946cad7e6ab565cb024c37c7eea46b175cdad432f8ca62eaa37c5d169e49074\", \"seconds\": 954}\n",
+   "stderr_tail": ""
+  }
+ ],
+ "collected": {
+  "artifacts/exp-008/pred/L2-hub-ranking.parquet": {
+   "bytes": 7738771,
+   "as": "L2-hub--L2-hub-ranking.parquet"
+  },
+  "experiments/exp-008-diversity/submit-L2-hub.json": {
+   "bytes": 236,
+   "as": "L2-hub--submit-L2-hub.json"
+  }
+ }
+}

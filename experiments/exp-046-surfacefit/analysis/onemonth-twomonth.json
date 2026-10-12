@@ -1,0 +1,468 @@
+{
+  "MUST_BE_READ_WITH": "The section 47.17 precondition FAILED at 39.154 / 30.095 / 30.109 s against a 25 s threshold registered before any data. This number is NOT evidence about rows. The companion run, restricted to airports under 25 s on every fold, is.",
+  "companion_airports": null,
+  "control_target_substitution": null,
+  "derivation_validated_on_july_loo": {
+    "airport_eq_ADEP_mvt": true,
+    "noac_eq_AIRCRAFT_TYPE_isna": true,
+    "t_eq_MVT_TIME_UTC_mvt": true
+  },
+  "evidence_about_rows": false,
+  "extra_row_provenance": {
+    "december": {
+      "columns_nan_filled_and_never_used_by_the_fit": [
+        "clean",
+        "d_aobt_lobt",
+        "d_takeoff_aobt",
+        "nm_missing",
+        "p10",
+        "p11",
+        "p12",
+        "r",
+        "r11",
+        "r12",
+        "regime"
+      ],
+      "extra_multiple": 2.275210229163919,
+      "extra_rows": 203053,
+      "n_features_checked_present": 106,
+      "panel_rows": 159231,
+      "total_fit_rows": 362284
+    },
+    "january": {
+      "columns_nan_filled_and_never_used_by_the_fit": [
+        "clean",
+        "d_aobt_lobt",
+        "d_takeoff_aobt",
+        "nm_missing",
+        "p10",
+        "p11",
+        "p12",
+        "r",
+        "r11",
+        "r12",
+        "regime"
+      ],
+      "extra_multiple": 2.0601296884136664,
+      "extra_rows": 203053,
+      "n_features_checked_present": 106,
+      "panel_rows": 191536,
+      "total_fit_rows": 394589
+    },
+    "july_loo": {
+      "columns_nan_filled_and_never_used_by_the_fit": [
+        "clean",
+        "d_aobt_lobt",
+        "d_takeoff_aobt",
+        "nm_missing",
+        "p10",
+        "p11",
+        "p12",
+        "r",
+        "r11",
+        "r12",
+        "regime"
+      ],
+      "extra_multiple": 2.1751908463216867,
+      "extra_rows": 203053,
+      "n_features_checked_present": 106,
+      "panel_rows": 172783,
+      "total_fit_rows": 375836
+    }
+  },
+  "leaves": 255,
+  "member": 1,
+  "nov_writable_rows_used": 203053,
+  "precondition": {
+    "passes": false,
+    "rms_by_fold": {
+      "december": 30.09543217462579,
+      "january": 30.108877137162285,
+      "july_loo": 39.15378797196321
+    },
+    "threshold_s": 25.0
+  },
+  "prices": {
+    "i_over_cached_member_1": {
+      "board_all_row": {
+        "arm": 298.34138201411923,
+        "base": 298.5982266362976,
+        "gain_s": 0.25684462217839155,
+        "interval": {
+          "ci95": [
+            0.16423491608418175,
+            0.3818478896372908
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.2625852115619739,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_clean": {
+        "arm": 244.02665948807234,
+        "base": 244.3406042794212,
+        "gain_s": 0.31394479134885955,
+        "interval": {
+          "ci95": [
+            0.19961461299716418,
+            0.43026142962573455
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.31345794580190545,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 376.76992829959266,
+          "B_mean_dd": 501.29509612917,
+          "ci95": [
+            159.16013185154844,
+            348.83653457101263
+          ],
+          "mse_gain_s2": 252.24476047001534,
+          "rows": 165677,
+          "rows_moved": 102208
+        },
+        "january": {
+          "A_mean_rd": 189.721023217474,
+          "B_mean_dd": 443.5661487642049,
+          "ci95": [
+            -141.95985958846268,
+            0.887274327680182
+          ],
+          "mse_gain_s2": -64.12410232925687,
+          "rows": 153706,
+          "rows_moved": 69835
+        },
+        "july_loo": {
+          "A_mean_rd": 402.4522519802883,
+          "B_mean_dd": 478.7354965949935,
+          "ci95": [
+            247.77551999058986,
+            421.14055690280173
+          ],
+          "mse_gain_s2": 326.169007365583,
+          "rows": 190713,
+          "rows_moved": 88422
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 376.76992829959266,
+          "B_mean_dd": 501.29509612917,
+          "ci95": [
+            161.72240176856704,
+            350.82567777688337
+          ],
+          "mse_gain_s2": 252.24476047001534,
+          "rows": 165677,
+          "rows_moved": 102208
+        },
+        "january": {
+          "A_mean_rd": 189.72349187181243,
+          "B_mean_dd": 443.5719204571832,
+          "ci95": [
+            -142.37011589870536,
+            -0.1641372044736997
+          ],
+          "mse_gain_s2": -64.12493671355824,
+          "rows": 153704,
+          "rows_moved": 69835
+        },
+        "july_loo": {
+          "A_mean_rd": 402.4522519802883,
+          "B_mean_dd": 478.7354965949935,
+          "ci95": [
+            243.2897563666209,
+            417.61987480782557
+          ],
+          "mse_gain_s2": 326.169007365583,
+          "rows": 190713,
+          "rows_moved": 88422
+        }
+      },
+      "every_fold_interval_clear": false,
+      "every_moving_fold_interval_clear": false,
+      "folds_with_no_moved_row": [],
+      "label": "(i) the SECOND month over the 2025-11-extended member 1",
+      "rows_moved": {
+        "december": 102208,
+        "january": 69835,
+        "july_loo": 88422
+      },
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -1168.6662856386097,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.8018861417925,
+          "rmse_base": 1752.468483533038,
+          "rmse_gain_s": -0.33340260875456806,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": -0.007298719052753049
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -648.8626091422175,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.2681265912015,
+          "rmse_base": 5980.213876051048,
+          "rmse_gain_s": -0.0542505401535891,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.021395576368107055
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 10417.37524672139,
+          "passes_the_clause": true,
+          "rmse_arm": 2382.9033212645886,
+          "rmse_base": 2385.0881773512124,
+          "rmse_gain_s": 2.1848560866237676,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.10985988950101486
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 74455.29965437666,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.8018861417925,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 21.111796007539624,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.014408823807282542
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 46362.86534731372,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.2681265912015,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.8750644821830065,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.016766889665292613
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 61513.656926542404,
+          "passes_the_clause": true,
+          "rmse_arm": 2382.9033212645886,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 12.872522887019386,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.03242460253368426
+        }
+      }
+    },
+    "ii_over_v8_head_record_only": {
+      "board_all_row": {
+        "arm": 298.34138201411923,
+        "base": 298.90445184225223,
+        "gain_s": 0.5630698281329956,
+        "interval": {
+          "ci95": [
+            0.42658670764745493,
+            0.7641288003621098
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.5772914525075283,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_clean": {
+        "arm": 244.02665948807234,
+        "base": 244.71473681398612,
+        "gain_s": 0.6880773259137811,
+        "interval": {
+          "ci95": [
+            0.5609843168267268,
+            0.838154121194141
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 0.6878544091051315,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 972.7980838850514,
+          "B_mean_dd": 943.8800832989054,
+          "ci95": [
+            904.4846867147754,
+            1102.0214624971695
+          ],
+          "mse_gain_s2": 1001.7160844711973,
+          "rows": 165677,
+          "rows_moved": 102212
+        },
+        "january": {
+          "A_mean_rd": 297.2062360021844,
+          "B_mean_dd": 461.8321601804402,
+          "ci95": [
+            75.57350857126566,
+            191.39329240268793
+          ],
+          "mse_gain_s2": 132.58031182392858,
+          "rows": 153706,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 549.7325513783719,
+          "B_mean_dd": 601.2429851176921,
+          "ci95": [
+            387.982341734763,
+            637.2398304233097
+          ],
+          "mse_gain_s2": 498.2221176390518,
+          "rows": 190713,
+          "rows_moved": 88434
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 972.7980838850514,
+          "B_mean_dd": 943.8800832989054,
+          "ci95": [
+            905.8336936052561,
+            1103.6160638927397
+          ],
+          "mse_gain_s2": 1001.7160844711973,
+          "rows": 165677,
+          "rows_moved": 102212
+        },
+        "january": {
+          "A_mean_rd": 297.2101032565955,
+          "B_mean_dd": 461.8381695511811,
+          "ci95": [
+            77.65860161812498,
+            188.44583007624348
+          ],
+          "mse_gain_s2": 132.58203696200988,
+          "rows": 153704,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 549.7325513783719,
+          "B_mean_dd": 601.2429851176921,
+          "ci95": [
+            387.8996361305975,
+            633.653308391367
+          ],
+          "mse_gain_s2": 498.2221176390518,
+          "rows": 190713,
+          "rows_moved": 88434
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "label": "(ii) the same over v8's K=10 head, record only",
+      "rows_moved": {
+        "december": 102212,
+        "january": 69839,
+        "july_loo": 88434
+      },
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -3105.930597226256,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.8018861417925,
+          "rmse_base": 1751.915671904615,
+          "rmse_gain_s": -0.8862142371774553,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": -0.004884559286152305
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6318.685548382707,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.2681265912015,
+          "rmse_base": 5980.796397761006,
+          "rmse_gain_s": 0.5282711698046114,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.10077208566327588
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 16129.614579293468,
+          "passes_the_clause": true,
+          "rmse_arm": 2382.9033212645886,
+          "rmse_base": 2386.285367065955,
+          "rmse_gain_s": 3.38204580136653,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.1113587963625055
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 74455.29965437666,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.8018861417925,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 21.111796007539624,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.014408823807282542
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 46362.86534731372,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.2681265912015,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.8750644821830065,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.016766889665292613
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 61513.656926542404,
+          "passes_the_clause": true,
+          "rmse_arm": 2382.9033212645886,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 12.872522887019386,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.03242460253368426
+        }
+      }
+    }
+  },
+  "seconds": 280.0,
+  "verdict": {
+    "board_gain_s": 0.25684462217839155,
+    "ci95": [
+      0.16423491608418175,
+      0.3818478896372908
+    ],
+    "every_fold_interval_clear": false,
+    "folds_clear": {
+      "december": true,
+      "january": false,
+      "july_loo": true
+    },
+    "gate_reading": "i_over_cached_member_1",
+    "ii_board_gain_s": 0.5630698281329956,
+    "passes_the_gate": false
+  },
+  "what": "RESULTS section 47.17's screen: the ONE-MONTH extension (2025-11), K = 1.",
+  "which": "twomonth"
+}

@@ -1,0 +1,325 @@
+{
+ "clause": "y > 3600 clean rows, RMSE against v7, allowance 1.0 s (exp-027 SPEC's second kill clause, read by code/refit_bulk.py)",
+ "v7_tail_published": {
+  "july_loo": 2406.961,
+  "december": 1798.904,
+  "january": 2088.426
+ },
+ "folds": {},
+ "tails": {
+  "july_loo": {
+   "K2 / hold": 2404.3074,
+   "K2 / refit-bulk": 2405.3532,
+   "mod / hold": 2399.7912,
+   "mod / refit-bulk": 2395.5212,
+   "v7": 2406.9612
+  },
+  "december": {
+   "K2 / hold": 1794.0932,
+   "K2 / refit-bulk": 1779.6467,
+   "mod / hold": 1790.0799,
+   "mod / refit-bulk": 1769.2143,
+   "v7": 1798.9043
+  },
+  "january": {
+   "K2 / hold": 2086.7198,
+   "K2 / refit-bulk": 2087.8115,
+   "mod / hold": 2087.3129,
+   "mod / refit-bulk": 2095.6505,
+   "v7": 2088.4263
+  }
+ },
+ "clause_vs_v7": {
+  "july_loo": {
+   "K2 / hold": 2.6537,
+   "K2 / refit-bulk": 1.608,
+   "mod / hold": 7.17,
+   "mod / refit-bulk": 11.44
+  },
+  "december": {
+   "K2 / hold": 4.811,
+   "K2 / refit-bulk": 19.2576,
+   "mod / hold": 8.8244,
+   "mod / refit-bulk": 29.6899
+  },
+  "january": {
+   "K2 / hold": 1.7065,
+   "K2 / refit-bulk": 0.6148,
+   "mod / hold": 1.1134,
+   "mod / refit-bulk": -7.2241
+  }
+ },
+ "tail_2x2": {
+  "july_loo": {
+   "member, inside the refit-bulk anchor": {
+    "from": "K2 / refit-bulk",
+    "to": "mod / refit-bulk",
+    "rmse_from": 2405.3532,
+    "rmse_to": 2395.5212,
+    "gain": 9.832
+   },
+   "member, inside the hold anchor": {
+    "from": "K2 / hold",
+    "to": "mod / hold",
+    "rmse_from": 2404.3074,
+    "rmse_to": 2399.7912,
+    "gain": 4.5163
+   },
+   "anchor, with K2 in the slot": {
+    "from": "K2 / hold",
+    "to": "K2 / refit-bulk",
+    "rmse_from": 2404.3074,
+    "rmse_to": 2405.3532,
+    "gain": -1.0457
+   },
+   "anchor, with the mod member in the slot": {
+    "from": "mod / hold",
+    "to": "mod / refit-bulk",
+    "rmse_from": 2399.7912,
+    "rmse_to": 2395.5212,
+    "gain": 4.27
+   }
+  },
+  "december": {
+   "member, inside the refit-bulk anchor": {
+    "from": "K2 / refit-bulk",
+    "to": "mod / refit-bulk",
+    "rmse_from": 1779.6467,
+    "rmse_to": 1769.2143,
+    "gain": 10.4323
+   },
+   "member, inside the hold anchor": {
+    "from": "K2 / hold",
+    "to": "mod / hold",
+    "rmse_from": 1794.0932,
+    "rmse_to": 1790.0799,
+    "gain": 4.0133
+   },
+   "anchor, with K2 in the slot": {
+    "from": "K2 / hold",
+    "to": "K2 / refit-bulk",
+    "rmse_from": 1794.0932,
+    "rmse_to": 1779.6467,
+    "gain": 14.4466
+   },
+   "anchor, with the mod member in the slot": {
+    "from": "mod / hold",
+    "to": "mod / refit-bulk",
+    "rmse_from": 1790.0799,
+    "rmse_to": 1769.2143,
+    "gain": 20.8655
+   }
+  },
+  "january": {
+   "member, inside the refit-bulk anchor": {
+    "from": "K2 / refit-bulk",
+    "to": "mod / refit-bulk",
+    "rmse_from": 2087.8115,
+    "rmse_to": 2095.6505,
+    "gain": -7.839
+   },
+   "member, inside the hold anchor": {
+    "from": "K2 / hold",
+    "to": "mod / hold",
+    "rmse_from": 2086.7198,
+    "rmse_to": 2087.3129,
+    "gain": -0.5931
+   },
+   "anchor, with K2 in the slot": {
+    "from": "K2 / hold",
+    "to": "K2 / refit-bulk",
+    "rmse_from": 2086.7198,
+    "rmse_to": 2087.8115,
+    "gain": -1.0917
+   },
+   "anchor, with the mod member in the slot": {
+    "from": "mod / hold",
+    "to": "mod / refit-bulk",
+    "rmse_from": 2087.3129,
+    "rmse_to": 2095.6505,
+    "gain": -8.3376
+   }
+  }
+ },
+ "january_attribution": {
+  "airport": [
+   {
+    "group": "LFPG",
+    "n": 102,
+    "rmse_base": 1419.3,
+    "rmse_cand": 1433.32,
+    "dsse": 4079222.7063192725,
+    "share_of_change": 0.4178,
+    "seconds_if_only_this_moved": 3.0214
+   },
+   {
+    "group": "EGLL",
+    "n": 67,
+    "rmse_base": 1316.24,
+    "rmse_cand": 1335.81,
+    "dsse": 3477939.529123813,
+    "share_of_change": 0.3562,
+    "seconds_if_only_this_moved": 2.5763
+   },
+   {
+    "group": "LIRF",
+    "n": 70,
+    "rmse_base": 3219.93,
+    "rmse_cand": 3224.55,
+    "dsse": 2084201.853020072,
+    "share_of_change": 0.2135,
+    "seconds_if_only_this_moved": 1.5443
+   },
+   {
+    "group": "LTFM",
+    "n": 11,
+    "rmse_base": 2595.42,
+    "rmse_cand": 2603.7,
+    "dsse": 473860.1234447956,
+    "share_of_change": 0.0485,
+    "seconds_if_only_this_moved": 0.3512
+   },
+   {
+    "group": "LSZH",
+    "n": 8,
+    "rmse_base": 3737.1,
+    "rmse_cand": 3731.3,
+    "dsse": -346388.56672894955,
+    "share_of_change": -0.0355,
+    "seconds_if_only_this_moved": -0.2568
+   },
+   {
+    "group": "EDDF",
+    "n": 11,
+    "rmse_base": 852.38,
+    "rmse_cand": 849.9,
+    "dsse": -46452.23101756908,
+    "share_of_change": -0.0048,
+    "seconds_if_only_this_moved": -0.0344
+   },
+   {
+    "group": "EDDM",
+    "n": 5,
+    "rmse_base": 1163.79,
+    "rmse_cand": 1167.29,
+    "dsse": 40711.42135900818,
+    "share_of_change": 0.0042,
+    "seconds_if_only_this_moved": 0.0302
+   },
+   {
+    "group": "EHAM",
+    "n": 49,
+    "rmse_base": 1812.0,
+    "rmse_cand": 1812.0,
+    "dsse": 0.0,
+    "share_of_change": 0.0,
+    "seconds_if_only_this_moved": 0.0
+   }
+  ],
+  "regime": [
+   {
+    "group": "nm_bulk",
+    "n": 132,
+    "rmse_base": 1335.13,
+    "rmse_cand": 1349.59,
+    "dsse": 5122245.0132137835,
+    "share_of_change": 0.5247,
+    "seconds_if_only_this_moved": 3.7933
+   },
+   {
+    "group": "nm_late",
+    "n": 140,
+    "rmse_base": 1389.92,
+    "rmse_cand": 1396.56,
+    "dsse": 2589915.7362342477,
+    "share_of_change": 0.2653,
+    "seconds_if_only_this_moved": 1.9188
+   },
+   {
+    "group": "nonm",
+    "n": 22,
+    "rmse_base": 3880.98,
+    "rmse_cand": 3892.98,
+    "dsse": 2050934.0860726237,
+    "share_of_change": 0.2101,
+    "seconds_if_only_this_moved": 1.5196
+   },
+   {
+    "group": "noac",
+    "n": 29,
+    "rmse_base": 4439.81,
+    "rmse_cand": 4439.81,
+    "dsse": 0.0,
+    "share_of_change": 0.0,
+    "seconds_if_only_this_moved": 0.0
+   }
+  ],
+  "label band": [
+   {
+    "group": "3600-5400",
+    "n": 266,
+    "rmse_base": 1289.07,
+    "rmse_cand": 1302.42,
+    "dsse": 9205279.724820435,
+    "share_of_change": 0.9429,
+    "seconds_if_only_this_moved": 6.812
+   },
+   {
+    "group": "5400-7200",
+    "n": 30,
+    "rmse_base": 1861.05,
+    "rmse_cand": 1875.82,
+    "dsse": 1654885.7891394645,
+    "share_of_change": 0.1695,
+    "seconds_if_only_this_moved": 1.2263
+   },
+   {
+    "group": "7200-10800",
+    "n": 19,
+    "rmse_base": 3268.36,
+    "rmse_cand": 3259.52,
+    "dsse": -1097070.6784392893,
+    "share_of_change": -0.1124,
+    "seconds_if_only_this_moved": -0.8133
+   },
+   {
+    "group": "10800-21600",
+    "n": 3,
+    "rmse_base": 6489.33,
+    "rmse_cand": 6489.33,
+    "dsse": 0.0,
+    "share_of_change": 0.0,
+    "seconds_if_only_this_moved": 0.0
+   },
+   {
+    "group": "21600-inf",
+    "n": 5,
+    "rmse_base": 10330.16,
+    "rmse_cand": 10330.16,
+    "dsse": 0.0,
+    "share_of_change": 0.0,
+    "seconds_if_only_this_moved": 0.0
+   }
+  ],
+  "served by exp-036's mask": [
+   {
+    "group": "True",
+    "n": 263,
+    "rmse_base": 2171.28,
+    "rmse_cand": 2179.85,
+    "dsse": 9809547.066538572,
+    "share_of_change": 1.0048,
+    "seconds_if_only_this_moved": 7.2584
+   },
+   {
+    "group": "False",
+    "n": 60,
+    "rmse_base": 1677.67,
+    "rmse_cand": 1677.44,
+    "dsse": -46452.231017529964,
+    "share_of_change": -0.0048,
+    "seconds_if_only_this_moved": -0.0344
+   }
+  ]
+ }
+}

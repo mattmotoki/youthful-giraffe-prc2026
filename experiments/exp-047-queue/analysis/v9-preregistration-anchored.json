@@ -1,0 +1,96 @@
+{
+ "what": "the expected board move for the v20 upload with v9, registered BEFORE the upload (score-feedback rule)",
+ "written_before_the_read": true,
+ "candidate": "v9 = base set v23, the extended head on both sides -- the with-clock head's fitting panel gains 2025-11's writable rows",
+ "face": {
+  "all_row_s": 0.513,
+  "all_row_ci95": [
+   0.392,
+   0.688
+  ],
+  "read": "in fold over v8's head, every fold clear, rule (a)",
+  "source": "the desk, 2026-09-10; surfacefit's extended bag"
+ },
+ "the_anchor": {
+  "board_reading_18": {
+   "v19_score": 245.7752,
+   "move_on_v18": 0.5853,
+   "transfer_on_face_0_24275": 2.41,
+   "read_at": "00:10 UTC 2026-09-10",
+   "rank": "1 of 94",
+   "lead_s": 15.16
+  },
+  "re_anchored": "\u00a77bp registered the MOVE anchor-free while reading 18 was pending; the move is UNCHANGED and only the anchor is substituted, exactly as that registration's rule required",
+  "anchors_used_here": {
+   "v19_as_SCORED": 245.7752
+  }
+ },
+ "history": {
+  "transfers": {
+   "v13": 1.75,
+   "v14": 1.03,
+   "v15": 2.01,
+   "v16": 0.36,
+   "v17": 0.7,
+   "v18": 1.44,
+   "v19": 2.41
+  },
+  "median": 1.44,
+  "mean": 1.3857,
+  "range": [
+   0.36,
+   2.41
+  ],
+  "v19_transfer": 2.41
+ },
+ "expected_move_s": {
+  "at_face_transfer_1x": 0.513,
+  "at_the_median_transfer": 0.7387,
+  "at_the_mean_transfer": 0.7109,
+  "under_the_observed_transfer_range_at_face": [
+   0.1847,
+   1.2363
+  ],
+  "under_the_observed_range_on_the_face_interval": [
+   0.1411,
+   1.6581
+  ],
+  "under_the_two_most_recent_uploads": [
+   0.3591,
+   0.7387
+  ]
+ },
+ "expected_score_by_anchor": {
+  "v19_as_SCORED": {
+   "at_face_transfer_1x": 245.2622,
+   "at_the_median_transfer": 245.0365,
+   "at_the_mean_transfer": 245.0643,
+   "under_the_observed_transfer_range_at_face": [
+    244.5389,
+    245.5905
+   ],
+   "under_the_observed_range_on_the_face_interval": [
+    244.1171,
+    245.6341
+   ],
+   "under_the_two_most_recent_uploads": [
+    245.0365,
+    245.4161
+   ]
+  }
+ },
+ "transfer_failure": {
+  "move_below_s": 0.1411,
+  "definition": "a move under +0.1411 s -- the lowest transfer ever observed (0.36x, v16) applied to the bottom of this candidate's own fold interval (+0.392 s).  A move at or below zero is not a weak transfer but no transfer at all."
+ },
+ "what_is_new_about_this_candidate_and_is_not_in_the_history": [
+  "This is the FIRST upload whose fitting panel contains a month priced by a DIFFERENT estimator: 2025-11's targets are this lane's base6, which is not v11 and not v12 -- a member (V3-allin) is missing and the other six carry refitted stacker weights (\u00a77bk).  The measured control says the target mismatch costs nothing (-0.01), but no prior reading in the transfer history was taken under a mixed-base panel, so the six historical transfers are a weaker guide here than they were for v18 or v19.",
+  "The face is also the largest ever registered by this programme apart from v13's +8.128: 2.1x v19's +0.2428 and 2.5x v18's +0.2053.  Transfers have been measured on faces of 0.07 to 0.73 s; +0.513 sits at the top of that range and outside it on every upload but v13, whose 1.75x came from a face 16x larger.",
+  "2026-07 is the POORER ranking month for the class this lane most recently measured (\u00a77bn (iii): nonm 1.329 % against 2026-01's 1.533 %), while the folds are summer-heavy -- a composition caveat that applies to any fold-side face."
+ ],
+ "rank_is_not_at_risk": {
+  "next_team": 260.931,
+  "note": "every band above leaves rank 1 by more than 14 s; no outcome of this upload puts the lead in question"
+ },
+ "no_serve_no_upload": "the desk uploads; this lane registers and audits only"
+}

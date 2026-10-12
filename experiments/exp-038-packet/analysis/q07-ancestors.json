@@ -1,0 +1,40 @@
+{
+  "ancestors": {
+    "members": {
+      "T-tailv4": "CLOSED on nested and nestedanchor (exp-025 oof-nested/)",
+      "L2-hub8725": "CLOSED on nested and nestedanchor (exp-025 oof-nested/)",
+      "F1-fresh": "CLOSED on nested and nestedanchor (exp-025 oof-nested/). It is in blend-5's seven, so it is a DIRECT stacker feature of stack-5, v6 and v7 only -- K2-window holds its slot in K2, refit-bulk and v10. It still REACHES all six: K2 and refit-bulk are anchored on the blend-5 hybrid, which is fitted over NAMES5 and therefore over F1-fresh (exp-031 RESULTS section 3), and v10 additionally serves v7 -- an F1-fresh descendant -- on every airport outside the eight-airport keep list",
+      "C2-cat": "open on every instrument (never in exp-025's scope)",
+      "D1-winter": "open on every instrument (never in exp-025's scope)",
+      "N1-nmtail": "open on every instrument (never in exp-025's scope)",
+      "K2-window": "open on every instrument (never in exp-025's scope); this is the member K2/refit-bulk/v10 turn on",
+      "V3-allin": "open on every instrument; it CANNOT be refit at all -- no ERA5 snapshot on this machine (exp-031 section 10.3, exp-025 oof-nested/README.md)"
+    },
+    "closed_count": {
+      "_units": "DIRECT stacker feature columns, which is the only thing this count counts. It is NOT a map of supervised ancestors: see F1-fresh above (Sol round 1, blocking 6, which corrected an earlier version of this record that read the direct count as the ancestor map)",
+      "stack-5, v6, v7": "3 of their 7 direct member columns (T-tailv4, L2-hub8725, F1-fresh)",
+      "K2, refit-bulk, v10": "2 of their 7 direct member columns (T-tailv4, L2-hub8725); F1-fresh still reaches them through the blend-5 anchor, and v10 through v7 as well, so their ANCESTOR closure is not smaller than stack-5's"
+    },
+    "not_audited": {
+      "k2-w300": "a Q01 finalist with NO cached nested vector -- exp-031's OOF carries stack_5, v6, v7, K2 and refit_bulk only. Q07 stage 1 cannot audit it and K2 is not a substitute for it (Sol round 1, blocking 8)"
+    },
+    "identification": {
+      "what the change contains": "published -> nested is NOT the nesting term alone. exp-031 splits published -> kaggle (the machine) from kaggle -> nested (the nesting), and the kaggle column is not in the committed OOF, so this stage cannot separate them. The change also carries the loss of one training month.",
+      "what follows": "the gain changes little on two partial, confounded instruments. These instruments do not identify a cause, and offsetting machine, nesting and training-size terms can produce a small net change (Sol round 1, blocking 7)."
+    },
+    "anchor": {
+      "published": "fold g's training anchor is fitted on the other two folds, which includes the scored fold f -- channel A OPEN",
+      "nested": "channel A OPEN (shipped anchor)",
+      "nestedanchor": "channel A CLOSED: fold g's training anchor is fitted on the single remaining fold (exp-026 nested_anchor.py)"
+    },
+    "head": "the stacker itself is refitted per fold on the other two folds on every instrument; its own labels are never the scored fold's",
+    "mask": "the eight-airport mask and the EHAM hold are SELECTED on the same three folds they are scored on (exp-036 section 3). No instrument here closes that channel, and it is the one an upload has already priced"
+  },
+  "limit": "exp-031 RESULTS section 1: this design confounds closing a channel with removing one month of training data, the measured member shifts include negative values, and no column here is monotone in the direction of the clean score. Survival is not proof of cleanliness; movement is not proof of leakage.",
+  "instruments": {
+    "published": "committed rotation (Q01's own)",
+    "nested": "experiments/exp-031-nested/oof/exp-031-nested-{fold}.parquet",
+    "nestedanchor": "experiments/exp-031-nested/oof/exp-031-nestedanchor-nested-{fold}.parquet"
+  },
+  "note": "v10 is rebuilt on each instrument by exp-036's own np.where mask on that instrument's refit-bulk and v7; the mask list is identical"
+}

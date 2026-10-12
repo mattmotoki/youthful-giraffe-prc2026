@@ -1,0 +1,106 @@
+{
+  "arm": "w600arrk",
+  "note": "arm 4 control: v6's 600 s block plus the arrivals keyed on runway direction and stand block, 90 block columns, no airport exclusion",
+  "clean": {
+    "july_loo": 284.7857,
+    "december": 205.7016,
+    "january": 218.7775
+  },
+  "vs_stack5": {
+    "july_loo": 0.4173,
+    "december": -0.0897,
+    "january": 0.3527
+  },
+  "vs_v6": {
+    "july_loo": -0.0638,
+    "december": -0.0482,
+    "january": 0.039
+  },
+  "ci_v6": {
+    "july_loo": [
+      0.0638,
+      -0.0042,
+      0.1378
+    ],
+    "december": [
+      0.0482,
+      -0.0121,
+      0.112
+    ],
+    "january": [
+      -0.039,
+      -0.0821,
+      0.0045
+    ]
+  },
+  "ci_v6_no_noac": {
+    "july_loo": [
+      0.0739,
+      -0.0049,
+      0.158
+    ],
+    "december": [
+      0.0495,
+      -0.0125,
+      0.1148
+    ],
+    "january": [
+      -0.0413,
+      -0.0861,
+      0.0047
+    ]
+  },
+  "slices": {
+    "july_loo": {
+      "n": 190713,
+      "rmse": 284.7857,
+      "le3600": 247.7923,
+      "gt3600": 2406.0642,
+      "no_nm": 1121.3547,
+      "no_nm_flight_id_only": 1121.8818,
+      "noac": 3407.3545,
+      "no_noac": 246.1162,
+      "n_no_nm": 3938
+    },
+    "december": {
+      "n": 165677,
+      "rmse": 205.7016,
+      "le3600": 193.0528,
+      "gt3600": 1799.7015,
+      "no_nm": 664.8301,
+      "no_nm_flight_id_only": 665.6634,
+      "noac": 2010.4588,
+      "no_noac": 200.4081,
+      "n_no_nm": 1649
+    },
+    "january": {
+      "n": 153704,
+      "rmse": 218.7775,
+      "le3600": 196.8781,
+      "gt3600": 2090.5414,
+      "no_nm": 952.2098,
+      "no_nm_flight_id_only": 952.7876,
+      "noac": 3509.4763,
+      "no_noac": 206.9612,
+      "n_no_nm": 1433
+    }
+  },
+  "clean_board": 257.6476,
+  "gain_board_vs_stack5": 0.3896,
+  "gain_board_vs_v6": -0.0246,
+  "predicted_board": 263.7168,
+  "worst_fold_vs_v6": -0.0638,
+  "gate_gain": false,
+  "gate_folds": true,
+  "gate": false,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "blocks": [
+    "depx",
+    "arrk"
+  ],
+  "win": 600.0
+}

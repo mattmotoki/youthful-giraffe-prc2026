@@ -1,0 +1,83 @@
+{
+  "note": "exp-026 rebuild of `blend-5 -C2-cat` on published members only.",
+  "_stage_name": "b5-drop-C2-cat",
+  "ranking": {
+    "T-tailv4": "experiments/exp-012-blend2/published/T-tailv4-ranking.parquet",
+    "L2-hub8725": "experiments/exp-012-blend2/published/L2-hub8725-ranking.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-ranking.parquet",
+    "F1-fresh": "experiments/exp-012-blend2/published/F1-fresh-s1-ranking.parquet",
+    "V3-allin": "experiments/exp-012-blend2/published/V3-allin-v1-ranking.parquet",
+    "N1-nmtail": "experiments/exp-012-blend2/published/N1-nmtail-v4-ranking.parquet"
+  },
+  "mode": "hybrid: nnls in nm_late, nnls elsewhere",
+  "weights": {
+    "nm_late": {
+      "T-tailv4": 0.0,
+      "L2-hub8725": 0.0,
+      "D1-winter": 0.09092625252333604,
+      "F1-fresh": 0.41140952776234374,
+      "V3-allin": 0.3027989477253974,
+      "N1-nmtail": 0.20900246107601597
+    },
+    "nm_bulk": {
+      "T-tailv4": 0.22646418316358302,
+      "L2-hub8725": 0.08392872224116912,
+      "D1-winter": 0.0,
+      "F1-fresh": 0.4784452030217862,
+      "V3-allin": 0.2115265144589179,
+      "N1-nmtail": 0.0
+    },
+    "nonm": {
+      "T-tailv4": 0.22646418316358302,
+      "L2-hub8725": 0.08392872224116912,
+      "D1-winter": 0.0,
+      "F1-fresh": 0.4784452030217862,
+      "V3-allin": 0.2115265144589179,
+      "N1-nmtail": 0.0
+    },
+    "noac": {
+      "T-tailv4": 0.22646418316358302,
+      "L2-hub8725": 0.08392872224116912,
+      "D1-winter": 0.0,
+      "F1-fresh": 0.4784452030217862,
+      "V3-allin": 0.2115265144589179,
+      "N1-nmtail": 0.0
+    },
+    "_all": {
+      "T-tailv4": 0.22646418316358302,
+      "L2-hub8725": 0.08392872224116912,
+      "D1-winter": 0.0,
+      "F1-fresh": 0.4784452030217862,
+      "V3-allin": 0.2115265144589179,
+      "N1-nmtail": 0.0
+    }
+  },
+  "floor": 60.0,
+  "guard_bounds": [
+    -20657.0,
+    9069.0
+  ],
+  "late_cut": 1800.0,
+  "prepare_members": true,
+  "blend_version": 5,
+  "rotated": {
+    "july_loo": 286.2668,
+    "december": 206.9665,
+    "january": 339.0213
+  },
+  "rotated_clean": {
+    "july_loo": 286.2668,
+    "december": 206.9665,
+    "january": 220.2113
+  },
+  "board_clean": 259.0989,
+  "predict": 263.0989,
+  "member_sha256": {
+    "T-tailv4": "89706c6c3a268726d37f59d5dfe25297ee72acc73bbaec9659d4afcc40c8bfa0",
+    "L2-hub8725": "dd0e8710000ab29b930ec72d8b058b00e6ed86ba3240cad01402c13813527882",
+    "D1-winter": "8865d3d866012d1421a08eee4c24ce9cfe53dbc0e255d8a3ff1894b68c368fd2",
+    "F1-fresh": "e216ab9e0dc7243a55a5ec1f8bba7d4dd8fa5f0108782e42d59344006c8bc5dc",
+    "V3-allin": "199fd5146966e98cae244be62c5bbdebd2951832374c7f920a4c97d5ef8a0fd4",
+    "N1-nmtail": "5feb03d96490d9e7acd7dee59fd94a41a81a45f97b75bb2d016646ac2cf4067b"
+  }
+}

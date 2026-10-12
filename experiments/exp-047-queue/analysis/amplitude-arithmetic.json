@@ -1,0 +1,611 @@
+{
+ "cells": {
+  "EDDF/reached": {
+   "december": {
+    "any_amplitude_can_clear": true,
+    "clears_now": true,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 1.9231,
+    "sup_t_over_every_amplitude": 1.731,
+    "t_at_full_amplitude": 1.281,
+    "t_v17": 1.319
+   },
+   "january": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.7581,
+    "sup_t_over_every_amplitude": 0.832,
+    "t_at_full_amplitude": 0.283,
+    "t_v17": 1.165
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": true,
+    "clears_now": true,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 3.1445,
+    "sup_t_over_every_amplitude": 3.031,
+    "t_at_full_amplitude": 2.549,
+    "t_v17": 2.692
+   }
+  },
+  "EGLL/reached": {
+   "december": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.0623,
+    "sup_t_over_every_amplitude": 0.169,
+    "t_at_full_amplitude": -1.185,
+    "t_v17": -1.609
+   },
+   "january": {
+    "any_amplitude_can_clear": true,
+    "clears_now": false,
+    "gain_there_as_a_fraction_of_the_cells_best": 0.854,
+    "largest_amplitude_that_clears": 0.2097,
+    "s_own_recovered": 0.3394,
+    "sup_t_over_every_amplitude": 1.447,
+    "t_at_full_amplitude": -0.685,
+    "t_v17": 0.11
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.27,
+    "sup_t_over_every_amplitude": 0.579,
+    "t_at_full_amplitude": -0.493,
+    "t_v17": -0.621
+   }
+  },
+  "EGLL/unreached": {
+   "december": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.014,
+    "sup_t_over_every_amplitude": 0.013,
+    "t_at_full_amplitude": -0.438,
+    "t_v17": 0.148
+   },
+   "january": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": -1.281,
+    "sup_t_over_every_amplitude": -0.937,
+    "t_at_full_amplitude": -1.303,
+    "t_v17": -1.083
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.3479,
+    "sup_t_over_every_amplitude": 0.896,
+    "t_at_full_amplitude": -0.392,
+    "t_v17": -0.509
+   }
+  },
+  "EHAM/reached": {
+   "december": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": -0.0167,
+    "sup_t_over_every_amplitude": -0.033,
+    "t_at_full_amplitude": -1.024,
+    "t_v17": -1.169
+   },
+   "january": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 1.9182,
+    "sup_t_over_every_amplitude": 0.949,
+    "t_at_full_amplitude": 0.701,
+    "t_v17": 0.755
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": true,
+    "clears_now": false,
+    "gain_there_as_a_fraction_of_the_cells_best": 0.9798,
+    "largest_amplitude_that_clears": 0.5231,
+    "s_own_recovered": 0.6096,
+    "sup_t_over_every_amplitude": 1.751,
+    "t_at_full_amplitude": 0.315,
+    "t_v17": 1.439
+   }
+  },
+  "LEBL/reached": {
+   "december": {
+    "any_amplitude_can_clear": true,
+    "clears_now": false,
+    "gain_there_as_a_fraction_of_the_cells_best": 0.9674,
+    "largest_amplitude_that_clears": 0.7338,
+    "s_own_recovered": 0.8953,
+    "sup_t_over_every_amplitude": 1.694,
+    "t_at_full_amplitude": 0.748,
+    "t_v17": 0.818
+   },
+   "january": {
+    "any_amplitude_can_clear": true,
+    "clears_now": true,
+    "gain_there_as_a_fraction_of_the_cells_best": 0.9991,
+    "largest_amplitude_that_clears": 0.9806,
+    "s_own_recovered": 1.0113,
+    "sup_t_over_every_amplitude": 1.941,
+    "t_at_full_amplitude": 0.981,
+    "t_v17": 1.519
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": true,
+    "clears_now": true,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 1.1932,
+    "sup_t_over_every_amplitude": 2.292,
+    "t_at_full_amplitude": 1.332,
+    "t_v17": 1.703
+   }
+  },
+  "LEMD/reached": {
+   "december": {
+    "any_amplitude_can_clear": true,
+    "clears_now": true,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 1.2637,
+    "sup_t_over_every_amplitude": 2.971,
+    "t_at_full_amplitude": 1.795,
+    "t_v17": 1.514
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": true,
+    "clears_now": true,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.8676,
+    "sup_t_over_every_amplitude": 3.54,
+    "t_at_full_amplitude": 1.5,
+    "t_v17": 2.386
+   }
+  },
+  "LEMD/unreached": {
+   "january": {
+    "any_amplitude_can_clear": true,
+    "clears_now": false,
+    "gain_there_as_a_fraction_of_the_cells_best": 0.9882,
+    "largest_amplitude_that_clears": 0.7779,
+    "s_own_recovered": 0.8728,
+    "sup_t_over_every_amplitude": 1.804,
+    "t_at_full_amplitude": 0.77,
+    "t_v17": 1.188
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.497,
+    "sup_t_over_every_amplitude": 0.706,
+    "t_at_full_amplitude": -0.004,
+    "t_v17": 0.69
+   }
+  },
+  "LFPG/unreached": {
+   "december": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 1.1612,
+    "sup_t_over_every_amplitude": 0.975,
+    "t_at_full_amplitude": 0.555,
+    "t_v17": 0.459
+   },
+   "january": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.3449,
+    "sup_t_over_every_amplitude": 0.393,
+    "t_at_full_amplitude": -0.177,
+    "t_v17": 0.818
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": false,
+    "clears_now": false,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.0305,
+    "sup_t_over_every_amplitude": 0.074,
+    "t_at_full_amplitude": -1.134,
+    "t_v17": -0.747
+   }
+  },
+  "LSZH/reached": {
+   "december": {
+    "any_amplitude_can_clear": true,
+    "clears_now": false,
+    "gain_there_as_a_fraction_of_the_cells_best": 0.8815,
+    "largest_amplitude_that_clears": 0.4239,
+    "s_own_recovered": 0.6465,
+    "sup_t_over_every_amplitude": 1.488,
+    "t_at_full_amplitude": 0.337,
+    "t_v17": 0.704
+   },
+   "january": {
+    "any_amplitude_can_clear": true,
+    "clears_now": false,
+    "gain_there_as_a_fraction_of_the_cells_best": 0.9331,
+    "largest_amplitude_that_clears": 0.593,
+    "s_own_recovered": 0.7999,
+    "sup_t_over_every_amplitude": 1.589,
+    "t_at_full_amplitude": 0.596,
+    "t_v17": 0.229
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": true,
+    "clears_now": false,
+    "gain_there_as_a_fraction_of_the_cells_best": 0.3903,
+    "largest_amplitude_that_clears": 0.1361,
+    "s_own_recovered": 0.6208,
+    "sup_t_over_every_amplitude": 1.123,
+    "t_at_full_amplitude": 0.219,
+    "t_v17": 0.638
+   }
+  },
+  "LTFM/unreached": {
+   "december": {
+    "any_amplitude_can_clear": true,
+    "clears_now": true,
+    "gain_there_as_a_fraction_of_the_cells_best": 0.9991,
+    "largest_amplitude_that_clears": 0.9425,
+    "s_own_recovered": 0.9709,
+    "sup_t_over_every_amplitude": 1.943,
+    "t_at_full_amplitude": 0.942,
+    "t_v17": 1.169
+   },
+   "january": {
+    "any_amplitude_can_clear": true,
+    "clears_now": true,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 0.9919,
+    "sup_t_over_every_amplitude": 2.714,
+    "t_at_full_amplitude": 1.346,
+    "t_v17": 1.204
+   },
+   "july_loo": {
+    "any_amplitude_can_clear": true,
+    "clears_now": true,
+    "largest_amplitude_that_clears": null,
+    "s_own_recovered": 1.5844,
+    "sup_t_over_every_amplitude": 2.48,
+    "t_at_full_amplitude": 1.698,
+    "t_v17": 1.564
+   }
+  }
+ },
+ "identities": {
+  "A_star": "t(A) = c*(2s - A) with c > 0, so t DECREASES in A and the cell clears for every A <= A* = 2s - (2s-1)/t(1). A* is the LARGEST amplitude at which the cell clears, not the smallest.",
+  "point": "G(A) = n*m*(2*A*s - A^2), so G(A)/G(1) = (2As - A^2)/(2s - 1)",
+  "s_recovered": "s = (A^2 - rho)/(2*(A - rho)) with rho = G(A)/G(1)",
+  "sup": "sup over A of t is t(1)*2s/(2s-1), approached as A -> 0, where the gain itself goes to 0. Amplitude trades the size of the correction against its significance along ONE dial and is bounded on both ends.",
+  "t": "t(A) = t(1) * (2s - A)/(2s - 1): LINEAR in A with a negative slope",
+  "width": "halfwidth(A) ~ A * halfwidth(1): the day-level statistic is 2A*u_k - A^2*v_k and the 2A*u term dominates for A of order 1"
+ },
+ "pooled_check": {
+  "december": {
+   "A": 0.9102,
+   "measured_point_ratio": 1.6818,
+   "measured_width_ratio": 0.8991,
+   "predicted_point_ratio": 1.6813,
+   "predicted_width_ratio": 0.9102,
+   "s": 0.553
+  },
+  "january": {
+   "A": 0.9854,
+   "measured_point_ratio": 1.4351,
+   "measured_width_ratio": 0.9849,
+   "predicted_point_ratio": 1.435,
+   "predicted_width_ratio": 0.9854,
+   "s": 0.516
+  },
+  "july_loo": {
+   "A": 0.9648,
+   "measured_point_ratio": 1.0171,
+   "measured_width_ratio": 0.9663,
+   "predicted_point_ratio": 1.017,
+   "predicted_width_ratio": 0.9648,
+   "s": 0.825
+  }
+ },
+ "t_moved": {
+  "better": 9,
+  "note": "t = point / half-width on the cell's own scored rows, v17 -> the 3.36x panel at full amplitude",
+  "worse_under_the_3.36x_panel": 19
+ },
+ "the_amplitude_relaxation": {
+  "by_cell": {
+   "EGLL/reached": {
+    "could_clear_on_every_priced_fold": false,
+    "priced_folds": [
+     "july_loo",
+     "december",
+     "january"
+    ],
+    "registered_board_s_at_the_middle_row": 0.009278371863662404,
+    "sup_t_by_fold": {
+     "december": 0.169,
+     "january": 1.447,
+     "july_loo": 0.579
+    },
+    "unpriced_folds": []
+   },
+   "EGLL/unreached": {
+    "could_clear_on_every_priced_fold": false,
+    "priced_folds": [
+     "july_loo",
+     "december",
+     "january"
+    ],
+    "registered_board_s_at_the_middle_row": 0.0004145777394064187,
+    "sup_t_by_fold": {
+     "december": 0.013,
+     "january": -0.937,
+     "july_loo": 0.896
+    },
+    "unpriced_folds": []
+   },
+   "EHAM/reached": {
+    "could_clear_on_every_priced_fold": false,
+    "priced_folds": [
+     "july_loo",
+     "december",
+     "january"
+    ],
+    "registered_board_s_at_the_middle_row": 0.0023179096178967597,
+    "sup_t_by_fold": {
+     "december": -0.033,
+     "january": 0.949,
+     "july_loo": 1.751
+    },
+    "unpriced_folds": []
+   },
+   "LEBL/reached": {
+    "could_clear_on_every_priced_fold": true,
+    "priced_folds": [
+     "july_loo",
+     "december",
+     "january"
+    ],
+    "registered_board_s_at_the_middle_row": 0.0066112433144136975,
+    "sup_t_by_fold": {
+     "december": 1.694,
+     "january": 1.941,
+     "july_loo": 2.292
+    },
+    "unpriced_folds": []
+   },
+   "LEMD/unreached": {
+    "could_clear_on_every_priced_fold": false,
+    "priced_folds": [
+     "july_loo",
+     "january"
+    ],
+    "registered_board_s_at_the_middle_row": 0.002353011167388663,
+    "sup_t_by_fold": {
+     "january": 1.804,
+     "july_loo": 0.706
+    },
+    "unpriced_folds": [
+     "december"
+    ]
+   },
+   "LFPG/unreached": {
+    "could_clear_on_every_priced_fold": false,
+    "priced_folds": [
+     "july_loo",
+     "december",
+     "january"
+    ],
+    "registered_board_s_at_the_middle_row": 0.08818182652232473,
+    "sup_t_by_fold": {
+     "december": 0.975,
+     "january": 0.393,
+     "july_loo": 0.074
+    },
+    "unpriced_folds": []
+   },
+   "LSZH/reached": {
+    "could_clear_on_every_priced_fold": true,
+    "priced_folds": [
+     "july_loo",
+     "december",
+     "january"
+    ],
+    "registered_board_s_at_the_middle_row": 0.004195076532604232,
+    "sup_t_by_fold": {
+     "december": 1.488,
+     "january": 1.589,
+     "july_loo": 1.123
+    },
+    "unpriced_folds": []
+   }
+  },
+  "cells_that_could": [
+   "LEBL/reached",
+   "LSZH/reached"
+  ],
+  "question": "granting an ORACLE choice of amplitude per cell per fold -- which 7ca iv forbids, because a scale fitted on the scored month is not servable -- which of the seven target cells could clear the hold on every fold?",
+  "reading": "even with the amplitude chosen by oracle, the never-served cells are worth about a tenth of the 0.1 s floor, and LFPG/unreached -- 78 % of the design -- cannot clear on ANY fold at ANY amplitude",
+  "the_floor": 0.1,
+  "their_board_s_at_the_registered_middle_row": 0.0108
+ },
+ "what": "the amplitude arithmetic of RESULTS 7cc vi.3, checked on a CONTROLLED pair: analysis/arms-step2-leverA-repair.json is analysis/arms-step2-leverA.json's d multiplied by a known per-fold constant and nothing else",
+ "what_more_SCORED_data_would_do": {
+  "arithmetic": "the interval is day-clustered, so its half-width falls as 1/sqrt(K) in the number of scored day clusters; a cell clears when t*sqrt(k) > 1, so k > (1/t)^2 months of scored days are needed on every fold. This is the ONLY sample-size lever on the hold, and it is on the SCORED side.",
+  "by_cell": {
+   "EGLL/reached": {
+    "by_fold": {
+     "december": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -1.185
+     },
+     "january": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -0.685
+     },
+     "july_loo": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -0.493
+     }
+    },
+    "months_needed_on_the_worst_fold": null,
+    "revivable_by_more_scored_months": false
+   },
+   "EGLL/unreached": {
+    "by_fold": {
+     "december": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -0.438
+     },
+     "january": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -1.303
+     },
+     "july_loo": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -0.392
+     }
+    },
+    "months_needed_on_the_worst_fold": null,
+    "revivable_by_more_scored_months": false
+   },
+   "EHAM/reached": {
+    "by_fold": {
+     "december": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -1.024
+     },
+     "january": {
+      "months_of_scored_days_needed": 2.03,
+      "t": 0.701
+     },
+     "july_loo": {
+      "months_of_scored_days_needed": 10.08,
+      "t": 0.315
+     }
+    },
+    "months_needed_on_the_worst_fold": null,
+    "revivable_by_more_scored_months": false
+   },
+   "LEBL/reached": {
+    "by_fold": {
+     "december": {
+      "months_of_scored_days_needed": 1.79,
+      "t": 0.748
+     },
+     "january": {
+      "months_of_scored_days_needed": 1.04,
+      "t": 0.981
+     },
+     "july_loo": {
+      "months_of_scored_days_needed": 0.56,
+      "t": 1.332
+     }
+    },
+    "months_needed_on_the_worst_fold": 1.79,
+    "revivable_by_more_scored_months": true
+   },
+   "LEMD/unreached": {
+    "by_fold": {
+     "december": {
+      "note": "unpriced: the 500-row bar, which more scored DAYS of the same month do not move",
+      "priced": false
+     },
+     "january": {
+      "months_of_scored_days_needed": 1.69,
+      "t": 0.77
+     },
+     "july_loo": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -0.004
+     }
+    },
+    "months_needed_on_the_worst_fold": null,
+    "revivable_by_more_scored_months": false
+   },
+   "LFPG/unreached": {
+    "by_fold": {
+     "december": {
+      "months_of_scored_days_needed": 3.25,
+      "t": 0.555
+     },
+     "january": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -0.177
+     },
+     "july_loo": {
+      "months_of_scored_days_needed": null,
+      "note": "the POINT estimate is not positive here; precision is not the binding constraint and no amount of scored data is",
+      "t": -1.134
+     }
+    },
+    "months_needed_on_the_worst_fold": null,
+    "revivable_by_more_scored_months": false
+   },
+   "LSZH/reached": {
+    "by_fold": {
+     "december": {
+      "months_of_scored_days_needed": 8.81,
+      "t": 0.337
+     },
+     "january": {
+      "months_of_scored_days_needed": 2.82,
+      "t": 0.596
+     },
+     "july_loo": {
+      "months_of_scored_days_needed": 20.85,
+      "t": 0.219
+     }
+    },
+    "months_needed_on_the_worst_fold": 20.85,
+    "revivable_by_more_scored_months": true
+   }
+  },
+  "reading": "one cell of the seven, LEBL/reached, is revivable by more scored months, at about 1.8 months of december days, and it is worth +0.0066 s. Five of the other six fail because a POINT estimate is not positive on at least one fold, which no quantity of data on either side repairs.",
+  "revivable": [
+   "LEBL/reached",
+   "LSZH/reached"
+  ]
+ },
+ "width_check": {
+  "december": {
+   "A": 0.9102,
+   "cells": 12,
+   "max": 0.9673,
+   "median": 0.9138,
+   "min": 0.8858
+  },
+  "january": {
+   "A": 0.9854,
+   "cells": 10,
+   "max": 0.9891,
+   "median": 0.9855,
+   "min": 0.9827
+  },
+  "july_loo": {
+   "A": 0.9648,
+   "cells": 13,
+   "max": 0.9757,
+   "median": 0.9663,
+   "min": 0.9599
+  }
+ }
+}

@@ -1,0 +1,148 @@
+{
+  "anchor6": {
+    "december": {
+      "seven": 207.0083,
+      "six": 208.2407,
+      "six_minus_seven": 1.2324
+    },
+    "january": {
+      "seven": 339.0173,
+      "six": 339.5657,
+      "six_minus_seven": 0.5484
+    },
+    "july_loo": {
+      "seven": 286.3274,
+      "six": 287.418,
+      "six_minus_seven": 1.0906
+    }
+  },
+  "excluded": "V3-allin",
+  "folds": {
+    "december": {
+      "bytes": 2803929,
+      "path": "experiments/exp-047-queue/oof/base6--december.parquet",
+      "rmse_anchor6": 208.2407,
+      "rmse_base6": 206.9557,
+      "rows": 165677,
+      "sha256": "b465c317fd391bad43dd817f91cfd1486430baa5f965022ff5de105c5a2275bb"
+    },
+    "january": {
+      "bytes": 2645026,
+      "path": "experiments/exp-047-queue/oof/base6--january.parquet",
+      "rmse_anchor6": 339.5657,
+      "rmse_base6": 339.1369,
+      "rows": 153706,
+      "sha256": "535bbce18b0d90b7ae3a1ba0fee616c04a7de791f88513c506135ad07137989d"
+    },
+    "july_loo": {
+      "bytes": 3145917,
+      "path": "experiments/exp-047-queue/oof/base6--july_loo.parquet",
+      "rmse_anchor6": 287.418,
+      "rmse_base6": 286.2728,
+      "rows": 190713,
+      "sha256": "fd4a57932dc099d50555685c99baac24f4d3645bab310fcee34328d2292cf4b9"
+    }
+  },
+  "instrument": {
+    "december": {
+      "anchor_rmse": 207.0083,
+      "delta": 4e-06,
+      "published": 207.0083
+    },
+    "january": {
+      "anchor_rmse": 339.0173,
+      "delta": 3.5e-05,
+      "published": 339.0173
+    },
+    "july_loo": {
+      "anchor_rmse": 286.3274,
+      "delta": 1.2e-05,
+      "published": 286.3274
+    }
+  },
+  "names6": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "F1-fresh",
+    "N1-nmtail"
+  ],
+  "names7": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "F1-fresh",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "november": {
+    "bytes": 2507070,
+    "checks": {
+      "duplicate_ids": 0,
+      "ids_identical_to_the_block": true,
+      "in_block_not_in_vector": 0,
+      "in_vector_not_in_block": 0,
+      "rows_equal_block": true,
+      "y_pred_nulls": 0
+    },
+    "path": "experiments/exp-047-queue/oof/base6--2025-02.parquet",
+    "rmse_anchor6": 251.5716,
+    "rmse_base6": 247.679,
+    "rows": 143731,
+    "sha256": "36f7dd9f6d80451aa9dd5e0ad74e990ab41f80cd4f1e8249079d2c5115f3ba1c",
+    "weights": {
+      "_all": {
+        "C2-cat": 0.0,
+        "D1-winter": 0.020049,
+        "F1-fresh": 0.561741,
+        "L2-hub8725": 0.146976,
+        "N1-nmtail": 0.0,
+        "T-tailv4": 0.272459
+      },
+      "nm_bulk": {
+        "C2-cat": 0.0,
+        "D1-winter": 0.020049,
+        "F1-fresh": 0.561741,
+        "L2-hub8725": 0.146976,
+        "N1-nmtail": 0.0,
+        "T-tailv4": 0.272459
+      },
+      "nm_late": {
+        "C2-cat": 0.065847,
+        "D1-winter": 0.145627,
+        "F1-fresh": 0.47289,
+        "L2-hub8725": 0.019328,
+        "N1-nmtail": 0.248086,
+        "T-tailv4": 0.064478
+      },
+      "noac": {
+        "C2-cat": 0.0,
+        "D1-winter": 0.020049,
+        "F1-fresh": 0.561741,
+        "L2-hub8725": 0.146976,
+        "N1-nmtail": 0.0,
+        "T-tailv4": 0.272459
+      },
+      "nonm": {
+        "C2-cat": 0.0,
+        "D1-winter": 0.020049,
+        "F1-fresh": 0.561741,
+        "L2-hub8725": 0.146976,
+        "N1-nmtail": 0.0,
+        "T-tailv4": 0.272459
+      }
+    }
+  },
+  "rounds": 300,
+  "seeds": [
+    7,
+    107,
+    207,
+    307,
+    407
+  ],
+  "wall_s": 60.2,
+  "what": "\u00a77bk: the six-member base, three folds and 2025-11"
+}

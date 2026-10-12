@@ -1,0 +1,49 @@
+{
+ "july_loo": {
+  "rows": 9366,
+  "days": 31,
+  "gain_per_row_s2": 1285.9,
+  "top1pct_rows": 94,
+  "top1pct_share_of_total": 0.655,
+  "top5pct_share_of_total": 1.406,
+  "gain_per_row_without_top1pct": 447.6,
+  "trimmed10_mean": 376.1,
+  "leave_one_day_out_range": [
+   1144.4,
+   1371.9
+  ],
+  "days_with_negative_mean": 4,
+  "ci95_day_clustered": [
+   859.7,
+   1772.7
+  ],
+  "ci95_iid_rows": [
+   1025.3,
+   1553.0
+  ]
+ },
+ "december": {
+  "rows": 810,
+  "days": 31,
+  "gain_per_row_s2": 1297.7,
+  "top1pct_rows": 8,
+  "top1pct_share_of_total": 0.584,
+  "top5pct_share_of_total": 1.261,
+  "gain_per_row_without_top1pct": 545.2,
+  "trimmed10_mean": 499.8,
+  "leave_one_day_out_range": [
+   1103.3,
+   1379.4
+  ],
+  "days_with_negative_mean": 8,
+  "ci95_day_clustered": [
+   631.7,
+   2050.4
+  ],
+  "ci95_iid_rows": [
+   588.3,
+   2068.7
+  ]
+ },
+ "note": "the revived cell's gain is heavy-tailed in both seasons, which is the ordinary shape of an MSE gain on taxi times. The day and row bootstraps agree, so the clustering is not what carries the interval and no single day is: what carries it is a few large-residual rows. Read beside the projection's 10.8x extrapolation column (FALLBACK round 5, item 3)."
+}

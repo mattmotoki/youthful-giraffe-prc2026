@@ -1,0 +1,61 @@
+{
+  "unit": "D145-G-bag-033",
+  "frozen_utc": "2026-10-02T18:00:53.794251+00:00",
+  "ledger_cursor": 901,
+  "source": "HANDOVER-SEQC section 2; REPORT-003 sections 3.12/3.13; ledger899/901",
+  "expectation": {
+    "same_recipe_bag_over_present_G_stack6": 120,
+    "two_recipe_bag_over_present_G_stack6": 180,
+    "planning_range": [
+      0,
+      350
+    ],
+    "second_recipe_bag_over_same_seed_first_recipe_bag": 60,
+    "status": "prior, not measured interval"
+  },
+  "kill": "Complete held stack6 increment under +60 over the present Gmixed032 term; desk decides any entry. No recipe judged from one fit.",
+  "seeds": [
+    150081,
+    150082,
+    150083,
+    150084,
+    150085,
+    150086
+  ],
+  "recipes": {
+    "mixed64": {
+      "width": 64,
+      "layers": 2,
+      "feedforward": 128,
+      "heads": 4,
+      "dropout": 0.1
+    },
+    "mixed128": {
+      "width": 128,
+      "layers": 3,
+      "feedforward": 256,
+      "heads": 4,
+      "dropout": 0.1
+    }
+  },
+  "fixed_epochs": 12,
+  "epoch_source": "Gmixed028 chose12 on train-only development; Gmixed032 reused12. No new epoch selection.",
+  "loss": "SmoothL1 beta2; correction in300s; AdamW lr.001 wd.0001; batch256; clip1; final floor60",
+  "inputs": "frozen sequence-g-inputs-001; train/encoder outside Jan/Jul2025; original17-token mixed window unchanged",
+  "compute": "CPU only, six threads, nice19; lanes4-7/68-71 and60-63/124-127;24GiB address cap; no GPU or Kaggle push",
+  "bags": {
+    "a": "equal mean of six mixed64 fits",
+    "b": "equal mean of six mixed128 fits on the same seeds",
+    "ab": "equal mean of twelve fits, six from each recipe"
+  },
+  "read": "Freeze stack6 source. Replace its G member term in A/B/AB, retain other terms and gate, fit other-month class weights with practice scaling, and apply existing tail. Show weights-only C0 separately; include B-A and AB-A bag comparisons, full increment over frozen stack6, Jan/Jul, ordinary/clock/noac, top5 removal, airport-day95% intervals, rho. No annual fits or stack entry in this unit.",
+  "Gmixed032_validation": "Annual032 saw Jan/Jul labels and is never held validation. Its saved held counterpart is Gmixed028, SHA6faea6b5b7293275028c4f5dfdecd58e2bfc3022dc9ce84e0e3f8ab1fd469d15.",
+  "source_pins": {
+    "experiments/exp-170-diverse/HANDOVER-SEQC.md": "f47422e472b1894702018ca562d99f3079ca04475d0e94696bb5b9688332f2cf",
+    "experiments/exp-169-stack-plan/SPEC-021.md": "5293163f2ed05ef15b8680b079616a6f6c6022b063fc8c3f81641efb45578b56",
+    "experiments/exp-169-stack-plan/results/stack6-held-021.parquet": "4ec4ec82b041072f8d0e781c1561356290126d4437f67ba950dfe355a8af4cba",
+    "experiments/exp-169-stack-plan/results/stack6-read-021.json": "b81f3b5bae17f7e97121de681c9af4ace8641b4222fa0a8b5efcb5a025f8a8d5",
+    "experiments/exp-169-stack-plan/inputs/stack6-021/head-swap.json": "c90116040b633f2d0f19ed02bd1b6b4684715a677ca18ce31e8cddc42c4f11da",
+    "experiments/exp-169-stack-plan/inputs/stack5-016/joint.json": "b2b1996b7299870fd7c3c69a22433b87dd1be0d0a7f72d73b91435986229f28d"
+  }
+}

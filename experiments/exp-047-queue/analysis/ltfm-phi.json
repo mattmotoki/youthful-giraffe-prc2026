@@ -1,0 +1,514 @@
+{
+ "airport": "LTFM",
+ "reach_class": "unreached",
+ "F": "LOBT_flt",
+ "A": "AOBT_3_flt",
+ "phi_reference": "prc/tail_model.py:77  BLOCK = AOBT_3 + phi*(LOBT - AOBT_3)",
+ "kill_upper_bound_s2": 185.0,
+ "thesis_s2": 369.0,
+ "k_grid": [
+  10.0,
+  30.0,
+  100.0,
+  300.0,
+  1000.0,
+  3000.0
+ ],
+ "boot": 2000,
+ "seed": 47,
+ "k_selection": {
+  "g_oper_stand|slope": {
+   "held_out_G_by_k": {
+    "10": [
+     -1073107.98,
+     -231749.66
+    ],
+    "30": [
+     -244279.05,
+     -220354.16
+    ],
+    "100": [
+     -62934.77,
+     -187582.15
+    ],
+    "300": [
+     -39045.71,
+     -128883.27
+    ],
+    "1000": [
+     -30444.78,
+     -59070.35
+    ],
+    "3000": [
+     -22128.89,
+     -26796.35
+    ]
+   },
+   "chosen_k": 3000.0,
+   "chosen_mean_G_s2": -24462.62
+  },
+  "g_oper_stand|intercept": {
+   "held_out_G_by_k": {
+    "10": [
+     -575.65,
+     -1538.8
+    ],
+    "30": [
+     -305.34,
+     -1078.39
+    ],
+    "100": [
+     -165.8,
+     -799.61
+    ],
+    "300": [
+     -116.45,
+     -716.93
+    ],
+    "1000": [
+     -102.95,
+     -717.19
+    ],
+    "3000": [
+     -100.95,
+     -728.17
+    ]
+   },
+   "chosen_k": 1000.0,
+   "chosen_mean_G_s2": -410.07
+  },
+  "g_oper_bank|slope": {
+   "held_out_G_by_k": {
+    "10": [
+     -8980.04,
+     -5047.96
+    ],
+    "30": [
+     -8682.47,
+     -4824.49
+    ],
+    "100": [
+     -8342.99,
+     -4665.99
+    ],
+    "300": [
+     -7833.02,
+     -4543.84
+    ],
+    "1000": [
+     -6751.61,
+     -4400.69
+    ],
+    "3000": [
+     -5405.68,
+     -4256.67
+    ]
+   },
+   "chosen_k": 3000.0,
+   "chosen_mean_G_s2": -4831.18
+  },
+  "g_oper_bank|intercept": {
+   "held_out_G_by_k": {
+    "10": [
+     -736.03,
+     -1440.06
+    ],
+    "30": [
+     -549.55,
+     -1256.0
+    ],
+    "100": [
+     -403.49,
+     -1114.25
+    ],
+    "300": [
+     -304.62,
+     -985.26
+    ],
+    "1000": [
+     -206.43,
+     -841.54
+    ],
+    "3000": [
+     -143.26,
+     -766.6
+    ]
+   },
+   "chosen_k": 3000.0,
+   "chosen_mean_G_s2": -454.93
+  }
+ },
+ "january": {
+  "g_oper_stand|slope": {
+   "G_s2_per_row": -14190.42,
+   "ci95_s2": [
+    -17900.83,
+    -10802.96
+   ],
+   "rms_h_s": 118.37,
+   "max_abs_h_s": 4780.8,
+   "rows_moved": 21136,
+   "k": 3000.0,
+   "rows": 21368,
+   "verdict": "KILLED: upper bound below the pre-declared 185 s2/row",
+   "reaches_the_0_1_s_thesis": false
+  },
+  "g_oper_stand|intercept": {
+   "G_s2_per_row": -536.74,
+   "ci95_s2": [
+    -776.82,
+    -292.43
+   ],
+   "rms_h_s": 12.33,
+   "max_abs_h_s": 20.6,
+   "rows_moved": 21136,
+   "k": 1000.0,
+   "rows": 21368,
+   "verdict": "KILLED: upper bound below the pre-declared 185 s2/row",
+   "reaches_the_0_1_s_thesis": false
+  },
+  "g_oper_bank|slope": {
+   "G_s2_per_row": -4701.94,
+   "ci95_s2": [
+    -6908.25,
+    -2940.21
+   ],
+   "rms_h_s": 62.76,
+   "max_abs_h_s": 3827.8,
+   "rows_moved": 21136,
+   "k": 3000.0,
+   "rows": 21368,
+   "verdict": "KILLED: upper bound below the pre-declared 185 s2/row",
+   "reaches_the_0_1_s_thesis": false
+  },
+  "g_oper_bank|intercept": {
+   "G_s2_per_row": -584.08,
+   "ci95_s2": [
+    -807.91,
+    -365.16
+   ],
+   "rms_h_s": 12.92,
+   "max_abs_h_s": 27.7,
+   "rows_moved": 21136,
+   "k": 3000.0,
+   "rows": 21368,
+   "verdict": "KILLED: upper bound below the pre-declared 185 s2/row",
+   "reaches_the_0_1_s_thesis": false
+  },
+  "airport_level|slope": {
+   "G_s2_per_row": -570.81,
+   "ci95_s2": [
+    -835.3,
+    -321.23
+   ],
+   "rms_h_s": 11.76,
+   "max_abs_h_s": 30.0,
+   "rows_moved": 21136,
+   "a0": 12.495,
+   "b0": -0.00394
+  },
+  "airport_level|intercept": {
+   "G_s2_per_row": -553.37,
+   "ci95_s2": [
+    -800.0,
+    -303.47
+   ],
+   "rms_h_s": 12.43,
+   "max_abs_h_s": 12.5,
+   "rows_moved": 21136,
+   "a0": 12.495,
+   "b0": 0.0
+  }
+ },
+ "note": "named with the test** is the base head having already learned these\nconditional means, so the INTERCEPT-ONLY version is priced beside the slope version, and\nthe airport-level fit with no groups at all is priced beside both.  If the groups add\nnothing over the airport level, the varying coefficient is decoration.",
+ "means": {
+  "july_loo": {
+   "rows": 25171,
+   "mean_e_s": 25.67,
+   "mean_e_where_x_finite_s": 25.48,
+   "var_e_s2": 70097.7
+  },
+  "december": {
+   "rows": 22609,
+   "mean_e_s": -2.08,
+   "mean_e_where_x_finite_s": -1.93,
+   "var_e_s2": 40980.4
+  },
+  "january": {
+   "rows": 21368,
+   "mean_e_s": -15.57,
+   "mean_e_where_x_finite_s": -16.14,
+   "var_e_s2": 46935.7
+  }
+ },
+ "january_in_sample_oracle": {
+  "g_oper_stand|slope|k0": {
+   "G_s2_per_row": 7014.61,
+   "ci95_s2": [
+    5755.07,
+    8362.38
+   ],
+   "rms_h_s": 83.78,
+   "max_abs_h_s": 1341.8,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_stand|slope|k30": {
+   "G_s2_per_row": 8060.4,
+   "ci95_s2": [
+    6786.78,
+    9336.33
+   ],
+   "rms_h_s": 87.12,
+   "max_abs_h_s": 1696.8,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_stand|slope|k300": {
+   "G_s2_per_row": 7488.13,
+   "ci95_s2": [
+    6293.97,
+    8738.31
+   ],
+   "rms_h_s": 85.53,
+   "max_abs_h_s": 1696.4,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_stand|intercept|k0": {
+   "G_s2_per_row": 6201.28,
+   "ci95_s2": [
+    5297.11,
+    7122.32
+   ],
+   "rms_h_s": 78.75,
+   "max_abs_h_s": 1696.8,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_stand|intercept|k30": {
+   "G_s2_per_row": 1424.97,
+   "ci95_s2": [
+    1059.27,
+    1791.12
+   ],
+   "rms_h_s": 23.81,
+   "max_abs_h_s": 76.6,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_stand|intercept|k300": {
+   "G_s2_per_row": 515.8,
+   "ci95_s2": [
+    191.99,
+    827.56
+   ],
+   "rms_h_s": 17.09,
+   "max_abs_h_s": 33.8,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_bank|slope|k0": {
+   "G_s2_per_row": 3290.81,
+   "ci95_s2": [
+    2496.29,
+    4179.38
+   ],
+   "rms_h_s": 57.26,
+   "max_abs_h_s": 1537.8,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_bank|slope|k30": {
+   "G_s2_per_row": 3309.61,
+   "ci95_s2": [
+    2520.23,
+    4172.98
+   ],
+   "rms_h_s": 54.47,
+   "max_abs_h_s": 1683.5,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_bank|slope|k300": {
+   "G_s2_per_row": 2900.66,
+   "ci95_s2": [
+    2093.37,
+    3748.91
+   ],
+   "rms_h_s": 52.68,
+   "max_abs_h_s": 1683.2,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_bank|intercept|k0": {
+   "G_s2_per_row": 2370.25,
+   "ci95_s2": [
+    1823.95,
+    3010.23
+   ],
+   "rms_h_s": 48.69,
+   "max_abs_h_s": 1683.5,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_bank|intercept|k30": {
+   "G_s2_per_row": 1127.83,
+   "ci95_s2": [
+    791.99,
+    1472.75
+   ],
+   "rms_h_s": 25.21,
+   "max_abs_h_s": 95.2,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  },
+  "g_oper_bank|intercept|k300": {
+   "G_s2_per_row": 559.22,
+   "ci95_s2": [
+    223.98,
+    901.69
+   ],
+   "rms_h_s": 20.31,
+   "max_abs_h_s": 35.8,
+   "rows_moved": 21136,
+   "reaches_the_0_1_s_thesis": true
+  }
+ },
+ "january_anchored_at_zero": {
+  "g_oper_stand|slope|k300": {
+   "G_s2_per_row": -27709.73,
+   "ci95_s2": [
+    -39904.46,
+    -17785.87
+   ],
+   "rms_h_s": 166.82,
+   "max_abs_h_s": 7369.7,
+   "rows_moved": 20297,
+   "survives_stop_rule": false
+  },
+  "g_oper_stand|slope|k1000": {
+   "G_s2_per_row": -18784.6,
+   "ci95_s2": [
+    -25527.59,
+    -13386.62
+   ],
+   "rms_h_s": 137.63,
+   "max_abs_h_s": 6030.5,
+   "rows_moved": 20297,
+   "survives_stop_rule": false
+  },
+  "g_oper_stand|slope|k3000": {
+   "G_s2_per_row": -13603.29,
+   "ci95_s2": [
+    -17414.27,
+    -10226.74
+   ],
+   "rms_h_s": 117.12,
+   "max_abs_h_s": 4501.1,
+   "rows_moved": 20297,
+   "survives_stop_rule": false
+  },
+  "g_oper_stand|intercept|k300": {
+   "G_s2_per_row": -161.96,
+   "ci95_s2": [
+    -239.2,
+    -85.56
+   ],
+   "rms_h_s": 6.85,
+   "max_abs_h_s": 25.4,
+   "rows_moved": 20297,
+   "survives_stop_rule": false
+  },
+  "g_oper_stand|intercept|k1000": {
+   "G_s2_per_row": -56.6,
+   "ci95_s2": [
+    -89.85,
+    -23.08
+   ],
+   "rms_h_s": 2.87,
+   "max_abs_h_s": 9.4,
+   "rows_moved": 20297,
+   "survives_stop_rule": false
+  },
+  "g_oper_stand|intercept|k3000": {
+   "G_s2_per_row": -19.5,
+   "ci95_s2": [
+    -32.54,
+    -7.26
+   ],
+   "rms_h_s": 1.09,
+   "max_abs_h_s": 3.6,
+   "rows_moved": 20297,
+   "survives_stop_rule": false
+  },
+  "g_oper_bank|slope|k300": {
+   "G_s2_per_row": -5554.35,
+   "ci95_s2": [
+    -8868.7,
+    -3145.35
+   ],
+   "rms_h_s": 69.58,
+   "max_abs_h_s": 4806.5,
+   "rows_moved": 20408,
+   "survives_stop_rule": false
+  },
+  "g_oper_bank|slope|k1000": {
+   "G_s2_per_row": -5114.77,
+   "ci95_s2": [
+    -8105.63,
+    -2923.44
+   ],
+   "rms_h_s": 67.12,
+   "max_abs_h_s": 4620.1,
+   "rows_moved": 20408,
+   "survives_stop_rule": false
+  },
+  "g_oper_bank|slope|k3000": {
+   "G_s2_per_row": -4527.99,
+   "ci95_s2": [
+    -7043.84,
+    -2638.49
+   ],
+   "rms_h_s": 63.49,
+   "max_abs_h_s": 4159.3,
+   "rows_moved": 20408,
+   "survives_stop_rule": false
+  },
+  "g_oper_bank|intercept|k300": {
+   "G_s2_per_row": -491.33,
+   "ci95_s2": [
+    -629.49,
+    -342.18
+   ],
+   "rms_h_s": 13.8,
+   "max_abs_h_s": 49.7,
+   "rows_moved": 20408,
+   "survives_stop_rule": false
+  },
+  "g_oper_bank|intercept|k1000": {
+   "G_s2_per_row": -356.62,
+   "ci95_s2": [
+    -461.77,
+    -250.96
+   ],
+   "rms_h_s": 10.65,
+   "max_abs_h_s": 35.1,
+   "rows_moved": 20408,
+   "survives_stop_rule": false
+  },
+  "g_oper_bank|intercept|k3000": {
+   "G_s2_per_row": -204.13,
+   "ci95_s2": [
+    -274.88,
+    -134.25
+   ],
+   "rms_h_s": 6.73,
+   "max_abs_h_s": 20.7,
+   "rows_moved": 20408,
+   "survives_stop_rule": false
+  }
+ },
+ "survivors_of_the_stop_rule": [],
+ "verdict": "every arm KILLED by the pre-declared stop rule"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "e0s17",
+  "argv": "--name e0s17 --features v2 --target residual --linear-tree --clip-floor 60 --noac-head --seed 17 --folds july,december --no-submission",
+  "folds": {
+    "july": {
+      "rmse": 344.9705799987323,
+      "rmse_bulk": 291.0566303005573,
+      "rmse_tail": 3170.765389620152,
+      "rmse_no_nm": 1374.1639423675608,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.2905946683178874,
+      "sse_share_no_nm": 0.32731585077250086,
+      "bias": 3.248607667101805,
+      "rmse_noac": 4139.061217627962,
+      "n_noac": 339,
+      "sse_share_noac": 0.2558933395547874,
+      "fold": "july",
+      "best_iteration": 158,
+      "refit_rounds": 186,
+      "seconds": 94,
+      "oof": "experiments/exp-001-retro-v1/oof/e0s17-july.parquet"
+    },
+    "december": {
+      "rmse": 223.3997528244101,
+      "rmse_bulk": 207.12859640366526,
+      "rmse_tail": 2118.8779596623876,
+      "rmse_no_nm": 804.5032219322318,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.141717928589131,
+      "sse_share_no_nm": 0.1286072762282775,
+      "bias": 2.813109977283678,
+      "rmse_noac": 2403.7018509424765,
+      "n_noac": 89,
+      "sse_share_noac": 0.06219043634256443,
+      "fold": "december",
+      "best_iteration": 377,
+      "refit_rounds": 444,
+      "seconds": 228,
+      "oof": "experiments/exp-001-retro-v1/oof/e0s17-december.parquet"
+    }
+  }
+}

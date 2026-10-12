@@ -1,0 +1,50 @@
+{
+  "agreement": {
+    "kept_by_both": 2439,
+    "kept_only_by_the_block": 17,
+    "kept_only_by_the_pool": 54,
+    "net": -37
+  },
+  "block_instrument": {
+    "built_by": "code/serve.py --ungated, from analysis/chain-check/block_ungated.py per ranking month",
+    "file": "experiments/exp-046-surfacefit/work/ranking-ungated-pool-v19.parquet",
+    "kept": 2456,
+    "kept_and_mode_4_in_the_served_block": 2456,
+    "ungated_rows": 8253
+  },
+  "by_month": {
+    "2026-01": {
+      "block_kept": 1304,
+      "only_block": 1,
+      "only_pool": 4,
+      "pool_kept": 1307
+    },
+    "2026-07": {
+      "block_kept": 1152,
+      "only_block": 16,
+      "only_pool": 50,
+      "pool_kept": 1186
+    }
+  },
+  "gate": {
+    "check_i_abs_dt_offblock_max_s": 1299.0,
+    "check_ii_runway_agreement": true,
+    "step_0_gap_cut_s": 62.405
+  },
+  "pool_instrument": {
+    "built_by": "code/chaincheck.py with analysis/chain-check/block_probe.py",
+    "file": "experiments/exp-046-surfacefit/work/chain-pairs.parquet",
+    "kept": 2493,
+    "ungated_rows": 8253
+  },
+  "what": "Why the ranking block keeps a different number of chain rows than the pool did.",
+  "why_the_block_refused_what_the_pool_kept": {
+    "check_i_missing": 0,
+    "check_i_over_the_threshold": 0,
+    "check_ii_runway_disagrees": 54,
+    "check_ii_runway_missing": 0,
+    "not_in_the_block_pool_at_all": 0,
+    "step_0_gap_missing": 0,
+    "step_0_gap_not_over_the_cut": 0
+  }
+}

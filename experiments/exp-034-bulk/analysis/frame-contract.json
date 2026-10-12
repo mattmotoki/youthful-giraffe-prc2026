@@ -1,0 +1,1512 @@
+{
+  "name": "B1-bulk64",
+  "n_columns": 64,
+  "columns": [
+    "apt",
+    "stand_raw",
+    "stand_base",
+    "stand_pfx",
+    "RUNWAY_mvt",
+    "AIRCRAFT_TYPE_mvt",
+    "WK_TBL_CAT_flt",
+    "AIRCRAFT_OPERATOR_flt",
+    "MARKET_SEGMENT_flt",
+    "FLIGHT_TYPE_flt",
+    "ADES_mvt",
+    "ADES_FILED_flt",
+    "CALLSIGN_PFX",
+    "nm_taxi",
+    "aobt_lobt",
+    "aobt_sched",
+    "aobt_eobt1",
+    "lobt_eobt1",
+    "lobt_sched",
+    "mvt_sched",
+    "hour",
+    "minute_of_day",
+    "dow",
+    "doy",
+    "sched_hour",
+    "sched_minofday",
+    "lobt_changed",
+    "n_dep_stand_month",
+    "n_arr_stand_month",
+    "mvt_lobt",
+    "mvt_eobt1",
+    "mvt_iobt",
+    "aobt_iobt",
+    "noac",
+    "flight_len",
+    "noac_day_apt",
+    "has_nm_f",
+    "type_mvt_eq_flt",
+    "same_flight_arr",
+    "airborne",
+    "taxi_ub_pm",
+    "taxi_lb_nm",
+    "taxi_ub_pa",
+    "taxi_lb_na",
+    "off_lb_pm",
+    "off_lb_pa",
+    "off_ub_na",
+    "off_ub_nm",
+    "arr_taxi_pa",
+    "arr_taxi_na",
+    "arr_turnaround_pa",
+    "arr_td_gap_pa",
+    "same_type_pa",
+    "same_type_na",
+    "dep_prev_aobt_gap",
+    "dep_prev_mvt_gap",
+    "dep_next_aobt_gap",
+    "dep_next_mvt_gap",
+    "nbr_apt_30m",
+    "nbr_apt_prev10_nmtaxi",
+    "nbr_rwy_prev10_nmtaxi",
+    "nbr_apt_prev10_mvtsched",
+    "nbr_apt_next10_nmtaxi",
+    "nbr_stand_prev5_nmtaxi"
+  ],
+  "column_hash": "6a7b3d567656d66adee2f239ec8724e4efdbf0e1853b292c6111fb23bff2ca10",
+  "families": {
+    "categorical": [
+      "apt",
+      "stand_raw",
+      "stand_base",
+      "stand_pfx",
+      "RUNWAY_mvt",
+      "AIRCRAFT_TYPE_mvt",
+      "WK_TBL_CAT_flt",
+      "AIRCRAFT_OPERATOR_flt",
+      "MARKET_SEGMENT_flt",
+      "FLIGHT_TYPE_flt",
+      "ADES_mvt",
+      "ADES_FILED_flt",
+      "CALLSIGN_PFX"
+    ],
+    "own_flight": [
+      "nm_taxi",
+      "aobt_lobt",
+      "aobt_sched",
+      "aobt_eobt1",
+      "lobt_eobt1",
+      "lobt_sched",
+      "mvt_sched",
+      "hour",
+      "minute_of_day",
+      "dow",
+      "doy",
+      "sched_hour",
+      "sched_minofday",
+      "lobt_changed",
+      "n_dep_stand_month",
+      "n_arr_stand_month",
+      "mvt_lobt",
+      "mvt_eobt1",
+      "mvt_iobt",
+      "aobt_iobt",
+      "noac",
+      "flight_len",
+      "noac_day_apt",
+      "has_nm_f",
+      "type_mvt_eq_flt",
+      "same_flight_arr",
+      "airborne"
+    ],
+    "occupancy": [
+      "taxi_ub_pm",
+      "taxi_lb_nm",
+      "taxi_ub_pa",
+      "taxi_lb_na",
+      "off_lb_pm",
+      "off_lb_pa",
+      "off_ub_na",
+      "off_ub_nm",
+      "arr_taxi_pa",
+      "arr_taxi_na",
+      "arr_turnaround_pa",
+      "arr_td_gap_pa",
+      "same_type_pa",
+      "same_type_na",
+      "dep_prev_aobt_gap",
+      "dep_prev_mvt_gap",
+      "dep_next_aobt_gap",
+      "dep_next_mvt_gap"
+    ],
+    "airport_neighbour": [
+      "nbr_apt_30m",
+      "nbr_apt_prev10_nmtaxi",
+      "nbr_rwy_prev10_nmtaxi",
+      "nbr_apt_prev10_mvtsched",
+      "nbr_apt_next10_nmtaxi",
+      "nbr_stand_prev5_nmtaxi"
+    ]
+  },
+  "stand_features_version": "1.2.0",
+  "params": {
+    "objective": "regression",
+    "metric": "l2",
+    "learning_rate": 0.05,
+    "num_leaves": 127,
+    "min_data_in_leaf": 100,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "verbose": -1,
+    "max_cat_threshold": 64,
+    "cat_smooth": 20.0
+  },
+  "rounds": 600,
+  "seed": 7,
+  "builder": "experiments/exp-003-anatomy/code/features.py (unchanged)",
+  "config_source": "experiments/exp-011-bulkfloor/code/q1c_seeds.py",
+  "months": {
+    "2025-01": {
+      "sha256": "f8b21a45dae43fc631637a58837e4289443798ffce8b5e78d6d92443dfb2ad59",
+      "bytes": 25888507
+    },
+    "2025-02": {
+      "sha256": "381e5bcb97c2113c93da5d9511a527e3942b7f95b8d34766ec29bffe63e20b39",
+      "bytes": 24038681
+    },
+    "2025-03": {
+      "sha256": "38e6077da4e00f82a122a03998c5f9cd183502de4d011010bdeb0b2b94381094",
+      "bytes": 27097503
+    },
+    "2025-04": {
+      "sha256": "083655c0e669036dbc9ea1f4b0a1320e2773fb24773d136fe4bd81e2fd920f5e",
+      "bytes": 28201459
+    },
+    "2025-05": {
+      "sha256": "a383811810bf0129b597fc3af1fbf749368cc475f20dde0f1b6ffc490396c4c9",
+      "bytes": 29740561
+    },
+    "2025-06": {
+      "sha256": "6cf78a4cef76cf9f86ec1a22ba01ac231af5e3dd41190f5ea785e64113d2e89f",
+      "bytes": 29503206
+    },
+    "2025-07": {
+      "sha256": "0b35b7aeafe7df003a7c260d115d38483ddb9d7abb4f3eb13aaf9fc9190c1a87",
+      "bytes": 30660082
+    },
+    "2025-08": {
+      "sha256": "eb9aade25ed088882265b6d5f195e47bbfc82cda1374dbc33c864036b170c350",
+      "bytes": 30529413
+    },
+    "2025-09": {
+      "sha256": "ed5f5cd40d15f2dd15a8a2860a38d046505d01b6cfbbf16934390d0461a636dc",
+      "bytes": 29628541
+    },
+    "2025-10": {
+      "sha256": "ee64060c40f01f324e1cb0aa3f4a20f0a91e669fc745657bb251147ad91a5d70",
+      "bytes": 29970709
+    },
+    "2025-11": {
+      "sha256": "cb96640256a8220ead767fe56f10d6dceb7ae38c9a279418c6811d35379ab0a6",
+      "bytes": 26798340
+    },
+    "2025-12": {
+      "sha256": "f72bb410ac5841405d25368460e0a62126bbbfa3cd831817971a43da44004f7f",
+      "bytes": 27332345
+    },
+    "ranking": {
+      "sha256": "70d664816e2bd83a1dfb566a0ea4ca42803f0eb53041a38e77f305292e5d0ca3",
+      "bytes": 50721394
+    }
+  },
+  "per_fold_columns": {
+    "july_loo": {
+      "apt": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 10
+      },
+      "stand_raw": {
+        "null": 1.6e-05,
+        "mean": null,
+        "levels": 1599
+      },
+      "stand_base": {
+        "null": 1.6e-05,
+        "mean": null,
+        "levels": 1439
+      },
+      "stand_pfx": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 50
+      },
+      "RUNWAY_mvt": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 43
+      },
+      "AIRCRAFT_TYPE_mvt": {
+        "null": 0.001778,
+        "mean": null,
+        "levels": 188
+      },
+      "WK_TBL_CAT_flt": {
+        "null": 0.020686,
+        "mean": null,
+        "levels": 4
+      },
+      "AIRCRAFT_OPERATOR_flt": {
+        "null": 0.020649,
+        "mean": null,
+        "levels": 507
+      },
+      "MARKET_SEGMENT_flt": {
+        "null": 0.020649,
+        "mean": null,
+        "levels": 8
+      },
+      "FLIGHT_TYPE_flt": {
+        "null": 0.020649,
+        "mean": null,
+        "levels": 5
+      },
+      "ADES_mvt": {
+        "null": 4.2e-05,
+        "mean": null,
+        "levels": 960
+      },
+      "ADES_FILED_flt": {
+        "null": 0.020649,
+        "mean": null,
+        "levels": 904
+      },
+      "CALLSIGN_PFX": {
+        "null": 0.020649,
+        "mean": null,
+        "levels": 940
+      },
+      "nm_taxi": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_lobt": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_sched": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_eobt1": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "lobt_eobt1": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "lobt_sched": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_sched": {
+        "null": 0.0,
+        "mean": 2311.1424,
+        "levels": null
+      },
+      "hour": {
+        "null": 0.0,
+        "mean": 12.2789,
+        "levels": null
+      },
+      "minute_of_day": {
+        "null": 0.0,
+        "mean": 766.1738,
+        "levels": null
+      },
+      "dow": {
+        "null": 0.0,
+        "mean": 2.8943,
+        "levels": null
+      },
+      "doy": {
+        "null": 0.0,
+        "mean": 197.0354,
+        "levels": null
+      },
+      "sched_hour": {
+        "null": 0.0,
+        "mean": 11.7617,
+        "levels": null
+      },
+      "sched_minofday": {
+        "null": 0.0,
+        "mean": 731.9268,
+        "levels": null
+      },
+      "lobt_changed": {
+        "null": 0.0,
+        "mean": 0.3121,
+        "levels": null
+      },
+      "n_dep_stand_month": {
+        "null": 1.6e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "n_arr_stand_month": {
+        "null": 0.000781,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_lobt": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_eobt1": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_iobt": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_iobt": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "noac": {
+        "null": 0.0,
+        "mean": 0.0018,
+        "levels": null
+      },
+      "flight_len": {
+        "null": 8.4e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "noac_day_apt": {
+        "null": 0.0,
+        "mean": 0.8775,
+        "levels": null
+      },
+      "has_nm_f": {
+        "null": 0.0,
+        "mean": 0.9794,
+        "levels": null
+      },
+      "type_mvt_eq_flt": {
+        "null": 0.020649,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_flight_arr": {
+        "null": 0.0,
+        "mean": 0.139,
+        "levels": null
+      },
+      "airborne": {
+        "null": 0.86098,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_ub_pm": {
+        "null": 0.006339,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_lb_nm": {
+        "null": 0.008909,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_ub_pa": {
+        "null": 0.026967,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_lb_na": {
+        "null": 0.028587,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_lb_pm": {
+        "null": 0.026726,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_lb_pa": {
+        "null": 0.026967,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_ub_na": {
+        "null": 0.028587,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_ub_nm": {
+        "null": 0.029169,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_taxi_pa": {
+        "null": 0.026967,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_taxi_na": {
+        "null": 0.028587,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_turnaround_pa": {
+        "null": 0.026967,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_td_gap_pa": {
+        "null": 0.026967,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_type_pa": {
+        "null": 0.027041,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_type_na": {
+        "null": 0.028666,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_prev_aobt_gap": {
+        "null": 0.050427,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_prev_mvt_gap": {
+        "null": 0.012081,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_next_aobt_gap": {
+        "null": 0.050427,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_next_mvt_gap": {
+        "null": 0.012081,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_30m": {
+        "null": 0.0,
+        "mean": 36.1602,
+        "levels": null
+      },
+      "nbr_apt_prev10_nmtaxi": {
+        "null": 0.0001,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_rwy_prev10_nmtaxi": {
+        "null": 0.000556,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_prev10_mvtsched": {
+        "null": 5.2e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_next10_nmtaxi": {
+        "null": 7.9e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_stand_prev5_nmtaxi": {
+        "null": 0.013198,
+        "mean": NaN,
+        "levels": null
+      },
+      "_rows": 190713
+    },
+    "december": {
+      "apt": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 10
+      },
+      "stand_raw": {
+        "null": 6e-06,
+        "mean": null,
+        "levels": 1570
+      },
+      "stand_base": {
+        "null": 6e-06,
+        "mean": null,
+        "levels": 1411
+      },
+      "stand_pfx": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 48
+      },
+      "RUNWAY_mvt": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 49
+      },
+      "AIRCRAFT_TYPE_mvt": {
+        "null": 0.000537,
+        "mean": null,
+        "levels": 168
+      },
+      "WK_TBL_CAT_flt": {
+        "null": 0.010007,
+        "mean": null,
+        "levels": 4
+      },
+      "AIRCRAFT_OPERATOR_flt": {
+        "null": 0.009953,
+        "mean": null,
+        "levels": 485
+      },
+      "MARKET_SEGMENT_flt": {
+        "null": 0.009953,
+        "mean": null,
+        "levels": 8
+      },
+      "FLIGHT_TYPE_flt": {
+        "null": 0.009953,
+        "mean": null,
+        "levels": 5
+      },
+      "ADES_mvt": {
+        "null": 7.8e-05,
+        "mean": null,
+        "levels": 914
+      },
+      "ADES_FILED_flt": {
+        "null": 0.009953,
+        "mean": null,
+        "levels": 885
+      },
+      "CALLSIGN_PFX": {
+        "null": 0.009953,
+        "mean": null,
+        "levels": 847
+      },
+      "nm_taxi": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_lobt": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_sched": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_eobt1": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "lobt_eobt1": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "lobt_sched": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_sched": {
+        "null": 0.0,
+        "mean": 1904.1926,
+        "levels": null
+      },
+      "hour": {
+        "null": 0.0,
+        "mean": 13.0741,
+        "levels": null
+      },
+      "minute_of_day": {
+        "null": 0.0,
+        "mean": 813.7464,
+        "levels": null
+      },
+      "dow": {
+        "null": 0.0,
+        "mean": 2.8208,
+        "levels": null
+      },
+      "doy": {
+        "null": 0.0,
+        "mean": 349.8824,
+        "levels": null
+      },
+      "sched_hour": {
+        "null": 0.0,
+        "mean": 12.6671,
+        "levels": null
+      },
+      "sched_minofday": {
+        "null": 0.0,
+        "mean": 786.2308,
+        "levels": null
+      },
+      "lobt_changed": {
+        "null": 0.0,
+        "mean": 0.2572,
+        "levels": null
+      },
+      "n_dep_stand_month": {
+        "null": 6e-06,
+        "mean": NaN,
+        "levels": null
+      },
+      "n_arr_stand_month": {
+        "null": 0.000501,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_lobt": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_eobt1": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_iobt": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_iobt": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "noac": {
+        "null": 0.0,
+        "mean": 0.0005,
+        "levels": null
+      },
+      "flight_len": {
+        "null": 0.000151,
+        "mean": NaN,
+        "levels": null
+      },
+      "noac_day_apt": {
+        "null": 0.0,
+        "mean": 0.2137,
+        "levels": null
+      },
+      "has_nm_f": {
+        "null": 0.0,
+        "mean": 0.99,
+        "levels": null
+      },
+      "type_mvt_eq_flt": {
+        "null": 0.009953,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_flight_arr": {
+        "null": 0.0,
+        "mean": 0.159,
+        "levels": null
+      },
+      "airborne": {
+        "null": 0.840974,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_ub_pm": {
+        "null": 0.006344,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_lb_nm": {
+        "null": 0.009362,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_ub_pa": {
+        "null": 0.016442,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_lb_na": {
+        "null": 0.018633,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_lb_pm": {
+        "null": 0.01614,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_lb_pa": {
+        "null": 0.016442,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_ub_na": {
+        "null": 0.018633,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_ub_nm": {
+        "null": 0.019128,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_taxi_pa": {
+        "null": 0.016442,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_taxi_na": {
+        "null": 0.018633,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_turnaround_pa": {
+        "null": 0.016442,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_td_gap_pa": {
+        "null": 0.016442,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_type_pa": {
+        "null": 0.016508,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_type_na": {
+        "null": 0.018705,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_prev_aobt_gap": {
+        "null": 0.03193,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_prev_mvt_gap": {
+        "null": 0.013641,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_next_aobt_gap": {
+        "null": 0.03193,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_next_mvt_gap": {
+        "null": 0.013641,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_30m": {
+        "null": 0.0,
+        "mean": 34.2717,
+        "levels": null
+      },
+      "nbr_apt_prev10_nmtaxi": {
+        "null": 9.1e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_rwy_prev10_nmtaxi": {
+        "null": 0.000555,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_prev10_mvtsched": {
+        "null": 6e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_next10_nmtaxi": {
+        "null": 6e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_stand_prev5_nmtaxi": {
+        "null": 0.01454,
+        "mean": NaN,
+        "levels": null
+      },
+      "_rows": 165677
+    },
+    "january": {
+      "apt": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 10
+      },
+      "stand_raw": {
+        "null": 4.6e-05,
+        "mean": null,
+        "levels": 1595
+      },
+      "stand_base": {
+        "null": 4.6e-05,
+        "mean": null,
+        "levels": 1433
+      },
+      "stand_pfx": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 52
+      },
+      "RUNWAY_mvt": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 45
+      },
+      "AIRCRAFT_TYPE_mvt": {
+        "null": 0.00041,
+        "mean": null,
+        "levels": 181
+      },
+      "WK_TBL_CAT_flt": {
+        "null": 0.009336,
+        "mean": null,
+        "levels": 4
+      },
+      "AIRCRAFT_OPERATOR_flt": {
+        "null": 0.009336,
+        "mean": null,
+        "levels": 497
+      },
+      "MARKET_SEGMENT_flt": {
+        "null": 0.009336,
+        "mean": null,
+        "levels": 8
+      },
+      "FLIGHT_TYPE_flt": {
+        "null": 0.009336,
+        "mean": null,
+        "levels": 5
+      },
+      "ADES_mvt": {
+        "null": 5.2e-05,
+        "mean": null,
+        "levels": 911
+      },
+      "ADES_FILED_flt": {
+        "null": 0.009336,
+        "mean": null,
+        "levels": 870
+      },
+      "CALLSIGN_PFX": {
+        "null": 0.009336,
+        "mean": null,
+        "levels": 921
+      },
+      "nm_taxi": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_lobt": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_sched": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_eobt1": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "lobt_eobt1": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "lobt_sched": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_sched": {
+        "null": 0.0,
+        "mean": 1801.3836,
+        "levels": null
+      },
+      "hour": {
+        "null": 0.0,
+        "mean": 13.0737,
+        "levels": null
+      },
+      "minute_of_day": {
+        "null": 0.0,
+        "mean": 813.7223,
+        "levels": null
+      },
+      "dow": {
+        "null": 0.0,
+        "mean": 3.0207,
+        "levels": null
+      },
+      "doy": {
+        "null": 0.0,
+        "mean": 15.8862,
+        "levels": null
+      },
+      "sched_hour": {
+        "null": 0.0,
+        "mean": 12.6952,
+        "levels": null
+      },
+      "sched_minofday": {
+        "null": 0.0,
+        "mean": 788.0487,
+        "levels": null
+      },
+      "lobt_changed": {
+        "null": 0.0,
+        "mean": 0.2949,
+        "levels": null
+      },
+      "n_dep_stand_month": {
+        "null": 4.6e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "n_arr_stand_month": {
+        "null": 0.000514,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_lobt": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_eobt1": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_iobt": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_iobt": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "noac": {
+        "null": 0.0,
+        "mean": 0.0004,
+        "levels": null
+      },
+      "flight_len": {
+        "null": 5.9e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "noac_day_apt": {
+        "null": 0.0,
+        "mean": 0.1521,
+        "levels": null
+      },
+      "has_nm_f": {
+        "null": 0.0,
+        "mean": 0.9907,
+        "levels": null
+      },
+      "type_mvt_eq_flt": {
+        "null": 0.009336,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_flight_arr": {
+        "null": 0.0,
+        "mean": 0.1587,
+        "levels": null
+      },
+      "airborne": {
+        "null": 0.841268,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_ub_pm": {
+        "null": 0.008152,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_lb_nm": {
+        "null": 0.010904,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_ub_pa": {
+        "null": 0.017468,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_lb_na": {
+        "null": 0.019778,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_lb_pm": {
+        "null": 0.017306,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_lb_pa": {
+        "null": 0.017468,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_ub_na": {
+        "null": 0.019778,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_ub_nm": {
+        "null": 0.020084,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_taxi_pa": {
+        "null": 0.017468,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_taxi_na": {
+        "null": 0.019778,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_turnaround_pa": {
+        "null": 0.017468,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_td_gap_pa": {
+        "null": 0.017468,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_type_pa": {
+        "null": 0.017514,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_type_na": {
+        "null": 0.01985,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_prev_aobt_gap": {
+        "null": 0.031912,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_prev_mvt_gap": {
+        "null": 0.014873,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_next_aobt_gap": {
+        "null": 0.031912,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_next_mvt_gap": {
+        "null": 0.014873,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_30m": {
+        "null": 0.0,
+        "mean": 32.1538,
+        "levels": null
+      },
+      "nbr_apt_prev10_nmtaxi": {
+        "null": 8.5e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_rwy_prev10_nmtaxi": {
+        "null": 0.000703,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_prev10_mvtsched": {
+        "null": 6.5e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_next10_nmtaxi": {
+        "null": 6.5e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_stand_prev5_nmtaxi": {
+        "null": 0.015887,
+        "mean": NaN,
+        "levels": null
+      },
+      "_rows": 153706
+    },
+    "ranking": {
+      "apt": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 10
+      },
+      "stand_raw": {
+        "null": 1.2e-05,
+        "mean": null,
+        "levels": 1697
+      },
+      "stand_base": {
+        "null": 1.2e-05,
+        "mean": null,
+        "levels": 1524
+      },
+      "stand_pfx": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 50
+      },
+      "RUNWAY_mvt": {
+        "null": 0.0,
+        "mean": null,
+        "levels": 50
+      },
+      "AIRCRAFT_TYPE_mvt": {
+        "null": 0.001125,
+        "mean": null,
+        "levels": 199
+      },
+      "WK_TBL_CAT_flt": {
+        "null": 0.015381,
+        "mean": null,
+        "levels": 4
+      },
+      "AIRCRAFT_OPERATOR_flt": {
+        "null": 0.01534,
+        "mean": null,
+        "levels": 579
+      },
+      "MARKET_SEGMENT_flt": {
+        "null": 0.01534,
+        "mean": null,
+        "levels": 8
+      },
+      "FLIGHT_TYPE_flt": {
+        "null": 0.01534,
+        "mean": null,
+        "levels": 5
+      },
+      "ADES_mvt": {
+        "null": 3.8e-05,
+        "mean": null,
+        "levels": 1105
+      },
+      "ADES_FILED_flt": {
+        "null": 0.01534,
+        "mean": null,
+        "levels": 1031
+      },
+      "CALLSIGN_PFX": {
+        "null": 0.01534,
+        "mean": null,
+        "levels": 1142
+      },
+      "nm_taxi": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_lobt": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_sched": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_eobt1": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "lobt_eobt1": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "lobt_sched": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_sched": {
+        "null": 0.0,
+        "mean": 2124.9818,
+        "levels": null
+      },
+      "hour": {
+        "null": 0.0,
+        "mean": 12.6608,
+        "levels": null
+      },
+      "minute_of_day": {
+        "null": 0.0,
+        "mean": 789.0332,
+        "levels": null
+      },
+      "dow": {
+        "null": 0.0,
+        "mean": 3.0588,
+        "levels": null
+      },
+      "doy": {
+        "null": 0.0,
+        "mean": 116.8394,
+        "levels": null
+      },
+      "sched_hour": {
+        "null": 0.0,
+        "mean": 12.2004,
+        "levels": null
+      },
+      "sched_minofday": {
+        "null": 0.0,
+        "mean": 758.1623,
+        "levels": null
+      },
+      "lobt_changed": {
+        "null": 0.0,
+        "mean": 0.3045,
+        "levels": null
+      },
+      "n_dep_stand_month": {
+        "null": 1.2e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "n_arr_stand_month": {
+        "null": 0.00056,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_lobt": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_eobt1": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "mvt_iobt": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "aobt_iobt": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "noac": {
+        "null": 0.0,
+        "mean": 0.0011,
+        "levels": null
+      },
+      "flight_len": {
+        "null": 0.000168,
+        "mean": NaN,
+        "levels": null
+      },
+      "noac_day_apt": {
+        "null": 0.0,
+        "mean": 0.5392,
+        "levels": null
+      },
+      "has_nm_f": {
+        "null": 0.0,
+        "mean": 0.9847,
+        "levels": null
+      },
+      "type_mvt_eq_flt": {
+        "null": 0.01534,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_flight_arr": {
+        "null": 0.0,
+        "mean": 0.1477,
+        "levels": null
+      },
+      "airborne": {
+        "null": 0.852329,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_ub_pm": {
+        "null": 0.006986,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_lb_nm": {
+        "null": 0.009848,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_ub_pa": {
+        "null": 0.02241,
+        "mean": NaN,
+        "levels": null
+      },
+      "taxi_lb_na": {
+        "null": 0.02444,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_lb_pm": {
+        "null": 0.022123,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_lb_pa": {
+        "null": 0.02241,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_ub_na": {
+        "null": 0.02444,
+        "mean": NaN,
+        "levels": null
+      },
+      "off_ub_nm": {
+        "null": 0.024896,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_taxi_pa": {
+        "null": 0.02241,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_taxi_na": {
+        "null": 0.02444,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_turnaround_pa": {
+        "null": 0.02241,
+        "mean": NaN,
+        "levels": null
+      },
+      "arr_td_gap_pa": {
+        "null": 0.02241,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_type_pa": {
+        "null": 0.022445,
+        "mean": NaN,
+        "levels": null
+      },
+      "same_type_na": {
+        "null": 0.02449,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_prev_aobt_gap": {
+        "null": 0.04155,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_prev_mvt_gap": {
+        "null": 0.01336,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_next_aobt_gap": {
+        "null": 0.041547,
+        "mean": NaN,
+        "levels": null
+      },
+      "dep_next_mvt_gap": {
+        "null": 0.01336,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_30m": {
+        "null": 0.0,
+        "mean": 34.5021,
+        "levels": null
+      },
+      "nbr_apt_prev10_nmtaxi": {
+        "null": 8.1e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_rwy_prev10_nmtaxi": {
+        "null": 0.000606,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_prev10_mvtsched": {
+        "null": 5.8e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_apt_next10_nmtaxi": {
+        "null": 6.1e-05,
+        "mean": NaN,
+        "levels": null
+      },
+      "nbr_stand_prev5_nmtaxi": {
+        "null": 0.01445,
+        "mean": NaN,
+        "levels": null
+      },
+      "_rows": 344841
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "note": "Candidate 1: the three members with non-zero NNLS weight. R0-retro (0.052) and X2-xgb (0.000) are dropped; dropping R0-retro costs 0.01 s on the board estimate and it has no ranking predictions.  Every member here resolves to a DURABLE address: bytes whose source was untracked or modified are committed under pinned/ with their sha256 in MANIFEST.md; members whose source is tracked and clean keep their git blob. Verify with `python pin_members.py`. The rule exists because review round 1 found the 0.4438-weight member sourcing a file another lane was still editing.",
+  "members": {
+    "T-tailv2": "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+    "C2-cat": "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+    "L2-hub": "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet"
+  }
+}

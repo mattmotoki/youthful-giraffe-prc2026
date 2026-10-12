@@ -1,0 +1,210 @@
+{
+  "arm": "k2-refit-bulk-eham-out",
+  "note": "anchor refitted with K2 off the NM tail only, blend-5's nm_late weights kept; block depx 600 s; v7's EHAM mask; noac held at blend-5's anchor",
+  "clean": {
+    "july_loo": 283.6627,
+    "december": 204.2511,
+    "january": 217.6985
+  },
+  "vs_stack5": {
+    "july_loo": 1.5403,
+    "december": 1.3608,
+    "january": 1.4318
+  },
+  "vs_v6": {
+    "july_loo": 1.0592,
+    "december": 1.4023,
+    "january": 1.1181
+  },
+  "ci_v6": {
+    "july_loo": [
+      -1.0592,
+      -1.626,
+      -0.6017
+    ],
+    "december": [
+      -1.4023,
+      -2.2817,
+      -0.7172
+    ],
+    "january": [
+      -1.1181,
+      -1.4918,
+      -0.7553
+    ]
+  },
+  "ci_v6_no_noac": {
+    "july_loo": [
+      -1.2287,
+      -1.8649,
+      -0.7018
+    ],
+    "december": [
+      -1.4404,
+      -2.3264,
+      -0.7431
+    ],
+    "january": [
+      -1.1827,
+      -1.5663,
+      -0.798
+    ]
+  },
+  "slices": {
+    "july_loo": {
+      "n": 190713,
+      "rmse": 283.6627,
+      "le3600": 246.8505,
+      "gt3600": 2395.5212,
+      "no_nm": 1117.598,
+      "no_nm_flight_id_only": 1118.125,
+      "noac": 3407.3545,
+      "no_noac": 244.8136,
+      "n_no_nm": 3938
+    },
+    "december": {
+      "n": 165677,
+      "rmse": 204.2511,
+      "le3600": 191.9518,
+      "gt3600": 1769.2143,
+      "no_nm": 652.9551,
+      "no_nm_flight_id_only": 653.7263,
+      "noac": 2010.4588,
+      "no_noac": 198.9182,
+      "n_no_nm": 1649
+    },
+    "january": {
+      "n": 153704,
+      "rmse": 217.6985,
+      "le3600": 195.5607,
+      "gt3600": 2095.6505,
+      "no_nm": 950.0033,
+      "no_nm_flight_id_only": 950.5532,
+      "noac": 3509.4763,
+      "no_noac": 205.8197,
+      "n_no_nm": 1433
+    }
+  },
+  "clean_board": 256.5503,
+  "gain_board_vs_stack5": 1.4869,
+  "gain_board_vs_v6": 1.0727,
+  "predicted_board": 262.6195,
+  "worst_fold_vs_v6": 1.0592,
+  "gate_gain": true,
+  "gate_folds": true,
+  "gate": true,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "airport_excluded": "EHAM",
+  "n_rows_taken_from_stack5": {
+    "july_loo": 22489,
+    "december": 19458,
+    "january": 18460
+  },
+  "vs_v7": {
+    "july_loo": 0.9624,
+    "december": 1.3166,
+    "january": 0.8427
+  },
+  "ci_v7": {
+    "july_loo": [
+      -0.9624,
+      -1.5129,
+      -0.5053
+    ],
+    "december": [
+      -1.3166,
+      -2.1964,
+      -0.6423
+    ],
+    "january": [
+      -0.8427,
+      -1.184,
+      -0.5042
+    ]
+  },
+  "ci_v7_no_noac": {
+    "july_loo": [
+      -1.1165,
+      -1.7424,
+      -0.5907
+    ],
+    "december": [
+      -1.3524,
+      -2.2404,
+      -0.6601
+    ],
+    "january": [
+      -0.8915,
+      -1.2451,
+      -0.5335
+    ]
+  },
+  "clean_board_v7": 257.4598,
+  "gain_board_vs_v7": 0.9095,
+  "predicted_board_vs_v7": 262.5528,
+  "v7_clean": {
+    "july_loo": 284.6251,
+    "december": 205.5677,
+    "january": 218.5412
+  },
+  "members": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "K2-window",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "anchor_members": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "F1-fresh",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "anchor": "blend-K off the NM tail, blend-5's nm_late weights on it",
+  "block": "depx",
+  "win": 600.0,
+  "seeds": [
+    7,
+    107,
+    207,
+    307,
+    407
+  ],
+  "rounds": 300,
+  "threads": 3,
+  "lightgbm": "4.7.0",
+  "exp_035": {
+    "arm": "mod",
+    "member_files": {
+      "july_loo": {
+        "path": "experiments/exp-035-k2climb/oof/mod-july_loo.parquet",
+        "sha256": "33010b2e625c9236a56bf08521415e28c1433a64095d002577296a6d962f16d8"
+      },
+      "december": {
+        "path": "experiments/exp-035-k2climb/oof/mod-december.parquet",
+        "sha256": "3c2345002ba92ed0524cf3dead6e856c50e9e85c9855748c72a57318664e6afb"
+      },
+      "january": {
+        "path": "experiments/exp-035-k2climb/oof/mod-january.parquet",
+        "sha256": "b5d638d93ee04dafb675925435cf07479f409eef921d6991156faa3bb7f4e62a"
+      }
+    },
+    "moved": [
+      "experiments/exp-035-k2climb/analysis/refit-bulk-k2c-mod.json",
+      "experiments/exp-035-k2climb/oof/cand-k2c-mod-refit-bulk-december.parquet",
+      "experiments/exp-035-k2climb/oof/cand-k2c-mod-refit-bulk-january.parquet",
+      "experiments/exp-035-k2climb/oof/cand-k2c-mod-refit-bulk-july_loo.parquet"
+    ],
+    "log": "experiments/exp-035-k2climb/logs/rotate-refit-bulk-k2c-mod.log",
+    "wall_s": 46.0
+  }
+}

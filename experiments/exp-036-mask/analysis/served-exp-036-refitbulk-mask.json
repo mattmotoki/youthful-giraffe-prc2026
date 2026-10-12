@@ -1,0 +1,41 @@
+{
+  "name": "exp-036-refitbulk-mask",
+  "arm": "refitbulk-mask",
+  "mode": "derived",
+  "source": "refit-bulk",
+  "source_file": "submissions/candidates/exp-027-k2-refitbulk.parquet",
+  "source_sha256": "3e6f3681025f60d7d8af9365c1c18c60d47df146c888c8b80351573211e2cf74",
+  "base": "v7",
+  "base_file": "submissions/candidates/exp-030-eham-out.parquet",
+  "base_sha256": "67b70ee379e62a2a3bc9d91c9d771112baf3233efa3f74f4f95adbd7a3c03ef7",
+  "keep_airports": [
+    "EDDM",
+    "EGLL",
+    "LEBL",
+    "LEMD",
+    "LFPG",
+    "LIRF",
+    "LSZH",
+    "LTFM"
+  ],
+  "hold_at_base": [
+    "EDDF",
+    "EHAM"
+  ],
+  "gates_table": "experiments/exp-026-rebuild/candidates/ranking-gates.parquet",
+  "gates_table_sha256": "7f14aeea2219eef62b918637b015268cafe15c905a2d4072b878f791e9e2dbfd",
+  "rows_from_source": 270342,
+  "rows_from_base": 74499,
+  "rows_moved_vs_base": 269938,
+  "n_noac": 388,
+  "measured_clean": {
+    "july_loo": 284.1572,
+    "december": 204.9218,
+    "january": 218.1506
+  },
+  "measured_clean_board": 257.0248,
+  "measured_gain_vs_K2": 0.1404,
+  "predicted_board_vs_K2": 262.9423,
+  "wall_s": 1.9,
+  "sha256": "ad962763236e9b40ace45a5dac12945568bbce441ed0547ff8e814d248c72c78"
+}

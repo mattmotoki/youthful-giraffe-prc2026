@@ -1,0 +1,392 @@
+{
+ "oracle": {
+  "blend5-300": {
+   "win": 300.0,
+   "board_before": 259.13391245933974,
+   "board_after": 244.1365956110466,
+   "gain": 14.997316848293138,
+   "per_fold": {
+    "july_loo": 269.5087,
+    "december": 193.1301,
+    "january": 207.8652
+   },
+   "singletons": {
+    "july_loo": 12511,
+    "december": 14329,
+    "january": 15707
+   }
+  },
+  "blend5-600": {
+   "win": 600.0,
+   "board_before": 259.13391245933974,
+   "board_after": 244.02003546648223,
+   "gain": 15.113876992857513,
+   "per_fold": {
+    "july_loo": 269.4272,
+    "december": 192.8036,
+    "january": 207.6891
+   },
+   "singletons": {
+    "july_loo": 2739,
+    "december": 3696,
+    "january": 4095
+   }
+  },
+  "blend5-1800": {
+   "win": 1800.0,
+   "board_before": 259.13391245933974,
+   "board_after": 246.9047057383589,
+   "gain": 12.22920672098084,
+   "per_fold": {
+    "july_loo": 272.468,
+    "december": 195.3987,
+    "january": 210.3795
+   },
+   "singletons": {
+    "july_loo": 464,
+    "december": 581,
+    "january": 567
+   }
+  },
+  "stack5-300": {
+   "win": 300.0,
+   "board_before": 258.03717813906525,
+   "board_after": 243.4692250756312,
+   "gain": 14.56795306343406,
+   "per_fold": {
+    "july_loo": 268.9419,
+    "december": 192.3802,
+    "january": 207.0196
+   },
+   "singletons": {
+    "july_loo": 12511,
+    "december": 14329,
+    "january": 15707
+   }
+  },
+  "stack5-600": {
+   "win": 600.0,
+   "board_before": 258.03717813906525,
+   "board_after": 243.41822756717042,
+   "gain": 14.618950571894828,
+   "per_fold": {
+    "july_loo": 268.8996,
+    "december": 192.107,
+    "january": 206.9533
+   },
+   "singletons": {
+    "july_loo": 2739,
+    "december": 3696,
+    "january": 4095
+   }
+  },
+  "stack5-1800": {
+   "win": 1800.0,
+   "board_before": 258.03717813906525,
+   "board_after": 246.26640092086717,
+   "gain": 11.770777218198077,
+   "per_fold": {
+    "july_loo": 271.9013,
+    "december": 194.6905,
+    "january": 209.6111
+   },
+   "singletons": {
+    "july_loo": 464,
+    "december": 581,
+    "january": 567
+   }
+  }
+ },
+ "intervals": [
+  {
+   "tag": "w300",
+   "variant": "all-but-noac",
+   "fold": "july_loo",
+   "all_delta": -0.484,
+   "all_ci": "[-0.817, -0.171]",
+   "all_n": 190713,
+   "clean_delta": -0.484,
+   "clean_ci": "[-0.817, -0.171]",
+   "clean_n": 190713,
+   "clean_no_noac_delta": -0.5609,
+   "clean_no_noac_ci": "[-0.946, -0.200]",
+   "clean_no_noac_n": 190374
+  },
+  {
+   "tag": "w300",
+   "variant": "all-but-noac",
+   "fold": "december",
+   "all_delta": -0.0271,
+   "all_ci": "[-0.592, +0.566]",
+   "all_n": 165677,
+   "clean_delta": -0.0271,
+   "clean_ci": "[-0.592, +0.566]",
+   "clean_n": 165677,
+   "clean_no_noac_delta": -0.0278,
+   "clean_no_noac_ci": "[-0.607, +0.576]",
+   "clean_no_noac_n": 165588
+  },
+  {
+   "tag": "w300",
+   "variant": "all-but-noac",
+   "fold": "january",
+   "all_delta": -0.1289,
+   "all_ci": "[-0.520, +0.139]",
+   "all_n": 153706,
+   "clean_delta": -0.2889,
+   "clean_ci": "[-0.669, +0.090]",
+   "clean_n": 153704,
+   "clean_no_noac_delta": -0.3055,
+   "clean_no_noac_ci": "[-0.695, +0.097]",
+   "clean_no_noac_n": 153641
+  },
+  {
+   "tag": "w300",
+   "variant": "bulk",
+   "fold": "july_loo",
+   "all_delta": -0.3856,
+   "all_ci": "[-0.652, -0.132]",
+   "all_n": 190713,
+   "clean_delta": -0.3856,
+   "clean_ci": "[-0.652, -0.132]",
+   "clean_n": 190713,
+   "clean_no_noac_delta": -0.4469,
+   "clean_no_noac_ci": "[-0.741, -0.154]",
+   "clean_no_noac_n": 190374
+  },
+  {
+   "tag": "w300",
+   "variant": "bulk",
+   "fold": "december",
+   "all_delta": -0.2327,
+   "all_ci": "[-0.557, +0.050]",
+   "all_n": 165677,
+   "clean_delta": -0.2327,
+   "clean_ci": "[-0.557, +0.050]",
+   "clean_n": 165677,
+   "clean_no_noac_delta": -0.239,
+   "clean_no_noac_ci": "[-0.578, +0.051]",
+   "clean_no_noac_n": 165588
+  },
+  {
+   "tag": "w300",
+   "variant": "bulk",
+   "fold": "january",
+   "all_delta": -0.1071,
+   "all_ci": "[-0.299, +0.055]",
+   "all_n": 153706,
+   "clean_delta": -0.1654,
+   "clean_ci": "[-0.404, +0.079]",
+   "clean_n": 153704,
+   "clean_no_noac_delta": -0.1749,
+   "clean_no_noac_ci": "[-0.420, +0.084]",
+   "clean_no_noac_n": 153641
+  },
+  {
+   "tag": "w600",
+   "variant": "all-but-noac",
+   "fold": "july_loo",
+   "all_delta": -0.4811,
+   "all_ci": "[-0.866, -0.115]",
+   "all_n": 190713,
+   "clean_delta": -0.4811,
+   "clean_ci": "[-0.866, -0.115]",
+   "clean_n": 190713,
+   "clean_no_noac_delta": -0.5575,
+   "clean_no_noac_ci": "[-0.995, -0.132]",
+   "clean_no_noac_n": 190374
+  },
+  {
+   "tag": "w600",
+   "variant": "all-but-noac",
+   "fold": "december",
+   "all_delta": 0.0416,
+   "all_ci": "[-0.636, +0.763]",
+   "all_n": 165677,
+   "clean_delta": 0.0416,
+   "clean_ci": "[-0.636, +0.763]",
+   "clean_n": 165677,
+   "clean_no_noac_delta": 0.0427,
+   "clean_no_noac_ci": "[-0.654, +0.776]",
+   "clean_no_noac_n": 165588
+  },
+  {
+   "tag": "w600",
+   "variant": "all-but-noac",
+   "fold": "january",
+   "all_delta": -0.128,
+   "all_ci": "[-0.542, +0.140]",
+   "all_n": 153706,
+   "clean_delta": -0.3137,
+   "clean_ci": "[-0.711, +0.092]",
+   "clean_n": 153704,
+   "clean_no_noac_delta": -0.3317,
+   "clean_no_noac_ci": "[-0.752, +0.101]",
+   "clean_no_noac_n": 153641
+  },
+  {
+   "tag": "w600",
+   "variant": "bulk",
+   "fold": "july_loo",
+   "all_delta": -0.3825,
+   "all_ci": "[-0.657, -0.126]",
+   "all_n": 190713,
+   "clean_delta": -0.3825,
+   "clean_ci": "[-0.657, -0.126]",
+   "clean_n": 190713,
+   "clean_no_noac_delta": -0.4433,
+   "clean_no_noac_ci": "[-0.754, -0.150]",
+   "clean_no_noac_n": 190374
+  },
+  {
+   "tag": "w600",
+   "variant": "bulk",
+   "fold": "december",
+   "all_delta": -0.2375,
+   "all_ci": "[-0.623, +0.103]",
+   "all_n": 165677,
+   "clean_delta": -0.2375,
+   "clean_ci": "[-0.623, +0.103]",
+   "clean_n": 165677,
+   "clean_no_noac_delta": -0.2439,
+   "clean_no_noac_ci": "[-0.644, +0.107]",
+   "clean_no_noac_n": 165588
+  },
+  {
+   "tag": "w600",
+   "variant": "bulk",
+   "fold": "january",
+   "all_delta": -0.0658,
+   "all_ci": "[-0.267, +0.117]",
+   "all_n": 153706,
+   "clean_delta": -0.1016,
+   "clean_ci": "[-0.358, +0.164]",
+   "clean_n": 153704,
+   "clean_no_noac_delta": -0.1074,
+   "clean_no_noac_ci": "[-0.382, +0.171]",
+   "clean_no_noac_n": 153641
+  }
+ ],
+ "no_nm": [
+  {
+   "tag": "w300",
+   "fold": "july_loo",
+   "variant": "stack-5",
+   "common_no_nm": 1121.4552,
+   "flight_id_only": 1121.9978,
+   "n_common": 3938,
+   "n_flight_id": 3934,
+   "n_extra": 4
+  },
+  {
+   "tag": "w300",
+   "fold": "july_loo",
+   "variant": "stack-5+depx",
+   "common_no_nm": 1121.1964,
+   "flight_id_only": 1121.7331,
+   "n_common": 3938,
+   "n_flight_id": 3934,
+   "n_extra": 4
+  },
+  {
+   "tag": "w300",
+   "fold": "december",
+   "variant": "stack-5",
+   "common_no_nm": 662.7748,
+   "flight_id_only": 663.5964,
+   "n_common": 1649,
+   "n_flight_id": 1643,
+   "n_extra": 6
+  },
+  {
+   "tag": "w300",
+   "fold": "december",
+   "variant": "stack-5+depx",
+   "common_no_nm": 664.75,
+   "flight_id_only": 665.5963,
+   "n_common": 1649,
+   "n_flight_id": 1643,
+   "n_extra": 6
+  },
+  {
+   "tag": "w300",
+   "fold": "january",
+   "variant": "stack-5",
+   "common_no_nm": 2833.3488,
+   "flight_id_only": 2836.1569,
+   "n_common": 1435,
+   "n_flight_id": 1432,
+   "n_extra": 3
+  },
+  {
+   "tag": "w300",
+   "fold": "january",
+   "variant": "stack-5+depx",
+   "common_no_nm": 2834.1451,
+   "flight_id_only": 2836.9616,
+   "n_common": 1435,
+   "n_flight_id": 1432,
+   "n_extra": 3
+  },
+  {
+   "tag": "w600",
+   "fold": "july_loo",
+   "variant": "stack-5",
+   "common_no_nm": 1121.4552,
+   "flight_id_only": 1121.9978,
+   "n_common": 3938,
+   "n_flight_id": 3934,
+   "n_extra": 4
+  },
+  {
+   "tag": "w600",
+   "fold": "july_loo",
+   "variant": "stack-5+depx",
+   "common_no_nm": 1121.4234,
+   "flight_id_only": 1121.9493,
+   "n_common": 3938,
+   "n_flight_id": 3934,
+   "n_extra": 4
+  },
+  {
+   "tag": "w600",
+   "fold": "december",
+   "variant": "stack-5",
+   "common_no_nm": 662.7748,
+   "flight_id_only": 663.5964,
+   "n_common": 1649,
+   "n_flight_id": 1643,
+   "n_extra": 6
+  },
+  {
+   "tag": "w600",
+   "fold": "december",
+   "variant": "stack-5+depx",
+   "common_no_nm": 664.3735,
+   "flight_id_only": 665.2053,
+   "n_common": 1649,
+   "n_flight_id": 1643,
+   "n_extra": 6
+  },
+  {
+   "tag": "w600",
+   "fold": "january",
+   "variant": "stack-5",
+   "common_no_nm": 2833.3488,
+   "flight_id_only": 2836.1569,
+   "n_common": 1435,
+   "n_flight_id": 1432,
+   "n_extra": 3
+  },
+  {
+   "tag": "w600",
+   "fold": "january",
+   "variant": "stack-5+depx",
+   "common_no_nm": 2834.0715,
+   "flight_id_only": 2836.8946,
+   "n_common": 1435,
+   "n_flight_id": 1432,
+   "n_extra": 3
+  }
+ ]
+}

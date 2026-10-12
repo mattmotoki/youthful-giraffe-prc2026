@@ -1,0 +1,2416 @@
+{
+  "arm": "c_lgb_shipped",
+  "leaf_climb": {
+    "all_row_gain_s": {
+      "leaves_127x300_lr050": 8.962405071292665,
+      "leaves_15x600_lr050": 8.166023958521976,
+      "leaves_255x300_lr050": 9.164865901163637,
+      "leaves_63x300_lr050": 8.650355198739817,
+      "predeclared_31x300_lr050": 8.168026826048276
+    },
+    "order": [
+      "leaves_15x600_lr050",
+      "predeclared_31x300_lr050",
+      "leaves_63x300_lr050",
+      "leaves_127x300_lr050",
+      "leaves_255x300_lr050"
+    ],
+    "rule": "desk, 2026-09-08 18:40 UTC: stop at the first setting that fails a clause or turns over; do not add settings past that",
+    "stopped_at": {
+      "at": "leaves_15x600_lr050",
+      "failed_a_clause": true,
+      "turned_over": false
+    }
+  },
+  "n_features": 103,
+  "predeclared_lgb": {
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "feature_fraction": 0.8,
+    "lambda_l2": 1.0,
+    "learning_rate": 0.05,
+    "min_child_samples": 100,
+    "n_estimators": 300,
+    "n_jobs": 3,
+    "num_leaves": 31,
+    "objective": "l2",
+    "seed": 46,
+    "verbosity": -1
+  },
+  "rule": {
+    "block_cache_keys": {
+      "2025-01": "cb4d6289cb421aa2",
+      "2025-07": "8179f74417c8cb99",
+      "2025-12": "d35b7171d7062341"
+    },
+    "sha256": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+  },
+  "settings": {
+    "leafsize_63x900_lr020_mcs30": {
+      "board_all_row": {
+        "arm": 299.80106998794776,
+        "base": 308.5976571605635,
+        "gain_s": 8.796587172615716,
+        "interval": {
+          "ci95": [
+            7.090822175175721,
+            11.042306276548164
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 8.981658101109012,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_basis": "the whole board: every fold priced",
+      "board_clean": {
+        "arm": 245.80910470399803,
+        "base": 256.464379624143,
+        "gain_s": 10.65527492014499,
+        "interval": {
+          "ci95": [
+            9.907007449944103,
+            11.546331093383461
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 10.667675746110858,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 6346.840407503017,
+            "B_mean_dd": 6178.159293186784,
+            "ci95": [
+              5933.341991852624,
+              7295.978452642511
+            ],
+            "mse_gain_s2": 6515.521521819247,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "clean": {
+            "A_mean_rd": 6346.840407503017,
+            "B_mean_dd": 6178.159293186784,
+            "ci95": [
+              5931.921586610204,
+              7285.768863630668
+            ],
+            "mse_gain_s2": 6515.521521819247,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "rmse_arm": 187.56734265185915,
+          "rmse_arm_clean": 187.56734265185915,
+          "rmse_base": 204.19850526215706,
+          "rmse_base_clean": 204.19850526215706
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 4951.682924007803,
+            "B_mean_dd": 4763.062994447899,
+            "ci95": [
+              4655.997008597445,
+              5653.693601622115
+            ],
+            "mse_gain_s2": 5140.302853567708,
+            "rows": 153706,
+            "rows_moved": 69501
+          },
+          "clean": {
+            "A_mean_rd": 4951.747355420441,
+            "B_mean_dd": 4763.124971533654,
+            "ci95": [
+              4615.4889547004905,
+              5630.622505661753
+            ],
+            "mse_gain_s2": 5140.369739307228,
+            "rows": 153704,
+            "rows_moved": 69501
+          },
+          "rmse_arm": 329.7569916754676,
+          "rmse_arm_clean": 205.47978843472276,
+          "rmse_base": 337.4610739217519,
+          "rmse_base_clean": 217.62884274490287
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 5630.809102590407,
+            "B_mean_dd": 5741.63955293148,
+            "ci95": [
+              4914.905243206076,
+              6324.176035758255
+            ],
+            "mse_gain_s2": 5519.978652249332,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "clean": {
+            "A_mean_rd": 5630.809102590407,
+            "B_mean_dd": 5741.63955293148,
+            "ci95": [
+              4908.6434135272675,
+              6349.015808135774
+            ],
+            "mse_gain_s2": 5519.978652249332,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "rmse_arm": 273.6595491805383,
+          "rmse_arm_clean": 273.6595491805383,
+          "rmse_base": 283.5657375458904,
+          "rmse_base_clean": 283.5657375458904
+        }
+      },
+      "december_rmse": {
+        "arm": 187.56734265185915,
+        "base": 204.19850526215706,
+        "gain_s": 16.631162610297906
+      },
+      "detail": {
+        "december": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 181.52306657481705,
+          "r11_rmse_on_fit_rows": 214.601215969833,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7015276499089641,
+            "LIRF": 0.8661187154512897,
+            "LSZH": 1.0
+          }
+        },
+        "january": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 176.842177663417,
+          "r11_rmse_on_fit_rows": 210.9580634125595,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7227810566859153,
+            "LIRF": 0.9225059905198321,
+            "LSZH": 1.0
+          }
+        },
+        "july_loo": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 134.31931667637963,
+          "r11_rmse_on_fit_rows": 177.93636498792165,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7330185101952743,
+            "LIRF": 0.8781186909169079,
+            "LSZH": 1.0
+          }
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "gate_all_row_gain_and_every_interval_clear": true,
+      "lgb": {
+        "learning_rate": 0.02,
+        "min_child_samples": 30,
+        "n_estimators": 900,
+        "num_leaves": 63
+      },
+      "seconds": 202.3,
+      "tail_clauses": {
+        "december": {
+          "gain_with_the_update_tail_removed_s2_per_row": 5203.069356556527,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 6408.445152338815,
+            "rows": 165416,
+            "share_of_the_gain": 0.9820164906666614
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 74378.14502363962,
+            "passes_the_clause": true,
+            "rmse_arm": 1752.823894945799,
+            "rmse_base": 1773.913682149332,
+            "rmse_gain_s": 21.08978720353298,
+            "rows": 261,
+            "rows_moved": 75,
+            "share_of_the_gain": 0.017983509333338567
+          },
+          "total_mse_gain_s2_sum": 1079472059.1704473,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 343.57958033942714,
+            "rows": 1017,
+            "share_of_the_gain": 0.20143470647246983
+          }
+        },
+        "january": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4226.699993651363,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5191.826359925544,
+            "rows": 153381,
+            "share_of_the_gain": 1.0078878178216228
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": -19175.780003882348,
+            "passes_the_clause": false,
+            "rmse_arm": 5985.745192645092,
+            "rmse_base": 5984.1431910733845,
+            "rmse_gain_s": -1.6020015717076603,
+            "rows": 325,
+            "rows_moved": 95,
+            "share_of_the_gain": -0.007887817821622763
+          },
+          "total_mse_gain_s2_sum": 790095390.4104781,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 358.0796429455738,
+            "rows": 695,
+            "share_of_the_gain": 0.1777332748560224
+          }
+        },
+        "july_loo": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4008.0929796512232,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5449.516740242647,
+            "rows": 190057,
+            "share_of_the_gain": 0.9838392956261864
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 25934.27683861276,
+            "passes_the_clause": true,
+            "rmse_arm": 2390.3572156859186,
+            "rmse_base": 2395.775844151608,
+            "rmse_gain_s": 5.41862846568938,
+            "rows": 656,
+            "rows_moved": 255,
+            "share_of_the_gain": 0.016160704373813447
+          },
+          "total_mse_gain_s2_sum": 1052731688.7064269,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 375.18054426973856,
+            "rows": 881,
+            "share_of_the_gain": 0.273893391232959
+          }
+        }
+      }
+    },
+    "leaves_127x300_lr050": {
+      "board_all_row": {
+        "arm": 299.6352520892708,
+        "base": 308.5976571605635,
+        "gain_s": 8.962405071292665,
+        "interval": {
+          "ci95": [
+            7.1950150452032675,
+            11.344252746525061
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 9.157915030473461,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_basis": "the whole board: every fold priced",
+      "board_clean": {
+        "arm": 245.60683634020035,
+        "base": 256.464379624143,
+        "gain_s": 10.857543283942675,
+        "interval": {
+          "ci95": [
+            10.099384938162537,
+            11.647572402287537
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 10.870049457113328,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 6674.740147233087,
+            "B_mean_dd": 6661.323056654987,
+            "ci95": [
+              6082.17463508193,
+              7375.061690774432
+            ],
+            "mse_gain_s2": 6688.157237811185,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "clean": {
+            "A_mean_rd": 6674.740147233087,
+            "B_mean_dd": 6661.323056654987,
+            "ci95": [
+              6132.051112246485,
+              7435.474553931628
+            ],
+            "mse_gain_s2": 6688.157237811185,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "rmse_arm": 187.10658009136932,
+          "rmse_arm_clean": 187.10658009136932,
+          "rmse_base": 204.19850526215706,
+          "rmse_base_clean": 204.19850526215706
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 5218.774574491142,
+            "B_mean_dd": 5188.437625082179,
+            "ci95": [
+              4727.98655873034,
+              5772.97838536304
+            ],
+            "mse_gain_s2": 5249.111523900106,
+            "rows": 153706,
+            "rows_moved": 69501
+          },
+          "clean": {
+            "A_mean_rd": 5218.842481306508,
+            "B_mean_dd": 5188.505137152458,
+            "ci95": [
+              4744.724816313636,
+              5770.861473325252
+            ],
+            "mse_gain_s2": 5249.179825460558,
+            "rows": 153704,
+            "rows_moved": 69501
+          },
+          "rmse_arm": 329.5919672694133,
+          "rmse_arm_clean": 205.2148468533042,
+          "rmse_base": 337.4610739217519,
+          "rmse_base_clean": 217.62884274490287
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 5879.966286536976,
+            "B_mean_dd": 6148.037830455448,
+            "ci95": [
+              5037.896475445176,
+              6395.249476853232
+            ],
+            "mse_gain_s2": 5611.894742618504,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "clean": {
+            "A_mean_rd": 5879.966286536976,
+            "B_mean_dd": 6148.037830455448,
+            "ci95": [
+              5007.099318171192,
+              6416.582031858695
+            ],
+            "mse_gain_s2": 5611.894742618504,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "rmse_arm": 273.4915588593664,
+          "rmse_arm_clean": 273.4915588593664,
+          "rmse_base": 283.5657375458904,
+          "rmse_base_clean": 283.5657375458904
+        }
+      },
+      "december_rmse": {
+        "arm": 187.10658009136932,
+        "base": 204.19850526215706,
+        "gain_s": 17.091925170787732
+      },
+      "detail": {
+        "december": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 180.53899703718722,
+          "r11_rmse_on_fit_rows": 214.601215969833,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 0.9809442812350552,
+            "LEMD": 1.0,
+            "LFPG": 0.6753538701308414,
+            "LIRF": 0.8306909686489901,
+            "LSZH": 1.0
+          }
+        },
+        "january": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 176.06152955419708,
+          "r11_rmse_on_fit_rows": 210.9580634125595,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 0.9922082860522335,
+            "LEMD": 1.0,
+            "LFPG": 0.6860081142774713,
+            "LIRF": 0.8906271173321854,
+            "LSZH": 1.0
+          }
+        },
+        "july_loo": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 133.65264302171812,
+          "r11_rmse_on_fit_rows": 177.93636498792165,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7625286400010209,
+            "LIRF": 0.8463208648691218,
+            "LSZH": 1.0
+          }
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "gate_all_row_gain_and_every_interval_clear": true,
+      "lgb": {
+        "num_leaves": 127
+      },
+      "seconds": 116.8,
+      "tail_clauses": {
+        "december": {
+          "gain_with_the_update_tail_removed_s2_per_row": 5324.380135898495,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 6573.760914328921,
+            "rows": 165416,
+            "share_of_the_gain": 0.9813472795887861
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 79190.0049203482,
+            "passes_the_clause": true,
+            "rmse_arm": 1751.4507548875742,
+            "rmse_base": 1773.913682149332,
+            "rmse_gain_s": 22.46292726175784,
+            "rows": 261,
+            "rows_moved": 75,
+            "share_of_the_gain": 0.018652720411213894
+          },
+          "total_mse_gain_s2_sum": 1108073826.6888437,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 353.57263724131053,
+            "rows": 1017,
+            "share_of_the_gain": 0.20390924636200838
+          }
+        },
+        "january": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4323.2739584932815,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5257.374159470428,
+            "rows": 153381,
+            "share_of_the_gain": 0.9994563471732131
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 1349.6305810951385,
+            "passes_the_clause": true,
+            "rmse_arm": 5984.030422774341,
+            "rmse_base": 5984.1431910733845,
+            "rmse_gain_s": 0.11276829904363694,
+            "rows": 325,
+            "rows_moved": 95,
+            "share_of_the_gain": 0.0005436528267867614
+          },
+          "total_mse_gain_s2_sum": 806819935.8925897,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 372.35516034209445,
+            "rows": 695,
+            "share_of_the_gain": 0.1763798618473484
+          }
+        },
+        "july_loo": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4142.426295951543,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5583.941726385723,
+            "rows": 190057,
+            "share_of_the_gain": 0.9915963797736452
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 13710.471581267268,
+            "passes_the_clause": true,
+            "rmse_arm": 2392.9127488981044,
+            "rmse_base": 2395.775844151608,
+            "rmse_gain_s": 2.863095253503616,
+            "rows": 656,
+            "rows_moved": 255,
+            "share_of_the_gain": 0.008403620226354713
+          },
+          "total_mse_gain_s2_sum": 1070261282.0490028,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 386.7325283543155,
+            "rows": 881,
+            "share_of_the_gain": 0.2618488966849919
+          }
+        }
+      }
+    },
+    "leaves_15x600_lr050": {
+      "board_all_row": {
+        "arm": 300.4316332020415,
+        "base": 308.5976571605635,
+        "gain_s": 8.166023958521976,
+        "interval": {
+          "ci95": [
+            6.401286590596795,
+            10.311040493005436
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 8.343822839235102,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_basis": "the whole board: every fold priced",
+      "board_clean": {
+        "arm": 246.57778154181239,
+        "base": 256.464379624143,
+        "gain_s": 9.886598082330636,
+        "interval": {
+          "ci95": [
+            9.16364161671433,
+            10.700665271896538
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 9.900049078807342,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 5888.568453551466,
+            "B_mean_dd": 5676.29931478063,
+            "ci95": [
+              5507.950942197206,
+              6788.532484863605
+            ],
+            "mse_gain_s2": 6100.8375923223,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "clean": {
+            "A_mean_rd": 5888.568453551466,
+            "B_mean_dd": 5676.29931478063,
+            "ci95": [
+              5511.569561509704,
+              6787.515294066607
+            ],
+            "mse_gain_s2": 6100.8375923223,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "rmse_arm": 188.6695310827291,
+          "rmse_arm_clean": 188.6695310827291,
+          "rmse_base": 204.19850526215706,
+          "rmse_base_clean": 204.19850526215706
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 4643.914956963025,
+            "B_mean_dd": 4448.115502677145,
+            "ci95": [
+              4360.8340389593395,
+              5365.49746465024
+            ],
+            "mse_gain_s2": 4839.714411248905,
+            "rows": 153706,
+            "rows_moved": 69501
+          },
+          "clean": {
+            "A_mean_rd": 4643.975383691763,
+            "B_mean_dd": 4448.173381658859,
+            "ci95": [
+              4341.357944573409,
+              5368.459852176726
+            ],
+            "mse_gain_s2": 4839.777385724667,
+            "rows": 153704,
+            "rows_moved": 69501
+          },
+          "rmse_arm": 330.21244979735883,
+          "rmse_arm_clean": 206.20993140186286,
+          "rmse_base": 337.4610739217519,
+          "rmse_base_clean": 217.62884274490287
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 5192.754947145115,
+            "B_mean_dd": 5305.936105555792,
+            "ci95": [
+              4465.307516150693,
+              5923.653540689185
+            ],
+            "mse_gain_s2": 5079.5737887344385,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "clean": {
+            "A_mean_rd": 5192.754947145115,
+            "B_mean_dd": 5305.936105555792,
+            "ci95": [
+              4457.781961143241,
+              5895.3511794436845
+            ],
+            "mse_gain_s2": 5079.5737887344385,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "rmse_arm": 274.46302796772164,
+          "rmse_arm_clean": 274.46302796772164,
+          "rmse_base": 283.5657375458904,
+          "rmse_base_clean": 283.5657375458904
+        }
+      },
+      "december_rmse": {
+        "arm": 188.6695310827291,
+        "base": 204.19850526215706,
+        "gain_s": 15.528974179427962
+      },
+      "detail": {
+        "december": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 183.95815197926484,
+          "r11_rmse_on_fit_rows": 214.601215969833,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7050722666925628,
+            "LIRF": 0.8892302998074262,
+            "LSZH": 1.0
+          }
+        },
+        "january": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 179.8156422047467,
+          "r11_rmse_on_fit_rows": 210.9580634125595,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7821619242855612,
+            "LIRF": 0.9625942692345548,
+            "LSZH": 1.0
+          }
+        },
+        "july_loo": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 138.57945357692103,
+          "r11_rmse_on_fit_rows": 177.93636498792165,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.726202181472446,
+            "LIRF": 0.9357774023334738,
+            "LSZH": 1.0
+          }
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "gate_all_row_gain_and_every_interval_clear": true,
+      "lgb": {
+        "n_estimators": 600,
+        "num_leaves": 15
+      },
+      "seconds": 67.9,
+      "tail_clauses": {
+        "december": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4820.9388955569975,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 6010.66691383051,
+            "rows": 165416,
+            "share_of_the_gain": 0.9836678803717183
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 63249.00982756421,
+            "passes_the_clause": true,
+            "rmse_arm": 1755.9956554300006,
+            "rmse_base": 1773.913682149332,
+            "rmse_gain_s": 17.918026719331465,
+            "rows": 261,
+            "rows_moved": 75,
+            "share_of_the_gain": 0.016332119628281797
+          },
+          "total_mse_gain_s2_sum": 1010768469.7831818,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 326.593295325898,
+            "rows": 1017,
+            "share_of_the_gain": 0.20979065208620085
+          }
+        },
+        "january": {
+          "gain_with_the_update_tail_removed_s2_per_row": 3989.6835449189934,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 4891.738076946311,
+            "rows": 153381,
+            "share_of_the_gain": 1.0086121706355526
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": -19712.414414392915,
+            "passes_the_clause": false,
+            "rmse_arm": 5985.7900185091985,
+            "rmse_base": 5984.1431910733845,
+            "rmse_gain_s": -1.6468274358139752,
+            "rows": 325,
+            "rows_moved": 95,
+            "share_of_the_gain": -0.008612170635552497
+          },
+          "total_mse_gain_s2_sum": 743893143.2954242,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 349.58582908860603,
+            "rows": 695,
+            "share_of_the_gain": 0.17563657565293378
+          }
+        },
+        "july_loo": {
+          "gain_with_the_update_tail_removed_s2_per_row": 3696.420731785196,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5049.4158516650195,
+            "rows": 190057,
+            "share_of_the_gain": 0.9906435985116284
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 13816.962577763155,
+            "passes_the_clause": true,
+            "rmse_arm": 2392.8904974617176,
+            "rmse_base": 2395.775844151608,
+            "rmse_gain_s": 2.8853466898904117,
+            "rows": 656,
+            "rows_moved": 255,
+            "share_of_the_gain": 0.009356401488371774
+          },
+          "total_mse_gain_s2_sum": 968740755.970911,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 360.8616330446762,
+            "rows": 881,
+            "share_of_the_gain": 0.2722970694936696
+          }
+        }
+      }
+    },
+    "leaves_255x300_lr050": {
+      "board_all_row": {
+        "arm": 299.43279125939983,
+        "base": 308.5976571605635,
+        "gain_s": 9.164865901163637,
+        "interval": {
+          "ci95": [
+            7.271632915209065,
+            11.474319945290093
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 9.309483601176886,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_basis": "the whole board: every fold priced",
+      "board_clean": {
+        "arm": 245.35979582984623,
+        "base": 256.464379624143,
+        "gain_s": 11.104583794296786,
+        "interval": {
+          "ci95": [
+            10.338981981864864,
+            11.922828540320932
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 11.1143590642509,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 6987.006588679926,
+            "B_mean_dd": 7182.6911734263995,
+            "ci95": [
+              6245.749789238941,
+              7493.768167921419
+            ],
+            "mse_gain_s2": 6791.322003933452,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "clean": {
+            "A_mean_rd": 6987.006588679926,
+            "B_mean_dd": 7182.6911734263995,
+            "ci95": [
+              6238.841879538535,
+              7484.798372125659
+            ],
+            "mse_gain_s2": 6791.322003933452,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "rmse_arm": 186.83069219848687,
+          "rmse_arm_clean": 186.83069219848687,
+          "rmse_base": 204.19850526215706,
+          "rmse_base_clean": 204.19850526215706
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 5452.024748511464,
+            "B_mean_dd": 5510.181857042381,
+            "ci95": [
+              4901.541222870679,
+              5915.797491654566
+            ],
+            "mse_gain_s2": 5393.867639980549,
+            "rows": 153706,
+            "rows_moved": 69501
+          },
+          "clean": {
+            "A_mean_rd": 5452.095690383485,
+            "B_mean_dd": 5510.2535556560415,
+            "ci95": [
+              4883.982338107677,
+              5922.681315369618
+            ],
+            "mse_gain_s2": 5393.937825110929,
+            "rows": 153704,
+            "rows_moved": 69501
+          },
+          "rmse_arm": 329.37229508937384,
+          "rmse_arm_clean": 204.8618445913605,
+          "rmse_base": 337.4610739217519,
+          "rmse_base_clean": 217.62884274490287
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 6062.873735449314,
+            "B_mean_dd": 6411.220018325422,
+            "ci95": [
+              5126.511761686415,
+              6498.251375670385
+            ],
+            "mse_gain_s2": 5714.527452573209,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "clean": {
+            "A_mean_rd": 6062.873735449314,
+            "B_mean_dd": 6411.220018325422,
+            "ci95": [
+              5126.838544307534,
+              6503.519130085098
+            ],
+            "mse_gain_s2": 5714.527452573209,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "rmse_arm": 273.30386030455475,
+          "rmse_arm_clean": 273.30386030455475,
+          "rmse_base": 283.5657375458904,
+          "rmse_base_clean": 283.5657375458904
+        }
+      },
+      "december_rmse": {
+        "arm": 186.83069219848687,
+        "base": 204.19850526215706,
+        "gain_s": 17.367813063670184
+      },
+      "detail": {
+        "december": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 179.78432760259344,
+          "r11_rmse_on_fit_rows": 214.601215969833,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 0.9590404053227164,
+            "LEMD": 1.0,
+            "LFPG": 0.5026253762564498,
+            "LIRF": 0.8169020728757962,
+            "LSZH": 1.0
+          }
+        },
+        "january": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 175.28609039292252,
+          "r11_rmse_on_fit_rows": 210.9580634125595,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 0.9583547223237856,
+            "LEMD": 1.0,
+            "LFPG": 0.7110535124699687,
+            "LIRF": 0.8385601674945858,
+            "LSZH": 1.0
+          }
+        },
+        "july_loo": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 132.44367850249728,
+          "r11_rmse_on_fit_rows": 177.93636498792165,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.6925521426335949,
+            "LIRF": 0.8262478048806912,
+            "LSZH": 1.0
+          }
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "gate_all_row_gain_and_every_interval_clear": true,
+      "lgb": {
+        "num_leaves": 255
+      },
+      "seconds": 187.3,
+      "tail_clauses": {
+        "december": {
+          "gain_with_the_update_tail_removed_s2_per_row": 5453.756200274795,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 6678.37813105216,
+            "rows": 165416,
+            "share_of_the_gain": 0.9818202279984579
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 78372.63877225529,
+            "passes_the_clause": true,
+            "rmse_arm": 1751.684079091988,
+            "rmse_base": 1773.913682149332,
+            "rmse_gain_s": 22.229603057344093,
+            "rows": 261,
+            "rows_moved": 75,
+            "share_of_the_gain": 0.01817977200154218
+          },
+          "total_mse_gain_s2_sum": 1125165855.6456826,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 361.229820944254,
+            "rows": 1017,
+            "share_of_the_gain": 0.19695219912764472
+          }
+        },
+        "january": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4467.454429786208,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5405.475173751816,
+            "rows": 153381,
+            "share_of_the_gain": 1.0000330106750173
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": -84.2097057757584,
+            "passes_the_clause": true,
+            "rmse_arm": 5984.150227139667,
+            "rmse_base": 5984.1431910733845,
+            "rmse_gain_s": -0.00703606628212583,
+            "rows": 325,
+            "rows_moved": 95,
+            "share_of_the_gain": -3.301067501720069e-05
+          },
+          "total_mse_gain_s2_sum": 829069819.4708502,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 378.0775598018113,
+            "rows": 695,
+            "share_of_the_gain": 0.17175304846703313
+          }
+        },
+        "july_loo": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4240.573403945413,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5695.537409611884,
+            "rows": 190057,
+            "share_of_the_gain": 0.9932485901035242
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 11216.342384128815,
+            "passes_the_clause": true,
+            "rmse_arm": 2393.433841374401,
+            "rmse_base": 2395.775844151608,
+            "rmse_gain_s": 2.342002777207199,
+            "rows": 656,
+            "rows_moved": 255,
+            "share_of_the_gain": 0.006751409896475639
+          },
+          "total_mse_gain_s2_sum": 1089834674.0625944,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 393.2477772860109,
+            "rows": 881,
+            "share_of_the_gain": 0.25793104694318775
+          }
+        }
+      }
+    },
+    "leaves_63x300_lr050": {
+      "board_all_row": {
+        "arm": 299.94730196182365,
+        "base": 308.5976571605635,
+        "gain_s": 8.650355198739817,
+        "interval": {
+          "ci95": [
+            6.851901546039715,
+            10.939387385538657
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 8.883009776516841,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_basis": "the whole board: every fold priced",
+      "board_clean": {
+        "arm": 245.98743560384008,
+        "base": 256.464379624143,
+        "gain_s": 10.476944020302938,
+        "interval": {
+          "ci95": [
+            9.689503498621413,
+            11.270394039096159
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 10.480511285346692,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 6336.419369679296,
+            "B_mean_dd": 6209.106385782923,
+            "ci95": [
+              5824.155953582785,
+              7203.254718739991
+            ],
+            "mse_gain_s2": 6463.732353575668,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "clean": {
+            "A_mean_rd": 6336.419369679296,
+            "B_mean_dd": 6209.106385782923,
+            "ci95": [
+              5862.676510423607,
+              7212.3745602967
+            ],
+            "mse_gain_s2": 6463.732353575668,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "rmse_arm": 187.70534674783113,
+          "rmse_arm_clean": 187.70534674783113,
+          "rmse_base": 204.19850526215706,
+          "rmse_base_clean": 204.19850526215706
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 4891.599282822356,
+            "B_mean_dd": 4665.682832410331,
+            "ci95": [
+              4659.236677975226,
+              5647.318434189284
+            ],
+            "mse_gain_s2": 5117.5157332343815,
+            "rows": 153706,
+            "rows_moved": 69501
+          },
+          "clean": {
+            "A_mean_rd": 4891.662932425266,
+            "B_mean_dd": 4665.743542383167,
+            "ci95": [
+              4609.198661196941,
+              5622.539450302683
+            ],
+            "mse_gain_s2": 5117.582322467365,
+            "rows": 153704,
+            "rows_moved": 69501
+          },
+          "rmse_arm": 329.791541248692,
+          "rmse_arm_clean": 205.5352302453725,
+          "rmse_base": 337.4610739217519,
+          "rmse_base_clean": 217.62884274490287
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 5596.23100915433,
+            "B_mean_dd": 5811.78731375642,
+            "ci95": [
+              4772.938917908625,
+              6233.71210298242
+            ],
+            "mse_gain_s2": 5380.674704552242,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "clean": {
+            "A_mean_rd": 5596.23100915433,
+            "B_mean_dd": 5811.78731375642,
+            "ci95": [
+              4801.775941262815,
+              6203.921053734296
+            ],
+            "mse_gain_s2": 5380.674704552242,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "rmse_arm": 273.91395146175483,
+          "rmse_arm_clean": 273.91395146175483,
+          "rmse_base": 283.5657375458904,
+          "rmse_base_clean": 283.5657375458904
+        }
+      },
+      "december_rmse": {
+        "arm": 187.70534674783113,
+        "base": 204.19850526215706,
+        "gain_s": 16.493158514325927
+      },
+      "detail": {
+        "december": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 181.79756249820994,
+          "r11_rmse_on_fit_rows": 214.601215969833,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7086579574585996,
+            "LIRF": 0.8913606595526681,
+            "LSZH": 1.0
+          }
+        },
+        "january": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 177.58721326251236,
+          "r11_rmse_on_fit_rows": 210.9580634125595,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7531055010853646,
+            "LIRF": 0.9135902351480467,
+            "LSZH": 1.0
+          }
+        },
+        "july_loo": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 135.40271118836588,
+          "r11_rmse_on_fit_rows": 177.93636498792165,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.76156394895898,
+            "LIRF": 0.9189530799609377,
+            "LSZH": 1.0
+          }
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "gate_all_row_gain_and_every_interval_clear": true,
+      "lgb": {
+        "num_leaves": 63
+      },
+      "seconds": 76.9,
+      "tail_clauses": {
+        "december": {
+          "gain_with_the_update_tail_removed_s2_per_row": 5117.3714166893815,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 6356.091428416116,
+            "rows": 165416,
+            "share_of_the_gain": 0.9817978196388293
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 74684.15869913944,
+            "passes_the_clause": true,
+            "rmse_arm": 1752.736601151885,
+            "rmse_base": 1773.913682149332,
+            "rmse_gain_s": 21.177080997447092,
+            "rows": 261,
+            "rows_moved": 75,
+            "share_of_the_gain": 0.01820218036117067
+          },
+          "total_mse_gain_s2_sum": 1070891785.1433558,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 344.90473153832636,
+            "rows": 1017,
+            "share_of_the_gain": 0.20829466061376967
+          }
+        },
+        "january": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4159.542397668537,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5124.060800008596,
+            "rows": 153381,
+            "share_of_the_gain": 0.9991618234174362
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 2028.6268504780187,
+            "passes_the_clause": true,
+            "rmse_arm": 5983.973688479878,
+            "rmse_base": 5984.1431910733845,
+            "rmse_gain_s": 0.16950259350687702,
+            "rows": 325,
+            "rows_moved": 95,
+            "share_of_the_gain": 0.0008381765825637851
+          },
+          "total_mse_gain_s2_sum": 786592873.2925239,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 352.1940909232453,
+            "rows": 695,
+            "share_of_the_gain": 0.18719499567818337
+          }
+        },
+        "july_loo": {
+          "gain_with_the_update_tail_removed_s2_per_row": 3954.2218413944397,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5345.722758493192,
+            "rows": 190057,
+            "share_of_the_gain": 0.9900867906860807
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 15506.988747456147,
+            "passes_the_clause": true,
+            "rmse_arm": 2392.537336526411,
+            "rmse_base": 2395.775844151608,
+            "rmse_gain_s": 3.238507625197144,
+            "rows": 656,
+            "rows_moved": 255,
+            "share_of_the_gain": 0.009913209313919267
+          },
+          "total_mse_gain_s2_sum": 1026164614.9292717,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 375.19603547882116,
+            "rows": 881,
+            "share_of_the_gain": 0.2651066904213652
+          }
+        }
+      }
+    },
+    "predeclared_31x300_lr050": {
+      "board_all_row": {
+        "arm": 300.4296303345152,
+        "base": 308.5976571605635,
+        "gain_s": 8.168026826048276,
+        "interval": {
+          "ci95": [
+            6.485940964259585,
+            10.32421716435784
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 8.355931342973957,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_basis": "the whole board: every fold priced",
+      "board_clean": {
+        "arm": 246.57534072827886,
+        "base": 256.464379624143,
+        "gain_s": 9.88903889586416,
+        "interval": {
+          "ci95": [
+            9.14575623438706,
+            10.722360864800018
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 9.8951239346013,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 5903.86598652653,
+            "B_mean_dd": 5697.716990745332,
+            "ci95": [
+              5534.388638309138,
+              6888.062058866691
+            ],
+            "mse_gain_s2": 6110.014982307729,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "clean": {
+            "A_mean_rd": 5903.86598652653,
+            "B_mean_dd": 5697.716990745332,
+            "ci95": [
+              5535.051708771632,
+              6836.635522793556
+            ],
+            "mse_gain_s2": 6110.014982307729,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "rmse_arm": 188.64520817924705,
+          "rmse_arm_clean": 188.64520817924705,
+          "rmse_base": 204.19850526215706,
+          "rmse_base_clean": 204.19850526215706
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 4528.523697365455,
+            "B_mean_dd": 4174.070892779972,
+            "ci95": [
+              4392.524931886135,
+              5373.503724583752
+            ],
+            "mse_gain_s2": 4882.976501950936,
+            "rows": 153706,
+            "rows_moved": 69501
+          },
+          "clean": {
+            "A_mean_rd": 4528.582622620456,
+            "B_mean_dd": 4174.1252058868895,
+            "ci95": [
+              4393.322915619445,
+              5398.450875022576
+            ],
+            "mse_gain_s2": 4883.040039354021,
+            "rows": 153704,
+            "rows_moved": 69501
+          },
+          "rmse_arm": 330.1469368485359,
+          "rmse_arm_clean": 206.1050051675884,
+          "rmse_base": 337.4610739217519,
+          "rmse_base_clean": 217.62884274490287
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 5184.30234470248,
+            "B_mean_dd": 5321.260139778668,
+            "ci95": [
+              4443.230812403181,
+              5885.63395010115
+            ],
+            "mse_gain_s2": 5047.344549626291,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "clean": {
+            "A_mean_rd": 5184.30234470248,
+            "B_mean_dd": 5321.260139778668,
+            "ci95": [
+              4458.110132951175,
+              5854.103867394769
+            ],
+            "mse_gain_s2": 5047.344549626291,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "rmse_arm": 274.52173495065654,
+          "rmse_arm_clean": 274.52173495065654,
+          "rmse_base": 283.5657375458904,
+          "rmse_base_clean": 283.5657375458904
+        }
+      },
+      "december_rmse": {
+        "arm": 188.64520817924705,
+        "base": 204.19850526215706,
+        "gain_s": 15.553297082910007
+      },
+      "detail": {
+        "december": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 183.80740388615175,
+          "r11_rmse_on_fit_rows": 214.601215969833,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.6830257891217997,
+            "LIRF": 0.9263209481349761,
+            "LSZH": 1.0
+          }
+        },
+        "january": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 179.7250121068371,
+          "r11_rmse_on_fit_rows": 210.9580634125595,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.8188640120917262,
+            "LIRF": 0.9698809715843953,
+            "LSZH": 1.0
+          }
+        },
+        "july_loo": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 138.3287775086682,
+          "r11_rmse_on_fit_rows": 177.93636498792165,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.8467082660937335,
+            "LIRF": 0.9595450206035726,
+            "LSZH": 1.0
+          }
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "gate_all_row_gain_and_every_interval_clear": true,
+      "lgb": null,
+      "seconds": 54.7,
+      "tail_clauses": {
+        "december": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4855.41316507578,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 6023.210690827657,
+            "rows": 165416,
+            "share_of_the_gain": 0.9842401395818822
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 61124.64593812238,
+            "passes_the_clause": true,
+            "rmse_arm": 1756.6004399915419,
+            "rmse_base": 1773.913682149332,
+            "rmse_gain_s": 17.313242157790228,
+            "rows": 261,
+            "rows_moved": 75,
+            "share_of_the_gain": 0.01575986041811797
+          },
+          "total_mse_gain_s2_sum": 1012288952.2237976,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 328.36465936251784,
+            "rows": 1017,
+            "share_of_the_gain": 0.20533530946565562
+          }
+        },
+        "january": {
+          "gain_with_the_update_tail_removed_s2_per_row": 3942.809208251548,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 4885.298226143919,
+            "rows": 153381,
+            "share_of_the_gain": 0.99836004154952
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 3787.258414430916,
+            "passes_the_clause": true,
+            "rmse_arm": 5983.826741547211,
+            "rmse_base": 5984.1431910733845,
+            "rmse_gain_s": 0.3164495261735283,
+            "rows": 325,
+            "rows_moved": 95,
+            "share_of_the_gain": 0.0016399584504800087
+          },
+          "total_mse_gain_s2_sum": 750542786.2088705,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 335.9404580889743,
+            "rows": 695,
+            "share_of_the_gain": 0.192539794800109
+          }
+        },
+        "july_loo": {
+          "gain_with_the_update_tail_removed_s2_per_row": 3702.0376561663907,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5040.639435958962,
+            "rows": 190057,
+            "share_of_the_gain": 0.9952364020972196
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 6989.957031747357,
+            "passes_the_clause": true,
+            "rmse_arm": 2394.316591094127,
+            "rmse_base": 2395.775844151608,
+            "rmse_gain_s": 1.4592530574809643,
+            "rows": 656,
+            "rows_moved": 255,
+            "share_of_the_gain": 0.004763597902780084
+          },
+          "total_mse_gain_s2_sum": 962594221.0928789,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 360.7426024658662,
+            "rows": 881,
+            "share_of_the_gain": 0.2665375585582933
+          }
+        }
+      }
+    },
+    "rounds_31x900_lr020": {
+      "board_all_row": {
+        "arm": 300.21656361178225,
+        "base": 308.5976571605635,
+        "gain_s": 8.381093548781223,
+        "interval": {
+          "ci95": [
+            6.627858040737403,
+            10.486496637387432
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 8.53388045717179,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_basis": "the whole board: every fold priced",
+      "board_clean": {
+        "arm": 246.31569234258754,
+        "base": 256.464379624143,
+        "gain_s": 10.148687281555482,
+        "interval": {
+          "ci95": [
+            9.428034964089495,
+            10.976027228707464
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 10.157941120636854,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 6031.875607024418,
+            "B_mean_dd": 5764.919853566494,
+            "ci95": [
+              5727.6180014157235,
+              6990.091725749752
+            ],
+            "mse_gain_s2": 6298.8313604823425,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "clean": {
+            "A_mean_rd": 6031.875607024418,
+            "B_mean_dd": 5764.919853566494,
+            "ci95": [
+              5713.406211771959,
+              6977.506528686896
+            ],
+            "mse_gain_s2": 6298.8313604823425,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "rmse_arm": 188.14408890745634,
+          "rmse_arm_clean": 188.14408890745634,
+          "rmse_base": 204.19850526215706,
+          "rmse_base_clean": 204.19850526215706
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 4706.642158547096,
+            "B_mean_dd": 4418.380625899286,
+            "ci95": [
+              4504.317036491267,
+              5503.6374223816965
+            ],
+            "mse_gain_s2": 4994.903691194904,
+            "rows": 153706,
+            "rows_moved": 69501
+          },
+          "clean": {
+            "A_mean_rd": 4706.703401483631,
+            "B_mean_dd": 4418.438117970097,
+            "ci95": [
+              4500.737428517032,
+              5523.8624399086175
+            ],
+            "mse_gain_s2": 4994.968684997163,
+            "rows": 153704,
+            "rows_moved": 69501
+          },
+          "rmse_arm": 329.9773821358476,
+          "rmse_arm_clean": 205.83329300550116,
+          "rmse_base": 337.4610739217519,
+          "rmse_base_clean": 217.62884274490287
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 5317.60702836447,
+            "B_mean_dd": 5447.133125158763,
+            "ci95": [
+              4609.252324113748,
+              6080.779531745403
+            ],
+            "mse_gain_s2": 5188.08093157018,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "clean": {
+            "A_mean_rd": 5317.60702836447,
+            "B_mean_dd": 5447.133125158763,
+            "ci95": [
+              4573.092913652115,
+              6016.446434537263
+            ],
+            "mse_gain_s2": 5188.08093157018,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "rmse_arm": 274.26528504055085,
+          "rmse_arm_clean": 274.26528504055085,
+          "rmse_base": 283.5657375458904,
+          "rmse_base_clean": 283.5657375458904
+        }
+      },
+      "december_rmse": {
+        "arm": 188.14408890745634,
+        "base": 204.19850526215706,
+        "gain_s": 16.05441635470072
+      },
+      "detail": {
+        "december": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 182.82860377646452,
+          "r11_rmse_on_fit_rows": 214.601215969833,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7401965170406148,
+            "LIRF": 0.9214801923879032,
+            "LSZH": 1.0
+          }
+        },
+        "january": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 178.65563702260349,
+          "r11_rmse_on_fit_rows": 210.9580634125595,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7905865792660556,
+            "LIRF": 0.98674828695571,
+            "LSZH": 1.0
+          }
+        },
+        "july_loo": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 136.97348596795808,
+          "r11_rmse_on_fit_rows": 177.93636498792165,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.8450124503502057,
+            "LIRF": 0.9504360232791472,
+            "LSZH": 1.0
+          }
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "gate_all_row_gain_and_every_interval_clear": true,
+      "lgb": {
+        "learning_rate": 0.02,
+        "n_estimators": 900
+      },
+      "seconds": 145.6,
+      "tail_clauses": {
+        "december": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4985.442628190919,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 6203.1006526098745,
+            "rows": 165416,
+            "share_of_the_gain": 0.9832504183584373
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 66970.82666098917,
+            "passes_the_clause": true,
+            "rmse_arm": 1754.935590001984,
+            "rmse_base": 1773.913682149332,
+            "rmse_gain_s": 18.97809214734798,
+            "rows": 261,
+            "rows_moved": 75,
+            "share_of_the_gain": 0.016749581641562736
+          },
+          "total_mse_gain_s2_sum": 1043571483.3106331,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 330.60984841580193,
+            "rows": 1017,
+            "share_of_the_gain": 0.20851308078056704
+          }
+        },
+        "january": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4056.584007985776,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 4996.065447217702,
+            "rows": 153381,
+            "share_of_the_gain": 0.9981176702398374
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 4446.62276647921,
+            "passes_the_clause": true,
+            "rmse_arm": 5983.771645751822,
+            "rmse_base": 5984.1431910733845,
+            "rmse_gain_s": 0.3715453215627349,
+            "rows": 325,
+            "rows_moved": 95,
+            "share_of_the_gain": 0.001882329760162611
+          },
+          "total_mse_gain_s2_sum": 767746666.758804,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 349.5553971949462,
+            "rows": 695,
+            "share_of_the_gain": 0.18785541047832696
+          }
+        },
+        "july_loo": {
+          "gain_with_the_update_tail_removed_s2_per_row": 3817.4288657085917,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5147.704760062124,
+            "rows": 190057,
+            "share_of_the_gain": 0.9888045592125086
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 16885.90719423285,
+            "passes_the_clause": true,
+            "rmse_arm": 2392.2491484429706,
+            "rmse_base": 2395.775844151608,
+            "rmse_gain_s": 3.5266957086373623,
+            "rows": 656,
+            "rows_moved": 255,
+            "share_of_the_gain": 0.0111954407874914
+          },
+          "total_mse_gain_s2_sum": 989434478.7025437,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 367.6708243650769,
+            "rows": 881,
+            "share_of_the_gain": 0.26419249891052854
+          }
+        }
+      }
+    },
+    "rounds_63x1500_lr010": {
+      "board_all_row": {
+        "arm": 299.88975247829023,
+        "base": 308.5976571605635,
+        "gain_s": 8.707904682273238,
+        "interval": {
+          "ci95": [
+            6.943490801906658,
+            10.990141196248754
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 8.896968337293456,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_basis": "the whole board: every fold priced",
+      "board_clean": {
+        "arm": 245.917258372699,
+        "base": 256.464379624143,
+        "gain_s": 10.547121251444025,
+        "interval": {
+          "ci95": [
+            9.782852324432563,
+            11.403332205483894
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 10.560977858186924,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 6300.017453709264,
+            "B_mean_dd": 6043.406494242444,
+            "ci95": [
+              5947.198632157132,
+              7231.611271618573
+            ],
+            "mse_gain_s2": 6556.628413176084,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "clean": {
+            "A_mean_rd": 6300.017453709264,
+            "B_mean_dd": 6043.406494242444,
+            "ci95": [
+              5969.409852416401,
+              7218.509175298481
+            ],
+            "mse_gain_s2": 6556.628413176084,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "rmse_arm": 187.45773160401546,
+          "rmse_arm_clean": 187.45773160401546,
+          "rmse_base": 204.19850526215706,
+          "rmse_base_clean": 204.19850526215706
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 4896.45358399949,
+            "B_mean_dd": 4641.2538797911175,
+            "ci95": [
+              4640.15198726094,
+              5664.392464306919
+            ],
+            "mse_gain_s2": 5151.6532882078645,
+            "rows": 153706,
+            "rows_moved": 69501
+          },
+          "clean": {
+            "A_mean_rd": 4896.517296766679,
+            "B_mean_dd": 4641.314271893857,
+            "ci95": [
+              4663.1784213995,
+              5648.680417602016
+            ],
+            "mse_gain_s2": 5151.720321639503,
+            "rows": 153704,
+            "rows_moved": 69501
+          },
+          "rmse_arm": 329.73978092461675,
+          "rmse_arm_clean": 205.45216687308545,
+          "rmse_base": 337.4610739217519,
+          "rmse_base_clean": 217.62884274490287
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 5604.685511710851,
+            "B_mean_dd": 5793.871749640636,
+            "ci95": [
+              4808.400190636853,
+              6212.944273057771
+            ],
+            "mse_gain_s2": 5415.499273781066,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "clean": {
+            "A_mean_rd": 5604.685511710851,
+            "B_mean_dd": 5793.871749640636,
+            "ci95": [
+              4810.240201947678,
+              6262.939744384955
+            ],
+            "mse_gain_s2": 5415.499273781066,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "rmse_arm": 273.8503756363385,
+          "rmse_arm_clean": 273.8503756363385,
+          "rmse_base": 283.5657375458904,
+          "rmse_base_clean": 283.5657375458904
+        }
+      },
+      "december_rmse": {
+        "arm": 187.45773160401546,
+        "base": 204.19850526215706,
+        "gain_s": 16.740773658141592
+      },
+      "detail": {
+        "december": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 181.27418328918444,
+          "r11_rmse_on_fit_rows": 214.601215969833,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.6857181655348239,
+            "LIRF": 0.9062237305324635,
+            "LSZH": 1.0
+          }
+        },
+        "january": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 176.97487587883063,
+          "r11_rmse_on_fit_rows": 210.9580634125595,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7598378539237498,
+            "LIRF": 0.9659179571544094,
+            "LSZH": 1.0
+          }
+        },
+        "july_loo": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 134.8995067722956,
+          "r11_rmse_on_fit_rows": 177.93636498792165,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.8017730297136618,
+            "LIRF": 0.935339003923176,
+            "LSZH": 1.0
+          }
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "gate_all_row_gain_and_every_interval_clear": true,
+      "lgb": {
+        "learning_rate": 0.01,
+        "n_estimators": 1500,
+        "num_leaves": 63
+      },
+      "seconds": 357.7,
+      "tail_clauses": {
+        "december": {
+          "gain_with_the_update_tail_removed_s2_per_row": 5225.934370960724,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 6453.890143364352,
+            "rows": 165416,
+            "share_of_the_gain": 0.9827799552933837
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 71669.86074718882,
+            "passes_the_clause": true,
+            "rmse_arm": 1753.5962736529216,
+            "rmse_base": 1773.913682149332,
+            "rmse_gain_s": 20.317408496410508,
+            "rows": 261,
+            "rows_moved": 75,
+            "share_of_the_gain": 0.017220044706616217
+          },
+          "total_mse_gain_s2_sum": 1086282525.609774,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 337.471247263608,
+            "rows": 1017,
+            "share_of_the_gain": 0.20295401208664204
+          }
+        },
+        "january": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4219.210807800752,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5159.972270551808,
+            "rows": 153381,
+            "share_of_the_gain": 0.9994969773217429
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 1225.5799623727169,
+            "passes_the_clause": true,
+            "rmse_arm": 5984.04078790474,
+            "rmse_base": 5984.1431910733845,
+            "rmse_gain_s": 0.10240316864474153,
+            "rows": 325,
+            "rows_moved": 95,
+            "share_of_the_gain": 0.0005030226782570739
+          },
+          "total_mse_gain_s2_sum": 791840020.317278,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 356.33882731451854,
+            "rows": 695,
+            "share_of_the_gain": 0.18099868687620618
+          }
+        },
+        "july_loo": {
+          "gain_with_the_update_tail_removed_s2_per_row": 3957.982483842109,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5389.760420584748,
+            "rows": 190057,
+            "share_of_the_gain": 0.9918238121954958
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 12872.586502336635,
+            "passes_the_clause": true,
+            "rmse_arm": 2393.087818889648,
+            "rmse_base": 2395.775844151608,
+            "rmse_gain_s": 2.688025261959865,
+            "rows": 656,
+            "rows_moved": 255,
+            "share_of_the_gain": 0.008176187804504076
+          },
+          "total_mse_gain_s2_sum": 1032806113.0006084,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 376.69279827503806,
+            "rows": 881,
+            "share_of_the_gain": 0.2691380270320537
+          }
+        }
+      }
+    },
+    "rounds_63x900_lr020": {
+      "board_all_row": {
+        "arm": 299.7099797534067,
+        "base": 308.5976571605635,
+        "gain_s": 8.887677407156787,
+        "interval": {
+          "ci95": [
+            7.114277038529387,
+            11.105440234642783
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 9.04673109650554,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_basis": "the whole board: every fold priced",
+      "board_clean": {
+        "arm": 245.69799701349663,
+        "base": 256.464379624143,
+        "gain_s": 10.766382610646389,
+        "interval": {
+          "ci95": [
+            9.991777674549175,
+            11.600279717053494
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 10.765414713079945,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 6453.738626793996,
+            "B_mean_dd": 6324.06875034887,
+            "ci95": [
+              6000.43160321899,
+              7301.7978224225435
+            ],
+            "mse_gain_s2": 6583.408503239121,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "clean": {
+            "A_mean_rd": 6453.738626793996,
+            "B_mean_dd": 6324.06875034887,
+            "ci95": [
+              6003.041818851854,
+              7264.2455533295115
+            ],
+            "mse_gain_s2": 6583.408503239121,
+            "rows": 165677,
+            "rows_moved": 101663
+          },
+          "rmse_arm": 187.38628831390002,
+          "rmse_arm_clean": 187.38628831390002,
+          "rmse_base": 204.19850526215706,
+          "rmse_base_clean": 204.19850526215706
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 5070.517607840858,
+            "B_mean_dd": 4893.696443178225,
+            "ci95": [
+              4725.927760568287,
+              5758.227469474047
+            ],
+            "mse_gain_s2": 5247.33877250349,
+            "rows": 153706,
+            "rows_moved": 69501
+          },
+          "clean": {
+            "A_mean_rd": 5070.583585533147,
+            "B_mean_dd": 4893.7601200694335,
+            "ci95": [
+              4732.273122850534,
+              5777.41994976477
+            ],
+            "mse_gain_s2": 5247.407050996861,
+            "rows": 153704,
+            "rows_moved": 69501
+          },
+          "rmse_arm": 329.5946565706408,
+          "rmse_arm_clean": 205.21916612121979,
+          "rmse_base": 337.4610739217519,
+          "rmse_base_clean": 217.62884274490287
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 5732.866443994682,
+            "B_mean_dd": 5932.818646351635,
+            "ci95": [
+              4917.979780868696,
+              6365.750843725576
+            ],
+            "mse_gain_s2": 5532.914241637728,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "clean": {
+            "A_mean_rd": 5732.866443994682,
+            "B_mean_dd": 5932.818646351635,
+            "ci95": [
+              4897.203635053509,
+              6407.074002314051
+            ],
+            "mse_gain_s2": 5532.914241637728,
+            "rows": 190713,
+            "rows_moved": 88095
+          },
+          "rmse_arm": 273.63591370342283,
+          "rmse_arm_clean": 273.63591370342283,
+          "rmse_base": 283.5657375458904,
+          "rmse_base_clean": 283.5657375458904
+        }
+      },
+      "december_rmse": {
+        "arm": 187.38628831390002,
+        "base": 204.19850526215706,
+        "gain_s": 16.81221694825703
+      },
+      "detail": {
+        "december": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 180.80717541685158,
+          "r11_rmse_on_fit_rows": 214.601215969833,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.667844350984877,
+            "LIRF": 0.8822114897402482,
+            "LSZH": 1.0
+          }
+        },
+        "january": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 176.50043466807415,
+          "r11_rmse_on_fit_rows": 210.9580634125595,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7407461434325721,
+            "LIRF": 0.9405895106344682,
+            "LSZH": 1.0
+          }
+        },
+        "july_loo": {
+          "n_features": 103,
+          "oof_rmse_vs_r11": 134.1617734413228,
+          "r11_rmse_on_fit_rows": 177.93636498792165,
+          "weights": {
+            "EDDF": 1.0,
+            "EDDM": 1.0,
+            "EGLL": 1.0,
+            "EHAM": 1.0,
+            "LEBL": 1.0,
+            "LEMD": 1.0,
+            "LFPG": 0.7553570538679721,
+            "LIRF": 0.9046997384797889,
+            "LSZH": 1.0
+          }
+        }
+      },
+      "every_fold_interval_clear": true,
+      "every_moving_fold_interval_clear": true,
+      "folds_with_no_moved_row": [],
+      "gate_all_row_gain_and_every_interval_clear": true,
+      "lgb": {
+        "learning_rate": 0.02,
+        "n_estimators": 900,
+        "num_leaves": 63
+      },
+      "seconds": 212.9,
+      "tail_clauses": {
+        "december": {
+          "gain_with_the_update_tail_removed_s2_per_row": 5247.195981646144,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 6479.295266940654,
+            "rows": 165416,
+            "share_of_the_gain": 0.9826350707381062
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 72568.06404173508,
+            "passes_the_clause": true,
+            "rmse_arm": 1753.340151731793,
+            "rmse_base": 1773.913682149332,
+            "rmse_gain_s": 20.573530417539132,
+            "rows": 261,
+            "rows_moved": 75,
+            "share_of_the_gain": 0.017364929261894025
+          },
+          "total_mse_gain_s2_sum": 1090719370.591148,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 344.22715824021725,
+            "rows": 1017,
+            "share_of_the_gain": 0.20296667310490385
+          }
+        },
+        "january": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4284.140389904764,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5261.427975338807,
+            "rows": 153381,
+            "share_of_the_gain": 1.0005649152038338
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": -1401.9412892928146,
+            "passes_the_clause": true,
+            "rmse_arm": 5984.260327940224,
+            "rmse_base": 5984.1431910733845,
+            "rmse_gain_s": -0.11713686683924607,
+            "rows": 325,
+            "rows_moved": 95,
+            "share_of_the_gain": -0.0005649152038338502
+          },
+          "total_mse_gain_s2_sum": 806547453.3664215,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 365.40892881362197,
+            "rows": 695,
+            "share_of_the_gain": 0.18355940493988454
+          }
+        },
+        "july_loo": {
+          "gain_with_the_update_tail_removed_s2_per_row": 4058.97492812728,
+          "population_bulk_under_3600s": {
+            "mse_gain_s2_per_row": 5504.591551170255,
+            "rows": 190057,
+            "share_of_the_gain": 0.9914589379718137
+          },
+          "reading": "the registered clause is assignments/k2climb.md line 24 -- rows with y > 3600 s not worse by more than 1 s of RMSE -- and tail rule treats it as a secondary guard, not a gate: v12 shipped with a -3.86 s january tail reading recorded as its transfer risk.  The update tail beside it is diagnosis only.",
+          "registered_clause_y_over_3600s": {
+            "clause_s": 1.0,
+            "mse_gain_s2_per_row": 13738.593482760338,
+            "passes_the_clause": true,
+            "rmse_arm": 2392.9068728092175,
+            "rmse_base": 2395.775844151608,
+            "rmse_gain_s": 2.868971342390523,
+            "rows": 656,
+            "rows_moved": 255,
+            "share_of_the_gain": 0.008541062028186396
+          },
+          "total_mse_gain_s2_sum": 1055198673.765456,
+          "update_tail_top_1pct_of_abs_d": {
+            "abs_d_cut_s": 382.0087530815108,
+            "rows": 881,
+            "share_of_the_gain": 0.2663947513262316
+          }
+        }
+      }
+    }
+  },
+  "what": "arm (c) at other capacities, on the same rotation, the same seed, the same cross-fit and the same clauses; nothing here is served"
+}

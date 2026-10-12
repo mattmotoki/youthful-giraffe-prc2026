@@ -1,0 +1,19 @@
+{
+  "note": "Member set for stack-4: exp-012's blend-4 (members-4.json) plus N1-nmtail, which members-4.json omits because it enters only through the nm_late split. The N1 OOF address is taken from exp-012's own nmtail_rotate.NMTAIL, which now points at published/N1-nmtail-v4, so the weights here are fitted on the same bytes blend-4's are. Ranking addresses are blend-4's own, from blend-config-4.json.",
+  "oof": {
+    "T-tailv2": "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+    "C2-cat": "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+    "L2-hub": "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-{fold}.parquet",
+    "F1-fresh": "experiments/exp-012-blend2/published/F1-fresh-s1-{fold}.parquet",
+    "N1-nmtail": "experiments/exp-012-blend2/published/N1-nmtail-v4-{fold}.parquet"
+  },
+  "ranking": {
+    "T-tailv2": "artifacts/exp-012/pred/T-tailv2-ranking.parquet",
+    "F1-fresh": "artifacts/exp-012/pred/F1-fresh-s1-ranking.parquet",
+    "C2-cat": "artifacts/exp-008/pred/C2-d8p-ranking.parquet",
+    "L2-hub": "artifacts/exp-008/pred/L2-hub-ranking.parquet",
+    "D1-winter": "artifacts/exp-012/pred/D1-winter-deice-v1-ranking.parquet",
+    "N1-nmtail": "artifacts/exp-012/pred/N1-nmtail-ranking.parquet"
+  }
+}

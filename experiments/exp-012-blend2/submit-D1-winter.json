@@ -1,0 +1,59 @@
+{
+  "name": "D1-winter",
+  "seeds": [
+    7,
+    107,
+    207
+  ],
+  "budget": {
+    "months": [
+      "2025-01",
+      "2025-07",
+      "2025-11"
+    ],
+    "per_month": {
+      "2025-01": {
+        "best_iteration": 129,
+        "held_frac": 0.07371824232259512
+      },
+      "2025-07": {
+        "best_iteration": 109,
+        "held_frac": 0.09146700290209285
+      },
+      "2025-11": {
+        "best_iteration": 142,
+        "held_frac": 0.07785531932853312
+      }
+    },
+    "optima": [
+      109,
+      129,
+      142
+    ],
+    "median": 129.0,
+    "spread_rel": 0.256,
+    "wide_threshold": 0.5,
+    "rule": "median",
+    "mean_held_frac": 0.08101352151774037,
+    "rounds": 150
+  },
+  "rounds": 150,
+  "n": 344841,
+  "n_features": 121,
+  "path": "artifacts/exp-012/pred/D1-winter-ranking.parquet",
+  "sha256": "c404b684d2b7a27b6878496d0e5a5acb46d46ebe8120d86646ecd215ccf9d2df",
+  "seconds": 3869,
+  "raw_below_floor": 0,
+  "guard_touched": 1,
+  "guard_bounds": [
+    -20657.0,
+    9069.0
+  ],
+  "provenance": {
+    "modules": "surface[VERSION=2,BUCKET=1200.0,UNIMPEDED_Q=0.2] phi[VERSION=3,phidef=rows/150/100] lirf[VERSION=2] tail[VERSION=1.1.0] day_state[VERSION=1]",
+    "threads": 24,
+    "linear_tree": true,
+    "es_rounds": 100,
+    "pipeline": "exp-007-winter/code/pipeline (git 19cd199)"
+  }
+}

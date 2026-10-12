@@ -1,0 +1,62 @@
+{
+  "rows": 344841,
+  "bytes": 4707529,
+  "sha256": "2d847eb965ef7b0e58e6655569c2e9546a366b58cad33e7dbfe9c1010097699b",
+  "value_sha256": "eab0730e02bfd6401e8e6fc4ec2b5ced8695ff212d7cdf680ca108a62eba90d0",
+  "rmse_s": 239.938,
+  "entry": "v37",
+  "submitted_utc": "2026-09-30 20:16:20",
+  "basis": "Accepted submission row 37: v36 plus the frozen published-mean correction.",
+  "source_pins": {
+    "exp151": "c2415ec374e7a926bf499f619142862654f29093",
+    "parameters": "a105637f202e8b082e3b4fc0e6b6951d1c01c979"
+  },
+  "component_records": [
+    "docs/PUBLIC-MODEL-v36.json",
+    "docs/PUBLIC-MODEL-v35.json",
+    "docs/PUBLIC-MODEL-v32.json"
+  ],
+  "parameters": {
+    "path": "experiments/exp-151-published-means/frozen-parameters.json",
+    "sha256": "20a3ef9e2854fd81d325db6ffee8470c8fd132a197a673a2c4c2faa9d82297ad",
+    "cells": 20,
+    "mode": "ranking_inspection",
+    "frozen_before_shift_scores": true
+  },
+  "admission": {
+    "path": "release/saved-vectors/v37-support.json",
+    "sha256": "ece79c8561ea989b9beecbc51b82aed740a10d30ed4a270b5584c2efe8896fbe",
+    "rule": "At least two 2025 January/July training rows in month-airport-class cell",
+    "admitted_rows": 322120,
+    "held_rows": 22721,
+    "IDs_or_classes_shipped": false
+  },
+  "serving": {
+    "base": "v36",
+    "changed_rows": 322108,
+    "rms_change_s": 11.304980737748396,
+    "max_abs_change_s": 29.728142140754358,
+    "floor_s": 60,
+    "bisection_iterations": 80,
+    "unsupported_share_compensated": false
+  },
+  "local_selection": {
+    "G_s2_per_ranking_row": 114.61139898323339,
+    "interval_95": [
+      11.920523575105397,
+      215.5585902323011
+    ],
+    "January_G": 3.859897587107953,
+    "July_G": 110.75150139612543,
+    "optimistic": true,
+    "reason": "The published held-month aggregate contains held labels; leaving the month out of coverage coefficients does not remove that path. The v24 bias prior and v36 base also retain known label paths."
+  },
+  "external_source_notice": "docs/EUROCONTROL-DATA.md",
+  "board_parameter_source": false,
+  "fresh_fit_reproduced": false,
+  "reproduction_limits": [
+    "Saved-value replay verifies six hashes, then applies the frozen correction; no fresh fit ran.",
+    "A new fit needs both complete component routes, published monthly source values and raw/open-clock class rows for the support rule.",
+    "The workbook is not distributed. EUROCONTROL source information retains its own terms, separate from GPLv3 code."
+  ]
+}

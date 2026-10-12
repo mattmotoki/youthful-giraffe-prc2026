@@ -1,0 +1,296 @@
+{
+  "day": "2025-05-03",
+  "repo": "adsblol/globe_history_2025",
+  "tag": "v2025.05.03-planes-readsb-prod-0",
+  "json_lib": "orjson",
+  "rule_sha256": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+  "rule_version": "repair-2026-09-08+stable-order",
+  "boxes": {
+    "EHAM": {
+      "lat": [
+        52.2607,
+        52.3899
+      ],
+      "lon": [
+        4.6647,
+        4.8472
+      ]
+    },
+    "LFPG": {
+      "lat": [
+        48.9657,
+        49.0539
+      ],
+      "lon": [
+        2.4719,
+        2.6513
+      ]
+    },
+    "EGLL": {
+      "lat": [
+        51.4376,
+        51.5049
+      ],
+      "lon": [
+        -0.5328,
+        -0.3899
+      ]
+    },
+    "LTFM": {
+      "lat": [
+        41.2265,
+        41.326
+      ],
+      "lon": [
+        28.6708,
+        28.8359
+      ]
+    },
+    "LEMD": {
+      "lat": [
+        40.4285,
+        40.5598
+      ],
+      "lon": [
+        -3.6115,
+        -3.4971
+      ]
+    },
+    "EDDF": {
+      "lat": [
+        49.9713,
+        50.073
+      ],
+      "lon": [
+        8.4551,
+        8.629
+      ]
+    },
+    "LEBL": {
+      "lat": [
+        41.2551,
+        41.3365
+      ],
+      "lon": [
+        2.0313,
+        2.1397
+      ]
+    },
+    "LIRF": {
+      "lat": [
+        41.7548,
+        41.8732
+      ],
+      "lon": [
+        12.1902,
+        12.3117
+      ]
+    },
+    "EDDM": {
+      "lat": [
+        48.3135,
+        48.3941
+      ],
+      "lon": [
+        11.7104,
+        11.8618
+      ]
+    },
+    "LSZH": {
+      "lat": [
+        47.4182,
+        47.5103
+      ],
+      "lon": [
+        8.4948,
+        8.6104
+      ]
+    }
+  },
+  "assets_published": [
+    {
+      "name": "v2025.05.03-planes-readsb-prod-0.tar.aa",
+      "size": 2000000000,
+      "url": "https://github.com/adsblol/globe_history_2025/releases/download/v2025.05.03-planes-readsb-prod-0/v2025.05.03-planes-readsb-prod-0.tar.aa",
+      "digest": null
+    },
+    {
+      "name": "v2025.05.03-planes-readsb-prod-0.tar.ab",
+      "size": 858649600,
+      "url": "https://github.com/adsblol/globe_history_2025/releases/download/v2025.05.03-planes-readsb-prod-0/v2025.05.03-planes-readsb-prod-0.tar.ab",
+      "digest": null
+    }
+  ],
+  "assets_read": [
+    {
+      "name": "v2025.05.03-planes-readsb-prod-0.tar.aa",
+      "bytes": 2000000000,
+      "sha256": "5f9b9d606b46ded0c3e5f3d0be93dcd90921a3d4a8c561a4ddf2df92817d1e63"
+    },
+    {
+      "name": "v2025.05.03-planes-readsb-prod-0.tar.ab",
+      "bytes": 858649600,
+      "sha256": "b568efc7d98e0f7db7deeaffbfcac983c34c359bbf1c5dce9c927c486ce0e190"
+    }
+  ],
+  "digest_match": [
+    {
+      "name": "v2025.05.03-planes-readsb-prod-0.tar.aa",
+      "ok": false,
+      "published": null,
+      "computed": "5f9b9d606b46ded0c3e5f3d0be93dcd90921a3d4a8c561a4ddf2df92817d1e63",
+      "bytes": 2000000000,
+      "size_published": 2000000000
+    },
+    {
+      "name": "v2025.05.03-planes-readsb-prod-0.tar.ab",
+      "ok": false,
+      "published": null,
+      "computed": "b568efc7d98e0f7db7deeaffbfcac983c34c359bbf1c5dce9c927c486ce0e190",
+      "bytes": 858649600,
+      "size_published": 858649600
+    }
+  ],
+  "digests_verified": 0,
+  "digests_expected": 2,
+  "members": 61119,
+  "files": 60859,
+  "gzipped": 60806,
+  "traces": 60806,
+  "raw_member_bytes": 2120265055,
+  "decompressed_bytes": 13237974103,
+  "skipped_member_bytes": 691776388,
+  "aircraft_in_box": 3713,
+  "outputs": {
+    "points": {
+      "rows": 456454,
+      "bytes": 5070089,
+      "sha256": "5c7ee8dd31e3ef966e1e958948b075f20f3f6038f7257ca3c8ff43552fa8c98d"
+    },
+    "segments": {
+      "rows": 7432,
+      "bytes": 791821,
+      "sha256": "25878a5c6807653fb2b3d933ca9e9ccf7ad337b3a62000c889c2a4fb059fe81b"
+    },
+    "callsigns": {
+      "rows": 6699,
+      "bytes": 126634,
+      "sha256": "06724a0c7171c25464d12cfe0844b3a98b624932b98af29fe312b615ab443be1"
+    },
+    "census": {
+      "rows": 4583,
+      "bytes": 225433,
+      "sha256": "e590041186f34889e4a4038d8f258419919b46c809d7d865aced683b599bcd06"
+    }
+  },
+  "by_airport": {
+    "EHAM": {
+      "aircraft_in_box_any": 596,
+      "aircraft_in_box_with_ground": 522,
+      "ground_points": 122735,
+      "distinct_callsigns_on_ground": 1413,
+      "segments": 1697,
+      "departure_segments": 706,
+      "median_interval_s": 3.1600000858306885
+    },
+    "LFPG": {
+      "aircraft_in_box_any": 612,
+      "aircraft_in_box_with_ground": 0,
+      "ground_points": 0,
+      "distinct_callsigns_on_ground": 0,
+      "segments": 0,
+      "departure_segments": 0,
+      "median_interval_s": null
+    },
+    "EGLL": {
+      "aircraft_in_box_any": 622,
+      "aircraft_in_box_with_ground": 246,
+      "ground_points": 9040,
+      "distinct_callsigns_on_ground": 336,
+      "segments": 332,
+      "departure_segments": 247,
+      "median_interval_s": 18.460000038146973
+    },
+    "LTFM": {
+      "aircraft_in_box_any": 72,
+      "aircraft_in_box_with_ground": 0,
+      "ground_points": 0,
+      "distinct_callsigns_on_ground": 0,
+      "segments": 0,
+      "departure_segments": 0,
+      "median_interval_s": null
+    },
+    "LEMD": {
+      "aircraft_in_box_any": 446,
+      "aircraft_in_box_with_ground": 390,
+      "ground_points": 98123,
+      "distinct_callsigns_on_ground": 1112,
+      "segments": 1188,
+      "departure_segments": 588,
+      "median_interval_s": 3.049999952316284
+    },
+    "EDDF": {
+      "aircraft_in_box_any": 655,
+      "aircraft_in_box_with_ground": 457,
+      "ground_points": 47023,
+      "distinct_callsigns_on_ground": 1203,
+      "segments": 1300,
+      "departure_segments": 647,
+      "median_interval_s": 3.6799999475479126
+    },
+    "LEBL": {
+      "aircraft_in_box_any": 653,
+      "aircraft_in_box_with_ground": 336,
+      "ground_points": 57881,
+      "distinct_callsigns_on_ground": 937,
+      "segments": 941,
+      "departure_segments": 488,
+      "median_interval_s": 3.0299999713897705
+    },
+    "LIRF": {
+      "aircraft_in_box_any": 71,
+      "aircraft_in_box_with_ground": 0,
+      "ground_points": 0,
+      "distinct_callsigns_on_ground": 0,
+      "segments": 0,
+      "departure_segments": 0,
+      "median_interval_s": null
+    },
+    "EDDM": {
+      "aircraft_in_box_any": 456,
+      "aircraft_in_box_with_ground": 357,
+      "ground_points": 75833,
+      "distinct_callsigns_on_ground": 985,
+      "segments": 1214,
+      "departure_segments": 484,
+      "median_interval_s": 3.3399999141693115
+    },
+    "LSZH": {
+      "aircraft_in_box_any": 400,
+      "aircraft_in_box_with_ground": 270,
+      "ground_points": 42280,
+      "distinct_callsigns_on_ground": 713,
+      "segments": 760,
+      "departure_segments": 368,
+      "median_interval_s": 2.620000123977661
+    }
+  },
+  "errors": {},
+  "member_shapes": {
+    "./traces/43/trace_full_<hex>.json": 262,
+    "./traces/49/trace_full_<hex>.json": 256,
+    "./traces/03/trace_full_<hex>.json": 253,
+    "./traces/0c/trace_full_<hex>.json": 250,
+    "./traces/45/trace_full_<hex>.json": 249,
+    "./traces/14/trace_full_<hex>.json": 248,
+    "./traces/01/trace_full_<hex>.json": 247,
+    "./traces/10/trace_full_<hex>.json": 247
+  },
+  "stage_seconds": {
+    "gunzip": 37.3,
+    "parse": 109.9,
+    "filter": 30.8,
+    "segments": 4.6
+  },
+  "seconds": 249.7
+}

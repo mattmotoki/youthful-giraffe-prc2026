@@ -1,0 +1,62 @@
+{
+  "name": "E12-hub8725",
+  "folds": {
+    "december": {
+      "rmse": 227.16791282595221,
+      "rmse_bulk": 210.20642678888007,
+      "rmse_tail": 2180.205859810677,
+      "rmse_no_nm": 819.9742849464036,
+      "rmse_noac": 2586.9007354164673,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "n_noac": 89,
+      "sse_share_tail": 0.14510397671391267,
+      "sse_share_no_nm": 0.12920574702413337,
+      "sse_share_noac": 0.06966158273911048,
+      "bias": 3.1977596202700007,
+      "fold": "december",
+      "rounds": 8725,
+      "seeds": [
+        7
+      ],
+      "seconds": 2579,
+      "oof": "experiments/exp-012-blend2/oof/E12-hub8725-december.parquet",
+      "argv": "--kind lgb --name E12-hub8725 --variant plain --huber-delta 1200 --folds december,january --rounds-m6 3225 --rounds-m11 8725 --outdir ../exp-012-blend2/oof"
+    },
+    "january": {
+      "rmse": 350.3929769232907,
+      "rmse_bulk": 217.73672275173902,
+      "rmse_tail": 5974.202987017862,
+      "rmse_no_nm": 2861.857278565782,
+      "rmse_noac": 3625.4378425760915,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "n_noac": 63,
+      "sse_share_tail": 0.6146695565665501,
+      "sse_share_no_nm": 0.6214945931759673,
+      "sse_share_noac": 0.04387931814326831,
+      "bias": 3.7375256869300757,
+      "fold": "january",
+      "rounds": 8725,
+      "seeds": [
+        7
+      ],
+      "seconds": 2396,
+      "oof": "experiments/exp-012-blend2/oof/E12-hub8725-january.parquet",
+      "argv": "--kind lgb --name E12-hub8725 --variant plain --huber-delta 1200 --folds december,january --rounds-m6 3225 --rounds-m11 8725 --outdir ../exp-012-blend2/oof"
+    }
+  },
+  "argv": "--kind lgb --name E12-hub8725 --variant plain --huber-delta 1200 --folds december,january --rounds-m6 3225 --rounds-m11 8725 --outdir ../exp-012-blend2/oof",
+  "argv_history": [
+    "--kind lgb --name E12-hub8725 --variant plain --huber-delta 1200 --folds december,january --rounds-m6 3225 --rounds-m11 8725 --outdir ../exp-012-blend2/oof"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 6,
+  "gpu": "1"
+}

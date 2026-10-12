@@ -1,0 +1,674 @@
+{
+ "agree_s": 60.0,
+ "artefact_s": 600.0,
+ "board": {
+  "held": {
+   "board_s_at_0.0716": 0.0,
+   "board_s_at_0.632": 0.0,
+   "board_s_full_oracle": 0.0,
+   "rows": 1557,
+   "rows_unpriced": 1557
+  },
+  "not_asked": {
+   "board_s_at_0.0716": 0.0,
+   "board_s_at_0.632": 0.0,
+   "board_s_full_oracle": 0.0,
+   "rows": 0,
+   "rows_unpriced": 0
+  },
+  "silent": {
+   "board_s_at_0.0716": 0.2566,
+   "board_s_at_0.632": 2.265,
+   "board_s_full_oracle": 3.5839,
+   "rows": 62398,
+   "rows_unpriced": 14817
+  },
+  "unheard": {
+   "board_s_at_0.0716": 0.0702,
+   "board_s_at_0.632": 0.6195,
+   "board_s_full_oracle": 0.9802,
+   "rows": 25280,
+   "rows_unpriced": 2591
+  },
+  "unplaced": {
+   "board_s_at_0.0716": 0.0397,
+   "board_s_at_0.632": 0.3504,
+   "board_s_full_oracle": 0.5545,
+   "rows": 14061,
+   "rows_unpriced": 1012
+  },
+  "unplaced_clean": {
+   "board_s_at_0.0716": 0.011,
+   "board_s_at_0.632": 0.0971,
+   "board_s_full_oracle": 0.1537,
+   "rows": 4210,
+   "rows_unpriced": 610
+  }
+ },
+ "floor_s": 0.1,
+ "fold_oracle": {
+  "january": {
+   "by_airport": {
+    "EDDF": {
+     "priced": false,
+     "rows": 128
+    },
+    "EDDM": {
+     "priced": false,
+     "rows": 274
+    },
+    "EGLL": {
+     "E_ri_rj": 6208.5,
+     "ci": [
+      4078.3,
+      9857.3
+     ],
+     "priced": true,
+     "rows": 1581
+    },
+    "EHAM": {
+     "priced": false,
+     "rows": 16
+    },
+    "LEBL": {
+     "priced": false,
+     "rows": 120
+    },
+    "LEMD": {
+     "E_ri_rj": 3965.6,
+     "ci": [
+      2760.7,
+      5611.0
+     ],
+     "priced": true,
+     "rows": 16509
+    },
+    "LFPG": {
+     "E_ri_rj": 8958.8,
+     "ci": [
+      5565.2,
+      13718.4
+     ],
+     "priced": true,
+     "rows": 17900
+    },
+    "LIRF": {
+     "E_ri_rj": 5775.5,
+     "ci": [
+      3973.4,
+      7852.2
+     ],
+     "priced": true,
+     "rows": 11317
+    },
+    "LSZH": {
+     "priced": false,
+     "rows": 97
+    },
+    "LTFM": {
+     "E_ri_rj": 8983.2,
+     "ci": [
+      5244.8,
+      14879.0
+     ],
+     "priced": true,
+     "rows": 21368
+    }
+   },
+   "pooled": {
+    "E_ri_rj": 7352.1,
+    "ci": [
+     5381.1,
+     9888.1
+    ],
+    "rows": 69310
+   },
+   "unreached_complement_rows": 69310
+  },
+  "july_loo": {
+   "by_airport": {
+    "EDDF": {
+     "priced": false,
+     "rows": 42
+    },
+    "EDDM": {
+     "E_ri_rj": 3838.9,
+     "ci": [
+      2492.8,
+      5467.5
+     ],
+     "priced": true,
+     "rows": 9820
+    },
+    "EGLL": {
+     "E_ri_rj": 3926.9,
+     "ci": [
+      2477.1,
+      5239.0
+     ],
+     "priced": true,
+     "rows": 15509
+    },
+    "EHAM": {
+     "priced": false,
+     "rows": 13
+    },
+    "LEBL": {
+     "priced": false,
+     "rows": 310
+    },
+    "LEMD": {
+     "E_ri_rj": 4966.3,
+     "ci": [
+      2937.4,
+      7557.7
+     ],
+     "priced": true,
+     "rows": 5297
+    },
+    "LFPG": {
+     "E_ri_rj": 6239.3,
+     "ci": [
+      4641.4,
+      8059.6
+     ],
+     "priced": true,
+     "rows": 19963
+    },
+    "LIRF": {
+     "priced": false,
+     "rows": 152
+    },
+    "LSZH": {
+     "priced": false,
+     "rows": 55
+    },
+    "LTFM": {
+     "E_ri_rj": 16058.8,
+     "ci": [
+      11126.1,
+      21915.4
+     ],
+     "priced": true,
+     "rows": 25171
+    }
+   },
+   "pooled": {
+    "E_ri_rj": 9036.4,
+    "ci": [
+     7061.5,
+     11382.0
+    ],
+    "rows": 76332
+   },
+   "unreached_complement_rows": 76332
+  }
+ },
+ "pricing_rule": "the lane's: a fold airport read on fewer than 500 rows is UNPRICED and carries no projection (arms.py MIN_CELL)",
+ "ranking": {
+  "2026-01": {
+   "airport_days": {
+    "asked": 310,
+    "silent_list": [
+     "LTFM|2026-01-01",
+     "LTFM|2026-01-02",
+     "LTFM|2026-01-03",
+     "LTFM|2026-01-04",
+     "LTFM|2026-01-05",
+     "LTFM|2026-01-06",
+     "LTFM|2026-01-07",
+     "LTFM|2026-01-08",
+     "LTFM|2026-01-09",
+     "LTFM|2026-01-10",
+     "LTFM|2026-01-11",
+     "LTFM|2026-01-12",
+     "LTFM|2026-01-13",
+     "LTFM|2026-01-14",
+     "LTFM|2026-01-15",
+     "LTFM|2026-01-16",
+     "LTFM|2026-01-17",
+     "LTFM|2026-01-18",
+     "LTFM|2026-01-19",
+     "LTFM|2026-01-20",
+     "LTFM|2026-01-21",
+     "LTFM|2026-01-22",
+     "LTFM|2026-01-23",
+     "LTFM|2026-01-24",
+     "LTFM|2026-01-25",
+     "LTFM|2026-01-26",
+     "LTFM|2026-01-27",
+     "LTFM|2026-01-28",
+     "LTFM|2026-01-29",
+     "LTFM|2026-01-30",
+     "LTFM|2026-01-31"
+    ],
+    "silent_with_unreached_rows": 31,
+    "total": 310
+   },
+   "by_airport": {
+    "EDDF": {
+     "held": 1557,
+     "not_asked": 0,
+     "rows": 1982,
+     "silent": 0,
+     "unheard": 341,
+     "unplaced": 84,
+     "unplaced_clean": 61
+    },
+    "EDDM": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 31,
+     "silent": 0,
+     "unheard": 31,
+     "unplaced": 0,
+     "unplaced_clean": 0
+    },
+    "EGLL": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 177,
+     "silent": 0,
+     "unheard": 117,
+     "unplaced": 60,
+     "unplaced_clean": 40
+    },
+    "EHAM": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 61,
+     "silent": 0,
+     "unheard": 43,
+     "unplaced": 18,
+     "unplaced_clean": 18
+    },
+    "LEBL": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 191,
+     "silent": 0,
+     "unheard": 182,
+     "unplaced": 9,
+     "unplaced_clean": 3
+    },
+    "LEMD": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 68,
+     "silent": 0,
+     "unheard": 68,
+     "unplaced": 0,
+     "unplaced_clean": 0
+    },
+    "LFPG": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 14357,
+     "silent": 0,
+     "unheard": 9627,
+     "unplaced": 4730,
+     "unplaced_clean": 1373
+    },
+    "LIRF": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 1935,
+     "silent": 0,
+     "unheard": 1685,
+     "unplaced": 250,
+     "unplaced_clean": 108
+    },
+    "LSZH": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 93,
+     "silent": 0,
+     "unheard": 73,
+     "unplaced": 20,
+     "unplaced_clean": 19
+    },
+    "LTFM": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 22396,
+     "silent": 22396,
+     "unheard": 0,
+     "unplaced": 0,
+     "unplaced_clean": 0
+    }
+   },
+   "classes": {
+    "held": 1557,
+    "not_asked": 0,
+    "silent": 22396,
+    "unheard": 12167,
+    "unplaced": 5171
+   },
+   "complement": 61286,
+   "days_missing_summary": 42,
+   "departures": 152719,
+   "held_days": [
+    [
+     "EDDF",
+     "2026-01-29",
+     0.1347
+    ],
+    [
+     "EDDF",
+     "2026-01-30",
+     0.0985
+    ],
+    [
+     "EDDF",
+     "2026-01-31",
+     0.1012
+    ]
+   ],
+   "matcher_agreement": {
+    "clock_equal": 152719,
+    "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+    "rows": 152719
+   },
+   "reach_class_of_unreached": {
+    "matched_no_clock": 1189,
+    "outage": 1557,
+    "strict": 12,
+    "unmatched": 38533
+   },
+   "seconds": 12.1,
+   "segments": {
+    "by_airport_unplaced_agreeing": {
+     "EDDF": 2113,
+     "EDDM": 70,
+     "EGLL": 1770,
+     "EHAM": 904,
+     "LEBL": 273,
+     "LEMD": 486,
+     "LFPG": 1694,
+     "LIRF": 656,
+     "LSZH": 241
+    },
+    "departure_clocked": 101144,
+    "of_them_arrival_roll_artefacts": 3672,
+    "of_them_departure_callsign": 1844,
+    "placed": 89897,
+    "unplaced": 11247,
+    "unplaced_agreeing_60s": 8207
+   },
+   "unplaced_clean": 1622,
+   "unreached_complement": 41291
+  },
+  "2026-07": {
+   "airport_days": {
+    "asked": 310,
+    "silent_list": [
+     "LIRF|2026-07-01",
+     "LIRF|2026-07-02",
+     "LIRF|2026-07-03",
+     "LIRF|2026-07-04",
+     "LIRF|2026-07-05",
+     "LIRF|2026-07-06",
+     "LIRF|2026-07-07",
+     "LIRF|2026-07-08",
+     "LIRF|2026-07-09",
+     "LIRF|2026-07-10",
+     "LIRF|2026-07-11",
+     "LIRF|2026-07-12",
+     "LIRF|2026-07-13",
+     "LIRF|2026-07-14",
+     "LIRF|2026-07-15",
+     "LIRF|2026-07-16",
+     "LIRF|2026-07-17",
+     "LIRF|2026-07-18",
+     "LIRF|2026-07-19",
+     "LIRF|2026-07-20",
+     "LIRF|2026-07-21",
+     "LIRF|2026-07-22",
+     "LIRF|2026-07-23",
+     "LIRF|2026-07-24",
+     "LIRF|2026-07-25",
+     "LIRF|2026-07-26",
+     "LIRF|2026-07-27",
+     "LIRF|2026-07-29",
+     "LIRF|2026-07-31",
+     "LTFM|2026-07-01",
+     "LTFM|2026-07-02",
+     "LTFM|2026-07-03",
+     "LTFM|2026-07-04",
+     "LTFM|2026-07-05",
+     "LTFM|2026-07-06",
+     "LTFM|2026-07-07",
+     "LTFM|2026-07-08",
+     "LTFM|2026-07-09",
+     "LTFM|2026-07-10",
+     "LTFM|2026-07-11",
+     "LTFM|2026-07-12",
+     "LTFM|2026-07-13",
+     "LTFM|2026-07-14",
+     "LTFM|2026-07-15",
+     "LTFM|2026-07-16",
+     "LTFM|2026-07-17",
+     "LTFM|2026-07-18",
+     "LTFM|2026-07-19",
+     "LTFM|2026-07-20",
+     "LTFM|2026-07-21",
+     "LTFM|2026-07-22",
+     "LTFM|2026-07-23",
+     "LTFM|2026-07-24",
+     "LTFM|2026-07-25",
+     "LTFM|2026-07-26",
+     "LTFM|2026-07-27",
+     "LTFM|2026-07-28",
+     "LTFM|2026-07-29",
+     "LTFM|2026-07-30",
+     "LTFM|2026-07-31"
+    ],
+    "silent_with_unreached_rows": 60,
+    "total": 310
+   },
+   "by_airport": {
+    "EDDF": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 1710,
+     "silent": 0,
+     "unheard": 846,
+     "unplaced": 864,
+     "unplaced_clean": 497
+    },
+    "EDDM": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 14,
+     "silent": 0,
+     "unheard": 14,
+     "unplaced": 0,
+     "unplaced_clean": 0
+    },
+    "EGLL": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 8,
+     "silent": 0,
+     "unheard": 8,
+     "unplaced": 0,
+     "unplaced_clean": 0
+    },
+    "EHAM": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 20,
+     "silent": 0,
+     "unheard": 19,
+     "unplaced": 1,
+     "unplaced_clean": 1
+    },
+    "LEBL": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 66,
+     "silent": 0,
+     "unheard": 64,
+     "unplaced": 2,
+     "unplaced_clean": 2
+    },
+    "LEMD": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 1238,
+     "silent": 0,
+     "unheard": 873,
+     "unplaced": 365,
+     "unplaced_clean": 135
+    },
+    "LFPG": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 17941,
+     "silent": 0,
+     "unheard": 10297,
+     "unplaced": 7644,
+     "unplaced_clean": 1944
+    },
+    "LIRF": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 15795,
+     "silent": 14817,
+     "unheard": 964,
+     "unplaced": 14,
+     "unplaced_clean": 9
+    },
+    "LSZH": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 28,
+     "silent": 0,
+     "unheard": 28,
+     "unplaced": 0,
+     "unplaced_clean": 0
+    },
+    "LTFM": {
+     "held": 0,
+     "not_asked": 0,
+     "rows": 25185,
+     "silent": 25185,
+     "unheard": 0,
+     "unplaced": 0,
+     "unplaced_clean": 0
+    }
+   },
+   "classes": {
+    "held": 0,
+    "not_asked": 0,
+    "silent": 40002,
+    "unheard": 13113,
+    "unplaced": 8890
+   },
+   "complement": 87299,
+   "days_missing_summary": 61,
+   "departures": 192122,
+   "held_days": [],
+   "matcher_agreement": {
+    "clock_equal": 192122,
+    "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+    "rows": 192122
+   },
+   "reach_class_of_unreached": {
+    "matched_no_clock": 757,
+    "unmatched": 61248
+   },
+   "seconds": 13.8,
+   "segments": {
+    "by_airport_unplaced_agreeing": {
+     "EDDF": 4948,
+     "EDDM": 138,
+     "EGLL": 269,
+     "EHAM": 971,
+     "LEBL": 453,
+     "LEMD": 2027,
+     "LFPG": 2829,
+     "LIRF": 8,
+     "LSZH": 286
+    },
+    "departure_clocked": 118548,
+    "of_them_arrival_roll_artefacts": 6587,
+    "of_them_departure_callsign": 1849,
+    "placed": 103327,
+    "unplaced": 15221,
+    "unplaced_agreeing_60s": 11929
+   },
+   "unplaced_clean": 2588,
+   "unreached_complement": 62005
+  }
+ },
+ "rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+ "silent_frac": 0.05,
+ "value": {
+  "2026-01": {
+   "held": {
+    "delta_s2_full_oracle": 0.0,
+    "rows": 1557,
+    "rows_unpriced": 1557
+   },
+   "not_asked": {
+    "delta_s2_full_oracle": 0.0,
+    "rows": 0,
+    "rows_unpriced": 0
+   },
+   "silent": {
+    "delta_s2_full_oracle": 201187747.0,
+    "rows": 22396,
+    "rows_unpriced": 0
+   },
+   "unheard": {
+    "delta_s2_full_oracle": 96974140.0,
+    "rows": 12167,
+    "rows_unpriced": 670
+   },
+   "unplaced": {
+    "delta_s2_full_oracle": 44191509.0,
+    "rows": 5171,
+    "rows_unpriced": 131
+   },
+   "unplaced_clean": {
+    "delta_s2_full_oracle": 13172526.0,
+    "rows": 1622,
+    "rows_unpriced": 101
+   }
+  },
+  "2026-07": {
+   "held": {
+    "delta_s2_full_oracle": 0.0,
+    "rows": 0,
+    "rows_unpriced": 0
+   },
+   "not_asked": {
+    "delta_s2_full_oracle": 0.0,
+    "rows": 0,
+    "rows_unpriced": 0
+   },
+   "silent": {
+    "delta_s2_full_oracle": 404440878.0,
+    "rows": 40002,
+    "rows_unpriced": 14817
+   },
+   "unheard": {
+    "delta_s2_full_oracle": 68666812.0,
+    "rows": 13113,
+    "rows_unpriced": 1921
+   },
+   "unplaced": {
+    "delta_s2_full_oracle": 49505909.0,
+    "rows": 8890,
+    "rows_unpriced": 881
+   },
+   "unplaced_clean": {
+    "delta_s2_full_oracle": 12799650.0,
+    "rows": 2588,
+    "rows_unpriced": 509
+   }
+  }
+ },
+ "what": "RESULTS \u00a77ch: item 1 of \u00a77ce v (reach) scoped for a decision -- zero fit."
+}

@@ -1,0 +1,12 @@
+{
+  "note": "Final member set. C-cat and X-xgb take july from the six-month-budget arm (C1-d8 3625 rounds, X1-d8 75 rounds) and the other three folds from the corrected patience-900 arms (C2-d8p 5325, X2-d8p 350); run_gpu6.sh is replacing the CatBoost july fold. The first entry must be an exp-008 arm: it supplies the regime columns.",
+  "members": {
+    "L0-lin": "experiments/exp-008-diversity/oof/L0-lin-{fold}.parquet",
+    "L1-plain": "experiments/exp-008-diversity/oof/L1-plain-{fold}.parquet",
+    "L2-hub": "experiments/exp-008-diversity/oof/L2-hub-{fold}.parquet",
+    "L3-monoraw": "experiments/exp-008-diversity/oof/L3-monoraw-{fold}.parquet",
+    "C-cat": "experiments/exp-008-diversity/oof/C-cat-{fold}.parquet",
+    "X-xgb": "experiments/exp-008-diversity/oof/X-xgb-{fold}.parquet",
+    "T-tail": "experiments/exp-002-tail/oof/exp-002-tail-oof.parquet"
+  }
+}

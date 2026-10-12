@@ -1,0 +1,1024 @@
+{
+ "base_entry": "data/exp167/noplan-form-v2-001-entry.parquet",
+ "base_sha256": "a855f04c8d076a3ee3322b33ff264d30a2ef0be0f615d7b58ff3876a7bc18b4c",
+ "code_sha256": {
+  "common.py": "02685d04eaafc0917ce9ca8a64be500fdef69c4f8b477efc3ef2d9cabf279496",
+  "noplan_form_v2.py": "529f88ac2ceeef125bfc673a2d94a8950897613d6d5a29acf16c50cb24b225dd",
+  "practice_arm_r1.py": "01744305d624718ed28d4b3633ce96a5bbc9d38d636b569dad9a7d6e26fb5d0b"
+ },
+ "entry": {
+  "distance_from_base": 430.708133275351,
+  "file": "data/exp167/practice-arm-r1-001-entry.parquet",
+  "max_abs_change_s": 3085.540062424882,
+  "rows": 344841,
+  "rows_changed_from_base": 448,
+  "sha256": "80d845660550d32c6621cdf2fd235bfadb39770b43fb558bb397fa6549cbcf92"
+ },
+ "fold": {
+  "F_as_served": {
+   "G": 44.06037246615112,
+   "G_without_top_days": 8.018539271338884,
+   "by_airline": {
+    "FIE": 0.0015246712886974076,
+    "ISR": 0.4235964339779367,
+    "LAV": 0.0005018066715335909,
+    "MEA": 1.6553273354664206,
+    "MSC": 0.0,
+    "MSR": 0.0,
+    "QFA": 8.446672452583792,
+    "TGZ": 30.04999370749371,
+    "TKJ": 1.8680285324220376,
+    "TWB": 1.4161109458696908,
+    "UPS": 0.19861658037730803
+   },
+   "by_status": {
+    "confirmed": {
+     "gain": 44.06037246615112,
+     "mean_abs_move_s": 144.24568433928962,
+     "placeholders": 234,
+     "rows": 235
+    },
+    "excluded": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 21,
+     "rows": 82
+    },
+    "mixed": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    },
+    "new": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    }
+   },
+   "hi95": 91.9997485909571,
+   "lo95": 12.359229503093017,
+   "months": {
+    "1": 3.127027578504152,
+    "7": 40.93334488764697
+   },
+   "rows_gain": 228,
+   "rows_lose": 7,
+   "rows_moved": 235
+  },
+  "F_with_new": {
+   "G": 44.06037246615112,
+   "G_without_top_days": 8.018539271338884,
+   "by_airline": {
+    "FIE": 0.0015246712886974076,
+    "ISR": 0.4235964339779367,
+    "LAV": 0.0005018066715335909,
+    "MEA": 1.6553273354664206,
+    "MSC": 0.0,
+    "MSR": 0.0,
+    "QFA": 8.446672452583792,
+    "TGZ": 30.04999370749371,
+    "TKJ": 1.8680285324220376,
+    "TWB": 1.4161109458696908,
+    "UPS": 0.19861658037730803
+   },
+   "by_status": {
+    "confirmed": {
+     "gain": 44.06037246615112,
+     "mean_abs_move_s": 144.24568433928962,
+     "placeholders": 234,
+     "rows": 235
+    },
+    "excluded": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 21,
+     "rows": 82
+    },
+    "mixed": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    },
+    "new": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    }
+   },
+   "hi95": 91.9997485909571,
+   "lo95": 12.359229503093017,
+   "months": {
+    "1": 3.127027578504152,
+    "7": 40.93334488764697
+   },
+   "rows_gain": 228,
+   "rows_lose": 7,
+   "rows_moved": 235
+  },
+  "F_without_new": {
+   "G": 44.06037246615112,
+   "G_without_top_days": 8.018539271338884,
+   "by_airline": {
+    "FIE": 0.0015246712886974076,
+    "ISR": 0.4235964339779367,
+    "LAV": 0.0005018066715335909,
+    "MEA": 1.6553273354664206,
+    "MSC": 0.0,
+    "MSR": 0.0,
+    "QFA": 8.446672452583792,
+    "TGZ": 30.04999370749371,
+    "TKJ": 1.8680285324220376,
+    "TWB": 1.4161109458696908,
+    "UPS": 0.19861658037730803
+   },
+   "by_status": {
+    "confirmed": {
+     "gain": 44.06037246615112,
+     "mean_abs_move_s": 144.24568433928962,
+     "placeholders": 234,
+     "rows": 235
+    },
+    "excluded": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 21,
+     "rows": 82
+    },
+    "mixed": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    },
+    "new": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    }
+   },
+   "hi95": 91.9997485909571,
+   "lo95": 12.359229503093017,
+   "months": {
+    "1": 3.127027578504152,
+    "7": 40.93334488764697
+   },
+   "rows_gain": 228,
+   "rows_lose": 7,
+   "rows_moved": 235
+  },
+  "class_of_rows": 223,
+  "rate_new_ten_months": 0.7666666666666667,
+  "rows": 317,
+  "status_table_ten_months": [
+   {
+    "n": 11,
+    "pre": "CGF",
+    "s": 0.9090909090909091,
+    "status": "confirmed"
+   },
+   {
+    "n": 40,
+    "pre": "FIE",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 329,
+    "pre": "ISR",
+    "s": 0.993920972644377,
+    "status": "confirmed"
+   },
+   {
+    "n": 60,
+    "pre": "LAV",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 28,
+    "pre": "LGL",
+    "s": 0.8571428571428571,
+    "status": "mixed"
+   },
+   {
+    "n": 73,
+    "pre": "MEA",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 49,
+    "pre": "MSC",
+    "s": 0.42857142857142855,
+    "status": "excluded"
+   },
+   {
+    "n": 383,
+    "pre": "MSR",
+    "s": 0.185378590078329,
+    "status": "excluded"
+   },
+   {
+    "n": 23,
+    "pre": "QFA",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 48,
+    "pre": "TGZ",
+    "s": 0.9791666666666666,
+    "status": "confirmed"
+   },
+   {
+    "n": 238,
+    "pre": "THY",
+    "s": 0.9915966386554622,
+    "status": "confirmed"
+   },
+   {
+    "n": 285,
+    "pre": "TKJ",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 223,
+    "pre": "TWB",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 145,
+    "pre": "UPS",
+    "s": 0.9724137931034482,
+    "status": "confirmed"
+   }
+  ],
+  "v47_as_served": {
+   "G": 44.185520217365706,
+   "G_without_top_days": 8.164982350954197,
+   "by_airline": {
+    "FIE": 0.008891490921121252,
+    "ISR": 0.43579663911718913,
+    "LAV": 0.004258251173460688,
+    "MEA": 1.6670276853206496,
+    "MSC": 0.0,
+    "MSR": 0.0,
+    "QFA": 8.449854964241553,
+    "TGZ": 30.059114184886212,
+    "TKJ": 1.9179887566767777,
+    "TWB": 1.436900755542133,
+    "UPS": 0.20568748948661245
+   },
+   "by_status": {
+    "confirmed": {
+     "gain": 44.185520217365706,
+     "mean_abs_move_s": 331.08270005130584,
+     "placeholders": 234,
+     "rows": 235
+    },
+    "excluded": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 21,
+     "rows": 82
+    },
+    "mixed": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    },
+    "new": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    }
+   },
+   "hi95": 92.12774506021525,
+   "lo95": 12.47582635399683,
+   "months": {
+    "1": 3.127027578504152,
+    "7": 41.05849263886155
+   },
+   "rows_gain": 230,
+   "rows_lose": 5,
+   "rows_moved": 235
+  },
+  "v47_with_new": {
+   "G": 44.185520217365706,
+   "G_without_top_days": 8.164982350954197,
+   "by_airline": {
+    "FIE": 0.008891490921121252,
+    "ISR": 0.43579663911718913,
+    "LAV": 0.004258251173460688,
+    "MEA": 1.6670276853206496,
+    "MSC": 0.0,
+    "MSR": 0.0,
+    "QFA": 8.449854964241553,
+    "TGZ": 30.059114184886212,
+    "TKJ": 1.9179887566767777,
+    "TWB": 1.436900755542133,
+    "UPS": 0.20568748948661245
+   },
+   "by_status": {
+    "confirmed": {
+     "gain": 44.185520217365706,
+     "mean_abs_move_s": 331.08270005130584,
+     "placeholders": 234,
+     "rows": 235
+    },
+    "excluded": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 21,
+     "rows": 82
+    },
+    "mixed": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    },
+    "new": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    }
+   },
+   "hi95": 92.12774506021525,
+   "lo95": 12.47582635399683,
+   "months": {
+    "1": 3.127027578504152,
+    "7": 41.05849263886155
+   },
+   "rows_gain": 230,
+   "rows_lose": 5,
+   "rows_moved": 235
+  },
+  "v47_without_new": {
+   "G": 44.185520217365706,
+   "G_without_top_days": 8.164982350954197,
+   "by_airline": {
+    "FIE": 0.008891490921121252,
+    "ISR": 0.43579663911718913,
+    "LAV": 0.004258251173460688,
+    "MEA": 1.6670276853206496,
+    "MSC": 0.0,
+    "MSR": 0.0,
+    "QFA": 8.449854964241553,
+    "TGZ": 30.059114184886212,
+    "TKJ": 1.9179887566767777,
+    "TWB": 1.436900755542133,
+    "UPS": 0.20568748948661245
+   },
+   "by_status": {
+    "confirmed": {
+     "gain": 44.185520217365706,
+     "mean_abs_move_s": 331.08270005130584,
+     "placeholders": 234,
+     "rows": 235
+    },
+    "excluded": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 21,
+     "rows": 82
+    },
+    "mixed": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    },
+    "new": {
+     "gain": 0.0,
+     "mean_abs_move_s": 0.0,
+     "placeholders": 0,
+     "rows": 0
+    }
+   },
+   "hi95": 92.12774506021525,
+   "lo95": 12.47582635399683,
+   "months": {
+    "1": 3.127027578504152,
+    "7": 41.05849263886155
+   },
+   "rows_gain": 230,
+   "rows_lose": 5,
+   "rows_moved": 235
+  }
+ },
+ "held_month_2025": {
+  "by_airline": [
+   {
+    "months": 4,
+    "pre": "FIE",
+    "rows": 51,
+    "share": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "months": 11,
+    "pre": "ISR",
+    "rows": 354,
+    "share": 0.9943502824858758,
+    "status": "confirmed"
+   },
+   {
+    "months": 6,
+    "pre": "LAV",
+    "rows": 66,
+    "share": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "months": 7,
+    "pre": "MEA",
+    "rows": 113,
+    "share": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "months": 3,
+    "pre": "QFA",
+    "rows": 36,
+    "share": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "months": 5,
+    "pre": "TGZ",
+    "rows": 59,
+    "share": 0.9830508474576272,
+    "status": "confirmed"
+   },
+   {
+    "months": 2,
+    "pre": "THY",
+    "rows": 238,
+    "share": 0.9915966386554622,
+    "status": "confirmed"
+   },
+   {
+    "months": 12,
+    "pre": "TKJ",
+    "rows": 344,
+    "share": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "months": 12,
+    "pre": "TWB",
+    "rows": 270,
+    "share": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "months": 8,
+    "pre": "UPS",
+    "rows": 168,
+    "share": 0.9702380952380952,
+    "status": "confirmed"
+   },
+   {
+    "months": 6,
+    "pre": "MSC",
+    "rows": 70,
+    "share": 0.4,
+    "status": "excluded"
+   },
+   {
+    "months": 9,
+    "pre": "MSR",
+    "rows": 444,
+    "share": 0.19144144144144143,
+    "status": "excluded"
+   },
+   {
+    "months": 1,
+    "pre": "CGF",
+    "rows": 11,
+    "share": 0.9090909090909091,
+    "status": "new"
+   },
+   {
+    "months": 1,
+    "pre": "LGL",
+    "rows": 28,
+    "share": 0.8571428571428571,
+    "status": "new"
+   }
+  ],
+  "by_status": {
+   "confirmed": {
+    "airlines": 10,
+    "placeholders": 1689,
+    "prefix_months": 70,
+    "rows": 1699,
+    "share": 0.9941141848145968
+   },
+   "excluded": {
+    "airlines": 2,
+    "placeholders": 113,
+    "prefix_months": 15,
+    "rows": 514,
+    "share": 0.2198443579766537
+   },
+   "new": {
+    "airlines": 2,
+    "placeholders": 34,
+    "prefix_months": 2,
+    "rows": 39,
+    "share": 0.8717948717948718
+   }
+  },
+  "by_status_and_band": {
+   "('rows', 'confirmed')": {
+    "0 to 10 min": 101.0,
+    "10 to 30 min": 742.0,
+    "30 to 65 min": 654.0,
+    "above 65 min": 202.0
+   },
+   "('rows', 'excluded')": {
+    "0 to 10 min": 29.0,
+    "10 to 30 min": 205.0,
+    "30 to 65 min": 206.0,
+    "above 65 min": 74.0
+   },
+   "('rows', 'new')": {
+    "0 to 10 min": 2.0,
+    "10 to 30 min": 25.0,
+    "30 to 65 min": 12.0,
+    "above 65 min": NaN
+   },
+   "('share', 'confirmed')": {
+    "0 to 10 min": 0.9603960396039604,
+    "10 to 30 min": 0.9959568733153639,
+    "30 to 65 min": 0.9984709480122325,
+    "above 65 min": 0.9900990099009901
+   },
+   "('share', 'excluded')": {
+    "0 to 10 min": 0.034482758620689655,
+    "10 to 30 min": 0.43414634146341463,
+    "30 to 65 min": 0.07766990291262135,
+    "above 65 min": 0.0945945945945946
+   },
+   "('share', 'new')": {
+    "0 to 10 min": 0.5,
+    "10 to 30 min": 0.96,
+    "30 to 65 min": 0.75,
+    "above 65 min": NaN
+   }
+  },
+  "confirmed_prefix_months_under_0.9": [
+   {
+    "month": 5,
+    "pre": "UPS",
+    "rows": 22,
+    "share": 0.8636363636363636,
+    "status": "confirmed"
+   }
+  ],
+  "new_rows_by_prefix_month": [
+   {
+    "month": 5,
+    "pre": "CGF",
+    "rows": 11,
+    "share": 0.9090909090909091,
+    "status": "new"
+   },
+   {
+    "month": 2,
+    "pre": "LGL",
+    "rows": 28,
+    "share": 0.8571428571428571,
+    "status": "new"
+   }
+  ],
+  "new_rows_in_the_entry": true,
+  "rate_new_by_held_month": {
+   "1": 0.7666666666666667,
+   "2": 0.8214285714285714,
+   "3": 0.7666666666666667,
+   "4": 0.7666666666666667,
+   "5": 0.75,
+   "6": 0.7666666666666667,
+   "7": 0.7666666666666667,
+   "8": 0.7666666666666667,
+   "9": 0.7666666666666667,
+   "10": 0.7666666666666667,
+   "11": 0.7666666666666667,
+   "12": 0.7666666666666667
+  },
+  "rows": 2252
+ },
+ "rows_2026": {
+  "by_airline_month": [
+   {
+    "arr_n": 14.0,
+    "arr_share": 1.0,
+    "distance": 3.796485921473164,
+    "forecast": 3.7407330466264925,
+    "mean_base": 2125.1216036634323,
+    "mean_point": 2174.0,
+    "month": 7,
+    "pre": "FIE",
+    "rows": 12,
+    "status": "confirmed",
+    "to_point": 3.796485921473163
+   },
+   {
+    "arr_n": 18.0,
+    "arr_share": 1.0,
+    "distance": 1.9158074400422571,
+    "forecast": 2.1191135438288327,
+    "mean_base": 2575.1546168716905,
+    "mean_point": 2481.4375,
+    "month": 1,
+    "pre": "ISR",
+    "rows": 16,
+    "status": "confirmed",
+    "to_point": 1.9158074400422576
+   },
+   {
+    "arr_n": 36.0,
+    "arr_share": 1.0,
+    "distance": 5.876390605583611,
+    "forecast": 5.999281142322474,
+    "mean_base": 2454.5426835502267,
+    "mean_point": 2316.5454545454545,
+    "month": 7,
+    "pre": "ISR",
+    "rows": 33,
+    "status": "confirmed",
+    "to_point": 5.876390605583611
+   },
+   {
+    "arr_n": 16.0,
+    "arr_share": 1.0,
+    "distance": 4.147031902372066,
+    "forecast": 4.026942248751969,
+    "mean_base": 2807.484373290445,
+    "mean_point": 2820.5833333333335,
+    "month": 7,
+    "pre": "LAV",
+    "rows": 12,
+    "status": "confirmed",
+    "to_point": 4.147031902372066
+   },
+   {
+    "arr_n": 31.0,
+    "arr_share": 1.0,
+    "distance": 1.5217511715960206,
+    "forecast": 1.496859304713876,
+    "mean_base": 2404.30716992651,
+    "mean_point": 2327.7241379310344,
+    "month": 7,
+    "pre": "QFA",
+    "rows": 29,
+    "status": "confirmed",
+    "to_point": 1.5217511715960206
+   },
+   {
+    "arr_n": 11.0,
+    "arr_share": 1.0,
+    "distance": 4.325930643922554,
+    "forecast": 4.170100753697817,
+    "mean_base": 1460.869281985444,
+    "mean_point": 1560.7272727272727,
+    "month": 1,
+    "pre": "TGZ",
+    "rows": 11,
+    "status": "confirmed",
+    "to_point": 4.325930643922554
+   },
+   {
+    "arr_n": 11.0,
+    "arr_share": 1.0,
+    "distance": 2.226928018377901,
+    "forecast": 2.032529359680754,
+    "mean_base": 2623.8500398168535,
+    "mean_point": 2782.7272727272725,
+    "month": 7,
+    "pre": "TGZ",
+    "rows": 11,
+    "status": "confirmed",
+    "to_point": 2.226928018377901
+   },
+   {
+    "arr_n": 123.0,
+    "arr_share": 1.0,
+    "distance": 259.051076857788,
+    "forecast": 255.22003696094345,
+    "mean_base": 1225.9501999562797,
+    "mean_point": 1681.1367521367522,
+    "month": 1,
+    "pre": "THY",
+    "rows": 117,
+    "status": "confirmed",
+    "to_point": 259.051076857788
+   },
+   {
+    "arr_n": 31.0,
+    "arr_share": 1.0,
+    "distance": 0.9213861434237619,
+    "forecast": 0.9065491881530297,
+    "mean_base": 1941.8259778540191,
+    "mean_point": 1937.2,
+    "month": 1,
+    "pre": "TKJ",
+    "rows": 30,
+    "status": "confirmed",
+    "to_point": 0.9213861434237619
+   },
+   {
+    "arr_n": 31.0,
+    "arr_share": 1.0,
+    "distance": 3.7210242118421264,
+    "forecast": 3.966005545904821,
+    "mean_base": 2935.7014543214414,
+    "mean_point": 2881.1290322580644,
+    "month": 7,
+    "pre": "TKJ",
+    "rows": 31,
+    "status": "confirmed",
+    "to_point": 3.7210242118421255
+   },
+   {
+    "arr_n": 17.0,
+    "arr_share": 1.0,
+    "distance": 0.6360956407365063,
+    "forecast": 0.5971199495816928,
+    "mean_base": 1599.151866577739,
+    "mean_point": 1627.0,
+    "month": 1,
+    "pre": "TWB",
+    "rows": 17,
+    "status": "confirmed",
+    "to_point": 0.6360956407365063
+   },
+   {
+    "arr_n": 24.0,
+    "arr_share": 1.0,
+    "distance": 2.418533032724308,
+    "forecast": 2.3395100644855575,
+    "mean_base": 1600.2930419527577,
+    "mean_point": 1624.4166666666667,
+    "month": 7,
+    "pre": "TWB",
+    "rows": 24,
+    "status": "confirmed",
+    "to_point": 2.4185330327243086
+   },
+   {
+    "arr_n": 21.0,
+    "arr_share": 1.0,
+    "distance": 2.492874254665431,
+    "forecast": 2.4381269373173167,
+    "mean_base": 837.3746086268995,
+    "mean_point": 740.85,
+    "month": 1,
+    "pre": "UPS",
+    "rows": 20,
+    "status": "confirmed",
+    "to_point": 2.492874254665431
+   },
+   {
+    "arr_n": 23.0,
+    "arr_share": 1.0,
+    "distance": 9.697919005023824,
+    "forecast": 9.282262812149733,
+    "mean_base": 1494.2463552164552,
+    "mean_point": 1593.304347826087,
+    "month": 7,
+    "pre": "UPS",
+    "rows": 23,
+    "status": "confirmed",
+    "to_point": 9.697919005023826
+   },
+   {
+    "arr_n": 11.0,
+    "arr_share": 1.0,
+    "distance": 0.0,
+    "forecast": 0.0,
+    "mean_base": 1402.2727879198196,
+    "mean_point": 3157.818181818182,
+    "month": 1,
+    "pre": "MSC",
+    "rows": 11,
+    "status": "excluded",
+    "to_point": 426.35013849079746
+   },
+   {
+    "arr_n": 46.0,
+    "arr_share": 0.9782608695652174,
+    "distance": 0.0,
+    "forecast": 0.0,
+    "mean_base": 1167.9035886593922,
+    "mean_point": 4247.391304347826,
+    "month": 1,
+    "pre": "MSR",
+    "rows": 46,
+    "status": "excluded",
+    "to_point": 3211.8274449943638
+   },
+   {
+    "arr_n": 16.0,
+    "arr_share": 1.0,
+    "distance": 57.87910272849136,
+    "forecast": 68.9558932148403,
+    "mean_base": 1437.3520217400749,
+    "mean_point": 2488.4615384615386,
+    "month": 7,
+    "pre": "ABY",
+    "rows": 13,
+    "status": "new",
+    "to_point": 98.47106324318003
+   },
+   {
+    "arr_n": 32.0,
+    "arr_share": 0.96875,
+    "distance": 60.24638570911888,
+    "forecast": 62.44424997497014,
+    "mean_base": 2046.3310887278562,
+    "mean_point": 2658.1290322580644,
+    "month": 7,
+    "pre": "ASA",
+    "rows": 31,
+    "status": "new",
+    "to_point": 102.49857682080717
+   },
+   {
+    "arr_n": 23.0,
+    "arr_share": 1.0,
+    "distance": 9.833409988169153,
+    "forecast": 9.746790184059858,
+    "mean_base": 1160.9649587339572,
+    "mean_point": 1407.888888888889,
+    "month": 7,
+    "pre": "BRD",
+    "rows": 18,
+    "status": "new",
+    "to_point": 16.72980905359591
+   }
+  ],
+  "by_status": {
+   "confirmed": {
+    "airlines": 9.0,
+    "distance from the base": 302.7492348495715,
+    "distance of the base to the point": 302.74923484957156,
+    "forecast without a label": 298.3351708581578,
+    "mean change, s": 124.72034840953555,
+    "placeholder share of the status, 2025": 0.9941141848145968,
+    "rows": 386.0,
+    "rows changed": 386.0
+   },
+   "excluded": {
+    "airlines": 2.0,
+    "distance from the base": 0.0,
+    "distance of the base to the point": 3638.177583485161,
+    "forecast without a label": 0.0,
+    "mean change, s": 0.0,
+    "placeholder share of the status, 2025": 0.2198443579766537,
+    "rows": 57.0,
+    "rows changed": 0.0
+   },
+   "mixed": {
+    "airlines": NaN,
+    "distance from the base": NaN,
+    "distance of the base to the point": NaN,
+    "forecast without a label": NaN,
+    "mean change, s": NaN,
+    "placeholder share of the status, 2025": NaN,
+    "rows": NaN,
+    "rows changed": NaN
+   },
+   "new": {
+    "airlines": 3.0,
+    "distance from the base": 127.95889842577941,
+    "distance of the base to the point": 217.6994491175831,
+    "forecast without a label": 141.1469333738703,
+    "mean change, s": 458.45171307575157,
+    "placeholder share of the status, 2025": 0.8717948717948718,
+    "rows": 62.0,
+    "rows changed": 62.0
+   }
+  },
+  "distance_from_base": 430.708133275351,
+  "forecast_without_a_label": 439.48210423202806,
+  "new_rows_in_the_entry": true,
+  "rate_new_twelve_months": 0.7666666666666667,
+  "real_offset_of_eligible_rows_s": 236.5,
+  "real_point_offset_s": 66.0,
+  "real_point_without_aobt_s": 1018.0,
+  "rows": 505,
+  "status_table_twelve_months": [
+   {
+    "n": 11,
+    "pre": "CGF",
+    "s": 0.9090909090909091,
+    "status": "confirmed"
+   },
+   {
+    "n": 51,
+    "pre": "FIE",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 354,
+    "pre": "ISR",
+    "s": 0.9943502824858758,
+    "status": "confirmed"
+   },
+   {
+    "n": 66,
+    "pre": "LAV",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 28,
+    "pre": "LGL",
+    "s": 0.8571428571428571,
+    "status": "mixed"
+   },
+   {
+    "n": 113,
+    "pre": "MEA",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 70,
+    "pre": "MSC",
+    "s": 0.4,
+    "status": "excluded"
+   },
+   {
+    "n": 444,
+    "pre": "MSR",
+    "s": 0.19144144144144143,
+    "status": "excluded"
+   },
+   {
+    "n": 36,
+    "pre": "QFA",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 59,
+    "pre": "TGZ",
+    "s": 0.9830508474576272,
+    "status": "confirmed"
+   },
+   {
+    "n": 238,
+    "pre": "THY",
+    "s": 0.9915966386554622,
+    "status": "confirmed"
+   },
+   {
+    "n": 344,
+    "pre": "TKJ",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 270,
+    "pre": "TWB",
+    "s": 1.0,
+    "status": "confirmed"
+   },
+   {
+    "n": 168,
+    "pre": "UPS",
+    "s": 0.9702380952380952,
+    "status": "confirmed"
+   }
+  ]
+ },
+ "rows_file": {
+  "file": "experiments/exp-167-target/candidates/practice-arm-r1-001.parquet",
+  "sha256": "78971e3816e0698428a95fa3a23c05aaa43d734c47e824bbb2e2484131a01ae1"
+ },
+ "rule": {
+  "arrival_share_at_least": 0.95,
+  "confirmed_at_least": 0.9,
+  "excluded_under": 0.5,
+  "min_arrivals": 10,
+  "min_departures": 10,
+  "new_rows_need_share": 0.75
+ },
+ "what": "exp-167 M22-r1: the airline recording practice of the month on LIRF rows with a plan after SCHED (C39 (b))"
+}

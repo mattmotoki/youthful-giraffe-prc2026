@@ -1,0 +1,41 @@
+--- a/w2/l2c.py
++++ b/w2/l2c.py
+@@ -1,11 +1,11 @@
+ """Step L2C: a nonlinear residual level 2 on clock rows, on top of c5.
+ 
+-LightGBM (Huber 300, 31 leaves, 800 rounds, 3 seeds) on y - c5 with the member deviations and the row
+-features of w2/l2.py. Held: fitted on one held month, applied to the other. 2026: fitted on both held
++LightGBM (Huber 300, 31 leaves, 800 rounds, 9 seeds) on y - c5 with the member deviations, the row
++features of w2/l2.py and the s7 deviation d_s7 = s7 - c5 (worker 5 candidate A; s7 = the ORD-S member). Held: fitted on one held month, applied to the other. 2026: fitted on both held
+ months. Value = max(60, clip(c5 + K * correction, lower, upper)). Scope: clock rows with an NM join;
+ on 2026 the extension rows and the LIRF January clock rows (no 2025 support) keep c5.
+ 
+-    .venv/bin/python w2/l2c.py [--out outputs/x.parquet]
++    .venv/bin/python w2/l2c.py [--s7 w2/inputs/s7c.npz] [--out outputs/x.parquet]
+ """
+ from __future__ import annotations
+ 
+@@ -27,7 +27,7 @@
+ import score as S  # noqa: E402
+ 
+ K = 0.5
+-SEEDS = (1, 2, 3)
++SEEDS = tuple(range(1, 10))
+ ROUNDS = 800
+ PARAMS = dict(objective="huber", alpha=300.0, learning_rate=0.03, num_leaves=31, min_data_in_leaf=200,
+               feature_fraction=0.7, bagging_fraction=0.8, bagging_freq=1, lambda_l2=10.0, num_threads=int(__import__("os").environ.get("NT", "8")), verbose=-1,
+@@ -75,8 +75,12 @@
+ 
+ 
+ def main():
+-    ap = argparse.ArgumentParser(); ap.add_argument("--out", type=Path); a = ap.parse_args()
+-    d, r, vf, vr, corr_f, corr_r = build()
++    ap = argparse.ArgumentParser(); ap.add_argument("--out", type=Path)
++    ap.add_argument("--s7", type=Path, default=ROOT / "w2/inputs/s7c.npz", help="s7 member, keys fold and ranking")
++    a = ap.parse_args()
++    s7 = np.load(a.s7)
++    d, r, vf, vr, corr_f, corr_r = build(extra_fold={"d_s7": s7["fold"].astype(float)},
++                                         extra_rank={"d_s7": s7["ranking"].astype(float)})
+     res = S.score(vf, base=d.c5.to_numpy(float))
+     print("held vs c5", S.fmt(res)); print("airport", res["airport"])
+     dv = vr - r.c5.to_numpy(float)

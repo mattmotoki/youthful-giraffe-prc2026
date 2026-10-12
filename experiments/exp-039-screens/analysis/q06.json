@@ -1,0 +1,392 @@
+{
+  "screen": "Q06",
+  "predeclared": {
+    "arrival_window_s": [
+      0,
+      43200.0
+    ],
+    "duplicate_tolerance_s": 60.0,
+    "normalisation": "uppercase and whitespace only",
+    "sample": 20000,
+    "seed": 39
+  },
+  "census_ranking": {
+    "noac": {
+      "population": "noac",
+      "n_queries": 388,
+      "n_missing_key": 23,
+      "key_leg_only": {
+        "donors_0": 63,
+        "donors_1": 27,
+        "donors_gt1": 298,
+        "ids_1": 21,
+        "ids_gt1": 292
+      },
+      "in_window": {
+        "donors_0": 343,
+        "donors_1": 45,
+        "donors_gt1": 0,
+        "ids_1": 43,
+        "ids_gt1": 0
+      },
+      "in_window_nm": {
+        "donors_0": 345,
+        "donors_1": 43,
+        "donors_gt1": 0,
+        "ids_1": 43,
+        "ids_gt1": 0
+      },
+      "in_window_nm_arrival": 43,
+      "in_window_nm_duplicate": 0,
+      "clock_conflicts": 316,
+      "boundary_cases": 13,
+      "accepted": 43,
+      "accepted_pct": 11.08,
+      "accepted_with_aobt": 43,
+      "accepted_by_class": {
+        "arrival": 43
+      },
+      "ades_in_ten_airports": 71,
+      "ades_in_ten_airports_pct": 18.3,
+      "accepted_of_ades_in_ten_pct": 60.56
+    },
+    "nonm": {
+      "population": "nonm",
+      "n_queries": 4895,
+      "n_missing_key": 0,
+      "key_leg_only": {
+        "donors_0": 400,
+        "donors_1": 98,
+        "donors_gt1": 4397,
+        "ids_1": 70,
+        "ids_gt1": 3581
+      },
+      "in_window": {
+        "donors_0": 4474,
+        "donors_1": 416,
+        "donors_gt1": 5,
+        "ids_1": 206,
+        "ids_gt1": 0
+      },
+      "in_window_nm": {
+        "donors_0": 4689,
+        "donors_1": 206,
+        "donors_gt1": 0,
+        "ids_1": 206,
+        "ids_gt1": 0
+      },
+      "in_window_nm_arrival": 185,
+      "in_window_nm_duplicate": 21,
+      "clock_conflicts": 4468,
+      "boundary_cases": 1,
+      "accepted": 206,
+      "accepted_pct": 4.21,
+      "accepted_with_aobt": 206,
+      "accepted_by_class": {
+        "arrival": 185,
+        "duplicate": 21
+      },
+      "ades_in_ten_airports": 720,
+      "ades_in_ten_airports_pct": 14.71,
+      "accepted_of_ades_in_ten_pct": 28.61
+    }
+  },
+  "accuracy_masked_joined": {
+    "n_queries": 20000,
+    "sample_seed": 39,
+    "ades_in_ten_airports": 3030,
+    "ades_in_ten_airports_pct": 15.15,
+    "same_leg_row_exists": 19411,
+    "same_leg_row_in_window": 1551,
+    "counterpart_exists": 3033,
+    "counterpart_exists_pct": 15.16,
+    "gold_row_survives_key_and_leg": 1548,
+    "candidate_recall": 1548,
+    "candidate_recall_pct_of_existing": 51.04,
+    "candidate_recall_pct_of_all": 7.74,
+    "accepted": 1550,
+    "accepted_pct": 7.75,
+    "accepted_id_agrees": 1548,
+    "accepted_id_agreement_pct": 99.87,
+    "accepted_unique_ids": 1550,
+    "stress": {
+      "note": "every row carrying a query's own gold FLIGHT_ID_mvt removed",
+      "rows_removed": 23033,
+      "accepted": 2,
+      "wrong_acceptance_pct": 0.01
+    }
+  },
+  "folds": {
+    "july_loo": {
+      "fold": "july_loo",
+      "month": "2025-07",
+      "donor_anchor_nonm": {
+        "n_nonm": 3595,
+        "accepted": 195,
+        "ades_in_ten_airports": 539,
+        "accepted_with_aobt": 195,
+        "A_mean_r_d": -28475.5,
+        "B_mean_d2": 5119757.1,
+        "full_amplitude_mse_gain": -5176708.0,
+        "unrestricted_scale": -0.0056,
+        "best_scalar_mse_gain": 158.4,
+        "rmse_v10_on_these": 474.9,
+        "rmse_donor_anchor": 2324.3,
+        "sse_share_of_fold_clean_pct": 0.286,
+        "sse_share_of_fold_all_row_pct": 0.286,
+        "multiday": {
+          "point": -5176708.037,
+          "ci_block_1d": [
+            -10837094.326,
+            -998939.994
+          ],
+          "ci_block_2d": [
+            -10248109.052,
+            -1412842.212
+          ],
+          "ci_block_3d": [
+            -10658822.011,
+            -1713173.409
+          ]
+        },
+        "abs_err_donor_pctiles": [
+          182.0,
+          357.0,
+          640.6,
+          11439.9
+        ],
+        "abs_err_v10_pctiles": [
+          183.7,
+          292.5,
+          502.0,
+          2534.3
+        ],
+        "donor_closer_pct": 46.7,
+        "clipped": {
+          "A_mean_r_d": -2139.3,
+          "B_mean_d2": 210609.3,
+          "full_amplitude_mse_gain": -214887.9,
+          "unrestricted_scale": -0.0102,
+          "best_scalar_mse_gain": 21.7,
+          "rmse_clipped_anchor": 663.6
+        }
+      },
+      "gold_removed_priced": {
+        "n_queries": 20000,
+        "accepted": 2,
+        "accepted_with_aobt": 2,
+        "rmse_v10_on_wrongly_accepted": 2664.7,
+        "rmse_wrong_donor_anchor": 10186.6,
+        "mse_cost_s2_per_row": 96666837.5
+      }
+    },
+    "december": {
+      "fold": "december",
+      "month": "2025-12",
+      "donor_anchor_nonm": {
+        "n_nonm": 1554,
+        "accepted": 65,
+        "ades_in_ten_airports": 261,
+        "accepted_with_aobt": 65,
+        "A_mean_r_d": -27333.7,
+        "B_mean_d2": 243232.4,
+        "full_amplitude_mse_gain": -297899.8,
+        "unrestricted_scale": -0.1124,
+        "best_scalar_mse_gain": 3071.7,
+        "rmse_v10_on_these": 373.8,
+        "rmse_donor_anchor": 661.5,
+        "sse_share_of_fold_clean_pct": 0.131,
+        "sse_share_of_fold_all_row_pct": 0.131,
+        "multiday": {
+          "point": -297899.784,
+          "ci_block_1d": [
+            -671394.375,
+            -73524.367
+          ],
+          "ci_block_2d": [
+            -668037.859,
+            -90707.975
+          ],
+          "ci_block_3d": [
+            -647101.725,
+            -98307.781
+          ]
+        },
+        "abs_err_donor_pctiles": [
+          185.0,
+          599.0,
+          994.2,
+          2041.1
+        ],
+        "abs_err_v10_pctiles": [
+          183.1,
+          332.0,
+          714.7,
+          1032.6
+        ],
+        "donor_closer_pct": 38.5,
+        "clipped": {
+          "A_mean_r_d": -27333.7,
+          "B_mean_d2": 243232.4,
+          "full_amplitude_mse_gain": -297899.8,
+          "unrestricted_scale": -0.1124,
+          "best_scalar_mse_gain": 3071.7,
+          "rmse_clipped_anchor": 661.5
+        }
+      },
+      "gold_removed_priced": {
+        "n_queries": 20000,
+        "accepted": 3,
+        "accepted_with_aobt": 3,
+        "rmse_v10_on_wrongly_accepted": 188.5,
+        "rmse_wrong_donor_anchor": 14612.3,
+        "mse_cost_s2_per_row": 213485211.6
+      }
+    },
+    "january": {
+      "fold": "january",
+      "month": "2025-01",
+      "donor_anchor_nonm": {
+        "n_nonm": 1369,
+        "accepted": 73,
+        "ades_in_ten_airports": 273,
+        "accepted_with_aobt": 73,
+        "A_mean_r_d": -863531.0,
+        "B_mean_d2": 84607474.6,
+        "full_amplitude_mse_gain": -86334536.5,
+        "unrestricted_scale": -0.0102,
+        "best_scalar_mse_gain": 8813.5,
+        "rmse_v10_on_these": 435.2,
+        "rmse_donor_anchor": 9301.8,
+        "sse_share_of_fold_clean_pct": 0.189,
+        "sse_share_of_fold_all_row_pct": 0.079,
+        "multiday": {
+          "point": -86334536.519,
+          "ci_block_1d": [
+            -279917290.62,
+            -2274.639
+          ],
+          "ci_block_2d": [
+            -261344498.024,
+            -20209.719
+          ],
+          "ci_block_3d": [
+            -246560710.426,
+            -47424.979
+          ]
+        },
+        "abs_err_donor_pctiles": [
+          174.0,
+          354.0,
+          804.6,
+          35608.4
+        ],
+        "abs_err_v10_pctiles": [
+          155.1,
+          382.8,
+          699.2,
+          1286.6
+        ],
+        "donor_closer_pct": 47.9,
+        "clipped": {
+          "A_mean_r_d": 94135.2,
+          "B_mean_d2": 285006.3,
+          "full_amplitude_mse_gain": -96736.0,
+          "unrestricted_scale": 0.3303,
+          "best_scalar_mse_gain": 31092.0,
+          "rmse_clipped_anchor": 534.9
+        }
+      },
+      "gold_removed_priced": {
+        "n_queries": 20000,
+        "accepted": 1,
+        "accepted_with_aobt": 1,
+        "rmse_v10_on_wrongly_accepted": 583.6,
+        "rmse_wrong_donor_anchor": 123.0,
+        "mse_cost_s2_per_row": -325508.7
+      }
+    }
+  },
+  "primary": {
+    "endpoint": "paired ALL-ROW january/july MSE at exp-016's ranking month weights; clean and december secondary",
+    "note": "headline arm: the donor anchor substituted on every accepted naturally unmatched nonm row",
+    "all_row": {
+      "july_loo": {
+        "v10": 284.1572,
+        "arm": 293.323,
+        "gain": -9.1658,
+        "mse_gain_s2": -5293.074
+      },
+      "december": {
+        "v10": 204.9218,
+        "arm": 205.2068,
+        "gain": -0.285,
+        "mse_gain_s2": -116.875
+      },
+      "january": {
+        "v10": 337.826,
+        "arm": 393.8648,
+        "gain": -56.0388,
+        "mse_gain_s2": -41003.091
+      }
+    },
+    "clean": {
+      "july_loo": {
+        "v10": 284.1572,
+        "arm": 293.323,
+        "gain": -9.1658
+      },
+      "december": {
+        "v10": 204.9218,
+        "arm": 205.2068,
+        "gain": -0.285
+      },
+      "january": {
+        "v10": 218.1506,
+        "arm": 297.6463,
+        "gain": -79.4957
+      }
+    },
+    "counts": {
+      "july_loo": {
+        "n": 190713,
+        "n_excluded": 0,
+        "n_changed": 195
+      },
+      "december": {
+        "n": 165677,
+        "n_excluded": 0,
+        "n_changed": 65
+      },
+      "january": {
+        "n": 153706,
+        "n_excluded": 2,
+        "n_changed": 73
+      }
+    },
+    "board_all_row": {
+      "v10": 309.0772,
+      "arm": 341.521,
+      "gain": -32.4438,
+      "gain_exact": -32.44382053656199
+    },
+    "board_clean": {
+      "v10": 257.0248,
+      "arm": 295.2455,
+      "gain": -38.2207,
+      "gain_exact": -38.22065196404145
+    },
+    "december_all_row": {
+      "v10": 204.9218,
+      "arm": 205.2068,
+      "gain": -0.285,
+      "mse_gain_s2": -116.875
+    },
+    "december_clean": {
+      "v10": 204.9218,
+      "arm": 205.2068,
+      "gain": -0.285
+    }
+  },
+  "wall_s": 7.5
+}

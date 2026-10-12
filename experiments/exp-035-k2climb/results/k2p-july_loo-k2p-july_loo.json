@@ -1,0 +1,26 @@
+{
+ "tag": "k2p-july_loo",
+ "mechanism": "",
+ "rounds": 1200,
+ "clip_z": 6000.0,
+ "params": {
+  "num_threads": 4
+ },
+ "seeds": 1,
+ "seed_start": 0,
+ "extras": "phi",
+ "ghost_mode": "mixbase",
+ "main_model": "both",
+ "exact_rounds": 300,
+ "folds": {
+  "july_loo": {
+   "rmse": 292.6679758727839,
+   "rmse_lo": 251.3373675857095,
+   "rmse_hi": 2569.000412625758,
+   "n": 190713,
+   "n_hi": 656,
+   "secs": 2665.2,
+   "n_train": 1804320
+  }
+ }
+}

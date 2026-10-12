@@ -1,0 +1,88 @@
+{
+  "C2-cat": {
+    "capped_at_s": 1200,
+    "config": "run.py cat depth 8 rounds-m11 5325 --cpu",
+    "hit_the_cap": true,
+    "kept": false,
+    "log": "experiments/exp-047-queue/logs/fold-C2-cat.log",
+    "projection": "no iteration marker in 20.0 min of output; projection unavailable",
+    "returncode": -9,
+    "wall_min": 20.0,
+    "wall_s": 1200.2
+  },
+  "D1-winter": {
+    "capped_at_s": null,
+    "checks": {
+      "bytes": 2757960,
+      "columns_are_the_contract": true,
+      "dtypes": [
+        "float64",
+        "object",
+        "float64",
+        "float64"
+      ],
+      "duplicate_ids": 0,
+      "ids_identical_to_the_block": true,
+      "in_block_not_in_vector": 0,
+      "in_vector_not_in_block": 0,
+      "n_scored": 162332,
+      "rmse": 234.6331,
+      "rows": 162332,
+      "rows_lost_to_the_join": 0,
+      "sha256": "65ee7d938bcd878921e04265b44b96995b17456e262f10862d0d40bd6b3ddd55",
+      "stack_members_ok": true,
+      "y_pred_nulls": 0
+    },
+    "config": "winter_arm.py --seeds 7,107,207 --ds-columns deice (3 seeds)",
+    "hit_the_cap": false,
+    "kept": true,
+    "log": "experiments/exp-047-queue/logs/fold-D1-winter.log",
+    "path": "experiments/exp-047-queue/oof/D1-winter--november_loo.parquet",
+    "returncode": 0,
+    "wall_min": 3.2,
+    "wall_s": 192.9
+  },
+  "L2-hub": {
+    "capped_at_s": 1200,
+    "config": "run.py lgb huber-1200 rounds-m11 8725",
+    "hit_the_cap": true,
+    "kept": false,
+    "log": "experiments/exp-047-queue/logs/fold-L2-hub.log",
+    "projection": "no iteration marker in 20.0 min of output; projection unavailable",
+    "returncode": -9,
+    "wall_min": 20.0,
+    "wall_s": 1200.1
+  },
+  "T-tailv2": {
+    "capped_at_s": null,
+    "checks": {
+      "bytes": 2757944,
+      "columns_are_the_contract": true,
+      "dtypes": [
+        "float64",
+        "object",
+        "float64",
+        "float64"
+      ],
+      "duplicate_ids": 0,
+      "ids_identical_to_the_block": true,
+      "in_block_not_in_vector": 0,
+      "in_vector_not_in_block": 0,
+      "n_scored": 162332,
+      "rmse": 219.6794,
+      "rows": 162332,
+      "rows_lost_to_the_join": 0,
+      "sha256": "2bb946a9fad1eb3d6e5bb50c69633f58b5876c217259c06a5fa9131ccf938a57",
+      "stack_members_ok": true,
+      "y_pred_nulls": 0
+    },
+    "config": "deliver.py, OOF v3 head, one fold",
+    "hit_the_cap": false,
+    "kept": true,
+    "log": "experiments/exp-047-queue/logs/fold-T-tailv2.log",
+    "path": "experiments/exp-047-queue/oof/T-tailv2--november_loo.parquet",
+    "returncode": 0,
+    "wall_min": 2.8,
+    "wall_s": 170.7
+  }
+}

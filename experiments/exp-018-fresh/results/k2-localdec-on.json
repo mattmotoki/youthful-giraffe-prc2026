@@ -1,0 +1,24 @@
+{
+ "tag": "k2-localdec-on",
+ "mechanism": "",
+ "rounds": 400,
+ "clip_z": null,
+ "params": {
+  "num_threads": 3
+ },
+ "seeds": 1,
+ "ghost_mode": "mixbase",
+ "main_model": "lgb",
+ "exact_rounds": 300,
+ "folds": {
+  "december": {
+   "rmse": 209.2087489920699,
+   "rmse_lo": 196.69607373501523,
+   "rmse_hi": 1806.2937914581703,
+   "n": 165677,
+   "n_hi": 261,
+   "secs": 380.8,
+   "n_train": 1829235
+  }
+ }
+}

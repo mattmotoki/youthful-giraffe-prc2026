@@ -1,0 +1,480 @@
+{
+  "schema": 3,
+  "form": "stack8",
+  "source_key": "037",
+  "source_observed": {
+    "key": "037",
+    "pack": {
+      "path": "experiments/exp-170-diverse/results/pack-mixed30r6-pair-037/PACK.json",
+      "sha256": "8864f1d224da81a728188a5f26d0d7211888f55e75a8285f57eb8c3f54263af6"
+    },
+    "vector": {
+      "path": "experiments/exp-170-diverse/results/pack-mixed30r6-pair-037/members-final.parquet",
+      "sha256": "26f593fcca12452dfa5dd9cffcdfea47392763007a2b1df309ccd01e55e12ddf"
+    },
+    "review": {
+      "path": "experiments/exp-170-diverse/REVIEW-MIXED30-037.md",
+      "sha256": "e37ac16815efde09c95c22e0675a406cb9b98c3a0e4b103b74a038eb26a372a0"
+    },
+    "verdict_lines": [
+      {
+        "line": 3,
+        "verdict": "PASS",
+        "text": "Fresh-context correctness review: **PASS**, no blocking finding. Reviewer: `claude-opus-5-5` at"
+      }
+    ],
+    "observed_at_utc": "2026-10-02T22:09:58.329379+00:00"
+  },
+  "parent": {
+    "path": "experiments/exp-169-stack-plan/exp169-stack7-HB3u-laneC-c73-c55.parquet",
+    "sha256": "89f3c83cd1d689f1cf3a193e3c17a0e7e64119ddc1c76b48e7631fba33d1f381"
+  },
+  "parent_transition": {
+    "path": "experiments/exp-169-stack-plan/inputs/stack7-022/030/lane-c-swap.json",
+    "sha256": "fd60c4df2c4c27f899f31404179709169ff4ca9e39546e25510c0cb5154c6400"
+  },
+  "parent_review": {
+    "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/PARENT-PASS.log",
+    "sha256": "2809d1984e03a0704d93d712f006fa28e0fb3391fb4d3c5af3a9cbc68d156953"
+  },
+  "spec": {
+    "path": "experiments/exp-169-stack-plan/SPEC-023.md",
+    "sha256": "4e30eb76850c29e4d83b218f0400148c89ffed3da2ca65d01fa0a6ea2aed9632"
+  },
+  "desk_approval": {
+    "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/desk-approval.json",
+    "sha256": "f2a366924470e8fc36b66e299cb8f39cc6a0378271df07ca8915dd22b53ed180"
+  },
+  "pack": {
+    "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/PACK.json",
+    "sha256": "8864f1d224da81a728188a5f26d0d7211888f55e75a8285f57eb8c3f54263af6"
+  },
+  "source_review": {
+    "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/SOURCE-PASS.md",
+    "sha256": "e37ac16815efde09c95c22e0675a406cb9b98c3a0e4b103b74a038eb26a372a0"
+  },
+  "mlp_pack": {
+    "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/MLP-MEMBER.json",
+    "sha256": "5ffc057af6fd5ccde5ba479420817b494e4fbbc09ee394641b8d77830b557de0"
+  },
+  "mlp_review": {
+    "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/MLP-PASS.md",
+    "sha256": "eaef5aa48fae5ae1d9fd32577cf16cd15d465ef943ec98bdbd040506ca3dd330"
+  },
+  "fold_weights": {
+    "ordinary": {
+      "7": {
+        "method": "practice_scaled_wls",
+        "columns": [
+          "g",
+          "mlp",
+          "sequence021",
+          "sequence_new",
+          "control"
+        ],
+        "coefficients": [
+          0.09910717410311146,
+          0.005878541248016504,
+          -0.03794793050330808,
+          0.4680201702059907,
+          -0.13910718263782781
+        ],
+        "trained_on_months": [
+          1
+        ],
+        "fit_rows": 81288,
+        "xtwx": [
+          [
+            1805.1545333671454,
+            360.62231247497135,
+            944.8912116300005,
+            878.3284842709093,
+            607.5926129948724
+          ],
+          [
+            360.62231247497135,
+            1267.8931066923433,
+            456.4557114662903,
+            468.4303249236456,
+            274.0139700918339
+          ],
+          [
+            944.8912116300005,
+            456.4557114662903,
+            1616.603509321646,
+            1345.8382867597445,
+            806.5866259404359
+          ],
+          [
+            878.3284842709093,
+            468.4303249236456,
+            1345.8382867597445,
+            1693.62700669194,
+            495.56899944155697
+          ],
+          [
+            607.5926129948724,
+            274.0139700918339,
+            806.5866259404359,
+            495.56899944155697,
+            1967.8898748101976
+          ]
+        ],
+        "xtwr": [
+          471.7219818481237,
+          206.98959963465958,
+          552.6595048752281,
+          762.4449558450549,
+          -10.592032679424447
+        ],
+        "condition_number": 16.899121433127156
+      },
+      "1": {
+        "method": "practice_scaled_wls",
+        "columns": [
+          "g",
+          "mlp",
+          "sequence021",
+          "sequence_new",
+          "control"
+        ],
+        "coefficients": [
+          0.071266066422263,
+          0.11257321815255221,
+          0.039622435091239465,
+          0.5121692116683393,
+          -0.24002272662576882
+        ],
+        "trained_on_months": [
+          7
+        ],
+        "fit_rows": 97889,
+        "xtwx": [
+          [
+            3912.055157083029,
+            869.0351402494957,
+            2560.432049456173,
+            2430.4202746343294,
+            1392.0754634313814
+          ],
+          [
+            869.0351402494957,
+            3256.0668924609404,
+            951.433471915693,
+            1048.4130606111692,
+            319.4801198368963
+          ],
+          [
+            2560.432049456173,
+            951.433471915693,
+            3821.0398992345863,
+            3398.093959180287,
+            1663.257339269074
+          ],
+          [
+            2430.4202746343294,
+            1048.4130606111692,
+            3398.093959180287,
+            4126.974983277547,
+            889.7527711556721
+          ],
+          [
+            1392.0754634313814,
+            319.4801198368963,
+            1663.257339269074,
+            889.7527711556721,
+            4499.170767388351
+          ]
+        ],
+        "xtwr": [
+          1388.7341054634646,
+          926.4591569072553,
+          1782.1562962829319,
+          2326.0191198484326,
+          -423.12430612826154
+        ],
+        "condition_number": 23.012917029164146
+      }
+    },
+    "clock": {
+      "7": {
+        "method": "practice_scaled_wls",
+        "columns": [
+          "g",
+          "mlp",
+          "sequence021",
+          "sequence_new"
+        ],
+        "coefficients": [
+          -0.03957369784978838,
+          0.2468274154047627,
+          -0.36204433153625054,
+          0.7523752901547559
+        ],
+        "trained_on_months": [
+          1
+        ],
+        "fit_rows": 69184,
+        "xtwx": [
+          [
+            3671.985538964488,
+            -161.26359100895672,
+            34.55745845731381,
+            -103.07744617044968
+          ],
+          [
+            -161.26359100895672,
+            483.0458570213683,
+            264.57305338874454,
+            325.7298059300368
+          ],
+          [
+            34.55745845731381,
+            264.57305338874454,
+            515.802535082428,
+            395.11170489612203
+          ],
+          [
+            -103.07744617044968,
+            325.7298059300368,
+            395.11170489612203,
+            468.5485688281586
+          ]
+        ],
+        "xtwr": [
+          -275.18257701307795,
+          274.8946400273533,
+          174.46521613038195,
+          293.9546141702989
+        ],
+        "condition_number": 46.59902376546504
+      },
+      "1": {
+        "method": "practice_scaled_wls",
+        "columns": [
+          "g",
+          "mlp",
+          "sequence021",
+          "sequence_new"
+        ],
+        "coefficients": [
+          -0.053070964157326275,
+          0.333089812859373,
+          -0.282559602072074,
+          0.6142973882492883
+        ],
+        "trained_on_months": [
+          7
+        ],
+        "fit_rows": 87375,
+        "xtwx": [
+          [
+            5749.416831932478,
+            -156.67869371996596,
+            226.32482603319926,
+            -26.279031960262436
+          ],
+          [
+            -156.67869371996596,
+            975.0345275984464,
+            530.0319486739238,
+            610.1020921392463
+          ],
+          [
+            226.32482603319926,
+            530.0319486739238,
+            1035.563359443857,
+            791.3335606669904
+          ],
+          [
+            -26.279031960262436,
+            610.1020921392463,
+            791.3335606669904,
+            904.6088778287475
+          ]
+        ],
+        "xtwr": [
+          -437.408564865131,
+          558.1076629315979,
+          358.0427346498306,
+          536.7134202880017
+        ],
+        "condition_number": 37.413425788713226
+      }
+    }
+  },
+  "ranking_weights": {
+    "ordinary": {
+      "method": "practice_scaled_wls",
+      "columns": [
+        "g",
+        "mlp",
+        "sequence021",
+        "sequence_new",
+        "control"
+      ],
+      "coefficients": [
+        0.08379905253260221,
+        0.08356942504683426,
+        0.013539343441652411,
+        0.5008813402552532,
+        -0.21311172972412068
+      ],
+      "trained_on_months": [
+        1,
+        7
+      ],
+      "fit_rows": 179177,
+      "xtwx": [
+        [
+          5717.2096904501805,
+          1229.6574527244666,
+          3505.323261086173,
+          3308.748758905247,
+          1999.6680764262599
+        ],
+        [
+          1229.6574527244666,
+          4523.959999153276,
+          1407.8891833819832,
+          1516.8433855348137,
+          593.4940899287285
+        ],
+        [
+          3505.323261086173,
+          1407.8891833819832,
+          5437.643408556221,
+          4743.932245940035,
+          2469.8439652095103
+        ],
+        [
+          3308.748758905247,
+          1516.8433855348137,
+          4743.932245940035,
+          5820.6019899694875,
+          1385.3217705972227
+        ],
+        [
+          1999.6680764262599,
+          593.4940899287285,
+          2469.8439652095103,
+          1385.3217705972227,
+          6467.060642198558
+        ]
+      ],
+      "xtwr": [
+        1860.4560873115872,
+        1133.4487565419145,
+        2334.81580115816,
+        3088.4640756934855,
+        -433.71633880768564
+      ],
+      "condition_number": 20.766990044696573
+    },
+    "clock": {
+      "method": "practice_scaled_wls",
+      "columns": [
+        "g",
+        "mlp",
+        "sequence021",
+        "sequence_new"
+      ],
+      "coefficients": [
+        -0.04764630422848597,
+        0.30672438300432814,
+        -0.31006208681301595,
+        0.6593081601460484
+      ],
+      "trained_on_months": [
+        1,
+        7
+      ],
+      "fit_rows": 156559,
+      "xtwx": [
+        [
+          9421.40237089697,
+          -317.9422847289238,
+          260.8822844905126,
+          -129.3564781307121
+        ],
+        [
+          -317.9422847289238,
+          1458.0803846198185,
+          794.6050020626676,
+          935.8318980692801
+        ],
+        [
+          260.8822844905126,
+          794.6050020626676,
+          1551.36589452628,
+          1186.4452655631096
+        ],
+        [
+          -129.3564781307121,
+          935.8318980692801,
+          1186.4452655631096,
+          1373.1574466569089
+        ]
+      ],
+      "xtwr": [
+        -712.5911418782091,
+        833.0023029589516,
+        532.5079507802129,
+        830.6680344583009
+      ],
+      "condition_number": 40.37021948666095
+    }
+  },
+  "splits": {
+    "fold": {
+      "sequence_new": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/sequence-fold.parquet",
+        "sha256": "9d957f11e66f6063c7391c5c144571282cb4872902ec37f54db9c3b06d49d405"
+      },
+      "sequence_receipt": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/sequence-fold-FIT.json",
+        "sha256": "6570bcda1f2fbf9383fbcf1a1c098b0a574718b6c65d7cc27283e54821fc7706"
+      },
+      "mlp_vector": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/mlp-fold.parquet",
+        "sha256": "fe4558cc807f4128552ac2d54e0aa27e769be3a6b84cadcee6124c6bb188494a"
+      },
+      "matrix": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/matrix-fold.parquet",
+        "sha256": "4a1897b77a8627aaab4855edbbe4e1443ea5928a23288124444f9f146e74adda"
+      },
+      "matrix_digest": "ae61841b977b7a7bcca4b906084eca1e2f34522cf094b66325e85766c3bfca1e",
+      "bundle": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack5-016/bundle-fold.parquet",
+        "sha256": "a5a950ea7f320f2d06d4194c4335ab5526c5fecb2d58f6720b791f048cc0af9a"
+      },
+      "parent_transition_fingerprint": "1a27ae4e753b56e09a2b8d302b7efa32c5b6086858ca2a6459c45c887827fdf5",
+      "base_digest": "5b2083f2058d51047724548cbf028344fef508a89f1ee57a982892eb83f95705"
+    },
+    "ranking": {
+      "sequence_new": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/sequence-ranking.parquet",
+        "sha256": "aef973b3c753ec90b4eedfd87bf0fe77b60926d8f08d597de8d876f0c749a7aa"
+      },
+      "sequence_receipt": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/sequence-ranking-FIT.json",
+        "sha256": "551ba5cbcb3ef1e050cf8f3beef3685af55c3d28a08716ee1b300daed9bc7beb"
+      },
+      "mlp_vector": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/mlp-ranking.parquet",
+        "sha256": "275d7fb36a798d43caaa525ba58e2825b7a9bdbea5624f18495e442d35479ad6"
+      },
+      "matrix": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack8-023/037/matrix-ranking.parquet",
+        "sha256": "c26a0a7de19ae18051e097598b2bba6a10919412971f26db35f59172c78bd94e"
+      },
+      "matrix_digest": "40b89ad3ba154395806857bfadcd4556c2f38020596ec264fe7a0a65d3d6f000",
+      "bundle": {
+        "path": "experiments/exp-169-stack-plan/inputs/stack5-016/bundle-ranking.parquet",
+        "sha256": "15935ef7734a554859634b5e8da3fd9045dbe8b56085379de339471df3b78a9c"
+      },
+      "parent_transition_fingerprint": "6db138d9f6e7d3e165940aa59801113663d2e710f713d72a1b1ae81de7cfd7a8",
+      "base_digest": "5d107bb91475b833e3c777dcbf4c98bd703880b4b5846f7e93871cbff82c5c76"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+ "expect": {
+  "bytes.candidate_sha256": "7b0557a497f8c09e4f56a11352783b9dda37fe1d0579345d4303e4f74d6e7aca",
+  "bytes.class.changed_is_a_subset_of_occupied": true,
+  "bytes.class.changed_rows_outside_occupied": 0,
+  "bytes.class.guard_held": 1573,
+  "bytes.class.guard_held_at_the_expected_airports": 96,
+  "bytes.class.noac_rows": 388,
+  "bytes.class.noac_rows_changed": 0,
+  "bytes.class.occupied": 196256,
+  "bytes.class.occupied_and_not_written": 0,
+  "bytes.class.occupied_at_the_expected_airports": 2346,
+  "bytes.class.occupied_unwritten_rows_that_changed": 0,
+  "bytes.class.rows_missing_for_a_template_key": 0,
+  "bytes.class.writable_at_the_expected_airports": 2250,
+  "bytes.class.written": 196256,
+  "bytes.class.written_and_not_occupied": 0,
+  "bytes.class_vs_previous.newly_occupied": 0,
+  "bytes.class_vs_previous.no_longer_occupied": 0,
+  "bytes.moved.changed_rows_at_the_expected_airports": 2250,
+  "bytes.moved.changed_rows_outside_the_expected_airports": 192431,
+  "bytes.moved.rows_changed": 194681,
+  "bytes.moved.rows_reverted_to_the_baseline": 0,
+  "bytes.template.all_finite": true,
+  "bytes.template.duplicate_keys": 0,
+  "bytes.template.previous_row_order_is_the_template_order": true,
+  "bytes.template.row_order_is_the_template_order": true,
+  "bytes.template.rows": 344841,
+  "bytes.template.rows_at_or_below_zero": 0,
+  "increment.board.all_row_ci95_envelope_over_the_seeds": {
+   "inside": [
+    1.0392209838309256,
+    1.689381950081006
+   ],
+   "tol": 0.0
+  },
+  "increment.board.all_row_gain_s": {
+   "tol": 1e-09,
+   "value": 1.3149906979639354
+  },
+  "increment.board.clean_gain_s": {
+   "tol": 1e-09,
+   "value": 1.6072944639522007
+  },
+  "increment.lit_rule.dark_folds": [],
+  "increment.lit_rule.every_fold_clears_including_dark": true,
+  "increment.lit_rule.every_lit_fold_clears_on_every_seed": true,
+  "increment.per_fold.december.ci95_envelope_over_the_seeds": {
+   "inside": [
+    1386.568209006855,
+    1684.8011153743498
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.december.lit": true,
+  "increment.per_fold.december.mse_gain_s2": {
+   "tol": 1e-09,
+   "value": 1527.3832110199955
+  },
+  "increment.per_fold.january.ci95_envelope_over_the_seeds": {
+   "inside": [
+    686.7842762018644,
+    877.6602021207021
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.january.lit": true,
+  "increment.per_fold.january.mse_gain_s2": {
+   "tol": 1e-09,
+   "value": 776.3629336053701
+  },
+  "increment.per_fold.july_loo.ci95_envelope_over_the_seeds": {
+   "inside": [
+    669.4404766101397,
+    930.1744645056929
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.july_loo.lit": true,
+  "increment.per_fold.july_loo.mse_gain_s2": {
+   "tol": 1e-09,
+   "value": 791.9058327077354
+  },
+  "increment.population.december.rows": 165677,
+  "increment.population.december.rows_moved": 102186,
+  "increment.population.december.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.january.rows": 153706,
+  "increment.population.january.rows_moved": 69839,
+  "increment.population.january.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.july_loo.rows": 190713,
+  "increment.population.july_loo.rows_moved": 88426,
+  "increment.population.july_loo.rows_returned_to_the_base_by_the_hold": 0,
+  "pins.by_fold.december.days_agree": true,
+  "pins.by_fold.december.their_airport_days": 297,
+  "pins.by_fold.january.days_agree": true,
+  "pins.by_fold.january.their_airport_days": 218,
+  "pins.by_fold.july_loo.days_agree": true,
+  "pins.by_fold.july_loo.their_airport_days": 296
+ },
+ "finalised_from": {
+  "board_all_row_gain_s": 1.3149906979639354,
+  "candidate_sha256": "7b0557a497f8c09e4f56a11352783b9dda37fe1d0579345d4303e4f74d6e7aca",
+  "every_fold_interval_clear": true,
+  "serve_report": "experiments/exp-046-surfacefit/analysis/serve-v24.json"
+ },
+ "how_to_run": "OMP_NUM_THREADS=2 ../../.venv/bin/python work/audit.py --head-npz ../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz --arm-npz ../exp-046-surfacefit/work/d-threemonth-bag10-255-free.npz --pins ../exp-046-surfacefit/analysis/fold-population.json --class-vector ../../artifacts/exp-046/class/{month}-v24.parquet --previous-class-vector ../../artifacts/exp-046/class/{month}-v23.parquet --candidate ../../submissions/candidates/exp-046-surface-v10.parquet --previous ../../submissions/uploaded/youthful-giraffe_v18.parquet --baseline ../../submissions/uploaded/youthful-giraffe_v18.parquet --hold '' --changed-expected-at LFPG --expect analysis/audit-expect-v24.json --out analysis/audit-v24.json",
+ "notes_on_the_expectation": "1. The class claims are hard, not carried over by habit: base set v24 changes what the head is FITTED on and nothing about which rows it serves, so occupied, written, guard_held and the two class_vs_previous counts must come back identical to v9's. A difference there is a defect, not an update.\n2. `increment.population.*.rows` are the scored populations at the pins and are likewise unchanged; `rows_moved` counts rows where the ARM differs from the head, and a differently fitted head moves a different number, so it is filled from exp-046-surface-v10's own serve report.\n3. LFPG is the expected airport for the same reason as on v9: v18's head held it and this candidate does not.",
+ "pending": [],
+ "pending_because": "nothing is pending: every figure is filled from analysis/serve-v24.json, the v24 class vector and analysis/threemonth-bag10.json by code/expectv24.py",
+ "sources": {
+  "fold_price": "experiments/exp-046-surfacefit/analysis/threemonth-bag10.json",
+  "hard_claims": "exp-047 analysis/audit-expect-v9.json, the audit that passed on exp-046-surface-v8",
+  "pins": "experiments/exp-046-surfacefit/analysis/fold-population.json",
+  "prediction": "experiments/exp-046-surfacefit/RESULTS.md 47.33 (commit 7c12959, before the fit)",
+  "serve": "experiments/exp-046-surfacefit/analysis/serve-v24.json"
+ },
+ "status": "FINAL. Filled from analysis/serve-v24.json and the v24 class vector after the serve landed. No PENDING, no null.",
+ "the_extension_audit_py_cannot_see": {
+  "1_ranking_members_are_extended": "serve-v24.json fit.info.member_files must be 10 work/d-rank-ext3-placebo{seed}-255.npz. The cache key is seed+leaves and cannot tell one ARM from another (exp-046 RESULTS 45.2), so the distinct stem is what keeps this candidate's members apart from the previous one's",
+  "2_every_ranking_fit_grew": "the fits are reported by serve-v24.json: per_fit has 10 entries, each extra_rows = 290,037, fold_rows 261,775 -> total_fit_rows 551,812 (2.108x); fits_that_carried_it = 10",
+  "3_which_months": "the extension is 2025-11, 2025-10, 2025-03 = 290,037 writable rows, shas in extension.declared, each checked before the fit",
+  "4_why_the_audit_cannot_see_it": "the audit reads BYTES. What the head was fitted on leaves no trace in the parquet, so these three claims are checked against the serve report, not against the candidate"
+ },
+ "the_head_is_pinned_by_its_bytes": {
+  "checked_by": "work/audit.py prints the head path; compare with shasum -a 256",
+  "file": "../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+  "sha256": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684",
+  "why": "the same head v8 was priced over, so the audit's increment is comparable with the v9 audit's line for line. Check this sha BEFORE the audit: if it has moved, the increment is over a different base and the audit itself would not say so."
+ },
+ "the_registered_prediction": {
+  "band_s": [
+   0.36,
+   0.58
+  ],
+  "every_fold_clear_expected": true,
+  "fold_expected_to_fail": "january",
+  "gate": "in-fold, every fold clear, exp-046 rule (a) -- 47.33.1 verifies the form was registered in 47.12 before its data, and 47.36 records that the NEXT panel will not qualify",
+  "inside_the_band": true,
+  "measured": 0.5587645784786446,
+  "point_estimate_board_s": 0.468,
+  "quantity": "the K = 10 THREE-MONTH bag as an in-fold increment over v9's K = 10 head",
+  "registered_in": "exp-046 RESULTS.md 47.33, before the ten fits ran",
+  "the_naive_figure_deliberately_not_registered": 0.612
+ },
+ "what": "candidate exp-046-surface-v10.parquet, exp-046 serve base set v24 = base set v23 with ONE change: every fit on both the fold and the ranking side carries the writable rows of 2025-11, 2025-10 AND 2025-03 (290,037) instead of 2025-11's 99,709 alone.",
+ "why_the_hold_is_empty": "this path serves the bag EVERYWHERE, LFPG included, exactly as v8 does. --hold LFPG would price a different composition."
+}

@@ -1,0 +1,83 @@
+{
+  "entry": "v32",
+  "rmse_s": 242.748,
+  "rows": 344841,
+  "bytes": 4707529,
+  "sha256": "f09f609429c81fd888e19e75e16f51b57978d55cc2639d6161c894da0baaa0de",
+  "submitted_utc": "2026-09-28 00:03:10",
+  "basis": "The committed submission record row 32 and the exp-145 verified composition; private transport receipts are withheld.",
+  "source_pins": {
+    "exp127": "26e76ef0; fit 3871130d; repaired folds a8642305",
+    "exp130": "c5f38c50",
+    "exp134": "fc1d8008",
+    "exp136": "7500f236 (input preparation only)",
+    "exp137": "7500f236"
+  },
+  "v24_weight": {
+    "value": 0.4967252524893474,
+    "numerator": 695883774.1971443,
+    "denominator": 1400943017.7139382,
+    "basis": "2025 calibration folds"
+  },
+  "v32_weight": {
+    "value": 0.12797310003895088,
+    "numerator": 275004129.3617431,
+    "denominator": 2148921369.2411976,
+    "basis": "2025 folds; final kernel serves the full recorded weight"
+  },
+  "final_v32": {
+    "weight_served": 0.12797310003895088,
+    "rows_fit": 2083537,
+    "features": 172,
+    "rounds": 1500,
+    "supported_ranking_rows": 173539
+  },
+  "refit_measured_cpu_hours_about": 21,
+  "fresh_fit_reproduced": false,
+  "probe_uploads_history_only": [
+    26,
+    27,
+    28,
+    29,
+    31,
+    33
+  ],
+  "board_parameter_source": false,
+  "input_package_checks": {
+    "dataset_versions": 7,
+    "recorded_files_matching": 67,
+    "downloaded_files_without_recorded_hash": 3,
+    "mac_sources_matching": 634
+  },
+  "faults": [
+    "v24 folds blend from v12 while ranking serving adds a delta from v22 to v23.",
+    "v23 residual targets inherit held-month labels through older base predictions.",
+    "v24 calibration inherits a label path through its fixed v12 base.",
+    "v32 fold base inherits the v23 and v24 label paths.",
+    "Older stack and extension predictions reuse fold labels.",
+    "No-aircraft-type labels enter ordinary target encodings before noac rows are removed.",
+    "The old local protocol did not gate every winter tail loss.",
+    "v23 fold scoring lacks the LIRF hold and ranking floor.",
+    "v23 ranking preparation omits some mode-4 rows.",
+    "v23 can move rows held by the v22 guard.",
+    "Fold blends do not always use the serving floor.",
+    "The original v24 writer tested changed rows rather than the explicit class.",
+    "The v23 fit exports only its last fold vector; regenerate all folds from primary_fold_predictions.parquet.",
+    "Mac and temporary directory defaults were removed from released stage preparers.",
+    "Moving source refs were replaced by local frozen files; inputs still require rebuilding.",
+    "Private clean-score packaging was removed; clean scores may differ. Original final-kernel naming differed from its run name, and input hash checks do not cover every fitting input."
+  ],
+  "public_specification_hashes": {
+    "exp137": "71ca0e05d8cacaaeeac26667e3d8f73449e0772df17596a4e13d92b2255ce689"
+  },
+  "original_specification_hashes": {
+    "exp137": "5215d8eb9eac19cb6cc82682efc318d4a3cf0e39cef2ad31c68dce9d744c90bf"
+  },
+  "exp137_gate_history": {
+    "frozen_gain_gate_pass": false,
+    "tail_gate_verdict": "FAIL",
+    "positive_point_override": true,
+    "rule": "A positive gain estimate on supported with-clock cells allowed an all-year proxy fit and an update only on those cells; the frozen gain gate did not have to pass.",
+    "source": "experiments/exp-137-withclock-proxies/kaggle/run-v4/final/kernel.py"
+  }
+}

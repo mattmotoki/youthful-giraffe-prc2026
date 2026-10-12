@@ -1,0 +1,96 @@
+{
+ "what": "the BOARD READING 18 template for the v19 slot, one branch per candidate",
+ "how_to_fill_it_in": "work/read_v19.py --branch <candidate> --score <s> --rank <r> --of <n>",
+ "anchor_v18": 246.3605,
+ "second_place": 260.931,
+ "observed_transfer_range": [
+  0.36,
+  2.01
+ ],
+ "transfer_history": {
+  "v13": 1.75,
+  "v14": 1.03,
+  "v15": 2.01,
+  "v16": 0.36,
+  "v17": 0.7,
+  "v18": 1.44
+ },
+ "branches": {
+  "v7": {
+   "candidate": "submissions/candidates/exp-046-surface-v7.parquet",
+   "what": "v7 = v18's bytes + the bag (K = 5, 255) everywhere, LFPG included",
+   "face": 0.22024957054372862,
+   "face_ci": [
+    0.16205881809495679,
+    0.2972785606387432
+   ],
+   "registered_in": "exp-047 RESULTS \u00a77au addendum, 2026-09-09",
+   "status": "LIVE FALLBACK -- v7 goes up unchanged at 00:01 UTC if the K = 10 candidate is not reviewed PASS by 22:00 UTC.  NOT superseded.",
+   "audit": "analysis/audit-v7-bag.json, 52 of 52 AGREE",
+   "band": {
+    "face_s": 0.22024957054372862,
+    "face_ci95": [
+     0.16205881809495679,
+     0.2972785606387432
+    ],
+    "at_face_expectation": 246.1403,
+    "observed_transfer_band": [
+     245.9178,
+     246.2812
+    ],
+    "failure_move_s": 0.0583,
+    "failure_line_score": 246.3022
+   }
+  },
+  "bag10-255": {
+   "candidate": "the K = 10 bag at 255 over v18's bytes, base set v22",
+   "what": "v18's bytes with the K = 10 bag as the head, ranking side bagged at K = 10",
+   "face": 0.242752698659217,
+   "face_ci": [
+    0.18094555432460738,
+    0.3260116493297317
+   ],
+   "registered_in": "exp-047 RESULTS \u00a77ba, 2026-09-09, from exp-046 analysis/bag-10.json",
+   "status": "PRIMARY unless \u00a740.3's cross-fitted gate passes and bag10-511 takes the slot",
+   "audit": "analysis/audit-expect-v9.json, run when the desk serves",
+   "band": {
+    "face_s": 0.242752698659217,
+    "face_ci95": [
+     0.18094555432460738,
+     0.3260116493297317
+    ],
+    "at_face_expectation": 246.1177,
+    "observed_transfer_band": [
+     245.8726,
+     246.2731
+    ],
+    "failure_move_s": 0.0651,
+    "failure_line_score": 246.2954
+   }
+  },
+  "bag10-511": {
+   "candidate": "the paired K = 10 bagged 511 over v18's bytes, base set v22",
+   "what": "v18's bytes with the K = 10 bagged 511 as the head",
+   "face": null,
+   "face_ci": null,
+   "registered_in": "exp-047 RESULTS \u00a77ba -- PARAMETERISED, filled when \u00a740.3's read lands",
+   "status": "CONDITIONAL -- takes the slot only if \u00a740.3's cross-fitted gate passes.  Its face is NOT registered yet, so this branch refuses to read a score.",
+   "audit": "analysis/audit-expect-v10.json"
+  }
+ },
+ "worked_examples": {
+  "v7": {
+   "246.1403": "NO FAILURE CRITERION MET",
+   "246.3021": "NO FAILURE CRITERION MET",
+   "246.3023": "TRANSFER FAILURE -- the move is under the registered line",
+   "246.3605": "NO TRANSFER -- the score is at or above v18's own"
+  },
+  "bag10-255": {
+   "246.1177": "NO FAILURE CRITERION MET",
+   "246.2953": "NO FAILURE CRITERION MET",
+   "246.2955": "TRANSFER FAILURE -- the move is under the registered line",
+   "246.3605": "NO TRANSFER -- the score is at or above v18's own"
+  }
+ },
+ "note": "every figure was fixed before the 00:01 UTC 09-10 slot.  A branch with no registered face refuses to read a score."
+}

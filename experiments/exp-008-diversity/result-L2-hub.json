@@ -1,0 +1,108 @@
+{
+  "name": "L2-hub",
+  "folds": {
+    "july": {
+      "rmse": 322.99442135347795,
+      "rmse_bulk": 281.23331557084117,
+      "rmse_tail": 2723.0349976841226,
+      "rmse_no_nm": 1314.527004250654,
+      "rmse_noac": 4035.9150942134997,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.24447809056017647,
+      "sse_share_no_nm": 0.34166700391269983,
+      "sse_share_noac": 0.2775322137493422,
+      "bias": -0.05112654931923305,
+      "fold": "july",
+      "rounds": 3225,
+      "seeds": [
+        7
+      ],
+      "seconds": 1347,
+      "oof": "experiments/exp-008-diversity/oof/L2-hub-july.parquet",
+      "argv": "--kind lgb --name L2-hub --variant plain --huber-delta 1200 --rounds-m6 3225 --rounds-m11 2100"
+    },
+    "july_loo": {
+      "rmse": 310.8362903644194,
+      "rmse_bulk": 271.7230801813467,
+      "rmse_tail": 2588.075590907424,
+      "rmse_no_nm": 1265.482610417887,
+      "rmse_noac": 3880.0599309161967,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.23845916590532357,
+      "sse_share_no_nm": 0.34190305908581736,
+      "sse_share_noac": 0.2769700651606225,
+      "bias": 0.00015541549295362462,
+      "fold": "july_loo",
+      "rounds": 2100,
+      "seeds": [
+        7
+      ],
+      "seconds": 589,
+      "oof": "experiments/exp-008-diversity/oof/L2-hub-july_loo.parquet",
+      "argv": "--kind lgb --name L2-hub --variant plain --huber-delta 1200 --rounds-m6 3225 --rounds-m11 2100"
+    },
+    "december": {
+      "rmse": 223.6003112308689,
+      "rmse_bulk": 205.876894829501,
+      "rmse_tail": 2207.7565346379074,
+      "rmse_no_nm": 818.0041049540672,
+      "rmse_noac": 2586.9007354164673,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "n_noac": 89,
+      "sse_share_tail": 0.15358041462490804,
+      "sse_share_no_nm": 0.1327215668738311,
+      "sse_share_noac": 0.07190225415214767,
+      "bias": 2.064225757662474,
+      "fold": "december",
+      "rounds": 2100,
+      "seeds": [
+        7
+      ],
+      "seconds": 1046,
+      "oof": "experiments/exp-008-diversity/oof/L2-hub-december.parquet",
+      "argv": "--kind lgb --name L2-hub --variant plain --huber-delta 1200 --rounds-m6 3225 --rounds-m11 2100"
+    },
+    "january": {
+      "rmse": 348.12331514210376,
+      "rmse_bulk": 213.70716069055166,
+      "rmse_tail": 5980.115911199015,
+      "rmse_no_nm": 2862.2269468720133,
+      "rmse_noac": 3625.4378425760915,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "n_noac": 63,
+      "sse_share_tail": 0.6239438707095555,
+      "sse_share_no_nm": 0.6297876040254028,
+      "sse_share_noac": 0.04445334383907162,
+      "bias": 4.460502233329285,
+      "fold": "january",
+      "rounds": 2100,
+      "seeds": [
+        7
+      ],
+      "seconds": 1004,
+      "oof": "experiments/exp-008-diversity/oof/L2-hub-january.parquet",
+      "argv": "--kind lgb --name L2-hub --variant plain --huber-delta 1200 --rounds-m6 3225 --rounds-m11 2100"
+    }
+  },
+  "argv": "--kind lgb --name L2-hub --variant plain --huber-delta 1200 --rounds-m6 3225 --rounds-m11 2100",
+  "argv_history": [
+    "--kind lgb --name L2-hub --variant plain --huber-delta 1200 --rounds-m6 3225 --rounds-m11 2100"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 16,
+  "gpu": "0"
+}

@@ -1,0 +1,41 @@
+{
+  "entry": "v36",
+  "rmse_s": 240.0047,
+  "rows": 344841,
+  "bytes": 4707537,
+  "sha256": "3ae49f67d62a832c6da7a25ac7538dc62273a9c5f2f7815778f451a24ab5c32f",
+  "value_sha256": "f0e9396892997fdf9a7e99bb397f1a7de3d463f2dbb5ff6cdc9dde5ee103c678",
+  "submitted_utc": "2026-09-30 19:08:01",
+  "basis": "Accepted submission row 36: B50, fixed half v35 plus half v32.",
+  "source_pins": {
+    "exp148_blend": "0941d65a6d042281568e264061dda4500ca70100"
+  },
+  "blend": {
+    "a": "v35",
+    "b": "v32",
+    "weight_on_a": 0.5,
+    "weight_on_b": 0.5,
+    "weight_fitted": false,
+    "weight_fixed_before_item_V_score": true
+  },
+  "component_records": [
+    "docs/PUBLIC-MODEL-v35.json",
+    "docs/PUBLIC-MODEL-v32.json"
+  ],
+  "local_selection": {
+    "G_against_v35_s2_per_ranking_row": 855.7,
+    "interval_95": [
+      578.1,
+      1156.6
+    ],
+    "optimistic": true,
+    "reason": "The local v32 reference has inherited label paths."
+  },
+  "board_parameter_source": false,
+  "fresh_fit_reproduced": false,
+  "reproduction_limits": [
+    "A saved-vector replay verifies v35 and the v32 chain, then applies the fixed 0.5 blend; no fresh fit ran.",
+    "Fresh fits need both complete component routes; their input, validation and fit limits remain.",
+    "The blend partner was chosen by entry comparison, including the v34 board loss; the blend weight was fixed before its score."
+  ]
+}

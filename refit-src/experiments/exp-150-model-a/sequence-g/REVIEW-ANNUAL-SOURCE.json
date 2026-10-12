@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "UTC": "2026-10-02T12:37:27.731142+00:00",
+  "reviewer": "fresh-context /root/g3_result_review",
+  "scope": "Annual source correctness only; independent input, CPU smoke, final packet and GPU result reviews remain separate.",
+  "source_sha256": {
+    "model.py": "117214b1e2006f9299057ccf55ab343a2e905a71a4055c8b7e63be89f2c93cc9",
+    "fit.py": "e7b3a6cad301b9c43f8c6f1659fe4dc902d0d21f11ed19ffbc69e136d83a14ad",
+    "prepare.py": "c1f7e45080cc0a8f6651f5dad8569635e68a7789a00983ef560419f04fb4a5eb",
+    "prepare_annual.py": "5e6b21c7ce371df5ddbeeb8789b459adea9f139e181e16363b70b598cdf9659a",
+    "check_annual.py": "eb8fc05cbfdbd4542b67296e5e578daf6cc394f8a980b4e5a0f967d836f4c58d",
+    "annual_job.py": "601020e19b2a37aa9efc53cf42906ca616f7756c483a0cf8193fec5193262a1a",
+    "smoke_annual.py": "f05f16e470eb7d7fbde14322fd1a67064c5272df7be942c01845c775da159927",
+    "run_cpu_annual.py": "6bfa5e2a61f59634611147b0cf953458752450e98e9de5054034b6de10607cd3",
+    "package_annual.py": "cb835845e7293e7b64ab5cacf7d93eb79f094812f8c5c2c81de19d652cee9292",
+    "package.py": "e03a232a40e0584a4a374b16e076cd715993ae0cd7ea59923b3aaa50dc134796",
+    "r4_admission_runtime.py": "73b112c2b39a0e5c3c21426f306feff4d32cdffa4d4837aa4bd5f94ad983f274"
+  },
+  "plan_sha256": "c6e011592cb2bf80141ccb53baa9311d5a1a13794d4efff543a48e1101500978",
+  "handoff_sha256": "17df91b0988223e410e16ed39f6eb0dd0c9a6189decfe184188fc8afa5c91248",
+  "blocking_findings": [],
+  "checks": {
+    "original_prepare_model_fit_bytes_unchanged": true,
+    "copied_runtime_exact_original_bytes": true,
+    "actual_UTC2025_all_twelve_month_loss_and_encoder_ownership": true,
+    "ranking_whitelist_read_without_LABEL_or_BLOCK": true,
+    "ranking_actual_UTC2026_separate_day_year_context": true,
+    "train_owned_encoder_and_exact_label_window_reconstruction": true,
+    "official_v37_344841_exact_ID_set_and_order_contract": true,
+    "seed_settings_fixed12epoch_single_final_fit": true,
+    "benchmark_isolated_weights_allocator_discarded": true,
+    "complete_required_source_and_checker_receipt_link": true,
+    "floor60_no_upper_cap_full_ranking_reload_contract": true,
+    "GPU_allocator10GiB_and_outer_process_group5400s_including_preflight": true,
+    "CPU_lane_nice_thread_memory_timeout_caps": true,
+    "archive_complete_member_hash_verification_and_before_after_pins": true,
+    "tiny_deterministic_year_poison_encoder_whitelist_checks": true,
+    "all_eleven_python_sources_parse": true,
+    "raw_metadata_timestamp_units_normalized_to_frozen_nanoseconds": true,
+    "CPU_retry_preserves_prior_receipt_and_log_with_same_write_once_inputs": true
+  },
+  "verification": "Read-only source and local tiny deterministic checks; no real model fit, GPU use, quality score or remote job was executed by reviewer. GNU timeout execution is prescribed for grind; it was not executed on this Mac.",
+  "no_real_fit_executed": true,
+  "no_quality_score_executed": true,
+  "packet_launch_requires_separate_fresh_PACKET_PASS": true,
+  "previous_source_review": {
+    "path": "REVIEW-ANNUAL-SOURCE-001.json",
+    "sha256": "83f774d5fe764aa81c4296bf1046f555bf53d86232ee67e0702a1b7a4c699f91"
+  },
+  "changes_reviewed": "Only checker raw movement-time normalization to datetime64[ns, UTC], matching frozen events, and CPU attempt-specific receipt/log names. No builder, model, fit or annual driver change. Tiny timestamp-unit regression check passed; full independent data checks must run again."
+}

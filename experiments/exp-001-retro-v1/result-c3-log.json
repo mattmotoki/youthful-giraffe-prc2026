@@ -1,0 +1,46 @@
+{
+  "name": "c3-log",
+  "argv": "--name c3-log --target log --no-submission",
+  "folds": {
+    "july": {
+      "rmse": 585.7942526272368,
+      "rmse_bulk": 256.3386571008457,
+      "rmse_tail": 8984.704980333774,
+      "rmse_no_nm": 3369.240426767096,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.8091722328288612,
+      "sse_share_no_nm": 0.6823824535262321,
+      "bias": -32.14762752847812,
+      "rmse_noac": NaN,
+      "n_noac": 0,
+      "sse_share_noac": NaN,
+      "fold": "july",
+      "best_iteration": 336,
+      "refit_rounds": 395,
+      "seconds": 199,
+      "oof": "experiments/exp-001-retro-v1/oof/c3-log-july.parquet"
+    },
+    "december": {
+      "rmse": 305.2459420123614,
+      "rmse_bulk": 204.77810282750903,
+      "rmse_tail": 5706.8897737731695,
+      "rmse_no_nm": 2204.815778019303,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.5506522980926665,
+      "sse_share_no_nm": 0.5173925364178434,
+      "bias": -19.164316722928678,
+      "rmse_noac": NaN,
+      "n_noac": 0,
+      "sse_share_noac": NaN,
+      "fold": "december",
+      "best_iteration": 437,
+      "refit_rounds": 514,
+      "seconds": 272,
+      "oof": "experiments/exp-001-retro-v1/oof/c3-log-december.parquet"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+ "tag": "k2m-january",
+ "mechanism": "",
+ "rounds": 1200,
+ "clip_z": 6000.0,
+ "params": {
+  "num_threads": 4
+ },
+ "seeds": 1,
+ "seed_start": 0,
+ "extras": "phi,surface,deice",
+ "ghost_mode": "mixbase",
+ "main_model": "both",
+ "exact_rounds": 300,
+ "folds": {
+  "january": {
+   "rmse": 341.45222241466337,
+   "rmse_lo": 197.22650114928908,
+   "rmse_hi": 6064.845770141969,
+   "n": 153706,
+   "n_hi": 325,
+   "secs": 2143.7,
+   "n_train": 1840608
+  }
+ }
+}

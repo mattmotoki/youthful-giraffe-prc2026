@@ -1,0 +1,250 @@
+{
+  "board": {
+    "fifth_month_over_the_feb_panel": {
+      "FLOOR": 0.3452949417489989,
+      "FLOOR_additive": 0.537855040208861,
+      "LIN": 0.3559312500832177,
+      "LIN_additive": 0.537855040208861
+    },
+    "fourth_month_over_the_three_month_head": {
+      "FLOOR": 0.32858563957289266,
+      "FLOOR_additive": 0.537855040208861,
+      "LIN": 0.32858563957289266,
+      "LIN_additive": 0.537855040208861
+    },
+    "one_month_alone": {
+      "FLOOR": 0.8100992033074425,
+      "LIN": 0.8100992033074425
+    }
+  },
+  "board_proxy": {
+    "SHARES_ratio": 1.2580098088646468,
+    "ca_january": 0.0007409598547517275,
+    "cj_july": 0.0009318464575330257,
+    "coefficient_ratio": 1.2576207085406244,
+    "december_weight": 0.0,
+    "held_out_checks": {
+      "two-month full weight": {
+        "error": -0.00040998683313353546,
+        "measured": 0.8492,
+        "predicted": 0.8487900131668664
+      },
+      "two-month one-third weight": {
+        "error": -0.0002051410082207772,
+        "measured": 0.71958,
+        "predicted": 0.7193748589917792
+      }
+    }
+  },
+  "by_fold": {
+    "december": {
+      "aug_distance": 4,
+      "break_even_alone_value_for_a_positive_fourth_month": 392.8547003771223,
+      "crossfit_aug": {
+        "FLOOR": 42.74333333333334,
+        "LIN": 42.74333333333334,
+        "distance": 4,
+        "fitted_on": [
+          "july_loo",
+          "january"
+        ],
+        "intercept": 1185.4433333333334,
+        "slope": -285.675
+      },
+      "crossfit_feb": {
+        "FLOOR": 614.0933333333334,
+        "LIN": 614.0933333333334,
+        "distance": 2,
+        "fitted_on": [
+          "july_loo",
+          "january"
+        ],
+        "intercept": 1185.4433333333334,
+        "slope": -285.675
+      },
+      "feb_distance": 2,
+      "feb_fourth_month_check": {
+        "FLOOR": 112.85605582398284,
+        "LIN": 112.85605582398284
+      },
+      "fifth_month_over_the_feb_panel": {
+        "FLOOR": -128.4557145583235,
+        "FLOOR_additive": 25.67665049538675,
+        "LIN": -128.4557145583235,
+        "LIN_additive": 25.67665049538675,
+        "total4_predicted_FLOOR": 1441.486055823983,
+        "total4_predicted_LIN": 1441.486055823983
+      },
+      "fourth_month_over_the_three_month_head": {
+        "FLOOR": -178.59533597608765,
+        "FLOOR_additive": 25.67665049538675,
+        "LIN": -178.59533597608765,
+        "LIN_additive": 25.67665049538675
+      },
+      "measured_total_3": 1328.63,
+      "one_month_alone": {
+        "FLOOR": 42.74333333333334,
+        "FLOOR_47_37_per_fold_line": 294.2,
+        "LIN": 42.74333333333334,
+        "LIN_47_37_per_fold_line": 294.2
+      },
+      "stack_exponent_p": 0.5144402512498346
+    },
+    "january": {
+      "aug_distance": 5,
+      "break_even_alone_value_for_a_positive_fourth_month": 383.44000060417216,
+      "crossfit_aug": {
+        "FLOOR": 64.51520833333325,
+        "LIN": 64.51520833333325,
+        "distance": 5,
+        "fitted_on": [
+          "july_loo",
+          "december"
+        ],
+        "intercept": 1164.8339583333332,
+        "slope": -220.06375
+      },
+      "crossfit_feb": {
+        "FLOOR": 944.7702083333331,
+        "LIN": 944.7702083333331,
+        "distance": 1,
+        "fitted_on": [
+          "july_loo",
+          "december"
+        ],
+        "intercept": 1164.8339583333332,
+        "slope": -220.06375
+      },
+      "feb_distance": 1,
+      "feb_fourth_month_check": {
+        "FLOOR": 279.1805990248822,
+        "LIN": 279.1805990248822
+      },
+      "fifth_month_over_the_feb_panel": {
+        "FLOOR": -70.70457759957378,
+        "FLOOR_additive": 45.25517487575762,
+        "LIN": -70.70457759957378,
+        "LIN_additive": 45.25517487575762,
+        "total4_predicted_FLOOR": 934.5805990248822,
+        "total4_predicted_LIN": 934.5805990248822
+      },
+      "fourth_month_over_the_three_month_head": {
+        "FLOOR": -158.61896139574787,
+        "FLOOR_additive": 45.25517487575762,
+        "LIN": -158.61896139574787,
+        "LIN_additive": 45.25517487575762
+      },
+      "measured_total_3": 655.4,
+      "one_month_alone": {
+        "FLOOR": 64.51520833333325,
+        "FLOOR_47_37_per_fold_line": -98.6,
+        "LIN": 64.51520833333325,
+        "LIN_47_37_per_fold_line": -575.6
+      },
+      "stack_exponent_p": 0.49617449454575197
+    },
+    "july_loo": {
+      "aug_distance": 1,
+      "break_even_alone_value_for_a_positive_fourth_month": 55.592149690574615,
+      "crossfit_aug": {
+        "FLOOR": 818.0489583333333,
+        "LIN": 818.0489583333333,
+        "distance": 1,
+        "fitted_on": [
+          "december",
+          "january"
+        ],
+        "intercept": 1069.7952083333332,
+        "slope": -251.74624999999995
+      },
+      "crossfit_feb": {
+        "FLOOR": 62.94,
+        "LIN": -188.9360416666666,
+        "distance": 5,
+        "fitted_on": [
+          "december",
+          "january"
+        ],
+        "intercept": 1069.7952083333332,
+        "slope": -251.74624999999995
+      },
+      "feb_distance": 5,
+      "feb_fourth_month_check": {
+        "FLOOR": 4.613690086841757,
+        "LIN": -153.5384153064581
+      },
+      "fifth_month_over_the_feb_panel": {
+        "FLOOR": 426.77008865848154,
+        "FLOOR_additive": 541.2080159013556,
+        "LIN": 438.1843170951893,
+        "LIN_additive": 541.2080159013556,
+        "total4_predicted_FLOOR": 690.1336900868417,
+        "total4_predicted_LIN": 531.9815846935419
+      },
+      "fourth_month_over_the_three_month_head": {
+        "FLOOR": 478.74402329178247,
+        "FLOOR_additive": 541.2080159013556,
+        "LIN": 478.74402329178247,
+        "LIN_additive": 541.2080159013556
+      },
+      "measured_total_3": 685.52,
+      "one_month_alone": {
+        "FLOOR": 818.0489583333333,
+        "FLOOR_47_37_per_fold_line": 855.0,
+        "LIN": 818.0489583333333,
+        "LIN_47_37_per_fold_line": 855.0
+      },
+      "stack_exponent_p": 0.6642994308458218
+    }
+  },
+  "fitted_on": [
+    "2025-11",
+    "2025-10",
+    "2025-03"
+  ],
+  "registered_before": "2025-02 and 2025-08 exist; neither month's data enters any number below, and the rule is cross-fitted so no scored fold's own reading enters its own prediction",
+  "reproduces_47_41_3": {
+    "december": [
+      112.9,
+      112.9
+    ],
+    "january": [
+      279.2,
+      279.2
+    ],
+    "july_loo": [
+      -153.5,
+      4.6
+    ]
+  },
+  "what": "Section 47.45: the Aug read-out, registered before 2025-08 (and 2025-02) exist.",
+  "which_stacking_form": {
+    "december": {
+      "efficiency_additive_error": 251.0387374650079,
+      "efficiency_additive_error_pct": 18.89455585565642,
+      "efficiency_additive_from_the_two_month_calibration": 1579.668737465008,
+      "measured_total_3": 1328.63,
+      "power_law_error": -31.261957931087636,
+      "power_law_error_pct": -2.3529468648974983,
+      "power_law_from_the_two_month_calibration": 1297.3680420689125
+    },
+    "january": {
+      "efficiency_additive_error": 3.5215387154675,
+      "efficiency_additive_error_pct": 0.5373113694640678,
+      "efficiency_additive_from_the_two_month_calibration": 658.9215387154675,
+      "measured_total_3": 655.4,
+      "power_law_error": -118.22667744238697,
+      "power_law_error_pct": -18.038858321999843,
+      "power_law_from_the_two_month_calibration": 537.173322557613
+    },
+    "july_loo": {
+      "efficiency_additive_error": 135.54826112833234,
+      "efficiency_additive_error_pct": 19.77305711406412,
+      "efficiency_additive_from_the_two_month_calibration": 821.0682611283323,
+      "measured_total_3": 685.52,
+      "power_law_error": 31.061065847029454,
+      "power_law_error_pct": 4.531022559083536,
+      "power_law_from_the_two_month_calibration": 716.5810658470294
+    }
+  }
+}

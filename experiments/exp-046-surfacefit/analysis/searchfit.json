@@ -1,0 +1,224 @@
+{
+  "arithmetic_only": "read from analysis/arms.json, capacity.json and guard-arms.json; nothing refitted, no vector loaded",
+  "d11": "board readings appear only in what_is_left, as a diagnosis of the transfer; no arm is ranked by them and nothing is fitted to them",
+  "excluded_by_name": [
+    "placebo",
+    "noobs",
+    "_control"
+  ],
+  "matcher_sha256": "6fdf39519eb0f500c06230e2972d3c8300aa6222ed8d9b003998ddf6e286093b",
+  "ordered_by": "the desk, 2026-09-09, order 6",
+  "steps": {
+    "v13": {
+      "board": {
+        "from": "v12",
+        "observed_delta_s": 14.26000000000002,
+        "over_the_cross_fitted_face": 1.7384559190416302,
+        "over_the_served_face": 1.7609704546174123,
+        "to": "v13"
+      },
+      "board_head_rmse_s": 308.5976571605635,
+      "cross_fitted": {
+        "all_folds_chose_the_same_arm": true,
+        "board_gain_s": 8.202681381683362,
+        "picks": {
+          "december": {
+            "chosen": "arm:c_lgb_shipped_nbr",
+            "its_price_on_the_held_out_fold_s2": 6311.97,
+            "score_on_the_selecting_folds_s2": 4980.01,
+            "selected_on": [
+              "july_loo",
+              "january"
+            ]
+          },
+          "january": {
+            "chosen": "arm:c_lgb_shipped_nbr",
+            "its_price_on_the_held_out_fold_s2": 4845.56,
+            "score_on_the_selecting_folds_s2": 5713.22,
+            "selected_on": [
+              "july_loo",
+              "december"
+            ]
+          },
+          "july_loo": {
+            "chosen": "arm:c_lgb_shipped_nbr",
+            "its_price_on_the_held_out_fold_s2": 5114.46,
+            "score_on_the_selecting_folds_s2": 5578.77,
+            "selected_on": [
+              "december",
+              "january"
+            ]
+          }
+        }
+      },
+      "in_sample_winner": {
+        "arm": "arm:c_lgb_shipped_nbr",
+        "board_gain_s": 8.202681381683362
+      },
+      "pool_size": 6,
+      "search_premium_s": 0.0,
+      "served_by_this_lane": {
+        "arm": "arm:c_lgb_shipped",
+        "board_gain_s": 8.097807639309963,
+        "is_the_in_sample_winner": false
+      },
+      "what": "this lane's whole with-clock update, chosen from the arm table"
+    },
+    "v15_increment": {
+      "board": {
+        "from": "v14",
+        "observed_delta_s": 1.464100000000002,
+        "over_the_cross_fitted_face": 1.429987425385973,
+        "over_the_served_face": 1.8238421544831689,
+        "to": "v15"
+      },
+      "board_head_rmse_s": 300.4998495212535,
+      "cross_fitted": {
+        "all_folds_chose_the_same_arm": true,
+        "board_gain_s": 1.0238551570513437,
+        "picks": {
+          "december": {
+            "chosen": "cap:leaves_255x300_lr050",
+            "its_price_on_the_held_out_fold_s2": 742.78,
+            "score_on_the_selecting_folds_s2": 610.72,
+            "selected_on": [
+              "july_loo",
+              "january"
+            ]
+          },
+          "january": {
+            "chosen": "cap:leaves_255x300_lr050",
+            "its_price_on_the_held_out_fold_s2": 579.53,
+            "score_on_the_selecting_folds_s2": 692.35,
+            "selected_on": [
+              "july_loo",
+              "december"
+            ]
+          },
+          "july_loo": {
+            "chosen": "cap:leaves_255x300_lr050",
+            "its_price_on_the_held_out_fold_s2": 641.92,
+            "score_on_the_selecting_folds_s2": 661.16,
+            "selected_on": [
+              "december",
+              "january"
+            ]
+          }
+        }
+      },
+      "in_sample_winner": {
+        "arm": "cap:leaves_255x300_lr050",
+        "board_gain_s": 1.0238551570513437
+      },
+      "pool_size": 15,
+      "search_premium_s": 0.0,
+      "served_by_this_lane": {
+        "arm": "cap:leaves_127x300_lr050",
+        "board_gain_s": 0.802755872486614,
+        "is_the_in_sample_winner": false
+      },
+      "what": "the step from the predeclared setting to 127 leaves"
+    },
+    "v16_increment": {
+      "board": {
+        "from": "v15",
+        "observed_delta_s": 0.12100000000000932,
+        "over_the_cross_fitted_face": 0.33790131136469115,
+        "over_the_served_face": 0.33790131136469115,
+        "to": "v16"
+      },
+      "board_head_rmse_s": 299.6970936487669,
+      "cross_fitted": {
+        "all_folds_chose_the_same_arm": true,
+        "board_gain_s": 0.3580927209525271,
+        "picks": {
+          "december": {
+            "chosen": "guard:leaves_255x300_lr050+guard995",
+            "its_price_on_the_held_out_fold_s2": 144.95,
+            "score_on_the_selecting_folds_s2": 211.69,
+            "selected_on": [
+              "july_loo",
+              "january"
+            ]
+          },
+          "january": {
+            "chosen": "guard:leaves_255x300_lr050+guard995",
+            "its_price_on_the_held_out_fold_s2": 187.04,
+            "score_on_the_selecting_folds_s2": 190.65,
+            "selected_on": [
+              "july_loo",
+              "december"
+            ]
+          },
+          "july_loo": {
+            "chosen": "guard:leaves_255x300_lr050+guard995",
+            "its_price_on_the_held_out_fold_s2": 236.35,
+            "score_on_the_selecting_folds_s2": 165.99,
+            "selected_on": [
+              "december",
+              "january"
+            ]
+          }
+        }
+      },
+      "in_sample_winner": {
+        "arm": "guard:leaves_255x300_lr050+guard995",
+        "board_gain_s": 0.3580927209525271
+      },
+      "pool_size": 11,
+      "search_premium_s": 0.0,
+      "served_by_this_lane": {
+        "arm": "guard:leaves_255x300_lr050+guard995",
+        "board_gain_s": 0.3580927209525271,
+        "is_the_in_sample_winner": true
+      },
+      "what": "the step from 127 leaves to 255 leaves plus the guard"
+    }
+  },
+  "what": "the search-level cross-fit: the lane's own arm choice made out of fold, so the premium of choosing the winner of a search over three folds becomes visible",
+  "what_is_left": {
+    "formula": "seconds(g, L) = L - sqrt(L**2 - g), about g/(2L)",
+    "per_step": {
+      "v13": {
+        "board_level_s": 262.7418,
+        "face_at_the_fold_level_s": 8.097807639309963,
+        "fold_level_s": 308.5976571605635,
+        "level_multiplier": 1.1805968901556294,
+        "level_times_magnitude": 1.1796524126435048,
+        "magnitude_ratio_order_5": 0.9992,
+        "observed_transfer": 1.7609704546174123,
+        "s2_gain_of_the_served_arm": 4932.354442692667,
+        "still_unexplained_after_both": 1.4927875666962112,
+        "still_unexplained_multiplier": 1.491593336642854,
+        "transported_to_the_board_level_s": 9.56024651604784
+      },
+      "v15_increment": {
+        "board_level_s": 248.2904,
+        "face_at_the_fold_level_s": 0.802755872486614,
+        "fold_level_s": 300.4998495212535,
+        "level_multiplier": 1.211030027535065,
+        "level_times_magnitude": 1.3182061849719182,
+        "magnitude_ratio_order_5": 1.0885,
+        "observed_transfer": 1.8238421544831689,
+        "s2_gain_of_the_served_arm": 481.8116207782441,
+        "still_unexplained_after_both": 1.3835788173926844,
+        "still_unexplained_multiplier": 1.5060255427319371,
+        "transported_to_the_board_level_s": 0.9721614663613991
+      },
+      "v16_increment": {
+        "board_level_s": 246.8263,
+        "face_at_the_fold_level_s": 0.3580927209525271,
+        "fold_level_s": 299.6970936487669,
+        "level_multiplier": 1.2145470842561124,
+        "level_times_magnitude": 1.4003727881472976,
+        "magnitude_ratio_order_5": 1.153,
+        "observed_transfer": 0.33790131136469115,
+        "s2_gain_of_the_served_arm": 214.51046505570412,
+        "still_unexplained_after_both": 0.24129382848958156,
+        "still_unexplained_multiplier": 0.2782117842484875,
+        "transported_to_the_board_level_s": 0.4349204701262295
+      }
+    },
+    "what": "the error LEVEL the same s2 gain is converted at: the folds are a harder population than the 2026 ranking rows, so the identical mean-squared reduction buys more seconds on the board"
+  }
+}

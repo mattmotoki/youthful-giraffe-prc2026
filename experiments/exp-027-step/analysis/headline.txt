@@ -1,0 +1,147 @@
+=== whole population ===
+head = blend-5 rotated hybrid, clean population
+board_clean = 259.1339   july_loo 286.327   december 207.008   january 220.205
+  a  2 s clean step needs    1,033 s^2 of weighted MSE (1.5 % of the budget)
+  a  5 s clean step needs    2,566 s^2 of weighted MSE (3.8 % of the budget)
+  a 10 s clean step needs    5,083 s^2 of weighted MSE (7.6 % of the budget)
+  a 14 s clean step needs    7,060 s^2 of weighted MSE (10.5 % of the budget)
+
+cells = ['regime']   (4 cells)
+         n_board n_july_loo n_january rmse_july_loo rmse_january bias_july_loo bias_january share_pct d_perfect d_debias
+regime                                                                                                                  
+nm_bulk  319,961    172,270   147,691           209          189          +1.8         +9.4     55.41    86.090    0.076
+noac         402        339        63         3,407        3,509        +666.4       +297.3     20.45    28.013    0.881
+nm_late   19,092     14,509     4,583           464          439          +1.3        +26.2     17.40    23.618    0.018
+nonm       4,962      3,595     1,367           535          622         -22.2        +12.5      6.74     8.889    0.011
+
+=== noac rows removed ===
+head = blend-5 rotated hybrid, clean population  [noac rows REMOVED]
+board_clean = 231.2698   july_loo 247.902   december 201.750   january 208.470
+  a  2 s clean step needs      921 s^2 of weighted MSE (1.7 % of the budget)
+  a  5 s clean step needs    2,288 s^2 of weighted MSE (4.3 % of the budget)
+  a 10 s clean step needs    4,525 s^2 of weighted MSE (8.5 % of the budget)
+  a 14 s clean step needs    6,280 s^2 of weighted MSE (11.7 % of the budget)
+
+cells = ['regime']   (3 cells)
+         n_board n_july_loo n_january rmse_july_loo rmse_january bias_july_loo bias_january share_pct d_perfect d_debias
+regime                                                                                                                  
+nm_bulk  319,961    172,270   147,691           209          189          +1.8         +9.4     69.65   103.857    0.085
+nm_late   19,092     14,509     4,583           464          439          +1.3        +26.2     21.88    26.854    0.020
+nonm       4,962      3,595     1,367           535          622         -22.2        +12.5      8.48    10.019    0.013
+
+=== regime x label band ===
+head = blend-5 rotated hybrid, clean population
+board_clean = 259.1339   july_loo 286.327   december 207.008   january 220.205
+  a  2 s clean step needs    1,033 s^2 of weighted MSE (1.5 % of the budget)
+  a  5 s clean step needs    2,566 s^2 of weighted MSE (3.8 % of the budget)
+  a 10 s clean step needs    5,083 s^2 of weighted MSE (7.6 % of the budget)
+  a 14 s clean step needs    7,060 s^2 of weighted MSE (10.5 % of the budget)
+
+cells = ['regime', 'yband']   (23 cells)
+                    n_board n_july_loo n_january rmse_july_loo rmse_january bias_july_loo bias_january share_pct d_perfect d_debias
+regime  yband                                                                                                                      
+nm_bulk 600-1200    204,873    109,788    95,085           152          148         +35.4        +34.1     19.89    27.193    1.391
+        1800-3600    11,374      5,674     5,700           584          456        -417.4       -283.4     13.51    18.138    8.250
+        1200-1800    62,640     35,313    27,327           225          213         -93.5        -70.2     13.14    17.630    2.502
+noac    y>14400          41         35         6         5,471        9,438       -2305.6      -3196.0      6.85     9.033    1.393
+nm_late 1800-3600     3,075      2,182       893           744          586        -383.1       -241.7      6.57     8.655    2.104
+noac    600-1200        137        115        22         3,354        2,290       +2247.3      +1644.9      6.12     8.058    3.630
+nm_late 3600-14400      524        383       141         1,580        1,416       -1088.1       -985.7      5.37     7.060    3.339
+nm_bulk y<600        40,823     21,376    19,447           177          161        +109.3        +93.9      5.07     6.657    2.402
+nonm    3600-14400       56         34        22         4,618        3,893       -4210.2      -3123.2      4.59     6.011    4.632
+nm_bulk 3600-14400      250        118       132         2,302        1,370       -2035.1      -1049.2      3.78     4.950    3.587
+noac    1200-1800        75         70         5         3,372        1,536       +1980.0      +1291.7      3.51     4.594    1.598
+nm_late 600-1200      9,012      6,855     2,157           264          279        +147.8       +158.7      2.81     3.662    1.148
+noac    3600-14400      107         84        23         2,459        1,272       -1914.2       -997.0      2.37     3.087    1.869
+nm_late 1200-1800     5,309      4,227     1,082           298          295         +15.2        +53.6      2.04     2.653    0.023
+noac    1800-3600        21         21         0         3,104            0       +1893.8         +0.0      0.88     1.143    0.425
+nonm    1800-3600       263        161       102           758          896        -586.9       -697.9      0.75     0.978    0.590
+noac    y<600            21         14         7         2,514        3,320       +2185.5      +2598.5      0.72     0.930    0.640
+nonm    600-1200      2,667      1,957       710           220          279         +74.6       +148.9      0.65     0.842    0.149
+nm_late y<600         1,171        861       310           310          319        +231.2       +240.5      0.50     0.643    0.359
+nonm    1200-1800     1,119        886       233           285          385         -95.7         +4.4      0.46     0.598    0.046
+        y<600           857        557       300           281          285        +173.6       +167.6      0.30     0.383    0.142
+nm_late y>14400           1          1         0         5,159            0       -5159.2         +0.0      0.12     0.150    0.150
+nm_bulk y>14400           1          1         0         1,674            0       +1673.6         +0.0      0.01     0.016    0.016
+
+=== regime x take-off-minus-AOBT band (input-readable) ===
+head = blend-5 rotated hybrid, clean population
+board_clean = 259.1339   july_loo 286.327   december 207.008   january 220.205
+  a  2 s clean step needs    1,033 s^2 of weighted MSE (1.5 % of the budget)
+  a  5 s clean step needs    2,566 s^2 of weighted MSE (3.8 % of the budget)
+  a 10 s clean step needs    5,083 s^2 of weighted MSE (7.6 % of the budget)
+  a 14 s clean step needs    7,060 s^2 of weighted MSE (10.5 % of the budget)
+
+cells = ['regime', 'tband']   (16 cells)
+                      n_board n_july_loo n_january rmse_july_loo rmse_january bias_july_loo bias_january share_pct d_perfect d_debias
+regime  tband                                                                                                                        
+nm_bulk t 600-1200    212,398    117,935    94,463           198          165          +1.8         +7.6     31.19    44.184    0.033
+noac    t missing         402        339        63         3,407        3,509        +666.4       +297.3     20.45    28.013    0.881
+nm_bulk t 1200-1800    75,840     38,204    37,636           234          213          +0.7        +22.6     16.36    22.148    0.107
+nm_late t 600-1200     12,316      9,758     2,558           459          395          -0.4        +48.5     10.67    14.211    0.033
+nonm    t missing       4,962      3,595     1,367           535          622         -22.2        +12.5      6.74     8.889    0.011
+nm_bulk t 1800-3600     9,153      3,826     5,327           289          355         +20.0        -22.7      4.27     5.590    0.024
+nm_late t 1200-1800     3,975      3,083       892           468          452          +1.4        +53.8      3.72     4.868    0.014
+nm_bulk t 0-600        22,057     11,990    10,067           180          154          -0.8         -6.0      2.73     3.557    0.002
+nm_late t 0-600         2,072      1,367       705           452          430         +27.1         -9.6      1.78     2.311    0.006
+        t 1800-3600       552        187       365           456          632         +31.7       -125.2      0.79     1.030    0.033
+nm_bulk t 3600-14400      418        244       174           620          645         -16.5        +24.6      0.72     0.933    0.001
+nm_late t<0               153        112        41           815          663        -217.0        -24.3      0.40     0.520    0.030
+nm_bulk t<0                87         66        21           569          541         -41.0       -133.5      0.12     0.154    0.003
+nm_late t 3600-14400       24          2        22           523          621        -194.1        +65.9      0.04     0.050    0.001
+nm_bulk t>14400             1          1         0         1,674            0       +1673.6         +0.0      0.01     0.016    0.016
+        t missing           7          4         3           204          621        +194.9       -264.8      0.01     0.007    0.002
+
+=== airport ===
+head = blend-5 rotated hybrid, clean population
+board_clean = 259.1339   july_loo 286.327   december 207.008   january 220.205
+  a  2 s clean step needs    1,033 s^2 of weighted MSE (1.5 % of the budget)
+  a  5 s clean step needs    2,566 s^2 of weighted MSE (3.8 % of the budget)
+  a 10 s clean step needs    5,083 s^2 of weighted MSE (7.6 % of the budget)
+  a 14 s clean step needs    7,060 s^2 of weighted MSE (10.5 % of the budget)
+
+cells = ['airport']   (10 cells)
+        n_board n_july_loo n_january rmse_july_loo rmse_january bias_july_loo bias_january share_pct d_perfect d_debias
+airport                                                                                                                
+LIRF     26,528     15,211    11,317           663          377         +15.8        +15.5     35.99    51.804    0.037
+LTFM     46,539     25,171    21,368           273          221         -23.5        +21.3     12.64    16.925    0.132
+EGLL     40,210     20,790    19,420           278          229          +9.7        +24.3     11.36    15.159    0.075
+LFPG     39,610     21,712    17,898           247          254          +9.9        +17.1     10.70    14.260    0.041
+LEBL     28,986     16,752    12,234           262          142          -8.8        +12.3      6.05     7.960    0.018
+EHAM     40,949     22,489    18,460           163          200         +10.0        -14.6      5.75     7.564    0.034
+EDDF     36,830     21,334    15,496           187          173         +10.4         +2.4      5.24     6.887    0.014
+LEMD     35,328     18,818    16,510           185          158          +7.0         +8.4      4.58     5.997    0.012
+LSZH     22,346     12,611     9,735           200          210          +5.2         +3.6      4.03     5.269    0.003
+EDDM     27,091     15,825    11,266           179          173          -5.8         +4.1      3.67     4.801    0.004
+
+=== regime x airport, top 20 ===
+head = blend-5 rotated hybrid, clean population
+board_clean = 259.1339   july_loo 286.327   december 207.008   january 220.205
+  a  2 s clean step needs    1,033 s^2 of weighted MSE (1.5 % of the budget)
+  a  5 s clean step needs    2,566 s^2 of weighted MSE (3.8 % of the budget)
+  a 10 s clean step needs    5,083 s^2 of weighted MSE (7.6 % of the budget)
+  a 14 s clean step needs    7,060 s^2 of weighted MSE (10.5 % of the budget)
+
+cells = ['regime', 'airport']   (33 cells)
+                n_board n_july_loo n_january rmse_july_loo rmse_january bias_july_loo bias_january share_pct d_perfect d_debias
+regime  airport                                                                                                                
+noac    LIRF        397        337        60         3,415        3,479        +661.3       +127.1     20.22    27.673    0.837
+nm_bulk LIRF     24,515     13,361    11,154           356          271          +8.9        +14.9     10.88    14.503    0.020
+        LTFM     44,859     23,858    21,001           243          212         -20.8        +20.6     10.15    13.509    0.108
+        EGLL     37,402     18,617    18,785           202          213         +13.3        +22.5      6.94     9.151    0.072
+        LFPG     35,088     18,524    16,564           200          215          +8.6        +17.5      6.51     8.574    0.036
+nm_late LIRF      1,616      1,513       103           838          781         -67.5        +19.6      4.89     6.412    0.039
+nm_bulk LEBL     26,721     14,808    11,913           237          137         -11.9        +10.3      4.57     5.984    0.019
+        EHAM     38,594     20,971    17,623           157          168          +9.0        -13.6      4.40     5.770    0.028
+        LEMD     33,403     17,202    16,201           174          150          +4.4         +9.1      3.83     5.005    0.009
+        EDDF     34,045     19,343    14,702           155          156         +12.8         -1.1      3.58     4.675    0.018
+nm_late LFPG      3,645      2,525     1,120           420          532         +22.2         +6.8      3.30     4.306    0.007
+nm_bulk EDDM     25,102     14,515    10,587           151          145          -7.0         +5.0      2.39     3.120    0.006
+nonm    EGLL        466        338       128         1,162          698        -203.8       +140.5      2.25     2.938    0.093
+nm_late EGLL      2,342      1,835       507           460          466         +11.9        +63.5      2.16     2.820    0.013
+nm_bulk LSZH     20,232     11,071     9,161           159          155          +3.8         +1.5      2.16     2.818    0.001
+nm_late LTFM      1,027        889       138           605          570         -75.1       +140.9      1.61     2.094    0.043
+        EDDF      2,186      1,556       630           387          367          -7.4        +60.2      1.38     1.790    0.013
+        LEBL      1,771      1,516       255           430          279          +6.6        +84.4      1.30     1.694    0.010
+nonm    EHAM        808        515       293           218          836         +26.6       -121.4      0.99     1.280    0.026
+nm_late EDDM      1,752      1,138       614           317          405         +12.9         -5.4      0.93     1.207    0.001

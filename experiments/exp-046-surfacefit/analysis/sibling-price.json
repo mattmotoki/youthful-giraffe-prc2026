@@ -1,0 +1,82 @@
+{
+  "addition_error_s": 9.63633698983224e-06,
+  "difference_is_below_the_refit_floor": true,
+  "difference_s": 0.0014699342067387988,
+  "prices": {
+    "bag_free": {
+      "board_all_row_ci95": [
+        0.16205881809495679,
+        0.2972785606387432
+      ],
+      "board_all_row_gain_s": 0.22024957054372862,
+      "board_clean_gain_s": 0.2689649724647438,
+      "by_fold": {
+        "december": {
+          "ci95": [
+            175.42616833386734,
+            285.88857217081534
+          ],
+          "mse_gain_s2": 226.07966091333805,
+          "rows_moved": 102186
+        },
+        "january": {
+          "ci95": [
+            124.29492922516913,
+            207.626509099704
+          ],
+          "mse_gain_s2": 162.39217339106762,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "ci95": [
+            73.91750688516689,
+            138.41347329407893
+          ],
+          "mse_gain_s2": 107.34850405601257,
+          "rows_moved": 88420
+        }
+      },
+      "every_fold_interval_clear": true,
+      "vector": "experiments/exp-046-surfacefit/work/d-bag5-255-free.npz"
+    },
+    "bag_rider": {
+      "board_all_row_ci95": [
+        0.16009030314353795,
+        0.295171136690903
+      ],
+      "board_all_row_gain_s": 0.21877963633698982,
+      "board_clean_gain_s": 0.2671696041784912,
+      "by_fold": {
+        "december": {
+          "ci95": [
+            176.9637332718595,
+            287.8711177221179
+          ],
+          "mse_gain_s2": 228.22820365445105,
+          "rows_moved": 102186
+        },
+        "january": {
+          "ci95": [
+            124.29492922516913,
+            207.626509099704
+          ],
+          "mse_gain_s2": 162.39217339106762,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "ci95": [
+            71.64250822621814,
+            137.3458793704445
+          ],
+          "mse_gain_s2": 105.77112585412699,
+          "rows_moved": 88420
+        }
+      },
+      "every_fold_interval_clear": true,
+      "vector": "experiments/exp-046-surfacefit/work/d-bag5-255-rider.npz"
+    }
+  },
+  "refit_floor_s": 0.06,
+  "the_desk_estimate_by_addition_s": 0.21877,
+  "what": "The sibling vector priced, so section 37.5 quotes a measurement and not a sum."
+}

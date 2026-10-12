@@ -1,0 +1,1178 @@
+{
+ "what": "the whole-class GBM arm, cross-fitted (\u00a77bg, registered at 2e60e6c)",
+ "form": {
+  "learner": "HistGradientBoostingRegressor(max_iter=800, max_depth=6, learning_rate=0.05, random_state=47)",
+  "pre_processing": "mean-imputed and standardised on the FITTING rows only (work/foldside.py, imported not rewritten)",
+  "arm_columns": [
+   "Nf_n_res_cell",
+   "Nf_n_res_rwy_cell",
+   "Nf_n_res_apt_30m",
+   "Nf_n_res_rwy_30m",
+   "Nf_n_res_rwy_60m",
+   "Nf_n_anom_cell",
+   "Nf_n_anom_rwy_cell",
+   "Nf_n_anom_rwy_30m",
+   "Nf_n_n_cell",
+   "Nf_n_n_rwy_cell",
+   "Nf_n_n_rwy_30m",
+   "Nf_n_res_rwy_minus_apt",
+   "No_n_res_cell",
+   "No_n_res_rwy_cell",
+   "No_n_res_apt_30m",
+   "No_n_res_rwy_30m",
+   "No_n_res_rwy_60m",
+   "No_n_anom_cell",
+   "No_n_anom_rwy_cell",
+   "No_n_anom_rwy_30m",
+   "No_n_n_cell",
+   "No_n_n_rwy_cell",
+   "No_n_n_rwy_30m",
+   "No_n_res_rwy_minus_apt"
+  ],
+  "features": 24,
+  "population": "the whole class, --rows unmatched",
+  "fit_rows": "--fit-rows all on the rotation folds",
+  "block": "REBUILT in memory, matcher 122c7d84 (never the emission)"
+ },
+ "the_gate_is_the_raw_read": true,
+ "1_the_class_read": {
+  "july_loo": {
+   "fit_rows": 165677,
+   "gbm_raw": {
+    "rows": 102343,
+    "mse_gain_s2": -138.86,
+    "ci95_s2": [
+     -598.21,
+     321.6
+    ],
+    "clear_of_zero": false
+   },
+   "gbm_trimmed_12h": {
+    "rows": 102341,
+    "mse_gain_s2": -123.89,
+    "ci95_s2": [
+     -575.74,
+     306.3
+    ],
+    "clear_of_zero": false
+   },
+   "ridge_raw": {
+    "rows": 102343,
+    "mse_gain_s2": 450.18,
+    "ci95_s2": [
+     250.69,
+     656.26
+    ],
+    "clear_of_zero": true
+   },
+   "T7i_on_the_pre_handshake_block": 222.0,
+   "registered_prediction_band": [
+    170,
+    290
+   ],
+   "inside_the_registered_band": false,
+   "the_trim_direction": "UP",
+   "rows_trimmed": 2,
+   "gbm_over_the_registered_ridge": {
+    "raw": {
+     "mean_s2": -589.04,
+     "ci95_s2": [
+      -989.29,
+      -207.93
+     ],
+     "clear_of_zero": false
+    },
+    "trimmed_12h": {
+     "mean_s2": -573.7,
+     "ci95_s2": [
+      -970.83,
+      -196.9
+     ],
+     "clear_of_zero": false
+    },
+    "rms_difference_of_the_two_corrections_s": 40.16,
+    "rms_gbm_s": 45.09,
+    "rms_ridge_s": 19.98
+   }
+  },
+  "december": {
+   "fit_rows": 190713,
+   "gbm_raw": {
+    "rows": 63976,
+    "mse_gain_s2": 235.78,
+    "ci95_s2": [
+     -461.03,
+     1133.72
+    ],
+    "clear_of_zero": false
+   },
+   "gbm_trimmed_12h": {
+    "rows": 63975,
+    "mse_gain_s2": 234.9,
+    "ci95_s2": [
+     -463.05,
+     1146.48
+    ],
+    "clear_of_zero": false
+   },
+   "ridge_raw": {
+    "rows": 63976,
+    "mse_gain_s2": -316.46,
+    "ci95_s2": [
+     -822.74,
+     86.36
+    ],
+    "clear_of_zero": false
+   },
+   "T7i_on_the_pre_handshake_block": 233.0,
+   "registered_prediction_band": [
+    150,
+    320
+   ],
+   "inside_the_registered_band": true,
+   "the_trim_direction": "DOWN",
+   "rows_trimmed": 1,
+   "gbm_over_the_registered_ridge": {
+    "raw": {
+     "mean_s2": 552.24,
+     "ci95_s2": [
+      19.93,
+      1217.53
+     ],
+     "clear_of_zero": true
+    },
+    "trimmed_12h": {
+     "mean_s2": 551.89,
+     "ci95_s2": [
+      28.74,
+      1208.44
+     ],
+     "clear_of_zero": true
+    },
+    "rms_difference_of_the_two_corrections_s": 38.28,
+    "rms_gbm_s": 41.32,
+    "rms_ridge_s": 37.27
+   }
+  },
+  "january": {
+   "fit_rows": 356390,
+   "gbm_raw": {
+    "rows": 84202,
+    "mse_gain_s2": 237.08,
+    "ci95_s2": [
+     -11.35,
+     549.06
+    ],
+    "clear_of_zero": false
+   },
+   "gbm_trimmed_12h": {
+    "rows": 84198,
+    "mse_gain_s2": 194.84,
+    "ci95_s2": [
+     -42.38,
+     479.2
+    ],
+    "clear_of_zero": false
+   },
+   "ridge_raw": {
+    "rows": 84202,
+    "mse_gain_s2": 230.33,
+    "ci95_s2": [
+     65.26,
+     408.13
+    ],
+    "clear_of_zero": true
+   },
+   "T7i_on_the_pre_handshake_block": 134.0,
+   "registered_prediction_band": [
+    80,
+    190
+   ],
+   "inside_the_registered_band": false,
+   "the_trim_direction": "DOWN",
+   "rows_trimmed": 4,
+   "gbm_over_the_registered_ridge": {
+    "raw": {
+     "mean_s2": 6.76,
+     "ci95_s2": [
+      -264.92,
+      327.84
+     ],
+     "clear_of_zero": false
+    },
+    "trimmed_12h": {
+     "mean_s2": 2.12,
+     "ci95_s2": [
+      -249.71,
+      309.31
+     ],
+     "clear_of_zero": false
+    },
+    "rms_difference_of_the_two_corrections_s": 24.81,
+    "rms_gbm_s": 24.73,
+    "rms_ridge_s": 19.87
+   }
+  }
+ },
+ "2_the_cross_fit": {
+  "rule": "\u00a733.3: for each scored fold f the arm is taken on f ONLY IF, on BOTH other folds g, the arm's class interval is clear of zero on g; otherwise f's gain is exactly zero.",
+  "clear_of_zero_by_fold": {
+   "july_loo": false,
+   "december": false,
+   "january": false
+  },
+  "taken_by_fold": {
+   "july_loo": false,
+   "december": false,
+   "january": false
+  },
+  "folds_taken": [],
+  "the_structural_note_registered_in_7bg": "with three folds one crossing fold zeroes the other two, so at most the crossing fold itself can be taken."
+ },
+ "3_the_reach_split": {
+  "july_loo": {
+   "reached": {
+    "rows": 26032,
+    "mse_gain_s2": 534.26,
+    "ci95_s2": [
+     -919.23,
+     2020.34
+    ],
+    "clear_of_zero": false,
+    "share_of_the_class": 0.2544,
+    "ridge_on_the_same_rows": 1163.82,
+    "contribution_to_the_class_s2": 135.9
+   },
+   "unreached": {
+    "rows": 76311,
+    "mse_gain_s2": -368.49,
+    "ci95_s2": [
+     -752.89,
+     -1.23
+    ],
+    "clear_of_zero": false,
+    "share_of_the_class": 0.7456,
+    "ridge_on_the_same_rows": 206.73,
+    "contribution_to_the_class_s2": -274.76
+   },
+   "cells": {
+    "EDDF/reached": {
+     "rows": 4065,
+     "mse_gain_s2": 5893.24,
+     "ci95_s2": [
+      3979.47,
+      8173.59
+     ],
+     "clear_of_zero": true
+    },
+    "EDDM/unreached": {
+     "rows": 9820,
+     "mse_gain_s2": 181.15,
+     "ci95_s2": [
+      -184.14,
+      636.35
+     ],
+     "clear_of_zero": false
+    },
+    "EGLL/reached": {
+     "rows": 3933,
+     "mse_gain_s2": -3670.57,
+     "ci95_s2": [
+      -5736.1,
+      -1706.05
+     ],
+     "clear_of_zero": false
+    },
+    "EGLL/unreached": {
+     "rows": 15509,
+     "mse_gain_s2": -1245.23,
+     "ci95_s2": [
+      -1845.65,
+      -709.68
+     ],
+     "clear_of_zero": false
+    },
+    "EHAM/reached": {
+     "rows": 1270,
+     "mse_gain_s2": 855.45,
+     "ci95_s2": [
+      -502.04,
+      2744.63
+     ],
+     "clear_of_zero": false
+    },
+    "LEBL/reached": {
+     "rows": 2534,
+     "mse_gain_s2": 3794.8,
+     "ci95_s2": [
+      856.91,
+      7431.14
+     ],
+     "clear_of_zero": true
+    },
+    "LEMD/reached": {
+     "rows": 9373,
+     "mse_gain_s2": 48.8,
+     "ci95_s2": [
+      -1151.18,
+      1395.26
+     ],
+     "clear_of_zero": false
+    },
+    "LEMD/unreached": {
+     "rows": 5297,
+     "mse_gain_s2": -3912.71,
+     "ci95_s2": [
+      -6120.23,
+      -2043.08
+     ],
+     "clear_of_zero": false
+    },
+    "LFPG/reached": {
+     "rows": 1268,
+     "mse_gain_s2": -1078.51,
+     "ci95_s2": [
+      -1913.17,
+      -145.99
+     ],
+     "clear_of_zero": false
+    },
+    "LFPG/unreached": {
+     "rows": 19963,
+     "mse_gain_s2": -566.36,
+     "ci95_s2": [
+      -1017.58,
+      -120.05
+     ],
+     "clear_of_zero": false
+    },
+    "LIRF/reached": {
+     "rows": 1680,
+     "mse_gain_s2": -8157.96,
+     "ci95_s2": [
+      -28512.85,
+      12557.94
+     ],
+     "clear_of_zero": false
+    },
+    "LSZH/reached": {
+     "rows": 1684,
+     "mse_gain_s2": 4345.65,
+     "ci95_s2": [
+      931.88,
+      8873.49
+     ],
+     "clear_of_zero": true
+    },
+    "LTFM/unreached": {
+     "rows": 25171,
+     "mse_gain_s2": 696.87,
+     "ci95_s2": [
+      -114.12,
+      1461.07
+     ],
+     "clear_of_zero": false
+    }
+   }
+  },
+  "december": {
+   "reached": {
+    "rows": 21866,
+    "mse_gain_s2": -248.45,
+    "ci95_s2": [
+     -1194.72,
+     462.32
+    ],
+    "clear_of_zero": false,
+    "share_of_the_class": 0.3418,
+    "ridge_on_the_same_rows": -1422.82,
+    "contribution_to_the_class_s2": -84.92
+   },
+   "unreached": {
+    "rows": 42110,
+    "mse_gain_s2": 487.22,
+    "ci95_s2": [
+     -325.59,
+     1744.8
+    ],
+    "clear_of_zero": false,
+    "share_of_the_class": 0.6582,
+    "ridge_on_the_same_rows": 258.03,
+    "contribution_to_the_class_s2": 320.7
+   },
+   "cells": {
+    "EDDF/reached": {
+     "rows": 1415,
+     "mse_gain_s2": 5010.24,
+     "ci95_s2": [
+      1818.2,
+      10206.39
+     ],
+     "clear_of_zero": true
+    },
+    "EGLL/reached": {
+     "rows": 9609,
+     "mse_gain_s2": -1219.81,
+     "ci95_s2": [
+      -2851.87,
+      19.0
+     ],
+     "clear_of_zero": false
+    },
+    "EGLL/unreached": {
+     "rows": 1378,
+     "mse_gain_s2": -783.78,
+     "ci95_s2": [
+      -2246.98,
+      419.75
+     ],
+     "clear_of_zero": false
+    },
+    "EHAM/reached": {
+     "rows": 1157,
+     "mse_gain_s2": 433.5,
+     "ci95_s2": [
+      -622.47,
+      1208.07
+     ],
+     "clear_of_zero": false
+    },
+    "LEBL/reached": {
+     "rows": 1071,
+     "mse_gain_s2": 2212.95,
+     "ci95_s2": [
+      689.53,
+      4385.9
+     ],
+     "clear_of_zero": true
+    },
+    "LEMD/reached": {
+     "rows": 750,
+     "mse_gain_s2": 1818.54,
+     "ci95_s2": [
+      134.62,
+      3451.91
+     ],
+     "clear_of_zero": true
+    },
+    "LFPG/reached": {
+     "rows": 2974,
+     "mse_gain_s2": 111.52,
+     "ci95_s2": [
+      -812.12,
+      990.63
+     ],
+     "clear_of_zero": false
+    },
+    "LFPG/unreached": {
+     "rows": 15656,
+     "mse_gain_s2": 823.5,
+     "ci95_s2": [
+      -801.41,
+      3772.14
+     ],
+     "clear_of_zero": false
+    },
+    "LIRF/reached": {
+     "rows": 3892,
+     "mse_gain_s2": -1459.38,
+     "ci95_s2": [
+      -3538.26,
+      697.9
+     ],
+     "clear_of_zero": false
+    },
+    "LIRF/unreached": {
+     "rows": 2170,
+     "mse_gain_s2": -1503.59,
+     "ci95_s2": [
+      -3060.95,
+      -0.56
+     ],
+     "clear_of_zero": false
+    },
+    "LSZH/reached": {
+     "rows": 598,
+     "mse_gain_s2": 1013.66,
+     "ci95_s2": [
+      -1415.94,
+      3520.91
+     ],
+     "clear_of_zero": false
+    },
+    "LTFM/unreached": {
+     "rows": 22609,
+     "mse_gain_s2": 515.03,
+     "ci95_s2": [
+      -86.96,
+      1456.53
+     ],
+     "clear_of_zero": false
+    }
+   }
+  },
+  "january": {
+   "reached": {
+    "rows": 14892,
+    "mse_gain_s2": 1113.4,
+    "ci95_s2": [
+     525.33,
+     1798.65
+    ],
+    "clear_of_zero": true,
+    "share_of_the_class": 0.1769,
+    "ridge_on_the_same_rows": 561.78,
+    "contribution_to_the_class_s2": 196.92
+   },
+   "unreached": {
+    "rows": 69310,
+    "mse_gain_s2": 48.8,
+    "ci95_s2": [
+     -286.0,
+     429.79
+    ],
+    "clear_of_zero": false,
+    "share_of_the_class": 0.8231,
+    "ridge_on_the_same_rows": 159.11,
+    "contribution_to_the_class_s2": 40.17
+   },
+   "cells": {
+    "EDDF/reached": {
+     "rows": 3159,
+     "mse_gain_s2": 2391.99,
+     "ci95_s2": [
+      918.61,
+      4155.6
+     ],
+     "clear_of_zero": true
+    },
+    "EGLL/reached": {
+     "rows": 9165,
+     "mse_gain_s2": 375.71,
+     "ci95_s2": [
+      58.12,
+      782.97
+     ],
+     "clear_of_zero": true
+    },
+    "EGLL/unreached": {
+     "rows": 1581,
+     "mse_gain_s2": -505.33,
+     "ci95_s2": [
+      -1398.87,
+      70.63
+     ],
+     "clear_of_zero": false
+    },
+    "EHAM/reached": {
+     "rows": 628,
+     "mse_gain_s2": 805.49,
+     "ci95_s2": [
+      -584.57,
+      2780.62
+     ],
+     "clear_of_zero": false
+    },
+    "LEBL/reached": {
+     "rows": 906,
+     "mse_gain_s2": 1591.01,
+     "ci95_s2": [
+      584.73,
+      3147.84
+     ],
+     "clear_of_zero": true
+    },
+    "LEMD/unreached": {
+     "rows": 16509,
+     "mse_gain_s2": 104.54,
+     "ci95_s2": [
+      -339.45,
+      445.1
+     ],
+     "clear_of_zero": false
+    },
+    "LFPG/unreached": {
+     "rows": 17900,
+     "mse_gain_s2": 186.52,
+     "ci95_s2": [
+      -951.58,
+      1500.32
+     ],
+     "clear_of_zero": false
+    },
+    "LIRF/unreached": {
+     "rows": 11317,
+     "mse_gain_s2": -226.1,
+     "ci95_s2": [
+      -542.29,
+      86.54
+     ],
+     "clear_of_zero": false
+    },
+    "LSZH/reached": {
+     "rows": 890,
+     "mse_gain_s2": 3859.74,
+     "ci95_s2": [
+      -916.72,
+      10405.97
+     ],
+     "clear_of_zero": false
+    },
+    "LTFM/unreached": {
+     "rows": 21368,
+     "mse_gain_s2": 68.58,
+     "ci95_s2": [
+      -345.82,
+      538.38
+     ],
+     "clear_of_zero": false
+    }
+   }
+  }
+ },
+ "4_the_board": {
+  "floor_s": 0.1,
+  "projection": "arms.project, rank_weights('unmatched')",
+  "in_fold": {
+   "july_loo": {
+    "pooled_mse_reduction_s2": 222.74,
+    "ci95_s2": [
+     -24.96,
+     439.85
+    ],
+    "board_gain_s": 0.4346,
+    "board_gain_ci95_s": [
+     -0.0487,
+     0.859
+    ],
+    "unpriced_weight": 0.06633
+   },
+   "december": {
+    "pooled_mse_reduction_s2": 368.62,
+    "ci95_s2": [
+     -7.09,
+     825.23
+    ],
+    "board_gain_s": 0.7197,
+    "board_gain_ci95_s": [
+     -0.0138,
+     1.6139
+    ],
+    "unpriced_weight": 0.01951
+   },
+   "january": {
+    "pooled_mse_reduction_s2": 186.66,
+    "ci95_s2": [
+     60.43,
+     338.5
+    ],
+    "board_gain_s": 0.3642,
+    "board_gain_ci95_s": [
+     0.1178,
+     0.6608
+    ],
+    "unpriced_weight": 0.06761
+   },
+   "board_gain_s_at_the_ranking_shares": 0.4034
+  },
+  "cross_fitted": {
+   "july_loo": {
+    "pooled_mse_reduction_s2": 0.0,
+    "ci95_s2": [
+     0.0,
+     0.0
+    ],
+    "board_gain_s": 0.0,
+    "board_gain_ci95_s": [
+     0.0,
+     0.0
+    ],
+    "unpriced_weight": 0.06633
+   },
+   "december": {
+    "pooled_mse_reduction_s2": 0.0,
+    "ci95_s2": [
+     0.0,
+     0.0
+    ],
+    "board_gain_s": 0.0,
+    "board_gain_ci95_s": [
+     0.0,
+     0.0
+    ],
+    "unpriced_weight": 0.01951
+   },
+   "january": {
+    "pooled_mse_reduction_s2": 0.0,
+    "ci95_s2": [
+     0.0,
+     0.0
+    ],
+    "board_gain_s": 0.0,
+    "board_gain_ci95_s": [
+     0.0,
+     0.0
+    ],
+    "unpriced_weight": 0.06761
+   },
+   "board_gain_s_at_the_ranking_shares": 0.0
+  },
+  "in_fold_trimmed_12h": {
+   "july_loo": {
+    "pooled_mse_reduction_s2": 232.42,
+    "ci95_s2": [
+     -18.95,
+     456.94
+    ],
+    "board_gain_s": 0.4535,
+    "board_gain_ci95_s": [
+     -0.0369,
+     0.8924
+    ],
+    "unpriced_weight": 0.06633
+   },
+   "december": {
+    "pooled_mse_reduction_s2": 368.46,
+    "ci95_s2": [
+     -7.27,
+     825.23
+    ],
+    "board_gain_s": 0.7194,
+    "board_gain_ci95_s": [
+     -0.0142,
+     1.6139
+    ],
+    "unpriced_weight": 0.01951
+   },
+   "january": {
+    "pooled_mse_reduction_s2": 167.27,
+    "ci95_s2": [
+     44.38,
+     317.94
+    ],
+    "board_gain_s": 0.3263,
+    "board_gain_ci95_s": [
+     0.0865,
+     0.6206
+    ],
+    "unpriced_weight": 0.06761
+   },
+   "board_gain_s_at_the_ranking_shares": 0.3972
+  },
+  "cross_fitted_trimmed_12h": {
+   "july_loo": {
+    "pooled_mse_reduction_s2": 0.0,
+    "ci95_s2": [
+     0.0,
+     0.0
+    ],
+    "board_gain_s": 0.0,
+    "board_gain_ci95_s": [
+     0.0,
+     0.0
+    ],
+    "unpriced_weight": 0.06633
+   },
+   "december": {
+    "pooled_mse_reduction_s2": 0.0,
+    "ci95_s2": [
+     0.0,
+     0.0
+    ],
+    "board_gain_s": 0.0,
+    "board_gain_ci95_s": [
+     0.0,
+     0.0
+    ],
+    "unpriced_weight": 0.01951
+   },
+   "january": {
+    "pooled_mse_reduction_s2": 0.0,
+    "ci95_s2": [
+     0.0,
+     0.0
+    ],
+    "board_gain_s": 0.0,
+    "board_gain_ci95_s": [
+     0.0,
+     0.0
+    ],
+    "unpriced_weight": 0.06761
+   },
+   "board_gain_s_at_the_ranking_shares": 0.0
+  },
+  "selection_premium_s": 0.4034,
+  "cross_fitted_clears_the_floor": false
+ },
+ "projection_weights": {
+  "census": {
+   "2026-01": "analysis/census-ranking.json",
+   "2026-07": "analysis/census-ranking-2026-07.json"
+  },
+  "ranking_rows_by_airport_month": "analysis/ranking-rows-by-airport-month.json",
+  "reach_read_from": "artifacts/exp-047/block/<month>.parquet",
+  "reach_column": "No_n_n_cell",
+  "rank_rows": 344841,
+  "class": "unmatched",
+  "rows_carried": 154358,
+  "share_of_ranking": 0.4476,
+  "weight_reached": 0.14626,
+  "weight_unreached": 0.30136,
+  "cross_check_vs_own_census": {
+   "EDDF 2026-01": {
+    "block_matched": 7388,
+    "census_own_clock": 8368,
+    "block_month_rows": 15667,
+    "ranking_json_rows": 15667
+   },
+   "EDDF 2026-07": {
+    "block_matched": 7308,
+    "census_own_clock": 8600,
+    "block_month_rows": 20650,
+    "ranking_json_rows": 20650
+   },
+   "EDDM 2026-01": {
+    "block_matched": 10531,
+    "census_own_clock": 10533,
+    "block_month_rows": 10953,
+    "ranking_json_rows": 10953
+   },
+   "EDDM 2026-07": {
+    "block_matched": 14461,
+    "census_own_clock": 14465,
+    "block_month_rows": 15013,
+    "ranking_json_rows": 15013
+   },
+   "EGLL 2026-01": {
+    "block_matched": 13558,
+    "census_own_clock": 13873,
+    "block_month_rows": 19283,
+    "ranking_json_rows": 19283
+   },
+   "EGLL 2026-07": {
+    "block_matched": 19754,
+    "census_own_clock": 19807,
+    "block_month_rows": 20557,
+    "ranking_json_rows": 20557
+   },
+   "EHAM 2026-01": {
+    "block_matched": 15007,
+    "census_own_clock": 15014,
+    "block_month_rows": 16232,
+    "ranking_json_rows": 16232
+   },
+   "EHAM 2026-07": {
+    "block_matched": 20566,
+    "census_own_clock": 20578,
+    "block_month_rows": 21950,
+    "ranking_json_rows": 21950
+   },
+   "LEBL 2026-01": {
+    "block_matched": 10733,
+    "census_own_clock": 10774,
+    "block_month_rows": 12201,
+    "ranking_json_rows": 12201
+   },
+   "LEBL 2026-07": {
+    "block_matched": 15858,
+    "census_own_clock": 15906,
+    "block_month_rows": 17879,
+    "ranking_json_rows": 17879
+   },
+   "LEMD 2026-01": {
+    "block_matched": 15834,
+    "census_own_clock": 15877,
+    "block_month_rows": 16802,
+    "ranking_json_rows": 16802
+   },
+   "LEMD 2026-07": {
+    "block_matched": 10999,
+    "census_own_clock": 11169,
+    "block_month_rows": 20152,
+    "ranking_json_rows": 20152
+   },
+   "LFPG 2026-01": {
+    "block_matched": 739,
+    "census_own_clock": 976,
+    "block_month_rows": 18129,
+    "ranking_json_rows": 18129
+   },
+   "LFPG 2026-07": {
+    "block_matched": 873,
+    "census_own_clock": 1085,
+    "block_month_rows": 21743,
+    "ranking_json_rows": 21743
+   },
+   "LIRF 2026-01": {
+    "block_matched": 5325,
+    "census_own_clock": 5597,
+    "block_month_rows": 11061,
+    "ranking_json_rows": 11061
+   },
+   "LIRF 2026-07": {
+    "block_matched": 11,
+    "census_own_clock": 12,
+    "block_month_rows": 15838,
+    "ranking_json_rows": 15838
+   },
+   "LSZH 2026-07": {
+    "block_matched": 12033,
+    "census_own_clock": 12049,
+    "block_month_rows": 13155,
+    "ranking_json_rows": 13155
+   }
+  },
+  "class_vector": {
+   "2026-01": {
+    "block_rows": 152719,
+    "class_vector": "artifacts/exp-046/class/2026-01.parquet",
+    "class_sha256": "62d06e22dee90c526ad507ee41ad3c9df136c714afffe0e66c7beb7e9e311fc0",
+    "own_obs_has_clock_disagrees": 1899,
+    "noac_excluded": 108
+   },
+   "2026-07": {
+    "block_rows": 192122,
+    "class_vector": "artifacts/exp-046/class/2026-07.parquet",
+    "class_sha256": "273010410e1caedc85eb50cf38360a5a503bab21c1bcfd1f31d112afcfeb0c6f",
+    "own_obs_has_clock_disagrees": 1808,
+    "noac_excluded": 280
+   }
+  },
+  "by_airport_month": {
+   "EDDF": {
+    "2026-01": {
+     "ranking_rows": 15667,
+     "matched": 8368,
+     "class_rows": 8279,
+     "class_share": 0.5284,
+     "reached_share": 0.7477,
+     "class_rows_reached": 6190,
+     "class_rows_unreached": 2089,
+     "census_covered_rows": 15667
+    },
+    "2026-07": {
+     "ranking_rows": 20650,
+     "matched": 8600,
+     "class_rows": 13342,
+     "class_share": 0.6461,
+     "reached_share": 0.8603,
+     "class_rows_reached": 11478,
+     "class_rows_unreached": 1864,
+     "census_covered_rows": 20650
+    }
+   },
+   "EDDM": {
+    "2026-01": {
+     "ranking_rows": 10953,
+     "matched": 10533,
+     "class_rows": 422,
+     "class_share": 0.0385,
+     "reached_share": 0.9265,
+     "class_rows_reached": 391,
+     "class_rows_unreached": 31,
+     "census_covered_rows": 10953
+    },
+    "2026-07": {
+     "ranking_rows": 15013,
+     "matched": 14465,
+     "class_rows": 552,
+     "class_share": 0.0368,
+     "reached_share": 0.9746,
+     "class_rows_reached": 538,
+     "class_rows_unreached": 14,
+     "census_covered_rows": 15013
+    }
+   },
+   "EGLL": {
+    "2026-01": {
+     "ranking_rows": 19283,
+     "matched": 13873,
+     "class_rows": 5725,
+     "class_share": 0.2969,
+     "reached_share": 0.967,
+     "class_rows_reached": 5536,
+     "class_rows_unreached": 189,
+     "census_covered_rows": 19283
+    },
+    "2026-07": {
+     "ranking_rows": 20557,
+     "matched": 19807,
+     "class_rows": 803,
+     "class_share": 0.0391,
+     "reached_share": 0.99,
+     "class_rows_reached": 795,
+     "class_rows_unreached": 8,
+     "census_covered_rows": 20557
+    }
+   },
+   "EHAM": {
+    "2026-01": {
+     "ranking_rows": 16232,
+     "matched": 15014,
+     "class_rows": 1225,
+     "class_share": 0.0755,
+     "reached_share": 0.9502,
+     "class_rows_reached": 1164,
+     "class_rows_unreached": 61,
+     "census_covered_rows": 16232
+    },
+    "2026-07": {
+     "ranking_rows": 21950,
+     "matched": 20578,
+     "class_rows": 1384,
+     "class_share": 0.0631,
+     "reached_share": 0.9855,
+     "class_rows_reached": 1364,
+     "class_rows_unreached": 20,
+     "census_covered_rows": 21950
+    }
+   },
+   "LEBL": {
+    "2026-01": {
+     "ranking_rows": 12201,
+     "matched": 10774,
+     "class_rows": 1468,
+     "class_share": 0.1203,
+     "reached_share": 0.8658,
+     "class_rows_reached": 1271,
+     "class_rows_unreached": 197,
+     "census_covered_rows": 12201
+    },
+    "2026-07": {
+     "ranking_rows": 17879,
+     "matched": 15906,
+     "class_rows": 2021,
+     "class_share": 0.113,
+     "reached_share": 0.9654,
+     "class_rows_reached": 1951,
+     "class_rows_unreached": 70,
+     "census_covered_rows": 17879
+    }
+   },
+   "LEMD": {
+    "2026-01": {
+     "ranking_rows": 16802,
+     "matched": 15877,
+     "class_rows": 968,
+     "class_share": 0.0576,
+     "reached_share": 0.9298,
+     "class_rows_reached": 900,
+     "class_rows_unreached": 68,
+     "census_covered_rows": 16802
+    },
+    "2026-07": {
+     "ranking_rows": 20152,
+     "matched": 11169,
+     "class_rows": 9153,
+     "class_share": 0.4542,
+     "reached_share": 0.8617,
+     "class_rows_reached": 7887,
+     "class_rows_unreached": 1266,
+     "census_covered_rows": 20152
+    }
+   },
+   "LFPG": {
+    "2026-01": {
+     "ranking_rows": 18129,
+     "matched": 976,
+     "class_rows": 17390,
+     "class_share": 0.9592,
+     "reached_share": 0.1578,
+     "class_rows_reached": 2744,
+     "class_rows_unreached": 14646,
+     "census_covered_rows": 18129
+    },
+    "2026-07": {
+     "ranking_rows": 21743,
+     "matched": 1085,
+     "class_rows": 20870,
+     "class_share": 0.9598,
+     "reached_share": 0.1291,
+     "class_rows_reached": 2695,
+     "class_rows_unreached": 18175,
+     "census_covered_rows": 21743
+    }
+   },
+   "LIRF": {
+    "2026-01": {
+     "ranking_rows": 11061,
+     "matched": 5597,
+     "class_rows": 5667,
+     "class_share": 0.5123,
+     "reached_share": 0.6466,
+     "class_rows_reached": 3664,
+     "class_rows_unreached": 2003,
+     "census_covered_rows": 11061
+    },
+    "2026-07": {
+     "ranking_rows": 15838,
+     "matched": 12,
+     "class_rows": 15551,
+     "class_share": 0.9819,
+     "reached_share": 0.0019,
+     "class_rows_reached": 30,
+     "class_rows_unreached": 15521,
+     "census_covered_rows": 3628
+    }
+   },
+   "LSZH": {
+    "2026-01": {
+     "ranking_rows": 9995,
+     "matched": 9155,
+     "class_rows": 839,
+     "class_share": 0.0839,
+     "reached_share": 0.8892,
+     "class_rows_reached": 746,
+     "class_rows_unreached": 93,
+     "census_covered_rows": 9995
+    },
+    "2026-07": {
+     "ranking_rows": 13155,
+     "matched": 12049,
+     "class_rows": 1122,
+     "class_share": 0.0853,
+     "reached_share": 0.975,
+     "class_rows_reached": 1094,
+     "class_rows_unreached": 28,
+     "census_covered_rows": 13155
+    }
+   },
+   "LTFM": {
+    "2026-01": {
+     "ranking_rows": 22396,
+     "matched": 0,
+     "class_rows": 22396,
+     "class_share": 1.0,
+     "reached_share": 0.0,
+     "class_rows_reached": 0,
+     "class_rows_unreached": 22396,
+     "census_covered_rows": 0
+    },
+    "2026-07": {
+     "ranking_rows": 25185,
+     "matched": 0,
+     "class_rows": 25181,
+     "class_share": 0.9998,
+     "reached_share": 0.0,
+     "class_rows_reached": 0,
+     "class_rows_unreached": 25181,
+     "census_covered_rows": 11382
+    }
+   }
+  },
+  "note": "per airport-MONTH (desk 17:05 UTC) and per REACH CLASS (FALLBACK round 3, blocking 1): the ranking block gives the rows, the class and the reached share, so an airport dark in one month (LIRF in 2026-07, LTFM in both) carries all of that month's rows in the no-clock class, none in the with-clock class, and almost all of them in the UNREACHED half, which is priced on the fold's own unreached rows."
+ },
+ "verdict": {
+  "candidate": false,
+  "reading": "FAIL against the 0.1 s floor on the cross-fitted read; no candidate",
+  "folds_taken": [],
+  "the_prediction_registered_in_7bg": {
+   "cross_fitted_board_s": [
+    0.0,
+    0.06
+   ],
+   "the_fold_expected_to_fail": "december"
+  },
+  "no_serve": "the desk rules the serve; no candidate bytes were written here"
+ }
+}

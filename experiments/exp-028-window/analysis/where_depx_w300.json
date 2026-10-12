@@ -1,0 +1,51 @@
+{
+  "variant": "depx",
+  "airports_positive_on_all_three": 4,
+  "airports": 10,
+  "regime_gain": {
+    "december": {
+      "nm_bulk": 0.2327,
+      "nm_late": -0.1414,
+      "noac": 0.0,
+      "nonm": -0.0641
+    },
+    "january": {
+      "nm_bulk": 0.1071,
+      "nm_late": 0.0847,
+      "noac": 0.0,
+      "nonm": -0.0628
+    },
+    "july_loo": {
+      "nm_bulk": 0.3856,
+      "nm_late": 0.0768,
+      "noac": 0.0,
+      "nonm": 0.0215
+    }
+  },
+  "concentration": [
+    {
+      "fold": "july_loo",
+      "total_sse_drop": 52602657.2422,
+      "top1pct_share": 0.3342,
+      "n_moved_gt_60s": 10169,
+      "rms_move": 28.3406,
+      "gain_s": 0.484
+    },
+    {
+      "fold": "december",
+      "total_sse_drop": 1843023.9942,
+      "top1pct_share": -3.6559,
+      "n_moved_gt_60s": 5031,
+      "rms_move": 23.5197,
+      "gain_s": 0.0271
+    },
+    {
+      "fold": "january",
+      "total_sse_drop": 13406079.2027,
+      "top1pct_share": 0.3064,
+      "n_moved_gt_60s": 3825,
+      "rms_move": 21.9353,
+      "gain_s": 0.1289
+    }
+  ]
+}

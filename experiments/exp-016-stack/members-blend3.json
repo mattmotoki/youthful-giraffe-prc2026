@@ -1,0 +1,32 @@
+{
+  "note": "Member set for stack-3: exp-012's blend-3 base, using the PUBLISHED deice winter member (experiments/exp-012-blend2/published/, interface MEMBER-D1-winter-deice-v1.md, verified with published/verify_member.py). That document says explicitly: use these files, do not refit -- the arm is linear_tree=True and LightGBM's determinism does not cover linear leaves across thread counts, so a refit is a different member. Nothing here refits it; the stacker consumes its predictions.",
+  "oof": {
+    "T-tailv2": "experiments/exp-009-noac2/oof/exp-009-noac2-oof-v2.parquet",
+    "C2-cat": "experiments/exp-012-blend2/pinned/C2-cat--C2-d8p-{fold}.parquet",
+    "L2-hub": "experiments/exp-012-blend2/pinned/L2-hub--L2-hub-{fold}.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-{fold}.parquet",
+    "N1-nmtail": "experiments/exp-010-nmtail/oof/nmtail-phi_{fold}.parquet"
+  },
+  "ranking": {
+    "T-tailv2": "artifacts/exp-012/pred/T-tailv2-ranking.parquet",
+    "C2-cat": "artifacts/exp-008/pred/C2-d8p-ranking.parquet",
+    "L2-hub": "artifacts/exp-008/pred/L2-hub-ranking.parquet",
+    "D1-winter": "artifacts/exp-012/pred/D1-winter-deice-v1-ranking.parquet",
+    "N1-nmtail": "artifacts/exp-012/pred/N1-nmtail-ranking.parquet"
+  },
+  "expected_rotation": {
+    "note": "measured in analysis/swap_deice.csv against the pre-publication copy of the same fit (experiments/exp-012-blend2/oof/D1w-deice-*), whose fold RMSEs 310.28/223.98/349.20 match the published member's interface document exactly. A stack-3 rotation that does not reproduce these has changed something else.",
+    "blend2": {
+      "july_loo": 296.04,
+      "december": 214.82,
+      "january": 342.929,
+      "board": 317.661
+    },
+    "stack-1-form": {
+      "july_loo": 295.882,
+      "december": 214.374,
+      "january": 342.168,
+      "board": 317.215
+    }
+  }
+}

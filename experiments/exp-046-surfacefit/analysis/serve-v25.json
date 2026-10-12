@@ -1,0 +1,1902 @@
+{
+  "arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+  "base": {
+    "bytes_file": "submissions/uploaded/youthful-giraffe_v18.parquet",
+    "bytes_sha256": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+    "head_arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+    "head_file": "submissions/candidates/exp-046-surface-v5.parquet",
+    "head_sha256": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+    "price_file": "submissions/candidates/exp-035-k2climb-v11member.parquet",
+    "price_sha256": "48dd572d61ff2403f13614ce04bdc3a8fd0dbdb5175bef7eb143650ea520ec52",
+    "set": "v25",
+    "what": "v10's base set with the head composed BY SERVED MONTH: 2026-01 rows from a head fitted on the folds + {2025-11, 2025-10, 2025-03, 2025-02}, 2026-07 rows from a head fitted on the folds + {2025-11, 2025-10, 2025-03, 2025-08}. Priced over V10'S HEAD. The fold side is one K = 10 bag whose every leave-one-out fit carries its own fold's month set."
+  },
+  "base_set": "v25",
+  "bytes_action": "written; the path carried no bytes",
+  "bytes_already_on_disk_sha256": null,
+  "census": {
+    "by_airport": {
+      "EDDF": {
+        "fold_rms_update_s": 115.94020228946063,
+        "moved": 18431,
+        "moved_share": 0.5075,
+        "ratio_to_fold": 0.9404335662666712,
+        "rms_update_s": 109.03405791275674,
+        "rows": 36317,
+        "within_a_third": true
+      },
+      "EDDM": {
+        "fold_rms_update_s": 125.23516973579643,
+        "moved": 24725,
+        "moved_share": 0.9522,
+        "ratio_to_fold": 0.9582629595809462,
+        "rms_update_s": 120.00822439464643,
+        "rows": 25966,
+        "within_a_third": true
+      },
+      "EGLL": {
+        "fold_rms_update_s": 118.04113097877219,
+        "moved": 33652,
+        "moved_share": 0.8447,
+        "ratio_to_fold": 1.0785708727119656,
+        "rms_update_s": 127.31572565568175,
+        "rows": 39840,
+        "within_a_third": true
+      },
+      "EHAM": {
+        "fold_rms_update_s": 104.139744305056,
+        "moved": 35052,
+        "moved_share": 0.918,
+        "ratio_to_fold": 1.067786292920532,
+        "rms_update_s": 111.19899151718784,
+        "rows": 38182,
+        "within_a_third": true
+      },
+      "LEBL": {
+        "fold_rms_update_s": 106.33683106865199,
+        "moved": 26719,
+        "moved_share": 0.8883,
+        "ratio_to_fold": 1.0809817607324008,
+        "rms_update_s": 114.9481748792953,
+        "rows": 30080,
+        "within_a_third": true
+      },
+      "LEMD": {
+        "fold_rms_update_s": 115.01320340216186,
+        "moved": 27046,
+        "moved_share": 0.7319,
+        "ratio_to_fold": 0.9707310191793711,
+        "rms_update_s": 111.6468841576649,
+        "rows": 36954,
+        "within_a_third": true
+      },
+      "LFPG": {
+        "fold_rms_update_s": 104.92837198351137,
+        "moved": 2250,
+        "moved_share": 0.0564,
+        "ratio_to_fold": 1.1612490977044072,
+        "rms_update_s": 121.84797728944498,
+        "rows": 39872,
+        "within_a_third": true
+      },
+      "LIRF": {
+        "fold_rms_update_s": 102.42331965334296,
+        "moved": 5664,
+        "moved_share": 0.2106,
+        "ratio_to_fold": 0.7145754090146526,
+        "rms_update_s": 73.18918553392605,
+        "rows": 26899,
+        "within_a_third": true
+      },
+      "LSZH": {
+        "fold_rms_update_s": 112.31988614896694,
+        "moved": 21144,
+        "moved_share": 0.9133,
+        "ratio_to_fold": 1.0558798160913467,
+        "rms_update_s": 118.59630073037222,
+        "rows": 23150,
+        "within_a_third": true
+      },
+      "LTFM": {
+        "fold_rms_update_s": null,
+        "moved": 0,
+        "moved_share": 0.0,
+        "ratio_to_fold": null,
+        "rms_update_s": 0.0,
+        "rows": 47581,
+        "within_a_third": false
+      }
+    },
+    "every_unserved_row_bit_identical_to_the_bytes_file": true,
+    "finite": true,
+    "floor_bound_rows": 2,
+    "handover_to_exp_047": {
+      "boundary_is_shared": "exp-047-queue/code/block.py imports this lane's code/block.py as the repo's one matcher and keys its class on the same obs_has_clock column, so the two lanes' populations are complementary by construction and not by agreement. The noac hold is this lane's and any composition of the two candidates has to keep it.",
+      "boundary_matcher_matches_the_pin": true,
+      "boundary_matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "boundary_matcher_sha256_pinned": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+      "composition": "desk, 2026-09-08 14:10: this lane prices and serves the with-clock class and the base elsewhere, exp-047-queue prices and serves the no-clock class and the base elsewhere, each on its own review round; the desk composes the two disjoint updates on the base and verifies the composed file, and either candidate may go up alone.",
+      "exp_047_interface_is_stale": {
+        "2025-01": false,
+        "2025-02": false,
+        "2025-03": false,
+        "2025-04": false,
+        "2025-05": false,
+        "2025-06": false,
+        "2025-07": false,
+        "2025-08": false,
+        "2025-09": false,
+        "2025-10": false,
+        "2025-11": false,
+        "2025-12": false,
+        "2026-01": false,
+        "2026-07": false
+      },
+      "exp_047_interface_matcher_sha256": {
+        "2025-01": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-02": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-03": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-04": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-05": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-06": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-07": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-08": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-09": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-10": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-11": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2025-12": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2026-01": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+        "2026-07": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780"
+      },
+      "interface": "artifacts/exp-047/block/<month>.parquet, keyed by MVT_ID_mvt",
+      "left_at_base": 148585,
+      "left_at_base_by_reach_class": {
+        "matched_no_clock": 11535,
+        "strict": 38,
+        "unmatched": 137012
+      },
+      "rows": 344841,
+      "served_class": "obs_has_clock & obs_taxi.notna() & ~noac",
+      "served_rows": 196256
+    },
+    "held_airport_rows_identical_to_the_bytes_file": null,
+    "max_abs_update_s": 1084.0033127668871,
+    "min_prediction_s": 60.0,
+    "moved": 194681,
+    "noac_identical_to_the_bytes_file": true,
+    "noac_rows": 388,
+    "occupied_unwritten": {
+      "by_airport": {},
+      "by_month": {},
+      "column_read": "occupied_by_exp_046",
+      "narrower_column_the_desk_verifies_on": "written_by_exp_046",
+      "rows": 0,
+      "what": "rows this lane's CURRENT class occupies that the head's bytes leave at the price base: the class moved under bytes already written, so this lane writes them here for the first time"
+    },
+    "outside_the_with_clock_class_identical_to_the_bytes_file": true,
+    "reverted_to_the_price_base": {
+      "MVT_ID_mvt": [],
+      "all_equal_the_price_base": true,
+      "by_airport": {},
+      "head_class_column": "occupied_by_exp_046",
+      "head_occupied_rows": 193910,
+      "max_abs_change_off_the_bytes_s": 0.0,
+      "rows": 0,
+      "what": "OCCUPIED BY THE HEAD (read from the head's own class vector, not inferred from the prediction), out of this serve's class, and untouched by the bytes file: the stale head is dropped and the row carries the price base"
+    },
+    "rms_update_over_the_price_base_s": 115.68424581907095,
+    "rms_update_s": 34.417088573030234,
+    "rows": 344841,
+    "rows_the_bytes_file_keeps": 148585,
+    "served_rows": 196256,
+    "unchanged": 150160
+  },
+  "extension": {
+    "by_served_month": {
+      "2026-01": {
+        "declared": {
+          "month_rows": {
+            "2025-02": 68122,
+            "2025-03": 86984,
+            "2025-10": 103344,
+            "2025-11": 99709
+          },
+          "months": [
+            "2025-11",
+            "2025-10",
+            "2025-03",
+            "2025-02"
+          ],
+          "rows": 358159,
+          "shas": {
+            "2025-02": [
+              "36f7dd9f6d80451a",
+              "32c9e25d05f6ad21"
+            ],
+            "2025-03": [
+              "64c47603ebfdb0c7",
+              "ec26128f3a5eaa74"
+            ],
+            "2025-10": [
+              "2bfc9a6959281d6e",
+              "29932ab196080943"
+            ],
+            "2025-11": [
+              "339ca16ed421a718",
+              "3e231a8f7cd82d83"
+            ]
+          },
+          "what": "the January head's fitting rows; 2025-02 is at served distance 1"
+        },
+        "per_fit": [
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          },
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          },
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          },
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          },
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          },
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          },
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          },
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          },
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          },
+          {
+            "extra_rows": 358159,
+            "fold_rows": 261775,
+            "multiple": 2.3682,
+            "total_fit_rows": 619934
+          }
+        ],
+        "rows_built": 358159,
+        "rows_this_head_writes": 152719,
+        "shipped_columns_at_build": 76
+      },
+      "2026-07": {
+        "declared": {
+          "month_rows": {
+            "2025-03": 86984,
+            "2025-08": 96537,
+            "2025-10": 103344,
+            "2025-11": 99709
+          },
+          "months": [
+            "2025-11",
+            "2025-10",
+            "2025-03",
+            "2025-08"
+          ],
+          "rows": 386574,
+          "shas": {
+            "2025-03": [
+              "64c47603ebfdb0c7",
+              "ec26128f3a5eaa74"
+            ],
+            "2025-08": [
+              "60c84140c3342390",
+              "137a61f23de48d9d"
+            ],
+            "2025-10": [
+              "2bfc9a6959281d6e",
+              "29932ab196080943"
+            ],
+            "2025-11": [
+              "339ca16ed421a718",
+              "3e231a8f7cd82d83"
+            ]
+          },
+          "what": "the July head's fitting rows; 2025-08 is at served distance 1. Queue landed it 2026-09-10 (5859d1b) and BOTH shas were checked against the files on disk before they were written here (section 47.51); `month_rows` gains 2025-08 when a run HARVESTS its writable count, and `arm_npz_sha` stays PENDING until the seasonal bag exists"
+        },
+        "per_fit": [
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          },
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          },
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          },
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          },
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          },
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          },
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          },
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          },
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          },
+          {
+            "extra_rows": 386574,
+            "fold_rows": 261775,
+            "multiple": 2.4767,
+            "total_fit_rows": 648349
+          }
+        ],
+        "rows_built": 386574,
+        "rows_this_head_writes": 192122,
+        "shipped_columns_at_build": 76
+      }
+    },
+    "composed_by": "served month",
+    "fits_that_carried_it": 20,
+    "note": "a member read from cache did not refit, so it contributes no entry to per_fit; its extension is the one it was fitted with, which the cache NAME keys on"
+  },
+  "fit": {
+    "info": {
+      "composed_by": "served month",
+      "head_disagreement_rms_s": 11.804260922415246,
+      "heads_differ_on_the_ranking_side": true,
+      "seasonal_by_served_month": {
+        "2026-01": {
+          "K": 10,
+          "bagged": true,
+          "extension_per_fit": [
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            },
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            },
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            },
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            },
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            },
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            },
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            },
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            },
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            },
+            {
+              "extra_rows": 358159,
+              "fold_rows": 261775,
+              "multiple": 2.3682,
+              "total_fit_rows": 619934
+            }
+          ],
+          "fold_member_sha256": {},
+          "fold_members_checked_before_any_fit": false,
+          "leaves": 255,
+          "member_census": {
+            "1": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 163.3
+            },
+            "10": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 136.3
+            },
+            "2": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 158.5
+            },
+            "3": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 166.4
+            },
+            "4": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 162.0
+            },
+            "5": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 161.0
+            },
+            "6": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 160.4
+            },
+            "7": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 155.3
+            },
+            "8": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 135.5
+            },
+            "9": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 135.1
+            }
+          },
+          "member_disagreement_rms_s": 12.366116508226447,
+          "member_files": {
+            "1": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo1-255.npz",
+            "10": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo10-255.npz",
+            "2": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo2-255.npz",
+            "3": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo3-255.npz",
+            "4": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo4-255.npz",
+            "5": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo5-255.npz",
+            "6": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo6-255.npz",
+            "7": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo7-255.npz",
+            "8": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo8-255.npz",
+            "9": "experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo9-255.npz"
+          },
+          "member_sha256": {
+            "1": "dfa8bcc00fe8a6f816a4499af96ddb3b11ed78642d9270f71ffbfb3ae9ddfe6b",
+            "10": "3784a5da12b09d84cdf5cc6b025356319b9bd9de0135ac641e9df963321fc3be",
+            "2": "15acef8d8f1b4a6f04af24dd8bcab8658c75f84ba34360a9527a70ac8f62af08",
+            "3": "1ad34208b49e8b4e58ad957e339f3eda8bf222127bcb1fc3c896b59bb68c2976",
+            "4": "d0dce172091829b991d093b0b2659702f9448fbf28919238ab86e5466284fc82",
+            "5": "fe6c6ac733dc02d46e325bef3412fdc1817a0ed75184481e20625549d06843e0",
+            "6": "5c15515cdb1d4d0151bfe69129cea94e48ac82be2d2aa43a0347f26643afb2db",
+            "7": "d5a19d245fb9542f05fa519f60f12821eccb2e2dcabe105abbfca48db12ee054",
+            "8": "73c8199115277a08e3f0ec8f9bff678cb5dd01e5c441ac7b5fcd33eeb174da37",
+            "9": "6dcd50fc8911e8b5b8ee91bd6c8403a896cb71665a562527b0e300314759e432"
+          },
+          "months": [
+            "2025-11",
+            "2025-10",
+            "2025-03",
+            "2025-02"
+          ],
+          "rows_moved_by_the_bag": 196256,
+          "rows_this_head_writes": 152719,
+          "rows_this_head_writes_in_the_class": 91433,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "separation_on_its_own_rows": {
+            "2026-07": {
+              "max_abs_s": 230.22449909469384,
+              "rms_s": 12.996927191336386,
+              "rows": 152719,
+              "rows_that_differ": 91433,
+              "what": "on the 152,719 rows the 2026-01 head wrote, the distance to what the 2026-07 head would have written there. This is queue's negative control as a NUMBER: rebuild the 2026-07 set's mean from its ten members, restrict to 2026-01, and the candidate must sit this far from it"
+            }
+          },
+          "what": "the unweighted mean of K ranking-side fits of the shipped recipe on the same K perturbed fit-panels the fold members use -- same seeds, same MOVED counts, same draw order, so the fold price describes the arm that ships. No member was selected"
+        },
+        "2026-07": {
+          "K": 10,
+          "bagged": true,
+          "extension_per_fit": [
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            },
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            },
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            },
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            },
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            },
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            },
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            },
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            },
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            },
+            {
+              "extra_rows": 386574,
+              "fold_rows": 261775,
+              "multiple": 2.4767,
+              "total_fit_rows": 648349
+            }
+          ],
+          "fold_member_sha256": {},
+          "fold_members_checked_before_any_fit": false,
+          "leaves": 255,
+          "member_census": {
+            "1": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 140.6
+            },
+            "10": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 164.7
+            },
+            "2": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 154.1
+            },
+            "3": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 152.7
+            },
+            "4": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 152.8
+            },
+            "5": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 153.6
+            },
+            "6": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 162.2
+            },
+            "7": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 161.4
+            },
+            "8": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 165.3
+            },
+            "9": {
+              "census": {
+                "2025-01": {
+                  "forced_in": 0,
+                  "forced_out": 4,
+                  "in_pool": 112,
+                  "kept": 738,
+                  "out_pool": 742
+                },
+                "2025-07": {
+                  "forced_in": 8,
+                  "forced_out": 8,
+                  "in_pool": 115,
+                  "kept": 897,
+                  "out_pool": 897
+                },
+                "2025-12": {
+                  "forced_in": 26,
+                  "forced_out": 3,
+                  "in_pool": 152,
+                  "kept": 881,
+                  "out_pool": 858
+                }
+              },
+              "refitted_this_run": true,
+              "seconds": 166.0
+            }
+          },
+          "member_disagreement_rms_s": 12.539425910995039,
+          "member_files": {
+            "1": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo1-255.npz",
+            "10": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo10-255.npz",
+            "2": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo2-255.npz",
+            "3": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo3-255.npz",
+            "4": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo4-255.npz",
+            "5": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo5-255.npz",
+            "6": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo6-255.npz",
+            "7": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo7-255.npz",
+            "8": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo8-255.npz",
+            "9": "experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo9-255.npz"
+          },
+          "member_sha256": {
+            "1": "f15977a6ad49f43553924ea5903b755888b10fd8a38d3cbeed260892b87b28f7",
+            "10": "2cb3280c9109ea8f6ad38c807b5c000b51f1139c69b12752eb910156c670dd0e",
+            "2": "b4f580f8e1c28e60161f2662c6230e1856050958e501ef97ce07bcfdbb7f4c11",
+            "3": "be5e0db534dad7419a4735f630d68e3db5a09afd200acb78e58eda4b9f2830ed",
+            "4": "ee568789b5e1887c211542f6946a8be2dcec7847d8eb1eeecc6bd4d7a048ad65",
+            "5": "6c9d3b2efbb3aa25f5489e4e2f39fc4bc4900220338b1716174c092db743d843",
+            "6": "1c08ffdcf47b7beb01b13024faeb3c29f4d9b8d60bfb405456ed61caf6947dc0",
+            "7": "279232b55548ff6a69265bcb0d00af24c171ae3b5493a6716a1f9b2065f49fe5",
+            "8": "ce3661121a65a4f0c683f6ee78547c5b32551206bba9766a34475487f8ee1b24",
+            "9": "98e19c3606e84a41861c75b6ac9830b0d597d92282e4dc38a9b9bbcafcc78789"
+          },
+          "months": [
+            "2025-11",
+            "2025-10",
+            "2025-03",
+            "2025-08"
+          ],
+          "rows_moved_by_the_bag": 196256,
+          "rows_this_head_writes": 192122,
+          "rows_this_head_writes_in_the_class": 104823,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "separation_on_its_own_rows": {
+            "2026-01": {
+              "max_abs_s": 251.47961289202453,
+              "rms_s": 10.762323680986606,
+              "rows": 192122,
+              "rows_that_differ": 104823,
+              "what": "on the 192,122 rows the 2026-07 head wrote, the distance to what the 2026-01 head would have written there. This is queue's negative control as a NUMBER: rebuild the 2026-01 set's mean from its ten members, restrict to 2026-07, and the candidate must sit this far from it"
+            }
+          },
+          "what": "the unweighted mean of K ranking-side fits of the shipped recipe on the same K perturbed fit-panels the fold members use -- same seeds, same MOVED counts, same draw order, so the fold price describes the arm that ships. No member was selected"
+        }
+      }
+    },
+    "months": [
+      "2025-01",
+      "2025-07",
+      "2025-12"
+    ],
+    "rows": 261756
+  },
+  "gate": {
+    "airports_held_at_the_base": [],
+    "airports_out_of_band": [],
+    "all_checked_before_the_write": true,
+    "arm_choice": {
+      "chosen": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+      "considered": [
+        {
+          "all_row_gain_s": 9.31283269713947,
+          "arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+          "clean_gain_s": 11.285182604245762,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 9.164865901163637,
+          "arm": "c_lgb_shipped@leaves_255x300_lr050",
+          "clean_gain_s": 11.104583794296786,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 9.113537071319229,
+          "arm": "c_lgb_shipped@leaves_127x300_lr050+guard995",
+          "clean_gain_s": 11.041944873737975,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.962405071292665,
+          "arm": "c_lgb_shipped@leaves_127x300_lr050",
+          "clean_gain_s": 10.857543283942675,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.887677407156787,
+          "arm": "c_lgb_shipped@rounds_63x900_lr020",
+          "clean_gain_s": 10.766382610646389,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.796587172615716,
+          "arm": "c_lgb_shipped@leafsize_63x900_lr020_mcs30",
+          "clean_gain_s": 10.65527492014499,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.707904682273238,
+          "arm": "c_lgb_shipped@rounds_63x1500_lr010",
+          "clean_gain_s": 10.547121251444025,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.650355198739817,
+          "arm": "c_lgb_shipped@leaves_63x300_lr050",
+          "clean_gain_s": 10.476944020302938,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.41677171657409,
+          "arm": "c_geom_nbr_centred",
+          "clean_gain_s": 10.19217569566257,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.381093548781223,
+          "arm": "c_lgb_shipped@rounds_31x900_lr020",
+          "clean_gain_s": 10.148687281555482,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.321960186344825,
+          "arm": "c_geom_rwy",
+          "clean_gain_s": 10.07661656532403,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.270470072499222,
+          "arm": "c_nbr_centred",
+          "clean_gain_s": 10.013867563351681,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.267034866460506,
+          "arm": "c_geom",
+          "clean_gain_s": 10.00968206428422,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.22333526161782,
+          "arm": "c_nbr",
+          "clean_gain_s": 9.956429975834311,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.211948511415017,
+          "arm": "c_geom_rwy_rel",
+          "clean_gain_s": 9.942554903871383,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.168026826048276,
+          "arm": "c_lgb_shipped",
+          "clean_gain_s": 9.88903889586416,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.166023958521976,
+          "arm": "c_lgb_shipped@leaves_15x600_lr050",
+          "clean_gain_s": 9.886598082330636,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.14152370628807,
+          "arm": "c_nbr_winsor",
+          "clean_gain_s": 9.856747247748984,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 8.124117756747808,
+          "arm": "c_geom_rel",
+          "clean_gain_s": 9.835542724707864,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 8.122117408777228,
+          "arm": "c_geom_motion",
+          "clean_gain_s": 9.83310388937204,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 7.958624345981264,
+          "arm": "c_geom_chord",
+          "clean_gain_s": 9.633944074422288,
+          "eligible": false,
+          "every_fold_interval_clear": true,
+          "servable": false,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 4.230187001610375,
+          "arm": "b_lgb",
+          "clean_gain_s": 5.106049038616618,
+          "eligible": true,
+          "every_fold_interval_clear": true,
+          "servable": true,
+          "tail_clause_passes": true
+        },
+        {
+          "all_row_gain_s": 2.2197350948085273,
+          "arm": "a_linear",
+          "clean_gain_s": 2.6753097070222225,
+          "eligible": false,
+          "every_fold_interval_clear": false,
+          "servable": true,
+          "tail_clause_passes": false
+        },
+        {
+          "all_row_gain_s": 2.084985193221371,
+          "arm": "a_linear_reach",
+          "clean_gain_s": 2.512653738496283,
+          "eligible": false,
+          "every_fold_interval_clear": false,
+          "servable": true,
+          "tail_clause_passes": false
+        }
+      ],
+      "excluded_as_a_superseded_instrument": {
+        "arms": [
+          "b_lgb_nbr",
+          "c_lgb_shipped_nbr"
+        ],
+        "months_rebuilt": {
+          "2025-01": {
+            "on_disk_now": "eb588315471b084656fba8b20e1e411e03560203beb5d63debd5a4959ca62a3f",
+            "priced_on": "173e49efceb76ad571944defaa2c7e49463fdf5bd95d662f346bd34669b375ef"
+          },
+          "2025-07": {
+            "on_disk_now": "00e7f9df5c83b0862a11c60defff02077c5ef68dffc8d17d50a9c17ebbc38a77",
+            "priced_on": "f16622569bd0df769bbf80a69def972e942c1a161ced6eb84fd53e02583ee682"
+          },
+          "2025-12": {
+            "on_disk_now": "e167c4df047cdb01fbf66c31c8a57653e43e836466a2d7b252196b8f0f90036a",
+            "priced_on": "5da0a4ee0706baa971d63279cf46e1d8785fe9910de10859484494d3aedf9790"
+          }
+        },
+        "what": "an arm priced against a neighbour block that has since been rebuilt is a reading of a different instrument"
+      },
+      "excluded_as_the_same_arm_under_a_second_name": {
+        "c_lgb_shipped@predeclared_31x300_lr050": "c_lgb_shipped"
+      },
+      "excluded_by_name": [
+        "b_lgb_placebo",
+        "c_lgb_shipped_noobs",
+        "c_lgb_shipped_placebo"
+      ],
+      "rule": "largest clean gain among arms with every fold interval clear and the registered tail clause passing on every fold; controls and placebos excluded by name",
+      "selection": {
+        "arms_compared_after_the_name_exclusions": 24,
+        "arms_passing_every_clause": 14,
+        "arms_priced_on_this_rotation": 27,
+        "entries_in_the_three_priced_tables": 30,
+        "servable_arms_passing_every_clause": 10,
+        "what_this_means": "the chosen arm's interval is the interval of the LARGEST of 14 readings that passed every clause on one and the same three folds, not the interval of a single pre-registered arm. It is quoted with this count beside it and is expected to be optimistic by roughly the spread of the pool. No correction is applied to it, because a correction would be a second choice made on the same data; the count is stated instead."
+      }
+    },
+    "fold": {
+      "airports_held": [],
+      "as_priced_with_every_airport": {
+        "board_all_row_gain_s": 9.31283269713947,
+        "every_fold_interval_clear": true
+      },
+      "board_all_row_gain_s": 11.163448839736702,
+      "board_interval_ci95": [
+        8.919052424519466,
+        14.013227636314237
+      ],
+      "every_fold_interval_clear": true,
+      "passes": true,
+      "read_on": "the vector that ships: the saved fold-side update this base set names, no refit and no airport held",
+      "reason": "",
+      "rows_returned_to_the_base_by_fold": {
+        "december": 0,
+        "january": 0,
+        "july_loo": 0
+      },
+      "vector": "d-seasonal-bag10-255-free.npz",
+      "vector_named_by": "the base set's arm_npz"
+    },
+    "increment_over_the_head": {
+      "arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+      "arm_vector": "d-seasonal-bag10-255-free.npz",
+      "board_all_row_gain_s": 1.7129962200846762,
+      "board_all_row_interval_ci95": [
+        1.3515637996678607,
+        2.186021744216635
+      ],
+      "board_clean_gain_s": 2.094463152039765,
+      "board_clean_interval_ci95": [
+        1.9084792129134562,
+        2.293057998714328
+      ],
+      "by_fold": {
+        "december": {
+          "all_row": {
+            "A_mean_rd": 1355.6520818390961,
+            "B_mean_dd": 1115.4892712297153,
+            "ci95": [
+              1442.6328866575914,
+              1775.6780146779727
+            ],
+            "mse_gain_s2": 1595.8148924484772,
+            "rows": 165677,
+            "rows_moved": 102186
+          },
+          "rmse_head": 186.58781308818018,
+          "rmse_new": 182.26134285849312
+        },
+        "january": {
+          "all_row": {
+            "A_mean_rd": 831.5028511893429,
+            "B_mean_dd": 738.399099700778,
+            "ci95": [
+              811.9751135426712,
+              1049.3818311305135
+            ],
+            "mse_gain_s2": 924.6066026779075,
+            "rows": 153706,
+            "rows_moved": 69839
+          },
+          "rmse_head": 329.1666749010201,
+          "rmse_new": 327.7592001191056
+        },
+        "july_loo": {
+          "all_row": {
+            "A_mean_rd": 987.7682692547925,
+            "B_mean_dd": 876.2225411005522,
+            "ci95": [
+              951.9355095137707,
+              1252.4701034121777
+            ],
+            "mse_gain_s2": 1099.3139974090325,
+            "rows": 190713,
+            "rows_moved": 88426
+          },
+          "rmse_head": 272.93919561778927,
+          "rmse_new": 270.9178667180827
+        }
+      },
+      "december_gain_s": 4.326470229687061,
+      "every_fold_interval_clear": true,
+      "head_arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+      "head_vector": "d-bundle-ungated1299-guard995.npz",
+      "head_vector_provenance": "the vector v18's BYTES ship: the bundle's fit (code/chainbundle.py) on the ungated class at the 28.2 gate, 255 leaves, the frozen p99.5 guard, the floor and LFPG held, at this serve's own pins july 8179f74417c8cb99 / december d35b7171d7062341 / january cb4d6289cb421aa2. It is the head whenever v18 is the base, because v18 is what is on the board (reading 17, 246.3605)",
+      "held": [],
+      "lit_rule": {
+        "all_clauses_hold": false,
+        "asked_for_by_the_base_set": false,
+        "clauses": {
+          "a_fold_is_dark": false,
+          "at_least_two_lit_folds": true,
+          "december_is_lit": true,
+          "every_dark_fold_moves_zero_rows": true,
+          "every_moving_fold_interval_clear": true,
+          "pooled_gain_positive_and_clear": true
+        },
+        "dark_folds": [],
+        "lit_folds": [
+          "july_loo",
+          "december",
+          "january"
+        ],
+        "released_the_candidate": false,
+        "ruling": "desk, 2026-09-09, section 26.5: an EMPTY lit fold is not a crossing -- a cell dark by instrument is priced on its lit folds (>= 2, december among them for a winter ranking month). A fold whose interval CROSSES zero is evidence against and still fails"
+      },
+      "passes": true,
+      "reason": "",
+      "rows_moved_by_the_increment": {
+        "december": 102186,
+        "january": 69839,
+        "july_loo": 88426
+      },
+      "rule_applied": "the registered rule: every fold interval clear",
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 4743.7577816586245,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.6886020650745,
+          "rmse_base": 1754.0413602850087,
+          "rmse_gain_s": 1.3527582199342305,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.004682936591809738
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6587.538220096543,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.706001647335,
+          "rmse_base": 5981.256708782908,
+          "rmse_gain_s": 0.5507071355732478,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.015064637916741093
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 23455.25131195529,
+          "passes_the_clause": true,
+          "rmse_arm": 2381.812611299502,
+          "rmse_base": 2386.731356197699,
+          "rmse_gain_s": 4.918744898197019,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.07339084267089235
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 74852.41590777652,
+          "passes_the_clause": true,
+          "rmse_arm": 1752.6886020650745,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 21.22508008425757,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.013909107963003256
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 41125.453129491594,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.706001647335,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.437189426049372,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.013473553100773389
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 66710.58007499797,
+          "passes_the_clause": true,
+          "rmse_arm": 2381.812611299502,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 13.963232852106103,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.03271991209184486
+        }
+      },
+      "the_unselected_reading_is_record_only": "desk, 2026-09-09, reversing its own 05:40 ruling after review round 6: the pooled/no-fold-declining reading is recorded beside the gate and never applied as one",
+      "unselected": true,
+      "verdict_under_each_rule": {
+        "fold_lower_bounds_s2": {
+          "december": 1442.6328866575914,
+          "january": 811.9751135426712,
+          "july_loo": 951.9355095137707
+        },
+        "fold_point_estimates_s2": {
+          "december": 1595.8148924484772,
+          "january": 924.6066026779075,
+          "july_loo": 1099.3139974090325
+        },
+        "no_fold_declining_on_its_point_estimate": true,
+        "no_fold_interval_clear_below_zero": true,
+        "pooled_interval_clear_of_zero": true,
+        "selected_variant_every_fold_clear": true,
+        "unselected_update_pooled_and_no_fold_declining": true
+      },
+      "what": "the increment over the served head: d = d_new - d_head on the with-clock rows, priced against a base of pbase + d_head, with the airport hold applied to BOTH vectors so the comparison is like for like"
+    },
+    "rms_band_on_the_ratio": [
+      0.6666666666666666,
+      1.3333333333333333
+    ],
+    "rms_breach_accepted_for": [],
+    "rms_breach_covered_by_the_acceptance": false,
+    "rms_within_a_third_everywhere": true,
+    "rows_the_hold_returned_to_the_base": 0,
+    "tail_clause": {
+      "as_priced_in_the_fold_table": {
+        "december": {
+          "passes": true,
+          "rmse_gain_s": 19.518010168781984
+        },
+        "january": {
+          "passes": true,
+          "rmse_gain_s": 3.2874809396789715
+        },
+        "july_loo": {
+          "passes": true,
+          "rmse_gain_s": 10.262736606306134
+        }
+      },
+      "available": true,
+      "by_fold": {
+        "december": {
+          "passes": true,
+          "rmse_gain_s": 21.22508008425757,
+          "rows": 261,
+          "rows_moved": 38
+        },
+        "january": {
+          "passes": true,
+          "rmse_gain_s": 3.437189426049372,
+          "rows": 325,
+          "rows_moved": 32
+        },
+        "july_loo": {
+          "passes": true,
+          "rmse_gain_s": 13.963232852106103,
+          "rows": 656,
+          "rows_moved": 87
+        }
+      },
+      "clause": "rows with y > 3600 s not worse by more than 1 s of RMSE (assignments/k2climb.md line 24); tail rule reads it as a secondary guard and not a gate",
+      "passes_on_every_fold": true,
+      "read_on": "the vector that ships (d-seasonal-bag10-255-free.npz), with [] zeroed, no refit"
+    },
+    "tail_guard": {
+      "cut_read_from": "the pinned panel this serve ships, re-derived at the frozen quantile",
+      "cut_s": 1872.1075545150375,
+      "cut_s_in_guard_arms_json": 1870.64,
+      "frozen_by": "code/guard.py",
+      "quantile": 99.5,
+      "rows_returned_to_the_base": 1573,
+      "why_the_two_differ": "the cut is a quantile of the block's own tail, and the ungated class carries rows guard-arms.json's blocks do not; the quantile is unchanged and frozen"
+    }
+  },
+  "is_candidate": true,
+  "population": {
+    "fold_months_are_pinned_to": {
+      "2025-01": {
+        "airport_days": 218,
+        "block_cache_key": "cb4d6289cb421aa2",
+        "dropped_days": []
+      },
+      "2025-07": {
+        "airport_days": 296,
+        "block_cache_key": "8179f74417c8cb99",
+        "dropped_days": []
+      },
+      "2025-12": {
+        "airport_days": 297,
+        "block_cache_key": "d35b7171d7062341",
+        "dropped_days": []
+      }
+    },
+    "pin_file": "experiments/exp-046-surfacefit/analysis/fold-population.json",
+    "policy": "desk ruling 2026-09-09, standing for both lanes: a delivery enters a fold only at a recorded re-price -- new population file, new arms.json, gate re-read, ledger row. The serve never races the harvest.",
+    "ranking": {
+      "a_change_is_stated_never_a_stop": true,
+      "changed_since_the_previous_serve": {
+        "2026-01": {
+          "airport_days_now": 288,
+          "airport_days_was": 288,
+          "days_added": [],
+          "days_added_count": 0,
+          "days_gone": [],
+          "days_gone_count": 0,
+          "days_resized": [],
+          "days_resized_count": 0,
+          "key_moved": false,
+          "key_now": "bc66e9d3a94c1216",
+          "key_was": "bc66e9d3a94c1216"
+        },
+        "2026-07": {
+          "airport_days_now": 269,
+          "airport_days_was": 269,
+          "days_added": [],
+          "days_added_count": 0,
+          "days_gone": [],
+          "days_gone_count": 0,
+          "days_resized": [],
+          "days_resized_count": 0,
+          "key_moved": false,
+          "key_now": "fdb613d602fbd6bf",
+          "key_was": "fdb613d602fbd6bf"
+        }
+      },
+      "months": {
+        "2026-01": {
+          "airport_days": 288,
+          "block_cache_key": "bc66e9d3a94c1216"
+        },
+        "2026-07": {
+          "airport_days": 269,
+          "block_cache_key": "fdb613d602fbd6bf"
+        }
+      },
+      "recorded_as_latest": true,
+      "what": "the ranking months' population as this serve read it, and the diff against the previous serve's; the ranking months are deliberately UNPINNED (desk, 2026-09-09) so a delivery reaches the served file, and this record is what keeps that visible rather than silent"
+    },
+    "ranking_months_are_not_pinned": "the 2026 blocks are rebuilt from whatever the harvest has delivered; no key gates them, which is the ruling's intent -- the served file should read everything delivered"
+  },
+  "read_back_identical_to_the_vector_priced": true,
+  "rule": {
+    "cover": {
+      "airport_days_by_rule": {
+        "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0": 1350
+      },
+      "airport_days_present": 1350,
+      "airport_days_rejected": 0,
+      "chosen": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "n_rules": 1
+    },
+    "days_wrong_rule": [],
+    "normalised_by_airborne_alt_ok": null,
+    "rules_seen": null
+  },
+  "sha256": "f11d34f88b62a43ec2a0cdbeec967a9ee4b7d92e50a5508aa4d30e5a78ea5e1c",
+  "sibling_check": {
+    "file": "submissions/candidates/exp-046-surface-v10.parquet",
+    "may_differ_only_at_airports": [
+      "EDDF",
+      "EDDM",
+      "EGLL",
+      "EHAM",
+      "LEBL",
+      "LEMD",
+      "LFPG",
+      "LIRF",
+      "LSZH"
+    ],
+    "must_be_identical_at_airports": [
+      "LTFM"
+    ],
+    "rows_at_the_frozen_airports": 47581,
+    "rows_differing_at_the_frozen_airports": 0,
+    "rows_differing_at_those_airports": 194681,
+    "rows_differing_from_the_sibling": 194681,
+    "rows_differing_outside_those_airports": 0,
+    "rows_identical": 150160,
+    "sha256": "7b0557a497f8c09e4f56a11352783b9dda37fe1d0579345d4303e4f74d6e7aca",
+    "what": "this candidate is the sibling plus one named change, checked row by row before the write rather than described"
+  },
+  "ungated_chain_rows": {
+    "fold_side": {
+      "2025-01": {
+        "mode3_shipped": 731,
+        "mode4_admitted_by_the_probe": 1667,
+        "mode4_kept_by_the_gate": 742
+      },
+      "2025-07": {
+        "mode3_shipped": 1170,
+        "mode4_admitted_by_the_probe": 2675,
+        "mode4_kept_by_the_gate": 897
+      },
+      "2025-12": {
+        "mode3_shipped": 861,
+        "mode4_admitted_by_the_probe": 3864,
+        "mode4_kept_by_the_gate": 858
+      }
+    },
+    "gate": {
+      "check_i_abs_dt_offblock_max_s": 1299.0,
+      "check_ii_runway_agreement": true,
+      "priced_in": "analysis/chain-bundle.json (RESULTS section 28.2)",
+      "probe": "experiments/exp-046-surfacefit/analysis/chain-check/block_ungated.py",
+      "restriction": "chainfold.restrict",
+      "step_0_gap_cut_s": 62.405,
+      "the_wrong_placements_are_inside_the_number": "the gated subset's estimated precision is 0.8958, so about a tenth of the rows carry a fabricated clock; they are inside every fold interval section 28.2 quotes, which is what the desk means by pricing the trade",
+      "thresholds_were_fixed_on": "the ranking side before any fold was priced: step 0 is the shipped rows' p95 of t_airborne - obs_wheels_off (27.1) and 1,299 s is the shipped rows' p95 of |P - AOBT| (27.3); the cross-fitted pick equals the in-fold pick and the selection premium is zero (28.3)"
+    },
+    "ranking_side": {
+      "by_airport": {
+        "EDDF": 1608,
+        "EDDM": 1,
+        "EGLL": 247,
+        "LEBL": 54,
+        "LEMD": 85,
+        "LFPG": 285,
+        "LIRF": 141,
+        "LSZH": 35
+      },
+      "by_month": {
+        "2026-01": 1304,
+        "2026-07": 1152
+      },
+      "carrying_another_lanes_value_in_the_bytes": 2169,
+      "of_those_held_at_the_base": 0,
+      "of_those_in_this_lanes_class": 2456,
+      "of_those_noac": 0,
+      "of_those_served_by_this_file": 2456,
+      "of_those_the_guard_returned_to_the_base": 5,
+      "rows_kept_by_the_gate": 2456,
+      "which_lane": "exp-047-queue: these rows have no clock under the shipped matcher 122c7d84, so they are in queue's complement and queue's interface was built without them"
+    }
+  },
+  "written_to": "submissions/candidates/exp-046-surface-v11.parquet"
+}

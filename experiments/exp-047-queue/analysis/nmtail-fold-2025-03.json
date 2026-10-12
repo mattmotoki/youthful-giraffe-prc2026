@@ -1,0 +1,41 @@
+{
+  "cap_s": 1200,
+  "config": {
+    "learning_rate": 0.04,
+    "min_data_in_leaf": 60,
+    "mode": "p",
+    "n_estimators": 900,
+    "n_features": 78,
+    "num_leaves": 63,
+    "seed": 7
+  },
+  "fold": "march_loo",
+  "hit_the_cap": false,
+  "mode": "p",
+  "producer": "experiments/exp-010-nmtail/code/run_folds.py (run(), injected REOCC)",
+  "reocc_cache": {
+    "bytes": 16076036,
+    "dir": "artifacts/exp-047/reocc",
+    "months_built": [],
+    "wall_s": 0.0
+  },
+  "vector": {
+    "bytes": 2748372,
+    "columns_are_the_contract": true,
+    "ids_identical_to_the_block": true,
+    "in_block_not_in_vector": 0,
+    "in_vector_not_in_block": 0,
+    "n_scored": 164450,
+    "path": "experiments/exp-047-queue/oof/N1-nmtail--march_loo.parquet",
+    "rmse_where_predicted": 356.8452,
+    "rows": 164450,
+    "rows_lost_to_the_join": 0,
+    "sha256": "230acef12aa8a0de174826f5933c66414849adc5e05fa56d3d54fe789c28bed5",
+    "stack_members_ok": true,
+    "y_pred_null_share": 0.0,
+    "y_pred_nulls": 0
+  },
+  "wall_min": 1.9,
+  "wall_s": 111.2,
+  "what": "\u00a77bj addendum: N1-nmtail smoked on november_loo"
+}

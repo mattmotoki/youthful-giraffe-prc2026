@@ -1,0 +1,68 @@
+{
+  "name": "P2-phi",
+  "argv": "--name P2-phi --features v2 --target residual --linear-tree --clip-floor 60 --noac-head --residual-guard --es-mode lastmonth --es-rounds 100 --learning-rate 0.03 --phi --lirf --folds july --no-submission",
+  "folds": {
+    "july": {
+      "rmse": 322.9413522732437,
+      "rmse_bulk": 280.50170599999393,
+      "rmse_tail": 2742.9948544320328,
+      "rmse_no_nm": 1230.7564454450296,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.2481568160702986,
+      "sse_share_no_nm": 0.2996063242421501,
+      "bias": 7.929975020032499,
+      "rmse_noac": 3711.2275888417157,
+      "n_noac": 339,
+      "sse_share_noac": 0.23475089537494565,
+      "fold": "july",
+      "best_iteration": 104,
+      "refit_rounds": 127,
+      "seconds": 363,
+      "oof": "experiments/exp-001-retro-v1/oof/P2-phi-july.parquet"
+    }
+  },
+  "phi_settings": {
+    "weight": "rows",
+    "shrink_rows": 150.0,
+    "min_rows": 100
+  },
+  "lirf_gate": "LIRF",
+  "shared_modules": {
+    "surface": {
+      "UNIMPEDED_Q": 0.2,
+      "WINDOWS": [
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ],
+      "BUCKET": 1200.0,
+      "NBR_WINDOW": "1800s",
+      "SHRINK_K": 20.0,
+      "n_families": 7
+    },
+    "phi": {
+      "default_weight": "rows",
+      "default_shrink_rows": 150.0,
+      "default_min_rows": 100,
+      "keys": [
+        [
+          "airport"
+        ],
+        [
+          "airport",
+          "operator"
+        ]
+      ]
+    },
+    "lirf": {
+      "cat_features": [
+        "flight_prefix",
+        "stand_group"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+ "python": "3.12.13",
+ "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+ "cpu_count": 4,
+ "cpu_affinity": 4,
+ "mem_total": "32870488 kB",
+ "mem_available": "31776416 kB",
+ "cgroup_mem_max": "31138512896",
+ "disk_/kaggle/working": "total=19.5G free=19.5G",
+ "disk_/kaggle/input": "total=19.5G free=19.5G",
+ "disk_/tmp": "total=8062.4G free=1026.8G",
+ "disk_/": "total=8062.4G free=1026.8G",
+ "gpus": [
+  "0, Tesla P100-PCIE-16GB, 16384 MiB, 580.159.04, 6.0"
+ ],
+ "versions": {
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "polars": "1.35.2",
+  "pyarrow": "24.0.0",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.10",
+  "xgboost": "3.2.0",
+  "sklearn": "1.6.1",
+  "scipy": "1.16.3",
+  "duckdb": "1.3.2",
+  "optuna": "4.9.0",
+  "torch": "2.10.0+cu128",
+  "psutil": "5.9.5"
+ },
+ "accel": {
+  "torch_cuda": true,
+  "torch_devices": [
+   "Tesla P100-PCIE-16GB"
+  ],
+  "torch_mem_gb": [
+   15.89
+  ],
+  "catboost_gpu": "OK (14.5s for 50 iters on 40000x40)",
+  "xgboost_gpu": "OK (0.7s for 50 iters on 40000x40)",
+  "lightgbm_gpu": "OK"
+ },
+ "bench": {
+  "lgb_100r_200k_4thr_s": 17.1,
+  "lgb_projected_1.8M_1200r_4thr_min": 30.8,
+  "cat_gpu_200it_200k_s": 23.2,
+  "cat_gpu_projected_1.8M_3000it_min": 52.1
+ },
+ "frame_18M_155_gb": 0.0
+}

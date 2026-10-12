@@ -1,0 +1,155 @@
+{
+ "what": "candidate exp-046-surface-v8.parquet (this lane's v9 expectation) = v18's bytes with the K = 10 BAG at 255 as the head, base set v22, ranking side bagged at K = 10.  Desk ruling 2026-09-09: it passes the standing gate and outranks v7 by the arm_choice rule, so it takes the v19 slot unless 40.3's cross-fitted gate promotes the paired 511.  Figures from exp-046 analysis/bag-10.json::prices.over_v18_bytes.",
+ "status": "SKELETON -- written before the read exists (exp-047 7ay).  TO FILL IN when the read lands: replace each placeholder below with the figure from the serve's own JSON, delete that path from `pending`, and run.  The placeholders are 40's PREDICTIONS, not measurements -- they are here so a premature run reports PENDING rather than agreeing with a guess.  Do not move a placeholder into a claim without the read.",
+ "sources": {
+  "prediction": "experiments/exp-046-surfacefit/RESULTS.md 40",
+  "hard_claims": "exp-047 7ax, the v7 audit that passed: pins, fold rows, template, class",
+  "pins": "experiments/exp-046-surfacefit/analysis/fold-population.json"
+ },
+ "how_to_run": "OMP_NUM_THREADS=2 ../../.venv/bin/python work/audit.py --head-npz ../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz --arm-npz ../exp-046-surfacefit/work/d-bag10-255-free.npz --pins ../exp-046-surfacefit/analysis/fold-population.json --class-vector ../../artifacts/exp-046/class/{month}-v21.parquet --previous-class-vector ../../artifacts/exp-046/class/{month}-v20.parquet --candidate ../../submissions/candidates/exp-046-surface-v8.parquet --previous ../../submissions/uploaded/youthful-giraffe_v18.parquet --baseline ../../submissions/uploaded/youthful-giraffe_v18.parquet --hold '' --changed-expected-at LFPG --expect analysis/audit-expect-v9.json --out analysis/audit-v9.json",
+ "the_head_is_pinned_by_its_bytes": {
+  "file": "../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+  "sha256": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684",
+  "why": "exp-046 bag511.py asserts its head equals the K = 5 bag bit for bit and bag10.py takes it as HEAD5, so those increments are priced over v7's shipped bytes.  Check this sha BEFORE the audit: if it has moved, the increment is over a different base and the reading changes, which the audit itself would not say.",
+  "checked_by": "work/audit.py prints the head path; compare with shasum -a 256"
+ },
+ "why_the_hold_is_empty": "this path serves the bag EVERYWHERE, LFPG included, exactly as v7 does (7aw addendum).  --hold LFPG would price a different composition.",
+ "expect": {
+  "pins.by_fold.july_loo.their_airport_days": 296,
+  "pins.by_fold.july_loo.days_agree": true,
+  "pins.by_fold.december.their_airport_days": 297,
+  "pins.by_fold.december.days_agree": true,
+  "pins.by_fold.january.their_airport_days": 218,
+  "pins.by_fold.january.days_agree": true,
+  "increment.population.july_loo.rows": 190713,
+  "increment.population.july_loo.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.december.rows": 165677,
+  "increment.population.december.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.january.rows": 153706,
+  "increment.population.january.rows_returned_to_the_base_by_the_hold": 0,
+  "bytes.template.rows": 344841,
+  "bytes.template.row_order_is_the_template_order": true,
+  "bytes.template.previous_row_order_is_the_template_order": true,
+  "bytes.template.all_finite": true,
+  "bytes.template.duplicate_keys": 0,
+  "bytes.template.rows_at_or_below_zero": 0,
+  "bytes.class.changed_is_a_subset_of_occupied": true,
+  "bytes.class.changed_rows_outside_occupied": 0,
+  "bytes.class.rows_missing_for_a_template_key": 0,
+  "bytes.class.noac_rows": 388,
+  "bytes.class.noac_rows_changed": 0,
+  "bytes.class.occupied": 196256,
+  "bytes.class.written": 196256,
+  "bytes.class.occupied_and_not_written": 0,
+  "bytes.class.written_and_not_occupied": 0,
+  "bytes.class.occupied_unwritten_rows_that_changed": 0,
+  "bytes.class.guard_held": 1573,
+  "bytes.class.occupied_at_the_expected_airports": 2346,
+  "bytes.class.guard_held_at_the_expected_airports": 96,
+  "bytes.class.writable_at_the_expected_airports": 2250,
+  "bytes.class_vs_previous.newly_occupied": 0,
+  "bytes.class_vs_previous.no_longer_occupied": 0,
+  "increment.per_fold.july_loo.mse_gain_s2": {
+   "value": 113.65453532531298,
+   "tol": 1e-09
+  },
+  "increment.per_fold.december.mse_gain_s2": {
+   "value": 256.6593247378865,
+   "tol": 1e-09
+  },
+  "increment.per_fold.january.mse_gain_s2": {
+   "value": 184.83630343521403,
+   "tol": 1e-09
+  },
+  "increment.per_fold.july_loo.ci95_envelope_over_the_seeds": {
+   "inside": [
+    79.70965838078408,
+    146.61068530853757
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.december.ci95_envelope_over_the_seeds": {
+   "inside": [
+    210.10172650048594,
+    309.8861686751062
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.january.ci95_envelope_over_the_seeds": {
+   "inside": [
+    146.22236217363718,
+    229.58053334885463
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.july_loo.lit": true,
+  "increment.per_fold.december.lit": true,
+  "increment.per_fold.january.lit": true,
+  "increment.lit_rule.dark_folds": [],
+  "increment.lit_rule.every_lit_fold_clears_on_every_seed": true,
+  "increment.lit_rule.every_fold_clears_including_dark": true,
+  "increment.board.all_row_gain_s": {
+   "value": 0.242752698659217,
+   "tol": 1e-09
+  },
+  "increment.board.clean_gain_s": {
+   "value": 0.2964509562912383,
+   "tol": 1e-09
+  },
+  "increment.board.all_row_ci95_envelope_over_the_seeds": {
+   "inside": [
+    0.18094555432460738,
+    0.3260116493297317
+   ],
+   "tol": 0.0
+  },
+  "increment.population.july_loo.rows_moved": 88424,
+  "increment.population.december.rows_moved": 102186,
+  "increment.population.january.rows_moved": 69839,
+  "bytes.candidate_sha256": "d03d132a5ff5d3fc70a72b9f60a1b418a169e911ac32ef08b14378695932aa14",
+  "bytes.moved.rows_changed": 0,
+  "bytes.moved.changed_rows_at_the_expected_airports": 2250,
+  "bytes.moved.rows_reverted_to_the_baseline": 0
+ },
+ "pending": [
+  "bytes.moved.rows_changed",
+  "bytes.moved.rows_reverted_to_the_baseline"
+ ],
+ "pending_because": "these are the figures the read supplies.  Their placeholder values are 40's registered predictions and are NOT claims.",
+ "the_registered_prediction": {
+  "registered_in": "exp-046 40.2, before the fits",
+  "the_board_over_v18": "about +0.225 -- MEASURED +0.24275, above the registered figure",
+  "the_increment_over_the_K5_bag": "+0.025 [+0.015, +0.035] and clears every fold",
+  "what_the_increment_actually_read": "+0.02250 [+0.00634, +0.03984] -- INSIDE 40.2's registered band on the board, but july reads +6.31 [-7.23, +19.80] and does NOT clear.  The desk ruled accordingly: no v9 over v7 on the increment.  This file prices the K = 10 bag over V18, which is a different and cleaner comparison, and every fold of THAT read is clear.",
+  "the_sharp_one_and_how_it_landed": "40.2 forced 2A/B about 2.0 with rms about 3.6 s on july for the K=10 - K=5 increment.  Measured 2A/B 1.399 july, 2.159 december, 2.055 january, rms 3.974 july.  Two folds land on the prediction and july at 1.40 sits between 40.2's two stated outcomes -- an OBSERVATION for surfacefit's account, recorded here before any ruling on it."
+ },
+ "notes_on_the_expectation": {
+  "why_the_head_is_H_and_not_the_K5_bag": "the desk re-targeted this file: the read that decides the slot is the K = 10 bag over v18's BYTES, priced against the served head H, not the K = 10 increment over the K = 5 bag.  Pointing --head-npz at the K = 5 bag prices the other question, which the desk has already ruled on and which does not clear july.",
+  "the_increment_claims_are_measured_not_predicted": "unlike the v8 and v10 files, v9's fold figures come from a read that has already run, so they are claims at 1e-9 and only the byte half is pending.  The fold intervals carry the 3.0 s2/row tolerance 7av declared and the desk accepted; the board interval carries tol 0.",
+  "class_counts_are_conditional": "every bytes.class.* count above is claimed on the standing v21 numbers, which v7's audit (7ax) read and which the desk described as a re-pin.  If the serve ships a class vector that MOVES occupancy, these are not defects: re-point them at the new manifest first and say so, exactly as 7at did for the v20 re-emission.  The three LFPG counts are the ones to read first, because 2,346 - 96 = 2,250 is what makes the changed-row count close.",
+  "the_LFPG_claim_applies_a_registered_rule": "2,250 is not a new number: 7aw's addendum registered the derivation (LFPG occupied minus guard-held) and 7ax proved it exactly on v7 -- 2,346 - 96 = 2,250.  This candidate runs the same guard-995 head over the same class, so the registered rule gives the same count.  Applying a registered rule is not fitting the file to the moment; the bag's NON-LFPG count stays pending, because that one has never been registered.",
+  "the_class_vector_at_the_time_of_this_run": "the audit of record ran against v21 for occupancy because v22 had not landed, and the corrected v22 was re-run afterwards: 54 of 54 on both, every class claim identical.  analysis/audit-v9-bag10.json is the v21 run, analysis/audit-v9-bag10-on-v22.json the v22 one."
+ },
+ "the_class_vector_pins": {
+  "2026-01": "4c9a91b6cd760277445ab78d80dc131287feec9ffd6e0a72c7a71c22d556f97f",
+  "2026-07": "a3a4aa3be298240d7b93bc0d723f83e5d902f25f146340d1acdc799fd28869be",
+  "status": "PINNED.  surfacefit's commit c8457f0 tracks experiments/exp-046-surfacefit/analysis/class-manifest-v22.json, and both vectors on disk hash to the shas the desk confirmed.  Verified here on the manifest as committed, not on the desk's message alone.",
+  "the_defective_emission": "kept as analysis/class-manifest-v22-nogainedflag.json: guard_held 1,546 against the serve's 1,573 and written 193,077 against occupied 196,256.  occupied and obs_has_clock were identical to v21 row for row on both months -- verified independently by this lane, id order included -- so the v21 audit stood and did not need re-running for its verdict.",
+  "verified_on_the_committed_manifest": {
+   "manifest": "experiments/exp-046-surfacefit/analysis/class-manifest-v22.json",
+   "commit": "c8457f0",
+   "matcher_sha256": "122c7d84571b53e02de26e53add8e783bc95be9f0eaea5b6ef6c155280aad780",
+   "rule_sha256": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+   "candidate_sha256": "d03d132a5ff5d3fc70a72b9f60a1b418a169e911ac32ef08b14378695932aa14",
+   "occupied_by_exp_046": 196256,
+   "written_by_exp_046": 196256,
+   "served_by_exp_046": 196256,
+   "guard_held_by_exp_046": 1573,
+   "noac": 388,
+   "rows": 344841,
+   "complement_that_leaves_every_row_once": 148585,
+   "the_three_agree": true,
+   "the_column_this_lane_complements": "occupied_by_exp_046 -- NEVER written_by_exp_046, never this lane's own block occupancy, never v16/v18 (the standing handshake rule).  On v22 the two columns agree row for row, which they did NOT on the first v20 emission."
+  }
+ }
+}

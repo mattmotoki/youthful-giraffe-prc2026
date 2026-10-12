@@ -1,0 +1,218 @@
+{
+  "after": {
+    "leaves_127x300_lr050": {
+      "seconds": 121.3,
+      "unheld_all_row_ci95": [
+        7.035208509994726,
+        11.090734968599005
+      ],
+      "unheld_all_row_gain_s": 8.833798699487033
+    },
+    "leaves_255x300_lr050": {
+      "seconds": 198.2,
+      "unheld_all_row_ci95": [
+        7.168817797324907,
+        11.40239590000075
+      ],
+      "unheld_all_row_gain_s": 9.037559691935428
+    },
+    "leaves_255x300_lr050+guard995": {
+      "unheld_all_row_ci95": [
+        7.3741784331419975,
+        11.626473553612508
+      ],
+      "unheld_all_row_gain_s": 9.19458341385132
+    }
+  },
+  "before": {
+    "capacity_block_cache_keys": {
+      "2025-01": "cb4d6289cb421aa2",
+      "2025-07": "4521a8fefabfae37",
+      "2025-12": "34a155e40aac9ff6"
+    },
+    "guard_cut_s_by_scored_fold": {
+      "december": 1931.36,
+      "january": 1843.4,
+      "july_loo": 1836.22
+    },
+    "guard_cut_s_for_the_ranking_serve": 1864.41,
+    "guarded_unheld_all_row_gain_s": {
+      "leaves_127x300_lr050+guard995": 9.040412950601137,
+      "leaves_255x300_lr050+guard995": 9.20742948802615
+    },
+    "unheld_all_row_gain_s": {
+      "leaves_127x300_lr050": 8.872911833687112,
+      "leaves_255x300_lr050": 9.042736144786204
+    }
+  },
+  "fold_gate": {
+    "all_row_ci95_now": [
+      7.313904073865368,
+      11.535051051106429
+    ],
+    "all_row_gain_s_now": 9.180357840015972,
+    "by_fold_now": {
+      "december": {
+        "A_mean_rd": 6801.191616739242,
+        "B_mean_dd": 6823.280502118088,
+        "ci95": [
+          6228.726316118721,
+          7513.037979205272
+        ],
+        "mse_gain_s2": 6779.102731360397,
+        "rows": 165677,
+        "rows_moved": 99462
+      },
+      "january": {
+        "A_mean_rd": 5339.376069519353,
+        "B_mean_dd": 5308.794013548711,
+        "ci95": [
+          4868.135320505756,
+          5887.655901553048
+        ],
+        "mse_gain_s2": 5369.958125489996,
+        "rows": 153706,
+        "rows_moved": 68365
+      },
+      "july_loo": {
+        "A_mean_rd": 6027.621322339182,
+        "B_mean_dd": 6305.057394222502,
+        "ci95": [
+          5171.404200174603,
+          6536.4492187138585
+        ],
+        "mse_gain_s2": 5750.185250455861,
+        "rows": 190713,
+        "rows_moved": 86008
+      }
+    },
+    "clean_gain_s_now": 11.123489843291395,
+    "every_fold_interval_clear_now": true,
+    "held": [
+      "LFPG"
+    ]
+  },
+  "guard": {
+    "cut_s_by_scored_fold_now": {
+      "december": 1931.36,
+      "january": 1843.4,
+      "july_loo": 1836.22
+    },
+    "cut_s_by_scored_fold_when_frozen": {
+      "december": 1931.36,
+      "january": 1843.4,
+      "july_loo": 1836.22
+    },
+    "cut_s_for_the_ranking_serve_now": 1864.41,
+    "cut_s_for_the_ranking_serve_when_frozen": 1864.41,
+    "note": "guard.py freezes the QUANTILE, not the cut; the cut is a quantile of pbase - obs_taxi on the fitting months, so more july rows move it. The serve reads the frozen cut out of analysis/guard-arms.json and refuses a mismatched quantile, so this is a number for the desk, not a drift the serve would accept silently",
+    "quantile": 99.5
+  },
+  "increment_over_the_head": {
+    "all_row_ci95_now": [
+      0.2449492191767959,
+      0.5171666716744096
+    ],
+    "all_row_gain_s_now": 0.3609781225695201,
+    "arm": "c_lgb_shipped@leaves_255x300_lr050+guard995",
+    "by_fold_now": {
+      "december": {
+        "A_mean_rd": 386.6927947309529,
+        "B_mean_dd": 615.2015703554305,
+        "ci95": [
+          76.0122643288619,
+          240.3724139221886
+        ],
+        "mse_gain_s2": 158.18401910647543,
+        "rows": 165677,
+        "rows_moved": 99786
+      },
+      "january": {
+        "A_mean_rd": 384.8615404433485,
+        "B_mean_dd": 596.185263711861,
+        "ci95": [
+          103.30780712428093,
+          245.6108333821816
+        ],
+        "mse_gain_s2": 173.53781717483602,
+        "rows": 153706,
+        "rows_moved": 68768
+      },
+      "july_loo": {
+        "A_mean_rd": 305.65711060853215,
+        "B_mean_dd": 361.02858236392996,
+        "ci95": [
+          160.2445780433146,
+          353.33998299352845
+        ],
+        "mse_gain_s2": 250.28563885313437,
+        "rows": 190713,
+        "rows_moved": 86520
+      }
+    },
+    "clean_gain_s_now": 0.4404148231444083,
+    "december_gain_s_now": 0.42278284979994396,
+    "every_fold_interval_clear_now": true,
+    "head_arm": "c_lgb_shipped@leaves_127x300_lr050"
+  },
+  "rows_by_fold": {
+    "december": 165677,
+    "january": 153706,
+    "july_loo": 190713
+  },
+  "rule": {
+    "block_cache_keys_now": {
+      "2025-01": "cb4d6289cb421aa2",
+      "2025-07": "6a27ed2704dde1b2",
+      "2025-12": "34a155e40aac9ff6"
+    },
+    "block_cache_keys_when_priced": {
+      "2025-01": "cb4d6289cb421aa2",
+      "2025-07": "4521a8fefabfae37",
+      "2025-12": "34a155e40aac9ff6"
+    },
+    "sha256": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+  },
+  "tail_clauses_now": {
+    "december": {
+      "clause_s": 1.0,
+      "mse_gain_s2_per_row": 77992.86463700251,
+      "passes_the_clause": true,
+      "rmse_arm": 1751.7924783145975,
+      "rmse_base": 1773.913682149332,
+      "rmse_gain_s": 22.121203834734615,
+      "rows": 261,
+      "rows_moved": 36,
+      "share_of_the_gain": 0.018047358169487927
+    },
+    "january": {
+      "clause_s": 1.0,
+      "mse_gain_s2_per_row": 40330.78569205291,
+      "passes_the_clause": true,
+      "rmse_arm": 5980.772437200558,
+      "rmse_base": 5984.1431910733845,
+      "rmse_gain_s": 3.3707538728267536,
+      "rows": 325,
+      "rows_moved": 31,
+      "share_of_the_gain": 0.01588028614885049
+    },
+    "july_loo": {
+      "clause_s": 1.0,
+      "mse_gain_s2_per_row": 40679.1616564717,
+      "passes_the_clause": true,
+      "rmse_arm": 2387.2709803798725,
+      "rmse_base": 2395.775844151608,
+      "rmse_gain_s": 8.504863771735472,
+      "rows": 656,
+      "rows_moved": 86,
+      "share_of_the_gain": 0.024269477232494077
+    }
+  },
+  "usable_rows_by_fold": {
+    "december": 100792,
+    "january": 68770,
+    "july_loo": 86924
+  },
+  "what": "the two arms the v16 gate is built from, re-priced on the block the serve now resolves, so the desk can see how far the gate moves; nothing here is registered and no gate reads these files",
+  "why": "the harvest delivered 2025-06-30 for nine airports into the july fold block after analysis/arms.json and analysis/capacity.json were priced"
+}

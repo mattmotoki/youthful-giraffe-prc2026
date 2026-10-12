@@ -1,0 +1,1513 @@
+{
+  "columns": [
+    "published",
+    "kaggle",
+    "nested",
+    "nested-f1held"
+  ],
+  "arms": [
+    "stack-5",
+    "v6",
+    "v7",
+    "K2",
+    "refit-bulk"
+  ],
+  "threads": 4,
+  "anchor": "nested",
+  "anchor_note": "channel A closed: fold g's TRAINING anchor is fitted on the single fold that is neither g nor the scored fold (exp-026/code/nested_anchor.py); it is also a weaker anchor, one fitting fold instead of two",
+  "block": "depx",
+  "win": 600.0,
+  "seeds": [
+    7,
+    107,
+    207,
+    307,
+    407
+  ],
+  "rounds": 300,
+  "lightgbm": "4.7.0",
+  "members": {
+    "stack-5/v6/v7": [
+      "T-tailv4",
+      "C2-cat",
+      "L2-hub8725",
+      "D1-winter",
+      "F1-fresh",
+      "V3-allin",
+      "N1-nmtail"
+    ],
+    "K2/refit-bulk": [
+      "T-tailv4",
+      "C2-cat",
+      "L2-hub8725",
+      "D1-winter",
+      "K2-window",
+      "V3-allin",
+      "N1-nmtail"
+    ]
+  },
+  "nested_members": [
+    "F1-fresh",
+    "T-tailv4",
+    "L2-hub8725"
+  ],
+  "unnested_members": [
+    "C2-cat",
+    "D1-winter",
+    "K2-window",
+    "N1-nmtail",
+    "V3-allin"
+  ],
+  "gates": {
+    "A_blend5_all_rows": {
+      "july_loo": 0.0,
+      "december": 0.0,
+      "january": 0.0
+    }
+  },
+  "clean": {
+    "published": {
+      "stack-5": {
+        "july_loo": 285.2834,
+        "december": 205.446,
+        "january": 219.026
+      },
+      "v6": {
+        "july_loo": 284.7696,
+        "december": 205.3597,
+        "january": 218.8247
+      },
+      "v7": {
+        "july_loo": 284.6747,
+        "december": 205.263,
+        "january": 218.5204
+      },
+      "K2": {
+        "july_loo": 284.3373,
+        "december": 204.8968,
+        "january": 218.3178
+      },
+      "refit-bulk": {
+        "july_loo": 284.1889,
+        "december": 204.6033,
+        "january": 218.2359
+      }
+    },
+    "kaggle": {
+      "stack-5": {
+        "july_loo": 285.3732,
+        "december": 205.5918,
+        "january": 218.7985
+      },
+      "v6": {
+        "july_loo": 284.8271,
+        "december": 205.5136,
+        "january": 218.6201
+      },
+      "v7": {
+        "july_loo": 284.7331,
+        "december": 205.4162,
+        "january": 218.323
+      },
+      "K2": {
+        "july_loo": 284.4183,
+        "december": 204.9791,
+        "january": 218.1361
+      },
+      "refit-bulk": {
+        "july_loo": 284.254,
+        "december": 204.628,
+        "january": 218.1999
+      }
+    },
+    "nested": {
+      "stack-5": {
+        "july_loo": 285.8739,
+        "december": 205.6663,
+        "january": 218.796
+      },
+      "v6": {
+        "july_loo": 285.1529,
+        "december": 205.4025,
+        "january": 218.601
+      },
+      "v7": {
+        "july_loo": 285.0883,
+        "december": 205.3225,
+        "january": 218.3366
+      },
+      "K2": {
+        "july_loo": 284.7576,
+        "december": 204.8966,
+        "january": 218.1185
+      },
+      "refit-bulk": {
+        "july_loo": 284.672,
+        "december": 204.5618,
+        "january": 218.164
+      }
+    },
+    "nested-f1held": {
+      "stack-5": {
+        "july_loo": 285.9061,
+        "december": 205.6537,
+        "january": 218.8509
+      },
+      "v6": {
+        "july_loo": 285.2996,
+        "december": 205.449,
+        "january": 218.5915
+      },
+      "v7": {
+        "july_loo": 285.2113,
+        "december": 205.3595,
+        "january": 218.3236
+      },
+      "K2": {
+        "july_loo": 284.9093,
+        "december": 204.9307,
+        "january": 218.1699
+      },
+      "refit-bulk": {
+        "july_loo": 284.7465,
+        "december": 204.5259,
+        "january": 218.2056
+      }
+    }
+  },
+  "clean_exact": {
+    "published": {
+      "stack-5": {
+        "july_loo": 285.28341614481474,
+        "december": 205.44600854025978,
+        "january": 219.02604448816913
+      },
+      "v6": {
+        "july_loo": 284.7696053636252,
+        "december": 205.35967485852612,
+        "january": 218.82468572513577
+      },
+      "v7": {
+        "july_loo": 284.67471193518986,
+        "december": 205.26301216399554,
+        "january": 218.52043403884733
+      },
+      "K2": {
+        "july_loo": 284.33729964886044,
+        "december": 204.89676501553942,
+        "january": 218.31779772347411
+      },
+      "refit-bulk": {
+        "july_loo": 284.18890944797363,
+        "december": 204.60326758370266,
+        "january": 218.23591347155318
+      }
+    },
+    "kaggle": {
+      "stack-5": {
+        "july_loo": 285.3731584603746,
+        "december": 205.59182558161447,
+        "january": 218.79845503566492
+      },
+      "v6": {
+        "july_loo": 284.82712880704753,
+        "december": 205.51361947040493,
+        "january": 218.62011950048515
+      },
+      "v7": {
+        "july_loo": 284.73305383018914,
+        "december": 205.41617064122747,
+        "january": 218.32301702559215
+      },
+      "K2": {
+        "july_loo": 284.4183106092421,
+        "december": 204.97911165932172,
+        "january": 218.13607028911582
+      },
+      "refit-bulk": {
+        "july_loo": 284.25398719432303,
+        "december": 204.6280347468583,
+        "january": 218.19988096383884
+      }
+    },
+    "nested": {
+      "stack-5": {
+        "july_loo": 285.87385877986634,
+        "december": 205.66628810040248,
+        "january": 218.79604888212498
+      },
+      "v6": {
+        "july_loo": 285.152898337619,
+        "december": 205.4025134782478,
+        "january": 218.6010206952228
+      },
+      "v7": {
+        "july_loo": 285.0882589623635,
+        "december": 205.32254036867056,
+        "january": 218.33662182640327
+      },
+      "K2": {
+        "july_loo": 284.75762752857867,
+        "december": 204.89656571020453,
+        "january": 218.11846411488682
+      },
+      "refit-bulk": {
+        "july_loo": 284.67201191574134,
+        "december": 204.56176561635166,
+        "january": 218.16402798511444
+      }
+    },
+    "nested-f1held": {
+      "stack-5": {
+        "july_loo": 285.9061081543298,
+        "december": 205.6537344287046,
+        "january": 218.85086506141243
+      },
+      "v6": {
+        "july_loo": 285.29957013981317,
+        "december": 205.44904048228736,
+        "january": 218.59147418517853
+      },
+      "v7": {
+        "july_loo": 285.2112599624005,
+        "december": 205.3594988835016,
+        "january": 218.32359040723685
+      },
+      "K2": {
+        "july_loo": 284.90929038635227,
+        "december": 204.93073200528366,
+        "january": 218.16986352075034
+      },
+      "refit-bulk": {
+        "july_loo": 284.7465440311538,
+        "december": 204.52591805701684,
+        "january": 218.20557906677897
+      }
+    }
+  },
+  "board": {
+    "published": {
+      "stack-5": 258.0476,
+      "v6": 257.6554,
+      "v7": 257.4826,
+      "K2": 257.1986,
+      "refit-bulk": 257.0764
+    },
+    "kaggle": {
+      "stack-5": 258.0173,
+      "v6": 257.6139,
+      "v7": 257.4444,
+      "K2": 257.1802,
+      "refit-bulk": 257.1029
+    },
+    "nested": {
+      "stack-5": 258.3251,
+      "v6": 257.8075,
+      "v7": 257.6684,
+      "K2": 257.3827,
+      "refit-bulk": 257.347
+    },
+    "nested-f1held": {
+      "stack-5": 258.3655,
+      "v6": 257.8943,
+      "v7": 257.7393,
+      "K2": 257.4955,
+      "refit-bulk": 257.4086
+    }
+  },
+  "board_exact": {
+    "published": {
+      "stack-5": 258.04756012927953,
+      "v6": 257.6554174615258,
+      "v7": 257.48258065463205,
+      "K2": 257.1985852956795,
+      "refit-bulk": 257.0764077042605
+    },
+    "kaggle": {
+      "stack-5": 258.01733649323717,
+      "v6": 257.61393209172604,
+      "v7": 257.44435200921663,
+      "K2": 257.1802014843838,
+      "refit-bulk": 257.10294609737036
+    },
+    "nested": {
+      "stack-5": 258.3250521021594,
+      "v6": 257.8074656814517,
+      "v7": 257.66837365019956,
+      "K2": 257.3826994324827,
+      "refit-bulk": 257.3470347020933
+    },
+    "nested-f1held": {
+      "stack-5": 258.3654974368871,
+      "v6": 257.89427258179336,
+      "v7": 257.7393103581598,
+      "K2": 257.4954756505637,
+      "refit-bulk": 257.4085679547523
+    }
+  },
+  "gain": {
+    "published": {
+      "v6 - stack-5": {
+        "per_fold": {
+          "july_loo": 0.5138,
+          "december": 0.0863,
+          "january": 0.2014
+        },
+        "ci": {
+          "july_loo": [
+            0.5138,
+            0.1542,
+            0.9038
+          ],
+          "december": [
+            0.0863,
+            -0.5999,
+            0.7213
+          ],
+          "january": [
+            0.2014,
+            -0.2012,
+            0.5939
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.5954,
+            0.171,
+            1.0381
+          ],
+          "december": [
+            0.0887,
+            -0.6078,
+            0.7326
+          ],
+          "january": [
+            0.2129,
+            -0.2164,
+            0.6282
+          ]
+        },
+        "board": 0.3921,
+        "board_ci": [
+          0.3921,
+          0.1186,
+          0.6677
+        ]
+      },
+      "v7 - v6": {
+        "per_fold": {
+          "july_loo": 0.0949,
+          "december": 0.0967,
+          "january": 0.3043
+        },
+        "ci": {
+          "july_loo": [
+            0.0949,
+            0.0497,
+            0.1492
+          ],
+          "december": [
+            0.0967,
+            0.0378,
+            0.163
+          ],
+          "january": [
+            0.3043,
+            0.1508,
+            0.4968
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.11,
+            0.0574,
+            0.1696
+          ],
+          "december": [
+            0.0993,
+            0.0386,
+            0.1665
+          ],
+          "january": [
+            0.3218,
+            0.1606,
+            0.5301
+          ]
+        },
+        "board": 0.1728,
+        "board_ci": [
+          0.1728,
+          0.1085,
+          0.2543
+        ]
+      },
+      "K2 - v7": {
+        "per_fold": {
+          "july_loo": 0.3374,
+          "december": 0.3662,
+          "january": 0.2026
+        },
+        "ci": {
+          "july_loo": [
+            0.3374,
+            0.2089,
+            0.498
+          ],
+          "december": [
+            0.3662,
+            0.1833,
+            0.6097
+          ],
+          "january": [
+            0.2026,
+            0.1192,
+            0.2866
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.3913,
+            0.2445,
+            0.5722
+          ],
+          "december": [
+            0.3762,
+            0.1894,
+            0.625
+          ],
+          "january": [
+            0.2143,
+            0.1283,
+            0.2992
+          ]
+        },
+        "board": 0.284,
+        "board_ci": [
+          0.284,
+          0.1985,
+          0.3914
+        ]
+      },
+      "refit-bulk - v7": {
+        "per_fold": {
+          "july_loo": 0.4858,
+          "december": 0.6597,
+          "january": 0.2845
+        },
+        "ci": {
+          "july_loo": [
+            0.4858,
+            0.1337,
+            0.9493
+          ],
+          "december": [
+            0.6597,
+            0.1133,
+            1.4388
+          ],
+          "january": [
+            0.2845,
+            -0.0184,
+            0.5722
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.5634,
+            0.1549,
+            1.0816
+          ],
+          "december": [
+            0.6777,
+            0.1163,
+            1.4761
+          ],
+          "january": [
+            0.301,
+            -0.0187,
+            0.5973
+          ]
+        },
+        "board": 0.4062,
+        "board_ci": [
+          0.4062,
+          0.1584,
+          0.7056
+        ]
+      },
+      "K2 - refit-bulk": {
+        "per_fold": {
+          "july_loo": -0.1484,
+          "december": -0.2935,
+          "january": -0.0819
+        },
+        "ci": {
+          "july_loo": [
+            -0.1484,
+            -0.4814,
+            0.1313
+          ],
+          "december": [
+            -0.2935,
+            -0.8592,
+            0.1115
+          ],
+          "january": [
+            -0.0819,
+            -0.3295,
+            0.1902
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            -0.1721,
+            -0.5486,
+            0.149
+          ],
+          "december": [
+            -0.3015,
+            -0.8898,
+            0.1152
+          ],
+          "january": [
+            -0.0866,
+            -0.3464,
+            0.2018
+          ]
+        },
+        "board": -0.1222,
+        "board_ci": [
+          -0.1222,
+          -0.3421,
+          0.0719
+        ]
+      }
+    },
+    "kaggle": {
+      "v6 - stack-5": {
+        "per_fold": {
+          "july_loo": 0.546,
+          "december": 0.0782,
+          "january": 0.1783
+        },
+        "ci": {
+          "july_loo": [
+            0.546,
+            0.1803,
+            0.9318
+          ],
+          "december": [
+            0.0782,
+            -0.6099,
+            0.7273
+          ],
+          "january": [
+            0.1783,
+            -0.2273,
+            0.5725
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.6328,
+            0.2065,
+            1.0743
+          ],
+          "december": [
+            0.0803,
+            -0.6328,
+            0.7453
+          ],
+          "january": [
+            0.1886,
+            -0.2389,
+            0.6071
+          ]
+        },
+        "board": 0.4034,
+        "board_ci": [
+          0.4034,
+          0.1298,
+          0.6875
+        ]
+      },
+      "v7 - v6": {
+        "per_fold": {
+          "july_loo": 0.0941,
+          "december": 0.0974,
+          "january": 0.2971
+        },
+        "ci": {
+          "july_loo": [
+            0.0941,
+            0.0488,
+            0.1481
+          ],
+          "december": [
+            0.0974,
+            0.0373,
+            0.1648
+          ],
+          "january": [
+            0.2971,
+            0.148,
+            0.4945
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.1091,
+            0.0567,
+            0.1688
+          ],
+          "december": [
+            0.1001,
+            0.0381,
+            0.1689
+          ],
+          "january": [
+            0.3142,
+            0.1561,
+            0.5249
+          ]
+        },
+        "board": 0.1696,
+        "board_ci": [
+          0.1696,
+          0.1071,
+          0.2501
+        ]
+      },
+      "K2 - v7": {
+        "per_fold": {
+          "july_loo": 0.3147,
+          "december": 0.4371,
+          "january": 0.1869
+        },
+        "ci": {
+          "july_loo": [
+            0.3147,
+            0.183,
+            0.4692
+          ],
+          "december": [
+            0.4371,
+            0.2426,
+            0.6903
+          ],
+          "january": [
+            0.1869,
+            0.1017,
+            0.2726
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.365,
+            0.2165,
+            0.5398
+          ],
+          "december": [
+            0.4489,
+            0.2516,
+            0.7065
+          ],
+          "january": [
+            0.1977,
+            0.1081,
+            0.2854
+          ]
+        },
+        "board": 0.2642,
+        "board_ci": [
+          0.2642,
+          0.1756,
+          0.3688
+        ]
+      },
+      "refit-bulk - v7": {
+        "per_fold": {
+          "july_loo": 0.4791,
+          "december": 0.7881,
+          "january": 0.1231
+        },
+        "ci": {
+          "july_loo": [
+            0.4791,
+            0.1286,
+            0.9274
+          ],
+          "december": [
+            0.7881,
+            0.1951,
+            1.6514
+          ],
+          "january": [
+            0.1231,
+            -0.1745,
+            0.4047
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.5556,
+            0.1499,
+            1.051
+          ],
+          "december": [
+            0.8095,
+            0.2031,
+            1.6938
+          ],
+          "january": [
+            0.1302,
+            -0.1876,
+            0.4246
+          ]
+        },
+        "board": 0.3414,
+        "board_ci": [
+          0.3414,
+          0.0982,
+          0.6344
+        ]
+      },
+      "K2 - refit-bulk": {
+        "per_fold": {
+          "july_loo": -0.1643,
+          "december": -0.3511,
+          "january": 0.0638
+        },
+        "ci": {
+          "july_loo": [
+            -0.1643,
+            -0.4821,
+            0.087
+          ],
+          "december": [
+            -0.3511,
+            -0.9971,
+            0.1
+          ],
+          "january": [
+            0.0638,
+            -0.1825,
+            0.3426
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            -0.1906,
+            -0.5496,
+            0.1061
+          ],
+          "december": [
+            -0.3606,
+            -1.0158,
+            0.1035
+          ],
+          "january": [
+            0.0675,
+            -0.1962,
+            0.3634
+          ]
+        },
+        "board": -0.0773,
+        "board_ci": [
+          -0.0773,
+          -0.2846,
+          0.1107
+        ]
+      }
+    },
+    "nested": {
+      "v6 - stack-5": {
+        "per_fold": {
+          "july_loo": 0.721,
+          "december": 0.2638,
+          "january": 0.195
+        },
+        "ci": {
+          "july_loo": [
+            0.721,
+            0.3137,
+            1.1608
+          ],
+          "december": [
+            0.2638,
+            -0.4203,
+            0.931
+          ],
+          "january": [
+            0.195,
+            -0.188,
+            0.5868
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.837,
+            0.3641,
+            1.332
+          ],
+          "december": [
+            0.2709,
+            -0.4306,
+            0.9456
+          ],
+          "january": [
+            0.2062,
+            -0.1981,
+            0.6153
+          ]
+        },
+        "board": 0.5176,
+        "board_ci": [
+          0.5176,
+          0.2324,
+          0.8236
+        ]
+      },
+      "v7 - v6": {
+        "per_fold": {
+          "july_loo": 0.0646,
+          "december": 0.08,
+          "january": 0.2644
+        },
+        "ci": {
+          "july_loo": [
+            0.0646,
+            0.0267,
+            0.1109
+          ],
+          "december": [
+            0.08,
+            0.0335,
+            0.1312
+          ],
+          "january": [
+            0.2644,
+            0.1377,
+            0.4293
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.0751,
+            0.0315,
+            0.1281
+          ],
+          "december": [
+            0.0821,
+            0.0348,
+            0.1353
+          ],
+          "january": [
+            0.2796,
+            0.1464,
+            0.4555
+          ]
+        },
+        "board": 0.1391,
+        "board_ci": [
+          0.1391,
+          0.0858,
+          0.205
+        ]
+      },
+      "K2 - v7": {
+        "per_fold": {
+          "july_loo": 0.3306,
+          "december": 0.426,
+          "january": 0.2182
+        },
+        "ci": {
+          "july_loo": [
+            0.3306,
+            0.1858,
+            0.4961
+          ],
+          "december": [
+            0.426,
+            0.2229,
+            0.6974
+          ],
+          "january": [
+            0.2182,
+            0.1122,
+            0.3271
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.3841,
+            0.2206,
+            0.5677
+          ],
+          "december": [
+            0.4375,
+            0.2291,
+            0.7179
+          ],
+          "january": [
+            0.2307,
+            0.1208,
+            0.3402
+          ]
+        },
+        "board": 0.2857,
+        "board_ci": [
+          0.2857,
+          0.184,
+          0.3919
+        ]
+      },
+      "refit-bulk - v7": {
+        "per_fold": {
+          "july_loo": 0.4162,
+          "december": 0.7608,
+          "january": 0.1726
+        },
+        "ci": {
+          "july_loo": [
+            0.4162,
+            0.0612,
+            0.8648
+          ],
+          "december": [
+            0.7608,
+            0.1501,
+            1.6398
+          ],
+          "january": [
+            0.1726,
+            -0.1343,
+            0.4712
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.4836,
+            0.0695,
+            0.984
+          ],
+          "december": [
+            0.7814,
+            0.1561,
+            1.6859
+          ],
+          "january": [
+            0.1825,
+            -0.1416,
+            0.4938
+          ]
+        },
+        "board": 0.3213,
+        "board_ci": [
+          0.3213,
+          0.0794,
+          0.599
+        ]
+      },
+      "K2 - refit-bulk": {
+        "per_fold": {
+          "july_loo": -0.0856,
+          "december": -0.3348,
+          "january": 0.0456
+        },
+        "ci": {
+          "july_loo": [
+            -0.0856,
+            -0.3982,
+            0.1668
+          ],
+          "december": [
+            -0.3348,
+            -0.9785,
+            0.1015
+          ],
+          "january": [
+            0.0456,
+            -0.2015,
+            0.3234
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            -0.0995,
+            -0.4594,
+            0.1954
+          ],
+          "december": [
+            -0.3439,
+            -0.9883,
+            0.1044
+          ],
+          "january": [
+            0.0482,
+            -0.2118,
+            0.3447
+          ]
+        },
+        "board": -0.0357,
+        "board_ci": [
+          -0.0357,
+          -0.2434,
+          0.1515
+        ]
+      }
+    },
+    "nested-f1held": {
+      "v6 - stack-5": {
+        "per_fold": {
+          "july_loo": 0.6065,
+          "december": 0.2047,
+          "january": 0.2594
+        },
+        "ci": {
+          "july_loo": [
+            0.6065,
+            0.1913,
+            1.036
+          ],
+          "december": [
+            0.2047,
+            -0.4902,
+            0.8654
+          ],
+          "january": [
+            0.2594,
+            -0.1266,
+            0.6516
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.7042,
+            0.2266,
+            1.1954
+          ],
+          "december": [
+            0.2102,
+            -0.5032,
+            0.8933
+          ],
+          "january": [
+            0.2743,
+            -0.1321,
+            0.6877
+          ]
+        },
+        "board": 0.4712,
+        "board_ci": [
+          0.4712,
+          0.1833,
+          0.7697
+        ]
+      },
+      "v7 - v6": {
+        "per_fold": {
+          "july_loo": 0.0883,
+          "december": 0.0895,
+          "january": 0.2679
+        },
+        "ci": {
+          "july_loo": [
+            0.0883,
+            0.0434,
+            0.1424
+          ],
+          "december": [
+            0.0895,
+            0.0421,
+            0.145
+          ],
+          "january": [
+            0.2679,
+            0.1353,
+            0.4371
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.1026,
+            0.0503,
+            0.1649
+          ],
+          "december": [
+            0.0919,
+            0.0427,
+            0.1482
+          ],
+          "january": [
+            0.2834,
+            0.1454,
+            0.4639
+          ]
+        },
+        "board": 0.155,
+        "board_ci": [
+          0.155,
+          0.0984,
+          0.2263
+        ]
+      },
+      "K2 - v7": {
+        "per_fold": {
+          "july_loo": 0.302,
+          "december": 0.4288,
+          "january": 0.1537
+        },
+        "ci": {
+          "july_loo": [
+            0.302,
+            0.1644,
+            0.4584
+          ],
+          "december": [
+            0.4288,
+            0.2393,
+            0.6805
+          ],
+          "january": [
+            0.1537,
+            0.0718,
+            0.2371
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.3508,
+            0.1939,
+            0.5265
+          ],
+          "december": [
+            0.4403,
+            0.2474,
+            0.697
+          ],
+          "january": [
+            0.1626,
+            0.0757,
+            0.2481
+          ]
+        },
+        "board": 0.2438,
+        "board_ci": [
+          0.2438,
+          0.1524,
+          0.3444
+        ]
+      },
+      "refit-bulk - v7": {
+        "per_fold": {
+          "july_loo": 0.4647,
+          "december": 0.8336,
+          "january": 0.118
+        },
+        "ci": {
+          "july_loo": [
+            0.4647,
+            0.1117,
+            0.9174
+          ],
+          "december": [
+            0.8336,
+            0.2025,
+            1.7439
+          ],
+          "january": [
+            0.118,
+            -0.1989,
+            0.4163
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            0.5399,
+            0.1314,
+            1.047
+          ],
+          "december": [
+            0.856,
+            0.2104,
+            1.7786
+          ],
+          "january": [
+            0.1248,
+            -0.2067,
+            0.4381
+          ]
+        },
+        "board": 0.3307,
+        "board_ci": [
+          0.3307,
+          0.0862,
+          0.6189
+        ]
+      },
+      "K2 - refit-bulk": {
+        "per_fold": {
+          "july_loo": -0.1627,
+          "december": -0.4048,
+          "january": 0.0357
+        },
+        "ci": {
+          "july_loo": [
+            -0.1627,
+            -0.4922,
+            0.1056
+          ],
+          "december": [
+            -0.4048,
+            -1.0879,
+            0.0627
+          ],
+          "january": [
+            0.0357,
+            -0.223,
+            0.326
+          ]
+        },
+        "ci_no_noac": {
+          "july_loo": [
+            -0.1891,
+            -0.5667,
+            0.1233
+          ],
+          "december": [
+            -0.4157,
+            -1.1068,
+            0.0649
+          ],
+          "january": [
+            0.0378,
+            -0.2275,
+            0.3461
+          ]
+        },
+        "board": -0.0869,
+        "board_ci": [
+          -0.0869,
+          -0.3083,
+          0.1084
+        ]
+      }
+    }
+  },
+  "sources": {
+    "published": {
+      "july_loo": {
+        "T-tailv4": {
+          "july_loo": "published",
+          "december": "published",
+          "january": "published"
+        },
+        "L2-hub8725": {
+          "july_loo": "published",
+          "december": "published",
+          "january": "published"
+        },
+        "F1-fresh": {
+          "july_loo": "published",
+          "december": "published",
+          "january": "published"
+        }
+      },
+      "december": {
+        "T-tailv4": {
+          "july_loo": "published",
+          "december": "published",
+          "january": "published"
+        },
+        "L2-hub8725": {
+          "july_loo": "published",
+          "december": "published",
+          "january": "published"
+        },
+        "F1-fresh": {
+          "july_loo": "published",
+          "december": "published",
+          "january": "published"
+        }
+      },
+      "january": {
+        "T-tailv4": {
+          "july_loo": "published",
+          "december": "published",
+          "january": "published"
+        },
+        "L2-hub8725": {
+          "july_loo": "published",
+          "december": "published",
+          "january": "published"
+        },
+        "F1-fresh": {
+          "july_loo": "published",
+          "december": "published",
+          "january": "published"
+        }
+      }
+    },
+    "kaggle": {
+      "july_loo": {
+        "T-tailv4": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        },
+        "L2-hub8725": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        },
+        "F1-fresh": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        }
+      },
+      "december": {
+        "T-tailv4": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        },
+        "L2-hub8725": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        },
+        "F1-fresh": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        }
+      },
+      "january": {
+        "T-tailv4": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        },
+        "L2-hub8725": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        },
+        "F1-fresh": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        }
+      }
+    },
+    "nested": {
+      "july_loo": {
+        "T-tailv4": {
+          "july_loo": "july_loo",
+          "december": "december_nx_jul",
+          "january": "january_nx_jul"
+        },
+        "L2-hub8725": {
+          "july_loo": "july_loo",
+          "december": "december_nx_jul",
+          "january": "january_nx_jul"
+        },
+        "F1-fresh": {
+          "july_loo": "july_loo",
+          "december": "december_nx_jul",
+          "january": "january_nx_jul"
+        }
+      },
+      "december": {
+        "T-tailv4": {
+          "july_loo": "july_loo_nx_dec",
+          "december": "december",
+          "january": "january_nx_dec"
+        },
+        "L2-hub8725": {
+          "july_loo": "july_loo_nx_dec",
+          "december": "december",
+          "january": "january_nx_dec"
+        },
+        "F1-fresh": {
+          "july_loo": "july_loo_nx_dec",
+          "december": "december",
+          "january": "january_nx_dec"
+        }
+      },
+      "january": {
+        "T-tailv4": {
+          "july_loo": "july_loo_nx_jan",
+          "december": "december_nx_jan",
+          "january": "january"
+        },
+        "L2-hub8725": {
+          "july_loo": "july_loo_nx_jan",
+          "december": "december_nx_jan",
+          "january": "january"
+        },
+        "F1-fresh": {
+          "july_loo": "july_loo_nx_jan",
+          "december": "december_nx_jan",
+          "january": "january"
+        }
+      }
+    },
+    "nested-f1held": {
+      "july_loo": {
+        "T-tailv4": {
+          "july_loo": "july_loo",
+          "december": "december_nx_jul",
+          "january": "january_nx_jul"
+        },
+        "L2-hub8725": {
+          "july_loo": "july_loo",
+          "december": "december_nx_jul",
+          "january": "january_nx_jul"
+        },
+        "F1-fresh": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        }
+      },
+      "december": {
+        "T-tailv4": {
+          "july_loo": "july_loo_nx_dec",
+          "december": "december",
+          "january": "january_nx_dec"
+        },
+        "L2-hub8725": {
+          "july_loo": "july_loo_nx_dec",
+          "december": "december",
+          "january": "january_nx_dec"
+        },
+        "F1-fresh": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        }
+      },
+      "january": {
+        "T-tailv4": {
+          "july_loo": "july_loo_nx_jan",
+          "december": "december_nx_jan",
+          "january": "january"
+        },
+        "L2-hub8725": {
+          "july_loo": "july_loo_nx_jan",
+          "december": "december_nx_jan",
+          "january": "january"
+        },
+        "F1-fresh": {
+          "july_loo": "july_loo",
+          "december": "december",
+          "january": "january"
+        }
+      }
+    }
+  },
+  "wall_s": 525.2
+}

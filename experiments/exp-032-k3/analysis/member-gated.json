@@ -1,0 +1,64 @@
+{
+  "threshold": 3600.0,
+  "sweep": [
+    1800.0,
+    3600.0,
+    7200.0
+  ],
+  "rows": [
+    {
+      "fold": "july_loo",
+      "n": 190713,
+      "n_window_served": 190280,
+      "base": 301.643,
+      "window": 299.5954,
+      "gated": 299.3035,
+      "gain_window": 2.0476,
+      "gain_gated": 2.3394,
+      "gt3600_base": 2401.33,
+      "gt3600_window": 2408.66,
+      "gt3600_gated": 2392.08,
+      "gt3600_gain_window": -7.33,
+      "gt3600_gain_gated": 9.24,
+      "n_gt3600": 656,
+      "path": "experiments/exp-032-k3/oof/k3-tail-gated-july_loo.parquet",
+      "sha256": "d8133adadb310d2baea0b1972ab546071e03619bf4a3e3535f3368a49bb82fa5"
+    },
+    {
+      "fold": "december",
+      "n": 165677,
+      "n_window_served": 165537,
+      "base": 222.7363,
+      "window": 219.3062,
+      "gated": 219.1874,
+      "gain_window": 3.4302,
+      "gain_gated": 3.5489,
+      "gt3600_base": 1988.33,
+      "gt3600_window": 2000.98,
+      "gt3600_gated": 1977.35,
+      "gt3600_gain_window": -12.65,
+      "gt3600_gain_gated": 10.98,
+      "n_gt3600": 261,
+      "path": "experiments/exp-032-k3/oof/k3-tail-gated-december.parquet",
+      "sha256": "3356e2304341d90d3bfe2314043cfbdcb671dc812f1730bbd7661f721395aae4"
+    },
+    {
+      "fold": "january",
+      "n": 153706,
+      "n_window_served": 153551,
+      "base": 345.7125,
+      "window": 345.0894,
+      "gated": 345.0025,
+      "gain_window": 0.6231,
+      "gain_gated": 0.71,
+      "gt3600_base": 5944.04,
+      "gt3600_window": 5985.4,
+      "gt3600_gated": 5981.47,
+      "gt3600_gain_window": -41.36,
+      "gt3600_gain_gated": -37.44,
+      "n_gt3600": 325,
+      "path": "experiments/exp-032-k3/oof/k3-tail-gated-january.parquet",
+      "sha256": "4514925f9bdc677e574a28ccc5181098e94a4978d1b0129b84e62e0c7b16f9c5"
+    }
+  ]
+}

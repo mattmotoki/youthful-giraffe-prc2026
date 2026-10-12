@@ -1,0 +1,789 @@
+{
+  "arm": "c_lgb_shipped@leaves_127x300_lr050",
+  "no_refit": "the saved update vector with a mask; one fit, four rules",
+  "ranked_airport_months": [
+    {
+      "airport": "LFPG",
+      "month": "2026-01",
+      "ratio": 5.0,
+      "rows": 739
+    },
+    {
+      "airport": "LSZH",
+      "month": "2026-01",
+      "ratio": 2.54,
+      "rows": 9155
+    },
+    {
+      "airport": "EDDF",
+      "month": "2026-01",
+      "ratio": 2.05,
+      "rows": 7388
+    },
+    {
+      "airport": "EDDM",
+      "month": "2026-01",
+      "ratio": 1.85,
+      "rows": 10531
+    },
+    {
+      "airport": "LEBL",
+      "month": "2026-07",
+      "ratio": 1.64,
+      "rows": 15859
+    },
+    {
+      "airport": "EHAM",
+      "month": "2026-07",
+      "ratio": 1.51,
+      "rows": 20566
+    },
+    {
+      "airport": "EHAM",
+      "month": "2026-01",
+      "ratio": 1.38,
+      "rows": 15007
+    },
+    {
+      "airport": "EGLL",
+      "month": "2026-01",
+      "ratio": 1.3,
+      "rows": 13559
+    },
+    {
+      "airport": "EGLL",
+      "month": "2026-07",
+      "ratio": 1.11,
+      "rows": 19755
+    },
+    {
+      "airport": "LFPG",
+      "month": "2026-07",
+      "ratio": 0.82,
+      "rows": 873
+    },
+    {
+      "airport": "LEBL",
+      "month": "2026-01",
+      "ratio": 0.71,
+      "rows": 10733
+    },
+    {
+      "airport": "LSZH",
+      "month": "2026-07",
+      "ratio": 0.57,
+      "rows": 12033
+    },
+    {
+      "airport": "LEMD",
+      "month": "2026-07",
+      "ratio": 0.48,
+      "rows": 11000
+    },
+    {
+      "airport": "LEMD",
+      "month": "2026-01",
+      "ratio": 0.34,
+      "rows": 15831
+    },
+    {
+      "airport": "EDDF",
+      "month": "2026-07",
+      "ratio": 0.33,
+      "rows": 7308
+    },
+    {
+      "airport": "LIRF",
+      "month": "2026-01",
+      "ratio": 0.12,
+      "rows": 5287
+    },
+    {
+      "airport": "EDDM",
+      "month": "2026-07",
+      "ratio": 0.07,
+      "rows": 14461
+    }
+  ],
+  "ranking_side": {
+    "lfpg_airport": {
+      "rows": 1612
+    },
+    "wide_at_lfpg": {
+      "rows": 204
+    },
+    "wide_everywhere": {
+      "by_airport": {
+        "EDDF": 910,
+        "EDDM": 1007,
+        "EGLL": 1785,
+        "EHAM": 2560,
+        "LEBL": 1809,
+        "LEMD": 1106,
+        "LFPG": 204,
+        "LIRF": 59,
+        "LSZH": 1611
+      },
+      "by_month": {
+        "2026-01": 6004,
+        "2026-07": 5047
+      },
+      "rows": 11051
+    }
+  },
+  "rules": {
+    "lfpg_airport": {
+      "board_all_row": {
+        "arm": 299.74001072897977,
+        "base": 308.5976571605635,
+        "gain_s": 8.857646431583703,
+        "interval": {
+          "ci95": [
+            7.019067458426872,
+            11.190457642290557
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 9.094815871123176,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_clean": {
+        "arm": 245.7346288113105,
+        "base": 256.464379624143,
+        "gain_s": 10.72975081283252,
+        "interval": {
+          "ci95": [
+            9.994097000794364,
+            11.457282926416742
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 10.735694139999364,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_december": null,
+      "every_fold_interval_clear": true,
+      "rows_returned_to_the_base_by_fold": {
+        "december": 1005,
+        "january": 0,
+        "july_loo": 396
+      },
+      "tail_clauses": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 80155.50632376934,
+          "passes_the_clause": true,
+          "rmse_arm": 1751.1751041494488,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 22.73857799988332,
+          "rows": 261,
+          "rows_moved": 73,
+          "share_of_the_gain": 0.018986809903506277
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6384.915916852862,
+          "passes_the_clause": true,
+          "rmse_arm": 5983.609681066529,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 0.5335100068550673,
+          "rows": 325,
+          "rows_moved": 94,
+          "share_of_the_gain": 0.0025721830679114174
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -3710.916700643882,
+          "passes_the_clause": true,
+          "rmse_arm": 2396.5501897771705,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": -0.774345625562546,
+          "rows": 656,
+          "rows_moved": 253,
+          "share_of_the_gain": -0.0023210017620460205
+        }
+      }
+    },
+    "none": {
+      "board_all_row": {
+        "arm": 299.72474532687636,
+        "base": 308.5976571605635,
+        "gain_s": 8.872911833687112,
+        "interval": {
+          "ci95": [
+            7.078141189642574,
+            11.151727185790609
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 9.076854053146715,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_clean": {
+        "arm": 245.7160082829048,
+        "base": 256.464379624143,
+        "gain_s": 10.748371341238226,
+        "interval": {
+          "ci95": [
+            10.033609779683752,
+            11.536089886553372
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 10.755795102811302,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_december": null,
+      "every_fold_interval_clear": true,
+      "rows_returned_to_the_base_by_fold": {
+        "december": 0,
+        "january": 0,
+        "july_loo": 0
+      },
+      "tail_clauses": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 79089.12933415905,
+          "passes_the_clause": true,
+          "rmse_arm": 1751.4795523734904,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 22.43412977584171,
+          "rows": 261,
+          "rows_moved": 75,
+          "share_of_the_gain": 0.01865534280811049
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6384.915916852862,
+          "passes_the_clause": true,
+          "rmse_arm": 5983.609681066529,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 0.5335100068550673,
+          "rows": 325,
+          "rows_moved": 94,
+          "share_of_the_gain": 0.0025721830679114174
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -3710.916700643882,
+          "passes_the_clause": true,
+          "rmse_arm": 2396.5501897771705,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": -0.774345625562546,
+          "rows": 656,
+          "rows_moved": 253,
+          "share_of_the_gain": -0.0023140903825460226
+        }
+      }
+    },
+    "wide_at_lfpg": {
+      "board_all_row": {
+        "arm": 299.72515724474493,
+        "base": 308.5976571605635,
+        "gain_s": 8.872499915818537,
+        "interval": {
+          "ci95": [
+            6.991541775136743,
+            11.140329633128855
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 9.067243916675354,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_clean": {
+        "arm": 245.71651074075325,
+        "base": 256.464379624143,
+        "gain_s": 10.74786888338977,
+        "interval": {
+          "ci95": [
+            10.03231565553243,
+            11.51808228042923
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 10.76332032221862,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_december": null,
+      "every_fold_interval_clear": true,
+      "rows_returned_to_the_base_by_fold": {
+        "december": 55,
+        "january": 0,
+        "july_loo": 15
+      },
+      "tail_clauses": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 80155.50632376934,
+          "passes_the_clause": true,
+          "rmse_arm": 1751.1751041494488,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 22.73857799988332,
+          "rows": 261,
+          "rows_moved": 73,
+          "share_of_the_gain": 0.018950280659355855
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 6384.915916852862,
+          "passes_the_clause": true,
+          "rmse_arm": 5983.609681066529,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 0.5335100068550673,
+          "rows": 325,
+          "rows_moved": 94,
+          "share_of_the_gain": 0.0025721830679114174
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -3710.916700643882,
+          "passes_the_clause": true,
+          "rmse_arm": 2396.5501897771705,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": -0.774345625562546,
+          "rows": 656,
+          "rows_moved": 253,
+          "share_of_the_gain": -0.0023142763325133433
+        }
+      }
+    },
+    "wide_everywhere": {
+      "board_all_row": {
+        "arm": 302.6434021745352,
+        "base": 308.5976571605635,
+        "gain_s": 5.954254986028275,
+        "interval": {
+          "ci95": [
+            4.776792539510675,
+            7.43510976303639
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 6.087314770882544,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_clean": {
+        "arm": 249.26787138000915,
+        "base": 256.464379624143,
+        "gain_s": 7.196508244133867,
+        "interval": {
+          "ci95": [
+            6.6894195699928405,
+            7.710658522274878
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": 7.2049955345488215,
+          "share_of_draws_positive": 1.0
+        }
+      },
+      "board_december": null,
+      "every_fold_interval_clear": true,
+      "rows_returned_to_the_base_by_fold": {
+        "december": 4874,
+        "january": 3922,
+        "july_loo": 5933
+      },
+      "tail_clauses": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 46511.88775996327,
+          "passes_the_clause": true,
+          "rmse_arm": 1760.7549130860427,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 13.158769063289355,
+          "rows": 261,
+          "rows_moved": 50,
+          "share_of_the_gain": 0.014980144326300116
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -9615.953701391281,
+          "passes_the_clause": true,
+          "rmse_arm": 5984.946589984855,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": -0.8033989114701399,
+          "rows": 325,
+          "rows_moved": 57,
+          "share_of_the_gain": -0.005529736277304554
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -57338.1659753888,
+          "passes_the_clause": false,
+          "rmse_arm": 2407.712620184506,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": -11.936776032897797,
+          "rows": 656,
+          "rows_moved": 177,
+          "share_of_the_gain": -0.05463738168894559
+        }
+      }
+    }
+  },
+  "served_over_fitted": {
+    "EDDF": {
+      "2026-01": {
+        "fitted_wide_share": 0.0519,
+        "ratio": 2.05,
+        "served_rows": 7388,
+        "served_wide_share": 0.1064
+      },
+      "2026-07": {
+        "fitted_wide_share": 0.0519,
+        "ratio": 0.33,
+        "served_rows": 7308,
+        "served_wide_share": 0.017
+      }
+    },
+    "EDDM": {
+      "2026-01": {
+        "fitted_wide_share": 0.0491,
+        "ratio": 1.85,
+        "served_rows": 10531,
+        "served_wide_share": 0.0909
+      },
+      "2026-07": {
+        "fitted_wide_share": 0.0491,
+        "ratio": 0.07,
+        "served_rows": 14461,
+        "served_wide_share": 0.0035
+      }
+    },
+    "EGLL": {
+      "2026-01": {
+        "fitted_wide_share": 0.0453,
+        "ratio": 1.3,
+        "served_rows": 13559,
+        "served_wide_share": 0.0587
+      },
+      "2026-07": {
+        "fitted_wide_share": 0.0453,
+        "ratio": 1.11,
+        "served_rows": 19755,
+        "served_wide_share": 0.0501
+      }
+    },
+    "EHAM": {
+      "2026-01": {
+        "fitted_wide_share": 0.0495,
+        "ratio": 1.38,
+        "served_rows": 15007,
+        "served_wide_share": 0.0683
+      },
+      "2026-07": {
+        "fitted_wide_share": 0.0495,
+        "ratio": 1.51,
+        "served_rows": 20566,
+        "served_wide_share": 0.0746
+      }
+    },
+    "LEBL": {
+      "2026-01": {
+        "fitted_wide_share": 0.0539,
+        "ratio": 0.71,
+        "served_rows": 10733,
+        "served_wide_share": 0.0383
+      },
+      "2026-07": {
+        "fitted_wide_share": 0.0539,
+        "ratio": 1.64,
+        "served_rows": 15859,
+        "served_wide_share": 0.0882
+      }
+    },
+    "LEMD": {
+      "2026-01": {
+        "fitted_wide_share": 0.104,
+        "ratio": 0.34,
+        "served_rows": 15831,
+        "served_wide_share": 0.0351
+      },
+      "2026-07": {
+        "fitted_wide_share": 0.104,
+        "ratio": 0.48,
+        "served_rows": 11000,
+        "served_wide_share": 0.0501
+      }
+    },
+    "LFPG": {
+      "2026-01": {
+        "fitted_wide_share": 0.0463,
+        "ratio": 5.0,
+        "served_rows": 739,
+        "served_wide_share": 0.2314
+      },
+      "2026-07": {
+        "fitted_wide_share": 0.0463,
+        "ratio": 0.82,
+        "served_rows": 873,
+        "served_wide_share": 0.0378
+      }
+    },
+    "LIRF": {
+      "2026-01": {
+        "fitted_wide_share": 0.0918,
+        "ratio": 0.12,
+        "served_rows": 5287,
+        "served_wide_share": 0.0112
+      },
+      "2026-07": {
+        "fitted_wide_share": 0.0918,
+        "ratio": 0.0,
+        "served_rows": 11,
+        "served_wide_share": 0.0
+      }
+    },
+    "LSZH": {
+      "2026-01": {
+        "fitted_wide_share": 0.0535,
+        "ratio": 2.54,
+        "served_rows": 9155,
+        "served_wide_share": 0.1359
+      },
+      "2026-07": {
+        "fitted_wide_share": 0.0535,
+        "ratio": 0.57,
+        "served_rows": 12033,
+        "served_wide_share": 0.0305
+      }
+    }
+  },
+  "threshold": "each airport's own p95 of obs_taxi, learned on FITTING rows only",
+  "what": "Is LFPG's 2026-01 the only served month whose observation runs outside its own fit?",
+  "wide_share_by_airport_month": {
+    "2025-01": {
+      "EDDF": {
+        "cut_s": 910.4,
+        "rows": 11755,
+        "wide_share": 0.066
+      },
+      "EDDM": {
+        "cut_s": 1120.5,
+        "rows": 10843,
+        "wide_share": 0.0623
+      },
+      "EGLL": {
+        "cut_s": 1272.2,
+        "rows": 8447,
+        "wide_share": 0.0446
+      },
+      "EHAM": {
+        "cut_s": 952.6,
+        "rows": 17801,
+        "wide_share": 0.0619
+      },
+      "LEBL": {
+        "cut_s": 1025.4,
+        "rows": 11198,
+        "wide_share": 0.0152
+      },
+      "LEMD": {
+        "cut_s": 1113.8,
+        "rows": 1,
+        "wide_share": 0.0
+      },
+      "LSZH": {
+        "cut_s": 795.5,
+        "rows": 8725,
+        "wide_share": 0.0941
+      }
+    },
+    "2025-07": {
+      "EDDF": {
+        "cut_s": 987.6,
+        "rows": 16608,
+        "wide_share": 0.0247
+      },
+      "EDDM": {
+        "cut_s": 1209.8,
+        "rows": 5775,
+        "wide_share": 0.0061
+      },
+      "EGLL": {
+        "cut_s": 1269.7,
+        "rows": 1200,
+        "wide_share": 0.0158
+      },
+      "EHAM": {
+        "cut_s": 977.9,
+        "rows": 21193,
+        "wide_share": 0.0444
+      },
+      "LEBL": {
+        "cut_s": 936.4,
+        "rows": 13792,
+        "wide_share": 0.093
+      },
+      "LEMD": {
+        "cut_s": 1030.8,
+        "rows": 4138,
+        "wide_share": 0.1945
+      },
+      "LFPG": {
+        "cut_s": 827.0,
+        "rows": 396,
+        "wide_share": 0.0379
+      },
+      "LIRF": {
+        "cut_s": 621.5,
+        "rows": 12972,
+        "wide_share": 0.1709
+      },
+      "LSZH": {
+        "cut_s": 945.8,
+        "rows": 10849,
+        "wide_share": 0.0192
+      }
+    },
+    "2025-12": {
+      "EDDF": {
+        "cut_s": 904.8,
+        "rows": 15720,
+        "wide_share": 0.0649
+      },
+      "EDDM": {
+        "cut_s": 1077.4,
+        "rows": 11588,
+        "wide_share": 0.0788
+      },
+      "EGLL": {
+        "cut_s": 1200.6,
+        "rows": 8784,
+        "wide_share": 0.0755
+      },
+      "EHAM": {
+        "cut_s": 979.5,
+        "rows": 18258,
+        "wide_share": 0.0421
+      },
+      "LEBL": {
+        "cut_s": 977.2,
+        "rows": 12649,
+        "wide_share": 0.0536
+      },
+      "LEMD": {
+        "cut_s": 1269.5,
+        "rows": 17122,
+        "wide_share": 0.0135
+      },
+      "LFPG": {
+        "cut_s": 788.8,
+        "rows": 1005,
+        "wide_share": 0.0547
+      },
+      "LIRF": {
+        "cut_s": 917.1,
+        "rows": 5729,
+        "wide_share": 0.0127
+      },
+      "LSZH": {
+        "cut_s": 870.0,
+        "rows": 9937,
+        "wide_share": 0.0473
+      }
+    },
+    "2026-01": {
+      "EDDF": {
+        "cut_s": 932.3,
+        "rows": 7388,
+        "wide_share": 0.1064
+      },
+      "EDDM": {
+        "cut_s": 1150.5,
+        "rows": 10531,
+        "wide_share": 0.0909
+      },
+      "EGLL": {
+        "cut_s": 1255.9,
+        "rows": 13559,
+        "wide_share": 0.0587
+      },
+      "EHAM": {
+        "cut_s": 968.4,
+        "rows": 15007,
+        "wide_share": 0.0683
+      },
+      "LEBL": {
+        "cut_s": 981.7,
+        "rows": 10733,
+        "wide_share": 0.0383
+      },
+      "LEMD": {
+        "cut_s": 1113.8,
+        "rows": 15831,
+        "wide_share": 0.0351
+      },
+      "LFPG": {
+        "cut_s": 800.9,
+        "rows": 739,
+        "wide_share": 0.2314
+      },
+      "LIRF": {
+        "cut_s": 855.1,
+        "rows": 5287,
+        "wide_share": 0.0112
+      },
+      "LSZH": {
+        "cut_s": 864.3,
+        "rows": 9155,
+        "wide_share": 0.1359
+      }
+    },
+    "2026-07": {
+      "EDDF": {
+        "cut_s": 932.3,
+        "rows": 7308,
+        "wide_share": 0.017
+      },
+      "EDDM": {
+        "cut_s": 1150.5,
+        "rows": 14461,
+        "wide_share": 0.0035
+      },
+      "EGLL": {
+        "cut_s": 1255.9,
+        "rows": 19755,
+        "wide_share": 0.0501
+      },
+      "EHAM": {
+        "cut_s": 968.4,
+        "rows": 20566,
+        "wide_share": 0.0746
+      },
+      "LEBL": {
+        "cut_s": 981.7,
+        "rows": 15859,
+        "wide_share": 0.0882
+      },
+      "LEMD": {
+        "cut_s": 1113.8,
+        "rows": 11000,
+        "wide_share": 0.0501
+      },
+      "LFPG": {
+        "cut_s": 800.9,
+        "rows": 873,
+        "wide_share": 0.0378
+      },
+      "LIRF": {
+        "cut_s": 855.1,
+        "rows": 11,
+        "wide_share": 0.0
+      },
+      "LSZH": {
+        "cut_s": 864.3,
+        "rows": 12033,
+        "wide_share": 0.0305
+      }
+    }
+  }
+}

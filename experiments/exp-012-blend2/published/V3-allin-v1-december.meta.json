@@ -1,0 +1,12 @@
+{
+  "member": "V3-allin-v1",
+  "fold": "december",
+  "n_frame_columns": 171,
+  "column_sha": "declared-by-producer-not-yet-emitted",
+  "threads": 12,
+  "rounds": 660,
+  "seeds": 1,
+  "producer": "experiments/exp-001-retro-v1/run.py --frame v3 --frame-sources v3 --target residual --clip-floor 60 --noac-head --learning-rate 0.03 --fixed-rounds 660",
+  "source_record": "result-V3-allin.json (july_loo, january); result-V3-allin-dec.json (december)",
+  "provenance_note": "n_frame_columns and threads are DECLARED BY retro-v1, not derived from the parquet. column_sha is the field that would make this checkable and the producer does not yet emit it; exp-018 emits one (35b5b6687e73 for their 111-column frame) and this is the shape to copy."
+}

@@ -1,0 +1,163 @@
+{
+  "served_amplitude_pooled": 0.5618,
+  "stack5_amplitude": 0.217,
+  "note": "Sol round 1, blocking 4: the first version scored every fold at the POOLED amplitude, which is fitted on all three folds including the one it scores. The headline is now the per-fold CROSS-MONTH amplitude, fitted on the other two folds only, exactly as the v10 table is; the pooled row is kept beside it and labelled, because it is the scalar the served file carries.",
+  "arms": {
+    "dayblock|cross_month": {
+      "folds": {
+        "july_loo": {
+          "amplitude": 0.5478,
+          "mse_gain_s2": 94.821,
+          "ci": [
+            34.578,
+            140.511
+          ],
+          "gain_all_over_v11": 0.0969,
+          "v11_minus_v10_all": 0.1105
+        },
+        "december": {
+          "amplitude": 0.5523,
+          "mse_gain_s2": 92.942,
+          "ci": [
+            55.218,
+            132.076
+          ],
+          "gain_all_over_v11": 0.139,
+          "v11_minus_v10_all": 0.1854
+        },
+        "january": {
+          "amplitude": 0.5831,
+          "mse_gain_s2": 69.381,
+          "ci": [
+            34.853,
+            103.171
+          ],
+          "gain_all_over_v11": 0.0614,
+          "v11_minus_v10_all": 0.0965
+        }
+      },
+      "board_v10": 309.0772,
+      "board_v11": 308.9739,
+      "board_v11_plus_d": 308.8946,
+      "gain_over_v11": 0.0793,
+      "gain_over_v10_total": 0.1827
+    },
+    "dayblock|pooled": {
+      "folds": {
+        "july_loo": {
+          "amplitude": 0.5618,
+          "mse_gain_s2": 95.047,
+          "ci": [
+            30.323,
+            144.643
+          ],
+          "gain_all_over_v11": 0.0971,
+          "v11_minus_v10_all": 0.1105
+        },
+        "december": {
+          "amplitude": 0.5618,
+          "mse_gain_s2": 93.129,
+          "ci": [
+            55.607,
+            130.612
+          ],
+          "gain_all_over_v11": 0.1393,
+          "v11_minus_v10_all": 0.1854
+        },
+        "january": {
+          "amplitude": 0.5618,
+          "mse_gain_s2": 69.955,
+          "ci": [
+            37.029,
+            102.002
+          ],
+          "gain_all_over_v11": 0.0619,
+          "v11_minus_v10_all": 0.0965
+        }
+      },
+      "board_v10": 309.0772,
+      "board_v11": 308.9739,
+      "board_v11_plus_d": 308.8942,
+      "gain_over_v11": 0.0797,
+      "gain_over_v10_total": 0.183
+    },
+    "xmonth|cross_month": {
+      "folds": {
+        "july_loo": {
+          "amplitude": 0.5478,
+          "mse_gain_s2": 30.752,
+          "ci": [
+            3.516,
+            55.695
+          ],
+          "gain_all_over_v11": 0.0314,
+          "v11_minus_v10_all": 0.1105
+        },
+        "december": {
+          "amplitude": 0.5523,
+          "mse_gain_s2": 51.352,
+          "ci": [
+            24.667,
+            74.637
+          ],
+          "gain_all_over_v11": 0.0768,
+          "v11_minus_v10_all": 0.1854
+        },
+        "january": {
+          "amplitude": 0.5831,
+          "mse_gain_s2": 20.91,
+          "ci": [
+            -13.054,
+            56.46
+          ],
+          "gain_all_over_v11": 0.0185,
+          "v11_minus_v10_all": 0.0965
+        }
+      },
+      "board_v10": 309.0772,
+      "board_v11": 308.9739,
+      "board_v11_plus_d": 308.9489,
+      "gain_over_v11": 0.025,
+      "gain_over_v10_total": 0.1284
+    },
+    "xmonth|pooled": {
+      "folds": {
+        "july_loo": {
+          "amplitude": 0.5618,
+          "mse_gain_s2": 30.124,
+          "ci": [
+            2.603,
+            56.146
+          ],
+          "gain_all_over_v11": 0.0308,
+          "v11_minus_v10_all": 0.1105
+        },
+        "december": {
+          "amplitude": 0.5618,
+          "mse_gain_s2": 51.424,
+          "ci": [
+            24.329,
+            75.414
+          ],
+          "gain_all_over_v11": 0.0769,
+          "v11_minus_v10_all": 0.1854
+        },
+        "january": {
+          "amplitude": 0.5618,
+          "mse_gain_s2": 22.496,
+          "ci": [
+            -9.835,
+            56.172
+          ],
+          "gain_all_over_v11": 0.0199,
+          "v11_minus_v10_all": 0.0965
+        }
+      },
+      "board_v10": 309.0772,
+      "board_v11": 308.9739,
+      "board_v11_plus_d": 308.9485,
+      "gain_over_v11": 0.0254,
+      "gain_over_v10_total": 0.1287
+    }
+  }
+}

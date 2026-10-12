@@ -1,0 +1,71 @@
+{
+  "name": "v1",
+  "argv": "--name v1",
+  "folds": {
+    "july": {
+      "rmse": 531.4166105773106,
+      "rmse_bulk": 312.7671832175903,
+      "rmse_tail": 7332.066581889302,
+      "rmse_no_nm": 2973.949279578663,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.6547961112453606,
+      "sse_share_no_nm": 0.6460273764735609,
+      "bias": -0.7246815558738577,
+      "fold": "july",
+      "best_iteration": 316,
+      "refit_rounds": 372,
+      "seconds": 95,
+      "oof": "experiments/exp-001-retro-v1/oof/v1-july.parquet"
+    },
+    "december": {
+      "rmse": 286.99189350759207,
+      "rmse_bulk": 210.7742577783202,
+      "rmse_tail": 4911.922239505588,
+      "rmse_no_nm": 1947.5356974920762,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.4614684262331659,
+      "sse_share_no_nm": 0.4566746828971246,
+      "bias": -0.051133160745427474,
+      "fold": "december",
+      "best_iteration": 233,
+      "refit_rounds": 274,
+      "seconds": 118,
+      "oof": "experiments/exp-001-retro-v1/oof/v1-december.parquet"
+    }
+  },
+  "submission": {
+    "path": "submissions/candidates/exp-001-retro-v1.parquet",
+    "sha256": "fa6195ffb21682e10f784d02af94e43e6236c9520e387335f2ae3dcbcda68201",
+    "rounds": 355,
+    "seconds": 90,
+    "pred_quantiles": {
+      "0.01": 383.11942271995224,
+      "0.1": 636.7042318890045,
+      "0.25": 772.6830352752525,
+      "0.5": 958.7780355483654,
+      "0.75": 1202.2471104498875,
+      "0.9": 1478.3574102076243,
+      "0.99": 2480.786559319002,
+      "0.999": 4424.036027498095
+    },
+    "pred_mean": 1033.473929085672,
+    "pred_min": -2500.352665778825,
+    "pred_max": 45564.72813116111,
+    "train_quantiles": {
+      "0.01": 291.0,
+      "0.1": 571.0,
+      "0.25": 719.0,
+      "0.5": 912.0,
+      "0.75": 1188.0,
+      "0.9": 1471.0,
+      "0.99": 2339.0,
+      "0.999": 4501.0
+    },
+    "train_mean": 991.200707226264,
+    "n_rows": 344841
+  }
+}

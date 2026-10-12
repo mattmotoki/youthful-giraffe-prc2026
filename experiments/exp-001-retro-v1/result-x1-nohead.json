@@ -1,0 +1,26 @@
+{
+  "name": "x1-nohead",
+  "argv": "--name x1-nohead --features v2 --target residual --linear-tree --clip-floor 60 --folds december --no-submission",
+  "folds": {
+    "december": {
+      "rmse": 234.49904217841342,
+      "rmse_bulk": 215.17661120683954,
+      "rmse_tail": 2358.3416045860913,
+      "rmse_no_nm": 913.3811606047303,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.15933440552805508,
+      "sse_share_no_nm": 0.15045176756734205,
+      "bias": 3.638941081015556,
+      "rmse_noac": 3004.5378702270327,
+      "n_noac": 89,
+      "sse_share_noac": 0.08818627597322384,
+      "fold": "december",
+      "best_iteration": 373,
+      "refit_rounds": 439,
+      "seconds": 254,
+      "oof": "experiments/exp-001-retro-v1/oof/x1-nohead-december.parquet"
+    }
+  }
+}

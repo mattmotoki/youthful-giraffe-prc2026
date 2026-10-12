@@ -1,0 +1,6 @@
+# Screening runs produce one OOF pair each; only the runs that enter the ledger
+# are kept in git. Promote a file with `git add -f`.
+oof/*.parquet
+importance-*.csv
+__pycache__/
+review/*.err

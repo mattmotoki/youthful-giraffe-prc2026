@@ -1,0 +1,230 @@
+{
+ "matcher_unchanged_at_answer_time": "6fdf39519eb0f500c06230e2972d3c8300aa6222ed8d9b003998ddf6e286093b",
+ "q1_match_mode": {
+  "columns_this_lane_reads": [
+   "MVT_ID_mvt",
+   "airport",
+   "day",
+   "stand_lat",
+   "stand_lon",
+   "obs_has_clock",
+   "obs_offblock",
+   "obs_matched",
+   "obs_wheels_off",
+   "obs_taxi",
+   "obs_icao",
+   "reach_class",
+   "ev_key"
+  ],
+  "note": "a match_mode of 3 is IGNORED by construction, not silently read as a wide match: nothing in code/ or work/ names the column at all. reach_class is carried into counts and never branched on.",
+  "occurrences_in_this_lane": {
+   "MODES": 0,
+   "clock_ok": 0,
+   "match_mode": 0,
+   "matched_on_modal": 0,
+   "obs_ambiguous": 0,
+   "turnaround_anchored": 0
+  },
+  "verdict": "no column this pass writes is read here"
+ },
+ "q2_leaving_rows": {
+  "estimated_leaving_rows_in_a_cell_this_lane_serves": 1549,
+  "how": "placed rows per airport-month x this lane's measured reached share there; EDDF 466x0.731 + 1,264x0.821, LEMD 34x0.929 + 162x0.856",
+  "lfpg_441": "kept in the sense that matters -- surfacefit does not occupy them and this lane holds every LFPG cell, so the byte is the base value either way. The letter of section 4.1 is loose: they gain obs_has_clock = 1, so they leave this lane's class-by-instrument and are not written by it; the value on disk does not change.",
+  "verdict": "NOT as stated -- about 1,550 of the 2,660 ARE rows this lane moves today",
+  "why_it_is_not_a_contested_byte": "the class vector is one boundary and spec section 6.3 already carries this lane's rider -- every row surfacefit occupies is written at its next serve, including a row arriving with this lane's v17 correction. The check is mechanical at the serve: serve.py's disjointness guard is fail-closed since RESULTS 7t and asserts ZERO overlap between the served set and occupied_by_exp_046 on the v18 vector."
+ },
+ "q3_census": {
+  "by_airport_month": {
+   "2026-01 EDDF": {
+    "my_class_minus_spec": 157,
+    "my_class_rows": 7773,
+    "my_reached_rows": 5680,
+    "my_reached_share": 0.7307,
+    "placed": 466,
+    "spec_unclaimed_departures": 7616
+   },
+   "2026-01 EDDM": {
+    "my_class_minus_spec": 11,
+    "my_class_rows": 422,
+    "my_reached_rows": 391,
+    "my_reached_share": 0.9265,
+    "placed": 2,
+    "spec_unclaimed_departures": 411
+   },
+   "2026-01 EGLL": {
+    "my_class_minus_spec": 65,
+    "my_class_rows": 5725,
+    "my_reached_rows": 5522,
+    "my_reached_share": 0.9645,
+    "placed": 306,
+    "spec_unclaimed_departures": 5660
+   },
+   "2026-01 EHAM": {
+    "my_class_minus_spec": 494,
+    "my_class_rows": 1225,
+    "my_reached_rows": 1164,
+    "my_reached_share": 0.9502,
+    "placed": 7,
+    "spec_unclaimed_departures": 731
+   },
+   "2026-01 LEBL": {
+    "my_class_minus_spec": 5,
+    "my_class_rows": 1468,
+    "my_reached_rows": 1267,
+    "my_reached_share": 0.8631,
+    "placed": 39,
+    "spec_unclaimed_departures": 1463
+   },
+   "2026-01 LEMD": {
+    "my_class_minus_spec": 8,
+    "my_class_rows": 959,
+    "my_reached_rows": 891,
+    "my_reached_share": 0.9291,
+    "placed": 34,
+    "spec_unclaimed_departures": 951
+   },
+   "2026-01 LFPG": {
+    "my_class_minus_spec": 306,
+    "my_class_rows": 17390,
+    "my_reached_rows": 2062,
+    "my_reached_share": 0.1186,
+    "placed": 231,
+    "spec_unclaimed_departures": 17084
+   },
+   "2026-01 LIRF": {
+    "my_class_minus_spec": 0,
+    "my_class_rows": 5667,
+    "my_reached_rows": 3540,
+    "my_reached_share": 0.6247,
+    "placed": 260,
+    "spec_unclaimed_departures": 5667
+   },
+   "2026-01 LSZH": {
+    "my_class_minus_spec": 235,
+    "my_class_rows": 839,
+    "my_reached_rows": 746,
+    "my_reached_share": 0.8892,
+    "placed": 0,
+    "spec_unclaimed_departures": 604
+   },
+   "2026-07 EDDF": {
+    "my_class_minus_spec": 152,
+    "my_class_rows": 13342,
+    "my_reached_rows": 10958,
+    "my_reached_share": 0.8213,
+    "placed": 1264,
+    "spec_unclaimed_departures": 13190
+   },
+   "2026-07 EDDM": {
+    "my_class_minus_spec": 6,
+    "my_class_rows": 552,
+    "my_reached_rows": 538,
+    "my_reached_share": 0.9746,
+    "placed": 4,
+    "spec_unclaimed_departures": 546
+   },
+   "2026-07 EGLL": {
+    "my_class_minus_spec": 4,
+    "my_class_rows": 795,
+    "my_reached_rows": 787,
+    "my_reached_share": 0.9899,
+    "placed": 45,
+    "spec_unclaimed_departures": 791
+   },
+   "2026-07 EHAM": {
+    "my_class_minus_spec": 307,
+    "my_class_rows": 1384,
+    "my_reached_rows": 1364,
+    "my_reached_share": 0.9855,
+    "placed": 12,
+    "spec_unclaimed_departures": 1077
+   },
+   "2026-07 LEBL": {
+    "my_class_minus_spec": 27,
+    "my_class_rows": 2020,
+    "my_reached_rows": 1946,
+    "my_reached_share": 0.9634,
+    "placed": 42,
+    "spec_unclaimed_departures": 1993
+   },
+   "2026-07 LEMD": {
+    "my_class_minus_spec": 58,
+    "my_class_rows": 9151,
+    "my_reached_rows": 7837,
+    "my_reached_share": 0.8564,
+    "placed": 162,
+    "spec_unclaimed_departures": 9093
+   },
+   "2026-07 LFPG": {
+    "my_class_minus_spec": 392,
+    "my_class_rows": 20870,
+    "my_reached_rows": 2090,
+    "my_reached_share": 0.1001,
+    "placed": 210,
+    "spec_unclaimed_departures": 20478
+   },
+   "2026-07 LIRF": {
+    "my_class_minus_spec": 0,
+    "my_class_rows": 15551,
+    "my_reached_rows": 27,
+    "my_reached_share": 0.0017,
+    "placed": 1,
+    "spec_unclaimed_departures": 15551
+   },
+   "2026-07 LSZH": {
+    "my_class_minus_spec": 262,
+    "my_class_rows": 1122,
+    "my_reached_rows": 1094,
+    "my_reached_share": 0.975,
+    "placed": 16,
+    "spec_unclaimed_departures": 860
+   }
+  },
+  "cause": "the spec's `unclaimed` excludes a departure with obs_taxi notna; this lane's class excludes obs_has_clock. A row matched with a taxi but no usable off-block clock is in this lane's class and not in the spec's unclaimed set, so the placed set is a SUBSET of this lane's class -- the safe direction.",
+  "difference": 2489,
+  "lirf_exact_both_months": true,
+  "my_class_rows_total": 106255,
+  "spec_unclaimed_total": 103766,
+  "verdict": "reproduced, with the difference explained and in the safe direction"
+ },
+ "q4_spillover": {
+  "eddf_unreached_does_not_dissolve_this_time": "942 of EDDF july's 2,384 unreached rows (40 %), against 2,272 (95 %) under the refuted pass",
+  "kept_rows_whose_neighbourhood_moves_upper": 9462,
+  "record": "analysis/chain-spec-exposure.json",
+  "row_flips_upper": 4129,
+  "row_flips_upper_into_served_cells": 1346,
+  "scale_error": "a scale from 19,704 at 9,875 gives 6,188; the measurement is 4,129, 33 % lower, because LFPG's share of the placement falls from 27 % to 14 % while LFPG holds 63 % of the flips",
+  "verdict": "re-measured at 3,101, not scaled",
+  "what_a_scale_would_have_said": 6188
+ },
+ "reason": "nothing this lane reads breaks, the class movement is a handover its fail-closed guard checks on the v18 vector, and the grain movement is inside what the ordered single re-price already re-reads (the census and the cell hold). The per-cell placebo tables are the evidence that the movement is not biased where it lands.",
+ "revision_3179": {
+  "allocation_sensitivity": {
+   "note": "the extremes put each airport's delta wholly in its lower- then its higher-coefficient month. The swing is LIRF, whose cells are held, so the served-cell figure moves by about two rows.",
+   "range_row_flips_upper": [
+    4208,
+    4272
+   ]
+  },
+  "class_movement": 2730,
+  "face_at_x1_2_s": 0.143,
+  "gates_at_3179": {
+   "contested_cells": "15 (day) and 20 (stand) of 2,776",
+   "day_placebo": "42 (1.32 %)",
+   "stand_placebo": "29 (0.91 %)",
+   "sweep": "0 changes on 341,662 rows x 34 columns"
+  },
+  "kept_rows_whose_neighbourhood_moves_upper": 9664,
+  "lfpg_kept": 449,
+  "month_split_is_this_lane_s_assumption": "the desk gave per-airport totals and per-month totals, not the per-airport-MONTH table; each airport's delta was split by its section 4 month shares, which reproduces every per-airport total and both month totals exactly.",
+  "one_condition": "the per-cell bar was not only the contested COUNT but that every contested cell holds exactly ONE real row, which is what keeps a cell aggregate from being decided by a contested placement. That property was stated at 3,101 and is not re-stated at 3,179. If a contested cell now holds several real rows, that is the thing that changes this answer; the count 15 and 20 of 2,776 does not.",
+  "per_airport_totals_reproduced": true,
+  "row_flips_upper": 4213,
+  "row_flips_upper_into_served_cells": 1375,
+  "verdict": "GO holds",
+  "why": "the spec's section 8 agreement check caught a defect in turnaround.py -- strict-matched clockless departures (6,063 january, 5,472 july) competed as free candidates and two-way uniqueness then declined 78 real placements. block.build under the spec words places 3,179 (1,382 january, 1,797 july); the desk rules 3,179 stands."
+ },
+ "spec": "experiments/exp-046-surfacefit/analysis/chain-spec.md (f870f40)",
+ "verdict": "GO"
+}

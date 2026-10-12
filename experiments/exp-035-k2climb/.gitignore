@@ -1,0 +1,7 @@
+# The identity rotation's fold vectors reproduce stack-5, v6 and v7 exactly --
+# the run prints "max abs row difference 0" and 6.82e-13 and the json records it,
+# so 50 MB of bytes that are committed elsewhere add nothing to the record.
+# AGENTS.md: small artifacts in git, large ones by manifest and hash.
+oof/cand-*-identity-*.parquet
+# zero-byte markers written by the kernel monitor
+.seen*

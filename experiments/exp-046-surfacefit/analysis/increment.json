@@ -1,0 +1,144 @@
+{
+  "arm": "c_lgb_shipped@leaves_127x300_lr050",
+  "board_all_row_gain_s": 0.7296115020908474,
+  "board_all_row_interval_ci95": [
+    0.5664168545525442,
+    0.951446980151772
+  ],
+  "board_clean_gain_s": 0.8894374872666049,
+  "board_clean_interval_ci95": [
+    0.77786304976756,
+    1.0037509846083998
+  ],
+  "by_fold": {
+    "december": {
+      "all_row": {
+        "A_mean_rd": 567.3167270434967,
+        "B_mean_dd": 528.6298965887694,
+        "ci95": [
+          527.0118758905392,
+          691.916691903185
+        ],
+        "mse_gain_s2": 606.0035574982238,
+        "rows": 165677,
+        "rows_moved": 99787
+      },
+      "rmse_head": 188.81856695199525,
+      "rmse_new": 187.20696479647032
+    },
+    "january": {
+      "all_row": {
+        "A_mean_rd": 453.8899555522859,
+        "B_mean_dd": 486.3145878092763,
+        "ci95": [
+          344.3117963176556,
+          491.21937740889757
+        ],
+        "mse_gain_s2": 421.4653232952956,
+        "rows": 153706,
+        "rows_moved": 68769
+      },
+      "rmse_head": 330.23145379493985,
+      "rmse_new": 329.5926997859998
+    },
+    "july_loo": {
+      "all_row": {
+        "A_mean_rd": 427.8058384137201,
+        "B_mean_dd": 404.6120155105146,
+        "ci95": [
+          381.51280139394095,
+          527.817807672395
+        ],
+        "mse_gain_s2": 450.9996613169256,
+        "rows": 190713,
+        "rows_moved": 86519
+      },
+      "rmse_head": 274.5194898289945,
+      "rmse_new": 273.69682247818383
+    }
+  },
+  "december_gain_s": 1.6116021555249347,
+  "every_fold_interval_clear": true,
+  "head_arm": "c_lgb_shipped",
+  "held": [
+    "LFPG"
+  ],
+  "passes": true,
+  "reason": "",
+  "rows_moved_by_the_increment": {
+    "december": 99787,
+    "january": 68769,
+    "july_loo": 86519
+  },
+  "tail_clause_on_the_increment": {
+    "december": {
+      "clause_s": 1.0,
+      "mse_gain_s2_per_row": 9219.87585185627,
+      "passes_the_clause": true,
+      "rmse_arm": 1751.1751041494488,
+      "rmse_base": 1753.8056110198438,
+      "rmse_gain_s": 2.6305068703950383,
+      "rows": 261,
+      "rows_moved": 73,
+      "share_of_the_gain": 0.02396780070969745
+    },
+    "january": {
+      "clause_s": 1.0,
+      "mse_gain_s2_per_row": 3076.1915079263763,
+      "passes_the_clause": true,
+      "rmse_arm": 5983.609681066529,
+      "rmse_base": 5983.8667270303595,
+      "rmse_gain_s": 0.25704596383002354,
+      "rows": 325,
+      "rows_moved": 94,
+      "share_of_the_gain": 0.015432776295485277
+    },
+    "july_loo": {
+      "clause_s": 1.0,
+      "mse_gain_s2_per_row": -3246.01636074207,
+      "passes_the_clause": true,
+      "rmse_arm": 2396.5501897771705,
+      "rmse_base": 2395.8728671948043,
+      "rmse_gain_s": -0.677322582366287,
+      "rows": 656,
+      "rows_moved": 253,
+      "share_of_the_gain": -0.02475700077363784
+    }
+  },
+  "tail_clause_on_the_whole_update": {
+    "december": {
+      "clause_s": 1.0,
+      "mse_gain_s2_per_row": 80155.50632376934,
+      "passes_the_clause": true,
+      "rmse_arm": 1751.1751041494488,
+      "rmse_base": 1773.913682149332,
+      "rmse_gain_s": 22.73857799988332,
+      "rows": 261,
+      "rows_moved": 73,
+      "share_of_the_gain": 0.018986809903506277
+    },
+    "january": {
+      "clause_s": 1.0,
+      "mse_gain_s2_per_row": 6384.915916852862,
+      "passes_the_clause": true,
+      "rmse_arm": 5983.609681066529,
+      "rmse_base": 5984.1431910733845,
+      "rmse_gain_s": 0.5335100068550673,
+      "rows": 325,
+      "rows_moved": 94,
+      "share_of_the_gain": 0.0025721830679114174
+    },
+    "july_loo": {
+      "clause_s": 1.0,
+      "mse_gain_s2_per_row": -3710.916700643882,
+      "passes_the_clause": true,
+      "rmse_arm": 2396.5501897771705,
+      "rmse_base": 2395.775844151608,
+      "rmse_gain_s": -0.774345625562546,
+      "rows": 656,
+      "rows_moved": 253,
+      "share_of_the_gain": -0.0023210017620460205
+    }
+  },
+  "what": "the increment over the served head: d = d_new - d_head on the with-clock rows, priced against a base of pbase + d_head, with the airport hold applied to BOTH vectors so the comparison is like for like"
+}

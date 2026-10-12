@@ -1,0 +1,70 @@
+{
+ "what": "does the FOLD-side bag10 member set share the ranking-side cache defect?  The desk, 2026-09-09: the ranking member cache keyed on seed+leaves only, so ranking members 6-10 were fitted on the GATED class (193,800) and mixed with the ungated 1-5.  If the fold side shares it, d-bag10-255-free.npz is re-emitted and this lane's v9 arm pin d32a993b moves.",
+ "the_test": "a gated-class member cannot move the rows the gate removes, so the defect is a SUPPORT difference and shows as a systematic block: rows moved by every ungated member and by no gated one.  Fit churn moves single rows at the margin; a class difference moves a block.",
+ "head": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+ "members": "d-bundle-placebo{1..10}-255-free.npz, the fold-side vectors on disk",
+ "by_fold": {
+  "july_loo": {
+   "rows": 190713,
+   "moved_by_every_old_member_and_no_new_one": 0,
+   "moved_by_every_new_member_and_no_old_one": 0,
+   "union_1_to_5": 88453,
+   "union_6_to_10": 88459,
+   "symmetric_difference": 56,
+   "per_member_moved": {
+    "1": 88427,
+    "2": 88427,
+    "3": 88428,
+    "4": 88427,
+    "5": 88427,
+    "6": 88427,
+    "7": 88427,
+    "8": 88427,
+    "9": 88428,
+    "10": 88426
+   }
+  },
+  "december": {
+   "rows": 165677,
+   "moved_by_every_old_member_and_no_new_one": 0,
+   "moved_by_every_new_member_and_no_old_one": 0,
+   "union_1_to_5": 102288,
+   "union_6_to_10": 102280,
+   "symmetric_difference": 76,
+   "per_member_moved": {
+    "1": 102212,
+    "2": 102211,
+    "3": 102210,
+    "4": 102209,
+    "5": 102211,
+    "6": 102210,
+    "7": 102211,
+    "8": 102211,
+    "9": 102210,
+    "10": 102212
+   }
+  },
+  "january": {
+   "rows": 153706,
+   "moved_by_every_old_member_and_no_new_one": 0,
+   "moved_by_every_new_member_and_no_old_one": 0,
+   "union_1_to_5": 69839,
+   "union_6_to_10": 69839,
+   "symmetric_difference": 0,
+   "per_member_moved": {
+    "1": 69839,
+    "2": 69839,
+    "3": 69839,
+    "4": 69839,
+    "5": 69839,
+    "6": 69839,
+    "7": 69839,
+    "8": 69839,
+    "9": 69839,
+    "10": 69839
+   }
+  }
+ },
+ "read": "NO -- the fold side does NOT share the defect.  ZERO rows on every fold are moved by all of members 1-5 and none of 6-10, or the reverse; the unions differ by 56 / 76 / 0 rows out of 88k / 102k / 70k, and january is identical to the row.  A gated-class member set would leave a block of thousands, not a margin of tens.  The fold-side member censuses agree exactly as well (kept/in_pool/out_pool identical for members 4, 5, 6, 7, 8, 9, 10 across bag-arm.json and bag-10.json).",
+ "what_this_does_not_prove": "this tests SUPPORT -- which rows each member moves -- which is exactly the signature the gated/ungated class difference produces.  A defect that changed member VALUES without changing their support would not show here.  It is evidence on the specific defect described, not a general clearance of the member set."
+}

@@ -1,0 +1,333 @@
+{
+ "A_cross_month_correlation_nine_airports_no_LTFM": {
+  "december_vs_january": {
+   "max_abs_difference_s": 13.383188033961627,
+   "n": 9,
+   "pearson": 0.7150768267246692,
+   "spearman": 0.7166666666666667
+  },
+  "july_loo_vs_december": {
+   "max_abs_difference_s": 33.3670777590029,
+   "n": 9,
+   "pearson": -0.27800326889257315,
+   "spearman": -0.09999999999999999
+  },
+  "july_loo_vs_january": {
+   "max_abs_difference_s": 38.25481397118119,
+   "n": 9,
+   "pearson": -0.08082141838047767,
+   "spearman": -0.06666666666666667
+  }
+ },
+ "A_cross_month_correlation_of_the_error_profile": {
+  "december_vs_january": {
+   "max_abs_difference_s": 13.383188033961627,
+   "n": 10,
+   "pearson": 0.7172126375369811,
+   "spearman": 0.7454545454545454
+  },
+  "july_loo_vs_december": {
+   "max_abs_difference_s": 33.3670777590029,
+   "n": 10,
+   "pearson": -0.26476842461785394,
+   "spearman": -0.12727272727272726
+  },
+  "july_loo_vs_january": {
+   "max_abs_difference_s": 38.25481397118119,
+   "n": 10,
+   "pearson": -0.07412199297562534,
+   "spearman": -0.04242424242424241
+  }
+ },
+ "A_mean_pearson": 0.12610740664783393,
+ "B_alignment_nine_airports_no_LTFM": {
+  "december": {
+   "n": 9,
+   "pearson": 0.7142378106562614,
+   "spearman": 0.4666666666666666
+  },
+  "january": {
+   "n": 9,
+   "pearson": -0.29955539569720924,
+   "spearman": -0.43333333333333335
+  },
+  "july_loo": {
+   "n": 9,
+   "pearson": 0.8258606296053385,
+   "spearman": 0.7666666666666667
+  }
+ },
+ "B_alignment_with_the_residual_the_arm_fits": {
+  "december": {
+   "n": 10,
+   "pearson": 0.6936013218020814,
+   "spearman": 0.4545454545454545
+  },
+  "january": {
+   "n": 10,
+   "pearson": -0.29485548091185537,
+   "spearman": -0.49090909090909085
+  },
+  "july_loo": {
+   "n": 10,
+   "pearson": 0.651569329362973,
+   "spearman": 0.7575757575757575
+  }
+ },
+ "airports": [
+  "EDDF",
+  "EDDM",
+  "EGLL",
+  "EHAM",
+  "LEBL",
+  "LEMD",
+  "LFPG",
+  "LIRF",
+  "LSZH",
+  "LTFM"
+ ],
+ "per_airport_profile": {
+  "december": {
+   "EDDF": {
+    "base6_error_mean_s": 1.6858766157162952,
+    "base6_error_rms_s": 21.402131741066803,
+    "residual_over_head_mean_s": -8.915846225920834,
+    "rows": 17324
+   },
+   "EDDM": {
+    "base6_error_mean_s": -18.939511000629516,
+    "base6_error_rms_s": 58.16838995731202,
+    "residual_over_head_mean_s": -23.78823946845838,
+    "rows": 12035
+   },
+   "EGLL": {
+    "base6_error_mean_s": 3.076807980632811,
+    "base6_error_rms_s": 33.02660447791928,
+    "residual_over_head_mean_s": -4.3657873591749174,
+    "rows": 20000
+   },
+   "EHAM": {
+    "base6_error_mean_s": 0.5982216262913492,
+    "base6_error_rms_s": 19.95918118240187,
+    "residual_over_head_mean_s": 5.870613923083997,
+    "rows": 19458
+   },
+   "LEBL": {
+    "base6_error_mean_s": -5.573350556822765,
+    "base6_error_rms_s": 33.480069600707715,
+    "residual_over_head_mean_s": -3.9553688323845715,
+    "rows": 13835
+   },
+   "LEMD": {
+    "base6_error_mean_s": -0.7496737522630379,
+    "base6_error_rms_s": 22.062597086717687,
+    "residual_over_head_mean_s": 15.98580717008057,
+    "rows": 17985
+   },
+   "LFPG": {
+    "base6_error_mean_s": 6.4211931030536755,
+    "base6_error_rms_s": 36.157988036056544,
+    "residual_over_head_mean_s": 7.147980959697603,
+    "rows": 19778
+   },
+   "LIRF": {
+    "base6_error_mean_s": 6.276940217463161,
+    "base6_error_rms_s": 39.78893723059809,
+    "residual_over_head_mean_s": 28.798729908636773,
+    "rows": 12068
+   },
+   "LSZH": {
+    "base6_error_mean_s": 2.5778714784943575,
+    "base6_error_rms_s": 22.26803102891824,
+    "residual_over_head_mean_s": 0.5336219588435216,
+    "rows": 10585
+   },
+   "LTFM": {
+    "base6_error_mean_s": 2.573678625592432,
+    "base6_error_rms_s": 37.81188740724839,
+    "residual_over_head_mean_s": -2.075146114201378,
+    "rows": 22609
+   }
+  },
+  "january": {
+   "EDDF": {
+    "base6_error_mean_s": 5.628843525258548,
+    "base6_error_rms_s": 24.670683824400896,
+    "residual_over_head_mean_s": 14.547544562402354,
+    "rows": 15496
+   },
+   "EDDM": {
+    "base6_error_mean_s": -6.358267576830446,
+    "base6_error_rms_s": 46.42613644474338,
+    "residual_over_head_mean_s": -1.1376893717690109,
+    "rows": 11266
+   },
+   "EGLL": {
+    "base6_error_mean_s": 16.459996014594438,
+    "base6_error_rms_s": 39.67379901820367,
+    "residual_over_head_mean_s": -11.481798417895,
+    "rows": 19420
+   },
+   "EHAM": {
+    "base6_error_mean_s": -1.659457335569049,
+    "base6_error_rms_s": 22.53037163843333,
+    "residual_over_head_mean_s": 1.7625109464813735,
+    "rows": 18460
+   },
+   "LEBL": {
+    "base6_error_mean_s": 4.1434326554579,
+    "base6_error_rms_s": 24.31897185632099,
+    "residual_over_head_mean_s": 2.769098108168902,
+    "rows": 12234
+   },
+   "LEMD": {
+    "base6_error_mean_s": 6.4482640121879475,
+    "base6_error_rms_s": 25.455372875427397,
+    "residual_over_head_mean_s": 0.49841073520866114,
+    "rows": 16510
+   },
+   "LFPG": {
+    "base6_error_mean_s": 10.305079658097991,
+    "base6_error_rms_s": 40.57506248330023,
+    "residual_over_head_mean_s": -1.6969554851221504,
+    "rows": 17900
+   },
+   "LIRF": {
+    "base6_error_mean_s": 11.164676429641453,
+    "base6_error_rms_s": 42.284278704567775,
+    "residual_over_head_mean_s": -5.681497872637324,
+    "rows": 11317
+   },
+   "LSZH": {
+    "base6_error_mean_s": 0.556299483436135,
+    "base6_error_rms_s": 31.52012900358107,
+    "residual_over_head_mean_s": -8.621717429900533,
+    "rows": 9735
+   },
+   "LTFM": {
+    "base6_error_mean_s": 6.893409028090272,
+    "base6_error_rms_s": 36.19044064635827,
+    "residual_over_head_mean_s": -15.56566028249186,
+    "rows": 21368
+   }
+  },
+  "july_loo": {
+   "EDDF": {
+    "base6_error_mean_s": -7.223637021747475,
+    "base6_error_rms_s": 28.239835575102084,
+    "residual_over_head_mean_s": -9.61990394241028,
+    "rows": 21334
+   },
+   "EDDM": {
+    "base6_error_mean_s": -2.545103102890264,
+    "base6_error_rms_s": 28.665980794297685,
+    "residual_over_head_mean_s": 7.223848465109975,
+    "rows": 15825
+   },
+   "EGLL": {
+    "base6_error_mean_s": 5.956228683721597,
+    "base6_error_rms_s": 47.37966532688712,
+    "residual_over_head_mean_s": 7.126989468497974,
+    "rows": 20790
+   },
+   "EHAM": {
+    "base6_error_mean_s": -0.007421859072101522,
+    "base6_error_rms_s": 19.077597199246803,
+    "residual_over_head_mean_s": 8.85779938536683,
+    "rows": 22489
+   },
+   "LEBL": {
+    "base6_error_mean_s": -10.373669244190165,
+    "base6_error_rms_s": 39.49524259706001,
+    "residual_over_head_mean_s": -0.014514264891059588,
+    "rows": 16752
+   },
+   "LEMD": {
+    "base6_error_mean_s": -8.861136596297488,
+    "base6_error_rms_s": 33.84481396741778,
+    "residual_over_head_mean_s": -15.386585713391456,
+    "rows": 18818
+   },
+   "LFPG": {
+    "base6_error_mean_s": -6.351864007404334,
+    "base6_error_rms_s": 43.49297035492466,
+    "residual_over_head_mean_s": -8.483119570826865,
+    "rows": 21712
+   },
+   "LIRF": {
+    "base6_error_mean_s": -27.09013754153974,
+    "base6_error_rms_s": 88.84988824013695,
+    "residual_over_head_mean_s": -20.83532568632598,
+    "rows": 15211
+   },
+   "LSZH": {
+    "base6_error_mean_s": -12.827691946518025,
+    "base6_error_rms_s": 32.1247872623006,
+    "residual_over_head_mean_s": -9.335583715786164,
+    "rows": 12611
+   },
+   "LTFM": {
+    "base6_error_mean_s": -5.593639008458605,
+    "base6_error_rms_s": 52.590723381622404,
+    "residual_over_head_mean_s": 25.665221422185187,
+    "rows": 25171
+   }
+  }
+ },
+ "per_fold": {
+  "december": {
+   "between_airport_share": 0.035040137702410275,
+   "between_airport_variance_s2": 39.12496625915727,
+   "corr_error_profile_vs_residual_profile": {
+    "n": 10,
+    "pearson": 0.6936013218020814,
+    "spearman": 0.4545454545454545
+   },
+   "grand_mean_s": 0.4350562939300902,
+   "rms_base6_error_s": 33.418033653908104,
+   "rms_s_usable_the_precondition_headline": 30.09543217462579,
+   "rows": 165677,
+   "total_variance_s2": 1116.5756993148464
+  },
+  "january": {
+   "between_airport_share": 0.03411692418062114,
+   "between_airport_variance_s2": 38.48329224733754,
+   "corr_error_profile_vs_residual_profile": {
+    "n": 10,
+    "pearson": -0.29485548091185537,
+    "spearman": -0.49090909090909085
+   },
+   "grand_mean_s": 6.019862331343208,
+   "rms_base6_error_s": 34.12068592270711,
+   "rms_s_usable_the_precondition_headline": 30.108877137162285,
+   "rows": 153706,
+   "total_variance_s2": 1127.9824653476983
+  },
+  "july_loo": {
+   "between_airport_share": 0.03196062082453601,
+   "between_airport_variance_s2": 61.66588052152648,
+   "corr_error_profile_vs_residual_profile": {
+    "n": 10,
+    "pearson": 0.651569329362973,
+    "spearman": 0.7575757575757575
+   },
+   "grand_mean_s": -6.62670129681602,
+   "rms_base6_error_s": 44.422362558731955,
+   "rms_s_usable_the_precondition_headline": 39.15378797196321,
+   "rows": 190713,
+   "total_variance_s2": 1929.4331252222075
+  }
+ },
+ "reading": {
+  "airport_channel_share_of_the_error": [
+   0.03196062082453601,
+   0.035040137702410275,
+   0.03411692418062114
+  ],
+  "channel_is_stable_across_months": false,
+  "inflation_branch_open": false,
+  "limit": "this tests the AIRPORT channel, which is the one 47.17 named. A null here bounds the transferable structure at airport level and does not eliminate a finer feature-conditional channel",
+  "note": "the extension rows carry target r_true - e, so they pull the arm DOWN by the per-airport mean of e. That can only INFLATE a fold read where e runs OPPOSITE to the residual the arm fits, i.e. where B is NEGATIVE. B positive means the pull is the wrong way and the mismatch DEPRESSES the face"
+ },
+ "what": "RESULTS section 47.61.4: is the base6 error a STRUCTURE the tree could carry between months?"
+}

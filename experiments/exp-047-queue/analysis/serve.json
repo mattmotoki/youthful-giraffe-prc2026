@@ -1,0 +1,1740 @@
+{
+  "candidate": "submissions/candidates/exp-047-queue.parquet",
+  "cell_hold": {
+    "cells_held": [
+      "EDDF/unreached",
+      "EDDM/reached",
+      "EDDM/unreached",
+      "EGLL/reached",
+      "EGLL/unreached",
+      "EHAM/reached",
+      "EHAM/unreached",
+      "LEBL/reached",
+      "LEBL/unreached",
+      "LEMD/reached",
+      "LEMD/unreached",
+      "LFPG/reached",
+      "LFPG/unreached",
+      "LIRF/reached",
+      "LIRF/unreached",
+      "LSZH/reached",
+      "LSZH/unreached"
+    ],
+    "cells_served": [
+      "EDDF/reached",
+      "LTFM/unreached"
+    ],
+    "census": {
+      "EDDF/reached": {
+        "by_month": {
+          "2026-01": 5327,
+          "2026-07": 10958
+        },
+        "class_rows": 16285,
+        "projected_s2_forgone": {},
+        "reason": {
+          "december": "supported",
+          "january": "supported",
+          "july_loo": "supported"
+        },
+        "served": true
+      },
+      "EDDF/unreached": {
+        "by_month": {
+          "2026-01": 2952,
+          "2026-07": 2384
+        },
+        "class_rows": 5336,
+        "projected_s2_forgone": {
+          "december": 0.0,
+          "january": 18.85,
+          "july_loo": 0.0
+        },
+        "reason": {
+          "december": "unpriced, 43 fold rows",
+          "january": "155 fold rows, under 500; interval [-885.77, 5170.81] is not clear of zero above",
+          "july_loo": "unpriced, 52 fold rows"
+        },
+        "served": false
+      },
+      "EDDM/reached": {
+        "by_month": {
+          "2026-01": 391,
+          "2026-07": 538
+        },
+        "class_rows": 929,
+        "projected_s2_forgone": {
+          "december": 7.87,
+          "january": 7.54,
+          "july_loo": 6.31
+        },
+        "reason": {
+          "december": "408 fold rows, under 500; interval [-3052.57, 8845.61] is not clear of zero above",
+          "january": "149 fold rows, under 500; interval [-2952.59, 7507.07] is not clear of zero above",
+          "july_loo": "230 fold rows, under 500"
+        },
+        "served": false
+      },
+      "EDDM/unreached": {
+        "by_month": {
+          "2026-01": 31,
+          "2026-07": 14
+        },
+        "class_rows": 45,
+        "projected_s2_forgone": {
+          "december": 0.0,
+          "january": -0.05,
+          "july_loo": 0.04
+        },
+        "reason": {
+          "december": "unpriced, 39 fold rows",
+          "january": "274 fold rows, under 500; interval [-2034.38, 39.14] is not clear of zero above",
+          "july_loo": "supported"
+        },
+        "served": false
+      },
+      "EGLL/reached": {
+        "by_month": {
+          "2026-01": 5522,
+          "2026-07": 795
+        },
+        "class_rows": 6317,
+        "projected_s2_forgone": {
+          "december": -78.92,
+          "january": 1.64,
+          "july_loo": -9.57
+        },
+        "reason": {
+          "december": "interval [-7309.03, -2279.93] is not clear of zero above",
+          "january": "interval [-748.78, 879.72] is not clear of zero above",
+          "july_loo": "interval [-1398.36, 395.71] is not clear of zero above"
+        },
+        "served": false
+      },
+      "EGLL/unreached": {
+        "by_month": {
+          "2026-01": 203,
+          "2026-07": 8
+        },
+        "class_rows": 211,
+        "projected_s2_forgone": {
+          "december": 0.08,
+          "january": -0.53,
+          "july_loo": -0.09
+        },
+        "reason": {
+          "december": "interval [-742.92, 1015.81] is not clear of zero above",
+          "january": "interval [-1629.11, -19.14] is not clear of zero above",
+          "july_loo": "interval [-399.62, 146.98] is not clear of zero above"
+        },
+        "served": false
+      },
+      "EHAM/reached": {
+        "by_month": {
+          "2026-01": 1164,
+          "2026-07": 1364
+        },
+        "class_rows": 2528,
+        "projected_s2_forgone": {
+          "december": -13.77,
+          "january": 17.54,
+          "july_loo": 4.77
+        },
+        "reason": {
+          "december": "interval [-3714.16, -622.12] is not clear of zero above",
+          "january": "interval [-635.26, 5901.1] is not clear of zero above",
+          "july_loo": "supported"
+        },
+        "served": false
+      },
+      "EHAM/unreached": {
+        "by_month": {
+          "2026-01": 61,
+          "2026-07": 20
+        },
+        "class_rows": 81,
+        "projected_s2_forgone": {
+          "december": 0.0,
+          "january": 0.0,
+          "july_loo": 0.0
+        },
+        "reason": {
+          "december": "unpriced, 32 fold rows",
+          "january": "unpriced, 16 fold rows",
+          "july_loo": "unpriced, 13 fold rows"
+        },
+        "served": false
+      },
+      "LEBL/reached": {
+        "by_month": {
+          "2026-01": 1267,
+          "2026-07": 1947
+        },
+        "class_rows": 3214,
+        "projected_s2_forgone": {
+          "december": 15.51,
+          "january": 11.39,
+          "july_loo": 20.82
+        },
+        "reason": {
+          "december": "interval [-84.14, 3948.77] is not clear of zero above",
+          "january": "supported",
+          "july_loo": "supported"
+        },
+        "served": false
+      },
+      "LEBL/unreached": {
+        "by_month": {
+          "2026-01": 201,
+          "2026-07": 74
+        },
+        "class_rows": 275,
+        "projected_s2_forgone": {
+          "december": 0.0,
+          "january": -0.12,
+          "july_loo": -0.16
+        },
+        "reason": {
+          "december": "unpriced, 99 fold rows",
+          "january": "120 fold rows, under 500; interval [-638.51, 179.08] is not clear of zero above",
+          "july_loo": "321 fold rows, under 500; interval [-1332.07, 761.45] is not clear of zero above"
+        },
+        "served": false
+      },
+      "LEMD/reached": {
+        "by_month": {
+          "2026-01": 900,
+          "2026-07": 7839
+        },
+        "class_rows": 8739,
+        "projected_s2_forgone": {
+          "december": 34.71,
+          "january": 0.0,
+          "july_loo": 29.48
+        },
+        "reason": {
+          "december": "supported",
+          "january": "unpriced, 0 fold rows",
+          "july_loo": "supported"
+        },
+        "served": false
+      },
+      "LEMD/unreached": {
+        "by_month": {
+          "2026-01": 68,
+          "2026-07": 1314
+        },
+        "class_rows": 1382,
+        "projected_s2_forgone": {
+          "december": 0.0,
+          "january": 0.64,
+          "july_loo": 0.97
+        },
+        "reason": {
+          "december": "unpriced, 48 fold rows",
+          "january": "supported",
+          "july_loo": "interval [-66.17, 653.43] is not clear of zero above"
+        },
+        "served": false
+      },
+      "LFPG/reached": {
+        "by_month": {
+          "2026-01": 2062,
+          "2026-07": 2090
+        },
+        "class_rows": 4152,
+        "projected_s2_forgone": {
+          "december": -2.9,
+          "january": 0.0,
+          "july_loo": -3.2
+        },
+        "reason": {
+          "december": "interval [-1112.19, 469.11] is not clear of zero above",
+          "january": "unpriced, 0 fold rows",
+          "july_loo": "interval [-1261.58, 786.25] is not clear of zero above"
+        },
+        "served": false
+      },
+      "LFPG/unreached": {
+        "by_month": {
+          "2026-01": 15328,
+          "2026-07": 18780
+        },
+        "class_rows": 34108,
+        "projected_s2_forgone": {
+          "december": 21.04,
+          "january": 29.35,
+          "july_loo": -15.97
+        },
+        "reason": {
+          "december": "interval [-131.7, 785.1] is not clear of zero above",
+          "january": "interval [-14.96, 725.28] is not clear of zero above",
+          "july_loo": "interval [-384.99, 43.94] is not clear of zero above"
+        },
+        "served": false
+      },
+      "LIRF/reached": {
+        "by_month": {
+          "2026-01": 3540,
+          "2026-07": 27
+        },
+        "class_rows": 3567,
+        "projected_s2_forgone": {
+          "december": -1.62,
+          "january": 0.0,
+          "july_loo": 7.76
+        },
+        "reason": {
+          "december": "interval [-1859.23, 1498.11] is not clear of zero above",
+          "january": "unpriced, 0 fold rows",
+          "july_loo": "interval [-4008.78, 6231.2] is not clear of zero above"
+        },
+        "served": false
+      },
+      "LIRF/unreached": {
+        "by_month": {
+          "2026-01": 2127,
+          "2026-07": 15524
+        },
+        "class_rows": 17651,
+        "projected_s2_forgone": {
+          "december": 34.11,
+          "january": -4.8,
+          "july_loo": 448.66
+        },
+        "reason": {
+          "december": "interval [-655.27, 1988.52] is not clear of zero above",
+          "january": "interval [-332.8, 151.13] is not clear of zero above",
+          "july_loo": "141 fold rows, under 500"
+        },
+        "served": false
+      },
+      "LSZH/reached": {
+        "by_month": {
+          "2026-01": 746,
+          "2026-07": 1094
+        },
+        "class_rows": 1840,
+        "projected_s2_forgone": {
+          "december": 6.22,
+          "january": 2.28,
+          "july_loo": 5.27
+        },
+        "reason": {
+          "december": "interval [-521.74, 2808.22] is not clear of zero above",
+          "january": "interval [-1397.42, 2451.95] is not clear of zero above",
+          "july_loo": "interval [-464.61, 2566.24] is not clear of zero above"
+        },
+        "served": false
+      },
+      "LSZH/unreached": {
+        "by_month": {
+          "2026-01": 93,
+          "2026-07": 28
+        },
+        "class_rows": 121,
+        "projected_s2_forgone": {
+          "december": 0.0,
+          "january": 0.0,
+          "july_loo": 0.0
+        },
+        "reason": {
+          "december": "unpriced, 50 fold rows",
+          "january": "unpriced, 98 fold rows",
+          "july_loo": "unpriced, 60 fold rows"
+        },
+        "served": false
+      },
+      "LTFM/unreached": {
+        "by_month": {
+          "2026-01": 22396,
+          "2026-07": 25181
+        },
+        "class_rows": 47577,
+        "projected_s2_forgone": {},
+        "reason": {
+          "december": "supported",
+          "january": "supported",
+          "july_loo": "supported"
+        },
+        "served": true
+      }
+    },
+    "class_rows_held": 90496,
+    "class_rows_in_class": 154358,
+    "class_rows_served": 63862,
+    "min_fold_rows": 500,
+    "rule": "desk 2026-09-09, the LFPG rule at the reach grain: a cell whose own fold interval is not clear of zero above, or which is priced on fewer than 500 rows in any fold, is held at the base",
+    "support": {
+      "EDDF/reached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 10.4,
+            "fold_rows": 1561,
+            "gain_ci95_s2": [
+              1379.38,
+              6861.53
+            ],
+            "gain_per_row_s2": 3620.5,
+            "ranking_rows": 16284,
+            "reason": "supported"
+          },
+          "january": {
+            "extrapolation": 4.5,
+            "fold_rows": 3586,
+            "gain_ci95_s2": [
+              326.89,
+              2448.73
+            ],
+            "gain_per_row_s2": 1261.2,
+            "ranking_rows": 16284,
+            "reason": "supported"
+          },
+          "july_loo": {
+            "extrapolation": 3.5,
+            "fold_rows": 4674,
+            "gain_ci95_s2": [
+              1923.79,
+              4210.92
+            ],
+            "gain_per_row_s2": 3003.0,
+            "ranking_rows": 16284,
+            "reason": "supported"
+          }
+        },
+        "projected_s2_forgone_if_held": {},
+        "served": true
+      },
+      "EDDF/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 124.1,
+            "fold_rows": 43,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 5337,
+            "reason": "unpriced, 43 fold rows"
+          },
+          "january": {
+            "extrapolation": 34.4,
+            "fold_rows": 155,
+            "gain_ci95_s2": [
+              -885.77,
+              5170.81
+            ],
+            "gain_per_row_s2": 1218.0,
+            "ranking_rows": 5337,
+            "reason": "155 fold rows, under 500; interval [-885.77, 5170.81] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 102.6,
+            "fold_rows": 52,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 5337,
+            "reason": "unpriced, 52 fold rows"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 0.0,
+          "january": 18.85,
+          "july_loo": 0.0
+        },
+        "served": false
+      },
+      "EDDM/reached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 2.3,
+            "fold_rows": 408,
+            "gain_ci95_s2": [
+              -3052.57,
+              8845.61
+            ],
+            "gain_per_row_s2": 2922.1,
+            "ranking_rows": 929,
+            "reason": "408 fold rows, under 500; interval [-3052.57, 8845.61] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 6.2,
+            "fold_rows": 149,
+            "gain_ci95_s2": [
+              -2952.59,
+              7507.07
+            ],
+            "gain_per_row_s2": 2798.4,
+            "ranking_rows": 929,
+            "reason": "149 fold rows, under 500; interval [-2952.59, 7507.07] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 4.0,
+            "fold_rows": 230,
+            "gain_ci95_s2": [
+              497.54,
+              3741.25
+            ],
+            "gain_per_row_s2": 2343.4,
+            "ranking_rows": 929,
+            "reason": "230 fold rows, under 500"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 7.87,
+          "january": 7.54,
+          "july_loo": 6.31
+        },
+        "served": false
+      },
+      "EDDM/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 1.2,
+            "fold_rows": 39,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 45,
+            "reason": "unpriced, 39 fold rows"
+          },
+          "january": {
+            "extrapolation": 0.2,
+            "fold_rows": 274,
+            "gain_ci95_s2": [
+              -2034.38,
+              39.14
+            ],
+            "gain_per_row_s2": -374.0,
+            "ranking_rows": 45,
+            "reason": "274 fold rows, under 500; interval [-2034.38, 39.14] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 0.0,
+            "fold_rows": 9820,
+            "gain_ci95_s2": [
+              33.78,
+              680.55
+            ],
+            "gain_per_row_s2": 310.4,
+            "ranking_rows": 45,
+            "reason": "supported"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 0.0,
+          "january": -0.05,
+          "july_loo": 0.04
+        },
+        "served": false
+      },
+      "EGLL/reached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 0.6,
+            "fold_rows": 9772,
+            "gain_ci95_s2": [
+              -7309.03,
+              -2279.93
+            ],
+            "gain_per_row_s2": -4308.1,
+            "ranking_rows": 6317,
+            "reason": "interval [-7309.03, -2279.93] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 0.7,
+            "fold_rows": 9275,
+            "gain_ci95_s2": [
+              -748.78,
+              879.72
+            ],
+            "gain_per_row_s2": 89.5,
+            "ranking_rows": 6317,
+            "reason": "interval [-748.78, 879.72] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 1.7,
+            "fold_rows": 3668,
+            "gain_ci95_s2": [
+              -1398.36,
+              395.71
+            ],
+            "gain_per_row_s2": -522.6,
+            "ranking_rows": 6317,
+            "reason": "interval [-1398.36, 395.71] is not clear of zero above"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": -78.92,
+          "january": 1.64,
+          "july_loo": -9.57
+        },
+        "served": false
+      },
+      "EGLL/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 0.1,
+            "fold_rows": 1444,
+            "gain_ci95_s2": [
+              -742.92,
+              1015.81
+            ],
+            "gain_per_row_s2": 128.8,
+            "ranking_rows": 211,
+            "reason": "interval [-742.92, 1015.81] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 0.1,
+            "fold_rows": 1698,
+            "gain_ci95_s2": [
+              -1629.11,
+              -19.14
+            ],
+            "gain_per_row_s2": -860.8,
+            "ranking_rows": 211,
+            "reason": "interval [-1629.11, -19.14] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 0.0,
+            "fold_rows": 15922,
+            "gain_ci95_s2": [
+              -399.62,
+              146.98
+            ],
+            "gain_per_row_s2": -142.1,
+            "ranking_rows": 211,
+            "reason": "interval [-399.62, 146.98] is not clear of zero above"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 0.08,
+          "january": -0.53,
+          "july_loo": -0.09
+        },
+        "served": false
+      },
+      "EHAM/reached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 2.2,
+            "fold_rows": 1168,
+            "gain_ci95_s2": [
+              -3714.16,
+              -622.12
+            ],
+            "gain_per_row_s2": -1879.0,
+            "ranking_rows": 2528,
+            "reason": "interval [-3714.16, -622.12] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 3.9,
+            "fold_rows": 643,
+            "gain_ci95_s2": [
+              -635.26,
+              5901.1
+            ],
+            "gain_per_row_s2": 2392.1,
+            "ranking_rows": 2528,
+            "reason": "interval [-635.26, 5901.1] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 2.0,
+            "fold_rows": 1283,
+            "gain_ci95_s2": [
+              226.82,
+              1132.39
+            ],
+            "gain_per_row_s2": 651.3,
+            "ranking_rows": 2528,
+            "reason": "supported"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": -13.77,
+          "january": 17.54,
+          "july_loo": 4.77
+        },
+        "served": false
+      },
+      "EHAM/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 2.5,
+            "fold_rows": 32,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 81,
+            "reason": "unpriced, 32 fold rows"
+          },
+          "january": {
+            "extrapolation": 5.1,
+            "fold_rows": 16,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 81,
+            "reason": "unpriced, 16 fold rows"
+          },
+          "july_loo": {
+            "extrapolation": 6.2,
+            "fold_rows": 13,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 81,
+            "reason": "unpriced, 13 fold rows"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 0.0,
+          "january": 0.0,
+          "july_loo": 0.0
+        },
+        "served": false
+      },
+      "LEBL/reached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 3.0,
+            "fold_rows": 1087,
+            "gain_ci95_s2": [
+              -84.14,
+              3948.77
+            ],
+            "gain_per_row_s2": 1663.9,
+            "ranking_rows": 3214,
+            "reason": "interval [-84.14, 3948.77] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 3.5,
+            "fold_rows": 916,
+            "gain_ci95_s2": [
+              519.34,
+              2166.84
+            ],
+            "gain_per_row_s2": 1222.5,
+            "ranking_rows": 3214,
+            "reason": "supported"
+          },
+          "july_loo": {
+            "extrapolation": 1.2,
+            "fold_rows": 2639,
+            "gain_ci95_s2": [
+              940.02,
+              3730.75
+            ],
+            "gain_per_row_s2": 2234.0,
+            "ranking_rows": 3214,
+            "reason": "supported"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 15.51,
+          "january": 11.39,
+          "july_loo": 20.82
+        },
+        "served": false
+      },
+      "LEBL/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 2.8,
+            "fold_rows": 99,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 275,
+            "reason": "unpriced, 99 fold rows"
+          },
+          "january": {
+            "extrapolation": 2.3,
+            "fold_rows": 120,
+            "gain_ci95_s2": [
+              -638.51,
+              179.08
+            ],
+            "gain_per_row_s2": -147.3,
+            "ranking_rows": 275,
+            "reason": "120 fold rows, under 500; interval [-638.51, 179.08] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 0.9,
+            "fold_rows": 321,
+            "gain_ci95_s2": [
+              -1332.07,
+              761.45
+            ],
+            "gain_per_row_s2": -197.1,
+            "ranking_rows": 275,
+            "reason": "321 fold rows, under 500; interval [-1332.07, 761.45] is not clear of zero above"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 0.0,
+          "january": -0.12,
+          "july_loo": -0.16
+        },
+        "served": false
+      },
+      "LEMD/reached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 10.7,
+            "fold_rows": 818,
+            "gain_ci95_s2": [
+              581.11,
+              2327.42
+            ],
+            "gain_per_row_s2": 1369.6,
+            "ranking_rows": 8739,
+            "reason": "supported"
+          },
+          "january": {
+            "extrapolation": 8739.0,
+            "fold_rows": 0,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 8739,
+            "reason": "unpriced, 0 fold rows"
+          },
+          "july_loo": {
+            "extrapolation": 0.9,
+            "fold_rows": 9366,
+            "gain_ci95_s2": [
+              708.86,
+              1675.04
+            ],
+            "gain_per_row_s2": 1163.4,
+            "ranking_rows": 8739,
+            "reason": "supported"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 34.71,
+          "january": 0.0,
+          "july_loo": 29.48
+        },
+        "served": false
+      },
+      "LEMD/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 28.8,
+            "fold_rows": 48,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 1382,
+            "reason": "unpriced, 48 fold rows"
+          },
+          "january": {
+            "extrapolation": 0.1,
+            "fold_rows": 16509,
+            "gain_ci95_s2": [
+              29.16,
+              294.98
+            ],
+            "gain_per_row_s2": 159.3,
+            "ranking_rows": 1382,
+            "reason": "supported"
+          },
+          "july_loo": {
+            "extrapolation": 0.3,
+            "fold_rows": 5313,
+            "gain_ci95_s2": [
+              -66.17,
+              653.43
+            ],
+            "gain_per_row_s2": 242.9,
+            "ranking_rows": 1382,
+            "reason": "interval [-66.17, 653.43] is not clear of zero above"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 0.0,
+          "january": 0.64,
+          "july_loo": 0.97
+        },
+        "served": false
+      },
+      "LFPG/reached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 1.6,
+            "fold_rows": 2570,
+            "gain_ci95_s2": [
+              -1112.19,
+              469.11
+            ],
+            "gain_per_row_s2": -241.0,
+            "ranking_rows": 4152,
+            "reason": "interval [-1112.19, 469.11] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 4152.0,
+            "fold_rows": 0,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 4152,
+            "reason": "unpriced, 0 fold rows"
+          },
+          "july_loo": {
+            "extrapolation": 4.3,
+            "fold_rows": 974,
+            "gain_ci95_s2": [
+              -1261.58,
+              786.25
+            ],
+            "gain_per_row_s2": -266.0,
+            "ranking_rows": 4152,
+            "reason": "interval [-1261.58, 786.25] is not clear of zero above"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": -2.9,
+          "january": 0.0,
+          "july_loo": -3.2
+        },
+        "served": false
+      },
+      "LFPG/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 2.1,
+            "fold_rows": 16203,
+            "gain_ci95_s2": [
+              -131.7,
+              785.1
+            ],
+            "gain_per_row_s2": 212.7,
+            "ranking_rows": 34108,
+            "reason": "interval [-131.7, 785.1] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 1.9,
+            "fold_rows": 17900,
+            "gain_ci95_s2": [
+              -14.96,
+              725.28
+            ],
+            "gain_per_row_s2": 296.8,
+            "ranking_rows": 34108,
+            "reason": "interval [-14.96, 725.28] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 1.7,
+            "fold_rows": 20342,
+            "gain_ci95_s2": [
+              -384.99,
+              43.94
+            ],
+            "gain_per_row_s2": -161.5,
+            "ranking_rows": 34108,
+            "reason": "interval [-384.99, 43.94] is not clear of zero above"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 21.04,
+          "january": 29.35,
+          "july_loo": -15.97
+        },
+        "served": false
+      },
+      "LIRF/reached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 0.9,
+            "fold_rows": 3913,
+            "gain_ci95_s2": [
+              -1859.23,
+              1498.11
+            ],
+            "gain_per_row_s2": -156.8,
+            "ranking_rows": 3567,
+            "reason": "interval [-1859.23, 1498.11] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 3567.0,
+            "fold_rows": 0,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 3567,
+            "reason": "unpriced, 0 fold rows"
+          },
+          "july_loo": {
+            "extrapolation": 2.0,
+            "fold_rows": 1823,
+            "gain_ci95_s2": [
+              -4008.78,
+              6231.2
+            ],
+            "gain_per_row_s2": 749.9,
+            "ranking_rows": 3567,
+            "reason": "interval [-4008.78, 6231.2] is not clear of zero above"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": -1.62,
+          "january": 0.0,
+          "july_loo": 7.76
+        },
+        "served": false
+      },
+      "LIRF/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 7.4,
+            "fold_rows": 2388,
+            "gain_ci95_s2": [
+              -655.27,
+              1988.52
+            ],
+            "gain_per_row_s2": 666.4,
+            "ranking_rows": 17651,
+            "reason": "interval [-655.27, 1988.52] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 1.6,
+            "fold_rows": 11317,
+            "gain_ci95_s2": [
+              -332.8,
+              151.13
+            ],
+            "gain_per_row_s2": -93.9,
+            "ranking_rows": 17651,
+            "reason": "interval [-332.8, 151.13] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 125.2,
+            "fold_rows": 141,
+            "gain_ci95_s2": [
+              3222.93,
+              30084.62
+            ],
+            "gain_per_row_s2": 8765.1,
+            "ranking_rows": 17651,
+            "reason": "141 fold rows, under 500"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 34.11,
+          "january": -4.8,
+          "july_loo": 448.66
+        },
+        "served": false
+      },
+      "LSZH/reached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 3.1,
+            "fold_rows": 598,
+            "gain_ci95_s2": [
+              -521.74,
+              2808.22
+            ],
+            "gain_per_row_s2": 1165.2,
+            "ranking_rows": 1840,
+            "reason": "interval [-521.74, 2808.22] is not clear of zero above"
+          },
+          "january": {
+            "extrapolation": 2.0,
+            "fold_rows": 909,
+            "gain_ci95_s2": [
+              -1397.42,
+              2451.95
+            ],
+            "gain_per_row_s2": 426.8,
+            "ranking_rows": 1840,
+            "reason": "interval [-1397.42, 2451.95] is not clear of zero above"
+          },
+          "july_loo": {
+            "extrapolation": 1.1,
+            "fold_rows": 1702,
+            "gain_ci95_s2": [
+              -464.61,
+              2566.24
+            ],
+            "gain_per_row_s2": 987.7,
+            "ranking_rows": 1840,
+            "reason": "interval [-464.61, 2566.24] is not clear of zero above"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 6.22,
+          "january": 2.28,
+          "july_loo": 5.27
+        },
+        "served": false
+      },
+      "LSZH/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 2.4,
+            "fold_rows": 50,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 121,
+            "reason": "unpriced, 50 fold rows"
+          },
+          "january": {
+            "extrapolation": 1.2,
+            "fold_rows": 98,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 121,
+            "reason": "unpriced, 98 fold rows"
+          },
+          "july_loo": {
+            "extrapolation": 2.0,
+            "fold_rows": 60,
+            "gain_ci95_s2": null,
+            "gain_per_row_s2": null,
+            "ranking_rows": 121,
+            "reason": "unpriced, 60 fold rows"
+          }
+        },
+        "projected_s2_forgone_if_held": {
+          "december": 0.0,
+          "january": 0.0,
+          "july_loo": 0.0
+        },
+        "served": false
+      },
+      "LTFM/unreached": {
+        "by_fold": {
+          "december": {
+            "extrapolation": 2.1,
+            "fold_rows": 22609,
+            "gain_ci95_s2": [
+              40.44,
+              432.63
+            ],
+            "gain_per_row_s2": 232.5,
+            "ranking_rows": 47577,
+            "reason": "supported"
+          },
+          "january": {
+            "extrapolation": 2.2,
+            "fold_rows": 21368,
+            "gain_ci95_s2": [
+              47.16,
+              492.19
+            ],
+            "gain_per_row_s2": 264.5,
+            "ranking_rows": 47577,
+            "reason": "supported"
+          },
+          "july_loo": {
+            "extrapolation": 1.9,
+            "fold_rows": 25171,
+            "gain_ci95_s2": [
+              353.53,
+              1304.13
+            ],
+            "gain_per_row_s2": 756.2,
+            "ranking_rows": 47577,
+            "reason": "supported"
+          }
+        },
+        "projected_s2_forgone_if_held": {},
+        "served": true
+      }
+    }
+  },
+  "class_boundary": {
+    "class_rows_before_the_cell_hold": 154358,
+    "class_vector": "artifacts/exp-046/class/<month>.parquet",
+    "held_at_v12_by_both": 92496,
+    "max_abs_v13_minus_v12_on_owned": 0.0,
+    "moved_by_v13": 188483,
+    "overlap": 0,
+    "own_class_would_serve": 154350,
+    "rows_v13_differs_from_v12": 188483,
+    "served_by_this_lane": 63862
+  },
+  "currency": {
+    "arm": "N",
+    "board_all": {
+      "after": 308.4122,
+      "before": 308.5977,
+      "gain_s": 0.1854
+    },
+    "board_clean": {
+      "after": 256.2412,
+      "before": 256.4643,
+      "gain_s": 0.2231
+    },
+    "columns": 24,
+    "december": {
+      "rms_move_s": 19.664,
+      "rmse_all_after": 204.0656,
+      "rmse_all_before": 204.1985,
+      "rmse_clean_after": 204.0656,
+      "rmse_clean_before": 204.1985,
+      "served_rows": 24169
+    },
+    "note": "cross-fitted by fold: each fold's d comes from a head fitted on the other two only. December is not a ranking-share fold and is carried beside the board, never inside it.",
+    "per_fold": {
+      "december": {
+        "max_abs_move_s": 335.3513,
+        "rms_move_s": 19.664,
+        "rmse4_fold_after": {
+          "all": 204.0656,
+          "bulk_le3600": 191.6655,
+          "no_nm": 655.2758,
+          "rows": 165677,
+          "rows_no_nm": 1643,
+          "tail_gt3600": 1775.2916
+        },
+        "rmse4_fold_before": {
+          "all": 204.1985,
+          "bulk_le3600": 191.8273,
+          "no_nm": 655.2183,
+          "rows": 165677,
+          "rows_no_nm": 1643,
+          "tail_gt3600": 1773.9137
+        },
+        "rmse4_served_after": {
+          "all": 199.7847,
+          "bulk_le3600": 190.6501,
+          "no_nm": 318.0494,
+          "rows": 24169,
+          "rows_no_nm": 381,
+          "tail_gt3600": 1559.0839
+        },
+        "rmse4_served_before": {
+          "all": 200.7134,
+          "bulk_le3600": 191.7625,
+          "no_nm": 317.5383,
+          "rows": 24169,
+          "rows_no_nm": 381,
+          "tail_gt3600": 1547.6714
+        },
+        "rmse_all_after": 204.0656,
+        "rmse_all_before": 204.1985,
+        "rmse_clean_after": 204.0656,
+        "rmse_clean_before": 204.1985,
+        "rows": 165677,
+        "served_rows": 24169
+      },
+      "january": {
+        "max_abs_move_s": 370.4086,
+        "rms_move_s": 19.1461,
+        "rmse4_fold_after": {
+          "all": 337.363,
+          "bulk_le3600": 195.4,
+          "no_nm": 2835.6119,
+          "rows": 153706,
+          "rows_no_nm": 1432,
+          "tail_gt3600": 5983.9777
+        },
+        "rmse4_fold_before": {
+          "all": 337.4611,
+          "bulk_le3600": 195.5589,
+          "no_nm": 2835.5285,
+          "rows": 153706,
+          "rows_no_nm": 1432,
+          "tail_gt3600": 5984.1432
+        },
+        "rmse4_served_after": {
+          "all": 210.5612,
+          "bulk_le3600": 203.3702,
+          "no_nm": 463.9899,
+          "rows": 24954,
+          "rows_no_nm": 326,
+          "tail_gt3600": 2496.2429
+        },
+        "rmse4_served_before": {
+          "all": 211.5272,
+          "bulk_le3600": 204.3075,
+          "no_nm": 461.7438,
+          "rows": 24954,
+          "rows_no_nm": 326,
+          "tail_gt3600": 2506.9619
+        },
+        "rmse_all_after": 337.363,
+        "rmse_all_before": 337.4611,
+        "rmse_clean_after": 217.4767,
+        "rmse_clean_before": 217.6288,
+        "rows": 153706,
+        "served_rows": 24954
+      },
+      "july_loo": {
+        "max_abs_move_s": 180.5923,
+        "rms_move_s": 18.3114,
+        "rmse4_fold_after": {
+          "all": 283.2963,
+          "bulk_le3600": 246.4943,
+          "no_nm": 1118.1421,
+          "rows": 190713,
+          "rows_no_nm": 3934,
+          "tail_gt3600": 2393.5433
+        },
+        "rmse4_fold_before": {
+          "all": 283.5657,
+          "bulk_le3600": 246.7302,
+          "no_nm": 1118.4542,
+          "rows": 190713,
+          "rows_no_nm": 3934,
+          "tail_gt3600": 2395.7758
+        },
+        "rmse4_served_after": {
+          "all": 256.8326,
+          "bulk_le3600": 239.1589,
+          "no_nm": 474.7182,
+          "rows": 29844,
+          "rows_no_nm": 684,
+          "tail_gt3600": 2634.7182
+        },
+        "rmse4_served_before": {
+          "all": 258.7256,
+          "bulk_le3600": 240.7049,
+          "no_nm": 478.9285,
+          "rows": 29844,
+          "rows_no_nm": 684,
+          "tail_gt3600": 2669.5178
+        },
+        "rmse_all_after": 283.2963,
+        "rmse_all_before": 283.5657,
+        "rmse_clean_after": 283.2963,
+        "rmse_clean_before": 283.5657,
+        "rows": 190713,
+        "served_rows": 29844
+      }
+    },
+    "shares": {
+      "january": 0.4428678724397621,
+      "july_loo": 0.5571321275602379
+    }
+  },
+  "dry_run": false,
+  "gate": {
+    "arms_failing": {
+      "Nf": [
+        "january: [-19.46, 128.11]",
+        "july_loo: [-1868.1, 706.68]"
+      ],
+      "Nf_geo": [
+        "january: [-33.73, 121.14]",
+        "july_loo: [-1959.8, 650.71]"
+      ],
+      "No": [
+        "december: [-10.97, 390.14]",
+        "december on the served cells: [0.0, 0.0]",
+        "january: [-8.34, 174.68]",
+        "january on the served cells: [0.0, 0.0]",
+        "july_loo on the served cells: [0.0, 0.0]"
+      ],
+      "geo": [
+        "december: [-33.41, 12.94]",
+        "december on the served cells: [0.0, 0.0]",
+        "january: [-11.3, -2.14]",
+        "january on the served cells: [0.0, 0.0]",
+        "july_loo: [-395.34, 59.21]",
+        "july_loo on the served cells: [0.0, 0.0]"
+      ],
+      "own": [
+        "december: [-8.68, 0.41]",
+        "december on the served cells: [0.0, 0.0]",
+        "january: [-9.28, -0.57]",
+        "january on the served cells: [0.0, 0.0]",
+        "july_loo: [-125.8, 28.64]",
+        "july_loo on the served cells: [0.0, 0.0]"
+      ]
+    },
+    "arms_passing": [
+      "N"
+    ],
+    "endpoint": "projected per airport-month AND per reach class, read both on the whole no-clock class and on the cells the hold serves",
+    "fit_rows": "all",
+    "matcher_sha256": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+    "miss_indicator": false,
+    "passed": true,
+    "pooled_intervals_s2": {
+      "N": {
+        "december": [
+          -890.724929698321,
+          56.90601700449668
+        ],
+        "january": [
+          70.13354987415185,
+          403.14907706216286
+        ],
+        "july_loo": [
+          314.3334908036817,
+          714.7881934181513
+        ]
+      },
+      "Nf": {
+        "december": [
+          30.33803184774873,
+          441.2727199420252
+        ],
+        "january": [
+          -74.16178998650389,
+          246.03418895108015
+        ],
+        "july_loo": [
+          133.3996609204457,
+          561.9800880677786
+        ]
+      },
+      "Nf_geo": {
+        "december": [
+          -48.45301370493467,
+          410.02721425874734
+        ],
+        "january": [
+          -121.58262790513614,
+          224.52652082339924
+        ],
+        "july_loo": [
+          120.96808664283972,
+          558.1499019078861
+        ]
+      },
+      "No": {
+        "december": [
+          -1173.5030132300305,
+          -135.1486082265646
+        ],
+        "january": [
+          -168.6299036968597,
+          92.51877375145509
+        ],
+        "july_loo": [
+          188.73567731932525,
+          458.43670409672586
+        ]
+      },
+      "geo": {
+        "december": [
+          -70.78001971030949,
+          3.407945715028389
+        ],
+        "january": [
+          -27.769470241272444,
+          -5.145055205109225
+        ],
+        "july_loo": [
+          -60.828821261406944,
+          27.644068460312013
+        ]
+      },
+      "own": {
+        "december": [
+          -17.946825095868707,
+          4.938534919399418
+        ],
+        "january": [
+          -22.411967697672754,
+          -1.6713979431742008
+        ],
+        "july_loo": [
+          -26.391353481557562,
+          39.3996733010002
+        ]
+      }
+    },
+    "projected_intervals_s2": {
+      "N": {
+        "december": [
+          37.22,
+          456.0
+        ],
+        "january": [
+          78.65,
+          305.76
+        ],
+        "july_loo": [
+          413.93,
+          1867.76
+        ]
+      },
+      "Nf": {
+        "december": [
+          60.13,
+          226.7
+        ],
+        "january": [
+          -19.46,
+          128.11
+        ],
+        "july_loo": [
+          -1868.1,
+          706.68
+        ]
+      },
+      "Nf_geo": {
+        "december": [
+          23.86,
+          236.82
+        ],
+        "january": [
+          -33.73,
+          121.14
+        ],
+        "july_loo": [
+          -1959.8,
+          650.71
+        ]
+      },
+      "No": {
+        "december": [
+          -10.97,
+          390.14
+        ],
+        "january": [
+          -8.34,
+          174.68
+        ],
+        "july_loo": [
+          291.87,
+          2485.4
+        ]
+      },
+      "geo": {
+        "december": [
+          -33.41,
+          12.94
+        ],
+        "january": [
+          -11.3,
+          -2.14
+        ],
+        "july_loo": [
+          -395.34,
+          59.21
+        ]
+      },
+      "own": {
+        "december": [
+          -8.68,
+          0.41
+        ],
+        "january": [
+          -9.28,
+          -0.57
+        ],
+        "july_loo": [
+          -125.8,
+          28.64
+        ]
+      }
+    },
+    "record": "analysis/arms-step2-unmatched-fitall-3f.json",
+    "rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+    "served_cells_intervals_s2": {
+      "N": {
+        "december": [
+          95.83,
+          355.92
+        ],
+        "january": [
+          38.07,
+          160.13
+        ],
+        "july_loo": [
+          165.59,
+          340.28
+        ]
+      },
+      "Nf": {
+        "december": [
+          29.49,
+          129.84
+        ],
+        "january": [
+          12.3,
+          86.15
+        ],
+        "july_loo": [
+          59.32,
+          237.23
+        ]
+      },
+      "Nf_geo": {
+        "december": [
+          29.62,
+          135.44
+        ],
+        "january": [
+          10.92,
+          89.5
+        ],
+        "july_loo": [
+          60.65,
+          248.41
+        ]
+      },
+      "No": {
+        "december": [
+          0.0,
+          0.0
+        ],
+        "january": [
+          0.0,
+          0.0
+        ],
+        "july_loo": [
+          0.0,
+          0.0
+        ]
+      },
+      "geo": {
+        "december": [
+          0.0,
+          0.0
+        ],
+        "january": [
+          0.0,
+          0.0
+        ],
+        "july_loo": [
+          0.0,
+          0.0
+        ]
+      },
+      "own": {
+        "december": [
+          0.0,
+          0.0
+        ],
+        "january": [
+          0.0,
+          0.0
+        ],
+        "july_loo": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "head": {
+    "file": "submissions/uploaded/youthful-giraffe_v13.parquet",
+    "name": "v13 (surfacefit's with-clock candidate, board 248.4818)",
+    "sha256": "79a301627e918140933bb4c1dcf9a9249a63bd81669f1793e252f821aa1dee51"
+  },
+  "prefix_map": {
+    "agrees_with": "experiments/exp-046-surfacefit/analysis/class-manifest.json",
+    "checked": true,
+    "months": [
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11"
+    ],
+    "source": "docs/EXTERNAL-DATA.md"
+  },
+  "reach_class_of_served": {
+    "matched_no_clock": 2142,
+    "unmatched": 61720
+  },
+  "sha256": "519ca89f381056afb453ca62d64df622fcdbbdb14d8607cb0307c2be077676b2",
+  "update": {
+    "amplitude": 1.0,
+    "arm": "N",
+    "columns": [
+      "Nf_n_res_cell",
+      "Nf_n_res_rwy_cell",
+      "Nf_n_res_apt_30m",
+      "Nf_n_res_rwy_30m",
+      "Nf_n_res_rwy_60m",
+      "Nf_n_anom_cell",
+      "Nf_n_anom_rwy_cell",
+      "Nf_n_anom_rwy_30m",
+      "Nf_n_n_cell",
+      "Nf_n_n_rwy_cell",
+      "Nf_n_n_rwy_30m",
+      "Nf_n_res_rwy_minus_apt",
+      "No_n_res_cell",
+      "No_n_res_rwy_cell",
+      "No_n_res_apt_30m",
+      "No_n_res_rwy_30m",
+      "No_n_res_rwy_60m",
+      "No_n_anom_cell",
+      "No_n_anom_rwy_cell",
+      "No_n_anom_rwy_30m",
+      "No_n_n_cell",
+      "No_n_n_rwy_cell",
+      "No_n_n_rwy_30m",
+      "No_n_res_rwy_minus_apt"
+    ],
+    "fit_folds": [
+      "july_loo",
+      "december",
+      "january"
+    ],
+    "fit_rows": 510096,
+    "learner": "ridge",
+    "note": "full amplitude; no scale is fitted on anything the candidate is scored on",
+    "rank_rows": 344841
+  },
+  "verify": {
+    "by_airport": {
+      "EDDF": {
+        "moved": 16285,
+        "rms_s": 26.5769,
+        "rows": 36317
+      },
+      "EDDM": {
+        "moved": 0,
+        "rms_s": 0.0,
+        "rows": 25966
+      },
+      "EGLL": {
+        "moved": 0,
+        "rms_s": 0.0,
+        "rows": 39840
+      },
+      "EHAM": {
+        "moved": 0,
+        "rms_s": 0.0,
+        "rows": 38182
+      },
+      "LEBL": {
+        "moved": 0,
+        "rms_s": 0.0,
+        "rows": 30080
+      },
+      "LEMD": {
+        "moved": 0,
+        "rms_s": 0.0,
+        "rows": 36954
+      },
+      "LFPG": {
+        "moved": 0,
+        "rms_s": 0.0,
+        "rows": 39872
+      },
+      "LIRF": {
+        "moved": 0,
+        "rms_s": 0.0,
+        "rows": 26899
+      },
+      "LSZH": {
+        "moved": 0,
+        "rms_s": 0.0,
+        "rows": 23150
+      },
+      "LTFM": {
+        "moved": 47577,
+        "rms_s": 20.3713,
+        "rows": 47581
+      }
+    },
+    "finite": true,
+    "floor_s": 60.0,
+    "held_rows_moved": 0,
+    "max_abs_move_s": 313.0652822925392,
+    "min": 60.41918729411211,
+    "min_ok": true,
+    "noac_bit_identical": true,
+    "noac_rows": 388,
+    "owned_rows": 63862,
+    "rms_moved_s": 22.1197,
+    "rows": 344841,
+    "rows_clipped_at_floor": 0,
+    "rows_moved": 63862
+  }
+}

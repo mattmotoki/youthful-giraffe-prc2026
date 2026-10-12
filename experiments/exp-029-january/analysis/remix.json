@@ -1,0 +1,98 @@
+{
+  "mix_2026": {
+    "in envelope": 140751,
+    "0-30 s over": 4404,
+    ">30 s over": 7564
+  },
+  "rows_2026": 152719,
+  "slice": [
+    {
+      "slice": "in envelope",
+      "n": 152575,
+      "mse": 46945.20306214706,
+      "bias": 8.268732506655564,
+      "rmse": 216.66841731583094,
+      "share_2026": 0.9216338504049921,
+      "share_fold": 0.9926547129547703
+    },
+    {
+      "slice": "0-30 s over",
+      "n": 529,
+      "mse": 68769.75001192637,
+      "bias": 2.8918393392592745,
+      "rmse": 262.2398711331409,
+      "share_2026": 0.028837276304847465,
+      "share_fold": 0.0034416801124238796
+    },
+    {
+      "slice": ">30 s over",
+      "n": 600,
+      "mse": 706316.0614030133,
+      "bias": -40.96818734847221,
+      "rmse": 840.4261189438446,
+      "share_2026": 0.04952887329016036,
+      "share_fold": 0.003903606932805913
+    }
+  ],
+  "january_fold_mix": 222.69764440886297,
+  "january_2026_mix": 283.2533481651276,
+  "july_loo": 285.20293812958835,
+  "board_fold_mix": 259.38624103077507,
+  "board_remixed": 284.34117648302214,
+  "value": [
+    {
+      "correction": "served (step|lofo|winsor)",
+      "c_lo": 13.949464498165186,
+      "c_hi": 56.98955378569262,
+      "jan_gain_fold": 0.010333554597622197,
+      "board_gain_fold": 0.0039290342545541534,
+      "jan_gain_2026": 0.11030730759512153,
+      "board_gain_2026": 0.04865935483979911
+    },
+    {
+      "correction": "oracle band constants, stack-5 (in-sample)",
+      "c_lo": -2.8918393392592745,
+      "c_hi": 40.96818734847221,
+      "jan_gain_fold": 0.014775154649981914,
+      "board_gain_fold": 0.0056177860425350445,
+      "jan_gain_2026": 0.14720339781905523,
+      "board_gain_2026": 0.06493278556587256
+    },
+    {
+      "correction": "oracle band constants on candidate 1, its own base -- what exp-014 priced",
+      "c_lo": 2.6300391426197005,
+      "c_hi": 143.52391923489813,
+      "jan_gain_fold": 0.17440222765642943,
+      "board_gain_fold": 0.06591727701925265,
+      "jan_gain_2026": 1.767923230351812,
+      "board_gain_2026": 0.7689812928257425
+    },
+    {
+      "correction": "oracle band constants on blend-5, its own base -- what exp-014 priced",
+      "c_lo": -3.191529702356582,
+      "c_hi": 74.52426219424873,
+      "jan_gain_fold": 0.04852386753591986,
+      "board_gain_fold": 0.018460186727224936,
+      "jan_gain_2026": 0.48396995810929866,
+      "board_gain_2026": 0.21356568705931522
+    }
+  ],
+  "required_bias": [
+    {
+      "board_target_s": 0.53,
+      "required_abs_bias_s": 117.3
+    },
+    {
+      "board_target_s": 1.0,
+      "required_abs_bias_s": 161.2
+    },
+    {
+      "board_target_s": 2.0,
+      "required_abs_bias_s": 228.1
+    },
+    {
+      "board_target_s": 4.276,
+      "required_abs_bias_s": 334.2
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+ "what": "BOARD READING 18 -- the v19 slot, branch 'bag10-255'",
+ "branch": {
+  "candidate": "the K = 10 bag at 255 over v18's bytes, base set v22",
+  "what": "v18's bytes with the K = 10 bag as the head, ranking side bagged at K = 10",
+  "face": 0.242752698659217,
+  "face_ci": [
+   0.18094555432460738,
+   0.3260116493297317
+  ],
+  "registered_in": "exp-047 RESULTS \u00a77ba, 2026-09-09, from exp-046 analysis/bag-10.json",
+  "status": "PRIMARY unless \u00a740.3's cross-fitted gate passes and bag10-511 takes the slot",
+  "audit": "analysis/audit-expect-v9.json, run when the desk serves",
+  "band": {
+   "face_s": 0.242752698659217,
+   "face_ci95": [
+    0.18094555432460738,
+    0.3260116493297317
+   ],
+   "at_face_expectation": 246.1177,
+   "observed_transfer_band": [
+    245.8726,
+    246.2731
+   ],
+   "failure_move_s": 0.0651,
+   "failure_line_score": 246.2954
+  }
+ },
+ "the_rule_applied": "exp-047 RESULTS \u00a77ba, 2026-09-09, from exp-046 analysis/bag-10.json -- registered before the upload",
+ "observed_score": 245.7752,
+ "anchor_v18": 246.3605,
+ "board_move_s": 0.5853,
+ "transfer_multiple": 2.411,
+ "where_it_lands": {
+  "at_face_expectation": 246.1177,
+  "observed_transfer_band": [
+   245.8726,
+   246.2731
+  ],
+  "inside_the_band": false,
+  "above_or_below_face": "above face"
+ },
+ "the_failure_test": {
+  "criterion": "a transfer failure is a board move of less than +0.0651 s from 246.3605 -- the lowest transfer ever observed on this board (0.36x, v16) applied to the lower end of this branch's face interval -- and a score at or above the anchor is no transfer at all",
+  "failure_line_score": 246.2954,
+  "moved_less_than_the_line": false,
+  "no_transfer_at_all": false,
+  "verdict": "NO FAILURE CRITERION MET"
+ },
+ "transfer_history": {
+  "before_this_reading": {
+   "v13": 1.75,
+   "v14": 1.03,
+   "v15": 2.01,
+   "v16": 0.36,
+   "v17": 0.7,
+   "v18": 1.44
+  },
+  "after_this_reading": {
+   "v13": 1.75,
+   "v14": 1.03,
+   "v15": 2.01,
+   "v16": 0.36,
+   "v17": 0.7,
+   "v18": 1.44,
+   "v19": 2.41
+  },
+  "median_before": 1.2349999999999999,
+  "median_after": 1.44,
+  "range_after": [
+   0.36,
+   2.41
+  ],
+  "note": "append v19's transfer and re-read the median BEFORE using the table on the next candidate; these bands were built on the six-upload median 1.235"
+ },
+ "resolution": {
+  "board_display_step_s": 0.0001,
+  "move_in_display_steps": 5853,
+  "failure_line_in_display_steps": 651,
+  "inside_one_digit_of_board_noise": false
+ },
+ "rank": {
+  "reported": 1,
+  "of": 94,
+  "second_place": 260.931,
+  "lead_over_second_s": 15.156,
+  "rank_at_risk": false
+ },
+ "what_this_reading_does_not_claim": "the transfer multiple is one draw from a six-upload history spanning 0.36x to 2.01x, so a multiple inside that range is not evidence about the arm -- it is the range itself.  Only a move under the failure line, or a score at or above the anchor, says something the pre-registration did not already allow."
+}

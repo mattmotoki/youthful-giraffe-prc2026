@@ -1,0 +1,707 @@
+{
+ "what": "the upload audit (RESULTS \u00a77aq)",
+ "arguments": {
+  "head_npz": "../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+  "arm_npz": "../exp-046-surfacefit/work/d-threemonth-bag10-255-free.npz",
+  "pins": "../exp-046-surfacefit/analysis/fold-population.json",
+  "class_vector": "../../artifacts/exp-046/class/{month}-v24.parquet",
+  "previous_class_vector": "../../artifacts/exp-046/class/{month}-v23.parquet",
+  "baseline": "../../submissions/uploaded/youthful-giraffe_v18.parquet",
+  "months": "2026-01,2026-07",
+  "candidate": "../../submissions/candidates/exp-046-surface-v10.parquet",
+  "previous": "../../submissions/uploaded/youthful-giraffe_v18.parquet",
+  "hold": "",
+  "changed_forbidden_at": "",
+  "changed_expected_at": "LFPG",
+  "draws": 2000,
+  "seeds": "47,101,102,103,104,105,106,107,108,109,110",
+  "expect": "analysis/audit-expect-v24.json",
+  "out": "analysis/audit-v24.json"
+ },
+ "pins": {
+  "mine": "experiments/exp-047-queue/analysis/pin-manifest.json",
+  "theirs": "experiments/exp-046-surfacefit/analysis/fold-population.json",
+  "by_fold": {
+   "july_loo": {
+    "my_airport_days": 296,
+    "my_block_rows": 190713,
+    "their_block_cache_key": "8179f74417c8cb99",
+    "their_airport_days": 296,
+    "days_agree": true
+   },
+   "december": {
+    "my_airport_days": 297,
+    "my_block_rows": 165677,
+    "their_block_cache_key": "d35b7171d7062341",
+    "their_airport_days": 297,
+    "days_agree": true
+   },
+   "january": {
+    "my_airport_days": 218,
+    "my_block_rows": 153706,
+    "their_block_cache_key": "cb4d6289cb421aa2",
+    "their_airport_days": 218,
+    "days_agree": true
+   }
+  }
+ },
+ "increment": {
+  "head_npz": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+  "head_sha256": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684",
+  "arm_npz": "experiments/exp-046-surfacefit/work/d-threemonth-bag10-255-free.npz",
+  "arm_sha256": "1e0d0085b6ecea726e8da603554bfff95eef85e1afc3bc17a703de59d7b627c6",
+  "hold": [],
+  "draws": 2000,
+  "seeds": [
+   47,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110
+  ],
+  "arithmetic": "base = p12 + d_head, inc = d_arm - d_head, v = 2*r*inc - inc^2, with the hold applied to BOTH vectors (held rows return to the base, so they carry no increment)",
+  "per_fold": {
+   "july_loo": {
+    "A_mean_rd": 730.2866019049059,
+    "B_mean_dd": 668.6673711020767,
+    "mse_gain_s2": 791.9058327077354,
+    "lit": true,
+    "dark_by_instrument": false,
+    "ci95_primary_seed": [
+     668.4762,
+     938.9215
+    ],
+    "ci95_envelope_over_the_seeds": [
+     661.4151,
+     939.7545
+    ],
+    "clears_zero_on_every_seed": true,
+    "rmse_head": 272.93919561778927,
+    "rmse_new": 271.4846195860423,
+    "ratio_2A_over_B": 2.1843045839107424,
+    "rms_increment_s": 25.858603425206024
+   },
+   "december": {
+    "A_mean_rd": 1309.8019549588641,
+    "B_mean_dd": 1092.2206988977327,
+    "mse_gain_s2": 1527.3832110199955,
+    "lit": true,
+    "dark_by_instrument": false,
+    "ci95_primary_seed": [
+     1381.3398,
+     1685.4097
+    ],
+    "ci95_envelope_over_the_seeds": [
+     1380.7825,
+     1690.6363
+    ],
+    "clears_zero_on_every_seed": true,
+    "rmse_head": 186.58781308818018,
+    "rmse_new": 182.44897583162717,
+    "ratio_2A_over_B": 2.3984199462264613,
+    "rms_increment_s": 33.048762441243284
+   },
+   "january": {
+    "A_mean_rd": 707.7801762741489,
+    "B_mean_dd": 639.1974189429276,
+    "mse_gain_s2": 776.3629336053701,
+    "lit": true,
+    "dark_by_instrument": false,
+    "ci95_primary_seed": [
+     675.4093,
+     874.4988
+    ],
+    "ci95_envelope_over_the_seeds": [
+     672.0371,
+     879.1562
+    ],
+    "clears_zero_on_every_seed": true,
+    "rmse_head": 329.1666749010201,
+    "rmse_new": 327.98526938231305,
+    "ratio_2A_over_B": 2.214590219856144,
+    "rms_increment_s": 25.282353904312938
+   }
+  },
+  "population": {
+   "july_loo": {
+    "rows": 190713,
+    "rows_moved": 88426,
+    "rows_returned_to_the_base_by_the_hold": 0,
+    "rows_the_hold_would_have_moved": 0
+   },
+   "december": {
+    "rows": 165677,
+    "rows_moved": 102186,
+    "rows_returned_to_the_base_by_the_hold": 0,
+    "rows_the_hold_would_have_moved": 0
+   },
+   "january": {
+    "rows": 153706,
+    "rows_moved": 69839,
+    "rows_returned_to_the_base_by_the_hold": 0,
+    "rows_the_hold_would_have_moved": 0
+   }
+  },
+  "lit_rule": {
+   "lit_folds": [
+    "july_loo",
+    "december",
+    "january"
+   ],
+   "dark_folds": [],
+   "every_lit_fold_clears_on_every_seed": true,
+   "every_fold_clears_including_dark": true,
+   "rule": "exp-046 \u00a726.5: an EMPTY lit fold is not a crossing; a fold no row of which the arm moves is dark by instrument and abstains.  Read `every_lit_fold_clears_on_every_seed` under the lit rule and `every_fold_clears_including_dark` under the strict one"
+  },
+  "board": {
+   "all_row_base": 299.14720454091145,
+   "all_row_arm": 297.8322138429475,
+   "all_row_gain_s": 1.3149906979639354,
+   "all_row_ci95_primary_seed": [
+    1.04256,
+    1.685052
+   ],
+   "all_row_ci95_envelope_over_the_seeds": [
+    1.03239,
+    1.695609
+   ],
+   "clean_gain_s": 1.6072944639522007,
+   "shares": {
+    "july_loo": 0.5571321275602379,
+    "january": 0.4428678724397621
+   },
+   "note": "the interval is a 2,000-draw bootstrap, so it is reproducible only to its own draw noise; the envelope over the seed list is the robust statement and a claimed interval is checked for lying inside it"
+  }
+ },
+ "bytes": {
+  "candidate": "submissions/candidates/exp-046-surface-v10.parquet",
+  "candidate_sha256": "7b0557a497f8c09e4f56a11352783b9dda37fe1d0579345d4303e4f74d6e7aca",
+  "previous": "submissions/uploaded/youthful-giraffe_v18.parquet",
+  "previous_sha256": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+  "template": {
+   "rows": 344841,
+   "template_rows": 344841,
+   "row_order_is_the_template_order": true,
+   "previous_row_order_is_the_template_order": true,
+   "all_finite": true,
+   "non_finite_rows": 0,
+   "min": 60.0,
+   "max": 115306.59901833169,
+   "rows_at_or_below_zero": 0,
+   "duplicate_keys": 0
+  },
+  "moved": {
+   "rows_changed": 194681,
+   "rms_move_s": 33.31905200325544,
+   "max_abs_move_s": 1109.3990614403788,
+   "baseline": "submissions/uploaded/youthful-giraffe_v18.parquet",
+   "baseline_sha256": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+   "rows_the_previous_upload_moved_off_the_baseline": 0,
+   "rows_reverted_to_the_baseline": 0,
+   "changed_by_airport": {
+    "EHAM": 35051,
+    "EGLL": 33652,
+    "LEMD": 27046,
+    "LEBL": 26719,
+    "EDDM": 24725,
+    "LSZH": 21143,
+    "EDDF": 18431,
+    "LIRF": 5664,
+    "LFPG": 2250
+   },
+   "changed_rows_at_the_expected_airports": 2250,
+   "changed_rows_outside_the_expected_airports": 192431,
+   "expected_airports": [
+    "LFPG"
+   ]
+  },
+  "held_airports": {
+   "airports": [],
+   "rows": 0,
+   "rows_changed": 0,
+   "untouched": true
+  },
+  "class": {
+   "vector": "artifacts/exp-046/class/{month}-v24.parquet",
+   "months": [
+    "2026-01",
+    "2026-07"
+   ],
+   "rows_missing_for_a_template_key": 0,
+   "occupied": 196256,
+   "written": 196256,
+   "occupied_and_not_written": 0,
+   "occupied_unwritten_rows_that_changed": 0,
+   "guard_held": 1573,
+   "written_and_not_occupied": 0,
+   "changed_rows_outside_occupied": 0,
+   "changed_is_a_subset_of_occupied": true,
+   "occupied_rows_that_did_not_change": 1575,
+   "copied_rows_identical_to_the_previous": 148585,
+   "noac_rows": 388,
+   "noac_rows_changed": 0,
+   "chain_mode_4_rows": 2456,
+   "chain_by_month": {
+    "2026-01": 1304,
+    "2026-07": 1152
+   },
+   "chain_rows_written": 2456,
+   "chain_rows_held_at_a_held_airport": 0,
+   "occupied_at_the_expected_airports": 2346,
+   "guard_held_at_the_expected_airports": 96,
+   "writable_at_the_expected_airports": 2250
+  },
+  "class_vs_previous": {
+   "previous_vector": "artifacts/exp-046/class/{month}-v23.parquet",
+   "occupied_previously": 196256,
+   "occupied_now": 196256,
+   "newly_occupied": 0,
+   "newly_occupied_that_changed": 0,
+   "newly_occupied_that_did_not_change": 0,
+   "no_longer_occupied": 0,
+   "changed_rows_inside_the_previously_occupied_class": 194681,
+   "changed_is_disjoint_from_the_previously_occupied_class": false
+  }
+ },
+ "expect_file": "analysis/audit-expect-v24.json",
+ "expect_what": "candidate exp-046-surface-v10.parquet, exp-046 serve base set v24 = base set v23 with ONE change: every fit on both the fold and the ranking side carries the writable rows of 2025-11, 2025-10 AND 2025-03 (290,037) instead of 2025-11's 99,709 alone.",
+ "checks": {
+  "bytes.candidate_sha256": {
+   "verdict": "AGREE",
+   "want": "7b0557a497f8c09e4f56a11352783b9dda37fe1d0579345d4303e4f74d6e7aca",
+   "got": "7b0557a497f8c09e4f56a11352783b9dda37fe1d0579345d4303e4f74d6e7aca",
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.changed_is_a_subset_of_occupied": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.changed_rows_outside_occupied": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.guard_held": {
+   "verdict": "AGREE",
+   "want": 1573,
+   "got": 1573,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.guard_held_at_the_expected_airports": {
+   "verdict": "AGREE",
+   "want": 96,
+   "got": 96,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.noac_rows": {
+   "verdict": "AGREE",
+   "want": 388,
+   "got": 388,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.noac_rows_changed": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.occupied": {
+   "verdict": "AGREE",
+   "want": 196256,
+   "got": 196256,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.occupied_and_not_written": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.occupied_at_the_expected_airports": {
+   "verdict": "AGREE",
+   "want": 2346,
+   "got": 2346,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.occupied_unwritten_rows_that_changed": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.rows_missing_for_a_template_key": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.writable_at_the_expected_airports": {
+   "verdict": "AGREE",
+   "want": 2250,
+   "got": 2250,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.written": {
+   "verdict": "AGREE",
+   "want": 196256,
+   "got": 196256,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class.written_and_not_occupied": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class_vs_previous.newly_occupied": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.class_vs_previous.no_longer_occupied": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.moved.changed_rows_at_the_expected_airports": {
+   "verdict": "AGREE",
+   "want": 2250,
+   "got": 2250,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.moved.changed_rows_outside_the_expected_airports": {
+   "verdict": "AGREE",
+   "want": 192431,
+   "got": 192431,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.moved.rows_changed": {
+   "verdict": "AGREE",
+   "want": 194681,
+   "got": 194681,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.moved.rows_reverted_to_the_baseline": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.template.all_finite": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.template.duplicate_keys": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.template.previous_row_order_is_the_template_order": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.template.row_order_is_the_template_order": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.template.rows": {
+   "verdict": "AGREE",
+   "want": 344841,
+   "got": 344841,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "bytes.template.rows_at_or_below_zero": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.board.all_row_ci95_envelope_over_the_seeds": {
+   "verdict": "AGREE",
+   "want": [
+    1.0392209838309256,
+    1.689381950081006
+   ],
+   "got": [
+    1.03239,
+    1.695609
+   ],
+   "tolerance": 0.0,
+   "mode": "inside"
+  },
+  "increment.board.all_row_gain_s": {
+   "verdict": "AGREE",
+   "want": 1.3149906979639354,
+   "got": 1.314991,
+   "tolerance": 1e-09,
+   "mode": "equal"
+  },
+  "increment.board.clean_gain_s": {
+   "verdict": "AGREE",
+   "want": 1.6072944639522007,
+   "got": 1.607294,
+   "tolerance": 1e-09,
+   "mode": "equal"
+  },
+  "increment.lit_rule.dark_folds": {
+   "verdict": "AGREE",
+   "want": [],
+   "got": [],
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.lit_rule.every_fold_clears_including_dark": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.lit_rule.every_lit_fold_clears_on_every_seed": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.per_fold.december.ci95_envelope_over_the_seeds": {
+   "verdict": "AGREE",
+   "want": [
+    1386.568209006855,
+    1684.8011153743498
+   ],
+   "got": [
+    1380.7825,
+    1690.6363
+   ],
+   "tolerance": 3.0,
+   "mode": "inside"
+  },
+  "increment.per_fold.december.lit": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.per_fold.december.mse_gain_s2": {
+   "verdict": "AGREE",
+   "want": 1527.3832110199955,
+   "got": 1527.383211,
+   "tolerance": 1e-09,
+   "mode": "equal"
+  },
+  "increment.per_fold.january.ci95_envelope_over_the_seeds": {
+   "verdict": "AGREE",
+   "want": [
+    686.7842762018644,
+    877.6602021207021
+   ],
+   "got": [
+    672.0371,
+    879.1562
+   ],
+   "tolerance": 3.0,
+   "mode": "inside"
+  },
+  "increment.per_fold.january.lit": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.per_fold.january.mse_gain_s2": {
+   "verdict": "AGREE",
+   "want": 776.3629336053701,
+   "got": 776.362934,
+   "tolerance": 1e-09,
+   "mode": "equal"
+  },
+  "increment.per_fold.july_loo.ci95_envelope_over_the_seeds": {
+   "verdict": "AGREE",
+   "want": [
+    669.4404766101397,
+    930.1744645056929
+   ],
+   "got": [
+    661.4151,
+    939.7545
+   ],
+   "tolerance": 3.0,
+   "mode": "inside"
+  },
+  "increment.per_fold.july_loo.lit": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.per_fold.july_loo.mse_gain_s2": {
+   "verdict": "AGREE",
+   "want": 791.9058327077354,
+   "got": 791.905833,
+   "tolerance": 1e-09,
+   "mode": "equal"
+  },
+  "increment.population.december.rows": {
+   "verdict": "AGREE",
+   "want": 165677,
+   "got": 165677,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.december.rows_moved": {
+   "verdict": "AGREE",
+   "want": 102186,
+   "got": 102186,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.december.rows_returned_to_the_base_by_the_hold": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.january.rows": {
+   "verdict": "AGREE",
+   "want": 153706,
+   "got": 153706,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.january.rows_moved": {
+   "verdict": "AGREE",
+   "want": 69839,
+   "got": 69839,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.january.rows_returned_to_the_base_by_the_hold": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.july_loo.rows": {
+   "verdict": "AGREE",
+   "want": 190713,
+   "got": 190713,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.july_loo.rows_moved": {
+   "verdict": "AGREE",
+   "want": 88426,
+   "got": 88426,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "increment.population.july_loo.rows_returned_to_the_base_by_the_hold": {
+   "verdict": "AGREE",
+   "want": 0,
+   "got": 0,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.december.days_agree": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.december.their_airport_days": {
+   "verdict": "AGREE",
+   "want": 297,
+   "got": 297,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.january.days_agree": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.january.their_airport_days": {
+   "verdict": "AGREE",
+   "want": 218,
+   "got": 218,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.july_loo.days_agree": {
+   "verdict": "AGREE",
+   "want": true,
+   "got": true,
+   "tolerance": 0.0,
+   "mode": "equal"
+  },
+  "pins.by_fold.july_loo.their_airport_days": {
+   "verdict": "AGREE",
+   "want": 296,
+   "got": 296,
+   "tolerance": 0.0,
+   "mode": "equal"
+  }
+ },
+ "verdict": {
+  "checks": 57,
+  "agree": 57,
+  "disagree": [],
+  "pending": [],
+  "not_answered_on_this_run": [],
+  "reading": "AGREE on every answerable check"
+ }
+}

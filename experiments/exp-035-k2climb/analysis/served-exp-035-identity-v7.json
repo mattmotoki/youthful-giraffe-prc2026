@@ -1,0 +1,58 @@
+{
+  "name": "exp-035-identity-v7",
+  "identity": true,
+  "members": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "K2-window",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "anchor_members": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "F1-fresh",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "blocks": [
+    "depx"
+  ],
+  "win": 600.0,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "exclude_airports": [
+    "EHAM"
+  ],
+  "base": "submissions/candidates/exp-026-stack-5.parquet",
+  "base_sha256": "94f18e47a73265a6db66811ededfc3c935fb2a37fac04bf0cd34d45af708a2a1",
+  "k2_ranking": "experiments/exp-012-blend2/published/F1-fresh-s1-ranking.parquet",
+  "k2_ranking_sha256": "e216ab9e0dc7243a55a5ec1f8bba7d4dd8fa5f0108782e42d59344006c8bc5dc",
+  "arm": "k2-hold-eham-out",
+  "anchor_kind": "blend5",
+  "measured_arm": null,
+  "measured_clean": null,
+  "measured_gain_vs_v7": null,
+  "rows_served": 306271,
+  "rows_from_base": 38570,
+  "guard_touched": 780,
+  "member_prep_touched": 2130,
+  "seeds": [
+    7,
+    107,
+    207,
+    307,
+    407
+  ],
+  "rounds": 300,
+  "lightgbm": "4.7.0",
+  "wall_s": 57.2,
+  "sha256": "1e4f2304ea3a285e81f8745b2ab2cee4910f16f6adab2bb0addb352b46fd15fc"
+}

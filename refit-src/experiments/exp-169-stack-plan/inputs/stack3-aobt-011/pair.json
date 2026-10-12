@@ -1,0 +1,268 @@
+{
+  "schema": 3,
+  "lane": "C",
+  "member": "runway-pair-011",
+  "weight_basis": "two_fold_2025",
+  "serving_point": "after_head",
+  "member_training_months": {
+    "fold": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "ranking": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "fold_weights": {
+    "ordinary": {
+      "1": {
+        "sequence": 0.49390199048355643,
+        "control": -0.30542012585688333,
+        "trained_on_months": [
+          7
+        ]
+      },
+      "7": {
+        "sequence": 0.3979223716525868,
+        "control": -0.19927738994001987,
+        "trained_on_months": [
+          1
+        ]
+      }
+    },
+    "clock": {
+      "1": {
+        "sequence": 0.32,
+        "control": 0.0,
+        "trained_on_months": [
+          7
+        ]
+      },
+      "7": {
+        "sequence": 0.32,
+        "control": 0.0,
+        "trained_on_months": [
+          1
+        ]
+      }
+    }
+  },
+  "ranking_weights": {
+    "trained_on_months": [
+      1,
+      7
+    ],
+    "ordinary": {
+      "method": "pooled_practice_scaled_wls",
+      "sequence": 0.46760943736989924,
+      "control": -0.2757904269471492,
+      "xtwx": [
+        [
+          6386.010494309459,
+          3372.763163624414
+        ],
+        [
+          3372.763163624414,
+          7327.125856076631
+        ]
+      ],
+      "xtwr": [
+        2055.982981394714,
+        -443.6152828185359
+      ],
+      "fit_rows": 179177
+    },
+    "clock": {
+      "method": "pooled_served_grid",
+      "sequence": 0.32,
+      "control": 0.0,
+      "grid": [
+        0.0,
+        0.02,
+        0.04,
+        0.06,
+        0.08,
+        0.1,
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.22,
+        0.24,
+        0.26,
+        0.28,
+        0.3,
+        0.32,
+        0.34,
+        0.36,
+        0.38,
+        0.4,
+        0.42,
+        0.44,
+        0.46,
+        0.48,
+        0.5,
+        0.52,
+        0.54,
+        0.56,
+        0.58,
+        0.6,
+        0.62,
+        0.64,
+        0.66,
+        0.68,
+        0.7000000000000001,
+        0.72,
+        0.74,
+        0.76,
+        0.78,
+        0.8,
+        0.8200000000000001,
+        0.84,
+        0.86,
+        0.88,
+        0.9,
+        0.92,
+        0.9400000000000001,
+        0.96,
+        0.98,
+        1.0
+      ],
+      "losses": [
+        7532.247193549509,
+        7507.483330198174,
+        7484.331283413152,
+        7462.787749275058,
+        7442.853629825816,
+        7424.530061120698,
+        7407.818350836007,
+        7392.71846918058,
+        7379.199374814092,
+        7367.267072200263,
+        7356.943591439884,
+        7348.228497130893,
+        7341.123436887501,
+        7335.628410709705,
+        7331.743120481215,
+        7329.440804297219,
+        7328.680456422456,
+        7329.52133122958,
+        7331.962232303534,
+        7336.008306721067,
+        7341.659908040105,
+        7348.912704603399,
+        7357.767650261849,
+        7368.22807160658,
+        7380.2947371033915,
+        7393.967898487563,
+        7408.877576606099,
+        7424.8846636860235,
+        7442.492462172221,
+        7461.696807918062,
+        7482.502015794216,
+        7504.874663450788,
+        7528.609598425046,
+        7553.878960361573,
+        7580.747123911246,
+        7609.214136250162,
+        7639.279997378316,
+        7670.944707295712,
+        7704.178981006748,
+        7738.8965779173905,
+        7775.209284458741,
+        7813.116065231355,
+        7852.617005431661,
+        7893.712477212881,
+        7936.402492006093,
+        7980.6851133824475,
+        8026.561901407234,
+        8074.032701725197,
+        8123.088140088083,
+        8173.732383493289,
+        8225.963054019441
+      ],
+      "fit_rows": 156559
+    }
+  },
+  "vectors": {
+    "fold": {
+      "path": "../stack3-007/members-fold.parquet",
+      "sha256": "a2bb3d7f908d908e435fb9700e861b7c55aad48ee5189265f14d5997ab3549e4",
+      "base_digest": "cd7a6f84aba191c3190eb83edd87b374bbe6bc72bd9eab24b3e84ec1ac4497fe"
+    },
+    "ranking": {
+      "path": "members-ranking.parquet",
+      "sha256": "2ba8242ff3fe534247ea55118cc39ebc02439b54226e4d19709f83605107f1d4",
+      "base_digest": "76622f4818a76ff42edc41b4ce4435fae991253143014bb10313dfb5494968af"
+    }
+  },
+  "source_sha256": {
+    "pack": "96ce41d5fa425dc73299fbc4a77dae26e87224c9ead30a36a85d9e678ac4060e",
+    "annual": "eed0835c30d66be7c687feb0a44d76a9c3b2cbe6a8084b824710602d00ef16d7",
+    "read": "fd3ac24f8f94a358409c48cc2b1ae45a3ca6dada63a8f3b825594d2b9c9878ba",
+    "source_served": "80ee62387d7b0feb845f45549c22f519c68e152fabaddf93c271d90e7b9df8f6",
+    "sequence": "cff24038675fdc6bb3e6420b12cbf6471bbe5612c78f9374ce65f66b541d7bf6",
+    "control": "b1b78cade9720414aa3ba3752a14f2b80f62afd57c46e56cdfc15290a77dde13",
+    "sequence_fit": "f2f3905f3660f2eeb85edcb3fec958a6b86abd041be5f6c61391e407f3d59d78",
+    "control_fit": "d61faea0cce654513c4e1d863c8685dd038ea28fb6a32a9381f5e78aeecf9d58",
+    "sequence_annual_fit": "e304d6f3303c96dd0b0e9e2852edc5a613b6d3947e35356204d71f60bc0c7fb7",
+    "control_annual_fit": "3b55f1bb3c57028c4ccbdd2a41b3f1b40e015eef0b291301d43f3f69fdfd911f",
+    "fold_bundle": "7ecb6bd03dbd96f01b6f3f00450718beb6336c228cd2bb3422ba73dd2823d2de",
+    "ranking_bundle": "ec936dcbd547f5fb2954945cc8cbbb2a0bd29ac2f9960c9c1e557af48f1f0e89",
+    "ranking_raw": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86"
+  },
+  "weight_rule": "SPEC-007: other-month held, pooled two-month annual; negative control retained",
+  "extension_proxy": {
+    "owner": "\u0076alid",
+    "read": "proxy_2",
+    "path": "restricted-proxy.json",
+    "sha256": "7fa88a5315d9e7042465948b8348d0840ee9d78c2b43f847cfd1f4ca7209dba0",
+    "gain_path": [
+      "LEMD_july",
+      "gain_mse_per_row"
+    ],
+    "required_positive_paths": [
+      [
+        "january_six",
+        "gain_mse_per_row"
+      ],
+      [
+        "LEMD_july",
+        "gain_mse_per_row"
+      ],
+      [
+        "LFPG_july",
+        "gain_mse_per_row"
+      ]
+    ],
+    "admitted_cells": [
+      "LEMD-01",
+      "LFPG-01"
+    ],
+    "rule_commit": "e59b39a2",
+    "report_commit": "597a9776",
+    "gate": "clock extension, original F<2400 and AOBT_3 present; no ordinary scope added",
+    "recomputed_by": "stack; same valid proxy_2 formula on AOBT_3-present rows; SPEC-011",
+    "source_proxy_sha256": "2dbe818851f754129d2aeb7e35fb91dc0f68ea6a8a0b95d354e1a2a63d67c741"
+  }
+}

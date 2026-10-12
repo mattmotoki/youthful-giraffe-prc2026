@@ -1,0 +1,67 @@
+{
+  "gate_on_this_arm": {
+    "block_cache_keys_now": {
+      "2025-01": "ea50d585cb8276af",
+      "2025-07": "7026d505ef7fb06e",
+      "2025-12": "1053c58bf17e193d"
+    },
+    "block_cache_keys_then": {
+      "2025-01": "07da710ad22f2039",
+      "2025-07": "7026d505ef7fb06e",
+      "2025-12": "1053c58bf17e193d"
+    },
+    "passes": false,
+    "reason": "analysis/arms.json was priced under a different rule version or different block caches than this serve resolves; re-run arms.py before serving",
+    "rule_now": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+    "rule_then": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+  },
+  "handover_to_exp_047": {
+    "boundary_is_shared": "exp-047-queue/code/block.py imports this lane's code/block.py as the repo's one matcher and keys its class on the same obs_has_clock column, so the two lanes' populations are complementary by construction and not by agreement. The noac hold is this lane's and any composition of the two candidates has to keep it.",
+    "boundary_matcher_matches_the_pin": true,
+    "boundary_matcher_sha256": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+    "boundary_matcher_sha256_pinned": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+    "composition": "desk, 2026-09-08 14:10: this lane prices and serves the with-clock class and the base elsewhere, exp-047-queue prices and serves the no-clock class and the base elsewhere, each on its own review round; the desk composes the two disjoint updates on the base and verifies the composed file, and either candidate may go up alone.",
+    "exp_047_interface_is_stale": {
+      "2025-07": true
+    },
+    "exp_047_interface_matcher_sha256": {
+      "2025-07": "a0652dffdae663047101226a7c58d6f5d9cb2bb641bc92a83f9e650fe63804e6"
+    },
+    "interface": "artifacts/exp-047/block/<month>.parquet, keyed by MVT_ID_mvt",
+    "left_at_base": 154746,
+    "left_at_base_by_reach_class": {
+      "matched_no_clock": 11492,
+      "strict": 38,
+      "unmatched": 143216
+    },
+    "rows": 344841,
+    "served_class": "obs_has_clock & obs_taxi.notna() & ~noac",
+    "served_rows": 190095
+  },
+  "identical_to_the_base_bit_for_bit": true,
+  "min_prediction_s": 60.41918729411211,
+  "noac_rows": 388,
+  "read_back_identical_to_the_vector_written": true,
+  "rows": 344841,
+  "rule": {
+    "cover": {
+      "airport_days_by_rule": {
+        "None": 218,
+        "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0": 1105
+      },
+      "airport_days_present": 1323,
+      "airport_days_rejected": 218,
+      "chosen": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+      "n_rules": 2
+    },
+    "rules_seen": [
+      "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+    ]
+  },
+  "sha256_of_the_base": "48dd572d61ff2403f13614ce04bdc3a8fd0dbdb5175bef7eb143650ea520ec52",
+  "sha256_of_the_zero_update_candidate": "48dd572d61ff2403f13614ce04bdc3a8fd0dbdb5175bef7eb143650ea520ec52",
+  "sha_matches_the_base": true,
+  "what": "a zero update through the whole serving path",
+  "with_clock_rows": 190095,
+  "written_to": "experiments/exp-046-surfacefit/work/dry-run.parquet"
+}

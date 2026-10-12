@@ -1,0 +1,85 @@
+{
+  "name": "X2-d8p",
+  "folds": {
+    "july_loo": {
+      "rmse": 337.0540895087708,
+      "rmse_bulk": 299.71913202128883,
+      "rmse_tail": 2646.01676970438,
+      "rmse_no_nm": 1458.5418993860594,
+      "rmse_noac": 4492.066052263517,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.21198714428133097,
+      "sse_share_no_nm": 0.3862715081034271,
+      "sse_share_noac": 0.3157275400419326,
+      "bias": 4.801913767866627,
+      "fold": "july_loo",
+      "rounds": 350,
+      "seeds": [
+        7
+      ],
+      "seconds": 17,
+      "oof": "experiments/exp-008-diversity/oof/X2-d8p-july_loo.parquet",
+      "argv": "--kind xgb --name X2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 75 --rounds-m11 350"
+    },
+    "december": {
+      "rmse": 228.9472606300184,
+      "rmse_bulk": 211.7849233833046,
+      "rmse_tail": 2201.4332594599696,
+      "rmse_no_nm": 773.8476811708521,
+      "rmse_noac": 2131.162665299544,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "n_noac": 89,
+      "sse_share_tail": 0.14565266302677707,
+      "sse_share_no_nm": 0.11329621718071713,
+      "sse_share_noac": 0.04654682689417659,
+      "bias": -2.279785743316015,
+      "fold": "december",
+      "rounds": 350,
+      "seeds": [
+        7
+      ],
+      "seconds": 15,
+      "oof": "experiments/exp-008-diversity/oof/X2-d8p-december.parquet",
+      "argv": "--kind xgb --name X2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 75 --rounds-m11 350"
+    },
+    "january": {
+      "rmse": 356.7086674179849,
+      "rmse_bulk": 219.2443793481043,
+      "rmse_tail": 6123.092107110237,
+      "rmse_no_nm": 2922.8820859369594,
+      "rmse_noac": 4448.737719699429,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "n_noac": 63,
+      "sse_share_tail": 0.6230269036383393,
+      "sse_share_no_nm": 0.625529022142727,
+      "sse_share_noac": 0.06375232222517246,
+      "bias": 3.819426016083301,
+      "fold": "january",
+      "rounds": 350,
+      "seeds": [
+        7
+      ],
+      "seconds": 25,
+      "oof": "experiments/exp-008-diversity/oof/X2-d8p-january.parquet",
+      "argv": "--kind xgb --name X2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 75 --rounds-m11 350"
+    }
+  },
+  "argv": "--kind xgb --name X2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 75 --rounds-m11 350",
+  "argv_history": [
+    "--kind xgb --name X2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 75 --rounds-m11 350"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 16,
+  "gpu": "1"
+}

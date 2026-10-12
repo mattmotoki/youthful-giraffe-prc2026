@@ -1,0 +1,54 @@
+{
+  "WRITABLE_ROWS": 86984,
+  "base6": {
+    "file": "experiments/exp-047-queue/oof/base6--2025-03.parquet",
+    "ids_are_unique": true,
+    "rows": 164450,
+    "sha16": "64c47603ebfdb0c7",
+    "unique_ids": 164450
+  },
+  "derived": {
+    "airport_missing": 0,
+    "airports": [
+      "EDDF",
+      "EDDM",
+      "EGLL",
+      "EHAM",
+      "LEBL",
+      "LEMD",
+      "LSZH"
+    ],
+    "days": 32,
+    "matched": 91729,
+    "noac_rows": 60,
+    "rows": 164450,
+    "target_not_finite": 0,
+    "time_missing": 0,
+    "with_clock": 86984
+  },
+  "month": "2025-03",
+  "movement_table": {
+    "base6_ids_absent_from_it": 0,
+    "rows": 328622
+  },
+  "neighbour_block": "NOT read -- queue is re-emitting it; no fit may use this frame. The SHIPPED block IS joined and checked here, because it is a separate dependency",
+  "seconds": 9.2,
+  "shipped_columns_expected": 76,
+  "shipped_columns_joined": 76,
+  "surface_block": {
+    "base6_ids_absent_from_it": 0,
+    "block_ids_absent_from_base6": 0,
+    "ids_are_unique": true,
+    "rows": 164450
+  },
+  "what": "An ID PRE-CHECK on queue's base6 2025-03, against this lane's own 2025-03 surface block.",
+  "writable_by_airport": {
+    "EDDF": 16009,
+    "EDDM": 11198,
+    "EGLL": 5535,
+    "EHAM": 19746,
+    "LEBL": 12492,
+    "LEMD": 12464,
+    "LSZH": 9540
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "airport_days": 279,
+  "airports_with_summaries": [
+    "EDDF",
+    "EDDM",
+    "EGLL",
+    "EHAM",
+    "LEBL",
+    "LEMD",
+    "LFPG",
+    "LIRF",
+    "LSZH"
+  ],
+  "all": {
+    "median_neighbours_in_cell": 0.0,
+    "median_neighbours_in_runway_cell": 0.0,
+    "median_neighbours_rwy_30m": 2.0,
+    "no_clock": 42047,
+    "no_clock_reached_3plus": 11278,
+    "no_clock_reached_by_a_neighbour": 20949,
+    "no_clock_reached_share": 0.4982,
+    "no_nm_reached": 993,
+    "no_nm_rows": 2120,
+    "own_clock": 88276,
+    "own_clock_share": 0.6774,
+    "rows": 130323
+  },
+  "build": {
+    "anchor_file": {
+      "anchor_median": 2120,
+      "anchor_nm": 128203,
+      "anchor_observed": 0,
+      "rows": 130323
+    },
+    "anchor_obs": {
+      "anchor_median": 1352,
+      "anchor_nm": 40695,
+      "anchor_observed": 88276,
+      "rows": 130323
+    },
+    "days_present_outside_frame": 9,
+    "events_H": {
+      "file_runs_added": 42047,
+      "observed_runs": 195244,
+      "runway_known": 88276
+    },
+    "events_O": {
+      "file_runs_added": 0,
+      "observed_runs": 195244,
+      "runway_known": 88276
+    },
+    "match": {
+      "by_airport": {
+        "EDDF": {
+          "clock": 7388,
+          "rows": 15667
+        },
+        "EDDM": {
+          "clock": 10531,
+          "rows": 10953
+        },
+        "EGLL": {
+          "clock": 13558,
+          "rows": 19283
+        },
+        "EHAM": {
+          "clock": 15007,
+          "rows": 16232
+        },
+        "LEBL": {
+          "clock": 10733,
+          "rows": 12201
+        },
+        "LEMD": {
+          "clock": 15840,
+          "rows": 16802
+        },
+        "LFPG": {
+          "clock": 739,
+          "rows": 18129
+        },
+        "LIRF": {
+          "clock": 5325,
+          "rows": 11061
+        },
+        "LSZH": {
+          "clock": 9155,
+          "rows": 9995
+        }
+      },
+      "days_present": 283,
+      "days_wrong_rule": 0,
+      "matched": 94279,
+      "matcher_sha256": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+      "rows": 130323,
+      "rules_seen": [
+        "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+      ],
+      "with_clock": 88276
+    },
+    "neighbour_columns": [
+      "Nf_n_res_cell",
+      "Nf_n_res_rwy_cell",
+      "Nf_n_res_apt_30m",
+      "Nf_n_res_rwy_30m",
+      "Nf_n_res_rwy_60m",
+      "Nf_n_anom_cell",
+      "Nf_n_anom_rwy_cell",
+      "Nf_n_anom_rwy_30m",
+      "Nf_n_n_cell",
+      "Nf_n_n_rwy_cell",
+      "Nf_n_n_rwy_30m",
+      "Nf_n_res_rwy_minus_apt",
+      "No_n_res_cell",
+      "No_n_res_rwy_cell",
+      "No_n_res_apt_30m",
+      "No_n_res_rwy_30m",
+      "No_n_res_rwy_60m",
+      "No_n_anom_cell",
+      "No_n_anom_rwy_cell",
+      "No_n_anom_rwy_30m",
+      "No_n_n_cell",
+      "No_n_n_rwy_cell",
+      "No_n_n_rwy_30m",
+      "No_n_res_rwy_minus_apt"
+    ],
+    "outage": {
+      "declared": [
+        "EDDF|2026-01-27",
+        "EDDF|2026-01-28",
+        "EDDF|2026-01-29",
+        "EDDF|2026-01-30",
+        "EDDF|2026-01-31"
+      ],
+      "held_reason": "EDDF feeder outage 2026-01-27..31 (desk 2026-09-08 14:45, from the harvest's receipt.json by_airport_day)",
+      "label_applied": true,
+      "matcher_sha256": "ba41935ed83a5f5c39245c8bbf308dbd5adca49372b267fdfa495f33ddade76c",
+      "months": [
+        "2026-01"
+      ],
+      "rows_on_held_days": 2517,
+      "rows_on_held_days_still_clocked": 0,
+      "source": "exp-046-surfacefit/code/block.py HELD_AIRPORT_DAYS (desk 2026-09-08 14:45 and 15:02 UTC); the rates are exp-045-harvest/analysis/receipt.json by_airport_day",
+      "undeclared_warnings": [
+        {
+          "airport": "LFPG",
+          "airport_median": 0.2246,
+          "day": "2026-01-29",
+          "rate": 0.0997
+        },
+        {
+          "airport": "LFPG",
+          "airport_median": 0.2246,
+          "day": "2026-01-30",
+          "rate": 0.0986
+        },
+        {
+          "airport": "LFPG",
+          "airport_median": 0.2246,
+          "day": "2026-01-31",
+          "rate": 0.0451
+        }
+      ],
+      "warn_frac": 0.5
+    },
+    "own_index_H": {
+      "found": 130323,
+      "missing": 0,
+      "required": 130323
+    },
+    "own_index_O": {
+      "found": 88276,
+      "missing": 0,
+      "required": 88276
+    },
+    "permute_file": false,
+    "permute_seed": 0,
+    "receipt": {
+      "airport_days_below_min_rows": 0,
+      "days_by_airport": {
+        "EDDF": 26,
+        "EDDM": 31,
+        "EGLL": 31,
+        "EHAM": 31,
+        "LEBL": 31,
+        "LEMD": 31,
+        "LFPG": 31,
+        "LIRF": 31,
+        "LSZH": 31
+      },
+      "denominator": "harvested_airport_days",
+      "grain": "airport_day",
+      "min_day_rows": 30,
+      "rate": {
+        "EDDF": 0.5618,
+        "EDDM": 0.9615,
+        "EGLL": 0.7031,
+        "EHAM": 0.9245,
+        "LEBL": 0.8797,
+        "LEMD": 0.9427,
+        "LFPG": 0.0408,
+        "LIRF": 0.4814,
+        "LSZH": 0.916
+      },
+      "rate_by_airport_day_spread": {
+        "EDDF": {
+          "days": 26,
+          "max": 0.6807,
+          "median": 0.5691,
+          "min": 0.4124
+        },
+        "EDDM": {
+          "days": 31,
+          "max": 0.9868,
+          "median": 0.969,
+          "min": 0.8273
+        },
+        "EGLL": {
+          "days": 31,
+          "max": 0.8873,
+          "median": 0.6909,
+          "min": 0.3967
+        },
+        "EHAM": {
+          "days": 31,
+          "max": 0.9764,
+          "median": 0.9387,
+          "min": 0.7768
+        },
+        "LEBL": {
+          "days": 31,
+          "max": 0.9559,
+          "median": 0.9089,
+          "min": 0.5509
+        },
+        "LEMD": {
+          "days": 31,
+          "max": 0.979,
+          "median": 0.9521,
+          "min": 0.7438
+        },
+        "LFPG": {
+          "days": 31,
+          "max": 0.1231,
+          "median": 0.0306,
+          "min": 0.0
+        },
+        "LIRF": {
+          "days": 31,
+          "max": 0.67,
+          "median": 0.4906,
+          "min": 0.2725
+        },
+        "LSZH": {
+          "days": 31,
+          "max": 0.9666,
+          "median": 0.9338,
+          "min": 0.7806
+        }
+      },
+      "rows_off_harvested_days": 2517,
+      "rows_on_harvested_days": 127806
+    },
+    "rows": 130323,
+    "shift_s": 0.0,
+    "sources": [
+      "F",
+      "O",
+      "H",
+      "N",
+      "geo"
+    ],
+    "summary_days": 283
+  },
+  "by_airport": {
+    "EDDF": {
+      "median_neighbours_in_cell": 2.0,
+      "median_neighbours_in_runway_cell": 0.0,
+      "median_neighbours_rwy_30m": 5.0,
+      "no_clock": 8279,
+      "no_clock_reached_3plus": 3346,
+      "no_clock_reached_by_a_neighbour": 5327,
+      "no_clock_reached_share": 0.6434,
+      "no_nm_reached": 138,
+      "no_nm_rows": 212,
+      "own_clock": 7388,
+      "own_clock_share": 0.4716,
+      "rows": 15667
+    },
+    "EDDM": {
+      "median_neighbours_in_cell": 3.0,
+      "median_neighbours_in_runway_cell": 2.0,
+      "median_neighbours_rwy_30m": 10.0,
+      "no_clock": 422,
+      "no_clock_reached_3plus": 258,
+      "no_clock_reached_by_a_neighbour": 391,
+      "no_clock_reached_share": 0.9265,
+      "no_nm_reached": 11,
+      "no_nm_rows": 119,
+      "own_clock": 10531,
+      "own_clock_share": 0.9615,
+      "rows": 10953
+    },
+    "EGLL": {
+      "median_neighbours_in_cell": 4.0,
+      "median_neighbours_in_runway_cell": 4.0,
+      "median_neighbours_rwy_30m": 23.0,
+      "no_clock": 5725,
+      "no_clock_reached_3plus": 4047,
+      "no_clock_reached_by_a_neighbour": 5522,
+      "no_clock_reached_share": 0.9645,
+      "no_nm_reached": 63,
+      "no_nm_rows": 112,
+      "own_clock": 13558,
+      "own_clock_share": 0.7031,
+      "rows": 19283
+    },
+    "EHAM": {
+      "median_neighbours_in_cell": 4.0,
+      "median_neighbours_in_runway_cell": 3.0,
+      "median_neighbours_rwy_30m": 16.0,
+      "no_clock": 1225,
+      "no_clock_reached_3plus": 896,
+      "no_clock_reached_by_a_neighbour": 1164,
+      "no_clock_reached_share": 0.9502,
+      "no_nm_reached": 456,
+      "no_nm_rows": 805,
+      "own_clock": 15007,
+      "own_clock_share": 0.9245,
+      "rows": 16232
+    },
+    "LEBL": {
+      "median_neighbours_in_cell": 2.0,
+      "median_neighbours_in_runway_cell": 2.0,
+      "median_neighbours_rwy_30m": 15.0,
+      "no_clock": 1468,
+      "no_clock_reached_3plus": 678,
+      "no_clock_reached_by_a_neighbour": 1267,
+      "no_clock_reached_share": 0.8631,
+      "no_nm_reached": 4,
+      "no_nm_rows": 77,
+      "own_clock": 10733,
+      "own_clock_share": 0.8797,
+      "rows": 12201
+    },
+    "LEMD": {
+      "median_neighbours_in_cell": 5.0,
+      "median_neighbours_in_runway_cell": 2.0,
+      "median_neighbours_rwy_30m": 16.0,
+      "no_clock": 962,
+      "no_clock_reached_3plus": 739,
+      "no_clock_reached_by_a_neighbour": 894,
+      "no_clock_reached_share": 0.9293,
+      "no_nm_reached": 8,
+      "no_nm_rows": 63,
+      "own_clock": 15840,
+      "own_clock_share": 0.9427,
+      "rows": 16802
+    },
+    "LFPG": {
+      "median_neighbours_in_cell": 0.0,
+      "median_neighbours_in_runway_cell": 0.0,
+      "median_neighbours_rwy_30m": 0.0,
+      "no_clock": 17390,
+      "no_clock_reached_3plus": 35,
+      "no_clock_reached_by_a_neighbour": 2062,
+      "no_clock_reached_share": 0.1186,
+      "no_nm_reached": 71,
+      "no_nm_rows": 325,
+      "own_clock": 739,
+      "own_clock_share": 0.0408,
+      "rows": 18129
+    },
+    "LIRF": {
+      "median_neighbours_in_cell": 1.0,
+      "median_neighbours_in_runway_cell": 1.0,
+      "median_neighbours_rwy_30m": 6.0,
+      "no_clock": 5736,
+      "no_clock_reached_3plus": 820,
+      "no_clock_reached_by_a_neighbour": 3575,
+      "no_clock_reached_share": 0.6233,
+      "no_nm_reached": 35,
+      "no_nm_rows": 107,
+      "own_clock": 5325,
+      "own_clock_share": 0.4814,
+      "rows": 11061
+    },
+    "LSZH": {
+      "median_neighbours_in_cell": 3.0,
+      "median_neighbours_in_runway_cell": 2.0,
+      "median_neighbours_rwy_30m": 12.0,
+      "no_clock": 840,
+      "no_clock_reached_3plus": 459,
+      "no_clock_reached_by_a_neighbour": 747,
+      "no_clock_reached_share": 0.8893,
+      "no_nm_reached": 207,
+      "no_nm_rows": 300,
+      "own_clock": 9155,
+      "own_clock_share": 0.916,
+      "rows": 9995
+    }
+  },
+  "days": [
+    "2026-01-01",
+    "2026-01-02",
+    "2026-01-03",
+    "2026-01-04",
+    "2026-01-05",
+    "2026-01-06",
+    "2026-01-07",
+    "2026-01-08",
+    "2026-01-09",
+    "2026-01-10",
+    "2026-01-11",
+    "2026-01-12",
+    "2026-01-13",
+    "2026-01-14",
+    "2026-01-15",
+    "2026-01-16",
+    "2026-01-17",
+    "2026-01-18",
+    "2026-01-19",
+    "2026-01-20",
+    "2026-01-21",
+    "2026-01-22",
+    "2026-01-23",
+    "2026-01-24",
+    "2026-01-25",
+    "2026-01-26",
+    "2026-01-27",
+    "2026-01-28",
+    "2026-01-29",
+    "2026-01-30",
+    "2026-01-31"
+  ],
+  "prediction": {
+    "file": "submissions/candidates/exp-035-k2climb-v11member.parquet",
+    "name": "v12 (tail rule)",
+    "sha256": "48dd572d61ff2403f13614ce04bdc3a8fd0dbdb5175bef7eb143650ea520ec52"
+  },
+  "receipt_rate": {
+    "EDDF": 0.5618,
+    "EDDM": 0.9615,
+    "EGLL": 0.7031,
+    "EHAM": 0.9245,
+    "LEBL": 0.8797,
+    "LEMD": 0.9427,
+    "LFPG": 0.0408,
+    "LIRF": 0.4814,
+    "LSZH": 0.916
+  },
+  "rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+}

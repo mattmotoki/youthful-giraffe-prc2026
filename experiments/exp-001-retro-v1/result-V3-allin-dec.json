@@ -1,0 +1,65 @@
+{
+  "name": "V3-allin-dec",
+  "argv": "--name V3-allin-dec --frame v3 --frame-sources v3 --target residual --clip-floor 60 --noac-head --learning-rate 0.03 --fixed-rounds 660 --folds december --no-submission",
+  "folds": {
+    "december": {
+      "rmse": 217.54632928522832,
+      "rmse_bulk": 202.21885747577082,
+      "rmse_tail": 2031.0130500363048,
+      "rmse_no_nm": 877.589524634607,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.13730937608133154,
+      "sse_share_no_nm": 0.1613818476186012,
+      "bias": 4.105646741331042,
+      "rmse_clean": 217.54632928522832,
+      "rmse_noac": 2496.7164689113606,
+      "n_noac": 89,
+      "sse_share_noac": 0.07075590940352733,
+      "fold": "december",
+      "best_iteration": 660,
+      "refit_rounds": 660,
+      "seconds": 697,
+      "oof": "experiments/exp-001-retro-v1/oof/V3-allin-dec-december.parquet"
+    }
+  },
+  "phi_settings": null,
+  "lirf_gate": null,
+  "shared_modules": {
+    "surface": {
+      "UNIMPEDED_Q": 0.2,
+      "WINDOWS": [
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ],
+      "BUCKET": 1200.0,
+      "NBR_WINDOW": "1800s",
+      "SHRINK_K": 20.0,
+      "n_families": 7
+    },
+    "phi": {
+      "default_weight": "rows",
+      "default_shrink_rows": 150.0,
+      "default_min_rows": 100,
+      "keys": [
+        [
+          "airport"
+        ],
+        [
+          "airport",
+          "operator"
+        ]
+      ]
+    },
+    "lirf": {
+      "cat_features": [
+        "flight_prefix",
+        "stand_group"
+      ]
+    }
+  }
+}

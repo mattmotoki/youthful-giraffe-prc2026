@@ -1,0 +1,10 @@
+[
+ {"name":"A_full",        "kwargs":{"rounds":1200}},
+ {"name":"B_no_exact",    "kwargs":{"rounds":1200,"exact_mix":false}},
+ {"name":"C_ghost_ratio", "kwargs":{"rounds":1200,"ghost_mode":"ratio"}},
+ {"name":"D_ghost_off",   "kwargs":{"rounds":1200,"ghost_mode":"off"}},
+ {"name":"E_clip3600",    "kwargs":{"rounds":1200,"clip_z":3600}},
+ {"name":"F_clip1200",    "kwargs":{"rounds":1200,"clip_z":1200}},
+ {"name":"G_leaves511",   "kwargs":{"rounds":1200,"params":{"num_leaves":511,"min_data_in_leaf":100}}},
+ {"name":"H_leaves127",   "kwargs":{"rounds":1200,"params":{"num_leaves":127}}}
+]

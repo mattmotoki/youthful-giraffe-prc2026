@@ -1,0 +1,78 @@
+{
+  "base": {
+    "board": 22,
+    "path": "submissions/uploaded/youthful-giraffe_v22.parquet",
+    "value_sha256": "f14e3db51dafb903b32533472916b7545b59c6cd02f59d44f2833b702da3e776",
+    "sha256": "f11d34f88b62a43ec2a0cdbeec967a9ee4b7d92e50a5508aa4d30e5a78ea5e1c",
+    "public_vector": "release/saved-vectors/v22.json",
+    "public_vector_sha256": "f057d1ca310bd8b84550c5ac03a74c3f7d82b543cdfa5c58c94e09c6a94c0962",
+    "id_dtype": "float64"
+  },
+  "stages": [
+    {
+      "board": 23,
+      "vector": "experiments/exp-127-clock-precision/rederive/kaggle/fit-output-v1/ranking_update_vector.npz",
+      "vector_sha256": "6127f23323b10a5359f86c0f369d0342ec715be553a00c53b18ce0feeeff91c3",
+      "source": "exp127-clock-precision 26e76ef0 (fit source 3871130d)",
+      "hold": [
+        "LIRF"
+      ],
+      "floor": "moved",
+      "value_sha256": "528e0251a1c01d82a86e68c96384d0289033e736ef28c8e72524f13570c1fbca",
+      "public_vector": "release/saved-vectors/v23.json",
+      "public_vector_sha256": "ec80e5f03598adec5e163ff4f81155b93a4e994b809c8c1f3e8e419f6f828870",
+      "expected": {
+        "vector_sha256": "6127f23323b10a5359f86c0f369d0342ec715be553a00c53b18ce0feeeff91c3",
+        "candidate_sha256": "fd420d855fe8217a3915cce42fa7dc7794d2c19d7cb26dbf90ab456650f28220",
+        "bytes": 4707609,
+        "rows": 344841,
+        "rows_moved": 186168,
+        "rows_floored": 1,
+        "rows_held": 5571
+      },
+      "sha256": "fd420d855fe8217a3915cce42fa7dc7794d2c19d7cb26dbf90ab456650f28220"
+    },
+    {
+      "board": 24,
+      "vector": "experiments/exp-134-proxies-in-learner/kaggle/run-fit-v3/exp134-output/ranking_delta.npz",
+      "vector_sha256": "be7fd8d362b6c2a12df4b0880e714db489a24b31269c756a6f29afef12f596de",
+      "source": "exp129-tail-markers fc1d8008",
+      "hold": [],
+      "floor": "moved",
+      "value_sha256": "cacfb34813fbc99835e29d62302304319a3d631b7187283704e3dbc64f1e3cd3",
+      "public_vector": "release/saved-vectors/v24.json",
+      "public_vector_sha256": "335c948795ab0476d1d5b153ff71f6241e64807229e274de290595b8f547a2ad",
+      "expected": {
+        "vector_sha256": "be7fd8d362b6c2a12df4b0880e714db489a24b31269c756a6f29afef12f596de",
+        "candidate_sha256": "984884e1f8d2b5403f7e791659fd9902eacac7206484fb14ed3116004df9dc36",
+        "bytes": 4707521,
+        "rows": 344841,
+        "rows_moved": 148197,
+        "rows_floored": 30
+      },
+      "sha256": "984884e1f8d2b5403f7e791659fd9902eacac7206484fb14ed3116004df9dc36"
+    },
+    {
+      "board": 32,
+      "vector": "experiments/exp-137-withclock-proxies/kaggle/run-v4/output/exp137-d132-ranking-output/ranking_delta.npz",
+      "vector_sha256": "140dca7afc3c46fba7cab3d78881bbb0e1dd932d12165a8eb648978575241810",
+      "source": "exp128-noclock-model 7500f236",
+      "hold": [],
+      "floor": "all",
+      "value_sha256": "12ae952330439c36bd932fc21a53b75dfa05b22338ea2807534661ffc5561305",
+      "public_vector": "release/saved-vectors/v32.json",
+      "public_vector_sha256": "f9468e1cac83258736059e7009acf3702b9ab05658b7ad11f642dfe29e42a528",
+      "expected": {
+        "vector_sha256": "140dca7afc3c46fba7cab3d78881bbb0e1dd932d12165a8eb648978575241810",
+        "candidate_sha256": "f09f609429c81fd888e19e75e16f51b57978d55cc2639d6161c894da0baaa0de",
+        "bytes": 4707529,
+        "rows": 344841,
+        "rows_moved": 173539,
+        "rows_floored": 0
+      },
+      "sha256": "f09f609429c81fd888e19e75e16f51b57978d55cc2639d6161c894da0baaa0de"
+    }
+  ],
+  "input_template_sha256": "0d383408ed5ac27bfcfd12d6b961cee77c8a6364b10dad9fe3ec81115c79652b",
+  "ranking_sha256": "9db75e3a56fa09b87aab72e191a53da3fe763d9887ad2b23aea9cde6a6325f86"
+}

@@ -1,0 +1,205 @@
+{
+  "against_v18": {
+    "changed_inside_the_class": 194681,
+    "changed_outside_the_class": 0,
+    "max_abs_change_s": 1084.0033127668871,
+    "rms_change_s": 25.85987764916701,
+    "rows_changed": 194681,
+    "rows_identical": 150160
+  },
+  "against_v21": {
+    "rms_change_s": 9.479112711044408,
+    "rows_changed": 194681
+  },
+  "by_airport": {
+    "EDDF": {
+      "changed_vs_v18": 18431,
+      "in_class": 18576,
+      "rows": 36317
+    },
+    "EDDM": {
+      "changed_vs_v18": 24725,
+      "in_class": 24999,
+      "rows": 25966
+    },
+    "EGLL": {
+      "changed_vs_v18": 33652,
+      "in_class": 33927,
+      "rows": 39840
+    },
+    "EHAM": {
+      "changed_vs_v18": 35051,
+      "in_class": 35592,
+      "rows": 38182
+    },
+    "LEBL": {
+      "changed_vs_v18": 26719,
+      "in_class": 26734,
+      "rows": 30080
+    },
+    "LEMD": {
+      "changed_vs_v18": 27046,
+      "in_class": 27131,
+      "rows": 36954
+    },
+    "LFPG": {
+      "changed_vs_v18": 2250,
+      "in_class": 2346,
+      "rows": 39872
+    },
+    "LIRF": {
+      "changed_vs_v18": 5664,
+      "in_class": 5712,
+      "rows": 26899
+    },
+    "LSZH": {
+      "changed_vs_v18": 21143,
+      "in_class": 21239,
+      "rows": 23150
+    },
+    "LTFM": {
+      "changed_vs_v18": 0,
+      "in_class": 0,
+      "rows": 47581
+    }
+  },
+  "by_month": {
+    "2026-01": {
+      "changed_vs_v18": 90073,
+      "in_class": 91433,
+      "rows": 152719
+    },
+    "2026-07": {
+      "changed_vs_v18": 104608,
+      "in_class": 104823,
+      "rows": 192122
+    }
+  },
+  "bytes": {
+    "cand_v10": 4707609,
+    "cand_v11": 4707609,
+    "v12": 4707609,
+    "v17": 4707609,
+    "v18": 4707601,
+    "v21": 4707609,
+    "v22": 4707609
+  },
+  "class_vector": {
+    "chain_mode_4": 2456,
+    "columns": [
+      "MVT_ID_mvt",
+      "obs_has_clock",
+      "served_by_exp_046",
+      "noac",
+      "moved_by_v25",
+      "occupied_by_exp_046",
+      "guard_held_by_exp_046",
+      "written_by_exp_046",
+      "chain_mode_4",
+      "head_by_exp_046"
+    ],
+    "files": [
+      "artifacts/exp-046/class/2026-01-v25.parquet",
+      "artifacts/exp-046/class/2026-07-v25.parquet"
+    ],
+    "guard_held_by_exp_046": 1573,
+    "head_by_exp_046": {
+      "2026-01:2025-11+2025-10+2025-03+2025-02": 152719,
+      "2026-07:2025-11+2025-10+2025-03+2025-08": 192122
+    },
+    "noac": 388,
+    "obs_has_clock": 196294,
+    "occupied_by_exp_046": 196256,
+    "rows": 344841,
+    "served_by_exp_046": 196256,
+    "written_by_exp_046": 196256
+  },
+  "guard_held": {
+    "equal_v12": 1573,
+    "equal_v18": 1573,
+    "inside_the_class": 1573,
+    "rows": 1573,
+    "v18_equals_v12_there": 1573
+  },
+  "inside_the_class": {
+    "equal_v12": 1573,
+    "equal_v18": 1575,
+    "rows": 196256
+  },
+  "noac": {
+    "equal_v12": 388,
+    "equal_v18": 388,
+    "rows": 388
+  },
+  "outside_the_class": {
+    "equal_v12": 78951,
+    "equal_v18": 148585,
+    "rows": 148585
+  },
+  "ownership": {
+    "base_v12_unchanged": 78951,
+    "exp_046_with_clock_head": 196256,
+    "exp_047_queue_no_clock_arm": 69634,
+    "noac_inside_base_v12_unchanged": 388,
+    "of_which_guard_held_at_the_price_base": 1573,
+    "total": 344841
+  },
+  "queue_rows_carried_through_v18": {
+    "rows_v17_moved_off_v12": 259946,
+    "v17_vs_v12_changed": 259946,
+    "v18_vs_v17_changed": 192435,
+    "v22_equal_v17_on_rows_v17_moved_off_v12": 69636
+  },
+  "rows_v22_leaves_at_v18_and_off_v12": {
+    "by_airport": {
+      "EDDF": 13587,
+      "EGLL": 1,
+      "LEMD": 8469,
+      "LTFM": 47577
+    },
+    "by_airport_month": {
+      "EDDF/2026-01": 4576,
+      "EDDF/2026-07": 9011,
+      "EGLL/2026-01": 1,
+      "LEMD/2026-01": 853,
+      "LEMD/2026-07": 7616,
+      "LTFM/2026-01": 22396,
+      "LTFM/2026-07": 25181
+    },
+    "by_month": {
+      "2026-01": 27826,
+      "2026-07": 41808
+    },
+    "equal_v17": 69634,
+    "equal_v18": 69634,
+    "rows_outside_the_class_that_differ_from_v12": 69634
+  },
+  "sha256": {
+    "cand_v10": "7b0557a497f8c09e4f56a11352783b9dda37fe1d0579345d4303e4f74d6e7aca",
+    "cand_v11": "f11d34f88b62a43ec2a0cdbeec967a9ee4b7d92e50a5508aa4d30e5a78ea5e1c",
+    "v12": "48dd572d61ff2403f13614ce04bdc3a8fd0dbdb5175bef7eb143650ea520ec52",
+    "v17": "4de323fc4fd9d4865b201b0dd0da1ddcbf7de9e11f1d9bc8af07d293585001ea",
+    "v18": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+    "v21": "7b0557a497f8c09e4f56a11352783b9dda37fe1d0579345d4303e4f74d6e7aca",
+    "v22": "f11d34f88b62a43ec2a0cdbeec967a9ee4b7d92e50a5508aa4d30e5a78ea5e1c"
+  },
+  "shape": {
+    "columns": [
+      "MVT_ID_mvt",
+      "TAXITIME_SEC_mvt"
+    ],
+    "rows": 344841
+  },
+  "template": {
+    "ids_equal_in_order": true,
+    "rows": 344841
+  },
+  "values": {
+    "below_60": 0,
+    "dtype": "float64",
+    "finite": true,
+    "max": 115306.59901833169,
+    "min": 60.0,
+    "rows_at_the_60s_floor": 2
+  }
+}

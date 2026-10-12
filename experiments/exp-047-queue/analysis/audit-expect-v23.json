@@ -1,0 +1,151 @@
+{
+ "what": "candidate exp-046-surface-v9.parquet, exp-046 serve base set v23 = base set v22 with ONE change: every fit on both the fold and the ranking side carries 2025-11's 99,709 writable rows in its fitting set on top of the fold rows. Same bytes underneath (v18), same head H, same class, same guard cut, same ten seeds, same K = 10. Report: exp-046 analysis/serve-v23.json; fold price: exp-046 analysis/onemonth-bag10.json.",
+ "status": "FINAL. Filled from analysis/serve-v23.json after the serve landed. The hard claims -- pins, template, class, scored populations, the LFPG counts -- were each verified against analysis/audit-v9-bag10-on-v22.json, the audit that passed on exp-046-surface-v8 (54 AGREE, 2 PENDING), so they are carried on measurement and not on resemblance. No path is pending.",
+ "sources": {
+  "prediction": "experiments/exp-046-surfacefit/RESULTS.md 47.20 (commit 467c89f, before the fit)",
+  "fold_price": "experiments/exp-046-surfacefit/analysis/onemonth-bag10.json",
+  "serve": "experiments/exp-046-surfacefit/analysis/serve-v23.json",
+  "hard_claims": "exp-047 analysis/audit-expect-v9.json, the audit that passed on exp-046-surface-v8",
+  "pins": "experiments/exp-046-surfacefit/analysis/fold-population.json"
+ },
+ "how_to_run": "OMP_NUM_THREADS=2 ../../.venv/bin/python work/audit.py --head-npz ../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz --arm-npz ../exp-046-surfacefit/work/d-onemonth-bag10-255-free.npz --pins ../exp-046-surfacefit/analysis/fold-population.json --class-vector ../../artifacts/exp-046/class/{month}-v23.parquet --previous-class-vector ../../artifacts/exp-046/class/{month}-v22.parquet --candidate ../../submissions/candidates/exp-046-surface-v9.parquet --previous ../../submissions/uploaded/youthful-giraffe_v18.parquet --baseline ../../submissions/uploaded/youthful-giraffe_v18.parquet --hold '' --changed-expected-at LFPG --expect analysis/audit-expect-v23.json --out analysis/audit-v23.json",
+ "the_head_is_pinned_by_its_bytes": {
+  "file": "../exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+  "sha256": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684",
+  "why": "the same head v8 was priced over, so the audit's increment is comparable with the v9 audit's line for line. Check this sha BEFORE the audit: if it has moved, the increment is over a different base and the audit itself would not say so.",
+  "checked_by": "work/audit.py prints the head path; compare with shasum -a 256"
+ },
+ "why_the_hold_is_empty": "this path serves the bag EVERYWHERE, LFPG included, exactly as v8 does. --hold LFPG would price a different composition.",
+ "the_extension_audit_py_cannot_see": {
+  "why": "audit.py reads the candidate bytes, the class vectors and the increment. It cannot see WHAT the head was fitted on, and the extension is the whole difference between v8 and v9. These four claims must be read from exp-046 analysis/serve-v23.json by eye, and a failure on any of them voids the candidate whatever the audit says.",
+  "1_ranking_members_are_extended": "serve-v23.json bag.member_files must be TEN work/d-rank-ext-placebo{seed}-255.npz -- NOT d-rank-placebo{seed}-255.npz, which are v8's un-extended members under a key that cannot tell the two apart (exp-046 RESULTS 45.2)",
+  "2_every_ranking_fit_grew": "the ten ranking fits ran in the DRY RUN: analysis/serve-v23-dryrun.json extension.per_fit has TEN entries, each extra_rows = 99709, fold_rows 261,775 -> total_fit_rows 361,484 (1.3809x). serve-v23.json's own per_fit is EMPTY and its fits_that_carried_it is 0, because the real serve refitted nothing -- it read the ten d-rank-ext-placebo caches the dry run wrote. That is the report telling the truth, not a missing extension: the member shas in serve-v23.json are identical to the dry run's, which is the link to check.",
+  "3_fold_members_are_extended": "serve-v23.json bag.fold_member_sha256 must be the ten d-onemonth-*.npz members of analysis/onemonth-bag10.json, checked by sha before any ranking fit ran",
+  "4_one_builder_both_sides": "exp-046 code/serve.py extension_rows calls code/onemonth.py nov_rows, the same function code/onemonthbag.py fitted the fold members through, and that function checks base6 339ca16ed421a718 and neighbour block 3e231a8f7cd82d83 by sha before returning a row",
+  "5_the_two_reports_are_one_run": "serve-v23.json fit.info.member_sha256 == serve-v23-dryrun.json fit.info.member_sha256, all ten, and both name d-rank-ext-placebo{seed}-255.npz. Check that equality: it is what makes the dry run's per_fit evidence about the vector the candidate ships.",
+  "6_the_class_needed_--ungated": "the first v23 class emission was run WITHOUT --ungated and produced occupied 193,800 -- short by exactly the 2,456 chain mode-4 rows -- and classvec REFUSED it on the guard count (1,568 against the serve's 1,573). The two wrong vectors were deleted and re-emitted with --ungated. The shipped vectors are 2026-01-v23 8cef2f2d8175be9c and 2026-07-v23 e69faf3a46e8ea61, occupied/written 196,256, guard_held 1,573."
+ },
+ "expect": {
+  "pins.by_fold.july_loo.their_airport_days": 296,
+  "pins.by_fold.july_loo.days_agree": true,
+  "pins.by_fold.december.their_airport_days": 297,
+  "pins.by_fold.december.days_agree": true,
+  "pins.by_fold.january.their_airport_days": 218,
+  "pins.by_fold.january.days_agree": true,
+  "increment.population.july_loo.rows": 190713,
+  "increment.population.july_loo.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.december.rows": 165677,
+  "increment.population.december.rows_returned_to_the_base_by_the_hold": 0,
+  "increment.population.january.rows": 153706,
+  "increment.population.january.rows_returned_to_the_base_by_the_hold": 0,
+  "bytes.template.rows": 344841,
+  "bytes.template.row_order_is_the_template_order": true,
+  "bytes.template.previous_row_order_is_the_template_order": true,
+  "bytes.template.all_finite": true,
+  "bytes.template.duplicate_keys": 0,
+  "bytes.template.rows_at_or_below_zero": 0,
+  "bytes.class.changed_is_a_subset_of_occupied": true,
+  "bytes.class.changed_rows_outside_occupied": 0,
+  "bytes.class.rows_missing_for_a_template_key": 0,
+  "bytes.class.noac_rows": 388,
+  "bytes.class.noac_rows_changed": 0,
+  "bytes.class.occupied": 196256,
+  "bytes.class.written": 196256,
+  "bytes.class.occupied_and_not_written": 0,
+  "bytes.class.written_and_not_occupied": 0,
+  "bytes.class.occupied_unwritten_rows_that_changed": 0,
+  "bytes.class.guard_held": 1573,
+  "bytes.class.occupied_at_the_expected_airports": 2346,
+  "bytes.class.guard_held_at_the_expected_airports": 96,
+  "bytes.class.writable_at_the_expected_airports": 2250,
+  "bytes.class_vs_previous.newly_occupied": 0,
+  "bytes.class_vs_previous.no_longer_occupied": 0,
+  "bytes.moved.changed_rows_at_the_expected_airports": 2250,
+  "bytes.moved.changed_rows_outside_the_expected_airports": 192431,
+  "bytes.candidate_sha256": "8fd4b34166b61756a20746c77f97fc1d06d06af28ee959ef7deac1de0a365d78",
+  "bytes.moved.rows_changed": 194681,
+  "bytes.moved.rows_reverted_to_the_baseline": 0,
+  "increment.per_fold.july_loo.mse_gain_s2": {
+   "value": 403.9271070775938,
+   "tol": 1e-09
+  },
+  "increment.per_fold.december.mse_gain_s2": {
+   "value": 1176.635405511111,
+   "tol": 1e-09
+  },
+  "increment.per_fold.january.mse_gain_s2": {
+   "value": 512.1916194799155,
+   "tol": 1e-09
+  },
+  "increment.per_fold.july_loo.ci95_envelope_over_the_seeds": {
+   "inside": [
+    326.3712693256303,
+    488.6502738311252
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.december.ci95_envelope_over_the_seeds": {
+   "inside": [
+    1087.11703495091,
+    1283.2706470514172
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.january.ci95_envelope_over_the_seeds": {
+   "inside": [
+    417.75415406346104,
+    624.0817867475474
+   ],
+   "tol": 3.0
+  },
+  "increment.per_fold.july_loo.lit": true,
+  "increment.per_fold.december.lit": true,
+  "increment.per_fold.january.lit": true,
+  "increment.lit_rule.dark_folds": [],
+  "increment.lit_rule.every_lit_fold_clears_on_every_seed": true,
+  "increment.lit_rule.every_fold_clears_including_dark": true,
+  "increment.board.all_row_gain_s": {
+   "value": 0.7562261194852908,
+   "tol": 1e-09
+  },
+  "increment.board.clean_gain_s": {
+   "value": 0.9238976470569469,
+   "tol": 1e-09
+  },
+  "increment.board.all_row_ci95_envelope_over_the_seeds": {
+   "inside": [
+    0.581519682884732,
+    0.995575760839462
+   ],
+   "tol": 0.0
+  },
+  "increment.population.july_loo.rows_moved": 88425,
+  "increment.population.december.rows_moved": 102186,
+  "increment.population.january.rows_moved": 69840
+ },
+ "pending": [],
+ "pending_because": "nothing is pending: every figure below is filled from experiments/exp-046-surfacefit/analysis/serve-v23.json, and the audit checks them against its own independent recomputation from the head and arm vectors.",
+ "the_registered_prediction": {
+  "registered_in": "exp-046 RESULTS.md 47.20, commit 467c89f, before the ten fits ran",
+  "quantity": "the K = 10 EXTENDED bag as an in-fold increment over v8's K = 10 head",
+  "point_estimate_board_s": 0.49,
+  "band_s": [
+   0.32,
+   0.62
+  ],
+  "every_fold_clear_expected": true,
+  "fold_expected_to_fail": "january",
+  "the_naive_figure_deliberately_not_registered": 0.59236,
+  "gate": "in-fold, every fold clear, exp-046 rule (a) -- the form was registered in 47.17 before its data",
+  "not_this_audit": "this audit checks the increment over v18's head, the same quantity the v9 audit checked on v8 (+0.242752698659217). The two must be read side by side: 47.20's number decides the GATE, this one decides whether the candidate beats v8 by more than the ~0.1 s upload floor."
+ },
+ "notes_on_the_expectation": "1. The class claims are hard, not carried over by habit: base set v23 changes what the head is FITTED on and nothing about which rows it serves, so occupied, written, guard_held and the two class_vs_previous counts must come back identical to v8's. A difference there is a defect, not an update.\n2. `increment.population.*.rows` are the scored populations at the pins and are likewise unchanged; `rows_moved` is pending because it counts rows where the ARM differs from the head, and a differently fitted head moves a different number.\n3. LFPG is the expected airport for the same reason as on v8: v18's head held it and this candidate does not.",
+ "finalised_from": {
+  "serve_report": "experiments/exp-046-surfacefit/analysis/serve-v23.json",
+  "candidate_sha256": "8fd4b34166b61756a20746c77f97fc1d06d06af28ee959ef7deac1de0a365d78",
+  "arm_vector": "d-onemonth-bag10-255-free.npz",
+  "head_vector": "d-bundle-ungated1299-guard995.npz",
+  "board_all_row_gain_s": 0.7562261194852908,
+  "every_fold_interval_clear": true
+ }
+}

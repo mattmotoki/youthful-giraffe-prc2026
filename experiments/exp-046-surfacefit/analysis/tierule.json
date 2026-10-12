@@ -1,0 +1,288 @@
+{
+ "anchored_alone_predictions": {
+  "2025-04": {
+   "december": {
+    "anchors": [
+     "2025-08"
+    ],
+    "band_s2": [
+     37.65261545886945,
+     125.05261545886945
+    ],
+    "cyclic_d": 4,
+    "kind": "anchored",
+    "point_s2": 81.35261545886945,
+    "time_d": 8
+   },
+   "january": {
+    "anchors": [
+     "2025-10"
+    ],
+    "band_s2": [
+     35.047216911167965,
+     122.44721691116797
+    ],
+    "cyclic_d": 3,
+    "kind": "anchored",
+    "point_s2": 78.74721691116797,
+    "time_d": 3
+   },
+   "july_loo": {
+    "anchors": [
+     "2025-10"
+    ],
+    "band_s2": [
+     410.38485835857875,
+     576.8248583585787
+    ],
+    "cyclic_d": 3,
+    "kind": "anchored",
+    "point_s2": 493.6048583585787,
+    "time_d": 3
+   }
+  },
+  "2025-05": {
+   "december": {
+    "band_s2": [
+     0.0,
+     81.35261545886945
+    ],
+    "between": {
+     "farther": null,
+     "nearer": "2025-08"
+    },
+    "cyclic_d": 5,
+    "kind": "bracket",
+    "time_d": 7
+   },
+   "january": {
+    "band_s2": [
+     37.11379615339477,
+     78.74721691116797
+    ],
+    "between": {
+     "farther": "2025-08",
+     "nearer": "2025-10"
+    },
+    "cyclic_d": 4,
+    "kind": "bracket",
+    "time_d": 4
+   },
+   "july_loo": {
+    "band_s2": [
+     493.6048583585787,
+     628.7325043436866
+    ],
+    "between": {
+     "farther": "2025-10",
+     "nearer": "2025-08"
+    },
+    "cyclic_d": 2,
+    "kind": "bracket",
+    "time_d": 2
+   }
+  },
+  "2025-09": {
+   "december": {
+    "anchors": [
+     "2025-03"
+    ],
+    "band_s2": [
+     474.7796579978396,
+     562.1796579978396
+    ],
+    "cyclic_d": 3,
+    "kind": "anchored",
+    "point_s2": 518.4796579978396,
+    "time_d": 3
+   },
+   "january": {
+    "band_s2": [
+     37.11379615339477,
+     78.74721691116797
+    ],
+    "between": {
+     "farther": "2025-08",
+     "nearer": "2025-10"
+    },
+    "cyclic_d": 4,
+    "kind": "bracket",
+    "time_d": 8
+   },
+   "july_loo": {
+    "band_s2": [
+     493.6048583585787,
+     628.7325043436866
+    ],
+    "between": {
+     "farther": "2025-10",
+     "nearer": "2025-08"
+    },
+    "cyclic_d": 2,
+    "kind": "bracket",
+    "time_d": 2
+   }
+  }
+ },
+ "any_head_changes": {
+  "2026-01": false,
+  "2026-07": false
+ },
+ "common_base_is_legacy": "base set v24's three-month extension, chosen before the seasonal rule existed; only the second term is rule-selected",
+ "heads_if_04_05_09_built": {
+  "2026-01": {
+   "candidates": {
+    "2025-02": 1,
+    "2025-04": 3,
+    "2025-05": 4,
+    "2025-06": 5,
+    "2025-08": 5,
+    "2025-09": 4
+   },
+   "head": [
+    "2025-11",
+    "2025-10",
+    "2025-03",
+    "2025-02"
+   ],
+   "minimum_served_distance": 1,
+   "rule_selected": [
+    "2025-02"
+   ]
+  },
+  "2026-07": {
+   "candidates": {
+    "2025-02": 5,
+    "2025-04": 3,
+    "2025-05": 2,
+    "2025-06": 1,
+    "2025-08": 1,
+    "2025-09": 2
+   },
+   "head": [
+    "2025-11",
+    "2025-10",
+    "2025-03",
+    "2025-06",
+    "2025-08"
+   ],
+   "minimum_served_distance": 1,
+   "rule_selected": [
+    "2025-06",
+    "2025-08"
+   ]
+  }
+ },
+ "heads_today": {
+  "2026-01": {
+   "candidates": {
+    "2025-02": 1,
+    "2025-06": 5,
+    "2025-08": 5
+   },
+   "head": [
+    "2025-11",
+    "2025-10",
+    "2025-03",
+    "2025-02"
+   ],
+   "minimum_served_distance": 1,
+   "rule_selected": [
+    "2025-02"
+   ]
+  },
+  "2026-07": {
+   "candidates": {
+    "2025-02": 5,
+    "2025-06": 1,
+    "2025-08": 1
+   },
+   "head": [
+    "2025-11",
+    "2025-10",
+    "2025-03",
+    "2025-06",
+    "2025-08"
+   ],
+   "minimum_served_distance": 1,
+   "rule_selected": [
+    "2025-06",
+    "2025-08"
+   ]
+  }
+ },
+ "matched_cyclic_pairs_they_would_create": [
+  {
+   "both_hypothetical": false,
+   "cyclic_d": 3,
+   "fold": "december",
+   "months": [
+    "2025-03",
+    "2025-09"
+   ],
+   "time_d": [
+    9,
+    3
+   ],
+   "time_gap": 6
+  },
+  {
+   "both_hypothetical": false,
+   "cyclic_d": 4,
+   "fold": "december",
+   "months": [
+    "2025-08",
+    "2025-04"
+   ],
+   "time_d": [
+    4,
+    8
+   ],
+   "time_gap": 4
+  },
+  {
+   "both_hypothetical": false,
+   "cyclic_d": 3,
+   "fold": "january",
+   "months": [
+    "2025-10",
+    "2025-04"
+   ],
+   "time_d": [
+    9,
+    3
+   ],
+   "time_gap": 6
+  },
+  {
+   "both_hypothetical": true,
+   "cyclic_d": 4,
+   "fold": "january",
+   "months": [
+    "2025-05",
+    "2025-09"
+   ],
+   "time_d": [
+    4,
+    8
+   ],
+   "time_gap": 4
+  }
+ ],
+ "rule_as_applied": "common base {2025-11, 2025-10, 2025-03} + every built month at the MINIMUM served distance, ties included",
+ "served_distances_of_the_hypothetical_months": {
+  "2025-04": {
+   "2026-01": 3,
+   "2026-07": 3
+  },
+  "2025-05": {
+   "2026-01": 4,
+   "2026-07": 2
+  },
+  "2025-09": {
+   "2026-01": 4,
+   "2026-07": 2
+  }
+ },
+ "what": "RESULTS section 47.63: what 47.57's tie rule would select if 2025-04/05/09 were built."
+}

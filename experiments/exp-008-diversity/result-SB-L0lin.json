@@ -1,0 +1,43 @@
+{
+  "name": "SB-L0lin",
+  "folds": {
+    "july_loo": {
+      "rmse": 329.7076896062317,
+      "rmse_bulk": 294.0346531026571,
+      "rmse_tail": 2560.3177889789426,
+      "rmse_no_nm": 1289.1912851649486,
+      "rmse_noac": 3862.1676306263957,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.20742119724966068,
+      "sse_share_no_nm": 0.3153774429653258,
+      "sse_share_noac": 0.24390656359453672,
+      "bias": 3.705043885631145,
+      "fold": "july_loo",
+      "rounds": 350,
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "seconds": 1278,
+      "oof": "experiments/exp-008-diversity/oof/SB-L0lin-july_loo.parquet",
+      "argv": "--kind lgb --name SB-L0lin --variant lin --seed-bag 5 --folds july_loo --rounds-m6 175 --rounds-m11 350"
+    }
+  },
+  "argv": "--kind lgb --name SB-L0lin --variant lin --seed-bag 5 --folds july_loo --rounds-m6 175 --rounds-m11 350",
+  "argv_history": [
+    "--kind lgb --name SB-L0lin --variant lin --seed-bag 5 --folds july_loo --rounds-m6 175 --rounds-m11 350"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 8,
+  "gpu": "0"
+}

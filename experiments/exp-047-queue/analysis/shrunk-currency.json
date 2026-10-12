@@ -1,0 +1,181 @@
+{
+  "arm": "N_reach_half",
+  "cells_served": [
+    "EDDF/reached",
+    "LTFM/unreached"
+  ],
+  "currency": {
+    "arm": "N_reach_half",
+    "board_all": {
+      "after": 308.3859,
+      "before": 308.5977,
+      "gain_s": 0.2117
+    },
+    "board_clean": {
+      "after": 256.2096,
+      "before": 256.4643,
+      "gain_s": 0.2548
+    },
+    "columns": 24,
+    "december": {
+      "rms_move_s": 19.9248,
+      "rmse_all_after": 204.0195,
+      "rmse_all_before": 204.1985,
+      "rmse_clean_after": 204.0195,
+      "rmse_clean_before": 204.1985,
+      "served_rows": 24169
+    },
+    "form": {
+      "reached": {
+        "arms": {
+          "N": 1.0
+        },
+        "columns": 24,
+        "rows": 81366
+      },
+      "unreached": {
+        "arms": {
+          "N": 0.5,
+          "Nf": 0.5
+        },
+        "columns": 24,
+        "rows": 72340
+      }
+    },
+    "note": "cross-fitted by fold: each fold's d comes from a head fitted on the other two only. December is not a ranking-share fold and is carried beside the board, never inside it.",
+    "per_fold": {
+      "december": {
+        "max_abs_move_s": 309.1987,
+        "rms_move_s": 19.9248,
+        "rmse4_fold_after": {
+          "all": 204.0195,
+          "bulk_le3600": 191.6344,
+          "no_nm": 655.1959,
+          "rows": 165677,
+          "rows_no_nm": 1643,
+          "tail_gt3600": 1774.0531
+        },
+        "rmse4_fold_before": {
+          "all": 204.1985,
+          "bulk_le3600": 191.8273,
+          "no_nm": 655.2183,
+          "rows": 165677,
+          "rows_no_nm": 1643,
+          "tail_gt3600": 1773.9137
+        },
+        "rmse4_served_after": {
+          "all": 199.4616,
+          "bulk_le3600": 190.4358,
+          "no_nm": 317.3389,
+          "rows": 24169,
+          "rows_no_nm": 381,
+          "tail_gt3600": 1548.83
+        },
+        "rmse4_served_before": {
+          "all": 200.7134,
+          "bulk_le3600": 191.7625,
+          "no_nm": 317.5383,
+          "rows": 24169,
+          "rows_no_nm": 381,
+          "tail_gt3600": 1547.6714
+        },
+        "rmse_all_after": 204.0195,
+        "rmse_all_before": 204.1985,
+        "rmse_clean_after": 204.0195,
+        "rmse_clean_before": 204.1985,
+        "rows": 165677,
+        "served_rows": 24169
+      },
+      "january": {
+        "max_abs_move_s": 358.4209,
+        "rms_move_s": 20.101,
+        "rmse4_fold_after": {
+          "all": 337.3437,
+          "bulk_le3600": 195.3676,
+          "no_nm": 2835.6133,
+          "rows": 153706,
+          "rows_no_nm": 1432,
+          "tail_gt3600": 5983.964
+        },
+        "rmse4_fold_before": {
+          "all": 337.4611,
+          "bulk_le3600": 195.5589,
+          "no_nm": 2835.5285,
+          "rows": 153706,
+          "rows_no_nm": 1432,
+          "tail_gt3600": 5984.1432
+        },
+        "rmse4_served_after": {
+          "all": 210.3713,
+          "bulk_le3600": 203.1787,
+          "no_nm": 464.0257,
+          "rows": 24954,
+          "rows_no_nm": 326,
+          "tail_gt3600": 2495.3501
+        },
+        "rmse4_served_before": {
+          "all": 211.5272,
+          "bulk_le3600": 204.3075,
+          "no_nm": 461.7438,
+          "rows": 24954,
+          "rows_no_nm": 326,
+          "tail_gt3600": 2506.9619
+        },
+        "rmse_all_after": 337.3437,
+        "rmse_all_before": 337.4611,
+        "rmse_clean_after": 217.4469,
+        "rmse_clean_before": 217.6288,
+        "rows": 153706,
+        "served_rows": 24954
+      },
+      "july_loo": {
+        "max_abs_move_s": 180.5923,
+        "rms_move_s": 18.7867,
+        "rmse4_fold_after": {
+          "all": 283.2631,
+          "bulk_le3600": 246.4641,
+          "no_nm": 1118.1134,
+          "rows": 190713,
+          "rows_no_nm": 3934,
+          "tail_gt3600": 2393.2994
+        },
+        "rmse4_fold_before": {
+          "all": 283.5657,
+          "bulk_le3600": 246.7302,
+          "no_nm": 1118.4542,
+          "rows": 190713,
+          "rows_no_nm": 3934,
+          "tail_gt3600": 2395.7758
+        },
+        "rmse4_served_after": {
+          "all": 256.5981,
+          "bulk_le3600": 238.9605,
+          "no_nm": 474.3291,
+          "rows": 29844,
+          "rows_no_nm": 684,
+          "tail_gt3600": 2630.891
+        },
+        "rmse4_served_before": {
+          "all": 258.7256,
+          "bulk_le3600": 240.7049,
+          "no_nm": 478.9285,
+          "rows": 29844,
+          "rows_no_nm": 684,
+          "tail_gt3600": 2669.5178
+        },
+        "rmse_all_after": 283.2631,
+        "rmse_all_before": 283.5657,
+        "rmse_clean_after": 283.2631,
+        "rmse_clean_before": 283.5657,
+        "rows": 190713,
+        "served_rows": 29844
+      }
+    },
+    "shares": {
+      "january": 0.4428678724397621,
+      "july_loo": 0.5571321275602379
+    }
+  },
+  "note": "The shrunk form priced in the board's own currency, with the hold on the fold side.",
+  "record": "analysis/arms-step2-unmatched-fitall-3f-shrunk.json"
+}

@@ -1,0 +1,388 @@
+{
+  "capacity_step_as_selected_in_fold": {
+    "all_row_ci95": [
+      0.14205189304872476,
+      0.2859095783373398
+    ],
+    "all_row_gain_s": 0.20226627275360443,
+    "what": "255 leaves over the head on every fold, the way the climb chose it"
+  },
+  "capacity_step_cross_fitted": {
+    "all_row_ci95": [
+      0.14205189304872476,
+      0.2859095783373398
+    ],
+    "all_row_gain_s": 0.20226627275360443,
+    "by_fold": {
+      "december": {
+        "A_mean_rd": 290.7306698934324,
+        "B_mean_dd": 474.6581127176954,
+        "ci95": [
+          33.41347609752036,
+          167.18556172110445
+        ],
+        "mse_gain_s2": 106.80322706916944,
+        "rows": 165677,
+        "rows_moved": 100515
+      },
+      "january": {
+        "A_mean_rd": 270.6763665911036,
+        "B_mean_dd": 396.5966171017645,
+        "ci95": [
+          96.17274936964307,
+          199.5098156616922
+        ],
+        "mse_gain_s2": 144.75611608044272,
+        "rows": 153706,
+        "rows_moved": 69499
+      },
+      "july_loo": {
+        "A_mean_rd": 205.2257228455419,
+        "B_mean_dd": 308.017659488402,
+        "ci95": [
+          57.54333127954505,
+          149.33228226363337
+        ],
+        "mse_gain_s2": 102.43378620268182,
+        "rows": 190713,
+        "rows_moved": 87606
+      }
+    },
+    "clean_gain_s": 0.2467974146132974,
+    "december_gain_s": 0.28547496611813017,
+    "every_fold_interval_clear": true,
+    "what": "the leaf count selected on the other two folds and priced on the scored one; on a fold where the out-of-fold selection would not have climbed, the increment is zero there"
+  },
+  "each_rung_over_the_head": {
+    "leaves_127x300_lr050": {
+      "all_row_ci95": [
+        0.0,
+        0.0
+      ],
+      "all_row_gain_s": 0.0,
+      "december": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": 0.0,
+        "tail_passes": true
+      },
+      "january": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": 0.0,
+        "tail_passes": true
+      },
+      "july_loo": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": 0.0,
+        "tail_passes": true
+      }
+    },
+    "leaves_15x600_lr050": {
+      "all_row_ci95": [
+        -1.0229612207194478,
+        -0.6227103633993182
+      ],
+      "all_row_gain_s": -0.7953663865998237,
+      "december": {
+        "ci95": [
+          -652.2426970511596,
+          -499.7948722631669
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": -579.0197105618107,
+        "tail_passes": true
+      },
+      "january": {
+        "ci95": [
+          -488.85931663682004,
+          -323.79255338451395
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": -409.39711265120036,
+        "tail_passes": false
+      },
+      "july_loo": {
+        "ci95": [
+          -600.0025728290035,
+          -459.08951004933743
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": -531.2667180534154,
+        "tail_passes": true
+      }
+    },
+    "leaves_255x300_lr050": {
+      "all_row_ci95": [
+        0.14205189304872476,
+        0.2859095783373398
+      ],
+      "all_row_gain_s": 0.20226627275360443,
+      "december": {
+        "ci95": [
+          33.41347609752036,
+          167.18556172110445
+        ],
+        "clear": true,
+        "mse_gain_s2_per_row": 106.80322706916944,
+        "tail_passes": true
+      },
+      "january": {
+        "ci95": [
+          96.17274936964307,
+          199.5098156616922
+        ],
+        "clear": true,
+        "mse_gain_s2_per_row": 144.75611608044272,
+        "tail_passes": true
+      },
+      "july_loo": {
+        "ci95": [
+          57.54333127954505,
+          149.33228226363337
+        ],
+        "clear": true,
+        "mse_gain_s2_per_row": 102.43378620268182,
+        "tail_passes": true
+      }
+    },
+    "leaves_63x300_lr050": {
+      "all_row_ci95": [
+        -0.4237792668345314,
+        -0.22294939778014403
+      ],
+      "all_row_gain_s": -0.3105898761172057,
+      "december": {
+        "ci95": [
+          -278.2700721678252,
+          -155.86095066751403
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": -215.9141605518006,
+        "tail_passes": true
+      },
+      "january": {
+        "ci95": [
+          -178.92950620825312,
+          -74.80782360686757
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": -131.5957906657237,
+        "tail_passes": true
+      },
+      "july_loo": {
+        "ci95": [
+          -291.0920198236732,
+          -166.14160412511288
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": -229.66365769011387,
+        "tail_passes": true
+      }
+    },
+    "predeclared_31x300_lr050": {
+      "all_row_ci95": [
+        -1.0122007599748841,
+        -0.6236674769400595
+      ],
+      "all_row_gain_s": -0.794476814908819,
+      "december": {
+        "ci95": [
+          -642.7479614513168,
+          -504.2015000288404
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": -570.5846086452187,
+        "tail_passes": true
+      },
+      "january": {
+        "ci95": [
+          -427.81320771614145,
+          -291.86967857433984
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": -366.13502194917015,
+        "tail_passes": true
+      },
+      "july_loo": {
+        "ci95": [
+          -633.0892039037623,
+          -491.82170633970054
+        ],
+        "clear": false,
+        "mse_gain_s2_per_row": -564.6965918289299,
+        "tail_passes": true
+      }
+    }
+  },
+  "guard_on_the_folds": {
+    "all_row_ci95": [
+      0.04409718130436886,
+      0.278175217487027
+    ],
+    "all_row_gain_s": 0.14793892529058894,
+    "by_fold": {
+      "december": {
+        "ci95": [
+          -18.038569347550578,
+          114.70123841880329
+        ],
+        "mse_gain_s2_per_row": 49.15281474386,
+        "rows_held": 320,
+        "share_of_moved_rows_held": 0.0032
+      },
+      "january": {
+        "ci95": [
+          -11.853864828987017,
+          183.22330328259244
+        ],
+        "mse_gain_s2_per_row": 74.80111452776663,
+        "rows_held": 406,
+        "share_of_moved_rows_held": 0.0058
+      },
+      "july_loo": {
+        "ci95": [
+          14.73681078331679,
+          186.33097284945362
+        ],
+        "mse_gain_s2_per_row": 99.52908560606875,
+        "rows_held": 544,
+        "share_of_moved_rows_held": 0.0062
+      }
+    },
+    "every_fold_interval_clear": false,
+    "what": "the guard's own worth: the guarded vector priced as an increment over the UNGUARDED one, on a base of pbase + the unguarded update"
+  },
+  "head": "leaves_127x300_lr050",
+  "held": [
+    "LFPG"
+  ],
+  "ladder": [
+    "leaves_15x600_lr050",
+    "predeclared_31x300_lr050",
+    "leaves_63x300_lr050",
+    "leaves_127x300_lr050",
+    "leaves_255x300_lr050"
+  ],
+  "no_refit": "every vector was saved by capacity.py and guardarm.py on the pinned population; this file only re-prices them",
+  "ordered_by": "the desk, 2026-09-09, after BOARD READING 15",
+  "out_of_fold_selection": {
+    "december": {
+      "candidates": [
+        {
+          "eligible": false,
+          "score_arm_over_v12_s2": 4959.644099991672,
+          "score_increment_s2": -470.3319153523079,
+          "setting": "leaves_15x600_lr050"
+        },
+        {
+          "eligible": false,
+          "score_arm_over_v12_s2": 4965.160525788613,
+          "score_increment_s2": -465.41580688905003,
+          "setting": "predeclared_31x300_lr050"
+        },
+        {
+          "eligible": false,
+          "score_arm_over_v12_s2": 5249.0952188933115,
+          "score_increment_s2": -180.62972417791877,
+          "setting": "leaves_63x300_lr050"
+        },
+        {
+          "eligible": true,
+          "score_arm_over_v12_s2": 5554.197546276879,
+          "score_increment_s2": 123.59495114156226,
+          "setting": "leaves_255x300_lr050"
+        }
+      ],
+      "chosen": "leaves_255x300_lr050",
+      "chosen_under_the_alternative_criterion": "leaves_255x300_lr050",
+      "selected_on": [
+        "july_loo",
+        "january"
+      ],
+      "the_two_criteria_agree": true
+    },
+    "january": {
+      "candidates": [
+        {
+          "eligible": false,
+          "score_arm_over_v12_s2": 5590.20569052837,
+          "score_increment_s2": -555.1432143076131,
+          "setting": "leaves_15x600_lr050"
+        },
+        {
+          "eligible": false,
+          "score_arm_over_v12_s2": 5578.67976596701,
+          "score_increment_s2": -567.6406002370743,
+          "setting": "predeclared_31x300_lr050"
+        },
+        {
+          "eligible": false,
+          "score_arm_over_v12_s2": 5922.203529063954,
+          "score_increment_s2": -222.78890912095721,
+          "setting": "leaves_63x300_lr050"
+        },
+        {
+          "eligible": true,
+          "score_arm_over_v12_s2": 6252.924728253331,
+          "score_increment_s2": 104.61850663592563,
+          "setting": "leaves_255x300_lr050"
+        }
+      ],
+      "chosen": "leaves_255x300_lr050",
+      "chosen_under_the_alternative_criterion": "leaves_255x300_lr050",
+      "selected_on": [
+        "july_loo",
+        "december"
+      ],
+      "the_two_criteria_agree": true
+    },
+    "july_loo": {
+      "candidates": [
+        {
+          "eligible": false,
+          "score_arm_over_v12_s2": 5470.276001785603,
+          "score_increment_s2": -494.20841160650554,
+          "setting": "leaves_15x600_lr050"
+        },
+        {
+          "eligible": false,
+          "score_arm_over_v12_s2": 5496.495742129333,
+          "score_increment_s2": -468.3598152971945,
+          "setting": "predeclared_31x300_lr050"
+        },
+        {
+          "eligible": false,
+          "score_arm_over_v12_s2": 5790.624043405025,
+          "score_increment_s2": -173.75497560876215,
+          "setting": "leaves_63x300_lr050"
+        },
+        {
+          "eligible": true,
+          "score_arm_over_v12_s2": 6092.594821957,
+          "score_increment_s2": 125.77967157480609,
+          "setting": "leaves_255x300_lr050"
+        }
+      ],
+      "chosen": "leaves_255x300_lr050",
+      "chosen_under_the_alternative_criterion": "leaves_255x300_lr050",
+      "selected_on": [
+        "december",
+        "january"
+      ],
+      "the_two_criteria_agree": true
+    }
+  },
+  "selection_premium_s": 0.0,
+  "what": "v16's increment split into its two parts, each priced on the folds and label-free of the board: the tail guard, and the capacity step 127->255 cross-fitted so the leaf count is selected out of fold"
+}

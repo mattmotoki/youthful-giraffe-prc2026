@@ -1,0 +1,82 @@
+{
+  "name": "exp-028-window",
+  "blocks": [
+    "depx"
+  ],
+  "win": 600.0,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "base": "submissions/candidates/exp-026-stack-5.parquet",
+  "base_sha256": "94f18e47a73265a6db66811ededfc3c935fb2a37fac04bf0cd34d45af708a2a1",
+  "n_served_by_block": 344453,
+  "n_served_by_stack5": 388,
+  "measured": {
+    "variant": "all-but-noac",
+    "regimes": "nm_bulk+nm_late+nonm",
+    "july_loo": 284.7219,
+    "december": 205.6534,
+    "january": 218.8166,
+    "gain_july_loo": 0.4811,
+    "gain_december": -0.0416,
+    "gain_january": 0.3137,
+    "clean_board": 257.623,
+    "gain_board": 0.4142,
+    "three_folds": false,
+    "ci_july_loo": "[-0.866, -0.115]",
+    "ci_december": "[-0.636, +0.763]",
+    "ci_january": "[-0.542, +0.140]"
+  },
+  "members": [
+    "T-tailv4",
+    "C2-cat",
+    "L2-hub8725",
+    "D1-winter",
+    "F1-fresh",
+    "V3-allin",
+    "N1-nmtail"
+  ],
+  "variant": "keep-noac",
+  "arm": "300 rounds, 5-seed bag, member columns + the block",
+  "anchor": "blend-5 per-regime hybrid NNLS fitted on all three folds",
+  "unrestricted_rotated_clean": {
+    "july_loo": 284.7219,
+    "december": 205.6534,
+    "january": 218.8166
+  },
+  "unrestricted_clean_board": 257.623,
+  "unrestricted_gain_per_fold": {
+    "july_loo": 0.4811,
+    "december": -0.0416,
+    "january": 0.3137
+  },
+  "unrestricted_three_folds": false,
+  "n": 344841,
+  "n_cols_block": 50,
+  "lightgbm": "4.7.0",
+  "min": 60.0,
+  "median": 954.1426096033417,
+  "p99": 2574.1011329721578,
+  "max": 115306.59901833169,
+  "n_below_floor": 0,
+  "guard_touched_block": 780,
+  "n_noac_on_anchor": 388,
+  "gates_sha256": "7f14aeea2219eef62b918637b015268cafe15c905a2d4072b878f791e9e2dbfd",
+  "member_sha256": {
+    "T-tailv4": "89706c6c3a268726d37f59d5dfe25297ee72acc73bbaec9659d4afcc40c8bfa0",
+    "C2-cat": "52a453481a8bcc967c75c036704bf4d4027b9096819867ec9138324801894c3c",
+    "L2-hub8725": "dd0e8710000ab29b930ec72d8b058b00e6ed86ba3240cad01402c13813527882",
+    "D1-winter": "8865d3d866012d1421a08eee4c24ce9cfe53dbc0e255d8a3ff1894b68c368fd2",
+    "F1-fresh": "e216ab9e0dc7243a55a5ec1f8bba7d4dd8fa5f0108782e42d59344006c8bc5dc",
+    "V3-allin": "199fd5146966e98cae244be62c5bbdebd2951832374c7f920a4c97d5ef8a0fd4",
+    "N1-nmtail": "5feb03d96490d9e7acd7dee59fd94a41a81a45f97b75bb2d016646ac2cf4067b"
+  },
+  "vs_stack5_rms": 26.465547025114592,
+  "vs_stack5_n_over_60s": 13978,
+  "vs_stack5_corr": 0.999133414736273,
+  "wall_s": 37.7,
+  "sha256": "d55b1de9ce8fe7577c8c566c6efc57301d18484242aaa06ce808a111d38dabb0",
+  "candidate": "submissions/candidates/exp-028-window.parquet"
+}

@@ -1,0 +1,44 @@
+{
+ "member": "C2-cat",
+ "weight": 0.037,
+ "synthetic": true,
+ "git_commit": "5717971ceb41ce5173f695c3c1d65df31a496d62",
+ "python": "3.12.13",
+ "versions": {
+  "numpy": "2.0.2",
+  "pandas": "2.3.3",
+  "pyarrow": "24.0.0",
+  "lightgbm": "4.6.0",
+  "catboost": "1.2.10"
+ },
+ "gpu": "Tesla P100-PCIE-16GB, 16384 MiB",
+ "threads": 4,
+ "env_overrides": {
+  "PRC_GPU": "0"
+ },
+ "cpu_count": 4,
+ "mem_total_gb": 31.3,
+ "peak_gpu_mib": 15473,
+ "peak_host_used_gb": 5.57,
+ "steps": [
+  {
+   "label": "member C2-cat",
+   "cmd": "experiments/exp-008-diversity/run.py --submit --kind cat --name C2-d8p --depth 8 --rounds-m6 3625 --rounds-m11 5325",
+   "cwd": "experiments/exp-008-diversity",
+   "rc": 0,
+   "wall_s": 1434.2,
+   "stdout_tail": "[submit] train (2085047, 53) ranking (344841, 53) rounds 5809 loaded in 62s\n0:\tlearn: 449.4289057\ttotal: 6.72s\tremaining: 10h 50m 27s\n200:\tlearn: 324.5089116\ttotal: 50.4s\tremaining: 23m 26s\n400:\tlearn: 317.7766584\ttotal: 1m 32s\tremaining: 20m 44s\n600:\tlearn: 312.9029102\ttotal: 2m 14s\tremaining: 19m 26s\n800:\tlearn: 308.5417720\ttotal: 2m 57s\tremaining: 18m 31s\n1000:\tlearn: 305.0390899\ttotal: 3m 40s\tremaining: 17m 39s\n1200:\tlearn: 301.6766440\ttotal: 4m 23s\tremaining: 16m 49s\n1400:\tlearn: 298.7180248\ttotal: 5m 5s\tremaining: 16m 2s\n1600:\tlearn: 296.1558469\ttotal: 5m 48s\tremaining: 15m 16s\n1800:\tlearn: 293.6384173\ttotal: 6m 32s\tremaining: 14m 32s\n2000:\tlearn: 291.3901863\ttotal: 7m 15s\tremaining: 13m 47s\n2200:\tlearn: 289.1351408\ttotal: 7m 57s\tremaining: 13m 3s\n2400:\tlearn: 286.9686180\ttotal: 8m 41s\tremaining: 12m 19s\n2600:\tlearn: 285.1457262\ttotal: 9m 24s\tremaining: 11m 36s\n2800:\tlearn: 283.3638265\ttotal: 10m 8s\tremaining: 10m 53s\n3000:\tlearn: 281.5038884\ttotal: 10m 52s\tremaining: 10m 10s\n3200:\tlearn: 279.8196647\ttotal: 11m 35s\tremaining: 9m 26s\n3400:\tlearn: 278.3580902\ttotal: 12m 19s\tremaining: 8m 43s\n3600:\tlearn: 276.9366013\ttotal: 13m 3s\tremaining: 8m\n3800:\tlearn: 275.5577716\ttotal: 13m 48s\tremaining: 7m 17s\n4000:\tlearn: 274.2671436\ttotal: 14m 31s\tremaining: 6m 33s\n4200:\tlearn: 272.9537456\ttotal: 15m 15s\tremaining: 5m 50s\n4400:\tlearn: 271.7148102\ttotal: 16m\tremaining: 5m 7s\n4600:\tlearn: 270.4962732\ttotal: 16m 43s\tremaining: 4m 23s\n4800:\tlearn: 269.3776936\ttotal: 17m 28s\tremaining: 3m 40s\n5000:\tlearn: 268.3383306\ttotal: 18m 11s\tremaining: 2m 56s\n5200:\tlearn: 267.3403122\ttotal: 18m 56s\tremaining: 2m 12s\n5400:\tlearn: 266.2895004\ttotal: 19m 40s\tremaining: 1m 29s\n5600:\tlearn: 265.2741474\ttotal: 20m 25s\tremaining: 45.5s\n5800:\tlearn: 264.3251349\ttotal: 21m 9s\tremaining: 1.75s\n5808:\tlearn: 264.2812676\ttotal: 21m 11s\tremaining: 0us\n[threads] declared=4 observed=unknown library=catboost\n[noac] head on 239 rows -> 24 valid rows, 600 rounds\n[submit] seed 7 done at 1431s\n[submit] residual guard [-70050, 79947] touched 0 rows\n[submit] floor at 60 s; 214 raw rows were below it\n[submit] {\"name\": \"C2-d8p\", \"rounds\": 5809, \"seeds\": [7], \"n\": 344841, \"path\": \"artifacts/exp-008/pred/C2-d8p-ranking.parquet\", \"sha256\": \"ba2739aa0210610671630c4efcafb675459e960e692c15f6a028918013509844\", \"seconds\": 1432}\n",
+   "stderr_tail": ""
+  }
+ ],
+ "collected": {
+  "artifacts/exp-008/pred/C2-d8p-ranking.parquet": {
+   "bytes": 8000306,
+   "as": "C2-cat--C2-d8p-ranking.parquet"
+  },
+  "experiments/exp-008-diversity/submit-C2-d8p.json": {
+   "bytes": 237,
+   "as": "C2-cat--submit-C2-d8p.json"
+  }
+ }
+}

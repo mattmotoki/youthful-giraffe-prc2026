@@ -1,0 +1,10 @@
+K2 slice: scales=(600.0, 3600.0)  cols=174  rounds=400 leaves=31  offload_noac=True  head=stack5
+  clean board 258.0372   no-noac 230.0386
+  july_loo   285.203 ->  283.926 (+1.277)   no-noac  246.600 ->  245.119 (+1.481)
+  december   205.612 ->  204.719 (+0.893)   no-noac  200.316 ->  199.399 (+0.917)
+  january    219.130 ->  219.306 (-0.176)   no-noac  207.334 ->  207.520 (-0.186)
+  board 258.0372 -> 257.3178  gain +0.719 s   |  no-noac 230.0386 -> 229.2299  gain +0.809 s
+
+  where the gain lands (share of the board-weighted MSE removed):
+   by regime: nm_bulk +50%  nm_late +33%  nonm +17%  noac +0%
+   by airport: LEBL +30%  LIRF +27%  LTFM +23%  LEMD +19%  EDDM +15%  LSZH +12%  EGLL +7%  EDDF -0%  LFPG -14%  EHAM -20%

@@ -1,0 +1,85 @@
+{
+  "name": "C2-d8p",
+  "folds": {
+    "july_loo": {
+      "rmse": 315.168216223386,
+      "rmse_bulk": 274.3332429838062,
+      "rmse_tail": 2659.619493542465,
+      "rmse_no_nm": 1305.753523371675,
+      "rmse_noac": 4020.000684673688,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "n_noac": 339,
+      "sse_share_tail": 0.24495016083253235,
+      "sse_share_no_nm": 0.35407204805481535,
+      "sse_share_noac": 0.28919236773187396,
+      "bias": -0.2356519188768687,
+      "fold": "july_loo",
+      "rounds": 5325,
+      "seeds": [
+        7
+      ],
+      "seconds": 1476,
+      "oof": "experiments/exp-008-diversity/oof/C2-d8p-july_loo.parquet",
+      "argv": "--kind cat --name C2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 3625 --rounds-m11 5325"
+    },
+    "december": {
+      "rmse": 222.94172242336714,
+      "rmse_bulk": 207.53511875041028,
+      "rmse_tail": 2062.2888179588435,
+      "rmse_no_nm": 765.3988634566064,
+      "rmse_noac": 2251.425951148957,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "n_noac": 89,
+      "sse_share_tail": 0.13480144731484517,
+      "sse_share_no_nm": 0.11688755201045274,
+      "sse_share_noac": 0.054784842298002755,
+      "bias": 4.19650562425181,
+      "fold": "december",
+      "rounds": 5325,
+      "seeds": [
+        7
+      ],
+      "seconds": 1569,
+      "oof": "experiments/exp-008-diversity/oof/C2-d8p-december.parquet",
+      "argv": "--kind cat --name C2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 3625 --rounds-m11 5325"
+    },
+    "january": {
+      "rmse": 348.2537182822039,
+      "rmse_bulk": 216.79864787223804,
+      "rmse_tail": 5930.988578361276,
+      "rmse_no_nm": 2858.7752485852307,
+      "rmse_noac": 3442.606311072663,
+      "n": 153706,
+      "n_tail": 325,
+      "n_no_nm": 1432,
+      "n_noac": 63,
+      "sse_share_tail": 0.6132749016374818,
+      "sse_share_no_nm": 0.6277991158141862,
+      "sse_share_noac": 0.04005280403208473,
+      "bias": 4.78531453228739,
+      "fold": "january",
+      "rounds": 5325,
+      "seeds": [
+        7
+      ],
+      "seconds": 1517,
+      "oof": "experiments/exp-008-diversity/oof/C2-d8p-january.parquet",
+      "argv": "--kind cat --name C2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 3625 --rounds-m11 5325"
+    }
+  },
+  "argv": "--kind cat --name C2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 3625 --rounds-m11 5325",
+  "argv_history": [
+    "--kind cat --name C2-d8p --depth 8 --folds july_loo,december,january --rounds-m6 3625 --rounds-m11 5325"
+  ],
+  "frame": {
+    "version": "v2",
+    "schema": "cf956e1b26b3c11f",
+    "numeric_2025_07": "605fe71f984628d5"
+  },
+  "threads": 16,
+  "gpu": "1"
+}

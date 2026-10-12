@@ -1,0 +1,760 @@
+{
+  "arm": "c_lgb_covmatch@leaves_255x300_lr050+guard995",
+  "head_rebuilds_bit_for_bit": true,
+  "leaves": 255,
+  "member_spread_covmatch": {
+    "december": {
+      "guard_cut_s": 1940.177772328259,
+      "mean_abs_bag_s": 75.29818653555641,
+      "member_disagreement_rms_s": 14.844268899907027,
+      "rows_moved_by_the_bag": 102186
+    },
+    "january": {
+      "guard_cut_s": 1855.256340282004,
+      "mean_abs_bag_s": 73.30429706526874,
+      "member_disagreement_rms_s": 13.017703105161404,
+      "rows_moved_by_the_bag": 69840
+    },
+    "july_loo": {
+      "guard_cut_s": 1834.2676306265398,
+      "mean_abs_bag_s": 81.78687422582927,
+      "member_disagreement_rms_s": 12.734308645191287,
+      "rows_moved_by_the_bag": 88428
+    }
+  },
+  "member_spread_head": {
+    "december": {
+      "guard_cut_s": 1940.177772328259,
+      "mean_abs_bag_s": 74.34078629298554,
+      "member_disagreement_rms_s": 15.275365380849344,
+      "rows_moved_by_the_bag": 102186
+    },
+    "january": {
+      "guard_cut_s": 1855.256340282004,
+      "mean_abs_bag_s": 75.3681022000294,
+      "member_disagreement_rms_s": 13.911760319269712,
+      "rows_moved_by_the_bag": 69840
+    },
+    "july_loo": {
+      "guard_cut_s": 1834.2676306265398,
+      "mean_abs_bag_s": 84.44799729536119,
+      "member_disagreement_rms_s": 12.109640998477337,
+      "rows_moved_by_the_bag": 88428
+    }
+  },
+  "members": {
+    "1": {
+      "refitted_this_run": true,
+      "seconds": 191.6,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5633751316891207,
+          "max": 5.228925939129189,
+          "min": 0.34814485055052324,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "04b5f4356139466741537181bc8548d63c21783d50a65e8fa86baf79a6c0deb6"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.461821972711656,
+          "max": 3.825173701487675,
+          "min": 0.2546822315207621,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "6f7a01c377bd4ecff5b8f085fe0c5033245d22983c29dfa45972d7724b10e7cb"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132708565376363,
+          "max": 3.6127312917903973,
+          "min": 0.24053769556143867,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "f277a91a356fb7ef6f871730f5189e15f59c360bc1472354f9247cd3a3a7dd4b"
+        }
+      }
+    },
+    "2": {
+      "refitted_this_run": true,
+      "seconds": 194.0,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5634053480811386,
+          "max": 5.229007563754067,
+          "min": 0.3481502851642776,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "f1d4aa0ea0fb7811a8e9948d0e75c1b2dada6b7fcbd40cc9528f994e175281bb"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.46183481494425666,
+          "max": 3.825123365179602,
+          "min": 0.2546788801008615,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "bd0f662021e3f1a9898b6f55aa17af0bdf28f5ce4038279cf012e01bf74228ae"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132708125158785,
+          "max": 3.6127071108864004,
+          "min": 0.24053608558315515,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "9cff2eb929f5e3fed887973358ddb9cce6746415d873b46dcff240acaa2fdbf5"
+        }
+      }
+    },
+    "3": {
+      "refitted_this_run": true,
+      "seconds": 192.3,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.563380377153672,
+          "max": 5.228775744003785,
+          "min": 0.3481348504740074,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "bceab4c2f869e6f1b43f6c9246f9bdf1c60db96cab4922638e0fbfbee0aa1809"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.4618334379005117,
+          "max": 3.825131092403039,
+          "min": 0.25467939458377437,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "77c1e12f0a07652cfba7b5f4b383649d95f1b91dda17f07293f04a987fdf749c"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132730971731606,
+          "max": 3.6127659122223035,
+          "min": 0.24054000060940306,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "ad7fc47e398eb2839f75f718622bd83b47e9296d2bda08a36409d7838a27760b"
+        }
+      }
+    },
+    "4": {
+      "refitted_this_run": true,
+      "seconds": 190.4,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5633926820827665,
+          "max": 5.229047347539066,
+          "min": 0.34815293399121533,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "8c4fa334ce9bfa96a4b18233b3ddc8fa52e911ad31c9d8822efb1ca47d55e57b"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.46183464148586006,
+          "max": 3.825177633548565,
+          "min": 0.2546824933196032,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "868f64a15c3880ee782df279a6d382eb91483c550bfb588243287b78dd33bece"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132778251492756,
+          "max": 3.6127432722344683,
+          "min": 0.2405384932261903,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "b01e908fd122ee6e468ec1bafe85688acc8bcd0b64ddb30b32e7ad079688b5f1"
+        }
+      }
+    },
+    "5": {
+      "refitted_this_run": true,
+      "seconds": 190.5,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5633759402074784,
+          "max": 5.228974318437026,
+          "min": 0.3481480716722398,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "d035f2527415288e2c0b78df97c7641a59307fe91511442f2752f192e86f022f"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.4618339446491676,
+          "max": 3.8250929721232065,
+          "min": 0.25467685651395283,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "7613183ff32a65518b21779f1f0f0b9aa57d80ac8d74870bf54aa11f3c7d009d"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132940729195608,
+          "max": 3.61256868665765,
+          "min": 0.24052686921960517,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "2d3fdd73190960844a45976d2af3e7d639b9a12c8621cdba91a3fd88f7910603"
+        }
+      }
+    },
+    "6": {
+      "refitted_this_run": true,
+      "seconds": 192.1,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5633672302966112,
+          "max": 5.229210212192573,
+          "min": 0.348163777612088,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "d2680c2c750f8e70e7f7475823d84daf7c21363bb69c511386898f2485f94270"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.46183604796057665,
+          "max": 3.8250385567785816,
+          "min": 0.25467323350948834,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "bd3ce07a6db0b9e18731dc225d9535c22afe7e7c0651414fed4ccd9672ad6e79"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132866632799429,
+          "max": 3.612595609530886,
+          "min": 0.24052866175975363,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "c3501778669e620c1a20d0bc3811f8eb965974addc315a7939edf8f3e5a7aa69"
+        }
+      }
+    },
+    "7": {
+      "refitted_this_run": true,
+      "seconds": 192.8,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5633805413477312,
+          "max": 5.228995578946625,
+          "min": 0.3481494872090103,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "74395d1fc8765e72db4ce21e3fb0703e1df1899a891799a8084217f2324776f9"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.4618320288926297,
+          "max": 3.8251500930090745,
+          "min": 0.2546806596548857,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "dac99bc940bbe9014e97eb7c118b942e2077ad2b28f68c1dbe73e2efac8de289"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132739886959101,
+          "max": 3.612749490379217,
+          "min": 0.2405389072337895,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "c7f9a50298bfd3ebdddf7b6bde5c4b5b44f5d1dca9ac1eccf410d63eb79e6fb7"
+        }
+      }
+    },
+    "8": {
+      "refitted_this_run": true,
+      "seconds": 191.5,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5634263791641001,
+          "max": 5.228987431066232,
+          "min": 0.3481489447185189,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "e74714c1a96048d9df70a4af7d6866ecad8b0c0477967448a82b8fa431ca00d3"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.46183803141992746,
+          "max": 3.825213902794722,
+          "min": 0.2546849081465542,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "e044c6462ff099584138ea1f2157c6d1ba0a52fcf887360fb00937057caccf79"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132884219552716,
+          "max": 3.612631670784165,
+          "min": 0.24053106273842106,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "69616c42ba74b987d9014e5fbbb5d00daa4856677c40815d11c9c84210be58b7"
+        }
+      }
+    },
+    "9": {
+      "refitted_this_run": true,
+      "seconds": 191.3,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5633976710837495,
+          "max": 5.228953172461487,
+          "min": 0.34814666376121184,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "1518b5158b779d3d2c8d5aea36e25a38b9ca8d62516009564be6a7e32eaf5cc0"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.4618277882197145,
+          "max": 3.825204015985678,
+          "min": 0.25468424987720845,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "1226e8ad455d56e068ba65bbdc62566ec34649d3328d8948d9d968c5973145c8"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132768929184937,
+          "max": 3.6126984639307738,
+          "min": 0.24053550986395214,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "126b28cc7d14f007ee70fba565bd5bee60c1b167a98aacebfefe534738ee9dbd"
+        }
+      }
+    },
+    "10": {
+      "refitted_this_run": true,
+      "seconds": 190.9,
+      "weight_provenance": {
+        "december": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5634029204425473,
+          "max": 5.229024718871728,
+          "min": 0.3481514273617277,
+          "n_weighted_lgb_fits": 6,
+          "rows": 159231,
+          "weight_sha256": "bb329bad9accb171bfb1e625e950ed7632991fc1826e579218c50d474e8089a9"
+        },
+        "january": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.4618420822639112,
+          "max": 3.825083553261116,
+          "min": 0.2546762294007803,
+          "n_weighted_lgb_fits": 6,
+          "rows": 191536,
+          "weight_sha256": "0d503b675d0e937a444b4fab6ade67d921539f525367fe42bcb38c718de73b8a"
+        },
+        "july_loo": {
+          "distinct_weights": 9,
+          "kish_effective_fraction": 0.5132885890518948,
+          "max": 3.6125986996605666,
+          "min": 0.2405288675023379,
+          "n_weighted_lgb_fits": 6,
+          "rows": 172783,
+          "weight_sha256": "2b0f1f69240c58671fdc325213657b3382e9399caff17c839ee3d665370fc814"
+        }
+      }
+    }
+  },
+  "pre_registration": {
+    "band_s": [
+      -0.05,
+      0.2
+    ],
+    "every_fold_clear_expected": false,
+    "expected_below_the_upload_floor_of_0_1_s": true,
+    "expected_interval_half_width_s": 0.03,
+    "fold_expected_to_fail": "january",
+    "kish_effective_fraction_of_the_map": 0.563,
+    "point_estimate_board_s": 0.05,
+    "reading_the_gate_applies_to": "in_fold",
+    "registered_in": "RESULTS.md section 47.9, commit c86ae65, before this file was written",
+    "ruled_by_the_desk": "rule (a): the weights are row counts from ranking-side metadata, no fold gain enters the form and no alternative was picked on a fold reading, so there is no section 33.3 selection premium to price. Gate = every_fold_interval_clear on the IN-FOLD increment over v8's head; the cross-fitted figure reported beside it",
+    "the_risk": "the composition being matched is not stationary -- coverage at LIRF moves 87.0 % -> 0.0 % across two fold months and 0.1 % -> 51.5 % across the two ranking months, so an arm that wins here may be winning on a composition that has already changed",
+    "weight_extremes": {
+      "max": 5.23,
+      "min": 0.35
+    },
+    "why_small": "the per-airport amplitude in arm_lgb is already free and a composition weight is constant within an airport, so it cannot move it: only the shared tree changes. And section 44 measured 511 leaves over 255 at +0.01738 [-0.01443, +0.04283] cross-fitted, so capacity is near saturated and losing 44 % of the effective sample should not buy anything"
+  },
+  "prices": {
+    "cross_fitted_beside_it": {
+      "cross_fitted": {
+        "all_row_ci95": [
+          0.0,
+          0.0
+        ],
+        "all_row_gain_s": 0.0,
+        "by_fold": {
+          "december": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 165677,
+            "rows_moved": 0
+          },
+          "january": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 153706,
+            "rows_moved": 0
+          },
+          "july_loo": {
+            "A_mean_rd": 0.0,
+            "B_mean_dd": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mse_gain_s2": 0.0,
+            "rows": 190713,
+            "rows_moved": 0
+          }
+        },
+        "clean_gain_s": 0.0,
+        "every_fold_interval_clear": false
+      },
+      "in_fold": {
+        "all_row_ci95": [
+          -0.3414235500853273,
+          -0.1893568666708277
+        ],
+        "all_row_gain_s": -0.25161590549652146,
+        "clean_gain_s": -0.30727147312623515,
+        "every_fold_interval_clear": false
+      },
+      "label": "the same increment, cross-fitted, reported beside it",
+      "out_of_fold_selection": {
+        "december": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "january": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -102.7196389562055,
+              "tail_passes": true
+            },
+            "july_loo": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -188.4477775062098,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "july_loo",
+            "january"
+          ]
+        },
+        "january": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "december": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -103.18811821766668,
+              "tail_passes": true
+            },
+            "july_loo": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -188.4477775062098,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "july_loo",
+            "december"
+          ]
+        },
+        "july_loo": {
+          "chosen": "leaves_255 (the head)",
+          "eligible": false,
+          "evidence_on_the_selection_folds": {
+            "december": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -103.18811821766668,
+              "tail_passes": true
+            },
+            "january": {
+              "interval_clear": false,
+              "mse_gain_s2_per_row": -102.7196389562055,
+              "tail_passes": true
+            }
+          },
+          "selected_on": [
+            "december",
+            "january"
+          ]
+        }
+      },
+      "rule": "crossfit.py: the rung is taken on a fold only if, on both other folds, its increment interval is clear of zero and its registered whole-update tail clause passes",
+      "selection_premium_s": -0.25161590549652146
+    },
+    "in_fold_over_v8_head": {
+      "board_all_row": {
+        "arm": 299.15606774774875,
+        "base": 298.90445184225223,
+        "gain_s": -0.25161590549652146,
+        "interval": {
+          "ci95": [
+            -0.3414235500853273,
+            -0.1893568666708277
+          ],
+          "clean": false,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.2569523270605122,
+          "share_of_draws_positive": 0.0
+        }
+      },
+      "board_clean": {
+        "arm": 245.02200828711236,
+        "base": 244.71473681398612,
+        "gain_s": -0.30727147312623515,
+        "interval": {
+          "ci95": [
+            -0.37963112862081305,
+            -0.2358053309229291
+          ],
+          "clean": true,
+          "draws": 2000,
+          "gain_s_bootstrap_mean": -0.30872390935571364,
+          "share_of_draws_positive": 0.0
+        }
+      },
+      "by_fold": {
+        "december": {
+          "A_mean_rd": 62.53507317671254,
+          "B_mean_dd": 228.25826457109173,
+          "ci95": [
+            -171.88052153698447,
+            -38.49107142887121
+          ],
+          "mse_gain_s2": -103.18811821766668,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 68.1555299725083,
+          "B_mean_dd": 239.0306989012221,
+          "ci95": [
+            -154.0020199531133,
+            -52.7563659369528
+          ],
+          "mse_gain_s2": -102.7196389562055,
+          "rows": 153706,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 11.48071687254764,
+          "B_mean_dd": 211.4092112513051,
+          "ci95": [
+            -235.7724556250125,
+            -139.6861236689745
+          ],
+          "mse_gain_s2": -188.4477775062098,
+          "rows": 190713,
+          "rows_moved": 88423
+        }
+      },
+      "by_fold_clean": {
+        "december": {
+          "A_mean_rd": 62.53507317671254,
+          "B_mean_dd": 228.25826457109173,
+          "ci95": [
+            -170.03753002679773,
+            -43.6322841640388
+          ],
+          "mse_gain_s2": -103.18811821766668,
+          "rows": 165677,
+          "rows_moved": 102186
+        },
+        "january": {
+          "A_mean_rd": 68.15641681383936,
+          "B_mean_dd": 239.03380917420006,
+          "ci95": [
+            -153.4422508788694,
+            -52.65185789338272
+          ],
+          "mse_gain_s2": -102.72097554652139,
+          "rows": 153704,
+          "rows_moved": 69839
+        },
+        "july_loo": {
+          "A_mean_rd": 11.48071687254764,
+          "B_mean_dd": 211.4092112513051,
+          "ci95": [
+            -237.0463443466569,
+            -139.86587449819632
+          ],
+          "mse_gain_s2": -188.4477775062098,
+          "rows": 190713,
+          "rows_moved": 88423
+        }
+      },
+      "every_fold_interval_clear": false,
+      "every_moving_fold_interval_clear": false,
+      "folds_with_no_moved_row": [],
+      "label": "c_lgb_covmatch as an increment over v8's head",
+      "rows_moved": {
+        "december": 102186,
+        "january": 69839,
+        "july_loo": 88423
+      },
+      "tail_clause_on_the_increment": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 5112.391715608689,
+          "passes_the_clause": true,
+          "rmse_arm": 1750.4559776667877,
+          "rmse_base": 1751.915671904615,
+          "rmse_gain_s": 1.459694237827307,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": -0.07804996546825403
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": -622.563150138625,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.848444378202,
+          "rmse_base": 5980.796397761006,
+          "rmse_gain_s": -0.05204661719562864,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.012815113794427296
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 4523.544715528811,
+          "passes_the_clause": true,
+          "rmse_arm": 2385.3373573475033,
+          "rmse_base": 2386.285367065955,
+          "rmse_gain_s": 0.9480097184518854,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": -0.08256793237505494
+        }
+      },
+      "tail_clause_on_the_whole_update": {
+        "december": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 82673.6219672116,
+          "passes_the_clause": true,
+          "rmse_arm": 1750.4559776667877,
+          "rmse_base": 1773.913682149332,
+          "rmse_gain_s": 23.457704482544386,
+          "rows": 261,
+          "rows_moved": 38,
+          "share_of_the_gain": 0.018511899174420515
+        },
+        "january": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 39421.616648792384,
+          "passes_the_clause": true,
+          "rmse_arm": 5980.848444378202,
+          "rmse_base": 5984.1431910733845,
+          "rmse_gain_s": 3.2947466951827664,
+          "rows": 325,
+          "rows_moved": 32,
+          "share_of_the_gain": 0.014854439461741628
+        },
+        "july_loo": {
+          "clause_s": 1.0,
+          "mse_gain_s2_per_row": 49907.58706277774,
+          "passes_the_clause": true,
+          "rmse_arm": 2385.3373573475033,
+          "rmse_base": 2395.775844151608,
+          "rmse_gain_s": 10.438486804104741,
+          "rows": 656,
+          "rows_moved": 87,
+          "share_of_the_gain": 0.02940064535557002
+        }
+      }
+    }
+  },
+  "seconds": 1920.8,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "vector": "experiments/exp-046-surfacefit/work/d-covmatch10-255-free.npz",
+  "verdict": {
+    "above_the_upload_floor_0_1_s": false,
+    "every_fold_interval_clear": false,
+    "fold_expected_to_fail_was_right": true,
+    "fold_that_failed": [
+      "july_loo",
+      "december",
+      "january"
+    ],
+    "folds_clear": {
+      "december": false,
+      "january": false,
+      "july_loo": false
+    },
+    "increment_board_s": -0.25161590549652146,
+    "increment_ci95": [
+      -0.3414235500853273,
+      -0.1893568666708277
+    ],
+    "inside_the_registered_band": false,
+    "interval_half_width_s": 0.0760333417072498,
+    "reading_the_gate_applies_to": "in_fold",
+    "the_arm_passes_its_gate": false,
+    "the_registration_was_right": false
+  },
+  "weights": {
+    "airports_not_named_get_weight": 1.0,
+    "kish_effective_fraction_of_the_map": 0.5625798274180773,
+    "map": {
+      "EDDF": 0.5011379484264553,
+      "EDDM": 1.2229502801487784,
+      "EGLL": 2.6304647167579973,
+      "EHAM": 0.7401090081592396,
+      "LEBL": 0.8598047946842787,
+      "LEMD": 5.230711651309363,
+      "LFPG": 3.4089171347573575,
+      "LIRF": 0.3482637442788587,
+      "LSZH": 0.8708309342462964
+    },
+    "map_sha256": "7f0b1bdf5c356d879f4f3d3e926bb63cd688e96b0f4f2627a88c068e6247a3ba",
+    "max": 5.230711651309363,
+    "min": 0.3482637442788587,
+    "source": "experiments/exp-046-surfacefit/analysis/coverage.json"
+  },
+  "what": "`c_lgb_covmatch` -- the composition-matched head, pre-registered in RESULTS section 47.9."
+}

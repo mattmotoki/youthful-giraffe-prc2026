@@ -1,0 +1,1095 @@
+{
+ "what": "exp-047 \u00a77bi: the harvest-extension census.  A census, no bars, no fit, no spend.",
+ "no_spend": "no download of any kind was made; every input was already on disk.  artifacts/exp-045/summaries holds 411 MB and 427 airport-days per complete airport.",
+ "1_the_source": {
+  "repos": [
+   "adsblol/globe_history_2025",
+   "adsblol/globe_history_2026"
+  ],
+  "days_published": 427,
+  "median_bytes_per_day": 3210178560,
+  "median_gb_per_day": 3.21,
+  "the_finding": "the download stage is DONE: exp-045 harvested all fourteen months, analysis/missing.json is empty, and the summaries are local.  A harvest EXTENSION is not a download programme."
+ },
+ "2_the_coverage": {
+  "source": "exp-045-harvest/analysis/receipt.json, measured on all fourteen months",
+  "clock_over_receipt_used": 0.928,
+  "no_sample_taken": "the desk allowed a one-day sample per month; none was needed, the receipts already carry every airport-day"
+ },
+ "3_the_pipeline_cost": {
+  "download": "0 -- already held",
+  "block_build_measured_s": {
+   "2025-12": 20.0,
+   "2025-01": 14.7,
+   "2025-07": 18.4
+  },
+  "block_build_note": "this lane's own in-memory build, 2 threads, from logs/gbm-class.log and logs/maybe-reprice.log",
+  "what_a_new_FOLD_month_actually_needs": "base.load() needs the v10 panel, the stack-5 OOF vector and the v12 vectors on the month.  None exists for a non-fold month, so a new fold month costs an OUT-OF-FOLD REFIT of the base head, which is another lane's compute and dwarfs the block build.",
+  "what_a_new_FITTING_month_needs": "nothing but the block: arms fit on r12 of the ROTATION folds, so a month can enter as fitting data only if it carries p12 too.  A month with no base prediction can still widen the matcher's prefix frame and the neighbour families, which need no label and no head."
+ },
+ "4_the_table": {
+  "2025-01": {
+   "is_a_fold_month_already": true,
+   "is_winter": true,
+   "days_in_the_month": 31,
+   "source_days_published": 31,
+   "source_bytes": 66401136640,
+   "source_bytes_gb": 66.4,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 99,
+   "departures": 153706,
+   "receipt_rate_month": 0.48,
+   "writable_estimate": 68464,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 10300,
+   "by_airport": {
+    "EDDF": {
+     "departures": 15496,
+     "receipt_rate": 0.8125,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 11684
+    },
+    "EDDM": {
+     "departures": 11266,
+     "receipt_rate": 0.9714,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 10156
+    },
+    "EGLL": {
+     "departures": 19420,
+     "receipt_rate": 0.5713,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 10296
+    },
+    "EHAM": {
+     "departures": 18460,
+     "receipt_rate": 0.9804,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 16795
+    },
+    "LEBL": {
+     "departures": 12234,
+     "receipt_rate": 0.9774,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 11097
+    },
+    "LEMD": {
+     "departures": 16510,
+     "receipt_rate": 0.0001,
+     "summary_days": 3,
+     "summary_days_missing": 28,
+     "writable_estimate": 2
+    },
+    "LFPG": {
+     "departures": 17900,
+     "receipt_rate": 0.0001,
+     "summary_days": 22,
+     "summary_days_missing": 9,
+     "writable_estimate": 2
+    },
+    "LIRF": {
+     "departures": 11317,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 31,
+     "writable_estimate": 0
+    },
+    "LSZH": {
+     "departures": 9735,
+     "receipt_rate": 0.9333,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 8432
+    },
+    "LTFM": {
+     "departures": 21368,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 31,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-02": {
+   "is_a_fold_month_already": false,
+   "is_winter": true,
+   "days_in_the_month": 28,
+   "source_days_published": 28,
+   "source_bytes": 65446922240,
+   "source_bytes_gb": 65.4,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 84,
+   "departures": 143731,
+   "receipt_rate_month": 0.4994,
+   "writable_estimate": 66606,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 9897,
+   "by_airport": {
+    "EDDF": {
+     "departures": 15099,
+     "receipt_rate": 0.9051,
+     "summary_days": 28,
+     "summary_days_missing": 0,
+     "writable_estimate": 12682
+    },
+    "EDDM": {
+     "departures": 10381,
+     "receipt_rate": 0.9028,
+     "summary_days": 28,
+     "summary_days_missing": 0,
+     "writable_estimate": 8697
+    },
+    "EGLL": {
+     "departures": 17956,
+     "receipt_rate": 0.5938,
+     "summary_days": 28,
+     "summary_days_missing": 0,
+     "writable_estimate": 9895
+    },
+    "EHAM": {
+     "departures": 17852,
+     "receipt_rate": 0.9823,
+     "summary_days": 28,
+     "summary_days_missing": 0,
+     "writable_estimate": 16273
+    },
+    "LEBL": {
+     "departures": 12169,
+     "receipt_rate": 0.9853,
+     "summary_days": 28,
+     "summary_days_missing": 0,
+     "writable_estimate": 11127
+    },
+    "LEMD": {
+     "departures": 15390,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 28,
+     "writable_estimate": 0
+    },
+    "LFPG": {
+     "departures": 16806,
+     "receipt_rate": 0.0001,
+     "summary_days": 28,
+     "summary_days_missing": 0,
+     "writable_estimate": 2
+    },
+    "LIRF": {
+     "departures": 10703,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 28,
+     "writable_estimate": 0
+    },
+    "LSZH": {
+     "departures": 9048,
+     "receipt_rate": 0.9444,
+     "summary_days": 28,
+     "summary_days_missing": 0,
+     "writable_estimate": 7930
+    },
+    "LTFM": {
+     "departures": 18327,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 28,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-03": {
+   "is_a_fold_month_already": false,
+   "is_winter": true,
+   "days_in_the_month": 31,
+   "source_days_published": 31,
+   "source_bytes": 78359787520,
+   "source_bytes_gb": 78.4,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 72,
+   "departures": 164450,
+   "receipt_rate_month": 0.5543,
+   "writable_estimate": 84586,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 18714,
+   "by_airport": {
+    "EDDF": {
+     "departures": 17636,
+     "receipt_rate": 0.9142,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 14962
+    },
+    "EDDM": {
+     "departures": 12513,
+     "receipt_rate": 0.9041,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 10498
+    },
+    "EGLL": {
+     "departures": 19251,
+     "receipt_rate": 0.3696,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 6603
+    },
+    "EHAM": {
+     "departures": 20224,
+     "receipt_rate": 0.9805,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 18402
+    },
+    "LEBL": {
+     "departures": 14147,
+     "receipt_rate": 0.9844,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 12924
+    },
+    "LEMD": {
+     "departures": 17546,
+     "receipt_rate": 0.7438,
+     "summary_days": 28,
+     "summary_days_missing": 3,
+     "writable_estimate": 12111
+    },
+    "LFPG": {
+     "departures": 19341,
+     "receipt_rate": 0.0,
+     "summary_days": 23,
+     "summary_days_missing": 8,
+     "writable_estimate": 0
+    },
+    "LIRF": {
+     "departures": 12544,
+     "receipt_rate": 0.0,
+     "summary_days": 1,
+     "summary_days_missing": 30,
+     "writable_estimate": 0
+    },
+    "LSZH": {
+     "departures": 10449,
+     "receipt_rate": 0.937,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 9086
+    },
+    "LTFM": {
+     "departures": 20799,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 31,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-04": {
+   "is_a_fold_month_already": false,
+   "is_winter": false,
+   "days_in_the_month": 30,
+   "source_days_published": 30,
+   "source_bytes": 82214543360,
+   "source_bytes_gb": 82.2,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 69,
+   "departures": 175288,
+   "receipt_rate_month": 0.5193,
+   "writable_estimate": 84477,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 0,
+   "by_airport": {
+    "EDDF": {
+     "departures": 19583,
+     "receipt_rate": 0.9064,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 16472
+    },
+    "EDDM": {
+     "departures": 14326,
+     "receipt_rate": 0.8402,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 11170
+    },
+    "EGLL": {
+     "departures": 20229,
+     "receipt_rate": 0.0868,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 1629
+    },
+    "EHAM": {
+     "departures": 20935,
+     "receipt_rate": 0.8237,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 16003
+    },
+    "LEBL": {
+     "departures": 15374,
+     "receipt_rate": 0.984,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 14039
+    },
+    "LEMD": {
+     "departures": 17348,
+     "receipt_rate": 0.9569,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 15405
+    },
+    "LFPG": {
+     "departures": 20002,
+     "receipt_rate": 0.0,
+     "summary_days": 21,
+     "summary_days_missing": 9,
+     "writable_estimate": 0
+    },
+    "LIRF": {
+     "departures": 14028,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 30,
+     "writable_estimate": 0
+    },
+    "LSZH": {
+     "departures": 11162,
+     "receipt_rate": 0.9421,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 9759
+    },
+    "LTFM": {
+     "departures": 22301,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 30,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-05": {
+   "is_a_fold_month_already": false,
+   "is_winter": false,
+   "days_in_the_month": 31,
+   "source_days_published": 31,
+   "source_bytes": 96720547840,
+   "source_bytes_gb": 96.7,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 72,
+   "departures": 185202,
+   "receipt_rate_month": 0.5693,
+   "writable_estimate": 97848,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 0,
+   "by_airport": {
+    "EDDF": {
+     "departures": 21130,
+     "receipt_rate": 0.8864,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 17381
+    },
+    "EDDM": {
+     "departures": 15798,
+     "receipt_rate": 0.9333,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 13683
+    },
+    "EGLL": {
+     "departures": 20791,
+     "receipt_rate": 0.0869,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 1677
+    },
+    "EHAM": {
+     "departures": 22173,
+     "receipt_rate": 0.9843,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 20253
+    },
+    "LEBL": {
+     "departures": 16507,
+     "receipt_rate": 0.9866,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 15113
+    },
+    "LEMD": {
+     "departures": 18180,
+     "receipt_rate": 0.9785,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 16508
+    },
+    "LFPG": {
+     "departures": 20908,
+     "receipt_rate": 0.0,
+     "summary_days": 12,
+     "summary_days_missing": 19,
+     "writable_estimate": 0
+    },
+    "LIRF": {
+     "departures": 14541,
+     "receipt_rate": 0.2051,
+     "summary_days": 8,
+     "summary_days_missing": 23,
+     "writable_estimate": 2768
+    },
+    "LSZH": {
+     "departures": 12040,
+     "receipt_rate": 0.9366,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 10465
+    },
+    "LTFM": {
+     "departures": 23134,
+     "receipt_rate": 0.0,
+     "summary_days": 1,
+     "summary_days_missing": 30,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-06": {
+   "is_a_fold_month_already": false,
+   "is_winter": false,
+   "days_in_the_month": 30,
+   "source_days_published": 30,
+   "source_bytes": 97647175680,
+   "source_bytes_gb": 97.6,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 46,
+   "departures": 183142,
+   "receipt_rate_month": 0.5626,
+   "writable_estimate": 95609,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 0,
+   "by_airport": {
+    "EDDF": {
+     "departures": 20706,
+     "receipt_rate": 0.8238,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 15829
+    },
+    "EDDM": {
+     "departures": 15661,
+     "receipt_rate": 0.6466,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 9397
+    },
+    "EGLL": {
+     "departures": 20063,
+     "receipt_rate": 0.1205,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 2244
+    },
+    "EHAM": {
+     "departures": 21257,
+     "receipt_rate": 0.9424,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 18590
+    },
+    "LEBL": {
+     "departures": 16315,
+     "receipt_rate": 0.9435,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 14285
+    },
+    "LEMD": {
+     "departures": 17992,
+     "receipt_rate": 0.9397,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 15690
+    },
+    "LFPG": {
+     "departures": 20887,
+     "receipt_rate": 0.0145,
+     "summary_days": 13,
+     "summary_days_missing": 17,
+     "writable_estimate": 281
+    },
+    "LIRF": {
+     "departures": 14696,
+     "receipt_rate": 0.6917,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 9433
+    },
+    "LSZH": {
+     "departures": 12083,
+     "receipt_rate": 0.8793,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 9860
+    },
+    "LTFM": {
+     "departures": 23482,
+     "receipt_rate": 0.0,
+     "summary_days": 1,
+     "summary_days_missing": 29,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-07": {
+   "is_a_fold_month_already": true,
+   "is_winter": false,
+   "days_in_the_month": 31,
+   "source_days_published": 31,
+   "source_bytes": 108569825280,
+   "source_bytes_gb": 108.6,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 32,
+   "departures": 190713,
+   "receipt_rate_month": 0.4961,
+   "writable_estimate": 87811,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 0,
+   "by_airport": {
+    "EDDF": {
+     "departures": 21334,
+     "receipt_rate": 0.829,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 16413
+    },
+    "EDDM": {
+     "departures": 15825,
+     "receipt_rate": 0.3685,
+     "summary_days": 30,
+     "summary_days_missing": 1,
+     "writable_estimate": 5412
+    },
+    "EGLL": {
+     "departures": 20790,
+     "receipt_rate": 0.1506,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 2906
+    },
+    "EHAM": {
+     "departures": 22489,
+     "receipt_rate": 0.9618,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 20073
+    },
+    "LEBL": {
+     "departures": 16752,
+     "receipt_rate": 0.8921,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 13868
+    },
+    "LEMD": {
+     "departures": 18818,
+     "receipt_rate": 0.2883,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 5035
+    },
+    "LFPG": {
+     "departures": 21712,
+     "receipt_rate": 0.0476,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 959
+    },
+    "LIRF": {
+     "departures": 15211,
+     "receipt_rate": 0.906,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 12789
+    },
+    "LSZH": {
+     "departures": 12611,
+     "receipt_rate": 0.8849,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 10356
+    },
+    "LTFM": {
+     "departures": 25171,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 31,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-08": {
+   "is_a_fold_month_already": false,
+   "is_winter": false,
+   "days_in_the_month": 31,
+   "source_days_published": 31,
+   "source_bytes": 108684810240,
+   "source_bytes_gb": 108.7,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 32,
+   "departures": 191181,
+   "receipt_rate_month": 0.5316,
+   "writable_estimate": 94320,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 0,
+   "by_airport": {
+    "EDDF": {
+     "departures": 21468,
+     "receipt_rate": 0.7992,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 15922
+    },
+    "EDDM": {
+     "departures": 15562,
+     "receipt_rate": 0.8208,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 11854
+    },
+    "EGLL": {
+     "departures": 20828,
+     "receipt_rate": 0.2087,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 4034
+    },
+    "EHAM": {
+     "departures": 22621,
+     "receipt_rate": 0.9644,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 20245
+    },
+    "LEBL": {
+     "departures": 16596,
+     "receipt_rate": 0.9444,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 14545
+    },
+    "LEMD": {
+     "departures": 18490,
+     "receipt_rate": 0.2711,
+     "summary_days": 30,
+     "summary_days_missing": 1,
+     "writable_estimate": 4652
+    },
+    "LFPG": {
+     "departures": 22081,
+     "receipt_rate": 0.0402,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 824
+    },
+    "LIRF": {
+     "departures": 15459,
+     "receipt_rate": 0.827,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 11864
+    },
+    "LSZH": {
+     "departures": 12636,
+     "receipt_rate": 0.8852,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 10380
+    },
+    "LTFM": {
+     "departures": 25440,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 31,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-09": {
+   "is_a_fold_month_already": false,
+   "is_winter": false,
+   "days_in_the_month": 30,
+   "source_days_published": 30,
+   "source_bytes": 104798730240,
+   "source_bytes_gb": 104.8,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 30,
+   "departures": 183951,
+   "receipt_rate_month": 0.5553,
+   "writable_estimate": 94789,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 0,
+   "by_airport": {
+    "EDDF": {
+     "departures": 21004,
+     "receipt_rate": 0.8929,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 17404
+    },
+    "EDDM": {
+     "departures": 15936,
+     "receipt_rate": 0.8606,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 12727
+    },
+    "EGLL": {
+     "departures": 20138,
+     "receipt_rate": 0.2207,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 4124
+    },
+    "EHAM": {
+     "departures": 21466,
+     "receipt_rate": 0.9574,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 19072
+    },
+    "LEBL": {
+     "departures": 16144,
+     "receipt_rate": 0.9018,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 13510
+    },
+    "LEMD": {
+     "departures": 17672,
+     "receipt_rate": 0.8778,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 14396
+    },
+    "LFPG": {
+     "departures": 20682,
+     "receipt_rate": 0.0522,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 1002
+    },
+    "LIRF": {
+     "departures": 14667,
+     "receipt_rate": 0.1837,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 2500
+    },
+    "LSZH": {
+     "departures": 12178,
+     "receipt_rate": 0.8896,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 10054
+    },
+    "LTFM": {
+     "departures": 24064,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 30,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-10": {
+   "is_a_fold_month_already": false,
+   "is_winter": false,
+   "days_in_the_month": 31,
+   "source_days_published": 31,
+   "source_bytes": 106809866752,
+   "source_bytes_gb": 106.8,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 31,
+   "departures": 185674,
+   "receipt_rate_month": 0.588,
+   "writable_estimate": 101318,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 0,
+   "by_airport": {
+    "EDDF": {
+     "departures": 21239,
+     "receipt_rate": 0.8067,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 15900
+    },
+    "EDDM": {
+     "departures": 15469,
+     "receipt_rate": 0.938,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 13465
+    },
+    "EGLL": {
+     "departures": 20657,
+     "receipt_rate": 0.2784,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 5337
+    },
+    "EHAM": {
+     "departures": 21784,
+     "receipt_rate": 0.9563,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 19332
+    },
+    "LEBL": {
+     "departures": 16300,
+     "receipt_rate": 0.9154,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 13847
+    },
+    "LEMD": {
+     "departures": 18892,
+     "receipt_rate": 0.9376,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 16438
+    },
+    "LFPG": {
+     "departures": 20809,
+     "receipt_rate": 0.0865,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 1670
+    },
+    "LIRF": {
+     "departures": 14142,
+     "receipt_rate": 0.3816,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 5008
+    },
+    "LSZH": {
+     "departures": 12302,
+     "receipt_rate": 0.9041,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 10321
+    },
+    "LTFM": {
+     "departures": 24080,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 31,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-11": {
+   "is_a_fold_month_already": false,
+   "is_winter": true,
+   "days_in_the_month": 30,
+   "source_days_published": 30,
+   "source_bytes": 95655873536,
+   "source_bytes_gb": 95.7,
+   "source_repos": [
+    "adsblol/globe_history_2025"
+   ],
+   "summary_days_missing_total": 30,
+   "departures": 162332,
+   "receipt_rate_month": 0.6466,
+   "writable_estimate": 97407,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 32740,
+   "by_airport": {
+    "EDDF": {
+     "departures": 18122,
+     "receipt_rate": 0.9354,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 15731
+    },
+    "EDDM": {
+     "departures": 12562,
+     "receipt_rate": 0.9738,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 11352
+    },
+    "EGLL": {
+     "departures": 19423,
+     "receipt_rate": 0.5251,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 9465
+    },
+    "EHAM": {
+     "departures": 19232,
+     "receipt_rate": 0.9675,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 17267
+    },
+    "LEBL": {
+     "departures": 13332,
+     "receipt_rate": 0.9467,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 11713
+    },
+    "LEMD": {
+     "departures": 17419,
+     "receipt_rate": 0.9501,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 15358
+    },
+    "LFPG": {
+     "departures": 18646,
+     "receipt_rate": 0.2104,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 3641
+    },
+    "LIRF": {
+     "departures": 11328,
+     "receipt_rate": 0.4068,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 4276
+    },
+    "LSZH": {
+     "departures": 10078,
+     "receipt_rate": 0.92,
+     "summary_days": 30,
+     "summary_days_missing": 0,
+     "writable_estimate": 8604
+    },
+    "LTFM": {
+     "departures": 22190,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 30,
+     "writable_estimate": 0
+    }
+   }
+  },
+  "2025-12": {
+   "is_a_fold_month_already": true,
+   "is_winter": true,
+   "days_in_the_month": 31,
+   "source_days_published": 31,
+   "source_bytes": 95632472576,
+   "source_bytes_gb": 95.6,
+   "source_repos": [
+    "adsblol/globe_history_2025",
+    "adsblol/globe_history_2026"
+   ],
+   "summary_days_missing_total": 31,
+   "departures": 165677,
+   "receipt_rate_month": 0.6521,
+   "writable_estimate": 100260,
+   "winter_writable_estimate_LIRF_EGLL_LEMD_LFPG": 35363,
+   "by_airport": {
+    "EDDF": {
+     "departures": 17324,
+     "receipt_rate": 0.9259,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 14885
+    },
+    "EDDM": {
+     "departures": 12035,
+     "receipt_rate": 0.9713,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 10848
+    },
+    "EGLL": {
+     "departures": 20000,
+     "receipt_rate": 0.5701,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 10581
+    },
+    "EHAM": {
+     "departures": 19458,
+     "receipt_rate": 0.9653,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 17430
+    },
+    "LEBL": {
+     "departures": 13835,
+     "receipt_rate": 0.9589,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 12311
+    },
+    "LEMD": {
+     "departures": 17985,
+     "receipt_rate": 0.9646,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 16099
+    },
+    "LFPG": {
+     "departures": 19778,
+     "receipt_rate": 0.0923,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 1694
+    },
+    "LIRF": {
+     "departures": 12068,
+     "receipt_rate": 0.6241,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 6989
+    },
+    "LSZH": {
+     "departures": 10585,
+     "receipt_rate": 0.9593,
+     "summary_days": 31,
+     "summary_days_missing": 0,
+     "writable_estimate": 9423
+    },
+    "LTFM": {
+     "departures": 22609,
+     "receipt_rate": 0.0,
+     "summary_days": 0,
+     "summary_days_missing": 31,
+     "writable_estimate": 0
+    }
+   }
+  }
+ },
+ "5_the_total_over_the_nine_non_fold_months": {
+  "writable_estimate": 816960,
+  "winter_writable_estimate": 61351,
+  "source_bytes": 836338257408,
+  "missing_summary_days": 466
+ }
+}

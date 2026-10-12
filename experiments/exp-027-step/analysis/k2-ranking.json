@@ -1,0 +1,20 @@
+{
+  "source": "experiments/exp-027-step/oof/k2rank-submission.parquet",
+  "out": "experiments/exp-027-step/candidates/k2-window-ranking.parquet",
+  "sha256": "3755703a92c0aa3a5e219e8365ad3b88d30d0883d53eec3fb915988d34a916e8",
+  "n": 344841,
+  "mean": 1039.5304259642153,
+  "median": 961.4633523512268,
+  "min": 30.0,
+  "max": 111562.31261218752,
+  "n_above_3600": 877,
+  "n_below_floor": 66,
+  "floor": 60.0,
+  "kernel": {
+    "kernel": "experiments/exp-027-step/kernels/f1-window-rank/prc-k2-rank.py",
+    "kernel_sha256": "076fe209a2e9c36989aaba3036efe4bf2a5b529bddf4505ce6215a35430c33a5",
+    "log": "experiments/exp-027-step/logs/prc-k2-rank.log",
+    "log_sha256": "92e5faa1b3bfe9030f053754f39f374d4f02c6f7b78fe8d796b26f8ee12da4d2"
+  },
+  "source_note": "the kernel's own /kaggle/working/submission.parquet, pulled by code/pull_when_done.sh; the pulled copy is not kept, because the validated column in candidates/ is the same bytes reindexed onto the template and is committed"
+}

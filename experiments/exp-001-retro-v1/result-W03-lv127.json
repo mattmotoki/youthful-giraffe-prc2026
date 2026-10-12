@@ -1,0 +1,84 @@
+{
+  "name": "W03-lv127",
+  "argv": "--name W03-lv127 --features v2 --target residual --linear-tree --clip-floor 60 --noac-head --residual-guard --num-leaves 127 --folds july,december --no-submission",
+  "folds": {
+    "july": {
+      "rmse": 323.7954810096256,
+      "rmse_bulk": 283.1101523867815,
+      "rmse_tail": 2694.193811805101,
+      "rmse_no_nm": 1346.14181255913,
+      "n": 190713,
+      "n_tail": 656,
+      "n_no_nm": 3934,
+      "sse_share_tail": 0.2381439997104281,
+      "sse_share_no_nm": 0.35652839107490475,
+      "bias": 1.8248301043444037,
+      "rmse_noac": 3992.492848700875,
+      "n_noac": 339,
+      "sse_share_noac": 0.2702502644198291,
+      "fold": "july",
+      "best_iteration": 172,
+      "refit_rounds": 202,
+      "seconds": 156,
+      "oof": "experiments/exp-001-retro-v1/oof/W03-lv127-july.parquet"
+    },
+    "december": {
+      "rmse": 229.5119789554968,
+      "rmse_bulk": 212.85303658535196,
+      "rmse_tail": 2173.29138206441,
+      "rmse_no_nm": 809.7047859533182,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.14125488820917273,
+      "sse_share_no_nm": 0.12342923540325425,
+      "bias": 3.002113728250122,
+      "rmse_noac": 2408.730921845067,
+      "n_noac": 89,
+      "sse_share_noac": 0.05916892039127093,
+      "fold": "december",
+      "best_iteration": 351,
+      "refit_rounds": 413,
+      "seconds": 380,
+      "oof": "experiments/exp-001-retro-v1/oof/W03-lv127-december.parquet"
+    }
+  },
+  "phi_settings": null,
+  "lirf_gate": null,
+  "shared_modules": {
+    "surface": {
+      "UNIMPEDED_Q": 0.2,
+      "WINDOWS": [
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ],
+      "BUCKET": 1200.0,
+      "NBR_WINDOW": "1800s",
+      "SHRINK_K": 20.0,
+      "n_families": 7
+    },
+    "phi": {
+      "default_weight": "rows",
+      "default_shrink_rows": 150.0,
+      "default_min_rows": 100,
+      "keys": [
+        [
+          "airport"
+        ],
+        [
+          "airport",
+          "operator"
+        ]
+      ]
+    },
+    "lirf": {
+      "cat_features": [
+        "flight_prefix",
+        "stand_group"
+      ]
+    }
+  }
+}

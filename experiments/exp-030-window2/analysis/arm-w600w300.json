@@ -1,0 +1,106 @@
+{
+  "arm": "w600w300",
+  "note": "arm 1: two aggregate sets in one stacker, 600 s (v6's block unchanged) + 300 s, 95 block columns",
+  "clean": {
+    "july_loo": 284.6135,
+    "december": 205.6432,
+    "january": 218.7987
+  },
+  "vs_stack5": {
+    "july_loo": 0.5894,
+    "december": -0.0314,
+    "january": 0.3315
+  },
+  "vs_v6": {
+    "july_loo": 0.1084,
+    "december": 0.0102,
+    "january": 0.0178
+  },
+  "ci_v6": {
+    "july_loo": [
+      -0.1084,
+      -0.1728,
+      -0.05
+    ],
+    "december": [
+      -0.0102,
+      -0.0921,
+      0.0865
+    ],
+    "january": [
+      -0.0178,
+      -0.0875,
+      0.0475
+    ]
+  },
+  "ci_v6_no_noac": {
+    "july_loo": [
+      -0.1256,
+      -0.1954,
+      -0.0591
+    ],
+    "december": [
+      -0.0105,
+      -0.0944,
+      0.0887
+    ],
+    "january": [
+      -0.0188,
+      -0.091,
+      0.0513
+    ]
+  },
+  "slices": {
+    "july_loo": {
+      "n": 190713,
+      "rmse": 284.6135,
+      "le3600": 247.541,
+      "gt3600": 2407.6344,
+      "no_nm": 1121.2248,
+      "no_nm_flight_id_only": 1121.7533,
+      "noac": 3407.3545,
+      "no_noac": 245.9166,
+      "n_no_nm": 3938
+    },
+    "december": {
+      "n": 165677,
+      "rmse": 205.6432,
+      "le3600": 192.9921,
+      "gt3600": 1799.5981,
+      "no_nm": 665.1161,
+      "no_nm_flight_id_only": 665.9561,
+      "noac": 2010.4588,
+      "no_noac": 200.3482,
+      "n_no_nm": 1649
+    },
+    "january": {
+      "n": 153704,
+      "rmse": 218.7987,
+      "le3600": 196.8535,
+      "gt3600": 2092.6971,
+      "no_nm": 952.357,
+      "no_nm_flight_id_only": 952.9424,
+      "noac": 3509.4763,
+      "no_noac": 206.9836,
+      "n_no_nm": 1433
+    }
+  },
+  "clean_board": 257.5495,
+  "gain_board_vs_stack5": 0.4876,
+  "gain_board_vs_v6": 0.0734,
+  "predicted_board": 263.6188,
+  "worst_fold_vs_v6": 0.0102,
+  "gate_gain": false,
+  "gate_folds": true,
+  "gate": false,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "blocks": [
+    "depx",
+    "depx_w300"
+  ],
+  "win": 600.0
+}

@@ -1,0 +1,84 @@
+{
+ "folds": {
+  "july_loo": {
+   "fold_rows": 190713,
+   "class_rows": 99446,
+   "class_rows_read": 99446,
+   "var_r12_class_s2": 53708.6,
+   "network": {
+    "rho": 0.0223,
+    "s2_per_class_row": 26.8,
+    "face_s_at_1_2": 0.0327
+   },
+   "dispersion": {
+    "partial_rho": -0.0218,
+    "s2_per_class_row": 25.3,
+    "rows": 90119,
+    "face_s_at_1_2": 0.0309
+   },
+   "regulation": {
+    "rho": 0.0401,
+    "decile_gap_s": 27.91,
+    "s2_per_class_row": 83.9,
+    "rows": 90119,
+    "face_s_at_1_2": 0.1025
+   }
+  },
+  "december": {
+   "fold_rows": 165677,
+   "class_rows": 62722,
+   "class_rows_read": 62722,
+   "var_r12_class_s2": 47755.6,
+   "network": {
+    "rho": 0.0084,
+    "s2_per_class_row": 3.3,
+    "face_s_at_1_2": 0.003
+   },
+   "dispersion": {
+    "partial_rho": 0.0039,
+    "s2_per_class_row": 0.7,
+    "rows": 55314,
+    "face_s_at_1_2": 0.0006
+   },
+   "regulation": {
+    "rho": 0.0033,
+    "decile_gap_s": 7.31,
+    "s2_per_class_row": 0.5,
+    "rows": 55314,
+    "face_s_at_1_2": 0.0004
+   }
+  },
+  "january": {
+   "fold_rows": 153706,
+   "class_rows": 83031,
+   "class_rows_read": 83031,
+   "var_r12_class_s2": 47534.7,
+   "network": {
+    "rho": 0.0434,
+    "s2_per_class_row": 89.3,
+    "face_s_at_1_2": 0.113
+   },
+   "dispersion": {
+    "partial_rho": 0.0086,
+    "s2_per_class_row": 3.5,
+    "rows": 69332,
+    "face_s_at_1_2": 0.0044
+   },
+   "regulation": {
+    "rho": 0.035,
+    "decile_gap_s": 18.1,
+    "s2_per_class_row": 56.0,
+    "rows": 69332,
+    "face_s_at_1_2": 0.0709
+   }
+  }
+ },
+ "level": 1.2,
+ "regulation_threshold_s": 900.0,
+ "note": "Each read asks one question: does the quantity carry anything the BASE HEAD has not\nalready used?  The test is the same in all three, and it is why these are reads and not\nfits: the residual `r12 = y_true - p12` is what is left after every feature the head reads\n(`exp-018-fresh/code/features.py`, 69 columns plus nine target encodings), so a correlation\nwith `r12` is by construction information the head does not have.  Rows are restricted to\nthis lane's no-observation class.",
+ "pooled_face_s_at_1_2": {
+  "network": 0.0683,
+  "dispersion": 0.0192,
+  "regulation": 0.0885
+ }
+}

@@ -1,0 +1,101 @@
+{
+  "PASS": false,
+  "all_nan_columns_before": [
+    "Nf_n_res_apt_30m",
+    "Nf_n_res_cell",
+    "Nf_n_res_rwy_30m",
+    "Nf_n_res_rwy_60m",
+    "Nf_n_res_rwy_cell",
+    "Nf_n_res_rwy_minus_apt",
+    "No_n_res_apt_30m",
+    "No_n_res_cell",
+    "No_n_res_rwy_30m",
+    "No_n_res_rwy_60m",
+    "No_n_res_rwy_cell",
+    "No_n_res_rwy_minus_apt"
+  ],
+  "all_nan_columns_now": [],
+  "checks": {
+    "added_is_exactly_own_obs_taxi_minus_p11": false,
+    "is_186": false,
+    "nothing_dropped": false,
+    "nothing_is_all_nan_now": false,
+    "rows_unchanged": true,
+    "the_only_columns_that_moved_are_the_head_dependent_ones": false
+  },
+  "columns_added": [],
+  "columns_dropped": [
+    "Nf_n_res_cell",
+    "Nf_n_res_rwy_cell",
+    "Nf_n_res_apt_30m",
+    "Nf_n_res_rwy_30m",
+    "Nf_n_res_rwy_60m",
+    "Nf_n_res_rwy_minus_apt",
+    "No_n_res_cell",
+    "No_n_res_rwy_cell",
+    "No_n_res_apt_30m",
+    "No_n_res_rwy_30m",
+    "No_n_res_rwy_60m",
+    "No_n_res_rwy_minus_apt"
+  ],
+  "head_columns_all_nan": [],
+  "head_columns_expected": [
+    "Nf_n_res_apt_30m",
+    "Nf_n_res_cell",
+    "Nf_n_res_rwy_30m",
+    "Nf_n_res_rwy_60m",
+    "Nf_n_res_rwy_cell",
+    "Nf_n_res_rwy_minus_apt",
+    "No_n_res_apt_30m",
+    "No_n_res_cell",
+    "No_n_res_rwy_30m",
+    "No_n_res_rwy_60m",
+    "No_n_res_rwy_cell",
+    "No_n_res_rwy_minus_apt",
+    "own_obs_taxi_minus_p11"
+  ],
+  "head_columns_missing": [
+    "own_obs_taxi_minus_p11",
+    "Nf_n_res_cell",
+    "Nf_n_res_rwy_cell",
+    "Nf_n_res_apt_30m",
+    "Nf_n_res_rwy_30m",
+    "Nf_n_res_rwy_60m",
+    "Nf_n_res_rwy_minus_apt",
+    "No_n_res_cell",
+    "No_n_res_rwy_cell",
+    "No_n_res_apt_30m",
+    "No_n_res_rwy_30m",
+    "No_n_res_rwy_60m",
+    "No_n_res_rwy_minus_apt"
+  ],
+  "head_columns_that_must_move": [
+    "Nf_n_res_apt_30m",
+    "Nf_n_res_cell",
+    "Nf_n_res_rwy_30m",
+    "Nf_n_res_rwy_60m",
+    "Nf_n_res_rwy_cell",
+    "Nf_n_res_rwy_minus_apt",
+    "No_n_res_apt_30m",
+    "No_n_res_cell",
+    "No_n_res_rwy_30m",
+    "No_n_res_rwy_60m",
+    "No_n_res_rwy_cell",
+    "No_n_res_rwy_minus_apt"
+  ],
+  "new": {
+    "bytes": 38004920,
+    "columns": 173,
+    "path": "artifacts/exp-047/block/0000-control.parquet",
+    "rows": 162332,
+    "sha256": "384b0bc35966dad291c23f5e2d071597c30289aa9cda9d11a15483d3b1ededa0"
+  },
+  "old": {
+    "columns": 185,
+    "path": "artifacts/exp-047/block-185/0000-control.parquet",
+    "rows": 162332,
+    "sha256": "c2ba127f3fd0b5fd5489e6d3368bdef58ac72031c2ff4da20df0119263355210"
+  },
+  "shared_columns_identical": 173,
+  "shared_columns_that_differ": {}
+}

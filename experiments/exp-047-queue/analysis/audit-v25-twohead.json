@@ -1,0 +1,330 @@
+{
+ "what": "the upload audit (RESULTS \u00a77aq)",
+ "arguments": {
+  "head_npz": null,
+  "arm_npz": null,
+  "pins": null,
+  "class_vector": "../../artifacts/exp-046/class/{month}-v25.parquet",
+  "previous_class_vector": null,
+  "baseline": null,
+  "months": "2026-01,2026-07",
+  "candidate": "../../submissions/candidates/exp-046-surface-v11.parquet",
+  "previous": "../../submissions/uploaded/youthful-giraffe_v18.parquet",
+  "hold": "",
+  "changed_forbidden_at": "",
+  "changed_expected_at": "",
+  "draws": 2000,
+  "seeds": "47,101,102,103,104,105,106,107,108,109,110",
+  "head_col": "head_by_exp_046",
+  "head_declares": "{\"2026-01\": [\"2025-11\",\"2025-10\",\"2025-03\",\"2025-02\"], \"2026-07\": [\"2025-11\",\"2025-10\",\"2025-03\",\"2025-08\"]}",
+  "rebuild": "analysis/rebuild-v25.json",
+  "bag_cache": "{\"2026-01\": \"../exp-046-surfacefit/work/d-rank-seasjan-placebo*-255.npz\", \"2026-07\": \"../exp-046-surfacefit/work/d-rank-seasjul-placebo*-255.npz\"}",
+  "expect": null,
+  "out": "analysis/audit-v25-twohead.json"
+ },
+ "pins": {
+  "mine": "experiments/exp-047-queue/analysis/pin-manifest.json",
+  "theirs": null,
+  "by_fold": {
+   "july_loo": {
+    "my_airport_days": 296,
+    "my_block_rows": 190713
+   },
+   "december": {
+    "my_airport_days": 297,
+    "my_block_rows": 165677
+   },
+   "january": {
+    "my_airport_days": 218,
+    "my_block_rows": 153706
+   }
+  }
+ },
+ "bytes": {
+  "candidate": "submissions/candidates/exp-046-surface-v11.parquet",
+  "candidate_sha256": "f11d34f88b62a43ec2a0cdbeec967a9ee4b7d92e50a5508aa4d30e5a78ea5e1c",
+  "previous": "submissions/uploaded/youthful-giraffe_v18.parquet",
+  "previous_sha256": "4d75706bfcc13d88f7556265cd008b3d3a312555955dca8eb528e4db5325fee8",
+  "template": {
+   "rows": 344841,
+   "template_rows": 344841,
+   "row_order_is_the_template_order": true,
+   "previous_row_order_is_the_template_order": true,
+   "all_finite": true,
+   "non_finite_rows": 0,
+   "min": 60.0,
+   "max": 115306.59901833169,
+   "rows_at_or_below_zero": 0,
+   "duplicate_keys": 0
+  },
+  "moved": {
+   "rows_changed": 194681,
+   "rms_move_s": 34.417088573030234,
+   "max_abs_move_s": 1084.0033127668871,
+   "changed_by_airport": {
+    "EHAM": 35051,
+    "EGLL": 33652,
+    "LEMD": 27046,
+    "LEBL": 26719,
+    "EDDM": 24725,
+    "LSZH": 21143,
+    "EDDF": 18431,
+    "LIRF": 5664,
+    "LFPG": 2250
+   }
+  },
+  "held_airports": {
+   "airports": [],
+   "rows": 0,
+   "rows_changed": 0,
+   "untouched": true
+  },
+  "class": {
+   "vector": "artifacts/exp-046/class/{month}-v25.parquet",
+   "months": [
+    "2026-01",
+    "2026-07"
+   ],
+   "rows_missing_for_a_template_key": 0,
+   "occupied": 196256,
+   "written": 196256,
+   "occupied_and_not_written": 0,
+   "occupied_unwritten_rows_that_changed": 0,
+   "guard_held": 1573,
+   "written_and_not_occupied": 0,
+   "changed_rows_outside_occupied": 0,
+   "changed_is_a_subset_of_occupied": true,
+   "occupied_rows_that_did_not_change": 1575,
+   "copied_rows_identical_to_the_previous": 148585,
+   "noac_rows": 388,
+   "noac_rows_changed": 0,
+   "chain_mode_4_rows": 2456,
+   "chain_by_month": {
+    "2026-01": 1304,
+    "2026-07": 1152
+   },
+   "chain_rows_written": 2456,
+   "chain_rows_held_at_a_held_airport": 0
+  },
+  "head": {
+   "column": "head_by_exp_046",
+   "labels": {
+    "2026-07:2025-11+2025-10+2025-03+2025-08": 192122,
+    "2026-01:2025-11+2025-10+2025-03+2025-02": 152719
+   },
+   "labels_by_served_month": {
+    "2026-01": [
+     "2026-01:2025-11+2025-10+2025-03+2025-02"
+    ],
+    "2026-07": [
+     "2026-07:2025-11+2025-10+2025-03+2025-08"
+    ]
+   },
+   "one_label_per_served_month": true,
+   "served_months_with_no_label": [],
+   "the_served_months_have_different_heads": true,
+   "changed_rows_with_no_head": 0,
+   "changed_rows_by_head": {
+    "2026-07:2025-11+2025-10+2025-03+2025-08": 104608,
+    "2026-01:2025-11+2025-10+2025-03+2025-02": 90073
+   },
+   "rows_whose_head_is_not_their_own_served_month": 0,
+   "months_declared_by_the_label": {
+    "2026-01": [
+     "2025-02",
+     "2025-03",
+     "2025-10",
+     "2025-11"
+    ],
+    "2026-07": [
+     "2025-03",
+     "2025-08",
+     "2025-10",
+     "2025-11"
+    ]
+   },
+   "serve_declares": {
+    "2026-01": [
+     "2025-02",
+     "2025-03",
+     "2025-10",
+     "2025-11"
+    ],
+    "2026-07": [
+     "2025-03",
+     "2025-08",
+     "2025-10",
+     "2025-11"
+    ]
+   },
+   "served_months_missing_from_the_serve_declaration": [],
+   "label_matches_the_serve_declaration": true,
+   "cannot_see": "head_by_exp_046 is the serve's declaration echoed onto every row, not a measurement of the bytes: it proves the vector claims a two-head composition and that the claim is internally consistent, NOT that two distinct heads were fitted. The bytes cannot distinguish two heads from one head written twice. The distinctness of the two fits is checked by --bag-cache (the cache keys) and otherwise belongs in the by-eye list."
+  },
+  "rebuild": {
+   "what": "the update rebuilt from the ranking member files: the two-set rebuild must reproduce the candidate exactly, and either set alone must fail on the other served month's rows",
+   "price": "submissions/candidates/exp-035-k2climb-v11member.parquet",
+   "floor_s": 60.0,
+   "members_by_served_month": {
+    "2026-01": {
+     "pattern": [
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo1-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo2-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo3-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo4-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo5-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo6-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo7-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo8-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo9-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjan-placebo10-255.npz"
+     ],
+     "files": 10,
+     "sha256_by_file": {
+      "d-rank-seasjan-placebo1-255.npz": "dfa8bcc00fe8a6f816a4499af96ddb3b11ed78642d9270f71ffbfb3ae9ddfe6b",
+      "d-rank-seasjan-placebo2-255.npz": "15acef8d8f1b4a6f04af24dd8bcab8658c75f84ba34360a9527a70ac8f62af08",
+      "d-rank-seasjan-placebo3-255.npz": "1ad34208b49e8b4e58ad957e339f3eda8bf222127bcb1fc3c896b59bb68c2976",
+      "d-rank-seasjan-placebo4-255.npz": "d0dce172091829b991d093b0b2659702f9448fbf28919238ab86e5466284fc82",
+      "d-rank-seasjan-placebo5-255.npz": "fe6c6ac733dc02d46e325bef3412fdc1817a0ed75184481e20625549d06843e0",
+      "d-rank-seasjan-placebo6-255.npz": "5c15515cdb1d4d0151bfe69129cea94e48ac82be2d2aa43a0347f26643afb2db",
+      "d-rank-seasjan-placebo7-255.npz": "d5a19d245fb9542f05fa519f60f12821eccb2e2dcabe105abbfca48db12ee054",
+      "d-rank-seasjan-placebo8-255.npz": "73c8199115277a08e3f0ec8f9bff678cb5dd01e5c441ac7b5fcd33eeb174da37",
+      "d-rank-seasjan-placebo9-255.npz": "6dcd50fc8911e8b5b8ee91bd6c8403a896cb71665a562527b0e300314759e432",
+      "d-rank-seasjan-placebo10-255.npz": "3784a5da12b09d84cdf5cc6b025356319b9bd9de0135ac641e9df963321fc3be"
+     }
+    },
+    "2026-07": {
+     "pattern": [
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo1-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo2-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo3-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo4-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo5-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo6-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo7-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo8-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo9-255.npz",
+      "../../experiments/exp-046-surfacefit/work/d-rank-seasjul-placebo10-255.npz"
+     ],
+     "files": 10,
+     "sha256_by_file": {
+      "d-rank-seasjul-placebo1-255.npz": "f15977a6ad49f43553924ea5903b755888b10fd8a38d3cbeed260892b87b28f7",
+      "d-rank-seasjul-placebo2-255.npz": "b4f580f8e1c28e60161f2662c6230e1856050958e501ef97ce07bcfdbb7f4c11",
+      "d-rank-seasjul-placebo3-255.npz": "be5e0db534dad7419a4735f630d68e3db5a09afd200acb78e58eda4b9f2830ed",
+      "d-rank-seasjul-placebo4-255.npz": "ee568789b5e1887c211542f6946a8be2dcec7847d8eb1eeecc6bd4d7a048ad65",
+      "d-rank-seasjul-placebo5-255.npz": "6c9d3b2efbb3aa25f5489e4e2f39fc4bc4900220338b1716174c092db743d843",
+      "d-rank-seasjul-placebo6-255.npz": "1c08ffdcf47b7beb01b13024faeb3c29f4d9b8d60bfb405456ed61caf6947dc0",
+      "d-rank-seasjul-placebo7-255.npz": "279232b55548ff6a69265bcb0d00af24c171ae3b5493a6716a1f9b2065f49fe5",
+      "d-rank-seasjul-placebo8-255.npz": "ce3661121a65a4f0c683f6ee78547c5b32551206bba9766a34475487f8ee1b24",
+      "d-rank-seasjul-placebo9-255.npz": "98e19c3606e84a41861c75b6ac9830b0d597d92282e4dc38a9b9bbcafcc78789",
+      "d-rank-seasjul-placebo10-255.npz": "2cb3280c9109ea8f6ad38c807b5c000b51f1139c69b12752eb910156c670dd0e"
+     }
+    }
+   },
+   "two_set": {
+    "rows_differing_from_the_candidate": 0,
+    "max_abs_diff_s": 0.0,
+    "reproduces_the_candidate": true,
+    "rows_differing_above_tolerance": 0
+   },
+   "one_set_everywhere": {
+    "2026-01_set_on_2026-07_rows": {
+     "rows_written": 104823,
+     "tolerance_s": 1e-09,
+     "rows_differing_from_the_candidate": 104608,
+     "rms_s": 14.41771771161836,
+     "max_abs_s": 251.47961289202476,
+     "the_candidate_is_NOT_this_one_head_everywhere": true
+    },
+    "2026-07_set_on_2026-01_rows": {
+     "rows_written": 91433,
+     "tolerance_s": 1e-09,
+     "rows_differing_from_the_candidate": 90074,
+     "rms_s": 15.660827119967932,
+     "max_abs_s": 230.22449909469378,
+     "the_candidate_is_NOT_this_one_head_everywhere": true
+    }
+   },
+   "between_the_two_sets_on_the_written_rows": {
+    "2026-01_vs_2026-07": {
+     "rows": 152719,
+     "rows_that_differ": 91433,
+     "rms_s": 12.996927191336386,
+     "max_abs_s": 230.22449909469384
+    },
+    "2026-07_vs_2026-01": {
+     "rows": 192122,
+     "rows_that_differ": 104823,
+     "rms_s": 10.762323680986606,
+     "max_abs_s": 251.47961289202453
+    }
+   },
+   "served_month_from": "data/raw ranking MVT_TIME_UTC_mvt (the movement table)",
+   "rows_by_served_month": {
+    "2026-01": 152719,
+    "2026-07": 192122
+   },
+   "the_declaration_measured": {
+    "rows_where_the_class_month_and_the_movement_table_disagree": 0,
+    "head_label_disagrees_with_the_movement_table": 0
+   },
+   "exact_on_the_written_rows": {
+    "max_abs_diff_s": 0.0,
+    "rows_differing": 0,
+    "exactly_zero": true
+   },
+   "outside_the_written_class": {
+    "rows": 148585,
+    "identical_to_the_base_bytes": true,
+    "identical_to_the_price_base": false
+   },
+   "guard_held_rows": {
+    "rows": 1573,
+    "identical_to_the_base_bytes": true,
+    "identical_to_the_price_base": true
+   },
+   "one_head_written_twice_is_refuted": true
+  }
+ },
+ "bags": {
+  "what": "the per-served-month bag caches",
+  "by_served_month": {
+   "2026-01": {
+    "pattern": "../exp-046-surfacefit/work/d-rank-seasjan-placebo*-255.npz",
+    "files": 10,
+    "sha256_by_file": {
+     "d-rank-seasjan-placebo1-255.npz": "dfa8bcc00fe8a6f816a4499af96ddb3b11ed78642d9270f71ffbfb3ae9ddfe6b",
+     "d-rank-seasjan-placebo10-255.npz": "3784a5da12b09d84cdf5cc6b025356319b9bd9de0135ac641e9df963321fc3be",
+     "d-rank-seasjan-placebo2-255.npz": "15acef8d8f1b4a6f04af24dd8bcab8658c75f84ba34360a9527a70ac8f62af08",
+     "d-rank-seasjan-placebo3-255.npz": "1ad34208b49e8b4e58ad957e339f3eda8bf222127bcb1fc3c896b59bb68c2976",
+     "d-rank-seasjan-placebo4-255.npz": "d0dce172091829b991d093b0b2659702f9448fbf28919238ab86e5466284fc82",
+     "d-rank-seasjan-placebo5-255.npz": "fe6c6ac733dc02d46e325bef3412fdc1817a0ed75184481e20625549d06843e0",
+     "d-rank-seasjan-placebo6-255.npz": "5c15515cdb1d4d0151bfe69129cea94e48ac82be2d2aa43a0347f26643afb2db",
+     "d-rank-seasjan-placebo7-255.npz": "d5a19d245fb9542f05fa519f60f12821eccb2e2dcabe105abbfca48db12ee054",
+     "d-rank-seasjan-placebo8-255.npz": "73c8199115277a08e3f0ec8f9bff678cb5dd01e5c441ac7b5fcd33eeb174da37",
+     "d-rank-seasjan-placebo9-255.npz": "6dcd50fc8911e8b5b8ee91bd6c8403a896cb71665a562527b0e300314759e432"
+    }
+   },
+   "2026-07": {
+    "pattern": "../exp-046-surfacefit/work/d-rank-seasjul-placebo*-255.npz",
+    "files": 10,
+    "sha256_by_file": {
+     "d-rank-seasjul-placebo1-255.npz": "f15977a6ad49f43553924ea5903b755888b10fd8a38d3cbeed260892b87b28f7",
+     "d-rank-seasjul-placebo10-255.npz": "2cb3280c9109ea8f6ad38c807b5c000b51f1139c69b12752eb910156c670dd0e",
+     "d-rank-seasjul-placebo2-255.npz": "b4f580f8e1c28e60161f2662c6230e1856050958e501ef97ce07bcfdbb7f4c11",
+     "d-rank-seasjul-placebo3-255.npz": "be5e0db534dad7419a4735f630d68e3db5a09afd200acb78e58eda4b9f2830ed",
+     "d-rank-seasjul-placebo4-255.npz": "ee568789b5e1887c211542f6946a8be2dcec7847d8eb1eeecc6bd4d7a048ad65",
+     "d-rank-seasjul-placebo5-255.npz": "6c9d3b2efbb3aa25f5489e4e2f39fc4bc4900220338b1716174c092db743d843",
+     "d-rank-seasjul-placebo6-255.npz": "1c08ffdcf47b7beb01b13024faeb3c29f4d9b8d60bfb405456ed61caf6947dc0",
+     "d-rank-seasjul-placebo7-255.npz": "279232b55548ff6a69265bcb0d00af24c171ae3b5493a6716a1f9b2065f49fe5",
+     "d-rank-seasjul-placebo8-255.npz": "ce3661121a65a4f0c683f6ee78547c5b32551206bba9766a34475487f8ee1b24",
+     "d-rank-seasjul-placebo9-255.npz": "98e19c3606e84a41861c75b6ac9830b0d597d92282e4dc38a9b9bbcafcc78789"
+    }
+   }
+  },
+  "files_shared_between_served_months": [],
+  "contents_shared_between_served_months": [],
+  "the_two_bags_are_distinct": true,
+  "every_served_month_has_a_bag": true
+ }
+}

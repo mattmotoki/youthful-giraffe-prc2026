@@ -1,0 +1,159 @@
+{
+  "arms": {
+    "a_linear": {
+      "info": {
+        "fit_rows_by_cell": {
+          "EHAM": 2749
+        },
+        "offsets_s": {
+          "EHAM": -290.039999961853
+        },
+        "weight_cell": [
+          "airport"
+        ],
+        "weights": {
+          "EHAM": 0.5056215136423475
+        }
+      },
+      "mse_gain_s2_all_rows": 702.6026827693739,
+      "mse_gain_s2_per_moved_row": 6222.332649936994,
+      "rms_update_s": 78.80025856188912,
+      "rmse_arm_moved": 123.74307429554943,
+      "rmse_base_moved": 146.74699685530487,
+      "rows": 18527,
+      "rows_moved": 2092
+    },
+    "a_linear_reach": {
+      "info": {
+        "fit_rows_by_cell": {
+          "EHAM|False": 2745,
+          "EHAM|True": 4
+        },
+        "offsets_s": {
+          "EHAM": -290.039999961853
+        },
+        "weight_cell": [
+          "airport",
+          "obs_wide"
+        ],
+        "weights": {
+          "EHAM|False": 0.519760349951172,
+          "EHAM|True": 0.0
+        }
+      },
+      "mse_gain_s2_all_rows": 701.990709519345,
+      "mse_gain_s2_per_moved_row": 6219.886119208467,
+      "rms_update_s": 81.01688442237432,
+      "rmse_arm_moved": 123.79082227417122,
+      "rmse_base_moved": 146.77892831916955,
+      "rows": 18527,
+      "rows_moved": 2091
+    },
+    "b_lgb": {
+      "info": {
+        "fit_rows_by_airport": {
+          "EHAM": 2749
+        },
+        "n_features": 26,
+        "oof_rmse_vs_r11": 125.35378256946098,
+        "r11_rmse_on_fit_rows": 146.19208603719,
+        "weights": {
+          "EHAM": 0.8998885874597056
+        }
+      },
+      "mse_gain_s2_all_rows": 721.9836208787387,
+      "mse_gain_s2_per_moved_row": 6393.972535382597,
+      "rms_update_s": 77.68622245325211,
+      "rmse_arm_moved": 123.04758652922968,
+      "rmse_base_moved": 146.74699685530487,
+      "rows": 18527,
+      "rows_moved": 2092
+    },
+    "c_lgb_shipped": {
+      "info": {
+        "fit_rows_by_airport": {
+          "EHAM": 2749
+        },
+        "n_features": 102,
+        "oof_rmse_vs_r11": 118.93465769331384,
+        "r11_rmse_on_fit_rows": 146.19208603719,
+        "weights": {
+          "EHAM": 0.9880028636479746
+        }
+      },
+      "mse_gain_s2_all_rows": 1003.36543637862,
+      "mse_gain_s2_per_moved_row": 8885.923250376047,
+      "rms_update_s": 89.97070473990863,
+      "rmse_arm_moved": 112.46669656247049,
+      "rmse_base_moved": 146.74699685530487,
+      "rows": 18527,
+      "rows_moved": 2092
+    }
+  },
+  "cross_class": {
+    "airport": "EHAM",
+    "by_class": {
+      "no_clock_of_its_own": {
+        "mse_gain_s2_per_row": -290.21623642123564,
+        "rms_update_s": 25.66853900520926,
+        "rows": 111,
+        "rows_moved": 111
+      },
+      "with_a_clock": {
+        "mse_gain_s2_per_row": 6438.820533403407,
+        "rms_update_s": 76.64453134936205,
+        "rows": 2092,
+        "rows_moved": 2092
+      }
+    },
+    "exp_047_reference": {
+      "no_clock_s2": -588,
+      "source": "exp-047-queue/RESULTS.md step 1",
+      "with_a_clock_s2": 6884
+    },
+    "fit_rows": 2928,
+    "scored_rows": 2203,
+    "weights": {
+      "EHAM": 0.8866534368753856
+    },
+    "what_this_lane_serves_instead": "0 s2 on the no-clock rows: they stay at the base and are exp-047-queue's, whose neighbourhood block reads +583 s2 on them (exp-047 RESULTS.md \u00a70)"
+  },
+  "design": {
+    "airport": "EHAM (the only airport harvested)",
+    "fit_days": [
+      "2025-07-07",
+      "2025-07-08",
+      "2025-07-09",
+      "2025-07-10"
+    ],
+    "fit_rows": 2749,
+    "rule_required": "15a72d550241faa28bc3af1acaa5e7f34e448065f8d80cb3b518d3e885796fa9",
+    "score_days": [
+      "2025-07-11",
+      "2025-07-12",
+      "2025-07-13"
+    ],
+    "scored_rows": 18527,
+    "scored_usable": 2092
+  },
+  "handover": {
+    "file": "artifacts/exp-047/block/2025-07.parquet",
+    "i_serve": 4841,
+    "i_serve_but_they_call_it_no_clock": 0,
+    "left_to_exp_047": 185872,
+    "note": "the two populations are complementary by construction: exp-047 imports this lane's code/block.py as the matcher and keys its class on the same obs_has_clock column. The noac hold is this lane's alone, so those rows must stay held in any composition of the two candidates.",
+    "of_those_noac": 0,
+    "reach_class_agrees": 190374,
+    "reach_class_differs": 339,
+    "reach_class_differs_elsewhere": 0,
+    "reach_class_differs_on_a_noac_row": 339,
+    "rows_047": 190713,
+    "rows_in_both": 190713,
+    "rows_mine": 190713,
+    "rows_only_047": 0,
+    "rows_only_mine": 0,
+    "they_carry_a_clock": 4841,
+    "they_carry_a_clock_but_i_hold_it": 0
+  },
+  "warning": "A machinery check on one airport-week. No number here is a measurement and none enters the ledger. Arm c is additionally flattered here: the shipped feature block is cached per month, so a WITHIN-July split lets the fit and the scored rows share a month, which the real rotation of code/arms.py forbids. The real table fits on the other two fold months."
+}

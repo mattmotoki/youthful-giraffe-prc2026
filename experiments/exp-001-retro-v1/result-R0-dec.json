@@ -1,0 +1,64 @@
+{
+  "name": "R0-dec",
+  "argv": "--name R0-dec --features v2 --target residual --linear-tree --clip-floor 60 --noac-head --residual-guard --es-mode lastmonth --es-rounds 100 --learning-rate 0.03 --folds december --no-submission",
+  "folds": {
+    "december": {
+      "rmse": 222.1810839022898,
+      "rmse_bulk": 204.90348248354388,
+      "rmse_tail": 2173.938522121566,
+      "rmse_no_nm": 809.604172780453,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.15081989695051357,
+      "sse_share_no_nm": 0.13167600902585871,
+      "bias": 4.121884122909616,
+      "rmse_noac": 2408.730921845067,
+      "n_noac": 89,
+      "sse_share_noac": 0.06313790948816748,
+      "fold": "december",
+      "best_iteration": 808,
+      "refit_rounds": 883,
+      "seconds": 515,
+      "oof": "experiments/exp-001-retro-v1/oof/R0-dec-december.parquet"
+    }
+  },
+  "phi_settings": null,
+  "lirf_gate": null,
+  "shared_modules": {
+    "surface": {
+      "UNIMPEDED_Q": 0.2,
+      "WINDOWS": [
+        300,
+        600,
+        900,
+        1800,
+        3600
+      ],
+      "BUCKET": 1200.0,
+      "NBR_WINDOW": "1800s",
+      "SHRINK_K": 20.0,
+      "n_families": 7
+    },
+    "phi": {
+      "default_weight": "rows",
+      "default_shrink_rows": 150.0,
+      "default_min_rows": 100,
+      "keys": [
+        [
+          "airport"
+        ],
+        [
+          "airport",
+          "operator"
+        ]
+      ]
+    },
+    "lirf": {
+      "cat_features": [
+        "flight_prefix",
+        "stand_group"
+      ]
+    }
+  }
+}

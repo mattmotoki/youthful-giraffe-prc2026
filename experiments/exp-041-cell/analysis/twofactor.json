@@ -1,0 +1,4440 @@
+{
+  "screen": "twofactor",
+  "predeclared": {
+    "levels": [
+      [
+        "apt",
+        "hour",
+        "dow"
+      ],
+      [
+        "apt",
+        "hour"
+      ],
+      [
+        "apt"
+      ]
+    ],
+    "min_group": 30,
+    "clip_s": 7200.0,
+    "placebo_days": 7,
+    "caps": {
+      "A": {
+        "max_iter": 64,
+        "max_depth": 2,
+        "learning_rate": 0.05
+      },
+      "B": {
+        "max_iter": 300,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      }
+    },
+    "headline_cap": "B",
+    "blocks": 5,
+    "seed": 41,
+    "bin_s": 600,
+    "pairs_per_relation": 200,
+    "dates_per_relation": 20,
+    "eligible_regime": "nm_bulk",
+    "hold_airports": [
+      "EHAM",
+      "EDDF"
+    ],
+    "advance_clause": "the second factor predicts current residuals outside the discovery blocks, beyond Q04 and the existing windows"
+  },
+  "folds": {
+    "july_loo": {
+      "fold": "july_loo",
+      "month": "2025-07",
+      "n_eligible": 131956,
+      "nuisance_train_departures": 1875802,
+      "nuisance_months": 11,
+      "u_present_pct": 100.0,
+      "u_std_s": 579.1,
+      "coverage": {
+        "EDDM": {
+          "same_rwy_diff_op": {
+            "pairs": 13604,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 4982,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "EGLL": {
+          "same_rwy_diff_op": {
+            "pairs": 43804,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 12,
+            "dates": 6,
+            "met": false
+          }
+        },
+        "LEBL": {
+          "same_rwy_diff_op": {
+            "pairs": 23520,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 11,
+            "dates": 10,
+            "met": false
+          }
+        },
+        "LEMD": {
+          "same_rwy_diff_op": {
+            "pairs": 19880,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 3398,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LFPG": {
+          "same_rwy_diff_op": {
+            "pairs": 17386,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 7042,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LIRF": {
+          "same_rwy_diff_op": {
+            "pairs": 20196,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 520,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LSZH": {
+          "same_rwy_diff_op": {
+            "pairs": 10146,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 1606,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LTFM": {
+          "same_rwy_diff_op": {
+            "pairs": 14368,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 25033,
+            "dates": 31,
+            "met": true
+          }
+        }
+      },
+      "supported_airports": [
+        "EDDM",
+        "LEMD",
+        "LFPG",
+        "LIRF",
+        "LSZH",
+        "LTFM"
+      ],
+      "unsupported_airports": [
+        "EGLL",
+        "LEBL"
+      ],
+      "n_rows_supported": 98531,
+      "n_base_features": 166,
+      "placebo_group_differs_pct": 76.39,
+      "placebo_note": "share of eligible rows whose 7-day-shifted same-runway group has a different size from the real one; the first version of this placebo scored 0 here, because shifting every row together preserves the grouping (Sol round 1, blocking finding 6)",
+      "q04_h1_columns": 2,
+      "feature_coverage_pct": {
+        "f_all": 98.29,
+        "f_same_rwy_diff_op": 81.52,
+        "f_diff_rwy_same_op": 25.45
+      },
+      "arms": {
+        "g0@A": {
+          "cap": "A",
+          "n_features": 166,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 216.998,
+            "B_mean_h2": 207.878,
+            "mse_gain_s2": 226.117,
+            "ci": [
+              71.492,
+              385.832
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 289.699,
+            "B_mean_h2": 236.656,
+            "mse_gain_s2": 342.742,
+            "ci": [
+              155.478,
+              542.522
+            ]
+          },
+          "multiday": {
+            "point": 226.117,
+            "ci_block_1d": [
+              74.751,
+              393.076
+            ],
+            "ci_block_2d": [
+              76.28,
+              390.272
+            ],
+            "ci_block_3d": [
+              65.223,
+              415.973
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.8818,
+          "gain_all": 0.2754,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.8818,
+          "gain_clean": 0.2754
+        },
+        "g0@B": {
+          "cap": "B",
+          "n_features": 166,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 637.582,
+            "B_mean_h2": 781.153,
+            "mse_gain_s2": 494.01,
+            "ci": [
+              205.528,
+              789.222
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 744.07,
+            "B_mean_h2": 837.282,
+            "mse_gain_s2": 650.858,
+            "ci": [
+              308.57,
+              1029.552
+            ]
+          },
+          "multiday": {
+            "point": 494.01,
+            "ci_block_1d": [
+              200.148,
+              806.242
+            ],
+            "ci_block_2d": [
+              220.277,
+              820.409
+            ],
+            "ci_block_3d": [
+              209.351,
+              805.825
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.5551,
+          "gain_all": 0.6021,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.5551,
+          "gain_clean": 0.6021
+        },
+        "one@A": {
+          "cap": "A",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 265.015,
+            "B_mean_h2": 254.687,
+            "mse_gain_s2": 275.344,
+            "ci": [
+              69.579,
+              482.397
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 357.116,
+            "B_mean_h2": 275.661,
+            "mse_gain_s2": 438.57,
+            "ci": [
+              211.599,
+              675.899
+            ]
+          },
+          "multiday": {
+            "point": 275.344,
+            "ci_block_1d": [
+              76.701,
+              477.339
+            ],
+            "ci_block_2d": [
+              70.128,
+              494.548
+            ],
+            "ci_block_3d": [
+              68.654,
+              516.972
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.8218,
+          "gain_all": 0.3354,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.8218,
+          "gain_clean": 0.3354,
+          "vs": {
+            "g0": {
+              "delta_s2": 49.226,
+              "ci": [
+                -54.598,
+                134.068
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 49.226,
+                "ci_block_1d": [
+                  -51.677,
+                  137.655
+                ],
+                "ci_block_2d": [
+                  -59.855,
+                  150.446
+                ],
+                "ci_block_3d": [
+                  -67.792,
+                  159.693
+                ]
+              }
+            }
+          }
+        },
+        "one@B": {
+          "cap": "B",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 787.691,
+            "B_mean_h2": 944.947,
+            "mse_gain_s2": 630.435,
+            "ci": [
+              227.196,
+              1053.233
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 946.043,
+            "B_mean_h2": 1007.219,
+            "mse_gain_s2": 884.866,
+            "ci": [
+              457.993,
+              1364.41
+            ]
+          },
+          "multiday": {
+            "point": 630.435,
+            "ci_block_1d": [
+              203.882,
+              1010.699
+            ],
+            "ci_block_2d": [
+              245.716,
+              1074.214
+            ],
+            "ci_block_3d": [
+              241.3,
+              1092.338
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.3886,
+          "gain_all": 0.7686,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.3886,
+          "gain_clean": 0.7686,
+          "vs": {
+            "g0": {
+              "delta_s2": 136.424,
+              "ci": [
+                -51.449,
+                307.429
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 136.424,
+                "ci_block_1d": [
+                  -56.13,
+                  313.259
+                ],
+                "ci_block_2d": [
+                  -74.839,
+                  326.776
+                ],
+                "ci_block_3d": [
+                  -83.278,
+                  349.512
+                ]
+              }
+            }
+          }
+        },
+        "two@A": {
+          "cap": "A",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 226.774,
+            "B_mean_h2": 210.096,
+            "mse_gain_s2": 243.451,
+            "ci": [
+              89.889,
+              414.609
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 303.48,
+            "B_mean_h2": 236.04,
+            "mse_gain_s2": 370.921,
+            "ci": [
+              195.622,
+              573.107
+            ]
+          },
+          "multiday": {
+            "point": 243.451,
+            "ci_block_1d": [
+              89.337,
+              393.935
+            ],
+            "ci_block_2d": [
+              86.937,
+              429.02
+            ],
+            "ci_block_3d": [
+              83.606,
+              440.63
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.8606,
+          "gain_all": 0.2966,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.8606,
+          "gain_clean": 0.2966,
+          "vs": {
+            "g0": {
+              "delta_s2": 17.334,
+              "ci": [
+                -8.116,
+                42.147
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 17.334,
+                "ci_block_1d": [
+                  -8.374,
+                  42.77
+                ],
+                "ci_block_2d": [
+                  -13.138,
+                  47.518
+                ],
+                "ci_block_3d": [
+                  -11.051,
+                  49.005
+                ]
+              }
+            },
+            "one": {
+              "delta_s2": -31.893,
+              "ci": [
+                -104.14,
+                51.351
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -31.893,
+                "ci_block_1d": [
+                  -104.456,
+                  53.994
+                ],
+                "ci_block_2d": [
+                  -110.899,
+                  59.948
+                ],
+                "ci_block_3d": [
+                  -127.256,
+                  62.295
+                ]
+              }
+            },
+            "two_c": {
+              "delta_s2": 17.334,
+              "ci": [
+                -9.422,
+                44.715
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 17.334,
+                "ci_block_1d": [
+                  -7.804,
+                  43.646
+                ],
+                "ci_block_2d": [
+                  -11.037,
+                  45.065
+                ],
+                "ci_block_3d": [
+                  -12.38,
+                  48.554
+                ]
+              }
+            }
+          }
+        },
+        "two@B": {
+          "cap": "B",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 703.144,
+            "B_mean_h2": 845.011,
+            "mse_gain_s2": 561.276,
+            "ci": [
+              257.875,
+              873.868
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 850.334,
+            "B_mean_h2": 912.118,
+            "mse_gain_s2": 788.55,
+            "ci": [
+              439.36,
+              1144.922
+            ]
+          },
+          "multiday": {
+            "point": 561.276,
+            "ci_block_1d": [
+              238.468,
+              874.157
+            ],
+            "ci_block_2d": [
+              285.676,
+              902.199
+            ],
+            "ci_block_3d": [
+              281.853,
+              903.144
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.473,
+          "gain_all": 0.6842,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.473,
+          "gain_clean": 0.6842,
+          "vs": {
+            "g0": {
+              "delta_s2": 67.266,
+              "ci": [
+                -2.431,
+                135.936
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 67.266,
+                "ci_block_1d": [
+                  -2.472,
+                  134.834
+                ],
+                "ci_block_2d": [
+                  5.204,
+                  132.348
+                ],
+                "ci_block_3d": [
+                  0.415,
+                  144.142
+                ]
+              }
+            },
+            "one": {
+              "delta_s2": -69.159,
+              "ci": [
+                -216.964,
+                84.518
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -69.159,
+                "ci_block_1d": [
+                  -216.618,
+                  83.489
+                ],
+                "ci_block_2d": [
+                  -221.56,
+                  98.596
+                ],
+                "ci_block_3d": [
+                  -243.622,
+                  109.394
+                ]
+              }
+            },
+            "two_c": {
+              "delta_s2": 62.442,
+              "ci": [
+                -14.763,
+                138.129
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 62.442,
+                "ci_block_1d": [
+                  -15.832,
+                  139.368
+                ],
+                "ci_block_2d": [
+                  -11.816,
+                  145.051
+                ],
+                "ci_block_3d": [
+                  -19.303,
+                  146.794
+                ]
+              }
+            }
+          }
+        },
+        "two_c@A": {
+          "cap": "A",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 216.998,
+            "B_mean_h2": 207.878,
+            "mse_gain_s2": 226.117,
+            "ci": [
+              67.449,
+              389.576
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 289.699,
+            "B_mean_h2": 236.656,
+            "mse_gain_s2": 342.742,
+            "ci": [
+              140.613,
+              538.724
+            ]
+          },
+          "multiday": {
+            "point": 226.117,
+            "ci_block_1d": [
+              72.928,
+              392.633
+            ],
+            "ci_block_2d": [
+              63.485,
+              401.41
+            ],
+            "ci_block_3d": [
+              58.339,
+              407.199
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.8818,
+          "gain_all": 0.2754,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.8818,
+          "gain_clean": 0.2754,
+          "vs": {
+            "g0": {
+              "delta_s2": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 0.0,
+                "ci_block_1d": [
+                  0.0,
+                  0.0
+                ],
+                "ci_block_2d": [
+                  0.0,
+                  0.0
+                ],
+                "ci_block_3d": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "two_c@B": {
+          "cap": "B",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 612.779,
+            "B_mean_h2": 726.723,
+            "mse_gain_s2": 498.835,
+            "ci": [
+              216.139,
+              819.763
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 714.148,
+            "B_mean_h2": 776.598,
+            "mse_gain_s2": 651.699,
+            "ci": [
+              293.186,
+              1052.762
+            ]
+          },
+          "multiday": {
+            "point": 498.835,
+            "ci_block_1d": [
+              210.124,
+              804.139
+            ],
+            "ci_block_2d": [
+              224.579,
+              824.887
+            ],
+            "ci_block_3d": [
+              220.758,
+              834.07
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.5492,
+          "gain_all": 0.608,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.5492,
+          "gain_clean": 0.608,
+          "vs": {
+            "g0": {
+              "delta_s2": 4.824,
+              "ci": [
+                -57.048,
+                56.597
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 4.824,
+                "ci_block_1d": [
+                  -56.178,
+                  56.988
+                ],
+                "ci_block_2d": [
+                  -60.863,
+                  66.756
+                ],
+                "ci_block_3d": [
+                  -62.693,
+                  71.677
+                ]
+              }
+            }
+          }
+        },
+        "q04h1@A": {
+          "cap": "A",
+          "n_features": 168,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 213.16,
+            "B_mean_h2": 202.931,
+            "mse_gain_s2": 223.389,
+            "ci": [
+              67.403,
+              382.487
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 283.157,
+            "B_mean_h2": 229.872,
+            "mse_gain_s2": 336.441,
+            "ci": [
+              145.46,
+              527.998
+            ]
+          },
+          "multiday": {
+            "point": 223.389,
+            "ci_block_1d": [
+              73.926,
+              379.404
+            ],
+            "ci_block_2d": [
+              75.122,
+              390.042
+            ],
+            "ci_block_3d": [
+              61.563,
+              403.073
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.8851,
+          "gain_all": 0.2721,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.8851,
+          "gain_clean": 0.2721,
+          "vs": {
+            "g0": {
+              "delta_s2": -2.728,
+              "ci": [
+                -12.401,
+                5.906
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -2.728,
+                "ci_block_1d": [
+                  -12.385,
+                  6.146
+                ],
+                "ci_block_2d": [
+                  -12.01,
+                  6.632
+                ],
+                "ci_block_3d": [
+                  -9.995,
+                  7.531
+                ]
+              }
+            }
+          }
+        },
+        "q04h1@B": {
+          "cap": "B",
+          "n_features": 168,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 646.145,
+            "B_mean_h2": 775.118,
+            "mse_gain_s2": 517.173,
+            "ci": [
+              233.066,
+              813.786
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 756.562,
+            "B_mean_h2": 839.711,
+            "mse_gain_s2": 673.413,
+            "ci": [
+              322.51,
+              1054.096
+            ]
+          },
+          "multiday": {
+            "point": 517.173,
+            "ci_block_1d": [
+              223.56,
+              823.807
+            ],
+            "ci_block_2d": [
+              254.155,
+              828.581
+            ],
+            "ci_block_3d": [
+              242.574,
+              821.843
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.5269,
+          "gain_all": 0.6303,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.5269,
+          "gain_clean": 0.6303,
+          "vs": {
+            "g0": {
+              "delta_s2": 23.162,
+              "ci": [
+                -31.76,
+                74.806
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 23.162,
+                "ci_block_1d": [
+                  -29.311,
+                  73.977
+                ],
+                "ci_block_2d": [
+                  -26.342,
+                  78.546
+                ],
+                "ci_block_3d": [
+                  -24.196,
+                  75.722
+                ]
+              }
+            }
+          }
+        },
+        "one_q04@A": {
+          "cap": "A",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 267.047,
+            "B_mean_h2": 254.796,
+            "mse_gain_s2": 279.299,
+            "ci": [
+              78.569,
+              495.604
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 360.359,
+            "B_mean_h2": 275.905,
+            "mse_gain_s2": 444.813,
+            "ci": [
+              224.025,
+              687.577
+            ]
+          },
+          "multiday": {
+            "point": 279.299,
+            "ci_block_1d": [
+              86.53,
+              482.028
+            ],
+            "ci_block_2d": [
+              86.458,
+              497.898
+            ],
+            "ci_block_3d": [
+              87.291,
+              522.185
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.817,
+          "gain_all": 0.3402,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.817,
+          "gain_clean": 0.3402,
+          "vs": {
+            "q04h1": {
+              "delta_s2": 55.91,
+              "ci": [
+                -44.366,
+                148.414
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 55.91,
+                "ci_block_1d": [
+                  -44.205,
+                  150.496
+                ],
+                "ci_block_2d": [
+                  -49.84,
+                  157.461
+                ],
+                "ci_block_3d": [
+                  -56.72,
+                  165.585
+                ]
+              }
+            }
+          }
+        },
+        "one_q04@B": {
+          "cap": "B",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 766.142,
+            "B_mean_h2": 891.531,
+            "mse_gain_s2": 640.753,
+            "ci": [
+              245.554,
+              1022.708
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 919.733,
+            "B_mean_h2": 942.274,
+            "mse_gain_s2": 897.192,
+            "ci": [
+              480.48,
+              1342.105
+            ]
+          },
+          "multiday": {
+            "point": 640.753,
+            "ci_block_1d": [
+              256.431,
+              1019.204
+            ],
+            "ci_block_2d": [
+              277.219,
+              1047.792
+            ],
+            "ci_block_3d": [
+              239.793,
+              1079.298
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.376,
+          "gain_all": 0.7812,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.376,
+          "gain_clean": 0.7812,
+          "vs": {
+            "q04h1": {
+              "delta_s2": 123.581,
+              "ci": [
+                -88.692,
+                304.888
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 123.581,
+                "ci_block_1d": [
+                  -82.727,
+                  303.346
+                ],
+                "ci_block_2d": [
+                  -103.543,
+                  321.247
+                ],
+                "ci_block_3d": [
+                  -114.928,
+                  354.855
+                ]
+              }
+            }
+          }
+        },
+        "two_q04@A": {
+          "cap": "A",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 224.689,
+            "B_mean_h2": 209.486,
+            "mse_gain_s2": 239.893,
+            "ci": [
+              84.418,
+              418.832
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 301.857,
+            "B_mean_h2": 235.407,
+            "mse_gain_s2": 368.308,
+            "ci": [
+              171.606,
+              574.429
+            ]
+          },
+          "multiday": {
+            "point": 239.893,
+            "ci_block_1d": [
+              83.954,
+              411.49
+            ],
+            "ci_block_2d": [
+              90.392,
+              405.403
+            ],
+            "ci_block_3d": [
+              68.055,
+              423.493
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.865,
+          "gain_all": 0.2922,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.865,
+          "gain_clean": 0.2922,
+          "vs": {
+            "q04h1": {
+              "delta_s2": 16.504,
+              "ci": [
+                -9.439,
+                42.804
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 16.504,
+                "ci_block_1d": [
+                  -9.936,
+                  41.955
+                ],
+                "ci_block_2d": [
+                  -16.333,
+                  46.012
+                ],
+                "ci_block_3d": [
+                  -20.137,
+                  49.998
+                ]
+              }
+            },
+            "one_q04": {
+              "delta_s2": -39.406,
+              "ci": [
+                -108.358,
+                40.793
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -39.406,
+                "ci_block_1d": [
+                  -107.453,
+                  43.132
+                ],
+                "ci_block_2d": [
+                  -116.902,
+                  44.606
+                ],
+                "ci_block_3d": [
+                  -127.4,
+                  45.564
+                ]
+              }
+            }
+          }
+        },
+        "two_q04@B": {
+          "cap": "B",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 131956,
+            "A_mean_r_h": 663.25,
+            "B_mean_h2": 778.591,
+            "mse_gain_s2": 547.909,
+            "ci": [
+              254.38,
+              836.025
+            ]
+          },
+          "supported_airports": {
+            "n": 98531,
+            "A_mean_r_h": 802.228,
+            "B_mean_h2": 850.396,
+            "mse_gain_s2": 754.061,
+            "ci": [
+              420.662,
+              1108.51
+            ]
+          },
+          "multiday": {
+            "point": 547.909,
+            "ci_block_1d": [
+              252.122,
+              856.224
+            ],
+            "ci_block_2d": [
+              292.079,
+              865.144
+            ],
+            "ci_block_3d": [
+              286.115,
+              839.914
+            ]
+          },
+          "rmse_all_v10": 284.1572,
+          "rmse_all_new": 283.4893,
+          "gain_all": 0.6679,
+          "rmse_clean_v10": 284.1572,
+          "rmse_clean_new": 283.4893,
+          "gain_clean": 0.6679,
+          "vs": {
+            "q04h1": {
+              "delta_s2": 30.736,
+              "ci": [
+                -28.895,
+                90.823
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 30.736,
+                "ci_block_1d": [
+                  -32.135,
+                  92.026
+                ],
+                "ci_block_2d": [
+                  -31.473,
+                  94.25
+                ],
+                "ci_block_3d": [
+                  -32.32,
+                  101.433
+                ]
+              }
+            },
+            "one_q04": {
+              "delta_s2": -92.844,
+              "ci": [
+                -258.763,
+                99.116
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -92.844,
+                "ci_block_1d": [
+                  -259.956,
+                  98.982
+                ],
+                "ci_block_2d": [
+                  -275.183,
+                  117.641
+                ],
+                "ci_block_3d": [
+                  -291.963,
+                  117.829
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "december": {
+      "fold": "december",
+      "month": "2025-12",
+      "n_eligible": 123016,
+      "nuisance_train_departures": 1898549,
+      "nuisance_months": 11,
+      "u_present_pct": 100.0,
+      "u_std_s": 564.3,
+      "coverage": {
+        "EDDM": {
+          "same_rwy_diff_op": {
+            "pairs": 9925,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 2600,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "EGLL": {
+          "same_rwy_diff_op": {
+            "pairs": 44572,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 4,
+            "dates": 2,
+            "met": false
+          }
+        },
+        "LEBL": {
+          "same_rwy_diff_op": {
+            "pairs": 20026,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 9,
+            "dates": 5,
+            "met": false
+          }
+        },
+        "LEMD": {
+          "same_rwy_diff_op": {
+            "pairs": 20092,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 3606,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LFPG": {
+          "same_rwy_diff_op": {
+            "pairs": 16694,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 7120,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LIRF": {
+          "same_rwy_diff_op": {
+            "pairs": 14809,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 357,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LSZH": {
+          "same_rwy_diff_op": {
+            "pairs": 8908,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 1311,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LTFM": {
+          "same_rwy_diff_op": {
+            "pairs": 11054,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 24336,
+            "dates": 31,
+            "met": true
+          }
+        }
+      },
+      "supported_airports": [
+        "EDDM",
+        "LEMD",
+        "LFPG",
+        "LIRF",
+        "LSZH",
+        "LTFM"
+      ],
+      "unsupported_airports": [
+        "EGLL",
+        "LEBL"
+      ],
+      "n_rows_supported": 90633,
+      "n_base_features": 166,
+      "placebo_group_differs_pct": 75.15,
+      "placebo_note": "share of eligible rows whose 7-day-shifted same-runway group has a different size from the real one; the first version of this placebo scored 0 here, because shifting every row together preserves the grouping (Sol round 1, blocking finding 6)",
+      "q04_h1_columns": 2,
+      "feature_coverage_pct": {
+        "f_all": 97.43,
+        "f_same_rwy_diff_op": 80.11,
+        "f_diff_rwy_same_op": 24.37
+      },
+      "arms": {
+        "g0@A": {
+          "cap": "A",
+          "n_features": 166,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 88.269,
+            "B_mean_h2": 88.42,
+            "mse_gain_s2": 88.118,
+            "ci": [
+              23.1,
+              157.381
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 97.134,
+            "B_mean_h2": 79.184,
+            "mse_gain_s2": 115.084,
+            "ci": [
+              35.499,
+              194.566
+            ]
+          },
+          "multiday": {
+            "point": 88.118,
+            "ci_block_1d": [
+              24.199,
+              161.405
+            ],
+            "ci_block_2d": [
+              9.655,
+              151.537
+            ],
+            "ci_block_3d": [
+              3.417,
+              147.555
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.7621,
+          "gain_all": 0.1597,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.7621,
+          "gain_clean": 0.1597
+        },
+        "g0@B": {
+          "cap": "B",
+          "n_features": 166,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 270.943,
+            "B_mean_h2": 364.868,
+            "mse_gain_s2": 177.017,
+            "ci": [
+              71.344,
+              290.181
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 300.233,
+            "B_mean_h2": 368.733,
+            "mse_gain_s2": 231.732,
+            "ci": [
+              83.013,
+              375.697
+            ]
+          },
+          "multiday": {
+            "point": 177.017,
+            "ci_block_1d": [
+              67.893,
+              284.562
+            ],
+            "ci_block_2d": [
+              35.751,
+              280.057
+            ],
+            "ci_block_3d": [
+              16.892,
+              275.039
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.6009,
+          "gain_all": 0.3209,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.6009,
+          "gain_clean": 0.3209
+        },
+        "one@A": {
+          "cap": "A",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 85.247,
+            "B_mean_h2": 86.206,
+            "mse_gain_s2": 84.288,
+            "ci": [
+              24.882,
+              139.052
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 92.059,
+            "B_mean_h2": 78.439,
+            "mse_gain_s2": 105.679,
+            "ci": [
+              39.103,
+              167.303
+            ]
+          },
+          "multiday": {
+            "point": 84.288,
+            "ci_block_1d": [
+              26.71,
+              142.781
+            ],
+            "ci_block_2d": [
+              8.42,
+              139.88
+            ],
+            "ci_block_3d": [
+              3.737,
+              145.472
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.7691,
+          "gain_all": 0.1527,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.7691,
+          "gain_clean": 0.1527,
+          "vs": {
+            "g0": {
+              "delta_s2": -3.83,
+              "ci": [
+                -39.256,
+                18.256
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -3.83,
+                "ci_block_1d": [
+                  -38.697,
+                  19.112
+                ],
+                "ci_block_2d": [
+                  -33.965,
+                  20.145
+                ],
+                "ci_block_3d": [
+                  -33.075,
+                  19.728
+                ]
+              }
+            }
+          }
+        },
+        "one@B": {
+          "cap": "B",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 372.983,
+            "B_mean_h2": 511.84,
+            "mse_gain_s2": 234.126,
+            "ci": [
+              78.389,
+              377.802
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 398.549,
+            "B_mean_h2": 501.071,
+            "mse_gain_s2": 296.028,
+            "ci": [
+              107.554,
+              502.924
+            ]
+          },
+          "multiday": {
+            "point": 234.126,
+            "ci_block_1d": [
+              84.304,
+              374.688
+            ],
+            "ci_block_2d": [
+              52.074,
+              383.915
+            ],
+            "ci_block_3d": [
+              47.974,
+              388.532
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.4972,
+          "gain_all": 0.4246,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.4972,
+          "gain_clean": 0.4246,
+          "vs": {
+            "g0": {
+              "delta_s2": 57.11,
+              "ci": [
+                -19.511,
+                132.925
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 57.11,
+                "ci_block_1d": [
+                  -20.022,
+                  139.868
+                ],
+                "ci_block_2d": [
+                  -25.817,
+                  144.935
+                ],
+                "ci_block_3d": [
+                  -13.964,
+                  147.209
+                ]
+              }
+            }
+          }
+        },
+        "two@A": {
+          "cap": "A",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 110.214,
+            "B_mean_h2": 98.486,
+            "mse_gain_s2": 121.943,
+            "ci": [
+              54.099,
+              189.219
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 122.007,
+            "B_mean_h2": 92.486,
+            "mse_gain_s2": 151.528,
+            "ci": [
+              76.723,
+              227.184
+            ]
+          },
+          "multiday": {
+            "point": 121.943,
+            "ci_block_1d": [
+              55.592,
+              189.647
+            ],
+            "ci_block_2d": [
+              42.411,
+              183.647
+            ],
+            "ci_block_3d": [
+              43.606,
+              173.666
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.7008,
+          "gain_all": 0.221,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.7008,
+          "gain_clean": 0.221,
+          "vs": {
+            "g0": {
+              "delta_s2": 33.825,
+              "ci": [
+                14.08,
+                52.504
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 33.825,
+                "ci_block_1d": [
+                  15.682,
+                  52.34
+                ],
+                "ci_block_2d": [
+                  19.753,
+                  49.689
+                ],
+                "ci_block_3d": [
+                  18.48,
+                  47.12
+                ]
+              }
+            },
+            "one": {
+              "delta_s2": 37.655,
+              "ci": [
+                12.083,
+                69.576
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 37.655,
+                "ci_block_1d": [
+                  12.496,
+                  72.741
+                ],
+                "ci_block_2d": [
+                  11.865,
+                  65.759
+                ],
+                "ci_block_3d": [
+                  10.355,
+                  63.585
+                ]
+              }
+            },
+            "two_c": {
+              "delta_s2": 34.129,
+              "ci": [
+                16.583,
+                52.454
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 34.129,
+                "ci_block_1d": [
+                  15.731,
+                  52.674
+                ],
+                "ci_block_2d": [
+                  19.58,
+                  49.446
+                ],
+                "ci_block_3d": [
+                  18.799,
+                  49.135
+                ]
+              }
+            }
+          }
+        },
+        "two@B": {
+          "cap": "B",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 362.291,
+            "B_mean_h2": 437.086,
+            "mse_gain_s2": 287.496,
+            "ci": [
+              171.325,
+              405.74
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 421.11,
+            "B_mean_h2": 456.947,
+            "mse_gain_s2": 385.272,
+            "ci": [
+              236.724,
+              537.763
+            ]
+          },
+          "multiday": {
+            "point": 287.496,
+            "ci_block_1d": [
+              178.752,
+              402.594
+            ],
+            "ci_block_2d": [
+              151.529,
+              413.713
+            ],
+            "ci_block_3d": [
+              148.131,
+              415.238
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.4003,
+          "gain_all": 0.5215,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.4003,
+          "gain_clean": 0.5215,
+          "vs": {
+            "g0": {
+              "delta_s2": 110.479,
+              "ci": [
+                41.064,
+                169.643
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 110.479,
+                "ci_block_1d": [
+                  43.483,
+                  169.993
+                ],
+                "ci_block_2d": [
+                  68.439,
+                  174.558
+                ],
+                "ci_block_3d": [
+                  71.738,
+                  180.217
+                ]
+              }
+            },
+            "one": {
+              "delta_s2": 53.369,
+              "ci": [
+                -16.625,
+                117.627
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 53.369,
+                "ci_block_1d": [
+                  -19.074,
+                  116.442
+                ],
+                "ci_block_2d": [
+                  9.53,
+                  121.431
+                ],
+                "ci_block_3d": [
+                  3.334,
+                  117.584
+                ]
+              }
+            },
+            "two_c": {
+              "delta_s2": 101.225,
+              "ci": [
+                32.785,
+                167.853
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 101.225,
+                "ci_block_1d": [
+                  28.273,
+                  166.335
+                ],
+                "ci_block_2d": [
+                  23.816,
+                  174.601
+                ],
+                "ci_block_3d": [
+                  17.891,
+                  170.384
+                ]
+              }
+            }
+          }
+        },
+        "two_c@A": {
+          "cap": "A",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 87.84,
+            "B_mean_h2": 87.866,
+            "mse_gain_s2": 87.814,
+            "ci": [
+              23.748,
+              159.774
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 97.109,
+            "B_mean_h2": 78.75,
+            "mse_gain_s2": 115.467,
+            "ci": [
+              39.993,
+              194.527
+            ]
+          },
+          "multiday": {
+            "point": 87.814,
+            "ci_block_1d": [
+              20.803,
+              157.152
+            ],
+            "ci_block_2d": [
+              7.485,
+              153.262
+            ],
+            "ci_block_3d": [
+              5.334,
+              146.333
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.7627,
+          "gain_all": 0.1591,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.7627,
+          "gain_clean": 0.1591,
+          "vs": {
+            "g0": {
+              "delta_s2": -0.304,
+              "ci": [
+                -1.917,
+                1.212
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -0.304,
+                "ci_block_1d": [
+                  -1.944,
+                  1.229
+                ],
+                "ci_block_2d": [
+                  -1.606,
+                  0.97
+                ],
+                "ci_block_3d": [
+                  -1.579,
+                  0.829
+                ]
+              }
+            }
+          }
+        },
+        "two_c@B": {
+          "cap": "B",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 331.242,
+            "B_mean_h2": 476.214,
+            "mse_gain_s2": 186.271,
+            "ci": [
+              45.421,
+              326.472
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 370.143,
+            "B_mean_h2": 469.56,
+            "mse_gain_s2": 270.726,
+            "ci": [
+              91.178,
+              446.487
+            ]
+          },
+          "multiday": {
+            "point": 186.271,
+            "ci_block_1d": [
+              47.077,
+              323.686
+            ],
+            "ci_block_2d": [
+              23.974,
+              336.746
+            ],
+            "ci_block_3d": [
+              7.328,
+              332.93
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.5841,
+          "gain_all": 0.3377,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.5841,
+          "gain_clean": 0.3377,
+          "vs": {
+            "g0": {
+              "delta_s2": 9.254,
+              "ci": [
+                -55.982,
+                68.505
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 9.254,
+                "ci_block_1d": [
+                  -59.637,
+                  67.743
+                ],
+                "ci_block_2d": [
+                  -60.592,
+                  79.63
+                ],
+                "ci_block_3d": [
+                  -40.942,
+                  84.123
+                ]
+              }
+            }
+          }
+        },
+        "q04h1@A": {
+          "cap": "A",
+          "n_features": 168,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 87.46,
+            "B_mean_h2": 88.453,
+            "mse_gain_s2": 86.467,
+            "ci": [
+              20.564,
+              154.16
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 97.331,
+            "B_mean_h2": 78.995,
+            "mse_gain_s2": 115.667,
+            "ci": [
+              36.961,
+              195.342
+            ]
+          },
+          "multiday": {
+            "point": 86.467,
+            "ci_block_1d": [
+              18.581,
+              156.665
+            ],
+            "ci_block_2d": [
+              9.26,
+              144.951
+            ],
+            "ci_block_3d": [
+              1.465,
+              146.233
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.7651,
+          "gain_all": 0.1567,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.7651,
+          "gain_clean": 0.1567,
+          "vs": {
+            "g0": {
+              "delta_s2": -1.651,
+              "ci": [
+                -4.07,
+                0.209
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -1.651,
+                "ci_block_1d": [
+                  -3.938,
+                  0.341
+                ],
+                "ci_block_2d": [
+                  -4.238,
+                  0.168
+                ],
+                "ci_block_3d": [
+                  -4.112,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "q04h1@B": {
+          "cap": "B",
+          "n_features": 168,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 330.783,
+            "B_mean_h2": 432.489,
+            "mse_gain_s2": 229.076,
+            "ci": [
+              96.338,
+              365.861
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 376.496,
+            "B_mean_h2": 433.912,
+            "mse_gain_s2": 319.079,
+            "ci": [
+              135.772,
+              509.249
+            ]
+          },
+          "multiday": {
+            "point": 229.076,
+            "ci_block_1d": [
+              100.761,
+              368.601
+            ],
+            "ci_block_2d": [
+              69.388,
+              371.332
+            ],
+            "ci_block_3d": [
+              68.799,
+              363.68
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.5064,
+          "gain_all": 0.4154,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.5064,
+          "gain_clean": 0.4154,
+          "vs": {
+            "g0": {
+              "delta_s2": 52.06,
+              "ci": [
+                -2.854,
+                116.423
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 52.06,
+                "ci_block_1d": [
+                  0.517,
+                  116.0
+                ],
+                "ci_block_2d": [
+                  4.629,
+                  118.068
+                ],
+                "ci_block_3d": [
+                  15.516,
+                  120.925
+                ]
+              }
+            }
+          }
+        },
+        "one_q04@A": {
+          "cap": "A",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 85.131,
+            "B_mean_h2": 86.3,
+            "mse_gain_s2": 83.962,
+            "ci": [
+              24.227,
+              139.96
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 92.092,
+            "B_mean_h2": 78.484,
+            "mse_gain_s2": 105.7,
+            "ci": [
+              35.555,
+              167.234
+            ]
+          },
+          "multiday": {
+            "point": 83.962,
+            "ci_block_1d": [
+              26.437,
+              140.748
+            ],
+            "ci_block_2d": [
+              8.925,
+              143.055
+            ],
+            "ci_block_3d": [
+              5.553,
+              140.972
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.7697,
+          "gain_all": 0.1521,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.7697,
+          "gain_clean": 0.1521,
+          "vs": {
+            "q04h1": {
+              "delta_s2": -2.505,
+              "ci": [
+                -39.717,
+                20.773
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -2.505,
+                "ci_block_1d": [
+                  -37.111,
+                  20.467
+                ],
+                "ci_block_2d": [
+                  -33.561,
+                  21.044
+                ],
+                "ci_block_3d": [
+                  -33.0,
+                  20.022
+                ]
+              }
+            }
+          }
+        },
+        "one_q04@B": {
+          "cap": "B",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 329.979,
+            "B_mean_h2": 438.994,
+            "mse_gain_s2": 220.964,
+            "ci": [
+              98.44,
+              352.216
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 363.598,
+            "B_mean_h2": 435.822,
+            "mse_gain_s2": 291.375,
+            "ci": [
+              124.854,
+              457.485
+            ]
+          },
+          "multiday": {
+            "point": 220.964,
+            "ci_block_1d": [
+              88.122,
+              347.707
+            ],
+            "ci_block_2d": [
+              52.491,
+              356.633
+            ],
+            "ci_block_3d": [
+              45.202,
+              358.864
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.5211,
+          "gain_all": 0.4007,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.5211,
+          "gain_clean": 0.4007,
+          "vs": {
+            "q04h1": {
+              "delta_s2": -8.113,
+              "ci": [
+                -112.981,
+                76.762
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -8.113,
+                "ci_block_1d": [
+                  -114.025,
+                  75.542
+                ],
+                "ci_block_2d": [
+                  -108.549,
+                  73.431
+                ],
+                "ci_block_3d": [
+                  -102.925,
+                  59.482
+                ]
+              }
+            }
+          }
+        },
+        "two_q04@A": {
+          "cap": "A",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 109.84,
+            "B_mean_h2": 98.548,
+            "mse_gain_s2": 121.131,
+            "ci": [
+              54.956,
+              187.558
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 121.533,
+            "B_mean_h2": 92.704,
+            "mse_gain_s2": 150.362,
+            "ci": [
+              76.36,
+              227.045
+            ]
+          },
+          "multiday": {
+            "point": 121.131,
+            "ci_block_1d": [
+              55.412,
+              190.009
+            ],
+            "ci_block_2d": [
+              44.871,
+              179.256
+            ],
+            "ci_block_3d": [
+              38.081,
+              173.362
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.7023,
+          "gain_all": 0.2195,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.7023,
+          "gain_clean": 0.2195,
+          "vs": {
+            "q04h1": {
+              "delta_s2": 34.664,
+              "ci": [
+                15.543,
+                53.745
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 34.664,
+                "ci_block_1d": [
+                  16.621,
+                  53.623
+                ],
+                "ci_block_2d": [
+                  20.956,
+                  50.121
+                ],
+                "ci_block_3d": [
+                  18.827,
+                  48.494
+                ]
+              }
+            },
+            "one_q04": {
+              "delta_s2": 37.168,
+              "ci": [
+                11.312,
+                68.699
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 37.168,
+                "ci_block_1d": [
+                  12.904,
+                  68.515
+                ],
+                "ci_block_2d": [
+                  10.43,
+                  67.587
+                ],
+                "ci_block_3d": [
+                  10.393,
+                  62.496
+                ]
+              }
+            }
+          }
+        },
+        "two_q04@B": {
+          "cap": "B",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 123016,
+            "A_mean_r_h": 404.782,
+            "B_mean_h2": 539.498,
+            "mse_gain_s2": 270.066,
+            "ci": [
+              128.828,
+              402.365
+            ]
+          },
+          "supported_airports": {
+            "n": 90633,
+            "A_mean_r_h": 461.768,
+            "B_mean_h2": 544.185,
+            "mse_gain_s2": 379.35,
+            "ci": [
+              224.402,
+              562.122
+            ]
+          },
+          "multiday": {
+            "point": 270.066,
+            "ci_block_1d": [
+              134.262,
+              409.045
+            ],
+            "ci_block_2d": [
+              119.23,
+              416.935
+            ],
+            "ci_block_3d": [
+              114.877,
+              425.225
+            ]
+          },
+          "rmse_all_v10": 204.9218,
+          "rmse_all_new": 204.432,
+          "gain_all": 0.4898,
+          "rmse_clean_v10": 204.9218,
+          "rmse_clean_new": 204.432,
+          "gain_clean": 0.4898,
+          "vs": {
+            "q04h1": {
+              "delta_s2": 40.989,
+              "ci": [
+                -41.633,
+                108.285
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 40.989,
+                "ci_block_1d": [
+                  -37.357,
+                  107.58
+                ],
+                "ci_block_2d": [
+                  -23.695,
+                  110.129
+                ],
+                "ci_block_3d": [
+                  -18.278,
+                  113.579
+                ]
+              }
+            },
+            "one_q04": {
+              "delta_s2": 49.102,
+              "ci": [
+                -21.285,
+                110.963
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 49.102,
+                "ci_block_1d": [
+                  -19.666,
+                  116.119
+                ],
+                "ci_block_2d": [
+                  -11.565,
+                  122.951
+                ],
+                "ci_block_3d": [
+                  7.34,
+                  123.975
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "january": {
+      "fold": "january",
+      "month": "2025-01",
+      "n_eligible": 115366,
+      "nuisance_train_departures": 1910306,
+      "nuisance_months": 11,
+      "u_present_pct": 100.0,
+      "u_std_s": 562.9,
+      "coverage": {
+        "EDDM": {
+          "same_rwy_diff_op": {
+            "pairs": 7366,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 3092,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "EGLL": {
+          "same_rwy_diff_op": {
+            "pairs": 42532,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 5,
+            "dates": 3,
+            "met": false
+          }
+        },
+        "LEBL": {
+          "same_rwy_diff_op": {
+            "pairs": 15927,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 3,
+            "dates": 3,
+            "met": false
+          }
+        },
+        "LEMD": {
+          "same_rwy_diff_op": {
+            "pairs": 16940,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 3662,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LFPG": {
+          "same_rwy_diff_op": {
+            "pairs": 13262,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 6478,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LIRF": {
+          "same_rwy_diff_op": {
+            "pairs": 13732,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 226,
+            "dates": 28,
+            "met": true
+          }
+        },
+        "LSZH": {
+          "same_rwy_diff_op": {
+            "pairs": 7449,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 975,
+            "dates": 31,
+            "met": true
+          }
+        },
+        "LTFM": {
+          "same_rwy_diff_op": {
+            "pairs": 11034,
+            "dates": 31,
+            "met": true
+          },
+          "diff_rwy_same_op": {
+            "pairs": 19695,
+            "dates": 31,
+            "met": true
+          }
+        }
+      },
+      "supported_airports": [
+        "EDDM",
+        "LEMD",
+        "LFPG",
+        "LIRF",
+        "LSZH",
+        "LTFM"
+      ],
+      "unsupported_airports": [
+        "EGLL",
+        "LEBL"
+      ],
+      "n_rows_supported": 84668,
+      "n_base_features": 166,
+      "placebo_group_differs_pct": 74.4,
+      "placebo_note": "share of eligible rows whose 7-day-shifted same-runway group has a different size from the real one; the first version of this placebo scored 0 here, because shifting every row together preserves the grouping (Sol round 1, blocking finding 6)",
+      "q04_h1_columns": 2,
+      "feature_coverage_pct": {
+        "f_all": 96.94,
+        "f_same_rwy_diff_op": 78.17,
+        "f_diff_rwy_same_op": 24.82
+      },
+      "arms": {
+        "g0@A": {
+          "cap": "A",
+          "n_features": 166,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 172.859,
+            "B_mean_h2": 174.97,
+            "mse_gain_s2": 170.748,
+            "ci": [
+              1.01,
+              351.587
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 176.642,
+            "B_mean_h2": 159.782,
+            "mse_gain_s2": 193.501,
+            "ci": [
+              51.327,
+              358.115
+            ]
+          },
+          "multiday": {
+            "point": 170.748,
+            "ci_block_1d": [
+              0.678,
+              343.881
+            ],
+            "ci_block_2d": [
+              -27.18,
+              393.257
+            ],
+            "ci_block_3d": [
+              -42.639,
+              415.478
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.6363,
+          "gain_all": 0.1897,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.8567,
+          "gain_clean": 0.2939
+        },
+        "g0@B": {
+          "cap": "B",
+          "n_features": 166,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 503.664,
+            "B_mean_h2": 676.578,
+            "mse_gain_s2": 330.75,
+            "ci": [
+              44.928,
+              662.983
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 459.269,
+            "B_mean_h2": 632.846,
+            "mse_gain_s2": 285.692,
+            "ci": [
+              46.168,
+              557.578
+            ]
+          },
+          "multiday": {
+            "point": 330.75,
+            "ci_block_1d": [
+              42.98,
+              645.783
+            ],
+            "ci_block_2d": [
+              15.713,
+              743.857
+            ],
+            "ci_block_3d": [
+              -20.158,
+              802.649
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.4584,
+          "gain_all": 0.3676,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.5809,
+          "gain_clean": 0.5697
+        },
+        "one@A": {
+          "cap": "A",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 167.061,
+            "B_mean_h2": 170.05,
+            "mse_gain_s2": 164.073,
+            "ci": [
+              1.236,
+              338.693
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 171.963,
+            "B_mean_h2": 156.782,
+            "mse_gain_s2": 187.145,
+            "ci": [
+              48.587,
+              365.202
+            ]
+          },
+          "multiday": {
+            "point": 164.073,
+            "ci_block_1d": [
+              0.161,
+              354.495
+            ],
+            "ci_block_2d": [
+              -27.295,
+              383.763
+            ],
+            "ci_block_3d": [
+              -43.361,
+              408.196
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.6437,
+          "gain_all": 0.1823,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.8682,
+          "gain_clean": 0.2824,
+          "vs": {
+            "g0": {
+              "delta_s2": -6.675,
+              "ci": [
+                -15.994,
+                3.635
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -6.675,
+                "ci_block_1d": [
+                  -15.795,
+                  3.711
+                ],
+                "ci_block_2d": [
+                  -14.877,
+                  2.046
+                ],
+                "ci_block_3d": [
+                  -13.292,
+                  0.541
+                ]
+              }
+            }
+          }
+        },
+        "one@B": {
+          "cap": "B",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 452.253,
+            "B_mean_h2": 590.421,
+            "mse_gain_s2": 314.085,
+            "ci": [
+              41.921,
+              607.034
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 447.686,
+            "B_mean_h2": 567.699,
+            "mse_gain_s2": 327.673,
+            "ci": [
+              86.944,
+              615.304
+            ]
+          },
+          "multiday": {
+            "point": 314.085,
+            "ci_block_1d": [
+              32.13,
+              633.335
+            ],
+            "ci_block_2d": [
+              18.012,
+              747.247
+            ],
+            "ci_block_3d": [
+              -24.59,
+              755.607
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.4769,
+          "gain_all": 0.3491,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.6096,
+          "gain_clean": 0.541,
+          "vs": {
+            "g0": {
+              "delta_s2": -16.665,
+              "ci": [
+                -80.673,
+                43.455
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -16.665,
+                "ci_block_1d": [
+                  -78.184,
+                  42.153
+                ],
+                "ci_block_2d": [
+                  -94.376,
+                  42.831
+                ],
+                "ci_block_3d": [
+                  -105.69,
+                  52.071
+                ]
+              }
+            }
+          }
+        },
+        "two@A": {
+          "cap": "A",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 177.551,
+            "B_mean_h2": 168.314,
+            "mse_gain_s2": 186.788,
+            "ci": [
+              27.757,
+              360.541
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 183.354,
+            "B_mean_h2": 152.771,
+            "mse_gain_s2": 213.937,
+            "ci": [
+              68.991,
+              372.137
+            ]
+          },
+          "multiday": {
+            "point": 186.788,
+            "ci_block_1d": [
+              20.419,
+              360.608
+            ],
+            "ci_block_2d": [
+              1.634,
+              402.064
+            ],
+            "ci_block_3d": [
+              -25.674,
+              428.392
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.6185,
+          "gain_all": 0.2075,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.829,
+          "gain_clean": 0.3216,
+          "vs": {
+            "g0": {
+              "delta_s2": 16.04,
+              "ci": [
+                4.358,
+                26.814
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 16.04,
+                "ci_block_1d": [
+                  3.794,
+                  26.353
+                ],
+                "ci_block_2d": [
+                  1.003,
+                  28.303
+                ],
+                "ci_block_3d": [
+                  0.696,
+                  28.882
+                ]
+              }
+            },
+            "one": {
+              "delta_s2": 22.715,
+              "ci": [
+                7.266,
+                37.499
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 22.715,
+                "ci_block_1d": [
+                  7.474,
+                  37.245
+                ],
+                "ci_block_2d": [
+                  4.734,
+                  37.339
+                ],
+                "ci_block_3d": [
+                  5.491,
+                  36.492
+                ]
+              }
+            },
+            "two_c": {
+              "delta_s2": 16.04,
+              "ci": [
+                4.514,
+                27.208
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 16.04,
+                "ci_block_1d": [
+                  4.362,
+                  27.294
+                ],
+                "ci_block_2d": [
+                  0.325,
+                  27.777
+                ],
+                "ci_block_3d": [
+                  0.705,
+                  29.255
+                ]
+              }
+            }
+          }
+        },
+        "two@B": {
+          "cap": "B",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 473.599,
+            "B_mean_h2": 613.533,
+            "mse_gain_s2": 333.664,
+            "ci": [
+              83.775,
+              651.347
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 477.985,
+            "B_mean_h2": 599.929,
+            "mse_gain_s2": 356.041,
+            "ci": [
+              131.194,
+              609.174
+            ]
+          },
+          "multiday": {
+            "point": 333.664,
+            "ci_block_1d": [
+              61.233,
+              636.229
+            ],
+            "ci_block_2d": [
+              51.556,
+              707.745
+            ],
+            "ci_block_3d": [
+              27.972,
+              734.206
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.4552,
+          "gain_all": 0.3708,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.5759,
+          "gain_clean": 0.5747,
+          "vs": {
+            "g0": {
+              "delta_s2": 2.914,
+              "ci": [
+                -64.72,
+                62.647
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 2.914,
+                "ci_block_1d": [
+                  -68.374,
+                  62.669
+                ],
+                "ci_block_2d": [
+                  -79.18,
+                  71.951
+                ],
+                "ci_block_3d": [
+                  -83.767,
+                  78.181
+                ]
+              }
+            },
+            "one": {
+              "delta_s2": 19.578,
+              "ci": [
+                -34.005,
+                69.49
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 19.578,
+                "ci_block_1d": [
+                  -33.666,
+                  70.786
+                ],
+                "ci_block_2d": [
+                  -38.808,
+                  76.469
+                ],
+                "ci_block_3d": [
+                  -39.615,
+                  77.633
+                ]
+              }
+            },
+            "two_c": {
+              "delta_s2": -4.117,
+              "ci": [
+                -62.239,
+                51.648
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -4.117,
+                "ci_block_1d": [
+                  -64.17,
+                  51.509
+                ],
+                "ci_block_2d": [
+                  -74.226,
+                  61.759
+                ],
+                "ci_block_3d": [
+                  -80.92,
+                  70.489
+                ]
+              }
+            }
+          }
+        },
+        "two_c@A": {
+          "cap": "A",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 172.859,
+            "B_mean_h2": 174.97,
+            "mse_gain_s2": 170.748,
+            "ci": [
+              4.661,
+              349.527
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 176.642,
+            "B_mean_h2": 159.782,
+            "mse_gain_s2": 193.501,
+            "ci": [
+              55.917,
+              352.663
+            ]
+          },
+          "multiday": {
+            "point": 170.748,
+            "ci_block_1d": [
+              -0.179,
+              356.383
+            ],
+            "ci_block_2d": [
+              -21.864,
+              402.497
+            ],
+            "ci_block_3d": [
+              -34.453,
+              417.388
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.6363,
+          "gain_all": 0.1897,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.8567,
+          "gain_clean": 0.2939,
+          "vs": {
+            "g0": {
+              "delta_s2": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 0.0,
+                "ci_block_1d": [
+                  0.0,
+                  0.0
+                ],
+                "ci_block_2d": [
+                  0.0,
+                  0.0
+                ],
+                "ci_block_3d": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "two_c@B": {
+          "cap": "B",
+          "n_features": 170,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 496.55,
+            "B_mean_h2": 655.319,
+            "mse_gain_s2": 337.781,
+            "ci": [
+              50.556,
+              655.627
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 446.439,
+            "B_mean_h2": 608.066,
+            "mse_gain_s2": 284.811,
+            "ci": [
+              43.418,
+              546.076
+            ]
+          },
+          "multiday": {
+            "point": 337.781,
+            "ci_block_1d": [
+              48.802,
+              649.859
+            ],
+            "ci_block_2d": [
+              33.508,
+              759.883
+            ],
+            "ci_block_3d": [
+              -10.737,
+              786.325
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.4506,
+          "gain_all": 0.3754,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.5688,
+          "gain_clean": 0.5818,
+          "vs": {
+            "g0": {
+              "delta_s2": 7.031,
+              "ci": [
+                -16.017,
+                28.949
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 7.031,
+                "ci_block_1d": [
+                  -15.233,
+                  27.72
+                ],
+                "ci_block_2d": [
+                  -16.61,
+                  29.099
+                ],
+                "ci_block_3d": [
+                  -18.166,
+                  29.236
+                ]
+              }
+            }
+          }
+        },
+        "q04h1@A": {
+          "cap": "A",
+          "n_features": 168,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 172.859,
+            "B_mean_h2": 174.97,
+            "mse_gain_s2": 170.748,
+            "ci": [
+              13.32,
+              358.492
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 176.642,
+            "B_mean_h2": 159.782,
+            "mse_gain_s2": 193.501,
+            "ci": [
+              47.705,
+              354.025
+            ]
+          },
+          "multiday": {
+            "point": 170.748,
+            "ci_block_1d": [
+              -1.511,
+              354.476
+            ],
+            "ci_block_2d": [
+              -21.643,
+              394.183
+            ],
+            "ci_block_3d": [
+              -46.281,
+              413.407
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.6363,
+          "gain_all": 0.1897,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.8567,
+          "gain_clean": 0.2939,
+          "vs": {
+            "g0": {
+              "delta_s2": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": 0.0,
+                "ci_block_1d": [
+                  0.0,
+                  0.0
+                ],
+                "ci_block_2d": [
+                  0.0,
+                  0.0
+                ],
+                "ci_block_3d": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "q04h1@B": {
+          "cap": "B",
+          "n_features": 168,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 484.019,
+            "B_mean_h2": 645.335,
+            "mse_gain_s2": 322.703,
+            "ci": [
+              51.874,
+              637.092
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 444.186,
+            "B_mean_h2": 609.941,
+            "mse_gain_s2": 278.43,
+            "ci": [
+              55.18,
+              547.167
+            ]
+          },
+          "multiday": {
+            "point": 322.703,
+            "ci_block_1d": [
+              63.895,
+              628.395
+            ],
+            "ci_block_2d": [
+              29.515,
+              733.441
+            ],
+            "ci_block_3d": [
+              -12.312,
+              778.624
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.4673,
+          "gain_all": 0.3587,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.5948,
+          "gain_clean": 0.5558,
+          "vs": {
+            "g0": {
+              "delta_s2": -8.047,
+              "ci": [
+                -39.988,
+                24.783
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -8.047,
+                "ci_block_1d": [
+                  -41.384,
+                  23.265
+                ],
+                "ci_block_2d": [
+                  -44.722,
+                  25.487
+                ],
+                "ci_block_3d": [
+                  -46.067,
+                  28.141
+                ]
+              }
+            }
+          }
+        },
+        "one_q04@A": {
+          "cap": "A",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 167.061,
+            "B_mean_h2": 170.05,
+            "mse_gain_s2": 164.073,
+            "ci": [
+              6.047,
+              340.466
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 171.963,
+            "B_mean_h2": 156.782,
+            "mse_gain_s2": 187.145,
+            "ci": [
+              46.016,
+              356.494
+            ]
+          },
+          "multiday": {
+            "point": 164.073,
+            "ci_block_1d": [
+              -1.612,
+              352.657
+            ],
+            "ci_block_2d": [
+              -25.128,
+              380.628
+            ],
+            "ci_block_3d": [
+              -37.288,
+              404.313
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.6437,
+          "gain_all": 0.1823,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.8682,
+          "gain_clean": 0.2824,
+          "vs": {
+            "q04h1": {
+              "delta_s2": -6.675,
+              "ci": [
+                -15.865,
+                3.736
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -6.675,
+                "ci_block_1d": [
+                  -16.286,
+                  3.304
+                ],
+                "ci_block_2d": [
+                  -15.538,
+                  2.245
+                ],
+                "ci_block_3d": [
+                  -12.664,
+                  0.207
+                ]
+              }
+            }
+          }
+        },
+        "one_q04@B": {
+          "cap": "B",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 462.085,
+            "B_mean_h2": 605.738,
+            "mse_gain_s2": 318.433,
+            "ci": [
+              33.807,
+              640.978
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 461.994,
+            "B_mean_h2": 589.4,
+            "mse_gain_s2": 334.588,
+            "ci": [
+              84.26,
+              636.697
+            ]
+          },
+          "multiday": {
+            "point": 318.433,
+            "ci_block_1d": [
+              41.346,
+              650.542
+            ],
+            "ci_block_2d": [
+              6.249,
+              752.872
+            ],
+            "ci_block_3d": [
+              6.388,
+              782.147
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.4721,
+          "gain_all": 0.3539,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.6021,
+          "gain_clean": 0.5485,
+          "vs": {
+            "q04h1": {
+              "delta_s2": -4.269,
+              "ci": [
+                -55.151,
+                45.277
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -4.269,
+                "ci_block_1d": [
+                  -52.881,
+                  46.17
+                ],
+                "ci_block_2d": [
+                  -66.74,
+                  47.934
+                ],
+                "ci_block_3d": [
+                  -76.962,
+                  49.26
+                ]
+              }
+            }
+          }
+        },
+        "two_q04@A": {
+          "cap": "A",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 177.551,
+            "B_mean_h2": 168.314,
+            "mse_gain_s2": 186.788,
+            "ci": [
+              28.914,
+              350.142
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 183.354,
+            "B_mean_h2": 152.771,
+            "mse_gain_s2": 213.937,
+            "ci": [
+              66.52,
+              378.275
+            ]
+          },
+          "multiday": {
+            "point": 186.788,
+            "ci_block_1d": [
+              25.578,
+              359.589
+            ],
+            "ci_block_2d": [
+              -1.566,
+              408.799
+            ],
+            "ci_block_3d": [
+              -17.43,
+              423.599
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.6185,
+          "gain_all": 0.2075,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.829,
+          "gain_clean": 0.3216,
+          "vs": {
+            "q04h1": {
+              "delta_s2": 16.04,
+              "ci": [
+                4.377,
+                26.373
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 16.04,
+                "ci_block_1d": [
+                  3.885,
+                  27.202
+                ],
+                "ci_block_2d": [
+                  1.22,
+                  28.111
+                ],
+                "ci_block_3d": [
+                  0.256,
+                  29.4
+                ]
+              }
+            },
+            "one_q04": {
+              "delta_s2": 22.715,
+              "ci": [
+                6.817,
+                37.461
+              ],
+              "clear_of_zero": true,
+              "multiday": {
+                "point": 22.715,
+                "ci_block_1d": [
+                  6.516,
+                  37.369
+                ],
+                "ci_block_2d": [
+                  4.902,
+                  37.468
+                ],
+                "ci_block_3d": [
+                  4.167,
+                  36.686
+                ]
+              }
+            }
+          }
+        },
+        "two_q04@B": {
+          "cap": "B",
+          "n_features": 172,
+          "all_eligible": {
+            "n": 115366,
+            "A_mean_r_h": 445.42,
+            "B_mean_h2": 584.795,
+            "mse_gain_s2": 306.045,
+            "ci": [
+              54.89,
+              610.325
+            ]
+          },
+          "supported_airports": {
+            "n": 84668,
+            "A_mean_r_h": 453.894,
+            "B_mean_h2": 569.641,
+            "mse_gain_s2": 338.148,
+            "ci": [
+              109.845,
+              591.641
+            ]
+          },
+          "multiday": {
+            "point": 306.045,
+            "ci_block_1d": [
+              69.668,
+              597.312
+            ],
+            "ci_block_2d": [
+              30.84,
+              703.648
+            ],
+            "ci_block_3d": [
+              29.038,
+              671.675
+            ]
+          },
+          "rmse_all_v10": 337.826,
+          "rmse_all_new": 337.4859,
+          "gain_all": 0.3401,
+          "rmse_clean_v10": 218.1506,
+          "rmse_clean_new": 217.6235,
+          "gain_clean": 0.5271,
+          "vs": {
+            "q04h1": {
+              "delta_s2": -16.658,
+              "ci": [
+                -88.39,
+                42.605
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -16.658,
+                "ci_block_1d": [
+                  -87.677,
+                  43.286
+                ],
+                "ci_block_2d": [
+                  -98.035,
+                  51.217
+                ],
+                "ci_block_3d": [
+                  -98.741,
+                  59.089
+                ]
+              }
+            },
+            "one_q04": {
+              "delta_s2": -12.388,
+              "ci": [
+                -82.828,
+                50.88
+              ],
+              "clear_of_zero": false,
+              "multiday": {
+                "point": -12.388,
+                "ci_block_1d": [
+                  -86.522,
+                  52.394
+                ],
+                "ci_block_2d": [
+                  -91.484,
+                  50.18
+                ],
+                "ci_block_3d": [
+                  -90.392,
+                  57.906
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "primary": {
+    "endpoint": "paired ALL-ROW january/july MSE at exp-016's ranking month weights; clean and december secondary",
+    "note": "arm two at capacity B",
+    "all_row": {
+      "july_loo": {
+        "v10": 284.1572,
+        "arm": 283.473,
+        "gain": 0.6842,
+        "mse_gain_s2": 388.352
+      },
+      "december": {
+        "v10": 204.9218,
+        "arm": 204.4003,
+        "gain": 0.5215,
+        "mse_gain_s2": 213.467
+      },
+      "january": {
+        "v10": 337.826,
+        "arm": 337.4552,
+        "gain": 0.3709,
+        "mse_gain_s2": 250.435
+      }
+    },
+    "clean": {
+      "july_loo": {
+        "v10": 284.1572,
+        "arm": 283.473,
+        "gain": 0.6842
+      },
+      "december": {
+        "v10": 204.9218,
+        "arm": 204.4003,
+        "gain": 0.5215
+      },
+      "january": {
+        "v10": 218.1506,
+        "arm": 217.5759,
+        "gain": 0.5748
+      }
+    },
+    "counts": {
+      "july_loo": {
+        "n": 190713,
+        "n_excluded": 0,
+        "n_changed": 131956
+      },
+      "december": {
+        "n": 165677,
+        "n_excluded": 0,
+        "n_changed": 123016
+      },
+      "january": {
+        "n": 153706,
+        "n_excluded": 2,
+        "n_changed": 115366
+      }
+    },
+    "board_all_row": {
+      "v10": 309.0772,
+      "arm": 308.5473,
+      "gain": 0.5299,
+      "gain_exact": 0.5298901133204481
+    },
+    "board_clean": {
+      "v10": 257.0248,
+      "arm": 256.3874,
+      "gain": 0.6375,
+      "gain_exact": 0.6374500079368772
+    },
+    "december_all_row": {
+      "v10": 204.9218,
+      "arm": 204.4003,
+      "gain": 0.5215,
+      "mse_gain_s2": 213.467
+    },
+    "december_clean": {
+      "v10": 204.9218,
+      "arm": 204.4003,
+      "gain": 0.5215
+    },
+    "board_interval": {
+      "board_v10": 309.0772,
+      "board_arm": 308.5473,
+      "gain": 0.5299,
+      "note": "shares january 0.4428678724397621, july_loo 0.5571321275602379; blocks drawn inside each fold",
+      "ci_block_1d": [
+        0.2748,
+        0.82
+      ],
+      "ci_block_2d": [
+        0.2772,
+        0.8809
+      ],
+      "ci_block_3d": [
+        0.2817,
+        0.8785
+      ]
+    }
+  },
+  "boards": {
+    "g0": {
+      "endpoint": "paired ALL-ROW january/july MSE at exp-016's ranking month weights; clean and december secondary",
+      "note": "arm g0 at capacity B",
+      "all_row": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.5551,
+          "gain": 0.6021,
+          "mse_gain_s2": 341.81
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.6009,
+          "gain": 0.3209,
+          "mse_gain_s2": 131.436
+        },
+        "january": {
+          "v10": 337.826,
+          "arm": 337.4584,
+          "gain": 0.3676,
+          "mse_gain_s2": 248.249
+        }
+      },
+      "clean": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.5551,
+          "gain": 0.6021
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.6009,
+          "gain": 0.3209
+        },
+        "january": {
+          "v10": 218.1506,
+          "arm": 217.5809,
+          "gain": 0.5697
+        }
+      },
+      "counts": {
+        "july_loo": {
+          "n": 190713,
+          "n_excluded": 0,
+          "n_changed": 131956
+        },
+        "december": {
+          "n": 165677,
+          "n_excluded": 0,
+          "n_changed": 123016
+        },
+        "january": {
+          "n": 153706,
+          "n_excluded": 2,
+          "n_changed": 115366
+        }
+      },
+      "board_all_row": {
+        "v10": 309.0772,
+        "arm": 308.5909,
+        "gain": 0.4863,
+        "gain_exact": 0.48630438542613774
+      },
+      "board_clean": {
+        "v10": 257.0248,
+        "arm": 256.4398,
+        "gain": 0.585,
+        "gain_exact": 0.5849987451309744
+      },
+      "december_all_row": {
+        "v10": 204.9218,
+        "arm": 204.6009,
+        "gain": 0.3209,
+        "mse_gain_s2": 131.436
+      },
+      "december_clean": {
+        "v10": 204.9218,
+        "arm": 204.6009,
+        "gain": 0.3209
+      },
+      "board_interval": {
+        "board_v10": 309.0772,
+        "board_arm": 308.5909,
+        "gain": 0.4863,
+        "note": "shares january 0.4428678724397621, july_loo 0.5571321275602379; blocks drawn inside each fold",
+        "ci_block_1d": [
+          0.2414,
+          0.7874
+        ],
+        "ci_block_2d": [
+          0.2269,
+          0.829
+        ],
+        "ci_block_3d": [
+          0.2257,
+          0.8606
+        ]
+      }
+    },
+    "one": {
+      "endpoint": "paired ALL-ROW january/july MSE at exp-016's ranking month weights; clean and december secondary",
+      "note": "arm one at capacity B",
+      "all_row": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.3886,
+          "gain": 0.7686,
+          "mse_gain_s2": 436.203
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.4972,
+          "gain": 0.4246,
+          "mse_gain_s2": 173.84
+        },
+        "january": {
+          "v10": 337.826,
+          "arm": 337.4769,
+          "gain": 0.3491,
+          "mse_gain_s2": 235.741
+        }
+      },
+      "clean": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.3886,
+          "gain": 0.7686
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.4972,
+          "gain": 0.4246
+        },
+        "january": {
+          "v10": 218.1506,
+          "arm": 217.6096,
+          "gain": 0.541
+        }
+      },
+      "counts": {
+        "july_loo": {
+          "n": 190713,
+          "n_excluded": 0,
+          "n_changed": 131956
+        },
+        "december": {
+          "n": 165677,
+          "n_excluded": 0,
+          "n_changed": 123016
+        },
+        "january": {
+          "n": 153706,
+          "n_excluded": 2,
+          "n_changed": 115366
+        }
+      },
+      "board_all_row": {
+        "v10": 309.0772,
+        "arm": 308.5147,
+        "gain": 0.5625,
+        "gain_exact": 0.562547698940989
+      },
+      "board_clean": {
+        "v10": 257.0248,
+        "arm": 256.3481,
+        "gain": 0.6768,
+        "gain_exact": 0.6767522877484566
+      },
+      "december_all_row": {
+        "v10": 204.9218,
+        "arm": 204.4972,
+        "gain": 0.4246,
+        "mse_gain_s2": 173.84
+      },
+      "december_clean": {
+        "v10": 204.9218,
+        "arm": 204.4972,
+        "gain": 0.4246
+      },
+      "board_interval": {
+        "board_v10": 309.0772,
+        "board_arm": 308.5147,
+        "gain": 0.5625,
+        "note": "shares january 0.4428678724397621, july_loo 0.5571321275602379; blocks drawn inside each fold",
+        "ci_block_1d": [
+          0.2717,
+          0.9533
+        ],
+        "ci_block_2d": [
+          0.2474,
+          0.9531
+        ],
+        "ci_block_3d": [
+          0.2563,
+          0.9909
+        ]
+      }
+    },
+    "two": {
+      "endpoint": "paired ALL-ROW january/july MSE at exp-016's ranking month weights; clean and december secondary",
+      "note": "arm two at capacity B",
+      "all_row": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.473,
+          "gain": 0.6842,
+          "mse_gain_s2": 388.352
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.4003,
+          "gain": 0.5215,
+          "mse_gain_s2": 213.467
+        },
+        "january": {
+          "v10": 337.826,
+          "arm": 337.4552,
+          "gain": 0.3709,
+          "mse_gain_s2": 250.435
+        }
+      },
+      "clean": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.473,
+          "gain": 0.6842
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.4003,
+          "gain": 0.5215
+        },
+        "january": {
+          "v10": 218.1506,
+          "arm": 217.5759,
+          "gain": 0.5748
+        }
+      },
+      "counts": {
+        "july_loo": {
+          "n": 190713,
+          "n_excluded": 0,
+          "n_changed": 131956
+        },
+        "december": {
+          "n": 165677,
+          "n_excluded": 0,
+          "n_changed": 123016
+        },
+        "january": {
+          "n": 153706,
+          "n_excluded": 2,
+          "n_changed": 115366
+        }
+      },
+      "board_all_row": {
+        "v10": 309.0772,
+        "arm": 308.5473,
+        "gain": 0.5299,
+        "gain_exact": 0.5298901133204481
+      },
+      "board_clean": {
+        "v10": 257.0248,
+        "arm": 256.3874,
+        "gain": 0.6375,
+        "gain_exact": 0.6374500079368772
+      },
+      "december_all_row": {
+        "v10": 204.9218,
+        "arm": 204.4003,
+        "gain": 0.5215,
+        "mse_gain_s2": 213.467
+      },
+      "december_clean": {
+        "v10": 204.9218,
+        "arm": 204.4003,
+        "gain": 0.5215
+      },
+      "board_interval": {
+        "board_v10": 309.0772,
+        "board_arm": 308.5473,
+        "gain": 0.5299,
+        "note": "shares january 0.4428678724397621, july_loo 0.5571321275602379; blocks drawn inside each fold",
+        "ci_block_1d": [
+          0.2748,
+          0.82
+        ],
+        "ci_block_2d": [
+          0.2772,
+          0.8809
+        ],
+        "ci_block_3d": [
+          0.2817,
+          0.8785
+        ]
+      }
+    },
+    "two_c": {
+      "endpoint": "paired ALL-ROW january/july MSE at exp-016's ranking month weights; clean and december secondary",
+      "note": "arm two_c at capacity B",
+      "all_row": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.5492,
+          "gain": 0.608,
+          "mse_gain_s2": 345.148
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.5841,
+          "gain": 0.3377,
+          "mse_gain_s2": 138.307
+        },
+        "january": {
+          "v10": 337.826,
+          "arm": 337.4506,
+          "gain": 0.3754,
+          "mse_gain_s2": 253.526
+        }
+      },
+      "clean": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.5492,
+          "gain": 0.608
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.5841,
+          "gain": 0.3377
+        },
+        "january": {
+          "v10": 218.1506,
+          "arm": 217.5688,
+          "gain": 0.5819
+        }
+      },
+      "counts": {
+        "july_loo": {
+          "n": 190713,
+          "n_excluded": 0,
+          "n_changed": 131956
+        },
+        "december": {
+          "n": 165677,
+          "n_excluded": 0,
+          "n_changed": 123016
+        },
+        "january": {
+          "n": 153706,
+          "n_excluded": 2,
+          "n_changed": 115366
+        }
+      },
+      "board_all_row": {
+        "v10": 309.0772,
+        "arm": 308.5841,
+        "gain": 0.4931,
+        "gain_exact": 0.49310410179128894
+      },
+      "board_clean": {
+        "v10": 257.0248,
+        "arm": 256.4316,
+        "gain": 0.5932,
+        "gain_exact": 0.5931813915435669
+      },
+      "december_all_row": {
+        "v10": 204.9218,
+        "arm": 204.5841,
+        "gain": 0.3377,
+        "mse_gain_s2": 138.307
+      },
+      "december_clean": {
+        "v10": 204.9218,
+        "arm": 204.5841,
+        "gain": 0.3377
+      },
+      "board_interval": {
+        "board_v10": 309.0772,
+        "board_arm": 308.5841,
+        "gain": 0.4931,
+        "note": "shares january 0.4428678724397621, july_loo 0.5571321275602379; blocks drawn inside each fold",
+        "ci_block_1d": [
+          0.2467,
+          0.8223
+        ],
+        "ci_block_2d": [
+          0.2351,
+          0.847
+        ],
+        "ci_block_3d": [
+          0.2256,
+          0.8624
+        ]
+      }
+    },
+    "q04h1": {
+      "endpoint": "paired ALL-ROW january/july MSE at exp-016's ranking month weights; clean and december secondary",
+      "note": "arm q04h1 at capacity B",
+      "all_row": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.5269,
+          "gain": 0.6303,
+          "mse_gain_s2": 357.836
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.5064,
+          "gain": 0.4154,
+          "mse_gain_s2": 170.09
+        },
+        "january": {
+          "v10": 337.826,
+          "arm": 337.4673,
+          "gain": 0.3587,
+          "mse_gain_s2": 242.209
+        }
+      },
+      "clean": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.5269,
+          "gain": 0.6303
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.5064,
+          "gain": 0.4154
+        },
+        "january": {
+          "v10": 218.1506,
+          "arm": 217.5948,
+          "gain": 0.5559
+        }
+      },
+      "counts": {
+        "july_loo": {
+          "n": 190713,
+          "n_excluded": 0,
+          "n_changed": 131956
+        },
+        "december": {
+          "n": 165677,
+          "n_excluded": 0,
+          "n_changed": 123016
+        },
+        "january": {
+          "n": 153706,
+          "n_excluded": 2,
+          "n_changed": 115366
+        }
+      },
+      "board_all_row": {
+        "v10": 309.0772,
+        "arm": 308.5808,
+        "gain": 0.4964,
+        "gain_exact": 0.49643733382197297
+      },
+      "board_clean": {
+        "v10": 257.0248,
+        "arm": 256.4276,
+        "gain": 0.5972,
+        "gain_exact": 0.5971924114192575
+      },
+      "december_all_row": {
+        "v10": 204.9218,
+        "arm": 204.5064,
+        "gain": 0.4154,
+        "mse_gain_s2": 170.09
+      },
+      "december_clean": {
+        "v10": 204.9218,
+        "arm": 204.5064,
+        "gain": 0.4154
+      },
+      "board_interval": {
+        "board_v10": 309.0772,
+        "board_arm": 308.5808,
+        "gain": 0.4964,
+        "note": "shares january 0.4428678724397621, july_loo 0.5571321275602379; blocks drawn inside each fold",
+        "ci_block_1d": [
+          0.2454,
+          0.7977
+        ],
+        "ci_block_2d": [
+          0.2446,
+          0.8439
+        ],
+        "ci_block_3d": [
+          0.2494,
+          0.8538
+        ]
+      }
+    },
+    "one_q04": {
+      "endpoint": "paired ALL-ROW january/july MSE at exp-016's ranking month weights; clean and december secondary",
+      "note": "arm one_q04 at capacity B",
+      "all_row": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.376,
+          "gain": 0.7812,
+          "mse_gain_s2": 443.343
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.5211,
+          "gain": 0.4007,
+          "mse_gain_s2": 164.067
+        },
+        "january": {
+          "v10": 337.826,
+          "arm": 337.4721,
+          "gain": 0.3539,
+          "mse_gain_s2": 239.004
+        }
+      },
+      "clean": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.376,
+          "gain": 0.7812
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.5211,
+          "gain": 0.4007
+        },
+        "january": {
+          "v10": 218.1506,
+          "arm": 217.6021,
+          "gain": 0.5485
+        }
+      },
+      "counts": {
+        "july_loo": {
+          "n": 190713,
+          "n_excluded": 0,
+          "n_changed": 131956
+        },
+        "december": {
+          "n": 165677,
+          "n_excluded": 0,
+          "n_changed": 123016
+        },
+        "january": {
+          "n": 153706,
+          "n_excluded": 2,
+          "n_changed": 115366
+        }
+      },
+      "board_all_row": {
+        "v10": 309.0772,
+        "arm": 308.5059,
+        "gain": 0.5713,
+        "gain_exact": 0.5713365949612239
+      },
+      "board_clean": {
+        "v10": 257.0248,
+        "arm": 256.3375,
+        "gain": 0.6873,
+        "gain_exact": 0.6873298211691008
+      },
+      "december_all_row": {
+        "v10": 204.9218,
+        "arm": 204.5211,
+        "gain": 0.4007,
+        "mse_gain_s2": 164.067
+      },
+      "december_clean": {
+        "v10": 204.9218,
+        "arm": 204.5211,
+        "gain": 0.4007
+      },
+      "board_interval": {
+        "board_v10": 309.0772,
+        "board_arm": 308.5059,
+        "gain": 0.5713,
+        "note": "shares january 0.4428678724397621, july_loo 0.5571321275602379; blocks drawn inside each fold",
+        "ci_block_1d": [
+          0.2715,
+          0.9199
+        ],
+        "ci_block_2d": [
+          0.2558,
+          0.9622
+        ],
+        "ci_block_3d": [
+          0.2429,
+          0.9876
+        ]
+      }
+    },
+    "two_q04": {
+      "endpoint": "paired ALL-ROW january/july MSE at exp-016's ranking month weights; clean and december secondary",
+      "note": "arm two_q04 at capacity B",
+      "all_row": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.4893,
+          "gain": 0.6679,
+          "mse_gain_s2": 379.103
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.432,
+          "gain": 0.4899,
+          "mse_gain_s2": 200.525
+        },
+        "january": {
+          "v10": 337.826,
+          "arm": 337.4859,
+          "gain": 0.3401,
+          "mse_gain_s2": 229.706
+        }
+      },
+      "clean": {
+        "july_loo": {
+          "v10": 284.1572,
+          "arm": 283.4893,
+          "gain": 0.6679
+        },
+        "december": {
+          "v10": 204.9218,
+          "arm": 204.432,
+          "gain": 0.4899
+        },
+        "january": {
+          "v10": 218.1506,
+          "arm": 217.6235,
+          "gain": 0.5271
+        }
+      },
+      "counts": {
+        "july_loo": {
+          "n": 190713,
+          "n_excluded": 0,
+          "n_changed": 131956
+        },
+        "december": {
+          "n": 165677,
+          "n_excluded": 0,
+          "n_changed": 123016
+        },
+        "january": {
+          "n": 153706,
+          "n_excluded": 2,
+          "n_changed": 115366
+        }
+      },
+      "board_all_row": {
+        "v10": 309.0772,
+        "arm": 308.5706,
+        "gain": 0.5067,
+        "gain_exact": 0.5066640516832308
+      },
+      "board_clean": {
+        "v10": 257.0248,
+        "arm": 256.4153,
+        "gain": 0.6095,
+        "gain_exact": 0.6094990268251763
+      },
+      "december_all_row": {
+        "v10": 204.9218,
+        "arm": 204.432,
+        "gain": 0.4899,
+        "mse_gain_s2": 200.525
+      },
+      "december_clean": {
+        "v10": 204.9218,
+        "arm": 204.432,
+        "gain": 0.4899
+      },
+      "board_interval": {
+        "board_v10": 309.0772,
+        "board_arm": 308.5706,
+        "gain": 0.5067,
+        "note": "shares january 0.4428678724397621, july_loo 0.5571321275602379; blocks drawn inside each fold",
+        "ci_block_1d": [
+          0.2843,
+          0.8067
+        ],
+        "ci_block_2d": [
+          0.2921,
+          0.8324
+        ],
+        "ci_block_3d": [
+          0.2755,
+          0.8437
+        ]
+      }
+    }
+  },
+  "wall_s": 378.0
+}

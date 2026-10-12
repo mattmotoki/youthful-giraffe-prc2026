@@ -1,0 +1,278 @@
+{
+ "what": "AN INDEPENDENT PROVENANCE AUDIT of surfacefit's \u00a728.2 bundle read (RESULTS \u00a77al).",
+ "items": {
+  "a_baseline_identity": {
+   "head_npz": "experiments/exp-046-surfacefit/work/d-passonly-6fdf3951-guard995.npz",
+   "sha256": "e137939b74070180192544134b28a2ed49011071aa29449598fb9de87953029a",
+   "bundle_npz": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz",
+   "bundle_sha256": "5dbbcb8c7d14831fd75debde479071cd2a2eff9b7ff9b7469b6625ce00238684",
+   "v18_npz_sha256": "c184d8c8285f492586ec6a7e0493f26012f0c203d8024aba20ed421e893c0fa3",
+   "name_declares_matcher": "6fdf3951",
+   "v17_was_served_on_matcher": "artifacts/exp-047/block-prev (matcher 6fdf3951, this lane's \u00a77aa)",
+   "vector_key_in_the_record": "experiments/exp-046-surfacefit/work/d-bundle-ungated1299-guard995.npz"
+  },
+  "b_pins": {
+   "july_loo": {
+    "claimed_key": "8179f744",
+    "claimed_airport_days": 296,
+    "their_block_cache_key": "8179f74417c8cb99",
+    "their_airport_days": 296,
+    "my_airport_days": 296,
+    "my_block_rows": 190713,
+    "key_agrees": true,
+    "days_agree": true
+   },
+   "december": {
+    "claimed_key": "d35b7171",
+    "claimed_airport_days": 297,
+    "their_block_cache_key": "d35b7171d7062341",
+    "their_airport_days": 297,
+    "my_airport_days": 297,
+    "my_block_rows": 165677,
+    "key_agrees": true,
+    "days_agree": true
+   },
+   "january": {
+    "claimed_key": "cb4d6289",
+    "claimed_airport_days": 218,
+    "their_block_cache_key": "cb4d6289cb421aa2",
+    "their_airport_days": 218,
+    "my_airport_days": 218,
+    "my_block_rows": 153706,
+    "key_agrees": true,
+    "days_agree": true
+   }
+  },
+  "c_counts": {
+   "moved_over_v18_recomputed": {
+    "july_loo": 88348,
+    "december": 102073,
+    "january": 69839
+   },
+   "moved_over_served_head_recomputed": {
+    "july_loo": 88262,
+    "december": 101928,
+    "january": 69839
+   },
+   "moved_in_their_json": {
+    "v18_own_arm": {
+     "december": 102073,
+     "january": 69839,
+     "july_loo": 88348
+    },
+    "served_head": {
+     "december": 101928,
+     "january": 69839,
+     "july_loo": 88262
+    }
+   },
+   "added_claimed": {
+    "july_loo": 897,
+    "december": 858,
+    "january": 742
+   },
+   "added_in_chain_bundle_json": {
+    "december": 858,
+    "january": 742,
+    "july_loo": 897
+   },
+   "kept_at_the_gate_in_chain_fold_json": {
+    "2025-01": 742,
+    "2025-07": 897,
+    "2025-12": 858
+   },
+   "mode3_reference_in_chain_fold_json": {
+    "2025-01": 731,
+    "2025-07": 1170,
+    "2025-12": 861
+   },
+   "the_claimed_88348_102073_69839_are_the_V18_reading_not_the_bundle": {
+    "july_loo": {
+     "claimed": 88348,
+     "v18_reading": 88348,
+     "bundle_reading": 88262
+    },
+    "december": {
+     "claimed": 102073,
+     "v18_reading": 102073,
+     "bundle_reading": 101928
+    },
+    "january": {
+     "claimed": 69839,
+     "v18_reading": 69839,
+     "bundle_reading": 69839
+    }
+   }
+  },
+  "d_rederivation": {
+   "per_fold": {
+    "july_loo": {
+     "rows": 190713,
+     "rows_moved": 88262,
+     "A_mean_rd": 294.7936225451054,
+     "B_mean_dd": 452.91835335801346,
+     "gain_s2_per_row": 136.66889,
+     "their_gain_s2_per_row": 136.66889173219727,
+     "abs_difference": 0.0,
+     "my_ci95_2000_draws_seed47": [
+      81.987,
+      189.604
+     ],
+     "my_ci95_20000_draws_seed47": [
+      83.39,
+      191.384
+     ],
+     "worst_lower_bound_over_ten_seeds": 80.235,
+     "their_ci95": [
+      85.09,
+      189.978
+     ],
+     "claimed_in_the_prose": [
+      136.67,
+      85.09,
+      189.98
+     ],
+     "clears_in_my_read": true
+    },
+    "december": {
+     "rows": 165677,
+     "rows_moved": 101928,
+     "A_mean_rd": 358.33470324570106,
+     "B_mean_dd": 623.4708216946173,
+     "gain_s2_per_row": 93.19858,
+     "their_gain_s2_per_row": 93.19858479678494,
+     "abs_difference": 0.0,
+     "my_ci95_2000_draws_seed47": [
+      45.338,
+      143.737
+     ],
+     "my_ci95_20000_draws_seed47": [
+      44.571,
+      144.065
+     ],
+     "worst_lower_bound_over_ten_seeds": 42.105,
+     "their_ci95": [
+      42.486,
+      143.227
+     ],
+     "claimed_in_the_prose": [
+      93.2,
+      42.49,
+      143.23
+     ],
+     "clears_in_my_read": true
+    },
+    "january": {
+     "rows": 153706,
+     "rows_moved": 69839,
+     "A_mean_rd": 310.46100212819766,
+     "B_mean_dd": 533.6615281574536,
+     "gain_s2_per_row": 87.26048,
+     "their_gain_s2_per_row": 87.26047609894171,
+     "abs_difference": 0.0,
+     "my_ci95_2000_draws_seed47": [
+      46.299,
+      128.839
+     ],
+     "my_ci95_20000_draws_seed47": [
+      47.792,
+      128.358
+     ],
+     "worst_lower_bound_over_ten_seeds": 46.711,
+     "their_ci95": [
+      47.99,
+      127.162
+     ],
+     "claimed_in_the_prose": [
+      87.26,
+      47.99,
+      127.16
+     ],
+     "clears_in_my_read": true
+    }
+   },
+   "note": "their pbase is p12 (exp-046 code/base.py:105), built by the same two lines this lane builds p12 with, so r and the increment are rebuilt here from base.load() and their two committed vectors, with no code of theirs imported",
+   "board": {
+    "my_all_row_base": 299.339,
+    "my_all_row_arm": 299.1472,
+    "my_all_row_gain_s": 0.1918,
+    "their_all_row": [
+     299.33900092781437,
+     299.14720454091145,
+     0.19179638690292222
+    ],
+    "my_clean_gain_s": 0.23414,
+    "their_clean_gain_s": 0.234138642419083,
+    "claimed_in_the_prose": [
+     0.1918,
+     0.1267,
+     0.2797
+    ]
+   },
+   "december_pin_gap_bounded": {
+    "head_cache_2025_12": "work/block-2025-12-34a155e40aac9ff6-6fdf3951.parquet",
+    "this_serves_pin": "d35b7171d7062341",
+    "the_nine_days": "all 2025-11-30, a PREFIX population, not scored rows",
+    "board_shares_are_july_and_january_only": [
+     "july_loo",
+     "january"
+    ],
+    "by_boundary_days": {
+     "first_1_days": {
+      "rows": 5496,
+      "row_share": 0.0332,
+      "share_of_the_folds_gain": 0.0313,
+      "gain_without_them_s2_per_row": 93.382,
+      "ci95_without_them": [
+       46.9,
+       144.85
+      ]
+     },
+     "first_2_days": {
+      "rows": 10503,
+      "row_share": 0.0634,
+      "share_of_the_folds_gain": 0.0256,
+      "gain_without_them_s2_per_row": 96.962,
+      "ci95_without_them": [
+       45.35,
+       151.45
+      ]
+     },
+     "first_3_days": {
+      "rows": 15728,
+      "row_share": 0.0949,
+      "share_of_the_folds_gain": 0.0631,
+      "gain_without_them_s2_per_row": 96.473,
+      "ci95_without_them": [
+       40.79,
+       154.79
+      ]
+     }
+    }
+   },
+   "every_fold_clears_in_my_read": true
+  },
+  "e_threshold": {
+   "threshold_s_in_the_record": 1299.0,
+   "thresholds_ladder_in_chain_fold_json": [
+    1299.0,
+    900.0,
+    600.0,
+    300.0
+   ],
+   "lines_mentioning_1299_in_their_two_scripts": [
+    "#: |P - AOBT| in seconds.  1299 is the shipped p95 of section 27; the rest are the",
+    "THR = 1299.0",
+    "THRESHOLDS = [1299.0, 900.0, 600.0, 300.0]",
+    "VEC = EXP / \"work/d-bundle-ungated1299-guard995.npz\"",
+    "f\"kept at 1299 s {int(keep)}  ({time.time()-t0:.0f}s)\", flush=True)"
+   ],
+   "step_0_gap_cut_s": {
+    "2025-01": 62.405,
+    "2025-07": 62.405,
+    "2025-12": 62.405
+   },
+   "grep_for_a_fold_side_quantile": []
+  }
+ }
+}

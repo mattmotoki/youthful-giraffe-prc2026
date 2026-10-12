@@ -1,0 +1,24 @@
+{
+ "tag": "kaggle-f1",
+ "mechanism": "",
+ "rounds": 1200,
+ "clip_z": 6000.0,
+ "params": {
+  "num_threads": 4
+ },
+ "seeds": 1,
+ "ghost_mode": "mixbase",
+ "main_model": "both",
+ "exact_rounds": 300,
+ "folds": {
+  "july_loo": {
+   "rmse": 286.20881194062963,
+   "rmse_lo": 280.762795886041,
+   "rmse_hi": 902.6998009685321,
+   "n": 3814,
+   "n_hi": 16,
+   "secs": 282.4,
+   "n_train": 35818
+  }
+ }
+}

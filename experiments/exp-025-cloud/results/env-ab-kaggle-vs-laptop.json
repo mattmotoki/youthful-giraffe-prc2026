@@ -1,0 +1,36 @@
+{
+ "fold": "july_loo",
+ "n_cloud": 3814,
+ "n_local": 3814,
+ "n_matched": 3814,
+ "cloud_file": "experiments/exp-025-cloud/oof-synthetic/cpu-2thr-july_loo.parquet",
+ "local_file": "experiments/exp-025-cloud/oof-synthetic/laptop-2thr-july_loo.parquet",
+ "cloud_sha256": "93799a27d3af25694804a05c470eef3d6ca5daa6981cb57cab0de9579cbf7857",
+ "local_sha256": "f21e8cb8d33c25bae9c411cfb416640e1b541ba93a27e0d37fe48e8a0e9c87fb",
+ "cloud": {
+  "rmse": 301.4205609071798,
+  "rmse_le3600": 291.81471452651203,
+  "rmse_gt3600": 1201.4750030615892,
+  "n": 3814,
+  "n_gt3600": 16
+ },
+ "local": {
+  "rmse": 302.09546031666804,
+  "rmse_le3600": 292.04054451973025,
+  "rmse_gt3600": 1228.5507519386942,
+  "n": 3814,
+  "n_gt3600": 16
+ },
+ "delta": {
+  "rmse_cloud_minus_local": -0.6748994094882619,
+  "identical": false,
+  "max_abs": 308.9906397468769,
+  "mean_abs": 39.00280089602223,
+  "median_abs": 31.457552901497934,
+  "p99_abs": 144.90851264493767,
+  "rms": 50.954877874614574,
+  "corr": 0.9953013995140273,
+  "rows_over_1s": 3746,
+  "rows_over_60s": 819
+ }
+}

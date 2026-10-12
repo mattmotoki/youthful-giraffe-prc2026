@@ -1,0 +1,71 @@
+{
+  "S5_AMP": 0.217,
+  "base_served_file": {
+    "file": "submissions/candidates/exp-035-k2climb-v11member.parquet",
+    "sha256": "48dd572d61ff2403f13614ce04bdc3a8fd0dbdb5175bef7eb143650ea520ec52"
+  },
+  "board_v10_clean": 257.0248098796995,
+  "board_v11_clean": 256.9104133616969,
+  "board_v12_clean": 256.464379624143,
+  "folds": {
+    "december": {
+      "days": 31,
+      "noac_rows": 89,
+      "rmse_v10_all": 204.9218377545624,
+      "rmse_v10_clean": 204.9218377545624,
+      "rmse_v11_all": 204.73644627502026,
+      "rmse_v11_clean": 204.73644627502026,
+      "rmse_v12_all": 204.19850526215706,
+      "rmse_v12_clean": 204.19850526215706,
+      "rows": 165677
+    },
+    "january": {
+      "days": 31,
+      "noac_rows": 63,
+      "rmse_v10_all": 337.8260172614821,
+      "rmse_v10_clean": 218.15061690415217,
+      "rmse_v11_all": 337.7295497905802,
+      "rmse_v11_clean": 218.02742808192167,
+      "rmse_v12_all": 337.4610739217519,
+      "rmse_v12_clean": 217.62884274490287,
+      "rows": 153706
+    },
+    "july_loo": {
+      "days": 31,
+      "noac_rows": 339,
+      "rmse_v10_all": 284.1571957268626,
+      "rmse_v10_clean": 284.1571957268626,
+      "rmse_v11_all": 284.04664607342886,
+      "rmse_v11_clean": 284.04664607342886,
+      "rmse_v12_all": 283.5657375458904,
+      "rmse_v12_clean": 283.5657375458904,
+      "rows": 190713
+    }
+  },
+  "published_v11_clean_board": 256.91,
+  "published_v12_board": 262.7418,
+  "v11_gain_over_v10_clean_s": 0.11439651800259298,
+  "v12_gain_over_v11_clean_s": 0.44603373755387565,
+  "v12_gate": {
+    "all_row_gain_s": 0.37624768616183246,
+    "all_row_off_s": 4.768616183248309e-05,
+    "clean_gain_s": 0.44603373755387565,
+    "clean_off_s": 3.37375538756457e-05,
+    "eddf_eham_identical": {
+      "december": true,
+      "january": true,
+      "july_loo": true
+    },
+    "passes": true,
+    "published": {
+      "all_row": 0.3762,
+      "clean": 0.446
+    },
+    "rows_v12_equals_v11": {
+      "december": 36881,
+      "january": 34056,
+      "july_loo": 44167
+    },
+    "tolerance_s": 0.01
+  }
+}

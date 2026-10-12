@@ -1,0 +1,24 @@
+{
+ "tag": "k2-local-on",
+ "mechanism": "",
+ "rounds": 400,
+ "clip_z": null,
+ "params": {
+  "num_threads": 3
+ },
+ "seeds": 1,
+ "ghost_mode": "mixbase",
+ "main_model": "lgb",
+ "exact_rounds": 300,
+ "folds": {
+  "july": {
+   "rmse": 309.8093451616135,
+   "rmse_lo": 268.72098048728037,
+   "rmse_hi": 2642.5180183593934,
+   "n": 190713,
+   "n_hi": 656,
+   "secs": 127.2,
+   "n_train": 956460
+  }
+ }
+}

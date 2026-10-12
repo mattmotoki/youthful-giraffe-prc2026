@@ -1,0 +1,113 @@
+{
+  "arm": "w600arrk-eham-out",
+  "note": "w600arrk with EHAM served from stack-5; rows taken back july_loo 22489, december 19458, january 18460. No refit: arithmetic on the saved rotation.",
+  "clean": {
+    "july_loo": 284.6827,
+    "december": 205.6101,
+    "january": 218.4942
+  },
+  "vs_stack5": {
+    "july_loo": 0.5202,
+    "december": 0.0017,
+    "january": 0.6361
+  },
+  "vs_v6": {
+    "july_loo": 0.0391,
+    "december": 0.0433,
+    "january": 0.3224
+  },
+  "ci_v6": {
+    "july_loo": [
+      -0.0391,
+      -0.1301,
+      0.0473
+    ],
+    "december": [
+      -0.0433,
+      -0.1349,
+      0.0469
+    ],
+    "january": [
+      -0.3224,
+      -0.5008,
+      -0.1833
+    ]
+  },
+  "ci_v6_no_noac": {
+    "july_loo": [
+      -0.0454,
+      -0.1498,
+      0.0558
+    ],
+    "december": [
+      -0.0444,
+      -0.1388,
+      0.0478
+    ],
+    "january": [
+      -0.3409,
+      -0.5315,
+      -0.1945
+    ]
+  },
+  "slices": {
+    "july_loo": {
+      "n": 190713,
+      "rmse": 284.6827,
+      "le3600": 247.6792,
+      "gt3600": 2405.8977,
+      "no_nm": 1121.2465,
+      "no_nm_flight_id_only": 1121.7735,
+      "noac": 3407.3545,
+      "no_noac": 245.9969,
+      "n_no_nm": 3938
+    },
+    "december": {
+      "n": 165677,
+      "rmse": 205.6101,
+      "le3600": 192.9568,
+      "gt3600": 1799.5924,
+      "no_nm": 664.8128,
+      "no_nm_flight_id_only": 665.646,
+      "noac": 2010.4588,
+      "no_noac": 200.3142,
+      "n_no_nm": 1649
+    },
+    "january": {
+      "n": 153704,
+      "rmse": 218.4942,
+      "le3600": 196.6117,
+      "gt3600": 2088.345,
+      "no_nm": 950.606,
+      "no_nm_flight_id_only": 951.1814,
+      "noac": 3509.4763,
+      "no_noac": 206.6615,
+      "n_no_nm": 1433
+    }
+  },
+  "clean_board": 257.4777,
+  "gain_board_vs_stack5": 0.5595,
+  "gain_board_vs_v6": 0.1453,
+  "predicted_board": 263.5469,
+  "worst_fold_vs_v6": 0.0391,
+  "gate_gain": true,
+  "gate_folds": true,
+  "gate": true,
+  "regimes": [
+    "nm_bulk",
+    "nm_late",
+    "nonm"
+  ],
+  "airport_excluded": "EHAM",
+  "applied_to": "w600arrk",
+  "n_rows_taken_from_stack5": {
+    "july_loo": 22489,
+    "december": 19458,
+    "january": 18460
+  },
+  "blocks": [
+    "depx",
+    "arrk"
+  ],
+  "win": 600.0
+}

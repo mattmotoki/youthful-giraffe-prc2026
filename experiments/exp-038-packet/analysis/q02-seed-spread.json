@@ -1,0 +1,143 @@
+{
+  "draws": [
+    {
+      "seeds": [
+        7,
+        107,
+        207,
+        307,
+        407
+      ],
+      "seven_member_arm": "unchanged (v10 replay)",
+      "eight_member_arm": "addition",
+      "clean_board_7": 257.0248,
+      "clean_board_8": 257.0163
+    },
+    {
+      "seeds": [
+        13,
+        113,
+        213,
+        313,
+        413
+      ],
+      "seven_member_arm": "sham refit (seed draw)",
+      "eight_member_arm": "addition (seed draw)",
+      "clean_board_7": 257.0352,
+      "clean_board_8": 257.0222
+    },
+    {
+      "seeds": [
+        23,
+        123,
+        223,
+        323,
+        423
+      ],
+      "seven_member_arm": "sham refit (draw 2)",
+      "eight_member_arm": "addition (draw 2)",
+      "clean_board_7": 257.0198,
+      "clean_board_8": 257.032
+    },
+    {
+      "seeds": [
+        31,
+        131,
+        231,
+        331,
+        431
+      ],
+      "seven_member_arm": "sham refit (draw 3)",
+      "eight_member_arm": "addition (draw 3)",
+      "clean_board_7": 257.0405,
+      "clean_board_8": 257.0282
+    },
+    {
+      "seeds": [
+        41,
+        141,
+        241,
+        341,
+        441
+      ],
+      "seven_member_arm": "sham refit (draw 4)",
+      "eight_member_arm": "addition (draw 4)",
+      "clean_board_7": 257.0292,
+      "clean_board_8": 257.0171
+    }
+  ],
+  "mean_clean_board_7": 257.0299,
+  "sd_clean_board_7": 0.008200000000002032,
+  "mean_clean_board_8": 257.02316,
+  "sd_clean_board_8": 0.006860247808928057,
+  "allrow_primary": {
+    "matched_differences": [
+      0.014534,
+      0.017451,
+      0.003876,
+      0.024856,
+      0.023007
+    ],
+    "mean": 0.0167448410380188,
+    "sd": 0.00830652915875617,
+    "paired_se": 0.0037147927712125875,
+    "t": 4.507611075315226,
+    "wins": 5,
+    "n": 5,
+    "exact_one_sided_sign_flip_p": 0.03125
+  },
+  "clean": {
+    "matched_differences": [
+      0.008474,
+      0.012937,
+      -0.012279,
+      0.012392,
+      0.012166
+    ],
+    "mean": 0.0067383190720874606,
+    "sd": 0.010776333240365836,
+    "paired_se": 0.004819322734729717,
+    "t": 1.3981879701744786,
+    "wins": 4,
+    "n": 5,
+    "exact_one_sided_sign_flip_p": 0.125
+  },
+  "seeds": {
+    "committed": [
+      7,
+      107,
+      207,
+      307,
+      407
+    ],
+    "draw 2": [
+      13,
+      113,
+      213,
+      313,
+      413
+    ],
+    "sham refit (draw 2)": [
+      23,
+      123,
+      223,
+      323,
+      423
+    ],
+    "sham refit (draw 3)": [
+      31,
+      131,
+      231,
+      331,
+      431
+    ],
+    "sham refit (draw 4)": [
+      41,
+      141,
+      241,
+      341,
+      441
+    ]
+  },
+  "note": "five matched five-seed draws of each head, everything else identical (v10's mixed anchor, 600 s depx block, noac held, EHAM mask, exp-036's eight-airport mask). The sham refit control IS the seven-member distribution; the addition's gain is the mean of the five PAIRED differences and the standard error is the paired one. Seed uncertainty only: it is not added to the day-block interval"
+}

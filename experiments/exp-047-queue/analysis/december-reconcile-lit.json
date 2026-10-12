@@ -1,0 +1,972 @@
+{
+  "arm": "N",
+  "base": "v13 (surfacefit's with-clock candidate, board 248.4818)",
+  "by_airport_all_row": {
+    "EDDF": {
+      "ci95_rmse_s": [
+        0.3621,
+        1.6773
+      ],
+      "ci95_s2": [
+        113.08,
+        584.55
+      ],
+      "days": 31,
+      "mse_gain_s2": 289.85,
+      "rmse_gain_s": 0.8875,
+      "rows": 17324
+    },
+    "EDDM": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 12035
+    },
+    "EGLL": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 20000
+    },
+    "EHAM": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 19458
+    },
+    "LEBL": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 13835
+    },
+    "LEMD": {
+      "ci95_rmse_s": [
+        0.0891,
+        0.2851
+      ],
+      "ci95_s2": [
+        28.68,
+        92.45
+      ],
+      "days": 31,
+      "mse_gain_s2": 58.45,
+      "rmse_gain_s": 0.1826,
+      "rows": 17985
+    },
+    "LFPG": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 19778
+    },
+    "LIRF": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 12068
+    },
+    "LSZH": {
+      "ci95_rmse_s": [
+        0.0,
+        0.0
+      ],
+      "ci95_s2": [
+        0.0,
+        0.0
+      ],
+      "days": 31,
+      "mse_gain_s2": 0.0,
+      "rmse_gain_s": 0.0,
+      "rows": 10585
+    },
+    "LTFM": {
+      "ci95_rmse_s": [
+        -0.004,
+        0.8565
+      ],
+      "ci95_s2": [
+        -1.65,
+        347.18
+      ],
+      "days": 31,
+      "mse_gain_s2": 175.5,
+      "rmse_gain_s": 0.4339,
+      "rows": 22609
+    }
+  },
+  "by_airport_served": {
+    "EDDF": {
+      "ci95_rmse_s": [
+        4.4042,
+        15.013
+      ],
+      "ci95_s2": [
+        1399.23,
+        5953.53
+      ],
+      "days": 31,
+      "mse_gain_s2": 3216.75,
+      "rmse_gain_s": 9.2546,
+      "rows": 1561
+    },
+    "LEMD": {
+      "ci95_rmse_s": [
+        2.1289,
+        6.0923
+      ],
+      "ci95_s2": [
+        654.97,
+        2076.81
+      ],
+      "days": 31,
+      "mse_gain_s2": 1297.72,
+      "rmse_gain_s": 3.869,
+      "rows": 810
+    },
+    "LTFM": {
+      "ci95_rmse_s": [
+        0.0201,
+        0.8586
+      ],
+      "ci95_s2": [
+        7.8,
+        340.63
+      ],
+      "days": 31,
+      "mse_gain_s2": 175.51,
+      "rmse_gain_s": 0.4345,
+      "rows": 22608
+    }
+  },
+  "cells_served": [
+    "EDDF/reached",
+    "LEMD/reached",
+    "LTFM/unreached"
+  ],
+  "class_rows": 64786,
+  "fold": "december",
+  "matcher_sha256": "6fdf39519eb0f500c06230e2972d3c8300aa6222ed8d9b003998ddf6e286093b",
+  "pre_hold_all_row": {
+    "ci95_rmse_s": [
+      -0.3137,
+      0.2678
+    ],
+    "ci95_s2": [
+      -127.41,
+      111.94
+    ],
+    "days": 31,
+    "mse_gain_s2": -4.37,
+    "rmse_gain_s": -0.0107,
+    "rows": 165677
+  },
+  "pre_hold_class_rows": {
+    "ci95_rmse_s": [
+      -0.7423,
+      0.6436
+    ],
+    "ci95_s2": [
+      -340.54,
+      293.18
+    ],
+    "days": 31,
+    "mse_gain_s2": -11.16,
+    "rmse_gain_s": -0.0248,
+    "rows": 64786
+  },
+  "projected": {
+    "board_gain_ci95_s": [
+      0.0626,
+      0.8845
+    ],
+    "board_gain_s": 0.4385,
+    "by_airport": {
+      "EDDF": {
+        "contribution_ci95_s2": [
+          67.99,
+          340.82
+        ],
+        "contribution_s2": 179.53,
+        "gain_per_row_s2": 2863.4,
+        "rows": 1604,
+        "weight": 0.0627
+      },
+      "EDDM": {
+        "contribution_ci95_s2": [
+          0.0,
+          0.0
+        ],
+        "contribution_s2": 0.0,
+        "gain_per_row_s2": 0.0,
+        "rows": 447,
+        "weight": 0.00282
+      },
+      "EGLL": {
+        "contribution_ci95_s2": [
+          -134.75,
+          -40.58
+        ],
+        "contribution_s2": -78.62,
+        "gain_per_row_s2": -4153.3,
+        "rows": 11213,
+        "weight": 0.01893
+      },
+      "EHAM": {
+        "contribution_ci95_s2": [
+          -26.9,
+          -4.6
+        ],
+        "contribution_s2": -13.79,
+        "gain_per_row_s2": -1822.7,
+        "rows": 1199,
+        "weight": 0.00757
+      },
+      "LEBL": {
+        "contribution_ci95_s2": [
+          -0.21,
+          35.42
+        ],
+        "contribution_s2": 15.51,
+        "gain_per_row_s2": 1532.7,
+        "rows": 1186,
+        "weight": 0.01012
+      },
+      "LEMD": {
+        "contribution_ci95_s2": [
+          12.69,
+          57.08
+        ],
+        "contribution_s2": 33.16,
+        "gain_per_row_s2": 1129.9,
+        "rows": 857,
+        "weight": 0.02935
+      },
+      "LFPG": {
+        "contribution_ci95_s2": [
+          -19.93,
+          76.01
+        ],
+        "contribution_s2": 18.14,
+        "gain_per_row_s2": 163.5,
+        "rows": 18773,
+        "weight": 0.11095
+      },
+      "LIRF": {
+        "contribution_ci95_s2": [
+          -48.33,
+          109.57
+        ],
+        "contribution_s2": 32.49,
+        "gain_per_row_s2": 528.0,
+        "rows": 6301,
+        "weight": 0.06153
+      },
+      "LSZH": {
+        "contribution_ci95_s2": [
+          -2.78,
+          15.26
+        ],
+        "contribution_s2": 6.22,
+        "gain_per_row_s2": 1093.3,
+        "rows": 648,
+        "weight": 0.00569
+      },
+      "LTFM": {
+        "contribution_ci95_s2": [
+          4.54,
+          58.01
+        ],
+        "contribution_s2": 32.08,
+        "gain_per_row_s2": 232.5,
+        "rows": 22609,
+        "weight": 0.13797
+      }
+    },
+    "ci95_s2": [
+      32.09,
+      452.89
+    ],
+    "largest_contributor": "EDDF",
+    "leave_one_airport_out_s2": {
+      "EDDF": 45.18,
+      "EDDM": 224.71,
+      "EGLL": 303.33,
+      "EHAM": 238.5,
+      "LEBL": 209.2,
+      "LEMD": 191.55,
+      "LFPG": 206.57,
+      "LIRF": 192.22,
+      "LSZH": 218.49,
+      "LTFM": 192.63
+    },
+    "pooled_mse_reduction_s2": 224.71
+  },
+  "projected_served_cells_only": {
+    "board_gain_s": 0.4777,
+    "cells": [
+      "EDDF/reached",
+      "LEMD/reached",
+      "LTFM/unreached"
+    ],
+    "ci95_s2": [
+      124.52,
+      405.77
+    ],
+    "desk_window": false,
+    "forgone_by_cell": {
+      "EDDF/unreached": 0.0,
+      "EDDM/reached": 0.0,
+      "EDDM/unreached": 0.0,
+      "EGLL/reached": -78.7,
+      "EGLL/unreached": 0.08,
+      "EHAM/reached": -13.79,
+      "EHAM/unreached": 0.0,
+      "LEBL/reached": 15.51,
+      "LEBL/unreached": 0.0,
+      "LEMD/unreached": 0.0,
+      "LFPG/reached": -2.9,
+      "LFPG/unreached": 21.04,
+      "LIRF/reached": -1.62,
+      "LIRF/unreached": 34.11,
+      "LSZH/reached": 6.22,
+      "LSZH/unreached": 0.0
+    },
+    "forgone_s2": -20.06,
+    "hold_reason": {
+      "EDDF/unreached": {
+        "december": "unpriced, 43 fold rows",
+        "january": "unpriced, 155 fold rows",
+        "july_loo": "unpriced, 52 fold rows",
+        "lit_folds": "december, january, july_loo"
+      },
+      "EDDM/reached": {
+        "december": "unpriced, 408 fold rows",
+        "january": "unpriced, 149 fold rows",
+        "july_loo": "unpriced, 230 fold rows",
+        "lit_folds": "december, january, july_loo"
+      },
+      "EDDM/unreached": {
+        "december": "unpriced, 39 fold rows",
+        "january": "unpriced, 274 fold rows",
+        "july_loo": "supported",
+        "lit_folds": "december, january, july_loo"
+      },
+      "EGLL/reached": {
+        "december": "interval [-7375.32, -2221.88] is not clear of zero above",
+        "january": "interval [-712.04, 841.46] is not clear of zero above",
+        "july_loo": "interval [-1360.95, 381.06] is not clear of zero above",
+        "lit_folds": "december, january, july_loo"
+      },
+      "EGLL/unreached": {
+        "december": "interval [-688.86, 1023.75] is not clear of zero above",
+        "january": "interval [-1624.38, -34.64] is not clear of zero above",
+        "july_loo": "interval [-384.02, 158.59] is not clear of zero above",
+        "lit_folds": "december, january, july_loo"
+      },
+      "EHAM/reached": {
+        "december": "interval [-3669.75, -628.15] is not clear of zero above",
+        "january": "interval [-469.66, 5749.17] is not clear of zero above",
+        "july_loo": "supported",
+        "lit_folds": "december, january, july_loo"
+      },
+      "EHAM/unreached": {
+        "december": "unpriced, 32 fold rows",
+        "january": "unpriced, 16 fold rows",
+        "july_loo": "unpriced, 13 fold rows",
+        "lit_folds": "december, january, july_loo"
+      },
+      "LEBL/reached": {
+        "december": "interval [-22.31, 3800.39] is not clear of zero above",
+        "january": "supported",
+        "july_loo": "supported",
+        "lit_folds": "december, january, july_loo"
+      },
+      "LEBL/unreached": {
+        "december": "unpriced, 99 fold rows",
+        "january": "unpriced, 120 fold rows",
+        "july_loo": "unpriced, 321 fold rows",
+        "lit_folds": "december, january, july_loo"
+      },
+      "LEMD/unreached": {
+        "december": "unpriced, 47 fold rows",
+        "january": "dark by instrument, not priced here",
+        "july_loo": "interval [-82.14, 627.02] is not clear of zero above",
+        "lit_folds": "december, july_loo"
+      },
+      "LFPG/reached": {
+        "december": "interval [-1192.86, 464.98] is not clear of zero above",
+        "january": "unpriced, 0 fold rows",
+        "july_loo": "interval [-1269.53, 778.57] is not clear of zero above",
+        "lit_folds": "december, january, july_loo"
+      },
+      "LFPG/unreached": {
+        "december": "interval [-123.33, 764.14] is not clear of zero above",
+        "january": "interval [-21.5, 684.42] is not clear of zero above",
+        "july_loo": "interval [-388.14, 47.66] is not clear of zero above",
+        "lit_folds": "december, january, july_loo"
+      },
+      "LIRF/reached": {
+        "december": "interval [-1828.56, 1511.12] is not clear of zero above",
+        "january": "dark by instrument, not priced here",
+        "july_loo": "interval [-3663.86, 6690.26] is not clear of zero above",
+        "lit_folds": "december, july_loo"
+      },
+      "LIRF/unreached": {
+        "december": "interval [-673.99, 2004.4] is not clear of zero above",
+        "january": "dark by instrument, not priced here",
+        "july_loo": "unpriced, 141 fold rows",
+        "lit_folds": "december, july_loo"
+      },
+      "LSZH/reached": {
+        "december": "interval [-520.81, 2860.83] is not clear of zero above",
+        "january": "interval [-1303.81, 2382.24] is not clear of zero above",
+        "july_loo": "interval [-465.91, 2538.55] is not clear of zero above",
+        "lit_folds": "december, january, july_loo"
+      },
+      "LSZH/unreached": {
+        "december": "unpriced, 50 fold rows",
+        "january": "unpriced, 98 fold rows",
+        "july_loo": "unpriced, 60 fold rows",
+        "lit_folds": "december, january, july_loo"
+      }
+    },
+    "lit_folds": {
+      "EDDF/reached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "EDDF/unreached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "EDDM/reached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "EDDM/unreached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "EGLL/reached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "EGLL/unreached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "EHAM/reached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "EHAM/unreached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "LEBL/reached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "LEBL/unreached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "LEMD/reached": [
+        "december",
+        "july_loo"
+      ],
+      "LEMD/unreached": [
+        "december",
+        "july_loo"
+      ],
+      "LFPG/reached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "LFPG/unreached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "LIRF/reached": [
+        "december",
+        "july_loo"
+      ],
+      "LIRF/unreached": [
+        "december",
+        "july_loo"
+      ],
+      "LSZH/reached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "LSZH/unreached": [
+        "december",
+        "january",
+        "july_loo"
+      ],
+      "LTFM/unreached": [
+        "december",
+        "january",
+        "july_loo"
+      ]
+    },
+    "lit_rule": true,
+    "min_fold_rows": 500,
+    "note": "the desk's 2026-09-09 cell hold under the lit-fold refinement: a cell is served when it clears in EVERY fold in which its airport instrument existed -- 500+ rows and a day-clustered interval clear of zero above in each -- on at least 2 lit folds with december among them, because a winter ranking month is served.",
+    "pooled_mse_reduction_s2": 244.77
+  },
+  "raw_all_row": {
+    "ci95_rmse_s": [
+      0.0763,
+      0.2292
+    ],
+    "ci95_s2": [
+      30.6,
+      97.23
+    ],
+    "days": 31,
+    "mse_gain_s2": 60.6,
+    "rmse_gain_s": 0.1484,
+    "rows": 165677
+  },
+  "raw_all_row_without_EGLL": {
+    "ci95_rmse_s": [
+      0.0799,
+      0.2658
+    ],
+    "ci95_s2": [
+      31.3,
+      111.12
+    ],
+    "days": 31,
+    "mse_gain_s2": 68.92,
+    "rmse_gain_s": 0.1702,
+    "rows": 145677
+  },
+  "raw_served_rows": {
+    "ci95_rmse_s": [
+      0.4591,
+      1.6589
+    ],
+    "ci95_s2": [
+      180.91,
+      645.28
+    ],
+    "days": 31,
+    "mse_gain_s2": 401.95,
+    "rmse_gain_s": 1.0085,
+    "rows": 24979
+  },
+  "raw_served_without_EGLL": {
+    "ci95_rmse_s": [
+      0.4599,
+      1.5888
+    ],
+    "ci95_s2": [
+      183.16,
+      628.86
+    ],
+    "days": 31,
+    "mse_gain_s2": 401.95,
+    "rmse_gain_s": 1.0085,
+    "rows": 24979
+  },
+  "reach_by_airport_month": {
+    "EDDF": {
+      "2025-01": {
+        "clocked": 11755,
+        "reach": 0.7586,
+        "rows": 15496
+      },
+      "2025-07": {
+        "clocked": 16608,
+        "reach": 0.7785,
+        "rows": 21334
+      },
+      "2025-12": {
+        "clocked": 15720,
+        "reach": 0.9074,
+        "rows": 17324
+      },
+      "2026-01": {
+        "clocked": 7894,
+        "reach": 0.5039,
+        "rows": 15667
+      },
+      "2026-07": {
+        "clocked": 7308,
+        "reach": 0.3539,
+        "rows": 20650
+      }
+    },
+    "EDDM": {
+      "2025-01": {
+        "clocked": 10843,
+        "reach": 0.9625,
+        "rows": 11266
+      },
+      "2025-07": {
+        "clocked": 5775,
+        "reach": 0.3649,
+        "rows": 15825
+      },
+      "2025-12": {
+        "clocked": 11588,
+        "reach": 0.9629,
+        "rows": 12035
+      },
+      "2026-01": {
+        "clocked": 10531,
+        "reach": 0.9615,
+        "rows": 10953
+      },
+      "2026-07": {
+        "clocked": 14461,
+        "reach": 0.9632,
+        "rows": 15013
+      }
+    },
+    "EGLL": {
+      "2025-01": {
+        "clocked": 8447,
+        "reach": 0.435,
+        "rows": 19420
+      },
+      "2025-07": {
+        "clocked": 1200,
+        "reach": 0.0577,
+        "rows": 20790
+      },
+      "2025-12": {
+        "clocked": 8787,
+        "reach": 0.4394,
+        "rows": 20000
+      },
+      "2026-01": {
+        "clocked": 13558,
+        "reach": 0.7031,
+        "rows": 19283
+      },
+      "2026-07": {
+        "clocked": 19762,
+        "reach": 0.9613,
+        "rows": 20557
+      }
+    },
+    "EHAM": {
+      "2025-01": {
+        "clocked": 17801,
+        "reach": 0.9643,
+        "rows": 18460
+      },
+      "2025-07": {
+        "clocked": 21193,
+        "reach": 0.9424,
+        "rows": 22489
+      },
+      "2025-12": {
+        "clocked": 18259,
+        "reach": 0.9384,
+        "rows": 19458
+      },
+      "2026-01": {
+        "clocked": 15007,
+        "reach": 0.9245,
+        "rows": 16232
+      },
+      "2026-07": {
+        "clocked": 20566,
+        "reach": 0.9369,
+        "rows": 21950
+      }
+    },
+    "LEBL": {
+      "2025-01": {
+        "clocked": 11198,
+        "reach": 0.9153,
+        "rows": 12234
+      },
+      "2025-07": {
+        "clocked": 13792,
+        "reach": 0.8233,
+        "rows": 16752
+      },
+      "2025-12": {
+        "clocked": 12649,
+        "reach": 0.9143,
+        "rows": 13835
+      },
+      "2026-01": {
+        "clocked": 10733,
+        "reach": 0.8797,
+        "rows": 12201
+      },
+      "2026-07": {
+        "clocked": 15859,
+        "reach": 0.887,
+        "rows": 17879
+      }
+    },
+    "LEMD": {
+      "2025-01": {
+        "clocked": 1,
+        "reach": 0.0001,
+        "rows": 16510
+      },
+      "2025-07": {
+        "clocked": 4140,
+        "reach": 0.22,
+        "rows": 18818
+      },
+      "2025-12": {
+        "clocked": 17128,
+        "reach": 0.9523,
+        "rows": 17985
+      },
+      "2026-01": {
+        "clocked": 15843,
+        "reach": 0.9429,
+        "rows": 16802
+      },
+      "2026-07": {
+        "clocked": 11001,
+        "reach": 0.5459,
+        "rows": 20152
+      }
+    },
+    "LFPG": {
+      "2025-01": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 17900
+      },
+      "2025-07": {
+        "clocked": 396,
+        "reach": 0.0182,
+        "rows": 21712
+      },
+      "2025-12": {
+        "clocked": 1005,
+        "reach": 0.0508,
+        "rows": 19778
+      },
+      "2026-01": {
+        "clocked": 739,
+        "reach": 0.0408,
+        "rows": 18129
+      },
+      "2026-07": {
+        "clocked": 873,
+        "reach": 0.0402,
+        "rows": 21743
+      }
+    },
+    "LIRF": {
+      "2025-01": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 11317
+      },
+      "2025-07": {
+        "clocked": 13247,
+        "reach": 0.8709,
+        "rows": 15211
+      },
+      "2025-12": {
+        "clocked": 5767,
+        "reach": 0.4779,
+        "rows": 12068
+      },
+      "2026-01": {
+        "clocked": 5325,
+        "reach": 0.4814,
+        "rows": 11061
+      },
+      "2026-07": {
+        "clocked": 11,
+        "reach": 0.0007,
+        "rows": 15838
+      }
+    },
+    "LSZH": {
+      "2025-01": {
+        "clocked": 8728,
+        "reach": 0.8966,
+        "rows": 9735
+      },
+      "2025-07": {
+        "clocked": 10849,
+        "reach": 0.8603,
+        "rows": 12611
+      },
+      "2025-12": {
+        "clocked": 9937,
+        "reach": 0.9388,
+        "rows": 10585
+      },
+      "2026-01": {
+        "clocked": 9155,
+        "reach": 0.916,
+        "rows": 9995
+      },
+      "2026-07": {
+        "clocked": 12033,
+        "reach": 0.9147,
+        "rows": 13155
+      }
+    },
+    "LTFM": {
+      "2025-01": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 21368
+      },
+      "2025-07": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 25171
+      },
+      "2025-12": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 22609
+      },
+      "2026-01": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 22396
+      },
+      "2026-07": {
+        "clocked": 0,
+        "reach": 0.0,
+        "rows": 25185
+      }
+    }
+  },
+  "reach_gap_2025_12_vs_ranking": {
+    "EDDF": {
+      "2025-12": 0.9074,
+      "2026-01": 0.5039,
+      "2026-07": 0.3539,
+      "gap_vs_2026_01": -0.4035
+    },
+    "EDDM": {
+      "2025-12": 0.9629,
+      "2026-01": 0.9615,
+      "2026-07": 0.9632,
+      "gap_vs_2026_01": -0.0014
+    },
+    "EGLL": {
+      "2025-12": 0.4394,
+      "2026-01": 0.7031,
+      "2026-07": 0.9613,
+      "gap_vs_2026_01": 0.2637
+    },
+    "EHAM": {
+      "2025-12": 0.9384,
+      "2026-01": 0.9245,
+      "2026-07": 0.9369,
+      "gap_vs_2026_01": -0.0139
+    },
+    "LEBL": {
+      "2025-12": 0.9143,
+      "2026-01": 0.8797,
+      "2026-07": 0.887,
+      "gap_vs_2026_01": -0.0346
+    },
+    "LEMD": {
+      "2025-12": 0.9523,
+      "2026-01": 0.9429,
+      "2026-07": 0.5459,
+      "gap_vs_2026_01": -0.0094
+    },
+    "LFPG": {
+      "2025-12": 0.0508,
+      "2026-01": 0.0408,
+      "2026-07": 0.0402,
+      "gap_vs_2026_01": -0.01
+    },
+    "LIRF": {
+      "2025-12": 0.4779,
+      "2026-01": 0.4814,
+      "2026-07": 0.0007,
+      "gap_vs_2026_01": 0.0035
+    },
+    "LSZH": {
+      "2025-12": 0.9388,
+      "2026-01": 0.916,
+      "2026-07": 0.9147,
+      "gap_vs_2026_01": -0.0228
+    },
+    "LTFM": {
+      "2025-12": 0.0,
+      "2026-01": 0.0,
+      "2026-07": 0.0,
+      "gap_vs_2026_01": 0.0
+    }
+  },
+  "rule": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+  "served_rows": 24979
+}

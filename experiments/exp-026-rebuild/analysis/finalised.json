@@ -1,0 +1,35 @@
+[
+  {
+    "staged": "experiments/exp-026-rebuild/candidates/noac-exp002.parquet",
+    "candidate": "submissions/candidates/exp-026-noac-exp002.parquet",
+    "sha256": "08d4c6c019763fbb5a02f363e04f7c85e2cb129612e81a0f78ee5552c655d53f",
+    "n": 344841,
+    "min": 60.0,
+    "median": 961.9322669138744,
+    "p99": 2508.6071398833033,
+    "max": 119094.63767467547,
+    "n_below_floor": 0,
+    "n_nonfinite": 0,
+    "name": "noac-exp002",
+    "file": "experiments/exp-026-rebuild/work/exp-026-noac-exp002.34071.267f103858d2.parquet",
+    "stored_dtypes": {
+      "MVT_ID_mvt": "double",
+      "TAXITIME_SEC_mvt": "double"
+    },
+    "residual_range": [
+      -12018.631142849908,
+      4959.450772052734
+    ],
+    "n_noac": 388,
+    "non_noac_vs_blend5_max_abs_diff": 0.0,
+    "non_noac_vs_uploaded_v2_max_abs_diff": 1.3096723705530167e-10,
+    "verifier": "noac substitution from experiments/exp-002-tail/noac_ranking_predictions.parquet, base pinned to submissions/uploaded/youthful-giraffe_v2.parquet",
+    "independent": true,
+    "max_abs_diff": 0.0,
+    "source_sha256": "f35fa267e7607ad1375fdf1b286574aa282ea2c4a7720efd78ded89c2679c730",
+    "base_sha256": "5d6a99610907bc432e2e46fb9ea11fc8103feb8aa9efdd3f7c86f1188866a4cb",
+    "noac_rms_shift": 1857.4675611973228,
+    "verified": true,
+    "published": false
+  }
+]

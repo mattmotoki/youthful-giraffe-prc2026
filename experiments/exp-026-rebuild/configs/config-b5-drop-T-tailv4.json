@@ -1,0 +1,83 @@
+{
+  "note": "exp-026 rebuild of `blend-5 -T-tailv4` on published members only.",
+  "_stage_name": "b5-drop-T-tailv4",
+  "ranking": {
+    "C2-cat": "experiments/exp-012-blend2/published/C2-cat-ranking.parquet",
+    "L2-hub8725": "experiments/exp-012-blend2/published/L2-hub8725-ranking.parquet",
+    "D1-winter": "experiments/exp-012-blend2/published/D1-winter-deice-v1-ranking.parquet",
+    "F1-fresh": "experiments/exp-012-blend2/published/F1-fresh-s1-ranking.parquet",
+    "V3-allin": "experiments/exp-012-blend2/published/V3-allin-v1-ranking.parquet",
+    "N1-nmtail": "experiments/exp-012-blend2/published/N1-nmtail-v4-ranking.parquet"
+  },
+  "mode": "hybrid: nnls in nm_late, nnls elsewhere",
+  "weights": {
+    "nm_late": {
+      "C2-cat": 0.029774296915036306,
+      "L2-hub8725": 0.0,
+      "D1-winter": 0.08192260268692586,
+      "F1-fresh": 0.4004653898635238,
+      "V3-allin": 0.2961507697381761,
+      "N1-nmtail": 0.20608249187976618
+    },
+    "nm_bulk": {
+      "C2-cat": 0.040475354927694045,
+      "L2-hub8725": 0.1009777712437024,
+      "D1-winter": 0.009883101210898332,
+      "F1-fresh": 0.5789509242789902,
+      "V3-allin": 0.2698331812427325,
+      "N1-nmtail": 0.0
+    },
+    "nonm": {
+      "C2-cat": 0.040475354927694045,
+      "L2-hub8725": 0.1009777712437024,
+      "D1-winter": 0.009883101210898332,
+      "F1-fresh": 0.5789509242789902,
+      "V3-allin": 0.2698331812427325,
+      "N1-nmtail": 0.0
+    },
+    "noac": {
+      "C2-cat": 0.040475354927694045,
+      "L2-hub8725": 0.1009777712437024,
+      "D1-winter": 0.009883101210898332,
+      "F1-fresh": 0.5789509242789902,
+      "V3-allin": 0.2698331812427325,
+      "N1-nmtail": 0.0
+    },
+    "_all": {
+      "C2-cat": 0.040475354927694045,
+      "L2-hub8725": 0.1009777712437024,
+      "D1-winter": 0.009883101210898332,
+      "F1-fresh": 0.5789509242789902,
+      "V3-allin": 0.2698331812427325,
+      "N1-nmtail": 0.0
+    }
+  },
+  "floor": 60.0,
+  "guard_bounds": [
+    -20657.0,
+    9069.0
+  ],
+  "late_cut": 1800.0,
+  "prepare_members": true,
+  "blend_version": 5,
+  "rotated": {
+    "july_loo": 287.6868,
+    "december": 206.3447,
+    "january": 339.8321
+  },
+  "rotated_clean": {
+    "july_loo": 287.6868,
+    "december": 206.3447,
+    "january": 221.1311
+  },
+  "board_clean": 260.3192,
+  "predict": 264.3192,
+  "member_sha256": {
+    "C2-cat": "52a453481a8bcc967c75c036704bf4d4027b9096819867ec9138324801894c3c",
+    "L2-hub8725": "dd0e8710000ab29b930ec72d8b058b00e6ed86ba3240cad01402c13813527882",
+    "D1-winter": "8865d3d866012d1421a08eee4c24ce9cfe53dbc0e255d8a3ff1894b68c368fd2",
+    "F1-fresh": "e216ab9e0dc7243a55a5ec1f8bba7d4dd8fa5f0108782e42d59344006c8bc5dc",
+    "V3-allin": "199fd5146966e98cae244be62c5bbdebd2951832374c7f920a4c97d5ef8a0fd4",
+    "N1-nmtail": "5feb03d96490d9e7acd7dee59fd94a41a81a45f97b75bb2d016646ac2cf4067b"
+  }
+}

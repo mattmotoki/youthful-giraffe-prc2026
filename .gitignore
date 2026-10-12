@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Competition data and generated artifacts
+data/
+artifacts/
+outputs/
+submissions/
+modeling/results/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+experiments/exp-045-harvest/work/
+experiments/exp-045-harvest/logs/*.pid
+experiments/exp-046-surfacefit/work/
+experiments/exp-050-nmblind/work/
+experiments/exp-050-nmblind/logs/*.pid
+experiments/exp-052-nmv22/work/
+experiments/exp-052-nmv22/logs/*.pid
+experiments/exp-054-arrivalrepr/work/
+experiments/exp-054-arrivalrepr/logs/*.pid
+experiments/exp-054-arrivalrepr/rerun/work/
+experiments/exp-054-arrivalrepr/review/*.pid
+experiments/exp-060-coldprior/work/*.npz
+experiments/exp-060-coldprior/work/keys-*.parquet
+experiments/exp-060-coldprior/logs/*.pid
+experiments/exp-061-sparseprior/work/*.npz
+experiments/exp-061-sparseprior/logs/*.pid
+experiments/exp-098-q09-serving-repair/logs/
+experiments/exp-098-q09-serving-repair/analysis/launch.claim
+experiments/exp-097-pkc-motion-transition/work/
+experiments/exp-097-pkc-motion-transition/logs/*.pid
+experiments/exp-097-pkc-motion-transition/logs/*.log
+experiments/exp-100-pkb-causal-state/logs/
+experiments/exp-100-pkb-causal-state/oof/
+experiments/exp-097-pkc-motion-transition/logs/*.handoff.json

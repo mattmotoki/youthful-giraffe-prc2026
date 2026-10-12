@@ -1,0 +1,9 @@
+S5 re-priced. exp-014 measured the envelope-day bias on candidate 1; exp-029
+re-measured it on the bases we now ship (analysis/base_moved_pooled.csv).
+  base                             b(>30s)  b(flagged)  split mass    moves   pooled
+  candidate 1 (exp-014's base)      143.52       83.40      451.90   0.877s   0.468s
+  blend-5 (stack-5's anchor)         74.52       41.36      121.90   0.236s   0.115s
+  stack-5 itself (exp-029)           41.36       41.36       37.61   0.073s   0.115s
+
+  for comparison, the figure this file carried before the review:
+    11,968 rows x -144 s  ->  mass 719.66 s^2  moves 1.398 s

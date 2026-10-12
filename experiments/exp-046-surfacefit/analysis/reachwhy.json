@@ -1,0 +1,389 @@
+{
+  "clock_reference": {
+    "median_s": -26.0,
+    "share_within_60s": 0.94,
+    "source": "exp-043 EHAM week"
+  },
+  "edge_km_threshold": 1.0,
+  "held_airport_days": {
+    "EDDF 2026-01-27": 0.8225,
+    "EDDF 2026-01-28": 0.6185,
+    "EDDF 2026-01-29": 0.2198,
+    "EDDF 2026-01-30": 0.1387,
+    "EDDF 2026-01-31": 0.1012
+  },
+  "held_reason": "EDDF feeder outage 2026-01-27..31 (desk 2026-09-08 14:45, from the harvest's receipt.json by_airport_day)",
+  "months": {
+    "2026-01": {
+      "by_airport": {
+        "EDDF": {
+          "clock_median_s": -75.13000011444092,
+          "clock_share_within_60s": 0.42499045680111974,
+          "covered_days": 27,
+          "departures_in_month": 15667,
+          "departures_on_covered_days": 13150,
+          "matched": 0.5976,
+          "matched_wide": 0.6287,
+          "no_takeoff_rows": 11,
+          "seen_on_the_ground": 0.6456,
+          "seen_on_the_ground_month": 0.589,
+          "seen_source": "mean over the 26 days the feeder was up (5 held); month rate 0.589",
+          "stand_to_box_edge_km_median": 3.2746369599998144,
+          "stand_within_1km_of_edge_share": 0.00013163090693694878,
+          "usable_wide": 0.5618,
+          "verdict": "receipt: 35% of departures are never heard on the ground, against 5% the matcher then loses",
+          "verdict_wide": "receipt: 35% of departures are never heard on the ground, against 2% the matcher then loses",
+          "wide_window_rows": 398,
+          "with_clock": 0.5618
+        },
+        "EDDM": {
+          "clock_median_s": 4.269999980926514,
+          "clock_share_within_60s": 0.9760158013544018,
+          "covered_days": 32,
+          "departures_in_month": 10953,
+          "departures_on_covered_days": 10953,
+          "matched": 0.9707,
+          "matched_wide": 0.9726,
+          "no_takeoff_rows": 20,
+          "seen_on_the_ground": 0.9735,
+          "seen_on_the_ground_month": 0.9735,
+          "seen_source": "harvest month rate, departures-weighted",
+          "stand_to_box_edge_km_median": 4.1605369462921615,
+          "stand_within_1km_of_edge_share": 9.444654325651681e-05,
+          "usable_wide": 0.9615,
+          "verdict": "carries",
+          "verdict_wide": "carries",
+          "wide_window_rows": 1,
+          "with_clock": 0.9615
+        },
+        "EGLL": {
+          "clock_median_s": -11.579999923706055,
+          "clock_share_within_60s": 0.6907122266751037,
+          "covered_days": 32,
+          "departures_in_month": 19283,
+          "departures_on_covered_days": 19283,
+          "matched": 0.7376,
+          "matched_wide": 0.7568,
+          "no_takeoff_rows": 175,
+          "seen_on_the_ground": 0.7663,
+          "seen_on_the_ground_month": 0.7663,
+          "seen_source": "harvest month rate, departures-weighted",
+          "stand_to_box_edge_km_median": 3.316863240000022,
+          "stand_within_1km_of_edge_share": 0.0,
+          "usable_wide": 0.7032,
+          "verdict": "receipt: 23% of departures are never heard on the ground, against 3% the matcher then loses",
+          "verdict_wide": "receipt: 23% of departures are never heard on the ground, against 1% the matcher then loses",
+          "wide_window_rows": 195,
+          "with_clock": 0.7032
+        },
+        "EHAM": {
+          "clock_median_s": -27.549999952316284,
+          "clock_share_within_60s": 0.9908423718906281,
+          "covered_days": 32,
+          "departures_in_month": 16232,
+          "departures_on_covered_days": 16232,
+          "matched": 0.9486,
+          "matched_wide": 0.9495,
+          "no_takeoff_rows": 13,
+          "seen_on_the_ground": 0.9428,
+          "seen_on_the_ground_month": 0.9428,
+          "seen_source": "harvest month rate, departures-weighted",
+          "stand_to_box_edge_km_median": 4.95429225999965,
+          "stand_within_1km_of_edge_share": 0.0,
+          "usable_wide": 0.9245,
+          "verdict": "carries",
+          "verdict_wide": "carries",
+          "wide_window_rows": 2,
+          "with_clock": 0.9245
+        },
+        "LEBL": {
+          "clock_median_s": -29.569999933242798,
+          "clock_share_within_60s": 0.846092291277674,
+          "covered_days": 32,
+          "departures_in_month": 12201,
+          "departures_on_covered_days": 12201,
+          "matched": 0.9218,
+          "matched_wide": 0.9249,
+          "no_takeoff_rows": 20,
+          "seen_on_the_ground": 0.9262,
+          "seen_on_the_ground_month": 0.9262,
+          "seen_source": "harvest month rate, departures-weighted",
+          "stand_to_box_edge_km_median": 3.6288277219186162,
+          "stand_within_1km_of_edge_share": 0.0,
+          "usable_wide": 0.8797,
+          "verdict": "carries",
+          "verdict_wide": "carries",
+          "wide_window_rows": 18,
+          "with_clock": 0.8797
+        },
+        "LEMD": {
+          "clock_median_s": -21.640000104904175,
+          "clock_share_within_60s": 0.9917074076366111,
+          "covered_days": 32,
+          "departures_in_month": 16802,
+          "departures_on_covered_days": 16802,
+          "matched": 0.9617,
+          "matched_wide": 0.9629,
+          "no_takeoff_rows": 19,
+          "seen_on_the_ground": 0.9633,
+          "seen_on_the_ground_month": 0.9633,
+          "seen_source": "harvest month rate, departures-weighted",
+          "stand_to_box_edge_km_median": 3.5005807200003716,
+          "stand_within_1km_of_edge_share": 0.0,
+          "usable_wide": 0.9422,
+          "verdict": "carries",
+          "verdict_wide": "carries",
+          "wide_window_rows": 0,
+          "with_clock": 0.9422
+        },
+        "LFPG": {
+          "clock_median_s": -103.9300000667572,
+          "clock_share_within_60s": 0.40934730056406127,
+          "covered_days": 32,
+          "departures_in_month": 18129,
+          "departures_on_covered_days": 18129,
+          "matched": 0.0685,
+          "matched_wide": 0.0733,
+          "no_takeoff_rows": 2,
+          "seen_on_the_ground": 0.0876,
+          "seen_on_the_ground_month": 0.0876,
+          "seen_source": "harvest month rate, departures-weighted",
+          "stand_to_box_edge_km_median": 3.8813910199995036,
+          "stand_within_1km_of_edge_share": 0.0,
+          "usable_wide": 0.0408,
+          "verdict": "receipt: 91% of departures are never heard on the ground, against 2% the matcher then loses",
+          "verdict_wide": "receipt: 91% of departures are never heard on the ground, against 1% the matcher then loses",
+          "wide_window_rows": 86,
+          "with_clock": 0.0408
+        },
+        "LIRF": {
+          "clock_median_s": -30.569999933242798,
+          "clock_share_within_60s": 0.6990142995973899,
+          "covered_days": 32,
+          "departures_in_month": 11061,
+          "departures_on_covered_days": 11061,
+          "matched": 0.6512,
+          "matched_wide": 0.6527,
+          "no_takeoff_rows": 4,
+          "seen_on_the_ground": 0.6602,
+          "seen_on_the_ground_month": 0.6602,
+          "seen_source": "harvest month rate, departures-weighted",
+          "stand_to_box_edge_km_median": 3.9795478521304393,
+          "stand_within_1km_of_edge_share": 0.0,
+          "usable_wide": 0.4814,
+          "verdict": "receipt: 34% of departures are never heard on the ground, against 1% the matcher then loses",
+          "verdict_wide": "receipt: 34% of departures are never heard on the ground, against 1% the matcher then loses",
+          "wide_window_rows": 13,
+          "with_clock": 0.4814
+        },
+        "LSZH": {
+          "clock_median_s": -16.430000066757202,
+          "clock_share_within_60s": 0.8366154512010388,
+          "covered_days": 32,
+          "departures_in_month": 9995,
+          "departures_on_covered_days": 9995,
+          "matched": 0.9247,
+          "matched_wide": 0.9348,
+          "no_takeoff_rows": 5,
+          "seen_on_the_ground": 0.9394,
+          "seen_on_the_ground_month": 0.9394,
+          "seen_source": "harvest month rate, departures-weighted",
+          "stand_to_box_edge_km_median": 3.9715916600003305,
+          "stand_within_1km_of_edge_share": 0.0,
+          "usable_wide": 0.9162,
+          "verdict": "carries",
+          "verdict_wide": "carries",
+          "wide_window_rows": 96,
+          "with_clock": 0.9162
+        },
+        "LTFM": {
+          "departures_in_month": 22396,
+          "departures_on_covered_days": 0,
+          "verdict": "no summary day for this airport yet"
+        }
+      },
+      "days_held": [
+        "EDDF 2026-01-27 receipt 0.8225",
+        "EDDF 2026-01-28 receipt 0.6185",
+        "EDDF 2026-01-29 receipt 0.2198",
+        "EDDF 2026-01-30 receipt 0.1387",
+        "EDDF 2026-01-31 receipt 0.1012"
+      ],
+      "days_held_reason": "EDDF feeder outage 2026-01-27..31 (desk 2026-09-08 14:45, from the harvest's receipt.json by_airport_day)",
+      "days_with_summaries_by_airport": {
+        "EDDF": 27,
+        "EDDM": 32,
+        "EGLL": 32,
+        "EHAM": 32,
+        "LEBL": 32,
+        "LEMD": 32,
+        "LFPG": 32,
+        "LIRF": 32,
+        "LSZH": 32
+      },
+      "normalised_by_airborne_alt_ok": true,
+      "receipt_dips": {
+        "by_airport": {
+          "EDDF": {
+            "days_held": 5,
+            "days_kept": 26,
+            "dips": {
+              "2026-01-29": 0.1347,
+              "2026-01-30": 0.0985,
+              "2026-01-31": 0.1012
+            },
+            "dips_held": {
+              "2026-01-29": 0.1347,
+              "2026-01-30": 0.0985,
+              "2026-01-31": 0.1012
+            },
+            "dips_not_held": {},
+            "min_day": 0.0985,
+            "month_median": 0.642,
+            "receipt_month_rate": 0.589,
+            "receipt_rate_on_kept_days": 0.6456
+          },
+          "EDDM": {
+            "days_held": 0,
+            "days_kept": 31,
+            "dips": {},
+            "dips_held": {},
+            "dips_not_held": {},
+            "min_day": 0.8299,
+            "month_median": 0.9815,
+            "receipt_month_rate": 0.9735,
+            "receipt_rate_on_kept_days": 0.9737
+          },
+          "EGLL": {
+            "days_held": 0,
+            "days_kept": 31,
+            "dips": {
+              "2026-01-01": 0.5085,
+              "2026-01-02": 0.4924
+            },
+            "dips_held": {},
+            "dips_not_held": {
+              "2026-01-01": 0.5085,
+              "2026-01-02": 0.4924
+            },
+            "min_day": 0.4924,
+            "month_median": 0.7445,
+            "receipt_month_rate": 0.7663,
+            "receipt_rate_on_kept_days": 0.7673
+          },
+          "EHAM": {
+            "days_held": 0,
+            "days_kept": 31,
+            "dips": {
+              "2026-01-04": 0.7202,
+              "2026-01-05": 0.6971
+            },
+            "dips_held": {},
+            "dips_not_held": {
+              "2026-01-04": 0.7202,
+              "2026-01-05": 0.6971
+            },
+            "min_day": 0.6971,
+            "month_median": 0.9699,
+            "receipt_month_rate": 0.9428,
+            "receipt_rate_on_kept_days": 0.9307
+          },
+          "LEBL": {
+            "days_held": 0,
+            "days_kept": 31,
+            "dips": {
+              "2026-01-23": 0.7434,
+              "2026-01-28": 0.6138,
+              "2026-01-29": 0.7315
+            },
+            "dips_held": {},
+            "dips_not_held": {
+              "2026-01-23": 0.7434,
+              "2026-01-28": 0.6138,
+              "2026-01-29": 0.7315
+            },
+            "min_day": 0.6138,
+            "month_median": 0.9521,
+            "receipt_month_rate": 0.9262,
+            "receipt_rate_on_kept_days": 0.925
+          },
+          "LEMD": {
+            "days_held": 0,
+            "days_kept": 31,
+            "dips": {
+              "2026-01-23": 0.7635
+            },
+            "dips_held": {},
+            "dips_not_held": {
+              "2026-01-23": 0.7635
+            },
+            "min_day": 0.7635,
+            "month_median": 0.9711,
+            "receipt_month_rate": 0.9633,
+            "receipt_rate_on_kept_days": 0.9639
+          },
+          "LFPG": {
+            "days_held": 0,
+            "days_kept": 31,
+            "dips": {},
+            "dips_held": {},
+            "dips_not_held": {},
+            "min_day": 0.0126,
+            "month_median": 0.0757,
+            "receipt_month_rate": 0.0876,
+            "receipt_rate_on_kept_days": 0.0868
+          },
+          "LIRF": {
+            "days_held": 0,
+            "days_kept": 31,
+            "dips": {},
+            "dips_held": {},
+            "dips_not_held": {},
+            "min_day": 0.4728,
+            "month_median": 0.6596,
+            "receipt_month_rate": 0.6602,
+            "receipt_rate_on_kept_days": 0.6614
+          },
+          "LSZH": {
+            "days_held": 0,
+            "days_kept": 31,
+            "dips": {},
+            "dips_held": {},
+            "dips_not_held": {},
+            "min_day": 0.8175,
+            "month_median": 0.9482,
+            "receipt_month_rate": 0.9394,
+            "receipt_rate_on_kept_days": 0.9405
+          },
+          "LTFM": {
+            "days_held": 0,
+            "days_kept": 31,
+            "dips": {},
+            "dips_held": {},
+            "dips_not_held": {},
+            "min_day": 0.0,
+            "month_median": 0.0,
+            "receipt_month_rate": 0.0,
+            "receipt_rate_on_kept_days": 0.0
+          }
+        },
+        "drop_points_below_the_airport_median": 0.2
+      },
+      "rows": 152719,
+      "rule_cover": {
+        "airport_days_by_rule": {
+          "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0": 288
+        },
+        "airport_days_present": 288,
+        "airport_days_rejected": 0,
+        "chosen": "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0",
+        "n_rules": 1
+      },
+      "rules_seen": [
+        "d4c59868864523ce6513151c1627ec2ba997fd25d6394cfe2ff03a14d89f01a0"
+      ],
+      "summary_days_missing": 33,
+      "summary_days_present": 283
+    }
+  }
+}

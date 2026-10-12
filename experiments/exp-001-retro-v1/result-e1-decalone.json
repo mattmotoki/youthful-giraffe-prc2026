@@ -1,0 +1,26 @@
+{
+  "name": "e1-decalone",
+  "argv": "--name e1-decalone --features v2 --target residual --linear-tree --clip-floor 60 --noac-head --folds december --no-submission",
+  "folds": {
+    "december": {
+      "rmse": 222.5875882576755,
+      "rmse_bulk": 205.50371046870217,
+      "rmse_tail": 2164.40599237691,
+      "rmse_no_nm": 810.2158300325544,
+      "n": 165677,
+      "n_tail": 261,
+      "n_no_nm": 1643,
+      "sse_share_tail": 0.14895457711189464,
+      "sse_share_no_nm": 0.13139380881367754,
+      "bias": 3.271014147583966,
+      "rmse_noac": 2408.730921845067,
+      "n_noac": 89,
+      "sse_share_noac": 0.0629075067144607,
+      "fold": "december",
+      "best_iteration": 239,
+      "refit_rounds": 281,
+      "seconds": 239,
+      "oof": "experiments/exp-001-retro-v1/oof/e1-decalone-december.parquet"
+    }
+  }
+}

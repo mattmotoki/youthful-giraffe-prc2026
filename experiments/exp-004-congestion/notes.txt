@@ -1,0 +1,160 @@
+note: ablation base july = 588.5/317.4 vs oracle-run base 586.3/315.1 (float32 feature cache + column order); treat ~2 s as implementation noise, all ablation deltas are within one cache so they stay comparable
+config family alone is a small negative on july (593.8 / bulk 324.5 vs base 588.5 / 317.4).
+Diagnosis: cfg_dep/cfg_arr are 160-210 level categoricals that are near-constant inside an
+airport-hour, so they duplicate airport+hour and cost variance. Repair to test: keep only the
+numeric part (rwy_share, n_dep_rwy, n_arr_rwy, cfg_changed) and drop the two categoricals.
+flow family alone: july 577.9 overall (-10.6) but bulk 328.5 (+11.1 WORSE than base 317.4).
+Diagnosis: nbr_span_apt/rwy and nbr_taxiin_* are ABSOLUTE level features (a 30-min rolling median
+of take-off minus AOBT). Their level moves month to month (July 2025 mean span 1104 s; January
+2026 is outside the 2025 envelope at four airports per docs/shift-2026.md), so the tree fits a
+level that does not transfer to a held-out month. Repair to test: express them relative to the
+same month frame -- neighbour span minus the airport's own month median, and the ratio to the
+unimpeded estimate (which is what nbr_excess_* in the geometry family already is).
+geometry family alone: july 585.6 / bulk 319.6 vs base 588.5 / 317.4 -- flat, inside the ~2 s
+implementation noise. Diagnosis: unimpeded_q and stand_rwy_med are target encodings of
+(airport, stand, runway), and the base model already holds apt_stand and apt_rwy as CatBoost
+categoricals whose CTRs learn the same thing. The family is redundant with the base, not
+uninformative (it correlates +0.71 with taxi on no-NM bulk rows). Check whether it helps the
+no-NM bulk slice specifically before closing the path; if the value is confined there, the
+right home for it is a no-NM sub-model, not the main tree.
+geometry alone makes the no-NM bulk WORSE (1456.2 vs 1416.6 base) even though stand_rwy_med
+correlates +0.71 with taxi there. Diagnosis: the shrunk quantile is fitted on training months
+and the no-NM population is concentrated at LIRF where the recorded block time is often a
+SCHED placeholder, so the "unimpeded" estimate is fitted partly on non-taxi durations and
+misleads exactly on the rows it was meant to serve. Size check first: with n=3785 the standard
+error of that RMSE is about 1416/sqrt(2n) = 16 s, so +39.6 is ~2.5 SE -- real but small. Two
+candidate repairs, neither run: (a) drop placeholder rows (|BLOCK-SCHED| <= 60 s) from the
+unimpeded fit -- but that is 9.6 % of all departures, most of them genuine on-time pushes, so
+it biases the quantile; (b) drop only noac rows -- 0.07 %, too few to move the table. Treat as
+MAYBE, revival condition: the no-NM rows get their own sub-model (exp-002), at which point the
+unimpeded estimate is fitted on and applied to a homogeneous population.
+pressure family flips sign between folds on the bulk: july +3.4 (worse), december -9.2 (better),
+while it hurts the overall on both folds through the 261-656 row tail. Bulk sampling error is
+~0.4 s at these n, and model-fit noise ~2 s, so the flip is real, not noise. Reading: the
+take-off-side counts carry a seasonal component (december runway pressure is informative about
+de-icing and low-visibility spacing; july's is not) and the family should be judged on the
+three-fold spread, not on july alone. This is the COMMON.md "treat the spread as the
+uncertainty band" case.
+All four take-off-anchored families now flip sign on the bulk between the two folds:
+                july bulk delta   december bulk delta
+  pressure          +3.4              -9.2
+  flow             +11.1              -7.8
+  config            +7.1              -2.5
+  geometry          +2.2              -3.1
+A single mechanism explains the pattern: july has 656 tail rows and december 261, and july's
+LIRF is in its own summer regime (docs/shift-2026.md: std of take-off minus AOBT 737 s in July
+vs ~200 s in other months at LIRF). Extra weakly-informative features give the tree more ways
+to chase the tail, and the bulk pays for it; where the tail is small, the same features are net
+positive. Prediction this makes: once the noac and no-NM rows are carried by their own head
+(exp-002 / exp-006), the take-off-anchored families should turn consistently positive. The
+base-v2 round now running is the first test -- it carries exp-002's noac columns.
+stand family: july overall -101.0 / bulk -9.8; december overall -49.0 / bulk +6.2. Strongly and
+consistently positive on overall, tail and no-NM on both folds, but the bulk sign flips. The
+overall-bulk split says the stand-occupancy bound is doing its work on the rows where the push
+time is uncertain (no-NM, noac, long taxis) and adding variance elsewhere -- which is what a
+bound that bites on 11 % of rows should do. Check the NM bulk slice on december before deciding
+whether it belongs in the recommended set for the bulk.
+CORRECTION: the "take-off-anchored families flip sign / carry no signal" reading recorded above
+is WRONG and is retracted in RESULTS.md. It came from scoring on the overall bulk, which mixes
+3,785 no-NM rows at ~1400 s RMSE into 186,272 NM rows at ~249 s. On the NM bulk every family
+improves both folds significantly; pressure is among the best (-5.7 / -5.6). The sign flips were
+noise from the no-NM slice, whose bootstrap CIs are 300-500 s wide.
+january disruption slice for flow (n=4,973 bad-weather NM bulk): -6.9 [-13.7, +0.0], against
+december's -21.9 [-30.3, -12.9] on n=1,447. Same direction, much smaller, and the january CI
+touches zero -- even though january has 3.5x the bad-weather rows. So the "ten times the fold
+average" statement is december-specific and must not be generalised: on january the disruption
+gain is about 3x the ordinary-hours gain (-6.9 vs -2.2), not 10x. What holds on both folds is
+the ordinary-hours NM bulk gain, -2.2 both times with tight CIs.
+Possible cause of the fold difference: december has snow at only three of ten airports, so its
+snow hours are a small, extreme, concentrated set; january 2025 winter weather is more routine
+and more of it is already carried by the base model's hour and month structure.
+Corrected july oracle (per-month features, all three folds queued): base 587.6 / bulk 316.1 /
+non-noac 336.7; oracle 269.3 / bulk 171.6 / non-noac 230.0.
+The non-noac column is the one exp-002's leaderboard arithmetic is stated over, and it reframes
+the ceiling usefully: a PERFECT same-runway queue count takes july non-noac only to 230.0, which
+is the very bottom of the 230-260 band the leaders must be in. Our realisable base+all reaches
+316.4. So congestion features have about 107 s of headroom on july non-noac and the surface
+module has taken about 20 s of it; and even exhausting the lane entirely would land at the
+bottom edge of the leaders' band, not past it. If the board top is real, the leaders have
+something this base model does not, or a stronger base.
+Corrected oracle, non-noac column (the population exp-002's board arithmetic is stated over):
+  july     base 336.7 -> oracle 230.0   headroom 106.7
+  december base 226.3 -> oracle 166.4   headroom  59.9
+The ceiling is strongly month-dependent. December's oracle sits well below the 230-260 band the
+leaders must occupy; july's sits exactly at its bottom edge. The ranking set is 56 % July-like
+and 44 % January-like, so the july figure is the binding one, and it says that even perfect
+queue knowledge on THIS base model only reaches the bottom of the leaders' band on a summer
+month. Either the leaders carry a base signal this one does not, or they are close to the
+same ceiling and win on the noac rows. Not a claim, an observation for the desk.
+PLAN after the re-runs: move derive_relative() out of run_ablation.py and into
+prc.surface_features as add_month_relative(), and define a single RECOMMENDED name in the
+module, so the integrator imports one list instead of copying a helper. Because that changes the
+code fingerprint (and so invalidates the feature cache by design), re-run all_repaired on the
+three folds afterwards to confirm the shipped code reproduces the reported numbers rather than
+shipping code that differs from what was measured.
+The rolling-window fix changed how honest the neighbour features are, not just their values:
+  nbr_taxiin_rwy populated 64.9 % -> 17.6 %
+Arrivals seldom land on a DEPARTURE runway within the preceding 30 minutes -- at a
+segregated-mode airport essentially never. The old read-at-the-last-event implementation was
+returning the last time any arrival used that runway, often hours earlier, so 47 % of that
+column was a stale value dressed as a current one. It is now NaN unless arrivals genuinely used
+the departure runway recently, which is exactly the mixed-mode signal the feature was for.
+nbr_span_rwy and nbr_excess_rwy lost 1.5 points of coverage for the same reason.
+The rolling-window fix changes the flow family's verdict on july outright:
+  gen1 (stale read): base+flow 577.9 / bulk 328.5  -> bulk +11.1 WORSE than base
+  fixed            : base+flow 569.3 / bulk 315.2  -> bulk  -2.2 BETTER than base
+So "flow costs 11 s of july bulk", which I reported twice and built a whole tail-chasing
+explanation around, was a defect in my rolling read, not a property of the feature. The
+tail-chasing story may still be true for other families but flow is no longer evidence for it.
+Running tally, july bulk delta vs base 317.4, gen1 -> fixed:
+  occupancy  -18.2 -> -18.5
+  config      +7.1 ->  +6.5
+  flow       +11.1 ->  -2.2
+  geometry    +2.2 ->  -8.9
+july, after the fixes: base+all 426.1 / bulk 282.4 / non-noac 316.5
+                       all_repaired 426.1 / bulk 281.7 / non-noac 318.3
+The repairs' edge over base+all has shrunk to 0.7 s of bulk on july (it was 3.2 s with the
+defective features) and all_repaired is now slightly WORSE on non-noac. That is coherent:
+flow_rel existed to cure "absolute neighbour levels do not transfer", and most of that problem
+was the stale rolling read, not the levels. Decide the recommended set on all three folds, and
+be ready to recommend base+all (all seven families, unrepaired) if the repairs do not earn
+their place on december and january too.
+Non-physical predictions: base+all produces 12 negative predictions on july (min -244 s) and 4
+on december. Clipping the prediction at 0, 60 or 120 s changes the RMSE by at most 0.002 s on
+any segment, so a floor is submission hygiene rather than a score improvement -- worth applying
+because a negative taxi time is indefensible in a submission, not because it buys anything.
+Recorded so the integrator does not spend time on it expecting a gain. (exp-001 reported 92
+negative predictions; this base produces far fewer, presumably because the actual-columns
+features pin the scale.)
+Recommendation will be decided by a paired comparison, not by eyeballing fold totals:
+  compare.py "base+all" all_repaired <fold>   for july, december, january
+so the base+all vs all_repaired difference gets the same airport-day cluster interval as every
+other claim in RESULTS. Current standing: july all_repaired bulk -0.7 but non-noac +1.8;
+december bulk -1.5 and non-noac -0.9. If the intervals straddle zero on every fold the simpler
+set (base+all, the seven families as the module produces them) is what goes to the integrator,
+because the repairs then cost a helper function for nothing.
+Dropped the queue2 measurement entirely (2026-09-05 13:40, load average 439, my GPU at 1 % and
+the fits CPU-starved by other competitions). queue2 is my own addition rather than one of the
+assignment's families, so it is the right thing to cut under contention. It stays in the module
+as EXTRA_FAMILY_COLUMNS, excluded from FAMILY_COLUMNS and from the recommended set; section 7
+records it as built-but-unmeasured with its revival condition. Seed runs trimmed to one extra
+seed on base and all_repaired.
+Corrected family tables (VERSION 2 features, airport-day cluster bootstrap), the headline:
+  NM bulk  : all 21 family x fold intervals exclude zero. pressure is the largest and most
+             consistent (-5.7 / -5.6 / -6.5); config the smallest (-1.2 / -0.6 / -1.2).
+  non-noac : only QUEUE is significant on all three folds (-19.1 / -4.8 / -3.4). stand is
+             significant on NONE of them (-2.3 / -2.9 / +0.7, all crossing zero), and config is
+             significantly WORSE on july (+3.5 [+0.1, +7.5]).
+So the stand family's big fold-total gains (-101 s on july) live entirely in the noac and tail
+rows; on the population the leaderboard scores it is within noise. My earlier enthusiasm for it
+as "the third-strongest family" was measured on the wrong population, the same error as the
+233.8 claim. The case for the full set rests on the COMBINED model (non-noac 337.3 -> 316.5
+july, 225.9 -> 210.5 december), not on the individual families being individually defensible.
+base+all vs base, airport-day cluster bootstrap, all three folds, every cell significant:
+  non-noac  july -20.8 [-37.1, -4.7]   december -15.4 [-19.1, -12.2]   january  -8.4 [-15.1, -4.9]
+  NM bulk   july -15.4 [-17.8, -13.5]  december -12.7 [-14.8, -11.0]   january -12.1 [-14.0, -10.3]
+  noac      july -4666 [-6768, -2479]  december -6886 [-11439, -2552]  january -5736 [-9433, -1340]
+This is the lane's result and it is the one to quote: the seven families TOGETHER are worth
+8 to 21 s on the population the leaderboard scores, on every fold, with intervals that clear
+zero under cluster resampling. The individual families are mostly not separately defensible on
+that population; the combination is.

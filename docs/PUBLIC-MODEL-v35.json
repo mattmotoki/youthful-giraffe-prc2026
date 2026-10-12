@@ -1,0 +1,109 @@
+{
+  "entry": "v35",
+  "rmse_s": 241.7342,
+  "rows": 344841,
+  "bytes": 4707537,
+  "sha256": "4ece6a4b3616a57cc1a54d2fa63657b590226ff052dafc2f791821566b470e35",
+  "submitted_utc": "2026-09-30 18:30:26",
+  "basis": "Accepted submission row 35, exp-148 R2b-w100-kno; exported predictions match the accepted file.",
+  "source_pins": {
+    "exp148": "1b676fc05cfd17753d345ddf98b60bcce4743917"
+  },
+  "choice": {
+    "variant": "R2b-w100-kno",
+    "form": "R2b",
+    "form_column": "pred_Sb",
+    "w": 1.0,
+    "keep_sets": [
+      "noac",
+      "ordna"
+    ]
+  },
+  "level1": {
+    "members": [
+      "T-tailv4",
+      "C2-cat",
+      "L2-hub8725",
+      "D1-winter",
+      "F1-fresh",
+      "N1-nmtail",
+      "L",
+      "Lp"
+    ],
+    "anchor_members": [
+      "T-tailv4",
+      "C2-cat",
+      "L2-hub8725",
+      "D1-winter",
+      "F1-fresh"
+    ],
+    "r2_training_months": [
+      "2025-12",
+      "2025-02",
+      "2025-06",
+      "2025-08",
+      "2025-01",
+      "2025-07"
+    ],
+    "additional_jjx_member_fits": 32
+  },
+  "level2": {
+    "consumer": "rfinal",
+    "training_rows": 1028150,
+    "lgb_rounds": 461,
+    "cat_rounds": 2208,
+    "selection_rounds": "Mean of best rounds from leave-one-training-month-out CV",
+    "removed_features": [
+      "v23_*",
+      "ctx_month"
+    ],
+    "forms": "Mean of raw LightGBM and CatBoost residuals plus the anchor, then floor at 60 seconds"
+  },
+  "fallback": {
+    "entry": "v32",
+    "sets": {
+      "noac": 388,
+      "ordna": 3205,
+      "unsupported": 22721
+    },
+    "explicit_rows": 26310,
+    "unchanged_rows": 26311,
+    "changed_rows": 318530,
+    "old_model_record": "docs/PUBLIC-MODEL-v32.json"
+  },
+  "local_selection": {
+    "G_s2_per_ranking_row": 178.17575632930263,
+    "interval_95": [
+      -365.8,
+      688.3
+    ],
+    "p_nonpositive": 0.245,
+    "january": -40.609813906561016,
+    "july": 218.78557023586302,
+    "standalone_R2b_G": -27.9,
+    "kept_sets_optimistic": true,
+    "reason": "Local v32 references inherit held-label paths; noac and ordinary without AOBT keeps account for about 206 of the gain."
+  },
+  "board_parameter_source": false,
+  "validation": "Month-hold level 2; excludes labels of the scored month and buffer days, with jjx member fits excluding January, July and their own month.",
+  "fresh_fit_reproduced": false,
+  "caller_boundary_exception_count": 2,
+  "boundary_exception_producer": "scripts/exp148_missing_features.py",
+  "original_input_sha256": {
+    "features": "b7d42132af8193babfeb38fb6f6f20ace59981e11e3895a934ab4e064253a664",
+    "final": "fa48730b7d050db1b75d32b67dc667ad3fb9dfa4c08021a4e54550cc7e17b58f",
+    "score": "dd00a8b5a29f89043d92ce4f1443b05ad379f7bb19b32f07f20b90f5e4ceea0b",
+    "v32": "f09f609429c81fd888e19e75e16f51b57978d55cc2639d6161c894da0baaa0de"
+  },
+  "original_serving_code_sha256": {
+    "serve_r2.py": "5c3397e91d911fcca8de18fc4477e257bdb8b0d85d52ba6c18d6f908cd9fab5e",
+    "stacker.py": "35b6b3e335e669cefb07ff10e763a4b9334b211bab596b9904faedd21010f98d"
+  },
+  "reproduction_limits": [
+    "All R2 member artifacts, feature caches, fitted model files and derived input packages must be rebuilt; they are not redistributed.",
+    "The frozen class rows and their cell inventory must be regenerated from the same raw and open-source versions.",
+    "New CV rounds, cache vocabularies, CPU/GPU libraries and thread counts can change fresh-fit values.",
+    "The v32 fallback retains the 16 old fitting faults in its public record.",
+    "No fresh fit has reproduced the accepted v35 vector."
+  ]
+}
